@@ -1,0 +1,424 @@
+/**=====================
+     79. social app css start
+==========================**/
+.user-profile {
+  .hovercard {
+    .socialheader {
+      background: url(../images/social-app/social-image.png);
+    }
+
+    .user-image {
+      .share-icons {
+        position: absolute;
+        right: 100px;
+        top: -27px;
+
+        li {
+          display: inline-block;
+          margin-right: 10px;
+
+          .social-icon {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+            justify-content: center;
+            border-radius: 100%;
+
+            i {
+              color: $white;
+              font-size: 25px;
+            }
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.market-tabs {
+  .border-tab.nav-tabs .nav-item .nav-link.active {
+    border-bottom: none !important;
+  }
+
+  .nav {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    .nav-item {
+      width: 100%;
+
+      .nav-link {
+        height: 81px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding-top: 30px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.tabs-scoial {
+  border-bottom: none;
+  margin-bottom: 20px !important;
+  margin-top: 20px;
+
+  li {
+    a {
+      font-weight: 600;
+
+      svg {
+        circle {
+          color: $light-text;
+        }
+      }
+    }
+  }
+}
+
+.social-network {
+  span {
+    margin-bottom: 30px;
+    display: block;
+  }
+}
+
+.social-list {
+  .media {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .media-body {
+      a {
+        color: $light-text;
+      }
+
+      span {
+        font-weight: 600;
+      }
+
+      &:hover {
+        a {
+          color: var(--theme-deafult);
+        }
+      }
+    }
+  }
+}
+
+.photos {
+  margin-bottom: -15px;
+
+  ul {
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      width: 70px;
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.new-users-social {
+  margin-bottom: 30px;
+
+  .media {
+    img {
+      width: 58px;
+    }
+
+    .media-body {
+      margin-top: 10px;
+    }
+  }
+
+  svg {
+    circle {
+      color: $light-text;
+    }
+  }
+}
+
+.like-content {
+  span {
+    i {
+      font-size: 14px;
+    }
+  }
+}
+
+.timeline-content {
+  p {
+    margin-top: 30px;
+    color: $light-text;
+  }
+
+  .comment-number {
+    i {
+      color: $light-text;
+      margin-right: 20px;
+    }
+  }
+
+  .comments-box {
+    margin-top: 30px;
+
+    .input-group {
+      margin-top: 6px;
+
+      .input-txt-bx {
+        border: none;
+
+        &::placeholder {
+          color: $light-text;
+        }
+      }
+
+      .input-group-append {
+        .btn {
+          i {
+            font-size: 20px;
+            display: flex;
+            color: $light-text;
+          }
+        }
+      }
+    }
+  }
+}
+
+.social-chat {
+  margin-top: 30px;
+
+  span {
+    span {
+      font-weight: normal;
+      color: $light-text;
+      font-size: 12px;
+    }
+  }
+
+  .media-body {
+    padding: 30px;
+    border: 1px solid $light-color;
+    position: relative;
+
+    p {
+      margin-top: 5px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 19px;
+      right: 100%;
+      border: 7px solid transparent;
+      border-right: 7px solid $semi-dark;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 19px;
+      right: 100%;
+      border: 7px solid transparent;
+      border-right: 7px solid $white;
+    }
+  }
+
+  .your-msg,
+  .other-msg {
+    margin-bottom: 30px;
+  }
+
+  .other-msg {
+    margin-left: 40px;
+  }
+}
+
+.socialprofile {
+  span {
+    color: $light-text;
+  }
+
+  .social-btngroup {
+    margin: 30px 0;
+  }
+
+  .likes-profile {
+    h5 {
+      span {
+        color: $theme-body-font-color;
+      }
+    }
+  }
+
+  .social-group {
+    margin-top: 30px;
+
+    ul {
+      li {
+        &:nth-child(4) {
+          margin-left: -22px;
+        }
+      }
+    }
+  }
+}
+
+.social-status {
+  form {
+    .form-group {
+      .form-control-social {
+        border: 1px solid $light-color;
+        padding-left: 15px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .media {
+    position: relative;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .social-status {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background-color: #fff;
+      bottom: 0;
+      left: 35px;
+      border-radius: 100%;
+    }
+
+    .social-online {
+      border: 3px solid $success-color;
+    }
+
+    .social-busy {
+      border: 3px solid $warning-color;
+    }
+
+    .social-offline {
+      border: 3px solid $semi-dark;
+    }
+
+    .media-body {
+      p {
+        color: $light-text;
+        margin-bottom: 5px;
+      }
+
+      span {
+        +span {
+          color: $light-text;
+        }
+      }
+
+      .light-span {
+        color: $light-text;
+      }
+    }
+  }
+}
+
+.social-header {
+  h5 {
+    span {
+      &:first-child {
+        line-height: 1.48;
+      }
+
+      svg {
+        circle {
+          color: $light-text;
+        }
+      }
+    }
+  }
+}
+
+.details-about {
+  +.details-about {
+    margin-top: 30px;
+  }
+
+  .your-details {
+    p {
+      color: $light-text;
+    }
+  }
+}
+
+.avatar-showcase {
+  .friend-pic {
+    margin-right: 8px;
+    margin-bottom: 10px;
+  }
+
+  .pepole-knows {
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 21px;
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .add-friend {
+          h6 {
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.activity-log {
+  .my-activity {
+    +.my-activity {
+      margin-top: 30px;
+    }
+
+    p {
+      margin-bottom: 5px;
+
+      span {
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}
+
+/**=====================
+     79. social app CSS end
+==========================**/

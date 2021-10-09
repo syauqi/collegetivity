@@ -1,0 +1,51 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+-var footer_fix            = true;
+-var footer_dark           = false;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                        | Footer Fixed
+
+                                .col-6
+                                      ol.breadcrumb
+                                        li.breadcrumb-item
+                                          a(href='index.html')                                        
+                                            i(data-feather="home")
+                                        li.breadcrumb-item Footer Fixed
+                                        li.breadcrumb-item.active  Page Layout
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Sample Card
+                              span lorem ipsum dolor sit amet, consectetur adipisicing elit
+                            .card-body
+                              p
+                                | "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                | eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                | enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                | nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                | in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                | nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                | sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

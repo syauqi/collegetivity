@@ -1,0 +1,24 @@
+/*======= Preloader =======*/
+#preloader {
+    position: fixed;
+    background-color: $color-heading;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .preloader-image {
+        animation-fill-mode: both;
+        animation-name: flipInY;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        background-blend-mode: multiply;
+    }
+}

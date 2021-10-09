@@ -1,0 +1,221 @@
+/*======= Blog Sidebar =======*/
+.blog-sidebar {
+    .widget {
+        &:not(:last-child) {
+            margin-bottom: 55px;
+        }
+
+        .widget-title {
+            border-bottom: 1px solid $color-offwhite;
+            padding-bottom: 15px;
+            font-size: 24px;
+            line-height: 1.1;
+            position: relative;
+            margin-bottom: 30px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 60px;
+                background-color: $color-primary;
+                left: 0;
+                bottom: -2px;
+                transition: 0.3s;
+            }
+
+            &:hover {
+                &::after {
+                    transform: translate(15px, 0px);
+                }
+            }
+        }
+
+        &.category-widget {
+            background-color: #f3f6f9;
+            padding: 30px 35px;
+
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    color: $color-heading;
+                    font-size: 17px;
+                    transition: 0.3s;
+                    text-transform: capitalize;
+                    display: block;
+                    position: relative;
+
+                    &::after {
+                        display: inline-block;
+                        position: absolute;
+                        right: 0;
+                        content: "\f105";
+                        font-family: "Font Awesome 5 Pro";
+                        font-weight: 400;
+                    }
+
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+
+        &.latest-post-widget {
+            .popular-posts-item {
+                display: flex;
+                align-items: center;
+
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+
+                .popular-posts-thumbnail {
+                    width: 75px;
+                    height: 75px;
+                    flex: 0 0 70px;
+                    margin-right: 20px;
+                    border-radius: 7px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        border-radius: 7px;
+                    }
+                }
+
+                .popular-posts-title {
+                    font-size: 18px;
+                    line-height: 1.4;
+
+                    a:hover {
+                        color: $color-primary;
+                    }
+                }
+
+                .posts-date {
+                    color: $color-body;
+                    font-size: 16px;
+
+                    i {
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+
+        &.widget-tag-cloud {
+            .tags {
+                a {
+                    display: inline-block;
+                    padding: 3px 20px;
+                    background-color: $color-offwhite;
+                    border-radius: 50px;
+                    font-size: 17px;
+                    color: $color-body;
+                    margin: 0 5px 10px 0;
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: $color-primary;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+
+        &.search-widget {
+            background-color: $color-primary;
+            padding: 25px 30px;
+
+            h4 {
+                color: $color-white;
+                margin-bottom: 15px;
+                text-transform: capitalize;
+            }
+
+            form {
+                position: relative;
+
+                input {
+                    height: 60px;
+                    width: 100%;
+                    border-radius: 30px;
+                    background-color: #f3f6f9;
+                    padding-left: 25px;
+                    padding-right: 55px;
+                }
+
+                button {
+                    height: 45px;
+                    width: 45px;
+                    border-radius: 50px;
+                    position: absolute;
+                    top: 8px;
+                    right: 8px;
+                    background: $color-primary;
+                    color: $color-white;
+                    border: none;
+                }
+            }
+        }
+
+        &.testimonial-widget {
+            padding: 35px;
+            background-color: $color-heading;
+
+            .single-testimonial {
+                color: $color-white;
+                font-size: 18px;
+
+                .author {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 30px;
+
+                    img {
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                    }
+                }
+
+                .name {
+                    color: $color-white;
+                    font-size: 18px;
+                }
+
+                .position {
+                    display: block;
+                    color: #a5abbc;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    margin-top: 10px;
+                }
+            }
+
+            .slick-dots {
+                margin-top: 40px;
+                justify-content: flex-start;
+
+                li {
+                    margin: 0 10px 0 0;
+                    &::after {
+                        display: none;
+                    }
+
+                    &:not(.slick-active) {
+                        background-color: #393e4c;
+                    }
+                }
+            }
+        }
+    }
+}

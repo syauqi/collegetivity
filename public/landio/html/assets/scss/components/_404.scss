@@ -1,0 +1,18 @@
+/*======= 404  =======*/
+.error-page-content {
+    h2 {
+        margin-bottom: 20px;
+        font-size: 85px;
+        line-height: 1;
+    }
+
+    p {
+        font: {
+            size: 30px;
+            family: $font-cs-medium;
+            weight: 500;
+        }
+        line-height: 1.2;
+        color: $color-heading;
+    }
+}

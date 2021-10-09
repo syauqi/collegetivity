@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?5c255c376c4b47674142d2106371c66a") format("truetype"),
+url("./flaticon.woff?5c255c376c4b47674142d2106371c66a") format("woff"),
+url("./flaticon.woff2?5c255c376c4b47674142d2106371c66a") format("woff2"),
+url("./flaticon.eot?5c255c376c4b47674142d2106371c66a#iefix") format("embedded-opentype"),
+url("./flaticon.svg?5c255c376c4b47674142d2106371c66a#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-3d-1:before {
+    content: "\f101";
+}
+.flaticon-right-quote:before {
+    content: "\f102";
+}
+.flaticon-targeting:before {
+    content: "\f103";
+}
+.flaticon-stats:before {
+    content: "\f104";
+}
+.flaticon-headphones:before {
+    content: "\f105";
+}
+.flaticon-share:before {
+    content: "\f106";
+}
+.flaticon-chatting:before {
+    content: "\f107";
+}
+.flaticon-rating:before {
+    content: "\f108";
+}
+.flaticon-satisfaction:before {
+    content: "\f109";
+}
+.flaticon-video-player:before {
+    content: "\f10a";
+}
+.flaticon-online-video:before {
+    content: "\f10b";
+}
+.flaticon-video-player-1:before {
+    content: "\f10c";
+}
+.flaticon-volume:before {
+    content: "\f10d";
+}
+.flaticon-live-chat:before {
+    content: "\f10e";
+}
+.flaticon-podcast:before {
+    content: "\f10f";
+}
+.flaticon-microphone:before {
+    content: "\f110";
+}
+.flaticon-quotation-mark:before {
+    content: "\f111";
+}
+.flaticon-digital-marketing:before {
+    content: "\f112";
+}
+.flaticon-social-media:before {
+    content: "\f113";
+}
+.flaticon-certificate-1:before {
+    content: "\f114";
+}
+.flaticon-layers-2:before {
+    content: "\f115";
+}
+.flaticon-talk-show-1:before {
+    content: "\f116";
+}
+.flaticon-goal-1:before {
+    content: "\f117";
+}
+.flaticon-rss-1:before {
+    content: "\f118";
+}
+.flaticon-diamond-1:before {
+    content: "\f119";
+}
+.flaticon-medal-1:before {
+    content: "\f11a";
+}
+.flaticon-crown-1:before {
+    content: "\f11b";
+}
+.flaticon-money-exchange-1:before {
+    content: "\f11c";
+}
+.flaticon-exchange:before {
+    content: "\f11d";
+}
+.flaticon-cryptocurrency:before {
+    content: "\f11e";
+}
+.flaticon-cyber-security:before {
+    content: "\f11f";
+}
+.flaticon-cryptocurrency-1:before {
+    content: "\f120";
+}
+.flaticon-bitcoin:before {
+    content: "\f121";
+}
+.flaticon-exchange-1:before {
+    content: "\f122";
+}
+.flaticon-blockchain:before {
+    content: "\f123";
+}
+.flaticon-bitcoin-1:before {
+    content: "\f124";
+}
+.flaticon-cryptocurrencies:before {
+    content: "\f125";
+}
+.flaticon-bitcoin-2:before {
+    content: "\f126";
+}
+.flaticon-exchange-2:before {
+    content: "\f127";
+}

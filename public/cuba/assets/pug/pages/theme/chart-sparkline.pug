@@ -1,0 +1,78 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sparkline             = true;
+- var page_sparkline        = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Sparkline Chart
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Charts
+                                      li.breadcrumb-item.active Sparkline Chart
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-xl-4.col-md-6.col-sm-12.box-col-6
+                          .card
+                            .card-header
+                              h5 Mouse Speed Chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #mouse-speed-chart-sparkline.flot-chart-placeholder
+                        .col-xl-4.col-md-6.col-sm-12.box-col-6
+                          .card
+                            .card-header
+                              h5 Simple Bar Charts
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #custom-line-chart.flot-chart-placeholder
+                        .col-xl-4.col-md-6.col-sm-12.box-col-6
+                          .card
+                            .card-header
+                              h5 Line Chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #line-chart-sparkline.flot-chart-placeholder.line-chart-sparkline
+                        .col-xl-4.col-md-6.col-sm-12.box-col-6
+                          .card
+                            .card-header
+                              h5 Simple Line Chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #simple-line-chart-sparkline.flot-chart-placeholder
+                        .col-xl-4.col-md-6.col-sm-12.box-col-6
+                          .card
+                            .card-header
+                              h5 Bar Chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #bar-chart-sparkline.flot-chart-placeholder
+                        .col-xl-4.col-md-6.col-sm-12.box-col-6
+                          .card
+                            .card-header
+                              h5 Pie chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #pie-sparkline-chart.flot-chart-placeholder
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

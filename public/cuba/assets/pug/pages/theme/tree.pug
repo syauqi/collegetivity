@@ -1,0 +1,188 @@
+- var tree                  = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Tree View
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item  Bonus Ui
+                                      li.breadcrumb-item.active Tree View
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Basic Tree
+                            .card-body
+                              #treeBasic
+                                ul
+                                  li
+                                    | Admin
+                                    ul
+                                      li(data-jstree='{"opened":true}')
+                                        | Assets
+                                        ul
+                                          li(data-jstree='{"opened":false}')
+                                            | Css
+                                            ul
+                                              li(data-jstree='{"selected":false,"type":"file"}') Css one
+                                              li(data-jstree='{"type":"file"}') Css two
+                                          li(data-jstree='{"opened":true}')
+                                            | Js
+                                            ul
+                                              li(data-jstree='{"selected":true,"type":"file"}') Js one
+                                              li(data-jstree='{"type":"file"}') Js two
+                                          li(data-jstree='{"opened":true}')
+                                            | Scss
+                                            ul
+                                              li(data-jstree='{"opened":false}')
+                                                | Sub Child
+                                                ul
+                                                  li(data-jstree='{"selected":false,"type":"file"}') Sub File
+                                                  li(data-jstree='{"type":"file"}') Sub File
+                                              li(data-jstree='{"type":"file"}') Scss two
+                                      li(data-jstree='{"opened":true}')
+                                        | Default
+                                        ul
+                                          li(data-jstree='{"type":"file"}') Dashboard
+                                          li(data-jstree='{"type":"file"}') Typography
+                                  li(data-jstree='{"type":"file"}') index file
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Checkbox Tree
+                            .card-body
+                              #treecheckbox
+                                ul
+                                  li
+                                    | Admin
+                                    ul
+                                      li(data-jstree='{"opened":true}')
+                                        | Assets
+                                        ul
+                                          li(data-jstree='{"opened":false}')
+                                            | Css
+                                            ul
+                                              li(data-jstree='{"selected":false,"type":"file"}') Css one
+                                              li(data-jstree='{"type":"file"}') Css two
+                                          li(data-jstree='{"opened":true}')
+                                            | Js
+                                            ul
+                                              li(data-jstree='{"selected":true,"type":"file"}') Js one
+                                              li(data-jstree='{"type":"file"}') Js two
+                                          li(data-jstree='{"opened":true}')
+                                            | Scss
+                                            ul
+                                              li(data-jstree='{"opened":false}')
+                                                | Sub Child
+                                                ul
+                                                  li(data-jstree='{"selected":false,"type":"file"}') Sub File
+                                                  li(data-jstree='{"type":"file"}') Sub File
+                                              li(data-jstree='{"type":"file"}') Scss two
+                                      li(data-jstree='{"opened":true}')
+                                        | Default
+                                        ul
+                                          li(data-jstree='{"type":"file"}') Dashboard
+                                          li(data-jstree='{"type":"file"}') Typography
+                                  li(data-jstree='{"type":"file"}') index file
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Drag Tree
+                            .card-body
+                              #dragTree
+                                ul
+                                  li
+                                    | Admin
+                                    ul
+                                      li(data-jstree='{"opened":true}')
+                                        | Assets
+                                        ul
+                                          li(data-jstree='{"opened":false}')
+                                            | Css
+                                            ul
+                                              li(data-jstree='{"selected":false,"type":"file"}') Css one
+                                              li(data-jstree='{"type":"file"}') Css two
+                                          li(data-jstree='{"opened":true}')
+                                            | Js
+                                            ul
+                                              li(data-jstree='{"selected":true,"type":"file"}') Js one
+                                              li(data-jstree='{"type":"file"}') Js two
+                                          li(data-jstree='{"opened":true}')
+                                            | Scss
+                                            ul
+                                              li(data-jstree='{"opened":false}')
+                                                | Sub Child
+                                                ul
+                                                  li(data-jstree='{"selected":false,"type":"file"}') Sub File
+                                                  li(data-jstree='{"type":"file"}') Sub File
+                                              li(data-jstree='{"type":"file"}') Scss two
+                                      li(data-jstree='{"opened":true}')
+                                        | Default
+                                        ul
+                                          li(data-jstree='{"type":"file"}') Dashboard
+                                          li(data-jstree='{"type":"file"}') Typography
+                                  li(data-jstree='{"type":"file"}') index file
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Contextmenu Tree
+                            .card-body
+                              #contextmenu
+                                ul
+                                  li
+                                    | Admin
+                                    ul
+                                      li(data-jstree='{"opened":true}')
+                                        | Assets
+                                        ul
+                                          li(data-jstree='{"opened":false}')
+                                            | Css
+                                            ul
+                                              li(data-jstree='{"selected":false,"type":"file"}') Css one
+                                              li(data-jstree='{"type":"file"}') Css two
+                                          li(data-jstree='{"opened":true}')
+                                            | Js
+                                            ul
+                                              li(data-jstree='{"selected":true,"type":"file"}') Js one
+                                              li(data-jstree='{"type":"file"}') Js two
+                                          li(data-jstree='{"opened":true}')
+                                            | Scss
+                                            ul
+                                              li(data-jstree='{"opened":false}')
+                                                | Sub Child
+                                                ul
+                                                  li(data-jstree='{"selected":false,"type":"file"}') Sub File
+                                                  li(data-jstree='{"type":"file"}') Sub File
+                                              li(data-jstree='{"type":"file"}') Scss two
+                                      li(data-jstree='{"opened":true}')
+                                        | Default
+                                        ul
+                                          li(data-jstree='{"type":"file"}') Dashboard
+                                          li(data-jstree='{"type":"file"}') Typography
+                                  li(data-jstree='{"type":"file"}') index file
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

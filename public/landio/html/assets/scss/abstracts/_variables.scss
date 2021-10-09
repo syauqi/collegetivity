@@ -1,0 +1,82 @@
+// Font Family
+$font-family: (
+    font-cs-bold: "'CircularStdBold'",
+    font-cs-medium: "'CircularStdMedium'",
+    font-cs-book: "'CircularStdBook'",
+);
+
+$font-cs-bold: var(--font-cs-bold);
+$font-cs-medium: var(--font-cs-medium);
+$font-cs-book: var(--font-cs-book);
+
+// Color
+$colors: (
+    color-primary: #473bf0,
+    color-primary-2: #0040e5,
+    color-primary-3: #e95e6c,
+    color-primary-4: #3377ff,
+    color-primary-5: #5580ff,
+    color-primary-6: #42a66c,
+    color-secondary: #f4732a,
+    color-secondary-2: #f6b9a7,
+    color-secondary-3: #8208fe,
+    color-secondary-4: #2b354f,
+    color-secondary-5: #343351,
+    color-heading: #161c2d,
+    color-heading-2: #1a1b1e,
+    color-heading-3: #36234b,
+    color-heading-4: #1f1f1f,
+    color-body: #6e727d,
+    color-body-2: #6f667b,
+    color-body-3: #7a7a7a,
+    color-body-4: #656871,
+    color-dark: #1b202f,
+    color-dark-2: #16171b,
+    color-dark-3: #191a1e,
+    color-dark-4: #282a33,
+    color-white: #fff,
+    color-grey: #f5f3f5,
+    color-soft-grey: #f2f5fe,
+    color-soft-grey-2: #f4f7fa,
+    color-offwhite: #e7e8ea,
+);
+
+$color-primary: var(--color-primary);
+$color-primary-2: var(--color-primary-2);
+$color-primary-3: var(--color-primary-3);
+$color-primary-4: var(--color-primary-4);
+$color-primary-5: var(--color-primary-5);
+$color-primary-6: var(--color-primary-6);
+$color-secondary: var(--color-secondary);
+$color-secondary-2: var(--color-secondary-2);
+$color-secondary-3: var(--color-secondary-3);
+$color-secondary-4: var(--color-secondary-4);
+$color-secondary-5: var(--color-secondary-5);
+$color-heading: var(--color-heading);
+$color-heading-2: var(--color-heading-2);
+$color-heading-3: var(--color-heading-3);
+$color-heading-4: var(--color-heading-4);
+$color-body: var(--color-body);
+$color-body-2: var(--color-body-2);
+$color-body-3: var(--color-body-3);
+$color-body-4: var(--color-body-4);
+$color-dark: var(--color-dark);
+$color-dark-2: var(--color-dark-2);
+$color-dark-3: var(--color-dark-3);
+$color-dark-4: var(--color-dark-4);
+$color-white: var(--color-white);
+$color-grey: var(--color-grey);
+$color-soft-grey: var(--color-soft-grey);
+$color-soft-grey-2: var(--color-soft-grey-2);
+$color-offwhite: var(--color-offwhite);
+
+// Breakpoints.
+$breakpoints: (
+    xs: 425px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    c1600: 1600px,
+);

@@ -1,0 +1,364 @@
+/*======= Pricing Table  =======*/
+.pricing-table {
+    padding: 50px 40px;
+    border: 2px solid #e5ecfc;
+    border-radius: 12px;
+    transition: 0.3s;
+
+    &:hover {
+        border-color: $color-primary;
+        box-shadow: 0px 10px 60px 0px rgba(215, 212, 255, 0.7);
+    }
+
+    .plan-name {
+        font-size: 17px;
+        line-height: 1;
+        color: $color-white;
+        background-color: $color-primary;
+        padding: 10px 20px;
+        display: inline-block;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        box-shadow: 0px 10px 30px 0px rgb(71 59 240 / 36%);
+    }
+
+    .plan-icon {
+        display: block;
+        margin: auto;
+    }
+
+    .plan-title-area {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 60px;
+
+        .plan-shape {
+            position: absolute;
+            right: 0;
+            top: -20px;
+            z-index: -1;
+            width: 225px;
+            height: 220px;
+
+            .blob {
+                fill: #edf2fd;
+                fill-rule: evenodd;
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .plan-cost {
+        margin-bottom: 35px;
+        line-height: 1;
+        letter-spacing: -1px;
+
+        .currency {
+            color: $color-primary;
+            font-size: 24px;
+            top: -25px;
+            position: relative;
+        }
+
+        .price {
+            font-size: 65px;
+            line-height: 1;
+            color: $color-heading;
+        }
+
+        .plan-type {
+            color: #606060;
+            font-size: 17px;
+            margin-left: 5px;
+        }
+    }
+
+    .plan-feature {
+        li {
+            color: #606060;
+            font-size: 17px;
+            position: relative;
+            line-height: 1.5;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            &:after {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                content: "\f058";
+                font-family: "Font Awesome 5 Pro";
+                font-size: 15px;
+                font-weight: 900;
+                color: $color-primary;
+            }
+
+            &.disabled-feature:after {
+                color: #b2c5f7;
+            }
+        }
+    }
+
+    .template-btn {
+        margin-top: 50px;
+    }
+
+    &.pricing-secondary-1 {
+        &:hover {
+            border-color: $color-secondary;
+            box-shadow: 0px 10px 30px 0px rgb(244 115 42 / 18%);
+        }
+
+        .plan-name {
+            background: linear-gradient(
+                145deg,
+                rgb(255, 78, 0) 0%,
+                rgb(255, 114, 0) 59%,
+                rgb(254, 149, 0) 100%
+            );
+            box-shadow: 0px 7px 25px 0px rgba(255, 78, 0, 0.4);
+        }
+
+        .plan-cost {
+            .currency {
+                color: $color-secondary;
+            }
+        }
+
+        .plan-feature {
+            li {
+                &:not(.disabled-feature) {
+                    &::after {
+                        color: $color-secondary;
+                    }
+                }
+            }
+        }
+
+        .template-btn {
+            background-color: $color-secondary;
+            box-shadow: 0px 10px 30px 0px rgba(244, 115, 42, 0.36);
+            border-color: $color-secondary;
+
+            &:hover {
+                background-color: $color-heading;
+                border-color: $color-heading;
+            }
+        }
+    }
+}
+
+/*======= Pricing Table Two =======*/
+.pricing-table-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: $color-white;
+    padding: 45px;
+    border: 2px solid #e5ecfc;
+    border-radius: 12px;
+    transition: 0.3s;
+
+    &:hover {
+        border-color: transparent;
+        box-shadow: 0px 10px 30px 0px rgb(206 189 224 / 36%);
+    }
+
+    .left-content,
+    .right-content {
+        width: 50%;
+    }
+
+    .plan-name {
+        font-size: 17px;
+        line-height: 1;
+        color: $color-white;
+        background-color: $color-secondary;
+        padding: 10px 20px;
+        display: inline-block;
+        border-radius: 30px;
+        margin-bottom: 35px;
+        box-shadow: 0px 7px 25px 0px rgba(255, 78, 0, 0.4);
+    }
+
+    .plan-cost {
+        line-height: 1;
+        letter-spacing: -1px;
+
+        .currency {
+            color: $color-secondary;
+            font-size: 24px;
+            top: -25px;
+            position: relative;
+        }
+
+        .price {
+            font-size: 65px;
+            line-height: 1;
+            color: $color-heading-3;
+        }
+
+        .plan-type {
+            color: $color-body-2;
+            font-size: 17px;
+            margin-left: 5px;
+        }
+    }
+
+    .plan-feature {
+        li {
+            color: $color-body-2;
+            font-size: 17px;
+            position: relative;
+            line-height: 1.5;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            &:after {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                content: "\f058";
+                font-family: "Font Awesome 5 Pro";
+                font-size: 15px;
+                font-weight: 900;
+                color: $color-secondary;
+            }
+
+            &.disabled-feature:after {
+                color: #b2c5f7;
+            }
+        }
+    }
+
+    .template-btn {
+        margin-top: 30px;
+    }
+}
+
+/*======= Pricing Table Three =======*/
+.pricing-table-three {
+    padding: 60px 55px;
+    position: relative;
+    z-index: 1;
+    transition: 0.4s;
+    border: 2px solid $color-dark-4;
+    border-radius: 7px;
+
+    .plan-name {
+        font-size: 15px;
+        letter-spacing: 4px;
+        color: $color-primary-6;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        transition: 0.3s;
+    }
+
+    .price {
+        font-size: 65px;
+        line-height: 1;
+        color: $color-white;
+        letter-spacing: -2px;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        transition: 0.3s;
+
+        .currency {
+            font-size: 24px;
+            margin-right: 10px;
+            position: relative;
+            top: 10px;
+        }
+    }
+
+    .plan-subtitle {
+        color: #abb0bf;
+        margin-bottom: 35px;
+        transition: 0.3s;
+        line-height: 1.5;
+        font: {
+            size: 17px;
+            family: $font-cs-medium;
+            weight: 500;
+        }
+    }
+
+    .plan-feature li {
+        font-size: 17px;
+        line-height: 1.5;
+        transition: 0.3s;
+        color: $color-white;
+
+        i {
+            color: $color-primary-6;
+            font-size: 15px;
+            margin-right: 10px;
+            transition: 0.3s;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &.hidden-feature i,
+        &.hidden-feature {
+            color: $color-body-4;
+        }
+    }
+
+    .pricing-btn {
+        margin-top: 35px;
+        background-color: $color-dark-4;
+        color: $color-body-4;
+        line-height: 1.4;
+        padding: 15px 45px;
+        border-radius: 30px;
+        font: {
+            size: 15px;
+            family: $font-cs-bold;
+            weight: 700;
+        }
+
+        i {
+            margin-left: 5px;
+        }
+    }
+
+    .plan-tag {
+        font: {
+            size: 13px;
+            family: $font-cs-medium;
+            weight: 500;
+        }
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 2;
+        background-color: $color-primary-6;
+        color: $color-white;
+        text-transform: uppercase;
+        line-height: 1;
+        border-radius: 30px;
+        padding: 8px 15px;
+    }
+
+    &:hover,
+    &.featured-plan {
+        background-color: #1d1e22;
+        border-color: #1d1e22;
+    }
+
+    &:hover .pricing-btn,
+    &.featured-plan .pricing-btn {
+        color: $color-white;
+        background-color: $color-primary-6;
+    }
+}

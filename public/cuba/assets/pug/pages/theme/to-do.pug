@@ -1,0 +1,169 @@
+- var todo                  = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | To-Do
+
+                                .col-6
+                                      ol.breadcrumb
+                                        li.breadcrumb-item
+                                          a(href='index.html')                                        
+                                            i(data-feather="home")
+                                        li.breadcrumb-item Apps
+                                        li.breadcrumb-item.active To-Do
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-xl-12
+                          .card
+                            .card-header
+                              h5 To-Do
+                            .card-body
+                              .todo
+                                .todo-list-wrapper
+                                  .todo-list-container
+                                    .mark-all-tasks
+                                      .mark-all-tasks-container
+                                        span#mark-all-finished.mark-all-btn(role='button')
+                                          span.btn-label Mark all as finished
+                                          span.action-box.completed
+                                            i.icon
+                                              i.icon-check
+                                        span#mark-all-incomplete.mark-all-btn.move-down(role='button')
+                                          span.btn-label Mark all as Incomplete
+                                          span.action-box
+                                            i.icon
+                                              i.icon-check
+                                    .todo-list-body
+                                      ul#todo-list
+                                        li.task
+                                          .task-container
+                                            h4.task-label Weekly Bigbazar Shopping 
+                                            span.task-action-btn
+                                              span.action-box.large.delete-btn(title='Delete Task')
+                                                i.icon
+                                                  i.icon-trash
+                                              span.action-box.large.complete-btn(title='Mark Complete')
+                                                i.icon
+                                                  i.icon-check
+                                        li.task
+                                          .task-container
+                                            h4.task-label Go Outside Picnic on Sunday
+                                            span.task-action-btn
+                                              span.action-box.large.delete-btn(title='Delete Task')
+                                                i.icon
+                                                  i.icon-trash
+                                              span.action-box.large.complete-btn(title='Mark Complete')
+                                                i.icon
+                                                  i.icon-check
+                                        li.completed.task
+                                          .task-container
+                                            h4.task-label Write a blog post 
+                                            span.task-action-btn
+                                              span.action-box.large.delete-btn(title='Delete Task')
+                                                i.icon
+                                                  i.icon-trash
+                                              span.action-box.large.complete-btn(title='Mark Complete')
+                                                i.icon
+                                                  i.icon-check
+                                        li.task
+                                          .task-container
+                                            h4.task-label Do the chicken dance
+                                            span.task-action-btn
+                                              span.action-box.large.delete-btn(title='Delete Task')
+                                                i.icon
+                                                  i.icon-trash
+                                              span.action-box.large.complete-btn(title='Mark Incomplete')
+                                                i.icon
+                                                  i.icon-check
+                                        li.task
+                                          .task-container
+                                            h4.task-label Pay the electricity bills
+                                            span.task-action-btn
+                                              span.action-box.large.delete-btn(title='Delete Task')
+                                                i.icon
+                                                  i.icon-trash
+                                              span.action-box.large.complete-btn(title='Mark Complete')
+                                                i.icon
+                                                  i.icon-check
+                                        li.task.completed
+                                          .task-container
+                                            h4.task-label Make dinner reservation
+                                            span.task-action-btn
+                                              span.action-box.large.delete-btn(title='Delete Task')
+                                                i.icon
+                                                  i.icon-trash
+                                              span.action-box.large.complete-btn(title='Mark Complete')
+                                                i.icon
+                                                  i.icon-check
+                                        li.task
+                                          .task-container
+                                            h4.task-label Meeting with photographer
+                                            span.task-action-btn
+                                              span.action-box.large.delete-btn(title='Delete Task')
+                                                i.icon
+                                                  i.icon-trash
+                                              span.action-box.large.complete-btn(title='Mark Complete')
+                                                i.icon
+                                                  i.icon-check
+                                        li.task
+                                          .task-container
+                                            h4.task-label Birthday wish to best friend
+                                            span.task-action-btn
+                                              span.action-box.large.delete-btn(title='Delete Task')
+                                                i.icon
+                                                  i.icon-trash
+                                              span.action-box.large.complete-btn(title='Mark Complete')
+                                                i.icon
+                                                  i.icon-check
+                                    .todo-list-footer
+                                      .add-task-btn-wrapper
+                                        span.add-task-btn
+                                          button.btn.btn-primary
+                                            i.icon-plus
+                                            |  Add new task
+                                      .new-task-wrapper
+                                        textarea#new-task(placeholder='Enter new task here. . .')
+                                        span#close-task-panel.btn.btn-danger.cancel-btn Close
+                                        span#add-task.btn.btn-success.ml-3.add-new-task-btn Add Task
+                                .notification-popup.hide
+                                  p
+                                    span.task
+                                    span.notification-text
+                              // HTML Template for tasks
+                              script#task-template(type='tect/template').
+                                <li class="task">
+                                <div class="task-container">
+                                <h4 class="task-label"></h4>
+                                <span class="task-action-btn">
+                                <span class="action-box large delete-btn" title="Delete Task">
+                                <i class="icon"><i class="icon-trash"></i></i>
+                                </span>
+                                <span class="action-box large complete-btn" title="Mark Complete">
+                                <i class="icon"><i class="icon-check"></i></i>
+                                </span>
+                                </span>
+                                </div>
+                                </li>
+                    // Container-fluid Ends
+
+                    // Container-fluid ends                    
+                include ../../components/footer
+        include ../../components/footer-files

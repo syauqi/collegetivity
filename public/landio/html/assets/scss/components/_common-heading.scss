@@ -1,0 +1,88 @@
+/*======= Common Heading =======*/
+.common-heading {
+    .tagline {
+        font: {
+            size: 18px;
+            family: $font-cs-medium;
+        }
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+
+    .title {
+        font-size: 42px;
+        letter-spacing: -2px;
+        line-height: 1.2;
+    }
+
+    &.tagline-boxed {
+        .tagline {
+            background-color: #d3d4f8;
+            color: $color-primary;
+            padding: 4px 18px;
+            border-radius: 30px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &.tagline-boxed-two {
+        .tagline {
+            background-color: #e5ecfc;
+            color: $color-primary-2;
+            padding: 4px 18px;
+            border-radius: 30px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &.title-line {
+        .title {
+            span {
+                color: $color-primary-2;
+                position: relative;
+                z-index: 1;
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    bottom: -25px;
+                }
+            }
+        }
+
+        &.line-less-bottom {
+            .title span img {
+                bottom: -10px;
+            }
+        }
+    }
+
+    &.title-line-bottom {
+        .heading-line {
+            margin-top: 10px;
+        }
+    }
+
+    &.heading-white {
+        .tagline {
+            color: $color-white;
+        }
+
+        &.tagline-boxed {
+            .tagline {
+                background-color: $color-primary;
+            }
+        }
+
+        &.tagline-boxed-two {
+            .tagline {
+                background-color: #1a53e8;
+            }
+        }
+
+        .title {
+            color: $color-white;
+        }
+    }
+}

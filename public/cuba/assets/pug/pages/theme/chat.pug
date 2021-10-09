@@ -1,0 +1,319 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var fullscreen            = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Chat App
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Chat
+                                      li.breadcrumb-item.active  Chat App
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col.call-chat-sidebar.col-sm-12
+                          .card
+                            .card-body.chat-body
+                              .chat-box
+                                // Chat left side Start
+                                .chat-left-aside
+                                  .media
+                                    img.rounded-circle.user-image(src='../assets/images/user/12.png', alt='')
+                                    .about
+                                      .name.f-w-600 Mark Jecno
+                                      .status
+                                        | Status...
+                                  #people-list.people-list
+                                    .search
+                                      form.theme-form
+                                        .form-group
+                                          input.form-control(type='text', placeholder='search')
+                                          i.fa.fa-search
+                                    ul.list
+                                      li.clearfix
+                                        img.rounded-circle.user-image(src='../assets/images/user/1.jpg', alt='')
+                                        .status-circle.away
+                                        .about
+                                          .name Vincent Porter
+                                          .status
+                                            | Hello Name
+                                      li.clearfix
+                                        img.rounded-circle.user-image(src='../assets/images/user/2.png', alt='')
+                                        .status-circle.online
+                                        .about
+                                          .name Aiden Chavez
+                                          .status
+                                            | Out is my favorite.
+                                      li.clearfix
+                                        img.rounded-circle.user-image(src='../assets/images/user/8.jpg', alt='')
+                                        .status-circle.online
+                                        .about
+                                          .name Prasanth Anand
+                                          .status
+                                            | Change for anyone.
+                                      li.clearfix
+                                        img.rounded-circle.user-image(src='../assets/images/user/4.jpg', alt='')
+                                        .status-circle.offline
+                                        .about
+                                          .name Venkata Satyamu
+                                          .status
+                                            | First bun like a sun.
+                                      li.clearfix
+                                        img.rounded-circle.user-image(src='../assets/images/user/5.jpg', alt='')
+                                        .status-circle.online
+                                        .about
+                                          .name Ginger Johnston
+                                          .status
+                                            | it's my life. Mind it.
+                                      li.clearfix
+                                        img.rounded-circle.user-image(src='../assets/images/user/8.jpg', alt='')
+                                        .status-circle.offline
+                                        .about
+                                          .name Kori Thomas
+                                          .status
+                                            | Change for anyone.
+                                      li.clearfix
+                                        img.rounded-circle.user-image(src='../assets/images/user/1.jpg', alt='')
+                                        .status-circle.online
+                                        .about
+                                          .name Vincent Porter
+                                          .status
+                                            | Hello Name
+                                      li.clearfix
+                                        img.rounded-circle.user-image(src='../assets/images/user/8.jpg', alt='')
+                                        .status-circle.online
+                                        .about
+                                          .name Kori Thomas
+                                          .status
+                                            | Change for anyone.
+                                // Chat left side Ends
+                        .col.call-chat-body
+                          .card
+                            .card-body.p-0
+                              .row.chat-box
+                                // Chat right side start
+                                .col.pr-0.chat-right-aside
+                                  // chat start
+                                  .chat
+                                    // chat-header start
+                                    .chat-header.clearfix
+                                      img.rounded-circle(src='../assets/images/user/8.jpg', alt='')
+                                      .about
+                                        .name
+                                          | Kori Thomas  
+                                          span.font-primary.f-12 Typing...
+                                        .status
+                                          | Last Seen 3:55 PM
+                                      ul.list-inline.float-left.float-sm-right.chat-menu-icons
+                                        li.list-inline-item
+                                          a(href='#')
+                                            i.icon-search
+                                        li.list-inline-item
+                                          a(href='#')
+                                            i.icon-clip
+                                        li.list-inline-item
+                                          a(href='#')
+                                            i.icon-headphone-alt
+                                        li.list-inline-item
+                                          a(href='#')
+                                            i.icon-video-camera
+                                        li.list-inline-item.toogle-bar
+                                          a(href='#')
+                                            i.icon-menu
+                                    // chat-header end
+                                    .chat-history.chat-msg-box.custom-scrollbar
+                                      ul
+                                        li
+                                          .message.my-message
+                                            img.rounded-circle.float-left.chat-user-img.img-30(src='../assets/images/user/3.png', alt='')
+                                            .message-data.text-right
+                                              span.message-data-time 10:12 am
+                                            |                                                             Are we meeting today? Project has been already finished and I have results to show you.
+                                        li.clearfix
+                                          .message.other-message.pull-right
+                                            img.rounded-circle.float-right.chat-user-img.img-30(src='../assets/images/user/12.png', alt='')
+                                            .message-data
+                                              span.message-data-time 10:14 am
+                                            |                                                             Well I am not sure. The rest of the team is not here yet. Maybe in an hour or so?
+                                        li.clearfix
+                                          .message.other-message.pull-right
+                                            img.rounded-circle.float-right.chat-user-img.img-30(src='../assets/images/user/12.png', alt='')
+                                            .message-data
+                                              span.message-data-time 10:14 am
+                                            |                                                             Well I am not sure. The rest of the team
+                                        li
+                                          .message.my-message.mb-0
+                                            img.rounded-circle.float-left.chat-user-img.img-30(src='../assets/images/user/3.png', alt='')
+                                            .message-data.text-right
+                                              span.message-data-time 10:20 am
+                                            |                                                             Actually everything was fine. I'm very excited to show this to our team.
+                                    // end chat-history
+                                    .chat-message.clearfix
+                                      .row
+                                        .col-xl-12.d-flex
+                                          .smiley-box.bg-primary
+                                            .picker
+                                              img(src='../assets/images/smiley.png', alt='')
+                                          .input-group.text-box
+                                            input#message-to-send.form-control.input-txt-bx(type='text', name='message-to-send', placeholder='Type a message......')
+                                            .input-group-append
+                                              button.btn.btn-primary(type='button') SEND
+                                    // end chat-message
+                                    // chat end
+                                    // Chat right side ends
+                                .col.pl-0.chat-menu
+                                  ul#info-tab.nav.nav-tabs.border-tab.nav-primary(role='tablist')
+                                    li.nav-item
+                                      a#info-home-tab.nav-link.active(data-toggle='tab', href='#info-home', role='tab', aria-selected='true')
+                                        | CALL
+                                      .material-border
+                                    li.nav-item
+                                      a#profile-info-tab.nav-link(data-toggle='tab', href='#info-profile', role='tab', aria-selected='false')
+                                        | STATUS
+                                      .material-border
+                                    li.nav-item
+                                      a#contact-info-tab.nav-link(data-toggle='tab', href='#info-contact', role='tab', aria-selected='false')
+                                        | PROFILE
+                                      .material-border
+                                  #info-tabContent.tab-content
+                                    #info-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='info-home-tab')
+                                      .people-list
+                                        ul.list
+                                          li.clearfix
+                                            img.rounded-circle.user-image(src='../assets/images/user/4.jpg', alt='')
+                                            .about
+                                              .name Erica Hughes
+                                              .status
+                                                i.fa.fa-share.font-success
+                                                |   5 May, 4:40 PM
+                                          li.clearfix
+                                            img.rounded-circle.user-image.mt-0(src='../assets/images/user/1.jpg', alt='')
+                                            .about
+                                              .name Vincent Porter
+                                               .status
+                                                i.fa.fa-reply.font-danger
+                                                |   5 May, 5:30 PM
+                                          li.clearfix
+                                            img.rounded-circle.user-image(src='../assets/images/user/8.jpg', alt='')
+                                            .about
+                                              .name Kori Thomas
+                                              .status
+                                                i.fa.fa-share.font-success
+                                                |   1 Feb, 6:56 PM
+                                          li.clearfix
+                                            img.rounded-circle.user-image(src='../assets/images/user/2.png', alt='')
+                                            .about
+                                              .name Aiden Chavez
+                                              .status
+                                                i.fa.fa-reply.font-danger
+                                                |   3 June, 1:22 PM
+                                          li.clearfix
+                                            img.rounded-circle.user-image(src='../assets/images/user/4.jpg', alt='')
+                                            .about
+                                              .name Erica Hughes
+                                              .status
+                                                i.fa.fa-share.font-success
+                                                |   5 May, 4:40 PM
+                                          li.clearfix
+                                            img.rounded-circle.user-image.mt-0(src='../assets/images/user/1.jpg', alt='')
+                                            .about
+                                              .name Vincent Porter
+                                              .status
+                                                i.fa.fa-share.font-success
+                                                |   5 May, 5:30 PM
+                                          li.clearfix
+                                            img.rounded-circle.user-image(src='../assets/images/user/8.jpg', alt='')
+                                            .about
+                                              .name Kori Thomas
+                                              .status
+                                                i.fa.fa-reply.font-danger
+                                                |                                                                       1 Feb, 6:56 PM
+                                          li.clearfix
+                                            img.rounded-circle.user-image(src='../assets/images/user/4.jpg', alt='')
+                                            .about
+                                              .name Erica Hughes
+                                              .status
+                                                i.fa.fa-share.font-success
+                                                |   5 May, 4:40 PM
+                                    #info-profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-info-tab')
+                                      .people-list
+                                        .search
+                                          form.theme-form
+                                            .form-group
+                                              input.form-control(type='text', placeholder='Write Status...')
+                                              i.fa.fa-pencil
+                                      .status
+                                        p.font-dark Active
+                                        hr
+                                        p
+                                          | Established fact that a reader will be
+                                          | distracted  
+                                          i.icofont.icofont-emo-heart-eyes.font-danger.f-20
+                                          i.icofont.icofont-emo-heart-eyes.font-danger.f-20.m-l-5
+                                        hr
+                                        p
+                                          | Dolore magna aliqua  
+                                          i.icofont.icofont-emo-rolling-eyes.font-success.f-20
+                                    #info-contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-info-tab')
+                                      .user-profile
+                                        .image
+                                          .avatar.text-center
+                                            img(alt='', src='../assets/images/user/2.png')
+                                          .icon-wrapper
+                                            i.icofont.icofont-pencil-alt-5
+                                        .user-content.text-center
+                                          h5.text-uppercase mark jenco
+                                          .social-media
+                                            ul.list-inline
+                                              li.list-inline-item
+                                                a(href='#')
+                                                  i.fa.fa-facebook
+                                              li.list-inline-item
+                                                a(href='#')
+                                                  i.fa.fa-google-plus
+                                              li.list-inline-item
+                                                a(href='#')
+                                                  i.fa.fa-twitter
+                                              li.list-inline-item
+                                                a(href='#')
+                                                  i.fa.fa-instagram
+                                              li.list-inline-item
+                                                a(href='#')
+                                                  i.fa.fa-rss
+                                          hr
+                                          .follow.text-center
+                                            .row
+                                              .col.border-right
+                                                span Following
+                                                .follow-num 236k
+                                              .col
+                                                span Follower
+                                                .follow-num 3691k
+                                          hr
+                                          .text-center
+                                            p.mb-0 Mark.jecno23@gmail.com
+                                            p.mb-0 +91 365 - 658 - 1236
+                                            p.mb-0 Fax: 123-4560
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

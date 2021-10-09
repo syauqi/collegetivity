@@ -1,0 +1,81 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var date_rangepicker      = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Date Range Picker
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Form Widgets
+                                      li.breadcrumb-item.active Date Range Picker
+                    // Container-fluid starts
+                    .container-fluid
+                      .card
+                        .card-header
+                          h5 Date Range Picker
+                        .card-body
+                          .row.date-range-picker
+                            .col-xl-6
+                              h6.sub-title Date Range Picker
+                              p
+                                | The Date Range Picker use the current value of the input to initialize, and update the input if new dates are chosen.
+                              .theme-form
+                                .form-group
+                                  input.form-control(type='text', name='daterange', value='01/15/2017 - 02/15/2017')
+                            .col-xl-6
+                              h6.sub-title Predefined Ranges
+                              p
+                                | This example shows the option to predefine date ranges that the user can choose from a list.
+                              .theme-form
+                                .form-group
+                                  input#reportrange.form-control(type='text')
+                            .col-xl-6
+                              h6.sub-title Single Date Picker
+                              p
+                                | The Date Range Picker can be turned into a single date picker widget with only one calendar. In this example, dropdowns to select a month and year have also been enabled at the top of the calendar to quickly jump to different months.
+                              .theme-form
+                                .form-group
+                                  input.form-control(type='text', name='birthdate', value='10/24/1989')
+                            .col-xl-6
+                              h6.sub-title Input Initially Empty
+                              p
+                                | If you're using a date range as a filter, you may want to attach a picker to an input but leave it empty by default. This example shows how to accomplish that using the 
+                                code autoUpdateInput
+                                |  setting, and the 
+                                code apply
+                                |  and 
+                                code cancel
+                                |  events.
+                              .theme-form
+                                .form-group
+                                  input.form-control(type='text', name='datefilter', value='')
+                            .col-lg-12
+                              h6.sub-title Date and Time
+                              p
+                                | The Date Range Picker can also be used to select times. Hour, minute and (optional) second dropdowns are added below the calendars. An option exists to set the increment count of the minutes dropdown to e.g. offer only 15-minute or 30-minute increments.
+                              .theme-form
+                                .form-group
+                                  input.form-control(type='text', name='daterange2', value='01/01/2017 1:30 PM - 01/01/2017 2:00 PM')
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

@@ -1,0 +1,154 @@
+/* * Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/* * Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* * Extends the .visuallyhidden class to allow the element to be focusable * when navigated to via the keyboard: h5bp.com/p */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/* * Hide visually and from screenreaders, but maintain layout */
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.noflick {
+	perspective: 1000;
+	backface-visibility: hidden;
+	transform: translate3d(0, 0, 0);
+}
+
+.sticky-note {
+	margin: -15px;
+}
+
+.note {
+	float: left;
+	display: block;
+	position: relative;
+	padding: 1em;
+	width: calc(25% - 30px);
+	min-height: 300px;
+	margin: 15px;
+	border-radius: 5px;
+	background-color: rgba($primary-color, 0.1);
+	transition: transform .15s;
+	z-index: 1;
+	@extend .noflick;
+
+	&:hover {
+		cursor: move;
+	}
+
+	&.ui-draggable-dragging:nth-child(n) {
+		box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .3);
+		transform: scale(1.125) !important;
+		z-index: 100;
+		cursor: move;
+		transition: transform .150s;
+	}
+
+	textarea {
+		background-color: transparent;
+		border: none;
+		resize: vertical;
+		font-style: italic;
+		width: 100%;
+		padding: 5px;
+
+		&:focus {
+			outline: none;
+			border: none;
+			box-shadow: 0 0 0px 1px rgba(0, 0, 0, .2) inset;
+		}
+
+		&.title {
+			font-size: 24px;
+			line-height: 1.2;
+			color: #000000;
+			height: 64px;
+			margin-top: 20px;
+		}
+
+		&.cnt {
+			min-height: 200px;
+		}
+	}
+
+	&:nth-child(2n) {
+		background: rgba(var(--theme-secondary), 0.2);
+	}
+
+	&:nth-child(3n) {
+		background: rgba($success-color, 0.2);
+	}
+
+	&:nth-child(4n) {
+		background: rgba($info-color, 0.1);
+	}
+
+	&:nth-child(5n) {
+		background: rgba($warning-color, 0.2);
+	}
+
+	&:nth-child(6n) {
+		background: rgba($danger-color, 0.3);
+	}
+}
+
+/* Button style  */
+.button {
+	color: #FFFFFF;
+	padding: 1em 2em;
+	text-decoration: none;
+	transition: transform .150s, background .01s;
+	@extend .noflick;
+
+	&.remove {
+		position: absolute;
+		top: 0;
+		right: -10px;
+		color: #999;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.note {
+		min-width: 260px;
+		min-height: 260px;
+	}
+}

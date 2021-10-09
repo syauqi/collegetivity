@@ -1,0 +1,166 @@
+
+/**=====================
+     65. Button Builder color picker CSS Start
+==========================**/
+//urls
+
+$url_1: url(../images/button_builder/colorpicker_overlay.png);
+$url_2: url(../images/button_builder/colorpicker_select.gif);
+
+.button-builder {
+  .colorpicker {
+    width: 325px;
+    height: 176px;
+    overflow: hidden;
+    position: absolute;
+    display: none;
+    z-index: 8;
+    background: $dark-color;
+    border: 1px solid $light-gray;
+    input {
+      background-color: transparent;
+      border: 1px solid transparent;
+      position: absolute;
+      font-size: 10px;
+      color: $light-gray;
+      top: 4px;
+      right: 11px;
+      text-align: right;
+      margin: 0;
+      padding: 0;
+      height: 11px;
+    }
+  }
+  .colorpicker-color {
+    width: 150px;
+    height: 150px;
+    left: 14px;
+    top: 13px;
+    position: absolute;
+    background: $danger-color;
+    overflow: hidden;
+    cursor: crosshair;
+    div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 150px;
+      height: 150px;
+      background: $url_1;
+      div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 11px;
+        height: 11px;
+        overflow: hidden;
+        background: $url_2;
+        margin: -5px 0 0 -5px;
+      }
+    }
+  }
+  .colorpicker-hue {
+    position: absolute;
+    top: 13px;
+    left: 171px;
+    width: 35px;
+    height: 150px;
+    cursor: n-resize;
+    div {
+      position: absolute;
+      width: 35px;
+      height: 9px;
+      overflow: hidden;
+      margin: -4px 0 0;
+      left: 0;
+    }
+  }
+  .colorpicker-new-color {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 213px;
+    top: 13px;
+    background: $danger-color;
+  }
+  .colorpicker-current-color {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 283px;
+    top: 13px;
+    background: $danger-color;
+  }
+  .colorpicker-hex {
+    position: absolute;
+    width: 72px;
+    height: 22px;
+    left: 212px;
+    top: 142px;
+    input {
+      right: 6px;
+    }
+    &.colorpicker-focus {
+      background-position: bottom;
+    }
+  }
+  .colorpicker-field {
+    height: 22px;
+    width: 62px;
+    background-position: top;
+    position: absolute;
+    span {
+      position: absolute;
+      width: 12px;
+      height: 22px;
+      overflow: hidden;
+      top: 0;
+      right: 0;
+      cursor: n-resize;
+    }
+  }
+  .colorpicker-rgb-r {
+    top: 52px;
+    left: 212px;
+  }
+  .colorpicker-rgb-g {
+    top: 82px;
+    left: 212px;
+  }
+  .colorpicker-rgb-b {
+    top: 112px;
+    left: 212px;
+  }
+  .colorpicker_hsb_h {
+    top: 52px;
+    left: 282px;
+  }
+  .colorpicker_hsb_s {
+    top: 82px;
+    left: 282px;
+  }
+  .colorpicker-hsb-b {
+    top: 112px;
+    left: 282px;
+  }
+  .colorpicker-submit {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 322px;
+    top: 142px;
+    overflow: hidden;
+    &.colorpicker-focus {
+      background-position: bottom;
+    }
+  }
+  .colorpicker-focus {
+    background-position: center;
+  }
+  .colorpicker-slider {
+    background-position: bottom;
+  }
+}
+/**=====================
+  65. Button Builder colorpicker CSS start
+==========================**/

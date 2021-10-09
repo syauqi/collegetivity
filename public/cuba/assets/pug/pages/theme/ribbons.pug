@@ -1,0 +1,348 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Ribbons
+
+                                .col-6
+                                     ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Bonus Ui
+                                      li.breadcrumb-item.active Ribbons
+                    // Container-fluid starts
+                    .container-fluid
+                      // ribbon left (default) side
+                      .row
+                        .col-sm-12.col-xl-12
+                          .card
+                            .card-header
+                              h5 Colored breadcrumb
+                              span
+                                | use class 
+                                code .breadcrumb-colored .bg-primary
+                            .card-body
+                              .row
+                                .col-sm-12.col-xl-4
+                                  .ribbon-wrapper
+                                    .ribbon.ribbon-primary.ribbon-space-bottom Ribbon
+                                    p
+                                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                                .col-sm-12.col-xl-4
+                                  .ribbon-wrapper
+                                    .ribbon.ribbon-primary.ribbon-space-bottom Ribbon
+                                    p
+                                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                                .col-sm-12.col-xl-4
+                                  .ribbon-wrapper
+                                    .ribbon.ribbon-primary.ribbon-space-bottom Ribbon
+                                    p
+                                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        // demo ribbon end here
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-primary Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-secondary Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-success Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-info Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-warning Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-danger Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                      // ribbon right side
+                      .row
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-primary.ribbon-right Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-secondary.ribbon-right Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-success.ribbon-right Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-info.ribbon-right Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-warning.ribbon-right Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-danger.ribbon-right Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                      // ribbon vertical left side
+                      .row
+                        .col-sm-14.col-xl-4
+                          .ribbon-vertical-left-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-primary.ribbon-vertical-left
+                                i.icofont.icofont-love
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-vertical-left-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-secondary.ribbon-vertical-left
+                                i.icon-gift
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-vertical-left-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-success.ribbon-vertical-left
+                                i.icon-signal
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                      // ribbon vertical right side
+                      .row
+                        .col-sm-14.col-xl-4
+                          .ribbon-vertical-right-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-primary.ribbon-vertical-right
+                                i.fa.fa-chain-broken
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-vertical-right-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-secondary.ribbon-vertical-right
+                                i.fa.fa-ticket
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-vertical-right-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-success.ribbon-vertical-right
+                                i.fa.fa-taxi
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                      // bookmark ribbon left side
+                      .row
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-bookmark.ribbon-primary Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-bookmark.ribbon-secondary Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-bookmark.ribbon-success Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                      // bookmark ribbon right side
+                      .row
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper-right.card
+                            .card-body
+                              .ribbon.ribbon-bookmark.ribbon-right.ribbon-primary Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper-right.card
+                            .card-body
+                              .ribbon.ribbon-bookmark.ribbon-right.ribbon-secondary Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper-right.card
+                            .card-body
+                              .ribbon.ribbon-bookmark.ribbon-right.ribbon-success Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                      // ribbon bookmark vertical left side
+                      .row
+                        .col-sm-14.col-xl-4
+                          .ribbon-vertical-left-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-bookmark.ribbon-vertical-left.ribbon-primary
+                                i.icofont.icofont-love
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-vertical-left-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-bookmark.ribbon-vertical-left.ribbon-secondary
+                                i.icon-gift
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-vertical-left-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-bookmark.ribbon-vertical-left.ribbon-success
+                                i.icon-signal
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                      // ribbon bookmark vertical right side
+                      .row
+                        .col-sm-14.col-xl-4
+                          .ribbon-vertical-right-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-bookmark.ribbon-vertical-right.ribbon-primary
+                                i.icofont.icofont-love
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-vertical-right-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-bookmark.ribbon-vertical-right.ribbon-secondary
+                                i.icon-gift
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-vertical-right-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-bookmark.ribbon-vertical-right.ribbon-success
+                                i.icon-signal
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                      // bookmark ribbon left side
+                      .row
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-clip.ribbon-primary Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-clip.ribbon-secondary Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper.card
+                            .card-body
+                              .ribbon.ribbon-clip.ribbon-success Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                      // bookmark ribbon right side
+                      .row
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper-right.card
+                            .card-body
+                              .ribbon.ribbon-clip-right.ribbon-right.ribbon-primary Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper-right.card
+                            .card-body
+                              .ribbon.ribbon-clip-right.ribbon-right.ribbon-secondary Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper-right.card
+                            .card-body
+                              .ribbon.ribbon-clip-right.ribbon-right.ribbon-success Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                      // bookmark ribbon left side
+                      .row
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper-bottom.card
+                            .card-body
+                              .ribbon.ribbon-clip-bottom.ribbon-primary Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper-bottom.card
+                            .card-body
+                              .ribbon.ribbon-clip-bottom.ribbon-secondary Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper-bottom.card
+                            .card-body
+                              .ribbon.ribbon-clip-bottom.ribbon-success Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                      // bookmark ribbon left side
+                      .row
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper-bottom.card
+                            .card-body
+                              .ribbon.ribbon-clip-bottom-right.ribbon-primary Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper-bottom.card
+                            .card-body
+                              .ribbon.ribbon-clip-bottom-right.ribbon-secondary Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        .col-sm-14.col-xl-4
+                          .ribbon-wrapper-bottom.card
+                            .card-body
+                              .ribbon.ribbon-clip-bottom-right.ribbon-success Ribbon
+                              p
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

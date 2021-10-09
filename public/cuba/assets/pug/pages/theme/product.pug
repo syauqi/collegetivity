@@ -1,0 +1,1713 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var range_slider          = true;
+- var page_range_slider     = true;
+- var touchspin             = true;
+- var select2               = true;
+- var page_select2          = true;
+- var product_tab           = true;
+- var owlcarousel           = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Product
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item ECommerce
+                                      li.breadcrumb-item.active Product
+                    // Container-fluid starts
+                    .container-fluid.product-wrapper
+                        .product-grid
+                          .feature-products
+                            .row
+                              .col-md-6.products-total
+                                .square-product-setting.d-inline-block
+                                  a.icon-grid.grid-layout-view(href='#', data-original-title='', title='')
+                                    i(data-feather='grid')
+                                .square-product-setting.d-inline-block
+                                  a.icon-grid.m-0.list-layout-view(href='#', data-original-title='', title='')
+                                    i(data-feather='list')
+                                span.d-none-productlist.filter-toggle     
+                                      | Filters
+                                      span.ml-2
+                                        i(data-feather='chevron-down').toggle-data
+                                .grid-options.d-inline-block
+                                  ul
+                                    li
+                                      a.product-2-layout-view(href='#', data-original-title='', title='')
+                                        span.line-grid.line-grid-1.bg-primary
+                                        span.line-grid.line-grid-2.bg-primary
+                                    li
+                                      a.product-3-layout-view(href='#', data-original-title='', title='')
+                                        span.line-grid.line-grid-3.bg-primary
+                                        span.line-grid.line-grid-4.bg-primary
+                                        span.line-grid.line-grid-5.bg-primary
+                                    li
+                                      a.product-4-layout-view(href='#', data-original-title='', title='')
+                                        span.line-grid.line-grid-6.bg-primary
+                                        span.line-grid.line-grid-7.bg-primary
+                                        span.line-grid.line-grid-8.bg-primary
+                                        span.line-grid.line-grid-9.bg-primary
+                                    li
+                                      a.product-6-layout-view(href='#', data-original-title='', title='')
+                                        span.line-grid.line-grid-10.bg-primary
+                                        span.line-grid.line-grid-11.bg-primary
+                                        span.line-grid.line-grid-12.bg-primary
+                                        span.line-grid.line-grid-13.bg-primary
+                                        span.line-grid.line-grid-14.bg-primary
+                                        span.line-grid.line-grid-15.bg-primary
+                              .col-md-6.text-right
+                                span.f-w-600.m-r-5 Showing Products 1 - 24 Of 200 Results
+                                .select2-drpdwn-product.select-options.d-inline-block
+                                  select.form-control.btn-square(name='select')
+                                    option(value='opt1') Featured
+                                    option(value='opt2') Lowest Prices
+                                    option(value='opt3') Highest Prices
+                            .row
+                              .col-sm-3
+                                .product-sidebar
+                                  .filter-section
+                                    .card
+                                      .card-header
+                                        h6.mb-0.f-w-600
+                                          | Filters
+                                          span.pull-right
+                                            i.fa.fa-chevron-down.toggle-data
+                                      .left-filter
+                                        .card-body.filter-cards-view.animate-chk
+                                          .product-filter
+                                            h6.f-w-600 Category
+                                            .checkbox-animated.mt-0
+                                              label.d-block(for='edo-ani5')
+                                                input#edo-ani5.radio_animated(type='radio', data-original-title='', title='')
+                                                | Man Shirt
+                                              label.d-block(for='edo-ani6')
+                                                input#edo-ani6.radio_animated(type='radio', data-original-title='', title='')
+                                                | Man Jeans
+                                              label.d-block(for='edo-ani7')
+                                                input#edo-ani7.radio_animated(type='radio', data-original-title='', title='')
+                                                | Woman Top
+                                              label.d-block(for='edo-ani8')
+                                                input#edo-ani8.radio_animated(type='radio', data-original-title='', title='')
+                                                | Woman Jeans
+                                              label.d-block(for='edo-ani9')
+                                                input#edo-ani9.radio_animated(type='radio', data-original-title='', title='')
+                                                | Man T-shirt
+                                          .product-filter
+                                            h6.f-w-600 Brand
+                                            .checkbox-animated.mt-0
+                                              label.d-block(for='chk-ani')
+                                                input#chk-ani.checkbox_animated(type='checkbox', data-original-title='', title='')
+                                                |  Levi's
+                                              label.d-block(for='chk-ani1')
+                                                input#chk-ani1.checkbox_animated(type='checkbox', data-original-title='', title='')
+                                                | Diesel
+                                              label.d-block(for='chk-ani2')
+                                                input#chk-ani2.checkbox_animated(type='checkbox', data-original-title='', title='')
+                                                | Lee
+                                              label.d-block(for='chk-ani3')
+                                                input#chk-ani3.checkbox_animated(type='checkbox', data-original-title='', title='')
+                                                | Hudson
+                                              label.d-block(for='chk-ani4')
+                                                input#chk-ani4.checkbox_animated(type='checkbox', data-original-title='', title='')
+                                                | Denizen
+                                              label.d-block(for='chk-ani5')
+                                                input#chk-ani5.checkbox_animated(type='checkbox', data-original-title='', title='')
+                                                | Spykar
+                                          .product-filter.slider-product
+                                            h6.f-w-600 Colors
+                                            .color-selector
+                                              ul
+                                                li.white
+                                                li.gray
+                                                li.black
+                                                li.orange
+                                                li.green
+                                                li.pink
+                                                li.yellow
+                                                li.blue
+                                                li.red
+                                          .product-filter.pb-0
+                                            h6.f-w-600 Price
+                                            input#u-range-03(type='text')
+                                            h6.f-w-600 New Products
+                                          .product-filter.pb-0.new-products
+                                            #testimonial.owl-carousel.owl-theme
+                                              .item
+                                                .product-box.row
+                                                  .product-img.col-md-5
+                                                    img.img-fluid.img-100(src='../assets/images/ecommerce/01.jpg', alt='', data-original-title='', title='')
+                                                  .product-details.col-md-7.text-left
+                                                    span
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning
+                                                    p.mb-0 Fancy Shirt
+                                                    .product-price $100.00
+                                                .product-box.row
+                                                  .product-img.col-md-5
+                                                    img.img-fluid.img-100(src='../assets/images/ecommerce/02.jpg', alt='', data-original-title='', title='')
+                                                  .product-details.col-md-7.text-left
+                                                    span
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning
+                                                    p.mb-0 Fancy Shirt
+                                                    .product-price $100.00
+                                                .product-box.row
+                                                  .product-img.col-md-5
+                                                    img.img-fluid.img-100(src='../assets/images/ecommerce/03.jpg', alt='', data-original-title='', title='')
+                                                  .product-details.col-md-7.text-left
+                                                    span
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning
+                                                    p.mb-0 Fancy Shirt
+                                                    .product-price $100.00
+                                              .item
+                                                .product-box.row
+                                                  .product-img.col-md-5
+                                                    img.img-fluid.img-100(src='../assets/images/ecommerce/01.jpg', alt='', data-original-title='', title='')
+                                                  .product-details.col-md-7.text-left
+                                                    span
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning
+                                                    p.mb-0 Fancy Shirt
+                                                    .product-price $100.00
+                                                .product-box.row
+                                                  .product-img.col-md-5
+                                                    img.img-fluid.img-100(src='../assets/images/ecommerce/02.jpg', alt='', data-original-title='', title='')
+                                                  .product-details.col-md-7.text-left
+                                                    span
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning
+                                                    p.mb-0 Fancy Shirt
+                                                    .product-price $100.00
+                                                .product-box.row
+                                                  .product-img.col-md-5
+                                                    img.img-fluid.img-100(src='../assets/images/ecommerce/03.jpg', alt='', data-original-title='', title='')
+                                                  .product-details.col-md-7.text-left
+                                                    span
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning.mr-1
+                                                      i.fa.fa-star.font-warning
+                                                    p.mb-0 Fancy Shirt
+                                                    .product-price $100.00  
+                                          .product-filter.text-center
+                                            img.img-fluid.banner-product(src='../assets/images/ecommerce/banner.jpg', alt='', data-original-title='', title='')
+                              .col-md-9.col-sm-12
+                                form
+                                  .form-group.m-0
+                                    input.form-control(type='search', placeholder='Search..', data-original-title='', title='')
+                                    i.fa.fa-search
+                          .product-wrapper-grid
+                            .row
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Man's Shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      .ribbon.ribbon-danger Sale
+                                      img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter1')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter1', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter2')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter2.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter2', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        |  200$
+                                        del $350.00    
+                                        
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      .ribbon.ribbon-success.ribbon-right 50%
+                                      img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter3')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter3.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter3', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×  
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Man's Suit
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | 200$
+                                        del $350.00    
+                                        
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter4')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter4.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter4', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×  
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price                                           
+                                        | $26.00 
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .ribbon.ribbon-secondary.ribbon-vertical-left
+                                      i.icon-gift
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter5')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter5.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter5', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×  
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                           
+                                        | $26.00 
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter6')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter6.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter6', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×  
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                           
+                                        | $26.00 
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter7')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter7.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter7', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×  
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter8')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter8.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter8', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×  
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter9')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter9.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter9', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×  
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter10')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter10.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter10', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×            
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter11')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter11.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter11', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×          
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      .ribbon.ribbon-bookmark.ribbon-vertical-right.ribbon-info
+                                        i.icofont.icofont-love
+                                      img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter12')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter12.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter12', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×                    
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter13')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter13.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter13', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×                              
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      .ribbon.ribbon-clip.ribbon-warning Hot
+                                      img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter14')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter14.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter14', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×                              
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter15')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter15.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter15', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×                                        
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter16')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter16.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter16', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×                                                  
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter17')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter17.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter17', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×                                                            
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter18')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter18.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter18', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×                                                                    
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00                                              
+                                        del $350.00    
+
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter19')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter19.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter19', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×                                                                                
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter20')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter20.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter20', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×                                                                                          
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter21')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter21.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter21', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×                                                                                                    
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter22')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter22.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter22', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×                                                                                                              
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            button.btn(type='button')
+                                              i.icon-shopping-cart
+                                          li
+                                            button.btn(type='button', data-toggle='modal', data-target='#exampleModalCenter23')
+                                              i.icon-eye
+                                          li
+                                            button.btn(type='button')
+                                             i.icofont.icofont-law-alt-2
+                                    #exampleModalCenter23.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter23', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-md-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-md-6.text-left
+                                                h4 Woman T-shirt
+                                                .product-price
+                                                  | $26.00
+                                                  del $350.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    button.btn.btn-primary(type='button') Add to Cart
+                                                    button.btn.btn-primary(type='button') View Details
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×                                                                                                                        
+                                    .product-details
+                                      .rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                      h4 Woman T-shirt
+                                      p Simply dummy text of the printing.
+                                      .product-price
+                                        | $26.00 
+                                        del $350.00    
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

@@ -1,0 +1,253 @@
+/**=====================
+    13.  Email Application  CSS Start
+==========================**/
+%email-mixin {
+  background: transparent;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.email-wrap {
+  .row {
+    .col-xl-3 {
+      &+.col-xl-3 {
+        padding-right: 0;
+      }
+    }
+
+    .col-xl-6 {
+      padding-left: 0;
+    }
+  }
+
+  .email-app-sidebar {
+    .media img {
+      border: 2px solid $light-gray;
+    }
+
+    .main-menu {
+      >li {
+        width: 100%;
+        text-align: left;
+
+        a {
+          line-height: 39px;
+          text-transform: uppercase;
+          border-radius: 3px;
+
+          i {
+            margin-right: 10px;
+          }
+
+          &.active>a {
+            color: $black;
+          }
+
+          &:hover {
+            background-color: #f5f6f9;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    ul li {
+      a {
+        display: flex;
+        padding-left: 20px;
+        align-items: center;
+
+        > {
+          .title {
+            width: 100%;
+            color: $dark-color;
+          }
+
+          .badge {
+            align-self: center;
+            color: $dark-gray;
+          }
+        }
+      }
+    }
+  }
+
+  .email-left-aside {
+    float: left;
+    width: 100%;
+
+    .card-body {
+      padding: 20px;
+    }
+  }
+
+  .email-right-aside {
+    height: calc(100% - 30px);
+
+    .email-body {
+      .inbox {
+        overflow: auto;
+
+        .media {
+          padding: 20px;
+
+          &.active {
+            background-color: lighten($light-color, 4%);
+          }
+        }
+      }
+    }
+
+    .radius-left {
+      border-radius: 8px;
+      height: 100%;
+    }
+  }
+
+  .btn-mail {
+    border-radius: 2px;
+    text-align: left;
+    padding: 13px 15px;
+    margin: 20px 0 20px;
+    letter-spacing: 1px;
+    line-height: 12px !important;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: $dark-gray;
+  }
+
+  .media-body {
+    margin-top: 5px;
+
+    h6 {
+      margin-bottom: 2px;
+      color: $theme-font-color;
+      margin-top: 3px;
+
+      small {
+        span {
+          color: #777777;
+        }
+      }
+    }
+
+    p {
+      color: $theme-body-sub-title-color;
+      font-size: 12px;
+    }
+  }
+
+  .email-top {
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 49px;
+
+    h5 {
+      margin-bottom: 0;
+      padding: 12px 0;
+    }
+
+    .d-flex {
+      padding: 13px 0;
+    }
+  }
+
+  .email-wrapper {
+    padding: 20px;
+
+    hr {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .d-inline-block {
+      width: 100%;
+    }
+
+    h6 {
+      margin-bottom: 11px;
+      float: left;
+    }
+
+    .right-download {
+      float: right;
+    }
+
+    p {
+      &+p {
+        margin-bottom: 20px;
+      }
+    }
+
+    h5 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .email-content .email-top .user-emailid:after {
+    content: "";
+    position: relative;
+    height: 20px;
+    width: 1px;
+    right: 0;
+    top: 3px;
+    z-index: 2;
+    border: 1px solid $light-semi-gray;
+    float: right;
+    padding: 0;
+    margin: 0 20px;
+  }
+
+  .email-body {
+    .attachment {
+      ul {
+        li {
+          img {
+            margin-bottom: 20px;
+            width: 140px;
+            height: 140px;
+          }
+        }
+      }
+
+      .list-inline {
+        .list-inline-item {
+          padding-right: 13px;
+        }
+      }
+
+    }
+
+    .email-compose {
+      .cke_contents.cke_reset {
+        max-height: 178px;
+        width: 100%;
+      }
+
+      .email-top {
+        h4 {
+          padding: 11px 0;
+        }
+      }
+
+      .compose-border {
+        margin: -1px;
+
+        .btn-middle {
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+
+  .actions li {
+    display: inline-block;
+    margin-right: 25px;
+  }
+}
+
+/**=====================
+    13.  Email Application  CSS Ends
+==========================**/

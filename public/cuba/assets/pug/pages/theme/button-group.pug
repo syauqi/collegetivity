@@ -1,0 +1,740 @@
+- var height_equal          = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Button Group
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Buttons
+                                      li.breadcrumb-item.active Button Group
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-12
+                          .card
+                            .card-header
+                              h5 Basic button group
+                            .card-body.btn-group-showcase
+                              .row
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-primary(type='button') Left
+                                    button.btn.btn-primary(type='button') Middle
+                                    button.btn.btn-primary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-secondary(type='button') Left
+                                    button.btn.btn-secondary(type='button') Middle
+                                    button.btn.btn-secondary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-success(type='button') Left
+                                    button.btn.btn-success(type='button') Middle
+                                    button.btn.btn-success(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-info(type='button') Left
+                                    button.btn.btn-info(type='button') Middle
+                                    button.btn.btn-info(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-warning(type='button') Left
+                                    button.btn.btn-warning(type='button') Middle
+                                    button.btn.btn-warning(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-danger(type='button') Left
+                                    button.btn.btn-danger(type='button') Middle
+                                    button.btn.btn-danger(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-light(type='button') Left
+                                    button.btn.btn-light(type='button') Middle
+                                    button.btn.btn-light(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12.button-group-mb-sm
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-dark(type='button') Left
+                                    button.btn.btn-dark(type='button') Middle
+                                    button.btn.btn-dark(type='button') Right
+                        .col-12
+                          .card
+                            .card-header
+                              h5 Edges button group
+                            .card-body.btn-group-showcase
+                              .row
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-primary(type='button') Left
+                                    button.btn.btn-primary(type='button') Middle
+                                    button.btn.btn-primary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-secondary(type='button') Left
+                                    button.btn.btn-secondary(type='button') Middle
+                                    button.btn.btn-secondary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-success(type='button') Left
+                                    button.btn.btn-success(type='button') Middle
+                                    button.btn.btn-success(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-info(type='button') Left
+                                    button.btn.btn-info(type='button') Middle
+                                    button.btn.btn-info(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-warning(type='button') Left
+                                    button.btn.btn-warning(type='button') Middle
+                                    button.btn.btn-warning(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-danger(type='button') Left
+                                    button.btn.btn-danger(type='button') Middle
+                                    button.btn.btn-danger(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-light(type='button') Left
+                                    button.btn.btn-light(type='button') Middle
+                                    button.btn.btn-light(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12.button-group-mb-sm
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-dark(type='button') Left
+                                    button.btn.btn-dark(type='button') Middle
+                                    button.btn.btn-dark(type='button') Right
+                        .col-12
+                          .card
+                            .card-header
+                              h5 Flat button group
+                            .card-body.btn-group-showcase
+                              .row
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-primary(type='button') Left
+                                    button.btn.btn-primary(type='button') Middle
+                                    button.btn.btn-primary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-secondary(type='button') Left
+                                    button.btn.btn-secondary(type='button') Middle
+                                    button.btn.btn-secondary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-success(type='button') Left
+                                    button.btn.btn-success(type='button') Middle
+                                    button.btn.btn-success(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-info(type='button') Left
+                                    button.btn.btn-info(type='button') Middle
+                                    button.btn.btn-info(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-dark(type='button') Left
+                                    button.btn.btn-dark(type='button') Middle
+                                    button.btn.btn-dark(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-warning(type='button') Left
+                                    button.btn.btn-warning(type='button') Middle
+                                    button.btn.btn-warning(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-danger(type='button') Left
+                                    button.btn.btn-danger(type='button') Middle
+                                    button.btn.btn-danger(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-light(type='button') Left
+                                    button.btn.btn-light(type='button') Middle
+                                    button.btn.btn-light(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12.button-group-mb-sm
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-dark(type='button') Left
+                                    button.btn.btn-dark(type='button') Middle
+                                    button.btn.btn-dark(type='button') Right
+                        .col-12
+                          .card
+                            .card-header
+                              h5 large Button group
+                            .card-body.btn-group-showcase
+                              .row
+                                .col-xl-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-primary.btn-lg(type='button') Left
+                                    button.btn.btn-primary.btn-lg(type='button') Middle
+                                    button.btn.btn-primary.btn-lg(type='button') Right
+                                .col-xl-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-secondary.btn-lg(type='button') Left
+                                    button.btn.btn-secondary.btn-lg(type='button') Middle
+                                    button.btn.btn-secondary.btn-lg(type='button') Right
+                                .col-xl-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-success.btn-lg(type='button') Left
+                                    button.btn.btn-success.btn-lg(type='button') Middle
+                                    button.btn.btn-success.btn-lg(type='button') Right
+                                .col-xl-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-info.btn-lg(type='button') Left
+                                    button.btn.btn-info.btn-lg(type='button') Middle
+                                    button.btn.btn-info.btn-lg(type='button') Right
+                                .col-xl-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-warning.btn-lg(type='button') Left
+                                    button.btn.btn-warning.btn-lg(type='button') Middle
+                                    button.btn.btn-warning.btn-lg(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-danger.btn-lg(type='button') Left
+                                    button.btn.btn-danger.btn-lg(type='button') Middle
+                                    button.btn.btn-danger.btn-lg(type='button') Right
+                                .col-xl-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-light.btn-lg(type='button') Left
+                                    button.btn.btn-light.btn-lg(type='button') Middle
+                                    button.btn.btn-light.btn-lg(type='button') Right
+                                .col-xl-6.col-sm-12.button-group-mb-sm
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-dark.btn-lg(type='button') Left
+                                    button.btn.btn-dark.btn-lg(type='button') Middle
+                                    button.btn.btn-dark.btn-lg(type='button') Right
+                        .col-12
+                          .card
+                            .card-header
+                              h5 large Edges Button group
+                            .card-body.btn-group-showcase
+                              .row
+                                .col-xl-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-primary.btn-lg(type='button') Left
+                                    button.btn.btn-primary.btn-lg(type='button') Middle
+                                    button.btn.btn-primary.btn-lg(type='button') Right
+                                .col-xl-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-secondary.btn-lg(type='button') Left
+                                    button.btn.btn-secondary.btn-lg(type='button') Middle
+                                    button.btn.btn-secondary.btn-lg(type='button') Right
+                                .col-xl-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-success.btn-lg(type='button') Left
+                                    button.btn.btn-success.btn-lg(type='button') Middle
+                                    button.btn.btn-success.btn-lg(type='button') Right
+                                .col-xl-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-info.btn-lg(type='button') Left
+                                    button.btn.btn-info.btn-lg(type='button') Middle
+                                    button.btn.btn-info.btn-lg(type='button') Right
+                                .col-xl-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-warning.btn-lg(type='button') Left
+                                    button.btn.btn-warning.btn-lg(type='button') Middle
+                                    button.btn.btn-warning.btn-lg(type='button') Right
+                                .col-xl-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-danger.btn-lg(type='button') Left
+                                    button.btn.btn-danger.btn-lg(type='button') Middle
+                                    button.btn.btn-danger.btn-lg(type='button') Right
+                                .col-xl-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-light.btn-lg(type='button') Left
+                                    button.btn.btn-light.btn-lg(type='button') Middle
+                                    button.btn.btn-light.btn-lg(type='button') Right
+                                .col-xl-6.col-sm-12.button-group-mb-sm
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-dark.btn-lg(type='button') Left
+                                    button.btn.btn-dark.btn-lg(type='button') Middle
+                                    button.btn.btn-dark.btn-lg(type='button') Right
+                        .col-12
+                          .card
+                            .card-header
+                              h5 Outline Custom button group
+                            .card-body.btn-group-showcase
+                              .row
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-primary(type='button') Left
+                                    button.btn.btn-primary(type='button') Middle
+                                    button.btn.btn-outline-primary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-secondary(type='button') Left
+                                    button.btn.btn-secondary(type='button') Middle
+                                    button.btn.btn-outline-secondary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-success(type='button') Left
+                                    button.btn.btn-success(type='button') Middle
+                                    button.btn.btn-outline-success(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-info(type='button') Left
+                                    button.btn.btn-info(type='button') Middle
+                                    button.btn.btn-outline-info(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-warning(type='button') Left
+                                    button.btn.btn-warning(type='button') Middle
+                                    button.btn.btn-outline-warning(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-danger(type='button') Left
+                                    button.btn.btn-danger(type='button') Middle
+                                    button.btn.btn-outline-danger(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-light.txt-dark(type='button') Left
+                                    button.btn.btn-light(type='button') Middle
+                                    button.btn.btn-outline-light.txt-dark(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12.button-group-mb-sm
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-dark(type='button') Left
+                                    button.btn.btn-dark(type='button') Middle
+                                    button.btn.btn-outline-dark(type='button') Right
+                        .col-12
+                          .card
+                            .card-header
+                              h5 Outline custom button group
+                            .card-body.btn-group-showcase
+                              .row
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-primary(type='button') Left
+                                    button.btn.btn-outline-primary(type='button') Middle
+                                    button.btn.btn-primary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-secondary(type='button') Left
+                                    button.btn.btn-outline-secondary(type='button') Middle
+                                    button.btn.btn-secondary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-success(type='button') Left
+                                    button.btn.btn-outline-success(type='button') Middle
+                                    button.btn.btn-success(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-info(type='button') Left
+                                    button.btn.btn-outline-info(type='button') Middle
+                                    button.btn.btn-info(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-warning(type='button') Left
+                                    button.btn.btn-outline-warning(type='button') Middle
+                                    button.btn.btn-warning(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-danger(type='button') Left
+                                    button.btn.btn-outline-danger(type='button') Middle
+                                    button.btn.btn-danger(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-light(type='button') Left
+                                    button.btn.btn-outline-light.txt-dark(type='button') Middle
+                                    button.btn.btn-light(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12.button-group-mb-sm
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-dark(type='button') Left
+                                    button.btn.btn-outline-dark(type='button') Middle
+                                    button.btn.btn-dark(type='button') Right
+                        .col-12
+                          .card
+                            .card-header
+                              h5 Outline button group
+                            .card-body.btn-group-showcase
+                              .row
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-primary(type='button') Left
+                                    button.btn.btn-outline-primary(type='button') Middle
+                                    button.btn.btn-outline-primary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-secondary(type='button') Left
+                                    button.btn.btn-outline-secondary(type='button') Middle
+                                    button.btn.btn-outline-secondary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-success(type='button') Left
+                                    button.btn.btn-outline-success(type='button') Middle
+                                    button.btn.btn-outline-success(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-info(type='button') Left
+                                    button.btn.btn-outline-info(type='button') Middle
+                                    button.btn.btn-outline-info(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-warning(type='button') Left
+                                    button.btn.btn-outline-warning(type='button') Middle
+                                    button.btn.btn-outline-warning(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-danger(type='button') Left
+                                    button.btn.btn-outline-danger(type='button') Middle
+                                    button.btn.btn-outline-danger(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-light.txt-dark(type='button') Left
+                                    button.btn.btn-outline-light.txt-dark(type='button') Middle
+                                    button.btn.btn-outline-light.txt-dark(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12.button-group-mb-sm
+                                  .btn-group(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-dark(type='button') Left
+                                    button.btn.btn-outline-dark(type='button') Middle
+                                    button.btn.btn-outline-dark(type='button') Right
+                        .col-12
+                          .card
+                            .card-header
+                              h5 Outline Edges button
+                            .card-body.btn-group-showcase
+                              .row
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-primary(type='button') Left
+                                    button.btn.btn-outline-primary(type='button') Middle
+                                    button.btn.btn-outline-primary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-secondary(type='button') Left
+                                    button.btn.btn-outline-secondary(type='button') Middle
+                                    button.btn.btn-outline-secondary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-success(type='button') Left
+                                    button.btn.btn-outline-success(type='button') Middle
+                                    button.btn.btn-outline-success(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-info(type='button') Left
+                                    button.btn.btn-outline-info(type='button') Middle
+                                    button.btn.btn-outline-info(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-warning(type='button') Left
+                                    button.btn.btn-outline-warning(type='button') Middle
+                                    button.btn.btn-outline-warning(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-danger(type='button') Left
+                                    button.btn.btn-outline-danger(type='button') Middle
+                                    button.btn.btn-outline-danger(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-light.txt-dark(type='button') Left
+                                    button.btn.btn-outline-light.txt-dark(type='button') Middle
+                                    button.btn.btn-outline-light.txt-dark(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12.button-group-mb-sm
+                                  .btn-group.btn-group-pill(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-dark(type='button') Left
+                                    button.btn.btn-outline-dark(type='button') Middle
+                                    button.btn.btn-outline-dark(type='button') Right
+                        .col-12
+                          .card
+                            .card-header
+                              h5 Outline flat button
+                            .card-body.btn-group-showcase
+                              .row
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-primary(type='button') Left
+                                    button.btn.btn-outline-primary(type='button') Middle
+                                    button.btn.btn-outline-primary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-secondary(type='button') Left
+                                    button.btn.btn-outline-secondary(type='button') Middle
+                                    button.btn.btn-outline-secondary(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-success(type='button') Left
+                                    button.btn.btn-outline-success(type='button') Middle
+                                    button.btn.btn-outline-success(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-info(type='button') Left
+                                    button.btn.btn-outline-info(type='button') Middle
+                                    button.btn.btn-outline-info(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-warning(type='button') Left
+                                    button.btn.btn-outline-warning(type='button') Middle
+                                    button.btn.btn-outline-warning(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-danger(type='button') Left
+                                    button.btn.btn-outline-danger(type='button') Middle
+                                    button.btn.btn-outline-danger(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-light.txt-dark(type='button') Left
+                                    button.btn.btn-outline-light.txt-dark(type='button') Middle
+                                    button.btn.btn-outline-light.txt-dark(type='button') Right
+                                .col-xl-4.col-md-6.col-sm-12.button-group-mb-sm
+                                  .btn-group.btn-group-square(role='group', aria-label='Basic example')
+                                    button.btn.btn-outline-dark(type='button') Left
+                                    button.btn.btn-outline-dark(type='button') Middle
+                                    button.btn.btn-outline-dark(type='button') Right
+                        .col-12
+                          .card
+                            .card-header
+                              h5 Radio button group
+                              span
+                                | Add 
+                                code .active
+                                |  for active state and
+                                code .disabled
+                                |  class or 
+                                code disabled="disabled"
+                                |  attribute
+                            .card-body.btn-group-showcase
+                              .row
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-radio
+                                    .btn-group(data-toggle='buttons')
+                                      div.btn.btn-primary
+                                        .radio.radio-primary
+                                          input#radio7(type='radio', name='radio1', value='option1')
+                                          label(for='radio7') Option 1
+                                      div.btn.btn-primary.active
+                                        .radio.radio-primary
+                                          input#radio8(type='radio', name='radio1', value='option1', checked='')
+                                          label(for='radio8') Option 2
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-radio
+                                    .btn-group(data-toggle='buttons')
+                                      div.btn.btn-secondary
+                                        .radio.radio-secondary
+                                          input#radio11(type='radio', name='radio2', value='option1')
+                                          label(for='radio11') Option 1
+                                      div.btn.btn-secondary.active
+                                        .radio.radio-secondary
+                                          input#radio12(type='radio', name='radio2', value='option1', checked='')
+                                          label(for='radio12') Option 2
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-radio
+                                    .btn-group(data-toggle='buttons')
+                                      div.btn.btn-success
+                                        .radio.radio-success
+                                          input#radio13(type='radio', name='radio3', value='option1')
+                                          label(for='radio13') Option 1
+                                      div.btn.btn-success.active
+                                        .radio.radio-success
+                                          input#radio14(type='radio', name='radio3', value='option1', checked='')
+                                          label(for='radio14') Option 2
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-radio
+                                    .btn-group(data-toggle='buttons')
+                                      div.btn.btn-info
+                                        .radio.radio-info
+                                          input#radio15(type='radio', name='radio4', value='option1')
+                                          label(for='radio15') Option 1
+                                      div.btn.btn-info.active
+                                        .radio.radio-info
+                                          input#radio16(type='radio', name='radio4', value='option1', checked='')
+                                          label(for='radio16') Option 2
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-radio
+                                    .btn-group(data-toggle='buttons')
+                                      div.btn.btn-warning
+                                        .radio.radio-warning
+                                          input#radio17(type='radio', name='radio5', value='option1')
+                                          label(for='radio17') Option 1
+                                      div.btn.btn-warning.active
+                                        .radio.radio-warning
+                                          input#radio18(type='radio', name='radio5', value='option1', checked='')
+                                          label(for='radio18') Option 2
+                                .col-xl-4.col-md-6.col-sm-12
+                                  .btn-radio
+                                    .btn-group(data-toggle='buttons')
+                                      div.btn.btn-danger
+                                        .radio.radio-danger
+                                          input#radio20(type='radio', name='radio6', value='option1')
+                                          label(for='radio20') Option 1
+                                      div.btn.btn-danger.active
+                                        .radio.radio-danger
+                                          input#radio22(type='radio', name='radio6', value='option1', checked='')
+                                          label(for='radio22') Option 2
+                                .col-xl-4.col-md-6.col-sm-12.button-group-mb-sm
+                                  .btn-radio
+                                    .btn-group(data-toggle='buttons')
+                                      div.btn.btn-light.txt-dark
+                                        .radio.radio-light
+                                          input#radio23(type='radio', name='radio7', value='option1')
+                                          label(for='radio23') Option 1
+                                      div.btn.btn-light.active.txt-dark
+                                        .radio.radio-light
+                                          input#radio24(type='radio', name='radio7', value='option1', checked='')
+                                          label(for='radio24') Option 2
+                        .col-12
+                          .card
+                            .card-header
+                              h5 Check Box button group
+                              span
+                                | Add 
+                                code .active
+                                |  for active state and 
+                                code .disabled
+                                |  class or 
+                                code disabled="disabled"
+                                |  attribute
+                            .card-body.btn-group-showcase
+                              .row
+                                .col-xl-6.col-sm-12
+                                  .btn-group.btn-option(data-toggle='buttons')
+                                    div.btn.btn-primary
+                                      .checkbox.checkbox-primary
+                                        input#checkbox-primary-1(type='checkbox')
+                                        label(for='checkbox-primary-1') Option 1
+                                    div.btn.btn-primary
+                                      .checkbox.checkbox-primary
+                                        input#checkbox-primary-2(type='checkbox')
+                                        label(for='checkbox-primary-2') Option 2
+                                .col-xl-6.col-sm-12
+                                  .btn-group.btn-option(data-toggle='buttons')
+                                    div.btn.btn-secondary
+                                      .checkbox.checkbox-secondary
+                                        input#checkbox-primary-3(type='checkbox')
+                                        label(for='checkbox-primary-3') Option 1
+                                    div.btn.btn-secondary
+                                      .checkbox.checkbox-secondary
+                                        input#checkbox-primary-4(type='checkbox')
+                                        label(for='checkbox-primary-4') Option 2
+                                .col-xl-6.col-sm-12
+                                  .btn-group.btn-option(data-toggle='buttons')
+                                    div.btn.btn-success
+                                      .checkbox.checkbox-success
+                                        input#checkbox-primary-5(type='checkbox')
+                                        label(for='checkbox-primary-5') Option 1
+                                    div.btn.btn-success
+                                      .checkbox.checkbox-success
+                                        input#checkbox-primary-6(type='checkbox')
+                                        label(for='checkbox-primary-6') Option 2
+                                .col-xl-6.col-sm-12
+                                  .btn-group.btn-option(data-toggle='buttons')
+                                    div.btn.btn-info
+                                      .checkbox.checkbox-info
+                                        input#checkbox-primary-7(type='checkbox')
+                                        label(for='checkbox-primary-7') Option 1
+                                    div.btn.btn-info
+                                      .checkbox.checkbox-info
+                                        input#checkbox-primary-8(type='checkbox')
+                                        label(for='checkbox-primary-8') Option 2
+                                .col-xl-6.col-sm-12
+                                  .btn-group.btn-option(data-toggle='buttons')
+                                    div.btn.btn-warning
+                                      .checkbox.checkbox-warning
+                                        input#checkbox-warning-9(type='checkbox')
+                                        label(for='checkbox-warning-9') Option 1
+                                    div.btn.btn-warning
+                                      .checkbox.checkbox-warning
+                                        input#checkbox-warning-10(type='checkbox')
+                                        label(for='checkbox-warning-10') Option 2
+                                .col-xl-6.col-sm-12
+                                  .btn-group.btn-option(data-toggle='buttons')
+                                    div.btn.btn-danger
+                                      .checkbox.checkbox-danger
+                                        input#checkbox-danger-11(type='checkbox')
+                                        label(for='checkbox-danger-11') Option 1
+                                    div.btn.btn-danger
+                                      .checkbox.checkbox-danger
+                                        input#checkbox-danger-12(type='checkbox')
+                                        label(for='checkbox-danger-12') Option 2
+                                .col-xl-6.col-sm-12.button-group-mb-sm
+                                  .btn-group.btn-option(data-toggle='buttons')
+                                    div.btn.btn-light.txt-dark
+                                      .checkbox.checkbox-light
+                                        input#checkbox-light-13(type='checkbox')
+                                        label(for='checkbox-light-13') Option 1
+                                    div.btn.btn-light.txt-dark
+                                      .checkbox.checkbox-light
+                                        input#checkbox-light-14(type='checkbox')
+                                        label(for='checkbox-light-14') Option 2
+                        .col-lg-6
+                          .card.height-equal
+                            .card-header
+                              h5 Nesting
+                              span Make nesting buttons
+                            .card-body.btn-group-wrapper
+                              .m-b-30
+                                .btn-group(role='group', aria-label='Button group with nested dropdown')
+                                  button.btn.btn-primary
+                                    i.fa.fa-bold
+                                  button.btn.btn-secondary
+                                    i.fa.fa.fa-italic
+                                  .btn-group(role='group')
+                                    button#btnGroupDrop1.btn.btn-light.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Dropdown
+                                    .dropdown-menu(aria-labelledby='btnGroupDrop1')
+                                      a.dropdown-item(href='#') Dropdown link
+                                      a.dropdown-item(href='#') Dropdown link
+                                      a.dropdown-item(href='#') Dropdown link
+                                      a.dropdown-item(href='#') Dropdown link
+                              .m-b-30
+                                .btn-group
+                                  button.btn.btn-primary
+                                    i.fa.fa-bold
+                                  button.btn.btn-secondary
+                                    i.fa.fa.fa-italic
+                                  button.btn.btn-success
+                                    i.fa.fa-file-image-o
+                                  button.btn.btn-info
+                                    i.fa.fa-paperclip
+                              .m-b-30
+                                .btn-group
+                                  button.btn.btn-primary.btn-lg
+                                    i.fa.fa-bold
+                                  button.btn.btn-secondary.btn-lg
+                                    i.fa.fa.fa-italic
+                                  button.btn.btn-success.btn-lg
+                                    i.fa.fa-file-image-o
+                                  button.btn.btn-info.btn-lg
+                                    i.fa.fa-paperclip
+                        .col-lg-6
+                          .card.height-equal
+                            .card-header
+                              h5 Vertical
+                              span Make vertical buttons
+                            .card-body.btn-group-wrapper
+                              .btn-group-vertical(role='group', aria-label='Vertical button group')
+                                button.btn.btn-primary(type='button') Button
+                                button.btn.btn-secondary(type='button') Button
+                                .btn-group(role='group')
+                                  button#btnGroupVerticalDrop1.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Dropdown
+                                  .dropdown-menu(aria-labelledby='btnGroupVerticalDrop1')
+                                    a.dropdown-item(href='#') Dropdown link
+                                    a.dropdown-item(href='#') Dropdown link
+                                button.btn.btn-info(type='button') Button
+                                button.btn.btn-warning(type='button') Button
+                                .btn-group(role='group')
+                                  button#btnGroupVerticalDrop2.btn.btn-danger.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Dropdown
+                                  .dropdown-menu(aria-labelledby='btnGroupVerticalDrop2')
+                                    a.dropdown-item(href='#') Dropdown link
+                                    a.dropdown-item(href='#') Dropdown link
+                                .btn-group(role='group')
+                                  button#btnGroupVerticalDrop3.btn.btn-light.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Dropdown
+                                  .dropdown-menu(aria-labelledby='btnGroupVerticalDrop3')
+                                    a.dropdown-item(href='#') Dropdown link
+                                    a.dropdown-item(href='#') Dropdown link
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

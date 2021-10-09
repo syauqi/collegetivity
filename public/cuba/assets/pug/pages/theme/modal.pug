@@ -1,0 +1,289 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Modal
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Ui KIts
+                                      li.breadcrumb-item.active Modal
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Static Example
+                            .card-body
+                              #example.modal-dialog.modal-lg.mt-0.mb-0(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+                                .modal-dialog.mt-0.mb-0(role='document')
+                                  .modal-content
+                                    .modal-header
+                                      h5.modal-title New message
+                                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                    .modal-body
+                                      p
+                                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    .modal-footer
+                                      button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                                      button.btn.btn-primary(type='button') Send message
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Basic Modal
+                            .card-body.btn-showcase
+                              // Simple demo
+                              button.btn.btn-primary(type='button', data-toggle='modal', data-original-title='test', data-target='#exampleModal') Simple
+                              #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+                                .modal-dialog(role='document')
+                                  .modal-content
+                                    .modal-header
+                                      h5#exampleModalLabel.modal-title Modal title
+                                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                    .modal-body
+                                      | ...
+                                    .modal-footer
+                                      button.btn.btn-primary(type='button', data-dismiss='modal') Close
+                                      button.btn.btn-secondary(type='button') Save changes
+                              // Scrolling long content
+                              button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModalLong')
+                                | Scrolling long content
+                              #exampleModalLong.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLongTitle', aria-hidden='true')
+                                .modal-dialog(role='document')
+                                  .modal-content
+                                    .modal-header
+                                      h5#exampleModalLongTitle.modal-title Modal title
+                                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                    .modal-body
+                                      p
+                                        | Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                                      p
+                                        | Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                      p
+                                        | Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                                      p
+                                        | Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                                      p
+                                        | Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                      p
+                                        | Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                                      p
+                                        | Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                                      p
+                                        | Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                      p
+                                        | Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                                      p
+                                        | Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                                      p
+                                        | Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                      p
+                                        | Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                                      p
+                                        | Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                                      p
+                                        | Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                      p
+                                        | Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                                      p
+                                        | Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                                      p
+                                        | Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                      p
+                                        | Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                                    .modal-footer
+                                      button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                                      button.btn.btn-primary(type='button') Save changes
+                              // Vertically centered modal
+                              button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModalCenter')
+                                | Vertically centered
+                              #exampleModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter', aria-hidden='true')
+                                .modal-dialog.modal-dialog-centered(role='document')
+                                  .modal-content
+                                    .modal-header
+                                      h5.modal-title Modal title
+                                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                    .modal-body
+                                      p
+                                        | Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                                    .modal-footer
+                                      button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                                      button.btn.btn-primary(type='button') Save changes
+                              // Tooltips and popovers modal
+                              button.btn.btn-primary(type='button', data-toggle='modal', data-target='#tooltipmodal')
+                                | Tooltips and popovers
+                              #tooltipmodal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='tooltipmodal', aria-hidden='true')
+                                .modal-dialog.modal-dialog-centered(role='document')
+                                  .modal-content
+                                    .modal-header
+                                      h5.modal-title Modal title
+                                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                    .modal-body
+                                      h5 Popover in a modal
+                                      p
+                                        | This 
+                                        a.btn.btn-primary.popover-test(href='#', role='button', title='', data-content='Popover body content is set in this attribute.', data-container='#exampleModalPopovers', data-original-title='Popover title') button
+                                        |  triggers a popover on click.
+                                      hr
+                                      h5 Tooltips in a modal
+                                      p
+                                        a.tooltip-test(href='#', title='', data-container='#exampleModalPopovers', data-original-title='Tooltip') This link
+                                        |  and 
+                                        a.tooltip-test(href='#', title='', data-container='#exampleModalPopovers', data-original-title='Tooltip') that link
+                                        |  have tooltips on hover.
+                                    .modal-footer
+                                      button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                                      button.btn.btn-primary(type='button') Save changes
+                              // Using the grid modal
+                              button.btn.btn-primary(type='button', data-toggle='modal', data-target='#grid-modal')
+                                | Using the grid
+                              #grid-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='grid-modal', aria-hidden='true')
+                                .modal-dialog.modal-dialog-centered(role='document')
+                                  .modal-content
+                                    .modal-header
+                                      h5.modal-title Modal title
+                                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                    .modal-body.grid-showcase
+                                      .container-fluid.bd-example-row
+                                        .row
+                                          .col-md-4
+                                            span .col-md-4
+                                          .col-md-4.ml-auto
+                                            span .col-md-4 .ml-auto
+                                        .row
+                                          .col-md-3.ml-auto
+                                            span .col-md-3 .ml-auto
+                                          .col-md-2.ml-auto
+                                            span .col-md-2 .ml-auto
+                                        .row
+                                          .col-md-6.ml-auto
+                                            span .col-md-6 .ml-auto
+                                        .row
+                                          .col-sm-9
+                                            span Level 1: .col-sm-9
+                                            .row
+                                              .col-8.col-sm-6
+                                                span Level 2: .col-8 .col-sm-6
+                                              .col-4.col-sm-6
+                                                span Level 2: .col-4 .col-sm-6
+                                    .modal-footer
+                                      button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                                      button.btn.btn-primary(type='button') Save changes
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Varying modal content
+                            .card-body.btn-showcase
+                              button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModalfat', data-whatever='@mdo') Open modal for @mdo
+                              button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModalmdo', data-whatever='@fat') Open modal for @fat
+                              button.btn.btn-primary(type='button', data-toggle='modal', data-target='#exampleModalgetbootstrap', data-whatever='@getbootstrap') Open modal for @getbootstrap
+                              #exampleModalfat.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+                                .modal-dialog(role='document')
+                                  .modal-content
+                                    .modal-header
+                                      h5#exampleModalLabel2.modal-title New message
+                                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                    .modal-body
+                                      form
+                                        .form-group
+                                          label.col-form-label(for='recipient-name') Recipient:
+                                          input.form-control(type='text', value='@fat')
+                                        .form-group
+                                          label.col-form-label(for='message-text') Message:
+                                          textarea#message-text.form-control
+                                    .modal-footer
+                                      button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                                      button.btn.btn-primary(type='button') Send message
+                              #exampleModalmdo.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+                                .modal-dialog(role='document')
+                                  .modal-content
+                                    .modal-header
+                                      h5.modal-title New message
+                                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                    .modal-body
+                                      form
+                                        .form-group
+                                          label.col-form-label(for='recipient-name') Recipient:
+                                          input#recipient-name.form-control(type='text', value='@Mat')
+                                        .form-group
+                                          label.col-form-label(for='message-text') Message:
+                                          textarea.form-control
+                                    .modal-footer
+                                      button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                                      button.btn.btn-primary(type='button') Send message
+                              #exampleModalgetbootstrap.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+                                .modal-dialog(role='document')
+                                  .modal-content
+                                    .modal-header
+                                      h5.modal-title New message
+                                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                    .modal-body
+                                      form
+                                        .form-group
+                                          label.col-form-label(for='recipient-name') Recipient:
+                                          input.form-control(type='text', value='@getbootstrap')
+                                        .form-group
+                                          label.col-form-label(for='message-text') Message:
+                                          textarea.form-control
+                                    .modal-footer
+                                      button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                                      button.btn.btn-primary(type='button') Send message
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Sizes modal
+                            .card-body.btn-showcase
+                              // Large modal
+                              button.btn.btn-primary(type='button', data-toggle='modal', data-target='.bd-example-modal-lg') Large modal
+                              .modal.fade.bd-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+                                .modal-dialog.modal-lg
+                                  .modal-content
+                                    .modal-header
+                                      h4#myLargeModalLabel.modal-title Large modal
+                                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                    .modal-body
+                                      | ...
+                              // Small modal
+                              button.btn.btn-primary(type='button', data-toggle='modal', data-target='.bd-example-modal-sm') Small modal
+                              .modal.fade.bd-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel', aria-hidden='true')
+                                .modal-dialog.modal-sm
+                                  .modal-content
+                                    .modal-header
+                                      h4#mySmallModalLabel.modal-title Small modal
+                                      button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                    .modal-body
+                                      | ...
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

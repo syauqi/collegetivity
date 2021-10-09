@@ -1,0 +1,706 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var select2               = true;
+- var page_select2          = true;
+- var form_validation_custom= true;
+- var bookmark_page         = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                        | Bookmarks
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Apps
+                                      li.breadcrumb-item.active Bookmarks
+                    // Container-fluid starts
+                    .container-fluid
+                      .email-wrap.bookmark-wrap
+                        .row
+                          .col-xl-3.box-col-6
+                            .email-left-aside
+                              .card
+                                .card-body
+                                  .email-app-sidebar.left-bookmark
+                                    .media
+                                      .media-size-email
+                                        img.mr-3.rounded-circle(src='../assets/images/user/user.png', alt='')
+                                      .media-body
+                                        h6.f-w-600 MARK JENCO
+                                        p Markjecno@gmail.com
+                                    ul.nav.main-menu(role='tablist')
+                                      li.nav-item
+                                        button.badge-light-primary.btn-block.btn-mail(type='button', data-toggle='modal', data-target='#exampleModal')
+                                          i.mr-2(data-feather='bookmark')
+                                          |  New Bookmark
+                                        #exampleModal.modal.fade.modal-bookmark(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+                                          .modal-dialog.modal-lg(role='document')
+                                            .modal-content
+                                              .modal-header
+                                                h5#exampleModalLabel.modal-title Add Bookmark
+                                                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                                  span(aria-hidden='true') ×
+                                              .modal-body
+                                                form.form-bookmark#bookmark-form.needs-validation(novalidate='')
+                                                  .form-row
+                                                    .form-group.col-md-12
+                                                      label(for='bm-weburl') Web Url
+                                                      input#bm-weburl.form-control(type='text', required='', autocomplete='off')
+                                                    .form-group.col-md-12
+                                                      label(for='bm-title') Title
+                                                      input#bm-title.form-control(type='text', required='', autocomplete='off')
+                                                    .form-group.col-md-12
+                                                      label Description
+                                                      textarea#bm-desc.form-control(required='', autocomplete='off')
+                                                    .form-group.col-md-6.mb-0
+                                                      label Group
+                                                      select.js-example-basic-single#bm-group
+                                                          option(value='bookmark') My Bookmarks
+                                                    .form-group.col-md-6.mb-0
+                                                      label Collection
+                                                      select.js-example-disabled-results#bm-collection
+                                                        option(value='general') General
+                                                        option(value='fs') fs
+                                                  input#index_var(type='hidden', value='6' )
+                                                  button#Bookmark.btn.btn-secondary(onclick='submitBookMark()', type='submit') Save
+                                                  button.btn.btn-primary(type='button', data-dismiss='modal') Cancel
+                                      li.nav-item
+                                        span.main-title
+                                          |  Views
+                                      li
+                                        a#pills-created-tab(data-toggle='pill', href='#pills-created', role='tab', aria-controls='pills-created', aria-selected='true')
+                                          span.title
+                                            |  Created by me
+                                      li
+                                        a#pills-favourites-tab.show(data-toggle='pill', href='#pills-favourites', role='tab', aria-controls='pills-favourites', aria-selected='false')
+                                          span.title
+                                            |  Favourites
+                                      li
+                                        a#pills-shared-tab.show(data-toggle='pill', href='#pills-shared', role='tab', aria-controls='pills-shared', aria-selected='false')
+                                          span.title
+                                            |  Shared with me
+                                      li
+                                        a#pills-bookmark-tab.show(data-toggle='pill', href='#pills-bookmark', role='tab', aria-controls='pills-bookmark', aria-selected='false')
+                                          span.title
+                                            |  My bookmark
+                                      li
+                                        hr
+                                      li
+                                        span.main-title
+                                          |  Tags
+                                          span.pull-right
+                                            a(href='#', data-toggle='modal', data-target='#createtag')
+                                              i(data-feather='plus-circle')
+                                      li
+                                        a#pills-notification-tab.show(data-toggle='pill', href='#pills-notification', role='tab', aria-controls='pills-notification', aria-selected='false')
+                                          span.title
+                                            |  notification
+                                      li
+                                        a#pills-newsletter-tab.show(data-toggle='pill', href='#pills-newsletter', role='tab', aria-controls='pills-newsletter', aria-selected='false')
+                                          span.title
+                                            |  Newsletter
+                                      li
+                                        a#pills-business-tab.show(data-toggle='pill', href='#pills-business', role='tab', aria-controls='pills-business-tab', aria-selected='false')
+                                          span.title
+                                            |  Business
+                                      li
+                                        a#pills-holidays-tab.show(data-toggle='pill', href='#pills-holidays', role='tab', aria-controls='pills-holidays-tab', aria-selected='false')
+                                          span.title
+                                            |  Holidays
+                                      li
+                                        a#pills-important-tab.show(data-toggle='pill', href='#pills-important', role='tab', aria-controls='pills-important-tab', aria-selected='false')
+                                          span.title
+                                            |  Important
+                                      li
+                                        a#pills-orgenization-tab.show(data-toggle='pill', href='#pills-orgenization', role='tab', aria-controls='pills-orgenization-tab', aria-selected='false')
+                                          span.title
+                                            |  Orgenization
+                          .col-xl-9.col-md-12.box-col-12
+                            .email-right-aside.bookmark-tabcontent
+                              .card.email-body.radius-left
+                                .pl-0
+                                  .tab-content
+                                    #pills-created.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='pills-created-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 Created by me
+                                          ul
+                                            li
+                                              a.grid-bookmark-view(href='#')
+                                                i(data-feather='grid')
+                                            li
+                                              a.list-layout-view(href='#')
+                                                i(data-feather='list')
+                                        .card-body.pb-0
+                                          .details-bookmark.text-center
+                                            .row#bookmarkData
+                                              .col-xl-3.col-md-4.xl-50
+                                                .card.card-with-border.bookmark-card.o-hidden
+                                                  .details-website
+                                                    img.img-fluid(src='../assets/images/lightgallry/01.jpg', alt='')
+                                                    .favourite-icon.favourite_0(onclick='setFavourite(0)')
+                                                      a(href='#')
+                                                        i.fa.fa-star
+                                                    .desciption-data
+                                                      .title-bookmark
+                                                        h6.title_0 Admin Template
+                                                        p.weburl_0 http://admin.pixelstrap.com//ltr/landing-page.html
+                                                        .hover-block
+                                                          ul
+                                                            li
+                                                              a(href='', onclick='editBookmark(0)', data-toggle='modal', data-target='#edit-bookmark')
+                                                                i(data-feather='edit-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='link')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='share-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='trash-2')
+                                                            li.pull-right.text-right
+                                                              a(href='#')
+                                                                i(data-feather='tag')
+                                                        .content-general
+                                                          p.desc_0  is beautifully crafted, clean and modern designed admin theme with 6 different demos and light - dark versions.
+                                                          span.collection_0 General
+                                              .col-xl-3.col-md-4.xl-50
+                                                .card.card-with-border.bookmark-card.o-hidden
+                                                  .details-website
+                                                    img.img-fluid(src='../assets/images/lightgallry/02.jpg', alt='')
+                                                    .favourite-icon.favourite_1(onclick='setFavourite(1)')
+                                                      a(href='#')
+                                                        i.fa.fa-star
+                                                    .desciption-data
+                                                      .title-bookmark
+                                                        h6.title_1 Universal Template
+                                                        p.weburl_1 https://angular.pixelstrap.com/universal/landing
+                                                        .hover-block
+                                                          ul
+                                                            li
+                                                              a(href='', onclick='editBookmark(1)', data-toggle='modal', data-target='#edit-bookmark')
+                                                                i(data-feather='edit-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='link')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='share-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='trash-2')
+                                                            li.pull-right.text-right
+                                                              a(href='#')
+                                                                i(data-feather='tag')
+                                                        .content-general
+                                                          p.desc_1 Universal is beautifully crafted, clean and modern designed admin theme
+                                                          span.collection_1 General
+                                              .col-xl-3.col-md-4.xl-50
+                                                .card.card-with-border.bookmark-card.o-hidden
+                                                  .details-website
+                                                    img.img-fluid(src='../assets/images/lightgallry/03.jpg', alt='')
+                                                    .favourite-icon.favourite_2(onclick='setFavourite(2)')
+                                                      a(href='#')
+                                                        i.fa.fa-star
+                                                    .desciption-data
+                                                      .title-bookmark
+                                                        h6.title_2 Angular Theme
+                                                        p.weburl_2 https://angular.pixelstrap.com/cuba/landing
+                                                        .hover-block
+                                                          ul
+                                                            li
+                                                              a(href='', onclick='editBookmark(2)', data-toggle='modal', data-target='#edit-bookmark')
+                                                                i(data-feather='edit-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='link')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='share-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='trash-2')
+                                                            li.pull-right.text-right
+                                                              a(href='#')
+                                                                i(data-feather='tag')
+                                                        .content-general
+                                                          p.desc_2 Cuba is beautifully crafted, clean and modern designed admin theme
+                                                          span.collection_2 Fs
+                                              .col-xl-3.col-md-4.xl-50
+                                                .card.card-with-border.bookmark-card.o-hidden
+                                                  .details-website
+                                                    img.img-fluid(src='../assets/images/lightgallry/04.jpg', alt='')
+                                                    .favourite-icon.favourite_3(onclick='setFavourite(3)')
+                                                      a(href='#')
+                                                        i.fa.fa-star
+                                                    .desciption-data
+                                                      .title-bookmark
+                                                        h6.title_3 Multikart Admin
+                                                        p.weburl_3 http://themes.pixelstrap.com/multikart/back-end/index.html
+                                                        .hover-block
+                                                          ul
+                                                            li
+                                                              a(href='', onclick='editBookmark(3)', data-toggle='modal', data-target='#edit-bookmark')
+                                                                i(data-feather='edit-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='link')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='share-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='trash-2')
+                                                            li.pull-right.text-right
+                                                              a(href='#')
+                                                                i(data-feather='tag')
+                                                        .content-general
+                                                          p.desc_3 Multikart Admin is modern designed admin theme
+                                                          span.collection_3 General
+                                              .col-xl-3.col-md-4.xl-50
+                                                .card.card-with-border.bookmark-card.o-hidden
+                                                  .details-website
+                                                    img.img-fluid(src='../assets/images/lightgallry/05.jpg', alt='')
+                                                    .favourite-icon.favourite_4(onclick='setFavourite(4)')
+                                                      a(href='#')
+                                                        i.fa.fa-star
+                                                    .desciption-data
+                                                      .title-bookmark
+                                                        h6.title_4 Ecommerece theme
+                                                        p.weburl_4 http://themes.pixelstrap.com/multikart
+                                                        .hover-block
+                                                          ul
+                                                            li
+                                                              a(href='', onclick='editBookmark(4)', data-toggle='modal', data-target='#edit-bookmark')
+                                                                i(data-feather='edit-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='link')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='share-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='trash-2')
+                                                            li.pull-right.text-right
+                                                              a(href='#')
+                                                                i(data-feather='tag')
+                                                        .content-general
+                                                          p.desc_4 Multikart HTML template is an apparently simple but highly functional tempalate designed for creating a flourisahing online business.
+                                                          span.collection_4 General           
+                                              .col-xl-3.col-md-4.xl-50
+                                                .card.card-with-border.bookmark-card.o-hidden
+                                                  .details-website
+                                                    img.img-fluid(src='../assets/images/lightgallry/06.jpg', alt='')
+                                                    .favourite-icon.favourite_5(onclick='setFavourite(5)')
+                                                      a(href='#')
+                                                        i.fa.fa-star
+                                                    .desciption-data
+                                                      .title-bookmark
+                                                        h6.title_5 Tovo app landing page
+                                                        p.weburl_5 http://vue.pixelstrap.com/tovo/home-one
+                                                        .hover-block
+                                                          ul
+                                                            li
+                                                              a(href='', onclick='editBookmark(5)', data-toggle='modal', data-target='#edit-bookmark')
+                                                                i(data-feather='edit-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='link')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='share-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='trash-2')
+                                                            li.pull-right.text-right
+                                                              a(href='#')
+                                                                i(data-feather='tag')
+                                                        .content-general
+                                                          p.desc_5 Amazing Landing Page With Easy Customization
+                                                          span.collection_5 Fs                      
+                                    #pills-favourites.fade.tab-pane(role='tabpanel', aria-labelledby='pills-favourites-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 Favourites
+                                          ul
+                                            li
+                                              a.grid-bookmark-view(href='#')
+                                                i(data-feather='grid')
+                                            li
+                                              a.list-layout-view(href='#')
+                                                i(data-feather='list')
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            .row#favouriteData
+                                            .no-favourite
+                                              span No Bookmarks Found.
+                                    #pills-shared.fade.tab-pane(role='tabpanel', aria-labelledby='pills-shared-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 Shared with me
+                                          ul
+                                            li
+                                              a.grid-bookmark-view(href='#')
+                                                i(data-feather='grid')
+                                            li
+                                              a.list-layout-view(href='#')
+                                                i(data-feather='list')
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            span No Bookmarks Found.
+                                    #pills-bookmark.fade.tab-pane(role='tabpanel', aria-labelledby='pills-bookmark-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 My bookmark
+                                          ul
+                                            li
+                                              a.grid-bookmark-view(href='#')
+                                                i(data-feather='grid')
+                                            li
+                                              a.list-layout-view(href='#')
+                                                i(data-feather='list')
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            .row#bookmarkData1
+                                              .col-xl-3.col-md-4.xl-50
+                                                .card.card-with-border.bookmark-card.o-hidden
+                                                  .details-website
+                                                    img.img-fluid(src='../assets/images/lightgallry/07.jpg', alt='')
+                                                    .favourite-icon.favourite_0(onclick='setFavourite(0)')
+                                                      a(href='#')
+                                                        i.fa.fa-star
+                                                    .desciption-data
+                                                      .title-bookmark
+                                                        h6.title_0 Admin Template
+                                                        p.weburl_0 http://admin.pixelstrap.com/Cuba/ltr/landing-page.html
+                                                        .hover-block
+                                                          ul
+                                                            li
+                                                              a(href='', onclick='editBookmark(0)', data-toggle='modal', data-target='#edit-bookmark')
+                                                                i(data-feather='edit-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='link')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='share-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='trash-2')
+                                                            li.pull-right.text-right
+                                                              a(href='#')
+                                                                i(data-feather='tag')
+                                                        .content-general
+                                                          p.desc_0 Cuba is beautifully crafted, clean and modern designed admin theme with 6 different demos and light - dark versions.
+                                                          span.collection_0 General
+                                              .col-xl-3.col-md-4.xl-50
+                                                .card.card-with-border.bookmark-card.o-hidden
+                                                  .details-website
+                                                    img.img-fluid(src='../assets/images/lightgallry/07.jpg', alt='')
+                                                    .favourite-icon.favourite_1(onclick='setFavourite(1)')
+                                                      a(href='#')
+                                                        i.fa.fa-star
+                                                    .desciption-data
+                                                      .title-bookmark
+                                                        h6.title_1 Universal Template
+                                                        p.weburl_1 https://angular.pixelstrap.com/universal/landing
+                                                        .hover-block
+                                                          ul
+                                                            li
+                                                              a(href='', onclick='editBookmark(1)', data-toggle='modal', data-target='#edit-bookmark')
+                                                                i(data-feather='edit-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='link')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='share-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='trash-2')
+                                                            li.pull-right.text-right
+                                                              a(href='#')
+                                                                i(data-feather='tag')
+                                                        .content-general
+                                                          p.desc_1 Universal is beautifully crafted, clean and modern designed admin theme
+                                                          span.collection_1 General
+                                              .col-xl-3.col-md-4.xl-50
+                                                .card.card-with-border.bookmark-card.o-hidden
+                                                  .details-website
+                                                    img.img-fluid(src='../assets/images/lightgallry/07.jpg', alt='')
+                                                    .favourite-icon.favourite_2(onclick='setFavourite(2)')
+                                                      a(href='#')
+                                                        i.fa.fa-star
+                                                    .desciption-data
+                                                      .title-bookmark
+                                                        h6.title_2 Angular Theme
+                                                        p.weburl_2 https://angular.pixelstrap.com/cuba/landing
+                                                        .hover-block
+                                                          ul
+                                                            li
+                                                              a(href='', onclick='editBookmark(2)', data-toggle='modal', data-target='#edit-bookmark')
+                                                                i(data-feather='edit-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='link')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='share-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='trash-2')
+                                                            li.pull-right.text-right
+                                                              a(href='#')
+                                                                i(data-feather='tag')
+                                                        .content-general
+                                                          p.desc_2 Cuba is beautifully crafted, clean and modern designed admin theme
+                                                          span.collection_2 Fs
+                                              .col-xl-3.col-md-4.xl-50
+                                                .card.card-with-border.bookmark-card.o-hidden
+                                                  .details-website
+                                                    img.img-fluid(src='../assets/images/lightgallry/07.jpg', alt='')
+                                                    .favourite-icon.favourite_3(onclick='setFavourite(3)')
+                                                      a(href='#')
+                                                        i.fa.fa-star
+                                                    .desciption-data
+                                                      .title-bookmark
+                                                        h6.title_3 Multikart Admin
+                                                        p.weburl_3 http://themes.pixelstrap.com/multikart/back-end/index.html
+                                                        .hover-block
+                                                          ul
+                                                            li
+                                                              a(href='', onclick='editBookmark(3)', data-toggle='modal', data-target='#edit-bookmark')
+                                                                i(data-feather='edit-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='link')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='share-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='trash-2')
+                                                            li.pull-right.text-right
+                                                              a(href='#')
+                                                                i(data-feather='tag')
+                                                        .content-general
+                                                          p.desc_3 Multikart Admin is modern designed admin theme
+                                                          span.collection_3 General
+                                              .col-xl-3.col-md-4.xl-50
+                                                .card.card-with-border.bookmark-card.o-hidden
+                                                  .details-website
+                                                    img.img-fluid(src='../assets/images/lightgallry/07.jpg', alt='')
+                                                    .favourite-icon.favourite_4(onclick='setFavourite(4)')
+                                                      a(href='#')
+                                                        i.fa.fa-star
+                                                    .desciption-data
+                                                      .title-bookmark
+                                                        h6.title_4 Ecommerece theme
+                                                        p.weburl_4 http://themes.pixelstrap.com/multikart
+                                                        .hover-block
+                                                          ul
+                                                            li
+                                                              a(href='', onclick='editBookmark(4)', data-toggle='modal', data-target='#edit-bookmark')
+                                                                i(data-feather='edit-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='link')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='share-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='trash-2')
+                                                            li.pull-right.text-right
+                                                              a(href='#')
+                                                                i(data-feather='tag')
+                                                        .content-general
+                                                          p.desc_4 Multikart HTML template is an apparently simple but highly functional tempalate designed for creating a flourisahing online business.
+                                                          span.collection_4 General           
+                                              .col-xl-3.col-md-4.xl-50
+                                                .card.card-with-border.bookmark-card.o-hidden
+                                                  .details-website
+                                                    img.img-fluid(src='../assets/images/lightgallry/07.jpg', alt='')
+                                                    .favourite-icon.favourite_5(onclick='setFavourite(5)')
+                                                      a(href='#')
+                                                        i.fa.fa-star
+                                                    .desciption-data
+                                                      .title-bookmark
+                                                        h6.title_5 Tovo app landing page
+                                                        p.weburl_5 http://vue.pixelstrap.com/tovo/home-one
+                                                        .hover-block
+                                                          ul
+                                                            li
+                                                              a(href='', onclick='editBookmark(5)', data-toggle='modal', data-target='#edit-bookmark')
+                                                                i(data-feather='edit-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='link')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='share-2')
+                                                            li
+                                                              a(href='#')
+                                                                i(data-feather='trash-2')
+                                                            li.pull-right.text-right
+                                                              a(href='#')
+                                                                i(data-feather='tag')
+                                                        .content-general
+                                                          p.desc_5 Amazing Landing Page With Easy Customization
+                                                          span.collection_5 Fs                      
+                                    #pills-notification.fade.tab-pane(role='tabpanel', aria-labelledby='pills-notification-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 notification
+                                          ul
+                                            li
+                                              a.grid-bookmark-view(href='#')
+                                                i(data-feather='grid')
+                                            li
+                                              a.list-layout-view(href='#')
+                                                i(data-feather='list')
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            span No Bookmarks Found.
+                                    #pills-newsletter.fade.tab-pane(role='tabpanel', aria-labelledby='pills-newsletter-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 Newsletter
+                                          ul
+                                            li
+                                              a.grid-bookmark-view(href='#')
+                                                i(data-feather='grid')
+                                            li
+                                              a.list-layout-view(href='#')
+                                                i(data-feather='list')
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            span No Bookmarks Found.
+                                    #pills-business.fade.tab-pane(role='tabpanel', aria-labelledby='pills-business-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 Business
+                                          ul
+                                            li
+                                              a.grid-bookmark-view(href='#')
+                                                i(data-feather='grid')
+                                            li
+                                              a.list-layout-view(href='#')
+                                                i(data-feather='list')
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            span No Bookmarks Found.
+                                    #pills-holidays.fade.tab-pane(role='tabpanel', aria-labelledby='pills-holidays-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 Holidays
+                                          ul
+                                            li
+                                              a.grid-bookmark-view(href='#')
+                                                i(data-feather='grid')
+                                            li
+                                              a.list-layout-view(href='#')
+                                                i(data-feather='list')
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            span No Bookmarks Found.
+                                    #pills-important.fade.tab-pane(role='tabpanel', aria-labelledby='pills-important-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 Important
+                                          ul
+                                            li
+                                              a.grid-bookmark-view(href='#')
+                                                i(data-feather='grid')
+                                            li
+                                              a.list-layout-view(href='#')
+                                                i(data-feather='list')
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            span No Bookmarks Found.
+                                    #pills-orgenization.fade.tab-pane(role='tabpanel', aria-labelledby='pills-orgenization-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 Orgenization
+                                          ul
+                                            li
+                                              a.grid-bookmark-view(href='#')
+                                                i(data-feather='grid')
+                                            li
+                                              a.list-layout-view(href='#')
+                                                i(data-feather='list')
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            span No Bookmarks Found.
+                                    #edit-bookmark.modal.fade.modal-bookmark(tabindex='-1', role='dialog' aria-hidden='true')
+                                       .modal-dialog.modal-lg(role='document')
+                                            .modal-content
+                                              .modal-header
+                                                h5.modal-title Edit Bookmark
+                                                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                                  span(aria-hidden='true') ×
+                                              .modal-body
+                                                form.form-bookmark.needs-validation(novalidate='')
+                                                  .form-row
+                                                    .form-group.col-md-12
+                                                      label Web Url
+                                                      input.form-control#editurl(type='text', required='', autocomplete='off', value='http://admin.pixelstrap.com/Cuba/ltr/landing-page.html')
+                                                    .form-group.col-md-12
+                                                      label Title
+                                                      input.form-control#edittitle(type='text', required='', autocomplete='off', value='Admin Template')
+                                                    .form-group.col-md-12
+                                                      label Description
+                                                      textarea.form-control#editdesc(required='', autocomplete='off')
+                                                        | Cuba is beautifully crafted, clean and modern designed admin theme with 6 different demos and light - dark versions.
+                                                    .form-group.col-md-6.mb-0
+                                                      label Group
+                                                      select.js-example-basic-single
+                                                          option(value='AL') My Bookmarks
+                                                    .form-group.col-md-6.mb-0
+                                                      label Collection
+                                                      select.js-example-disabled-results
+                                                        option(value='general') General
+                                                        option(value='fs') fs
+                                                  button.btn.btn-secondary(type='button') Save
+                                                  button.btn.btn-primary(type='button', data-dismiss='modal') Cancel   
+                                    #createtag.modal.fade.modal-bookmark(tabindex='-1', role='dialog', aria-hidden='true')
+                                      .modal-dialog.modal-lg(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            h5.modal-title Create Tag
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×
+                                          .modal-body
+                                            form.form-bookmark.needs-validation(novalidate='')
+                                              .form-row
+                                                .form-group.col-md-12
+                                                  label Tag Name
+                                                  input.form-control(type='text', required='', autocomplete='off')
+                                                .form-group.col-md-12.mb-0
+                                                  label Tag color
+                                                  input.form-control(type='color', value='#563d7c')
+                                              button.btn.btn-secondary(type='button') Save
+                                              button.btn.btn-primary(type='button', data-dismiss='modal') Cancel
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

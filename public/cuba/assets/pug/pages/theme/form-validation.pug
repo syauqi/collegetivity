@@ -1,0 +1,231 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var form_validation_custom= true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Validation Forms
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item  Form Controls
+                                      li.breadcrumb-item.active  Validation Forms
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Custom styles
+                              span
+                                | For custom Bootstrap form validation messages, you’ll need to add the 
+                                code.text-danger novalidate
+                                |  boolean attribute to your 
+                                code.text-danger &lt;form&gt;
+                                | . This disables the browser default feedback tooltips, but still provides access to the form validation APIs in JavaScript. Try to submit the form below; our JavaScript will intercept the submit button and relay feedback to you.
+                              span
+                                | When attempting to submit, you’ll see the 
+                                code.text-danger :invalid 
+                                |  and 
+                                code.text-danger :valid 
+                                |  styles applied to your form controls.
+                            .card-body
+                              form.needs-validation(novalidate='')
+                                .row
+                                  .col-md-4.mb-3
+                                    label(for='validationCustom01') First name
+                                    input#validationCustom01.form-control(type='text', placeholder='First name', required='')
+                                    .valid-feedback
+                                      | Looks good!
+                                  .col-md-4.mb-3
+                                    label(for='validationCustom02') Last name
+                                    input#validationCustom02.form-control(type='text', placeholder='Last name', required='')
+                                    .valid-feedback
+                                      | Looks good!
+                                  .col-md-4.mb-3
+                                    label(for='validationCustomUsername') Username
+                                    .input-group
+                                      .input-group-prepend
+                                        span#inputGroupPrepend.input-group-text @
+                                      input#validationCustomUsername.form-control(type='text', placeholder='Username', aria-describedby='inputGroupPrepend', required='')
+                                      .invalid-feedback
+                                        | Please choose a username.
+                                .row
+                                  .col-md-6.mb-3
+                                    label(for='validationCustom03') City
+                                    input#validationCustom03.form-control(type='text', placeholder='City', required='')
+                                    .invalid-feedback
+                                      | Please provide a valid city.
+                                  .col-md-3.mb-3
+                                    label(for='validationCustom04') State
+                                    input#validationCustom04.form-control(type='text', placeholder='State', required='')
+                                    .invalid-feedback
+                                      | Please provide a valid state.
+                                  .col-md-3.mb-3
+                                    label(for='validationCustom05') Zip
+                                    input#validationCustom05.form-control(type='text', placeholder='Zip', required='')
+                                    .invalid-feedback
+                                      | Please provide a valid zip.
+                                .form-group
+                                  .form-check
+                                    .checkbox.p-0
+                                      input#invalidCheck.form-check-input(type='checkbox', required='')
+                                      label.form-check-label(for='invalidCheck') Agree to terms and conditions
+                                    .invalid-feedback
+                                      | You must agree before submitting.
+                                button.btn.btn-primary(type='submit') Submit form
+                          .card
+                            .card-header
+                              h5 Browser defaults
+                              span
+                                | Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form below. Depending on your browser and OS, you’ll see a slightly different style of feedback.
+                              span
+                                | While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
+                            .card-body
+                              form
+                                .row
+                                  .col-md-4.mb-3
+                                    label(for='validationDefault01') First name
+                                    input#validationDefault01.form-control(type='text', placeholder='First name', required='')
+                                  .col-md-4.mb-3
+                                    label(for='validationDefault02') Last name
+                                    input#validationDefault02.form-control(type='text', placeholder='Last name', required='')
+                                  .col-md-4.mb-3
+                                    label(for='validationDefaultUsername') Username
+                                    .input-group
+                                      .input-group-prepend
+                                        span#inputGroupPrepend2.input-group-text @
+                                      input#validationDefaultUsername.form-control(type='text', placeholder='Username', aria-describedby='inputGroupPrepend2', required='')
+                                .row
+                                  .col-md-6.mb-3
+                                    label(for='validationDefault03') City
+                                    input#validationDefault03.form-control(type='text', placeholder='City', required='')
+                                  .col-md-3.mb-3
+                                    label(for='validationDefault04') State
+                                    input#validationDefault04.form-control(type='text', placeholder='State', required='')
+                                  .col-md-3.mb-3
+                                    label(for='validationDefault05') Zip
+                                    input#validationDefault05.form-control(type='text', placeholder='Zip', required='')
+                                .form-group
+                                  .form-check
+                                    .checkbox.p-0
+                                      input#invalidCheck2.form-check-input(type='checkbox', required='')
+                                      label.form-check-label(for='invalidCheck2') Agree to terms and conditions
+                                button.btn.btn-primary(type='submit') Submit form
+                          .card
+                            .card-header
+                              h5 Supported elements
+                              span
+                                | Not interested in custom validation feedback messages or writing JavaScript to change form behaviors? All good, you can use the browser defaults. Try submitting the form below. Depending on your browser and OS, you’ll see a slightly different style of feedback.
+                              span
+                                | While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
+                            .card-body
+                              form
+                                .row
+                                  .col-md-6.mb-3
+                                    label(for='validationServer01') First name
+                                    input#validationServer01.form-control.is-valid(type='text' value='Mark' required='')
+                                    .valid-feedback
+                                      | Looks good!
+                                  .col-md-6.mb-3
+                                    label(for='validationServer02') Last name
+                                    input#validationServer02.form-control.is-valid(type='text' value='Otto' required='')
+                                    .valid-feedback
+                                      | Looks good!
+                                .row
+                                  .col-md-6.mb-3
+                                    label(for='validationServer03') City
+                                    input#validationServer03.form-control.is-invalid(type='text' required='')
+                                    .invalid-feedback
+                                      | Please provide a valid city.
+                                  .col-md-3.mb-3
+                                    label(for='validationServer04') State
+                                    select#validationServer04.custom-select.is-invalid(required='')
+                                      option(selected='' disabled='' value='') Choose...
+                                      option ...
+                                    .invalid-feedback
+                                      | Please select a valid state.
+                                  .col-md-3.mb-3
+                                    label(for='validationServer05') Zip
+                                    input#validationServer05.form-control.is-invalid(type='text' required='')
+                                    .invalid-feedback
+                                      | Please provide a valid zip.
+                                .form-group
+                                  .form-check
+                                    input#invalidCheck3.form-check-input.is-invalid(type='checkbox' value='' required='')
+                                    label.form-check-label(for='invalidCheck3')
+                                      | Agree to terms and conditions
+                                    .invalid-feedback
+                                      | You must agree before submitting.
+                                button.btn.btn-primary(type='submit') Submit form
+
+                          .card
+                            .card-header
+                              h5 Tooltips
+                              span
+                                | If your form layout allows it, you can swap the 
+                                code.text-danger .{valid|invalid}-feedback
+                                |  classes for 
+                                code.text-danger .{valid|invalid}-tooltip
+                                |  classes to display validation feedback in a styled tooltip. Be sure to have a parent with 
+                                code.text-danger position: relative
+                                |  on it for tooltip positioning. In the example below, our column classes have this already, but your project may require an alternative setup.
+                            .card-body
+                              form.needs-validation(novalidate='')
+                                .row
+                                  .col-md-4.mb-3
+                                    label(for='validationTooltip01') First name
+                                    input#validationTooltip01.form-control(type='text', placeholder='First name', required='')
+                                    .valid-tooltip
+                                      | Looks good!
+                                  .col-md-4.mb-3
+                                    label(for='validationTooltip02') Last name
+                                    input#validationTooltip02.form-control(type='text', placeholder='Last name', required='')
+                                    .valid-tooltip
+                                      | Looks good!
+                                  .col-md-4.mb-3
+                                    label(for='validationTooltipUsername') Username
+                                    .input-group
+                                      .input-group-prepend
+                                        span#validationTooltipUsernamePrepend.input-group-text @
+                                      input#validationTooltipUsername.form-control(type='text', placeholder='Username', aria-describedby='validationTooltipUsernamePrepend', required='')
+                                      .invalid-tooltip
+                                        | Please choose a unique and valid username.
+                                .row
+                                  .col-md-6.mb-3
+                                    label(for='validationTooltip03') City
+                                    input#validationTooltip03.form-control(type='text', placeholder='City', required='')
+                                    .invalid-tooltip
+                                      | Please provide a valid city.
+                                  .col-md-3.mb-3
+                                    label(for='validationTooltip04') State
+                                    input#validationTooltip04.form-control(type='text', placeholder='State', required='')
+                                    .invalid-tooltip
+                                      | Please provide a valid state.
+                                  .col-md-3.mb-3
+                                    label(for='validationTooltip05') Zip
+                                    input#validationTooltip05.form-control(type='text', placeholder='Zip', required='')
+                                    .invalid-tooltip
+                                      | Please provide a valid zip.
+                                button.btn.btn-primary(type='submit') Submit form
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

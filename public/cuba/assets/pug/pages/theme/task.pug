@@ -1,0 +1,566 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var select2               = true;
+- var page_select2          = true;
+- var form_validation_custom= true;
+- var date_picker           = true;
+- var task_page             = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Tasks
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Tasks
+                                      li.breadcrumb-item.active Apps
+                    // Container-fluid starts
+                    .container-fluid
+                      .email-wrap.bookmark-wrap
+                        .row
+                          .col-xl-3.box-col-6
+                            .email-left-aside
+                              .card
+                                .card-body
+                                  .email-app-sidebar.left-bookmark
+                                    .media
+                                      .media-size-email
+                                        img.mr-3.rounded-circle(src='../assets/images/user/user.png', alt='')
+                                      .media-body
+                                        h6.f-w-600 MARK JENCO
+                                        p Markjecno@gmail.com
+                                    ul.nav.main-menu(role='tablist')
+                                      li.nav-item
+                                        button.badge-light-primary.btn-block.btn-mail(type='button', data-toggle='modal', data-target='#exampleModal')
+                                          i.mr-2(data-feather='check-circle')
+                                          |  New Task
+                                        #exampleModal.modal.fade.modal-bookmark(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+                                          .modal-dialog.modal-lg(role='document')
+                                            .modal-content
+                                              .modal-header
+                                                h5#exampleModalLabel.modal-title Add Task
+                                                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                                  span(aria-hidden='true') ×
+                                              .modal-body
+                                                form.form-bookmark#bookmark-form.needs-validation(novalidate='')
+                                                  .row
+                                                    .form-group.col-md-12
+                                                      label(for='task-title') Task Title
+                                                      input#task-title.form-control(type='text', required='', autocomplete='off')
+                                                    .form-group.col-md-12
+                                                      label(for='sub-task') Sub task
+                                                      input#sub-task.form-control(type='text', required='', autocomplete='off')
+                                                    .form-group.col-md-12
+                                                      .d-flex.date-details
+                                                        .d-inline-block
+                                                          label.d-block.mb-0(for='chk-ani')
+                                                            input#chk-ani.checkbox_animated(type='checkbox')
+                                                            | Remind on
+                                                        .d-inline-block
+                                                          input.datepicker-here.form-control(type='text', data-language='en', placeholder='Date')
+                                                        .d-inline-block
+                                                          select.form-control
+                                                            option 7:00 am
+                                                            option 7:30 am
+                                                            option 8:00 am
+                                                            option 8:30 am
+                                                            option 9:00 am
+                                                            option 9:30 am
+                                                            option 10:00 am
+                                                            option 10:30 am
+                                                            option 11:00 am
+                                                            option 11:30 am
+                                                            option 12:00 pm
+                                                            option 12:30 pm
+                                                            option 1:00 pm
+                                                            option 2:00 pm
+                                                            option 3:00 pm
+                                                            option 4:00 pm
+                                                            option 5:00 pm
+                                                            option 6:00 pm
+                                                        .d-inline-block
+                                                          label.d-block.mb-0(for='chk-ani1')
+                                                            input#chk-ani1.checkbox_animated(type='checkbox')
+                                                            | notification
+                                                        .d-inline-block
+                                                          label.d-block.mb-0(for='chk-ani2')
+                                                            input#chk-ani2.checkbox_animated(type='checkbox')
+                                                            | Mail
+                                                    .form-group.col-md-6
+                                                      select.js-example-basic-single
+                                                          option(value='task') My Task
+                                                    .form-group.col-md-6
+                                                      select.js-example-disabled-results#bm-collection
+                                                        option(value='general') General
+                                                    .form-group.col-md-12.my-0
+                                                      textarea.form-control(required='', autocomplete='off')   
+                                                  input#index_var(type='hidden', value='6' )
+                                                  button#Bookmark.btn.btn-secondary(onclick='submitBookMark()', type='submit') Save
+                                                  button.btn.btn-primary(type='button', data-dismiss='modal') Cancel
+                                      li.nav-item
+                                        span.main-title
+                                          |  Views
+                                      li
+                                        a#pills-created-tab(data-toggle='pill', href='#pills-created', role='tab', aria-controls='pills-created', aria-selected='true')
+                                          span.title
+                                            |  Created by me
+                                      li
+                                        a#pills-todaytask-tab.show(data-toggle='pill', href='#pills-todaytask', role='tab', aria-controls='pills-todaytask', aria-selected='false')
+                                          span.title
+                                            |  Today's Tasks
+                                      li
+                                        a#pills-delayed-tab.show(data-toggle='pill', href='#pills-delayed', role='tab', aria-controls='pills-delayed', aria-selected='false')
+                                          span.title
+                                            |  Delayed Tasks
+                                      li
+                                        a#pills-upcoming-tab.show(data-toggle='pill', href='#pills-upcoming', role='tab', aria-controls='pills-upcoming', aria-selected='false')
+                                          span.title
+                                            | Upcoming Tasks
+                                      li
+                                        a#pills-weekly-tab.show(data-toggle='pill', href='#pills-weekly', role='tab', aria-controls='pills-weekly', aria-selected='false')
+                                          span.title
+                                            | This week tasks
+                                      li
+                                        a#pills-monthly-tab.show(data-toggle='pill', href='#pills-monthly', role='tab', aria-controls='pills-monthly', aria-selected='false')
+                                          span.title
+                                            | This month tasks
+                                      li
+                                        a#pills-assigned-tab.show(data-toggle='pill', href='#pills-assigned', role='tab', aria-controls='pills-assigned', aria-selected='false')
+                                          span.title
+                                            | Assigned to me
+                                      li
+                                        a#pills-tasks-tab.show(data-toggle='pill', href='#pills-tasks', role='tab', aria-controls='pills-tasks', aria-selected='false')
+                                          span.title
+                                            | My tasks
+                                      li
+                                        hr
+                                      li
+                                        span.main-title
+                                          |  Tags
+                                          span.pull-right
+                                            a(href='#', data-toggle='modal', data-target='#createtag')
+                                              i(data-feather='plus-circle')
+                                      li
+                                        a#pills-notification-tab.show(data-toggle='pill', href='#pills-notification', role='tab', aria-controls='pills-notification', aria-selected='false')
+                                          span.title
+                                            |  notification
+                                      li
+                                        a#pills-newsletter-tab.show(data-toggle='pill', href='#pills-newsletter', role='tab', aria-controls='pills-newsletter', aria-selected='false')
+                                          span.title
+                                            |  Newsletter
+                                      li
+                                        a#pills-business-tab.show(data-toggle='pill', href='#', role='tab', aria-selected='false')
+                                          span.title
+                                            |  Business
+                                      li
+                                        a#pills-holidays-tab.show(data-toggle='pill', href='#', role='tab', aria-selected='false')
+                                          span.title
+                                            |  Holidays
+                          .col-xl-9.col-md-12.box-col-12
+                            .email-right-aside.bookmark-tabcontent
+                              .card.email-body.radius-left
+                                .pl-0
+                                  .tab-content
+                                    #pills-created.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='pills-created-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h5.mb-0 Created by me
+                                          a(href='#')
+                                            i.mr-2(data-feather='printer')
+                                            | Print
+                                        .card-body.p-0
+                                          .taskadd
+                                            .table-responsive
+                                              table.table
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Client meeting
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Plan webinar
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Email newsletter
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Publish podcast
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Lunch website
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Client meeting
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Plan webinar
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Email newsletter
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+
+                                          //- .details-bookmark.text-center
+                                          //-   span No tasks found.
+                                    #pills-todaytask.fade.tab-pane(role='tabpanel', aria-labelledby='pills-todaytask-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 Today's Tasks
+                                          a(href='#')
+                                            i.mr-2(data-feather='printer')
+                                            | Print
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            .row#favouriteData
+                                            .no-favourite
+                                              span No task due today.
+                                    #pills-delayed.fade.tab-pane(role='tabpanel', aria-labelledby='pills-delayed-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 Delayed Tasks
+                                          a(href='#')
+                                            i.mr-2(data-feather='printer')
+                                            | Print
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            span No tasks found.
+                                    #pills-upcoming.fade.tab-pane(role='tabpanel', aria-labelledby='pills-upcoming-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 Upcoming Tasks
+                                          a(href='#')
+                                            i.mr-2(data-feather='printer')
+                                            | Print
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            span No tasks found.
+                                    #pills-weekly.fade.tab-pane(role='tabpanel', aria-labelledby='pills-weekly-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 This Week Tasks
+                                          a(href='#')
+                                            i.mr-2(data-feather='printer')
+                                            | Print
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            span No tasks found.
+                                    #pills-monthly.fade.tab-pane(role='tabpanel', aria-labelledby='pills-monthly-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 This Month Tasks
+                                          a(href='#')
+                                            i.mr-2(data-feather='printer')
+                                            | Print
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            span No tasks found.
+                                    #pills-assigned.fade.tab-pane(role='tabpanel', aria-labelledby='pills-assigned-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 Assigned to me
+                                          a(href='#')
+                                            i.mr-2(data-feather='printer')
+                                            | Print
+                                        .card-body.p-0
+                                          .taskadd
+                                            .table-responsive
+                                              table.table
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Task name
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Task name
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Task name
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Task name
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Task name
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                          //- .details-bookmark.text-center
+                                          //-   span No tasks found.
+                                    #pills-tasks.fade.tab-pane(role='tabpanel', aria-labelledby='pills-tasks-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 My tasks
+                                          a(href='#')
+                                            i.mr-2(data-feather='printer')
+                                            | Print
+                                        .card-body.p-0
+                                          .taskadd
+                                            .table-responsive
+                                              table.table
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Task name
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Task name
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Task name
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Task name
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                                tr
+                                                  td
+                                                    h6.task_title_0 Task name
+                                                    p.project_name_0 General
+                                                  td
+                                                    p.task_desc_0 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                                  td
+                                                    a.mr-2(href='#')
+                                                      i(data-feather='link')
+                                                    a(href='#')
+                                                      i(data-feather='more-horizontal')
+                                                  td
+                                                    a(href='#')
+                                                      i(data-feather='trash-2')
+                                          //- .details-bookmark.text-center
+                                          //-   span No tasks found.
+                                    #pills-notification.fade.tab-pane(role='tabpanel', aria-labelledby='pills-notification-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 notification
+                                          a(href='#')
+                                            i.mr-2(data-feather='printer')
+                                            | Print
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            span No tasks found.
+                                    #pills-newsletter.fade.tab-pane(role='tabpanel', aria-labelledby='pills-newsletter-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h6.mb-0 Newsletter
+                                          a(href='#')
+                                            i.mr-2(data-feather='printer')
+                                            | Print
+                                        .card-body
+                                          .details-bookmark.text-center
+                                            span No tasks found.
+                                    #createtag.modal.fade.modal-bookmark(tabindex='-1', role='dialog', aria-hidden='true')
+                                      .modal-dialog.modal-lg(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            h5.modal-title Create Tag
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×
+                                          .modal-body
+                                            form.form-bookmark.needs-validation(novalidate='')
+                                              .row
+                                                .form-group.col-md-12
+                                                  label Tag Name
+                                                  input.form-control(type='text', required='', autocomplete='off')
+                                                .form-group.col-md-12.mb-0
+                                                  label Tag color
+                                                  input.form-control(type='color', value='#563d7c')
+                                              button.btn.btn-secondary(type='button') Save
+                                              button.btn.btn-primary(type='button', data-dismiss='modal') Cancel
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

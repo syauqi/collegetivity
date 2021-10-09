@@ -1,0 +1,191 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Payment Details
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Ecommerce
+                                      li.breadcrumb-item.active Payment Details
+                    // Container-fluid starts
+                    .container-fluid.credit-card
+                      .row
+                        // Individual column searching (text inputs) Starts
+                        .col-xl-8.box-col-12
+                          .card
+                            .card-header.py-4
+                              h5 Credit card 
+                            .card-body
+                              .row
+                                .col-md-7
+                                  form.theme-form.mega-form
+                                    .form-group
+                                      input.form-control(type='text', placeholder='Card number')
+                                    .form-group
+                                      input.form-control(type='text', placeholder='First Name')
+                                    .form-group
+                                      input.form-control(type='date')
+                                    .form-group
+                                      input.form-control(type='text', placeholder='Name on card')
+                                    .form-group.mb-0
+                                      select.form-control(size='1')
+                                        option Select Type
+                                        option Master
+                                        option Visa
+                                .col-md-5.text-center
+                                  img.img-fluid(src='../assets/images/ecommerce/card.png', alt='')
+                        // Individual column searching (text inputs) Ends
+                        // Debit Card Starts
+                        .col-xl-4.col-lg-6.box-col-6.debit-card
+                          .card
+                            .card-header.py-4
+                              h5 Debit card 
+                            .card-body
+                              form.theme-form.e-commerce-form.row
+                                .form-group.col-6.p-r-0
+                                  input.form-control(type='text', placeholder='Full name here')
+                                .form-group.col-6
+                                  input.form-control(type='text', placeholder='Card number')
+                                .form-group.col-6.p-r-0
+                                  input.form-control(type='text', placeholder='CVV number')
+                                .form-group.col-6
+                                  input.form-control(type='text', placeholder='CVC')
+                                .col-12
+                                  label.col-form-label.p-b-20 Expiration Date
+                                .form-group.col-6.p-r-0
+                                  select.form-control(size='1')
+                                    option Select Month
+                                    option Jan
+                                    option Fab
+                                    option March
+                                    option April
+                                .form-group.col-6
+                                  select.form-control(size='1')
+                                    option Select Year
+                                    option 2015
+                                    option 2016
+                                    option 2017
+                                    option 2018
+                                    option 2019
+                                .col-12
+                                  button.btn.btn-primary.btn-block(type='button', title='') Submit
+                        // Debit Card Ends
+                        // COD Starts
+                        .col-xl-4.col-lg-6.box-col-6
+                          .card
+                            .card-header.py-4
+                              h5 COD
+                            .card-body
+                              form.theme-form.row
+                                .form-group.col-6.p-r-0
+                                  input.form-control(type='text', placeholder='First Name')
+                                .form-group.col-6
+                                  input.form-control(type='text', placeholder='Last name')
+                                .form-group.col-6.p-r-0
+                                  input.form-control(type='text', placeholder='Pincode')
+                                .form-group.col-6
+                                  input.form-control(type='number', placeholder='Enter mobile number')
+                                .form-group.col-6.p-r-0
+                                  input.form-control(type='text', placeholder='State')
+                                .form-group.col-6
+                                  input.form-control(type='text', placeholder='City')
+                                .form-group.col-12
+                                  textarea.form-control(rows='3', placeholder='Address')
+                                .col-12
+                                  button.btn.btn-primary.btn-block(type='button', title='') Submit
+                        // COD Ends
+                        // EMI Starts
+                        .col-xl-4.col-lg-6.box-col-6
+                          .card
+                            .card-header.py-4
+                              h5 EMI
+                            .card-body
+                              form.theme-form.row
+                                .form-group.col-6.p-r-0
+                                  input.form-control(type='text', placeholder='First Name')
+                                .form-group.col-6
+                                  input.form-control(type='text', placeholder='Last name')
+                                .form-group.col-6.p-r-0
+                                  input.form-control(type='text', placeholder='Pincode')
+                                .form-group.col-6
+                                  select.form-control(size='1')
+                                    option Bank Name
+                                    option SBI
+                                    option ICICI
+                                    option KOTAK
+                                    option BOB
+                                .form-group.col-12
+                                  select.form-control(size='1')
+                                    option Select Card
+                                    option 2
+                                    option 3
+                                    option 4
+                                    option 5
+                                .form-group.col-12
+                                  select.form-control(size='1')
+                                    option Select Duration
+                                    option 2015-2016
+                                    option 2016-2017
+                                    option 2017-2018
+                                    option 2018-2019
+                                .form-group.col-12
+                                  ul.payment-opt
+                                    li
+                                      img(src='../assets/images/ecommerce/mastercard.png', alt='')
+                                    li
+                                      img(src='../assets/images/ecommerce/visa.png', alt='')
+                                    li
+                                      img(src='../assets/images/ecommerce/paypal.png', alt='')
+                                .col-12
+                                  button.btn.btn-primary.btn-block(type='button', title='') Submit
+                        // EMI Ends
+                        // EMI Starts
+                        .col-xl-4.col-lg-6.box-col-6
+                          .card
+                            .card-header.py-4
+                              h5 Net Banking
+                            .card-body
+                              form.theme-form.row
+                                .form-group.col-12
+                                  input.form-control(type='text', placeholder='AC Holder name')
+                                .form-group.col-12
+                                  input.form-control(type='text', placeholder='Account number')
+                                .form-group.col-6.p-r-0
+                                  select.form-control(size='1')
+                                    option Select Bank
+                                    option SBI
+                                    option ICICI
+                                    option KOTAK
+                                    option BOB
+                                .form-group.col-6
+                                  input.form-control(type='text', placeholder='ICFC code')
+                                .form-group.col-12
+                                  input.form-control(type='number', placeholder='Enter mobile number')
+                                .form-group.col-12
+                                  input.form-control(type='text', placeholder='Other Details')
+                                .col-12
+                                  button.btn.btn-primary.btn-block(type='button', title='') Submit
+                        // EMI Ends
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

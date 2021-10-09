@@ -1,0 +1,774 @@
+- var landing_sticky        = true;
+- var wow                   = true;
+- var animate               = true;
+- var owlcarousel           = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body.landing-page
+        // page-wrapper Start
+        .page-wrapper.landing-page
+            // Page Body Start            
+            .landing-home
+              ul.decoration
+                li.one
+                  img.img-fluid(src='../assets/images/landing/decore/1.png', alt='')
+                li.two
+                  img.img-fluid(src='../assets/images/landing/decore/2.png', alt='')
+                li.three
+                  img.img-fluid(src='../assets/images/landing/decore/4.png', alt='')
+                li.four
+                  img.img-fluid(src='../assets/images/landing/decore/3.png', alt='')
+                li.five
+                  img.img-fluid(src='../assets/images/landing/2.png', alt='')
+                li.six
+                  img.img-fluid(src='../assets/images/landing/decore/cloud.png', alt='')
+                li.seven
+                  img.img-fluid(src='../assets/images/landing/2.png', alt='')
+
+              .container-fluid
+                .sticky-header
+                      header                        
+                         nav#sidebar-menu.navbar.navbar-b.navbar-trans.navbar-expand-xl.fixed-top.nav-padding
+                                a.navbar-brand.p-0(href='#')
+                                  img.img-fluid(src='../assets/images/landing/landing_logo.png', alt='')
+                                button.navbar-toggler.navabr_btn-set.custom_nav(type='button', data-toggle='collapse', data-target='#navbarDefault', aria-controls='navbarDefault', aria-expanded='false', aria-label='Toggle navigation')
+                                  span
+                                  span
+                                  span
+                                #navbarDefault.navbar-collapse.justify-content-end.collapse.hidenav(style='')
+                                  ul.navbar-nav.navbar_nav_modify#scroll-spy
+                                    li.nav-item
+                                      a.nav-link(href='#layout') Layout
+                                    li.nav-item
+                                      a.nav-link(href='#dashboards') Dashboards
+                                    li.nav-item
+                                      a.nav-link(href='#components') Components
+                                    li.nav-item
+                                      a.nav-link(href='#applications') Applications
+                                    li.nav-item
+                                      a.nav-link(href='#frameworks') Frameworks
+                                    li.nav-item.buy-btn
+                                      a.nav-link.js-scroll(href='https://1.envato.market/3GVzd' target="_blank") Purchase
+                                       
+                .row
+                  .col-xl-5.col-lg-6
+                    .content
+                      div
+                        h1.wow.fadeIn One stop  
+                        h1.wow.fadeIn For all admin template
+                        h2.txt-secondary.wow.fadeIn Faster, Lighter & Dev. Friendly
+                        p.mt-3.wow.fadeIn Cuba Admin Design makes your project modern, clean and reduce your project integration time. cuba comes with 10+ Apps , Dark Mode and RTL Ready
+                     
+                        .btn-grp.mt-4
+                          a.btn.btn-pill.btn-primary.btn-air-primary.btn-lg.mr-3.wow.pulse(href="index.html" target="_blank") 
+                            img(src="../assets/images/landing/icon/html/html.png" alt="")
+                            | HTML
+                          a.btn.btn-pill.btn-secondary.btn-air-secondary.btn-lg.mr-3.wow.pulse(href="index.html" target="_blank")
+                            img(src="../assets/images/landing/icon/react/react.png" alt="")
+                            | React
+                          a.btn.btn-pill.btn-success.btn-air-success.btn-lg.wow.pulse.mr-3(href="http://laravel.pixelstrap.com/cuba/pages/landing" target="_blank") 
+                            img(src="../assets/images/landing/icon/laravel/laravel2.png" alt="")
+                            | Laravel
+                          a.btn.btn-pill.btn-info.btn-air-info.btn-lg.wow.pulse(href="http://angular.pixelstrap.com/cuba/" target="_blank") 
+                            img(src="../assets/images/landing/icon/angular/angular.svg" alt="")
+                            | Angular
+                  .col-xl-7.col-lg-6                  
+                    .wow.fadeIn
+                      img.screen1(src="../assets/images/landing/screen1.jpg" alt="")
+                    .wow.fadeIn
+                      img.screen2(src="../assets/images/landing/screen2.jpg" alt="")
+
+            section#layout.section-space.cuba-demo-section.layout
+              .container
+                .row
+                  .col-sm-12.wow.pulse
+                    .cuba-demo-content.mt50
+                      .couting
+                        h2 8+
+                        p Admin Unique Layouts
+                      
+              .container-fluid
+                .owl-carousel.owl-theme.layout-slider
+                  .item.wow.fadeIn
+                    h5 Light Layout             
+                    .img-effect
+                      .hover-link
+                        a.btn.btn-primary.btn-air-primary(href="index.html" target='_blank') Html
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://react.pixelstrap.com/cuba/dashboard/default" target='_blank') React
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://laravel.pixelstrap.com/cuba/dashboard/index" target='_blank') Laravel
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://angular.pixelstrap.com/cuba/" target='_blank') Angular
+                        a.btn.btn-secondary.btn-air-secondary.ml-2(href="layout-rtl.html" target='_blank') RTL
+                      a(href='../theme/index.html' target='_blank')
+                        img.img-fluid.cuba-img(src='../assets/images/landing/layout/light.jpg' alt='')
+                        
+                          
+                  .item.wow.fadeIn
+                    h5 Dark Layout
+                    .img-effect
+                      .hover-link
+                        a.btn.btn-primary.btn-air-primary(href="layout-dark.html" target='_blank') Html
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://react.pixelstrap.com/cuba/dashboard/default" target='_blank') React
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://laravel.pixelstrap.com/cuba/page-layouts/layout-dark" target='_blank') Laravel
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://angular.pixelstrap.com/cuba/" target='_blank') Angular
+                        a.btn.btn-secondary.btn-air-secondary.ml-2(href="layout-rtl.html" target='_blank') RTL
+                      a(href='layout-dark.html' target='_blank')
+                        img.img-fluid.cuba-img(src='../assets/images/landing/layout/dark.jpg' alt='')
+
+                  .item.wow.fadeIn
+                    h5 Semi Dark
+                    .img-effect
+                      .hover-link
+                        a.btn.btn-primary.btn-air-primary(href="semi-dark.html" target='_blank') Html
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://react.pixelstrap.com/cuba/dashboard/default" target='_blank') React
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://laravel.pixelstrap.com/cuba/dashboard/index" target='_blank') Laravel
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://angular.pixelstrap.com/cuba/" target='_blank') Angular
+                        a.btn.btn-secondary.btn-air-secondary.ml-2(href="layout-rtl.html" target='_blank') RTL
+                      a(href='lndex.html' target='_blank')
+                        img.img-fluid.cuba-img(src='../assets/images/landing/layout/semidark.jpg' alt='')
+                        
+                  .item.wow.fadeIn
+                    h5 Compact Layout
+                    .img-effect
+                      .hover-link
+                        a.btn.btn-primary.btn-air-primary(href="compact" target='_blank') Html
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://react.pixelstrap.com/cuba/dashboard/default" target='_blank') React
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://laravel.pixelstrap.com/cuba/page-layouts/compact-layout" target='_blank') Laravel
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://angular.pixelstrap.com/cuba/" target='_blank') Angular
+                        a.btn.btn-secondary.btn-air-secondary.ml-2(href="layout-rtl.html" target='_blank') RTL
+                      a(href='lndex.html' target='_blank')
+                        img.img-fluid.cuba-img(src='../assets/images/landing/layout/compact.jpg' alt='')
+
+                  .item.wow.fadeIn
+                    h5 Box Layout
+                    .img-effect
+                      .hover-link
+                        a.btn.btn-primary.btn-air-primary(href="box-layout.html" target='_blank') Html
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://react.pixelstrap.com/cuba/dashboard/default" target='_blank') React
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://laravel.pixelstrap.com/cuba/page-layouts/layout-box" target='_blank') Laravel
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://angular.pixelstrap.com/cuba/" target='_blank') Angular
+                        a.btn.btn-secondary.btn-air-secondary.ml-2(href="layout-rtl.html" target='_blank') RTL
+                      a(href='box-layout.html' target='_blank')
+                        img.img-fluid.cuba-img(src='../assets/images/landing/layout/box.jpg' alt='')
+
+                        
+                  .item.wow.fadeIn
+                    h5 Vertical Layout
+                    .img-effect
+                      .hover-link
+                        a.btn.btn-primary.btn-air-primary(href="index.html" target='_blank') Html
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://react.pixelstrap.com/cuba/dashboard/default" target='_blank') React
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://laravel.pixelstrap.com/cuba/page-layouts/vertical-layout" target='_blank') Laravel
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://angular.pixelstrap.com/cuba/" target='_blank') Angular
+                        a.btn.btn-secondary.btn-air-secondary.ml-2(href="layout-rtl.html" target='_blank') RTL
+                      a(href='layout-light.html' target='_blank')
+                        img.img-fluid.cuba-img(src='../assets/images/landing/layout/vertical.jpg' alt='')
+
+                 
+                  .item.wow.fadeIn
+                    h5 Vetical Box Layout
+                    .img-effect
+                      .hover-link
+                        a.btn.btn-primary.btn-air-primary(href="index.html" target='_blank') Html
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://react.pixelstrap.com/cuba/dashboard/default" target='_blank') React
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://laravel.pixelstrap.com/cuba/page-layouts/vertical-box-layout" target='_blank') Laravel
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://angular.pixelstrap.com/cuba/" target='_blank') Angular
+                        a.btn.btn-secondary.btn-air-secondary.ml-2(href="layout-rtl.html" target='_blank') RTL
+                      a(href='general-widget.html' target='_blank')
+                        img.img-fluid.cuba-img(src='../assets/images/landing/layout/vertical&box.jpg' alt='')
+
+                  .item.wow.fadeIn
+                    h5 Compact Dark Layout
+                    .img-effect
+                      .hover-link
+                        a.btn.btn-primary.btn-air-primary(href="compact-dark.html" target='_blank') Html
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://react.pixelstrap.com/cuba/dashboard/default" target='_blank') React
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://laravel.pixelstrap.com/cuba/page-layouts/compact-dark-layout" target='_blank') Laravel
+                        a.btn.btn-primary.btn-air-primary.ml-2(href="http://angular.pixelstrap.com/cuba/" target='_blank') Angular
+                        a.btn.btn-secondary.btn-air-secondary.ml-2(href="layout-rtl.html" target='_blank') RTL
+                      a(href='general-widget.html' target='_blank')
+                        img.img-fluid.cuba-img(src='../assets/images/landing/layout/compact&dark.jpg' alt='')
+                      
+
+            section#frameworks.section-space.cuba-demo-section.frameworks-section
+              .container
+                .row                  
+                  .col-sm-12.wow.pulse
+                    .cuba-demo-content.mt50
+                      .couting
+                        h2 4+
+                      p.mb-0 Top Frameworks
+                  .col-sm-12.framworks                  
+                              ul#pills-tab.nav.nav-pills.justify-content-center(role='tablist')
+                                li.nav-item
+                                  a#pills-home-tab.nav-link.d-flex.active(data-toggle='pill', href='#pills-home', role='tab', aria-controls='pills-home', aria-selected='true') 
+                                    img(src="../assets/images/landing/icon/html/html.png" alt="")
+                                    .text-left
+                                      h5.mb-0 HTML
+                                      p.mb-0 Frameworks
+                                   
+                                li.nav-item
+                                  a#pills-profile-tab.d-flex.nav-link(data-toggle='pill', href='#pills-profile', role='tab', aria-controls='pills-profile', aria-selected='false') 
+                                    img(src="../assets/images/landing/icon/react/react1.png" alt="")
+                                    .text-left
+                                      h5.mb-0 React
+                                      p.mb-0 Frameworks
+                                   
+                                li.nav-item
+                                  a#pills-angular-tab.d-flex.nav-link(data-toggle='pill', href='#pills-angular', role='tab', aria-controls='pills-angular', aria-selected='false') 
+                                    img(src="../assets/images/landing/icon/angular/angular.svg" alt="")
+                                    .text-left
+                                      h5.mb-0 Angular
+                                      p.mb-0 Frameworks
+
+                                li.nav-item
+                                  a#pills-contact-tab.d-flex.nav-link(data-toggle='pill', href='#pills-contact', role='tab', aria-controls='pills-contact', aria-selected='false') 
+                                    img(src="../assets/images/landing/icon/laravel/laravel.png" alt="")
+                                    .text-left
+                                      h5.mb-0 Laravel
+                                      p.mb-0 Frameworks
+
+
+                              #pills-tabContent.tab-content.mt-5
+                                #pills-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-home-tab')
+                                  ul.framworks-list
+                                    li.box.wow.fadeInUp
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/bootstrap.png" alt="")
+                                      h6.mb-0.mt-3 Booxstrap 4X
+                                    li.box.wow.fadeInUp
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/css.png" alt="")
+                                      h6.mb-0.mt-3 CSS
+                                    li.box.wow.fadeInUp
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/sass.png" alt="")
+                                      h6.mb-0.mt-3 Sass
+                                    li.box.wow.fadeInUp
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/pug.png" alt="")
+                                      h6.mb-0.mt-3 Pug
+                                    li.box.wow.fadeInUp
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/npm.png" alt="")
+                                      h6.mb-0.mt-3 NPM
+                                    li.box.wow.fadeInUp
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/gulp.png" alt="")
+                                      h6.mb-0.mt-3 Gulp
+                                    li.box.wow.bounceIn                                    
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/kit.png" alt="")
+                                      h6.mb-0.mt-3 Starter Kit
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/uikits.png" alt="")
+                                      h6.mb-0.mt-3 40+ UI Kits
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/layout.png" alt="")
+                                      h6.mb-0.mt-3 8+ Layout
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/builders.png" alt="")
+                                      h6.mb-0.mt-3 Builders
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/iconset.png" alt="")
+                                      h6.mb-0.mt-3 11 Icon Sets
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/forms.png" alt="")
+                                      h6.mb-0.mt-3 Forms
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/table.png" alt="")
+                                      h6.mb-0.mt-3 Tables
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/apps.png" alt="")
+                                      h6.mb-0.mt-3 17+ Apps
+                                    
+                                    
+                                #pills-profile.tab-pane.fade(role='tabpanel', aria-labelledby='pills-profile-tab')
+                                  ul.framworks-list
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/react/hook.png" alt="")
+                                      h6.mb-0.mt-3 React Hook
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/react/reactstrap.png" alt="")
+                                      h6.mb-0.mt-3 React Strap
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/react/noquery.png" alt="")
+                                      h6.mb-0.mt-3 No Jquery
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/react/redux.png" alt="")
+                                      h6.mb-0.mt-3 Redux
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/react/firebase.png" alt="")
+                                      h6.mb-0.mt-3 Firebase Auth
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/react/crud.png" alt="")
+                                      h6.mb-0.mt-3 Firebase Crud
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/react/chat.png" alt="")
+                                      h6.mb-0.mt-3 Chat
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/react/animation.png" alt="")
+                                      h6.mb-0.mt-3 Router Animation
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/react/props_state.png" alt="")
+                                      h6.mb-0.mt-3 State & Props
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/react/reactrouter.png" alt="")
+                                      h6.mb-0.mt-3 Reactrouter
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/react/chart.png" alt="")
+                                      h6.mb-0.mt-3 Amazing Chart
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/react/map.png" alt="")
+                                      h6.mb-0.mt-3 Map
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/react/gallery.png" alt="")
+                                      h6.mb-0.mt-3 Gallery
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/react/application.png" alt="")
+                                      h6.mb-0.mt-3 9+ Apps
+                                    
+
+                                    
+                                #pills-angular.tab-pane.fade(role='tabpanel', aria-labelledby='pills-angular-tab')
+                                  ul.framworks-list
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/angular/1.png" alt="")
+                                      h6.mb-0.mt-3 SCSS
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/angular/2.png" alt="")
+                                      h6.mb-0.mt-3 Ng Bootstrap
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/angular/3.png" alt="")
+                                      h6.mb-0.mt-3 RXjs
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/angular/4.png" alt="")
+                                      h6.mb-0.mt-3 Router
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/angular/5.png" alt="")
+                                      h6.mb-0.mt-3 Form
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/angular/6.png" alt="")
+                                      h6.mb-0.mt-3 Apex chart
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/angular/7.png" alt="")
+                                      h6.mb-0.mt-3 Chart.js
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/angular/8.png" alt="")
+                                      h6.mb-0.mt-3 Chartist
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/angular/9.png" alt="")
+                                      h6.mb-0.mt-3 Google Map
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/angular/10.png" alt="")
+                                      h6.mb-0.mt-3 Gallery
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/angular/11.png" alt="")
+                                      h6.mb-0.mt-3 Ecommerce
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/angular/12.png" alt="")
+                                      h6.mb-0.mt-3 Firebase Auth
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/angular/13.png" alt="")
+                                      h6.mb-0.mt-3 Firebase Crud
+                                    li.box.wow.bounceIn                                     
+                                      div 
+                                        img(src="../assets/images/landing/icon/angular/14.png" alt="")
+                                      h6.mb-0.mt-3 Chat
+                                #pills-contact.tab-pane.fade(role='tabpanel', aria-labelledby='pills-contact-tab')
+                                  ul.framworks-list
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/laravel/laravel.png" alt="")
+                                      h6.mb-0.mt-3 Laravel 7
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/laravel/bootstrap.png" alt="")
+                                      h6.mb-0.mt-3 Bootstrap 4
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/html/sass.png" alt="")
+                                      h6.mb-0.mt-3 SASS
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/laravel/blade.png" alt="")
+                                      h6.mb-0.mt-3 Blade
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/laravel/layouts.png" alt="")
+                                      h6.mb-0.mt-3 Layouts
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/laravel/npm.png" alt="")
+                                      h6.mb-0.mt-3 NPM
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/laravel/mix.png" alt="")
+                                      h6.mb-0.mt-3 MIX
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/laravel/yarn.png" alt="")
+                                      h6.mb-0.mt-3 Yarn
+                                    li.box
+                                      div 
+                                        img(src="../assets/images/landing/icon/laravel/sasswebpack.png" alt="")
+                                      h6.mb-0.mt-3 Sasswebpack
+                                    
+            section#dashboards.section-space.cuba-demo-section
+              .container
+                .row
+                  .col-sm-12.wow.pulse
+                    .cuba-demo-content.mt50
+                      .couting
+                        h2 2+
+                      p Dashboard                      
+              .container.container-modify
+                .row.dashboard
+                  .col-lg-6.col-sm-6.wow.fadeIn
+                    .img-effect
+                      a(href='index.html' target='_blank')
+                        img.img-fluid.cuba-img(src='../assets/images/landing/dafault-dashboard.jpg' alt='')
+                        .cuba_img_content
+                          h4 Default Dashboard
+                  .col-lg-6.col-sm-6.wow.fadeIn
+                    .img-effect
+                      a(href='../theme/dashboard-02.html' target='_blank')
+                        img.img-fluid.cuba-img(src='../assets/images/landing/ecommerce-dashboard.jpg' alt='')
+                        .cuba_img_content
+                          h4 Ecommerce Dashboard
+                          
+            section.section-space.cuba-demo-section.bg-Widget.pb-0.bg-primary
+              .container
+                .row
+                  .col-sm-12.wow.pulse
+                    .cuba-demo-content.mt50
+                      .couting
+                        h2 Cards
+                      p So many unique cards
+                        
+              .container-fluid.o-hidden
+                .row.landing-cards
+                  .col-lg-8
+                    .row
+                      .col-sm-5.col-12
+                        img(class="img-fluid landing-card" src="../assets/images/landing/cards/1.jpg" alt="")
+                      .col-sm-4.col-7
+                        img(class="img-fluid landing-card" src="../assets/images/landing/cards/2.jpg" alt="")
+                      .col-sm-3.col-5
+                        img(class="img-fluid landing-card" src="../assets/images/landing/cards/3.jpg" alt="")
+
+
+                      .col-sm-8.col-12
+                          .row
+                            .col-6
+                              img(class="img-fluid landing-card" src="../assets/images/landing/cards/4.jpg" alt="")
+                            .col-6
+                              img(class="img-fluid landing-card" src="../assets/images/landing/cards/5.jpg" alt="")
+                            .col-5
+                              img(class="img-fluid landing-card" src="../assets/images/landing/cards/7.jpg" alt="")
+                            .col-7
+                              img(class="img-fluid landing-card" src="../assets/images/landing/cards/8.jpg" alt="")
+                      .col-sm-4.col-12
+                        .row
+                          .col-sm-12.col-6
+                            img(class="img-fluid landing-card" src="../assets/images/landing/cards/6.jpg" alt="")
+                          .col-sm-12.col-6
+                            img(class="img-fluid landing-card" src="../assets/images/landing/cards/9.jpg" alt="")
+                  .col-lg-4
+                    .row
+                      .col-lg-12.col-sm-4
+                        img(class="img-fluid landing-card" src="../assets/images/landing/cards/10.jpg" alt="")
+                      .col-md-6.col-sm-4
+                        img(class="img-fluid landing-card" src="../assets/images/landing/cards/15.jpg" alt="")
+                        img(class="img-fluid landing-card" src="../assets/images/landing/cards/11.jpg" alt="")
+                        img(class="img-fluid landing-card" src="../assets/images/landing/cards/21.jpg" alt="")
+                      .col-md-6.col-sm-4
+                        img(class="img-fluid landing-card" src="../assets/images/landing/cards/14.jpg" alt="")
+                        img(class="img-fluid landing-card" src="../assets/images/landing/cards/13.jpg" alt="")
+                    
+            section#applications.section-space.cuba-demo-section.app_bg
+              .container
+                .row
+                  .col-sm-12.wow.pulse
+                    .cuba-demo-content.mt50
+                      .couting
+                        h2 20+
+                      p Usefull application
+              .container.container-modify.apps
+                .landing-slider.owl-carousel.owl-theme
+                  .item  
+                    
+                      .img-effect
+                        a(href='../theme/social-app.html' target='_blank')
+                          img.img-fluid.cuba-img(src='../assets/images/landing/social-app.jpg' alt='')
+                          .cuba_img_content
+                            h4 Social App
+                  .item  
+                    
+                      .img-effect
+                        a(href='../theme/knowledgebase.html' target='_blank')
+                          img.img-fluid.cuba-img(src='../assets/images/landing/knowlagebase-app.jpg' alt='')
+                          .cuba_img_content
+                            h4 knowledgebase
+                  .item  
+                    
+                      .img-effect
+                        a(href='../theme/support-ticket.html' target='_blank')
+                          img.img-fluid.cuba-img(src='../assets/images/landing/support-ticket-app.jpg' alt='')
+                          .cuba_img_content
+                            h4 Support Ticket
+                  .item
+                    
+                      .img-effect
+                        a(href='../theme/email-application.html' target='_blank')
+                          img.img-fluid.cuba-img(src='../assets/images/landing/mail-app.jpg' alt='')
+                          .cuba_img_content
+                            h4 Email Dashboard
+                  .item
+                    
+                      .img-effect
+                        a(href='../theme/to-do.html' target='_blank')
+                          img.img-fluid.cuba-img(src='../assets/images/landing/To-Do-app.jpg' alt='')
+                          .cuba_img_content
+                            h4 To-Do
+                  .item
+                    
+                      .img-effect
+                        a(href='../theme/job-cards-view.html' target='_blank')
+                          img.img-fluid.cuba-img(src='../assets/images/landing/job-search-app.jpg' alt='')
+                          .cuba_img_content
+                            h4 Job Search
+                  .item
+                    
+                      .img-effect
+                        a(href='../theme/product-page.html' target='_blank')
+                          img.img-fluid.cuba-img(src='../assets/images/landing/ecommerce-app.jpg' alt='')
+                          .cuba_img_content
+                            h4 Ecommerce
+                  .item                              
+                    
+                      .img-effect
+                        a(href='../theme/kanban.html' target='_blank')
+                          img.img-fluid.cuba-img(src='../assets/images/landing/apps/kanban.jpg' alt='')
+                          .cuba_img_content
+                            h4 Kanban
+                  .item
+                    
+                      .img-effect
+                        a(href='../theme/file-manager.html' target='_blank')
+                          img.img-fluid.cuba-img(src='../assets/images/landing/apps/file.jpg' alt='')
+                          .cuba_img_content
+                            h4 File Manager
+                  .item          
+                    
+                      .img-effect
+                        a(href='../theme/projects.html' target='_blank')
+                          img.img-fluid.cuba-img(src='../assets/images/landing/apps/project.jpg' alt='')
+                          .cuba_img_content
+                            h4 Project
+                  .item
+                   
+                      .img-effect
+                        a(href='../theme/contacts.html' target='_blank')
+                          img.img-fluid.cuba-img(src='../assets/images/landing/apps/contacts.jpg' alt='')
+                          .cuba_img_content
+                            h4 Contacts
+                  .item
+                    
+                      .img-effect
+                        a(href='../theme/chat.html' target='_blank')
+                          img.img-fluid.cuba-img(src='../assets/images/landing/apps/chat.jpg' alt='')
+                          .cuba_img_content
+                            h4 Chat
+                  //- .col-12
+                  //-     a.btn-download.btn.btn-gradient(href="../theme/bookmark.html" target="_blank")
+                  //-       | View More...  
+
+            section.section-space.cuba-demo-section.email_bg
+                .container
+                  .row
+                    .col-sm-12.wow.pulse
+                      .cuba-demo-content.mt50
+                        .couting
+                          h2  Email
+                          p  Usefull Templates
+                img.img-fluid(src='../assets/images/landing/email_section_img.jpg' alt='')
+
+
+            section#components.section-space.cuba-demo-section.components-section
+              .container
+                .row
+                  .col-sm-12.wow.pulse
+                    .cuba-demo-content.mt50
+                      .couting
+                        h2 UI
+                      p Components
+
+              .container.container-modify
+                .row.component_responsive
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/1.png' alt='')
+                      h6.m-0.Pt-4 SweetAlert2
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/2.png' alt='')
+                      h6.m-0 Avatar
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/3.png' alt='')
+                      h6.m-0 Scrollable
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/4.png' alt='')
+                      h6.m-0 Tree view
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/5.png' alt='')
+                      h6.m-0 Bootstrap notify
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/6.png' alt='')
+                      h6.m-0 Rating 
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/7.png' alt='')
+                      h6.m-0 Dropzone
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/8.png' alt='')
+                      h6.m-0 Tour
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/9.png' alt='')
+                      h6.m-0 Animated modal
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/10.png' alt='')
+                      h6.m-0 Owl Carousel
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/11.png' alt='')
+                      h6.m-0 Ribbons 
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/12.png' alt='')
+                      h6.m-0 Pagination 
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/13.png' alt='')
+                      h6.m-0 Steps 
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/14.png' alt='')
+                      h6.m-0 Breadcrumb  
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/15.png' alt='')
+                      h6.m-0 Range Slider 
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/16.png' alt='')
+                      h6.m-0 image cropper 
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/17.png' alt='')
+                      h6.m-0 Sticky 
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/18.png' alt='')
+                      h6.m-0 Progress 
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/19.png' alt='')
+                      h6.m-0 Tooltip 
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/20.png' alt='')
+                      h6.m-0 Spinners 
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/21.png' alt='')
+                      h6.m-0 Dropdown 
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/22.png' alt='')
+                      h6.m-0 Tabs 
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/23.png' alt='')
+                      h6.m-0 Accordion  
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/24.png' alt='')
+                      h6.m-0 Navs
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/25.png' alt='')
+                      h6.m-0 Shadow
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/26.png' alt='')
+                      h6.m-0 state color
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/27.png' alt='')
+                      h6.m-0 List  
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/28.png' alt='')
+                      h6.m-0 Grid 
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/29.png' alt='')
+                      h6.m-0 Helper classes 
+                  .col-lg-2.col-sm-4.col-6.component-col-set
+                    .component-hover-effect
+                      img(src='../assets/images/landing/icon/30.png' alt='')
+                      h6.m-0 Typography
+            footer.footer-bg
+              .container
+                .landing-center.ptb50
+                  .title
+                    img.img-fluid(src='../assets/images/landing/landing_logo.png' alt='')
+                  .footer-content
+                    h1 The Cuba Bootstrap Admin Theme Trusted By Many Developers World Wide.
+                    p If You like Our Theme So Please Rate Us.
+                    a.btn.mrl5.btn-lg.btn-primary.default-view(target='_blank' href='index.html') Check Now
+                    a.btn.mrl5.btn-lg.btn-secondary.btn-md-res(target='_blank' href='https://1.envato.market/3GVzd') Buy Now                    
+           
+        include ../../components/footer-files

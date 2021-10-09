@@ -1,0 +1,30 @@
+- var countdown             = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            // Page Body Start
+            .container-fluid.p-0.m-0
+              .comingsoon.comingsoon-bgimg
+                .comingsoon-inner.text-center
+                  img(src='../assets/images/other-images/coming-soon-Logo.png', alt='')
+                  h5 WE ARE COMING SOON
+                  #clockdiv.countdown
+                    ul
+                      li
+                        span#days.time
+                        span.title days
+                      li
+                        span#hours.time
+                        span.title Hours
+                      li
+                        span#minutes.time
+                        span.title Minutes
+                      li
+                        span#seconds.time
+                        span.title Seconds
+        include ../../components/footer-files

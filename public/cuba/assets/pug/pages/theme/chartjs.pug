@@ -1,0 +1,73 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var chartjs               = true;
+- var page_chartjs          = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | ChartJS Chart
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Charts
+                                      li.breadcrumb-item.active ChartJS Chart
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-xl-6.col-md-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Bar Chart
+                            .card-body.chart-block
+                              canvas#myBarGraph
+                        .col-xl-6.col-md-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Line Graph
+                            .card-body.chart-block
+                              canvas#myGraph
+                        .col-xl-6.col-md-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Radar Graph
+                            .card-body.chart-block
+                              canvas#myRadarGraph
+                        .col-xl-6.col-md-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Line Chart
+                            .card-body.chart-block
+                              canvas#myLineCharts
+                        .col-xl-6.col-md-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Doughnut Chart
+                            .card-body.chart-block.chart-vertical-center
+                              canvas#myDoughnutGraph
+                        .col-xl-6.col-md-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Polar Chart
+                            .card-body.chart-block.chart-vertical-center
+                              canvas#myPolarGraph
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

@@ -1,0 +1,438 @@
+/*======= Specific Section =======*/
+
+/*======= Counter Section Bordered =======*/
+.counter-section-bordered {
+    .counter-section-inner {
+        background-color: $color-primary;
+        background-image: url(../img/particle/section-curve-shape.svg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        padding: 75px 100px 35px;
+        margin: 20px;
+        position: relative;
+        z-index: 1;
+        border-radius: 12px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -20px;
+            top: -20px;
+            right: -20px;
+            bottom: -20px;
+            background-color: $color-primary;
+            opacity: 0.1;
+            border-radius: 12px;
+        }
+
+        .counter-item {
+            padding-bottom: 40px;
+        }
+    }
+
+    &.bordered-secondary-bg {
+        .counter-section-inner {
+            &,
+            &::before {
+                background-color: $color-secondary;
+            }
+        }
+    }
+}
+
+/*======= Service With Counter =======*/
+.service-with-counter {
+    .counter-section {
+        position: relative;
+        z-index: 2;
+        margin-bottom: -115px;
+    }
+
+    .service-section {
+        padding-bottom: 130px;
+        padding-top: 245px;
+    }
+}
+
+/*======= Faq With Score Box =======*/
+.faq-with-seo-score-box {
+    .faq-section {
+        padding-bottom: 130px;
+        padding-top: 270px;
+    }
+
+    .seo-score-box {
+        position: relative;
+        z-index: 2;
+        margin-bottom: -150px;
+    }
+}
+
+/*======= Testimonial With Video =======*/
+.testimonial-with-video {
+    .testimonials-section {
+        padding-top: 335px;
+        padding-bottom: 130px;
+    }
+
+    .landio-video {
+        margin-bottom: -245px;
+    }
+}
+
+/*======= Collaborate Section =======*/
+.collaborate-section {
+    margin-bottom: 115px;
+
+    .collaborate-text-block {
+        padding-bottom: 130px;
+        padding-top: 140px;
+    }
+
+    .preview-image-v2 {
+        margin-bottom: -115px;
+
+        img {
+            max-height: 800px;
+        }
+    }
+}
+
+/*======= Call to Action =======*/
+.cta-with-particle {
+    &.cta-with-particle {
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .particle-left,
+        .particle-right {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1;
+            max-width: 160px;
+        }
+
+        .particle-left {
+            left: 0;
+        }
+
+        .particle-right {
+            right: 0;
+        }
+    }
+}
+
+.cta-btns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+
+    li {
+        padding: 5px;
+    }
+}
+
+.cta-section-with-bg {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-heading;
+        opacity: 0.75;
+    }
+}
+
+.cta-section {
+    position: relative;
+    z-index: 1;
+
+    .cta-absolute-image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+/*======= Section With Map =======*/
+.section-with-map-bg {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url(../img/section-map.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+/*======= Section One Third Map =======*/
+.section-one-third-left-map,
+.section-one-third-right-map {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 33.33%;
+        height: 100%;
+        z-index: -1;
+        background-color: $color-heading-3;
+        background-image: url(../img/section-map-2.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.section-one-third-left-map {
+    &::before {
+        right: auto;
+        left: 0;
+    }
+}
+
+/*======= Section Dots Line =======*/
+.section-line-dots {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url(../img/dots-line-pattern-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/*======= Simple Call to action =======*/
+.simple-cta {
+    background-color: $color-primary;
+    padding: 40px 0;
+    position: relative;
+    z-index: 1;
+
+    .cta-title {
+        color: $color-white;
+        letter-spacing: -1px;
+        line-height: 1.3;
+
+        font: {
+            size: 24px;
+            weight: 400;
+            family: $font-cs-book;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url(../img/cta/simple-cta-bg.png);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/*======= Faq With Score Box =======*/
+.latest-news-with-seo-box {
+    .latest-news-section {
+        padding-bottom: 130px;
+        padding-top: 320px;
+    }
+
+    .seo-score-box {
+        position: relative;
+        z-index: 2;
+        margin-bottom: -200px;
+    }
+}
+
+/*======= Half Dots Pattern =======*/
+.section-half-dots-pattern,
+.section-half-dots-pattern-fixed {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 50%;
+        background-color: $color-soft-grey;
+        background-image: url(../img/dots-pattern-bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/*======= Half Dots Pattern =======*/
+.section-half-dots-pattern-fixed {
+    &::before {
+        background-size: contain;
+        background-position: top center;
+        background-attachment: fixed;
+    }
+}
+
+/*======= Service Details =======*/
+.service-details-content {
+    .service-title {
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+
+    .service-subtitle {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+}
+
+/*======= Counter With Video Cta =======*/
+.counter-with-vide-cta {
+    .counter-section {
+        padding-top: 130px;
+        padding-bottom: 305px;
+    }
+    .video-cta {
+        position: relative;
+        z-index: 2;
+        margin-top: -305px;
+    }
+}
+
+/*======= Section Author particle =======*/
+.section-author-particle {
+    position: relative;
+    z-index: 1;
+
+    .author-particle-image {
+        img {
+            position: absolute;
+            z-index: -1;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            box-shadow: 0px 10px 60px 0px rgba(51, 119, 255, 0.49);
+
+            &.image-1 {
+                left: 9.5%;
+                top: 31.5%;
+            }
+
+            &.image-2 {
+                left: 5%;
+                bottom: 23%;
+            }
+
+            &.image-3 {
+                right: 9.5%;
+                top: 31.5%;
+            }
+
+            &.image-4 {
+                right: 5%;
+                bottom: 23%;
+            }
+        }
+    }
+}
+
+/*======= Benefit Section =======*/
+.benefit-section {
+    .e-wallet-boxed-container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .container {
+        position: static;
+    }
+
+    .benefit-content {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+
+    .benefit-preview-images {
+        display: flex;
+        justify-content: flex-end;
+
+        .image-one {
+            margin-top: -140px;
+        }
+
+        .image-two {
+            margin-bottom: -140px;
+        }
+    }
+}
+
+/*======= Newsletter =======*/
+.newsletter-area {
+    position: relative;
+
+    .newsletter-particle-effect {
+        img {
+            position: absolute;
+
+            &.particle-1 {
+                left: 10%;
+                top: 15%;
+            }
+
+            &.particle-2 {
+                left: 15%;
+                bottom: 20%;
+            }
+
+            &.particle-3 {
+                right: 15%;
+                top: 20%;
+            }
+
+            &.particle-4 {
+                left: 25%;
+                bottom: 8%;
+            }
+        }
+    }
+}

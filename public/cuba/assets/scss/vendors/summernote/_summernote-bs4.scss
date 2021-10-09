@@ -1,0 +1,920 @@
+@import "elements";
+
+//fonts
+$font: summernote;
+
+//@extend-elements
+//original selectors
+//.note-icon-align-center:before, .note-icon-align-indent:before, .note-icon-align-justify:before, .note-icon-align-left:before, .note-icon-align-outdent:before, .note-icon-align-right:before, .note-icon-align:before, .note-icon-arrow-circle-down:before, .note-icon-arrow-circle-left:before, .note-icon-arrow-circle-right:before, .note-icon-arrow-circle-up:before, .note-icon-arrows-alt:before, .note-icon-arrows-h:before, .note-icon-arrows-v:before, .note-icon-bold:before, .note-icon-caret:before, .note-icon-chain-broken:before, .note-icon-circle:before, .note-icon-close:before, .note-icon-code:before, .note-icon-col-after:before, .note-icon-col-before:before, .note-icon-col-remove:before, .note-icon-eraser:before, .note-icon-font:before, .note-icon-frame:before, .note-icon-italic:before, .note-icon-link:before, .note-icon-magic:before, .note-icon-menu-check:before, .note-icon-minus:before, .note-icon-orderedlist:before, .note-icon-pencil:before, .note-icon-picture:before, .note-icon-question:before, .note-icon-redo:before, .note-icon-row-above:before, .note-icon-row-below:before, .note-icon-row-remove:before, .note-icon-special-character:before, .note-icon-square:before, .note-icon-strikethrough:before, .note-icon-subscript:before, .note-icon-summernote:before, .note-icon-superscript:before, .note-icon-table:before, .note-icon-text-height:before, .note-icon-trash:before, .note-icon-underline:before, .note-icon-undo:before, .note-icon-unorderedlist:before, .note-icon-video:before
+%summernote-position {
+  display: inline-block;
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+
+//original selectors
+//.note-popover .popover-content >.btn-group, .card-header.note-toolbar >.btn-group
+%summernote-margin {
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+//original selectors
+//.note-popover .popover-content .btn-group .note-table .note-dimension-picker .note-dimension-picker-mousecatcher, .card-header.note-toolbar .btn-group .note-table .note-dimension-picker .note-dimension-picker-mousecatcher
+%summernote-position-2 {
+  position: absolute!important;
+  z-index: 3;
+  width: 10em;
+  height: 10em;
+  cursor: pointer;
+}
+
+//original selectors
+//.note-popover .popover-content .btn-group .note-table .note-dimension-picker .note-dimension-picker-unhighlighted, .card-header.note-toolbar .btn-group .note-table .note-dimension-picker .note-dimension-picker-unhighlighted
+%summernote-position-3 {
+  position: relative!important;
+  z-index: 1;
+  width: 5em;
+  height: 5em;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASAgMAAAAroGbEAAAACVBMVEUAAIj4+Pjp6ekKlAqjAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfYAR0BKhmnaJzPAAAAG0lEQVQI12NgAAOtVatWMTCohoaGUY+EmIkEAEruEzK2J7tvAAAAAElFTkSuQmCC") repeat;
+}
+
+//original selectors
+//.note-popover .popover-content .btn-group .note-table .note-dimension-picker .note-dimension-picker-highlighted, .card-header.note-toolbar .btn-group .note-table .note-dimension-picker .note-dimension-picker-highlighted
+%summernote-position-4 {
+  position: absolute!important;
+  z-index: 2;
+  width: 1em;
+  height: 1em;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASAgMAAAAroGbEAAAACVBMVEUAAIjd6vvD2f9LKLW+AAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfYAR0BKwNDEVT0AAAAG0lEQVQI12NgAAOtVatWMTCohoaGUY+EmIkEAEruEzK2J7tvAAAAAElFTkSuQmCC") repeat;
+}
+
+//original selectors
+//.note-popover .popover-content .note-color .dropdown-menu .note-palette, .card-header.note-toolbar .note-color .dropdown-menu .note-palette
+%summernote-position-5 {
+  display: inline-block;
+  width: 160px;
+  margin: 0;
+}
+
+//original selectors
+//.note-popover .popover-content .note-color .dropdown-menu .note-palette .note-palette-title, .card-header.note-toolbar .note-color .dropdown-menu .note-palette .note-palette-title
+%summernote-position-6 {
+  margin: 2px 7px;
+  font-size: 12px;
+  text-align: center;
+  border-bottom: 1px solid $color_gallery_approx;
+}
+
+//original selectors
+//.note-popover .popover-content .note-color .dropdown-menu .note-palette .note-color-reset, .card-header.note-toolbar .note-color .dropdown-menu .note-palette .note-color-reset
+%summernote-position-7 {
+  width: 100%;
+  padding: 0 3px;
+  margin: 3px;
+  font-size: 11px;
+  cursor: pointer;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 5px;
+}
+
+//original selectors
+//.note-popover .popover-content .note-color-palette div .note-color-btn, .card-header.note-toolbar .note-color-palette div .note-color-btn
+%summernote-position-8 {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid $white;
+}
+
+//original selectors
+//.note-hint-popover .popover-content .note-hint-group .note-hint-item.active, .note-hint-popover .popover-content .note-hint-group .note-hint-item:hover
+%summernote-position-9 {
+  display: block;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $white;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: $color_boston_blue_approx;
+  outline: 0;
+}
+
+
+@font-face {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../fonts/summernote/summernote.eot?dbafe969167589eda84514394d126413);
+  src: url(../../fonts/summernote/summernote.eot?#iefix) format("embedded-opentype"),url(../../fonts/summernote/summernote.woff?dbafe969167589eda84514394d126413) format("woff"),url(../../fonts/summernote/summernote.ttf?dbafe969167589eda84514394d126413) format("truetype");
+}
+.note-editor {
+  position: relative;
+  .note-dropzone {
+    position: absolute;
+    z-index: 100;
+    display: none;
+    color: $color_malibu_approx;
+    background-color: $white;
+    opacity: .95;
+    .note-dropzone-message {
+      display: table-cell;
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      vertical-align: middle;
+    }
+    &.hover {
+      color: $color_cerulean_approx;
+    }
+  }
+  .note-editing-area {
+    //position: relative;
+    .note-editable {
+      outline: 0;
+      sup {
+        vertical-align: super;
+      }
+      sub {
+        vertical-align: sub;
+      }
+    }
+    img {
+      &.note-float-left {
+        margin-right: 10px;
+      }
+      &.note-float-right {
+        margin-left: 10px;
+      }
+    }
+  }
+  &.note-frame {
+    border: 1px solid $color_shady_lady_approx;
+    margin-bottom: 0;
+    .note-editing-area {
+      overflow: hidden;
+      .note-editable {
+        padding: 10px;
+        overflow: auto;
+        color: $black;
+        word-wrap: break-word;
+        background-color: $white;
+        min-height: 50px;
+      }
+      .note-editable[contenteditable="false"] {
+        background-color: $mercury;
+      }
+      .note-codable {
+        display: none;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 0;
+        font-family: Menlo, Monaco, monospace, sans-serif;
+        font-size: 14px;
+        color: $color_celeste_approx;
+        background-color: $color_log_cabin_approx;
+        border: 0;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 0;
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: none;
+        //Instead of the line below you could use @include box-sizing($bs)
+        box-sizing: border-box;
+        resize: none;
+      }
+    }
+    &.fullscreen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1050;
+      width: 100%!important;
+      .note-editable {
+        background-color: $white;
+      }
+      .note-resizebar {
+        display: none;
+      }
+    }
+    .note-status-output {
+      display: block;
+      width: 100%;
+      height: 20px;
+      margin-bottom: 0;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: $black;
+      border: 0;
+      border-top: 1px solid $color_bon_jour_approx;
+      &:empty {
+        height: 0;
+        border-top: 0 solid transparent;
+      }
+      .pull-right {
+        float: right!important;
+      }
+      .text-muted {
+        color: $color_tapa_approx;
+      }
+      .text-primary {
+        color: $color_st_tropaz_approx;
+      }
+      .text-success {
+        color: $color_killarney_approx;
+      }
+      .text-info {
+        color: $color_calypso_approx;
+      }
+      .text-warning {
+        color: $color_pesto_approx;
+      }
+      .text-danger {
+        color: $color_apple_blossom_approx;
+      }
+      .alert {
+        padding: 7px 10px 2px;
+        margin: -7px 0 0;
+        color: $black;
+        background-color: $color_wild_sand_approx;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 0;
+        .note-icon {
+          margin-right: 5px;
+        }
+      }
+      .alert-success {
+        color: $color_killarney_approx!important;
+        background-color: $color_willow_brook_approx!important;
+      }
+      .alert-info {
+        color: $color_calypso_approx!important;
+        background-color: $color_link_water_approx!important;
+      }
+      .alert-warning {
+        color: $color_pesto_approx!important;
+        background-color: $color_solitaire_approx!important;
+      }
+      .alert-danger {
+        color: $color_apple_blossom_approx!important;
+        background-color: $color_vanilla_ice_approx!important;
+      }
+    }
+    .note-statusbar {
+      background-color: $color_wild_sand_approx;
+      border-top: 1px solid $color_alto_approx;
+      //Instead of the line below you could use @include border-bottom-right-radius($radius)
+      border-bottom-right-radius: 4px;
+      //Instead of the line below you could use @include border-bottom-left-radius($radius)
+      border-bottom-left-radius: 4px;
+      .note-resizebar {
+        width: 100%;
+        height: 9px;
+        padding-top: 1px;
+        cursor: ns-resize;
+        .note-icon-bar {
+          width: 20px;
+          margin: 1px auto;
+          border-top: 1px solid $color_shady_lady_approx;
+        }
+      }
+      &.locked .note-resizebar {
+        cursor: default;
+        .note-icon-bar {
+          display: none;
+        }
+      }
+    }
+    .note-placeholder {
+      padding: 10px;
+    }
+    &.codeview .note-editing-area {
+      .note-editable {
+        display: none;
+      }
+      .note-codable {
+        display: block;
+      }
+    }
+  }
+  &.dragover .note-dropzone {
+    display: table;
+  }
+}
+.note-popover {
+  &.popover {
+    display: none;
+    max-width: none;
+    .arrow {
+      left: 20px!important;
+    }
+    .popover-content a {
+      display: inline-block;
+      max-width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+  }
+  .popover-content {
+    padding: 0 0 5px 5px;
+    margin: 0;
+    .note-color {
+      .dropdown-toggle {
+        width: 20px;
+        padding-left: 5px;
+      }
+      .dropdown-menu {
+        min-width: 337px;
+        .note-palette {
+          @extend %summernote-position-5;
+          &:first-child {
+            margin: 0 5px;
+          }
+          .note-palette-title {
+            @extend %summernote-position-6;
+          }
+          .note-color-reset {
+            @extend %summernote-position-6;
+            &:hover {
+              background: $color_gallery_approx;
+            }
+          }
+          .note-color-row {
+            height: 20px;
+          }
+        }
+      }
+    }
+    .dropdown-menu {
+      min-width: 90px;
+      &.right {
+        right: 0;
+        left: auto;
+      }
+      &.right::before {
+        right: 9px;
+        left: auto!important;
+      }
+      &.right::after {
+        right: 10px;
+        left: auto!important;
+      }
+      &.note-check a {
+        i {
+          color: $color_cerulean_approx;
+          visibility: hidden;
+        }
+        &.checked i {
+          visibility: visible;
+        }
+      }
+    }
+    .note-fontsize-10 {
+      font-size: 10px;
+    }
+    .note-color-palette {
+      line-height: 1;
+      div .note-color-btn {
+        @extend %summernote-position-8;
+        &:hover {
+          border: 1px solid $black;
+        }
+      }
+    }
+    > .btn-group {
+      @extend %summernote-margin;
+    }
+    .btn-group .note-table {
+      min-width: 0;
+      padding: 5px;
+      .note-dimension-picker {
+        font-size: 18px;
+        .note-dimension-picker-mousecatcher {
+          @extend %summernote-position-2;
+        }
+        .note-dimension-picker-unhighlighted {
+          @extend %summernote-position-3;
+        }
+        .note-dimension-picker-highlighted {
+          @extend %summernote-position-3;
+        }
+      }
+    }
+    .note-style .dropdown-style {
+      blockquote {
+        padding: 5px 10px;
+        margin: 0;
+      }
+      pre {
+        padding: 5px 10px;
+        margin: 0;
+      }
+      h1 {
+        padding: 0;
+        margin: 0;
+      }
+      h2 {
+        padding: 0;
+        margin: 0;
+      }
+      h3 {
+        padding: 0;
+        margin: 0;
+      }
+      h4 {
+        padding: 0;
+        margin: 0;
+      }
+      h5 {
+        padding: 0;
+        margin: 0;
+      }
+      h6 {
+        padding: 0;
+        margin: 0;
+      }
+      p {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .note-para .dropdown-menu {
+      min-width: 216px;
+      padding: 5px;
+      > div:first-child {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.note-toolbar {
+  position: relative;
+  z-index: 500;
+}
+.note-dialog {
+  > div {
+    display: none;
+  }
+  .form-group {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .note-modal-form {
+    margin: 0;
+  }
+  .note-image-dialog .note-dropzone {
+    min-height: 100px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 4;
+    color: $color_quill_gray_approx;
+    text-align: center;
+    border: 4px dashed $color_quill_gray_approx;
+  }
+}
+.note-placeholder {
+  position: absolute;
+  display: none;
+  color: $gray;
+}
+.note-hint-popover {
+  min-width: 100px;
+  padding: 2px;
+  .popover-content {
+    max-height: 150px;
+    padding: 3px;
+    overflow: auto;
+    .note-hint-group .note-hint-item {
+      display: block!important;
+      padding: 3px;
+      &.active {
+        @extend %summernote-position-9;
+      }
+      &:hover {
+        @extend %summernote-position-9;
+      }
+    }
+  }
+}
+.note-icon-align-center:before {
+  @extend %summernote-position;
+  content: "\f101";
+}
+.note-icon-align-indent:before {
+  @extend %summernote-position;
+  content: "\f102";
+}
+.note-icon-align-justify:before {
+  @extend %summernote-position;
+  content: "\f103";
+}
+.note-icon-align-left:before {
+  @extend %summernote-position;
+  content: "\f104";
+}
+.note-icon-align-outdent:before {
+  @extend %summernote-position;
+  content: "\f105";
+}
+.note-icon-align-right:before {
+  @extend %summernote-position;
+  content: "\f106";
+}
+.note-icon-align:before {
+  @extend %summernote-position;
+  content: "\f107";
+}
+.note-icon-arrow-circle-down:before {
+  @extend %summernote-position;
+  content: "\f108";
+}
+.note-icon-arrow-circle-left:before {
+  @extend %summernote-position;
+  content: "\f109";
+}
+.note-icon-arrow-circle-right:before {
+  @extend %summernote-position;
+  content: "\f10a";
+}
+.note-icon-arrow-circle-up:before {
+  @extend %summernote-position;
+  content: "\f10b";
+}
+.note-icon-arrows-alt:before {
+  @extend %summernote-position;
+  content: "\f10c";
+}
+.note-icon-arrows-h:before {
+  @extend %summernote-position;
+  content: "\f10d";
+}
+.note-icon-arrows-v:before {
+  @extend %summernote-position;
+  content: "\f10e";
+}
+.note-icon-bold:before {
+  @extend %summernote-position;
+  content: "\f10f";
+}
+.note-icon-caret:before {
+  @extend %summernote-position;
+  content: "\f110";
+}
+.note-icon-chain-broken:before {
+  @extend %summernote-position;
+  content: "\f111";
+}
+.note-icon-circle:before {
+  @extend %summernote-position;
+  content: "\f112";
+}
+.note-icon-close:before {
+  @extend %summernote-position;
+  content: "\f113";
+}
+.note-icon-code:before {
+  @extend %summernote-position;
+  content: "\f114";
+}
+.note-icon-col-after:before {
+  @extend %summernote-position;
+  content: "\f115";
+}
+.note-icon-col-before:before {
+  @extend %summernote-position;
+  content: "\f116";
+}
+.note-icon-col-remove:before {
+  @extend %summernote-position;
+  content: "\f117";
+}
+.note-icon-eraser:before {
+  @extend %summernote-position;
+  content: "\f118";
+}
+.note-icon-font:before {
+  @extend %summernote-position;
+  content: "\f119";
+}
+.note-icon-frame:before {
+  @extend %summernote-position;
+  content: "\f11a";
+}
+.note-icon-italic:before {
+  @extend %summernote-position;
+  content: "\f11b";
+}
+.note-icon-link:before {
+  @extend %summernote-position;
+  content: "\f11c";
+}
+.note-icon-magic:before {
+  @extend %summernote-position;
+  content: "\f11d";
+}
+.note-icon-menu-check:before {
+  @extend %summernote-position;
+  content: "\f11e";
+}
+.note-icon-minus:before {
+  @extend %summernote-position;
+  content: "\f11f";
+}
+.note-icon-orderedlist:before {
+  @extend %summernote-position;
+  content: "\f120";
+}
+.note-icon-pencil:before {
+  @extend %summernote-position;
+  content: "\f121";
+}
+.note-icon-picture:before {
+  @extend %summernote-position;
+  content: "\f122";
+}
+.note-icon-question:before {
+  @extend %summernote-position;
+  content: "\f123";
+}
+.note-icon-redo:before {
+  @extend %summernote-position;
+  content: "\f124";
+}
+.note-icon-row-above:before {
+  @extend %summernote-position;
+  content: "\f125";
+}
+.note-icon-row-below:before {
+  @extend %summernote-position;
+  content: "\f126";
+}
+.note-icon-row-remove:before {
+  @extend %summernote-position;
+  content: "\f127";
+}
+.note-icon-special-character:before {
+  @extend %summernote-position;
+  content: "\f128";
+}
+.note-icon-square:before {
+  @extend %summernote-position;
+  content: "\f129";
+}
+.note-icon-strikethrough:before {
+  @extend %summernote-position;
+  content: "\f12a";
+}
+.note-icon-subscript:before {
+  @extend %summernote-position;
+  content: "\f12b";
+}
+.note-icon-summernote:before {
+  @extend %summernote-position;
+  content: "\f12c";
+}
+.note-icon-superscript:before {
+  @extend %summernote-position;
+  content: "\f12d";
+}
+.note-icon-table:before {
+  @extend %summernote-position;
+  content: "\f12e";
+}
+.note-icon-text-height:before {
+  @extend %summernote-position;
+  content: "\f12f";
+}
+.note-icon-trash:before {
+  @extend %summernote-position;
+  content: "\f130";
+}
+.note-icon-underline:before {
+  @extend %summernote-position;
+  content: "\f131";
+}
+.note-icon-undo:before {
+  @extend %summernote-position;
+  content: "\f132";
+}
+.note-icon-unorderedlist:before {
+  @extend %summernote-position;
+  content: "\f133";
+}
+.note-icon-video:before {
+  @extend %summernote-position;
+  content: "\f134";
+}
+.card-header.note-toolbar {
+  padding: 0 0 5px 5px !important;
+  margin: 0;
+  z-index: 0;
+  .note-color {
+    .dropdown-toggle {
+      width: 20px;
+      padding-left: 5px;
+    }
+    .dropdown-menu {
+      min-width: 337px;
+      .note-palette {
+        @extend %summernote-position-5;
+        &:first-child {
+          margin: 0 5px;
+        }
+        .note-palette-title {
+          @extend %summernote-position-6;
+        }
+        .note-color-reset {
+          @extend %summernote-position-6;
+          &:hover {
+            background: $color_gallery_approx;
+          }
+        }
+        .note-color-row {
+          height: 20px;
+        }
+      }
+    }
+  }
+  .dropdown-menu {
+    min-width: 90px;
+    &.right {
+      right: 0;
+      left: auto;
+    }
+    &.right::before {
+      right: 9px;
+      left: auto!important;
+    }
+    &.right::after {
+      right: 10px;
+      left: auto!important;
+    }
+    &.note-check a {
+      i {
+        color: $color_cerulean_approx;
+        visibility: hidden;
+      }
+      &.checked i {
+        visibility: visible;
+      }
+    }
+  }
+  .note-fontsize-10 {
+    font-size: 10px;
+  }
+  .note-color-palette {
+    line-height: 1;
+    div .note-color-btn {
+      @extend %summernote-position-8;
+      &:hover {
+        border: 1px solid $black;
+      }
+    }
+  }
+  > .btn-group {
+    @extend %summernote-margin;
+  }
+  .btn-group .note-table {
+    min-width: 0;
+    padding: 5px;
+    .note-dimension-picker {
+      font-size: 18px;
+      .note-dimension-picker-mousecatcher {
+        @extend %summernote-position-2;
+      }
+      .note-dimension-picker-unhighlighted {
+        @extend %summernote-position-3;
+      }
+      .note-dimension-picker-highlighted {
+        @extend %summernote-position-3;
+      }
+    }
+  }
+  .note-style .dropdown-style {
+    blockquote {
+      padding: 5px 10px;
+      margin: 0;
+    }
+    pre {
+      padding: 5px 10px;
+      margin: 0;
+    }
+    h1 {
+      padding: 0;
+      margin: 0;
+    }
+    h2 {
+      padding: 0;
+      margin: 0;
+    }
+    h3 {
+      padding: 0;
+      margin: 0;
+    }
+    h4 {
+      padding: 0;
+      margin: 0;
+    }
+    h5 {
+      padding: 0;
+      margin: 0;
+    }
+    h6 {
+      padding: 0;
+      margin: 0;
+    }
+    p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .note-para .dropdown-menu {
+    min-width: 216px;
+    padding: 5px;
+    > div:first-child {
+      margin-right: 5px;
+    }
+  }
+}
+//@-moz-document url-prefix() {
+//  .note-image-input: ;
+//}
+.note-handle .note-control-selection {
+  position: absolute;
+  display: none;
+  border: 1px solid $black;
+  > div {
+    position: absolute;
+  }
+  .note-control-selection-bg {
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    opacity: .3;
+    filter: alpha(opacity=30);
+  }
+  .note-control-handle {
+    width: 7px;
+    height: 7px;
+    border: 1px solid $black;
+  }
+  .note-control-holder {
+    width: 7px;
+    height: 7px;
+    border: 1px solid $black;
+  }
+  .note-control-sizing {
+    width: 7px;
+    height: 7px;
+    background-color: $white;
+    border: 1px solid $black;
+  }
+  .note-control-nw {
+    top: -5px;
+    left: -5px;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  .note-control-ne {
+    top: -5px;
+    right: -5px;
+    border-bottom: 0;
+    border-left: none;
+  }
+  .note-control-sw {
+    bottom: -5px;
+    left: -5px;
+    border-top: 0;
+    border-right: 0;
+  }
+  .note-control-se {
+    right: -5px;
+    bottom: -5px;
+    cursor: se-resize;
+    &.note-control-holder {
+      cursor: default;
+      border-top: 0;
+      border-left: none;
+    }
+  }
+  .note-control-selection-info {
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+    margin: 5px;
+    font-size: 12px;
+    color: $white;
+    background-color: $black;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 5px;
+    opacity: .7;
+    filter: alpha(opacity=70);
+  }
+}

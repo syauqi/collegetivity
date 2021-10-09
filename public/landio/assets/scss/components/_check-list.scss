@@ -1,0 +1,93 @@
+/*======= Check List =======*/
+.check-list {
+    li {
+        font-size: 18px;
+        color: $color-body;
+        position: relative;
+        z-index: 1;
+        padding-left: 30px;
+        transition: 0.3s;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "\f00c";
+            left: 0;
+            top: 2px;
+            font-family: "Font Awesome 5 Pro";
+            font-size: 16px;
+            color: $color-primary;
+            font-weight: 800;
+        }
+    }
+}
+
+/*======= Check List Two =======*/
+.check-list-2 {
+    li {
+        position: relative;
+        z-index: 1;
+        padding-left: 40px;
+        color: $color-heading;
+
+        &::before {
+            position: absolute;
+            content: "\f00c";
+            left: 0;
+            height: 25px;
+            width: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: "Font Awesome 5 Pro";
+            background-color: $color-primary-3;
+            color: $color-white;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+/*======= Check List Three =======*/
+.check-list-3 {
+    li {
+        position: relative;
+        padding-left: 50px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "\f00c";
+            font-family: "Font Awesome 5 Pro";
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: $color-primary-6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $color-white;
+            font-size: 15px;
+        }
+
+        .title {
+            font-size: 22px;
+            line-height: 32px;
+            margin-bottom: 10px;
+        }
+    }
+}

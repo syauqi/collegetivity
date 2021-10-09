@@ -1,0 +1,350 @@
+// Page Header Start
+.page-header
+                .header-wrapper.row.m-0
+                    form(action='#', method='get').form-inline.search-full
+                      .form-group.w-100
+                          .Typeahead.Typeahead--twitterUsers
+                            .u-posRelative
+                              input.demo-input.Typeahead-input.form-control-plaintext.w-100(type='text' placeholder='Search Cuba ..' name='q' title='' autofocus)
+                              .spinner-border.Typeahead-spinner(role='status')
+                                  span.sr-only Loading...
+                              i(data-feather='x').close-search
+                            .Typeahead-menu
+
+                    .header-logo-wrapper
+                        .logo-wrapper
+                            a(href='index.html')
+                                img.img-fluid(src='../assets/images/logo/logo.png', alt='')
+                        .toggle-sidebar
+                          i.status_toggle.middle(data-feather='grid').sidebar-toggle 
+
+                    .left-header.col.horizontal-wrapper.pl-0
+                      ul.horizontal-menu
+                        li.mega-menu
+                          a.nav-link(href='#!')
+                            i(data-feather='layers')
+                            span Bonus Ui
+                          .mega-menu-container.nav-submenu
+                            .container-fluid
+                              .row
+                                .col.mega-box
+                                  .mobile-title.d-none
+                                    h5 Mega menu
+                                    i(data-feather="x")
+                                  .link-section.icon
+                                    div
+                                      h6 Error Page
+                                    ul
+                                        li
+                                          a(href='error-400.html') Error page 400
+                                        li
+                                          a(href='error-401.html') Error page 401
+                                        li
+                                          a(href='error-403.html') Error page 403
+                                        li
+                                          a(href='error-404.html') Error page 404
+                                        li
+                                          a(href='error-500.html') Error page 500
+                                        li
+                                          a(href='error-503.html') Error page 503
+  
+                                .col.mega-box
+                                  .link-section.doted
+                                    div
+                                      h6  Authentication
+                                    ul
+                                        li
+                                          a(href='login.html') Login Simple
+                                        li
+                                          a(href='login-image.html') Login Bg Image
+                                        li
+                                          a(href='login-video.html') Login Bg video
+                                        li
+                                          a(href='signup.html') Register Simple
+                                        li
+                                          a(href='signup-image.html')
+                                            | Register Bg Image
+                                        li
+                                          a(href='signup-video.html') Register Bg video
+
+                                .col.mega-box
+                                  .link-section.dashed-links
+                                    div
+                                      h6 Usefull Pages
+                                    ul
+                                      li
+                                        a(href='search.html') Search Website                                     
+                                      li
+                                        a(href='unlock.html') Unlock User
+                                      li
+                                        a(href='forget-password.html') Forget Password
+                                      li
+                                        a(href='reset-password.html') Reset Password
+                                      li
+                                        a(href='maintenance.html') Maintenance
+                                .col.mega-box
+
+                                  .link-section
+                                      div
+                                        h6 Email templates
+                                      ul
+                                          li
+                                            a(href='basic-template.html')
+                                              | Basic Email
+                                          li
+                                            a(href='email-header.html')
+                                              | Basic With Header
+                                          li
+                                            a(href='template-email.html')
+                                              | Ecomerce Template
+                                          li
+                                            a(href='template-email-2.html')
+                                              | Email Template 2
+                                          li
+                                            a(href='ecommerce-templates.html')
+                                              | Ecommerce Email
+                                          li
+                                            a(href='email-order-success.html')
+                                              | Order Success
+                                .col.mega-box
+                                  .link-section
+                                    div
+                                      h6 Coming Soon
+                                    ul.svg-icon
+                                        li
+                                          a(href='comingsoon.html') 
+                                            i(data-feather="file") 
+                                            | Coming-soon
+                                        li
+                                          a(href='comingsoon-bg-video.html') 
+                                            i(data-feather="film") 
+                                            | Coming-video
+                                        li
+                                          a(href='comingsoon-bg-img.html')
+                                            i(data-feather="image") 
+                                            | Coming-Image
+                                    div
+                                      h6 Other Soon
+                                    ul.svg-icon
+                                        li
+                                          a(href='landing-page.html').txt-primary 
+                                            i(data-feather="cast")
+                                            | Landing Page
+                                        li
+                                          a(href='sample-page.html').txt-secondary 
+                                            i(data-feather="airplay")
+                                            | Sample Page
+
+
+                    .nav-right.col-8.pull-right.right-header.p-0
+                        ul.nav-menus
+
+
+                            li.language-nav
+                              .translate_wrapper
+                                .current_lang
+                                  .lang
+                                    i.flag-icon.flag-icon-us
+                                    span.lang-txt EN                               
+                                .more_lang
+                                  .lang.selected(data-value='en')
+                                    i.flag-icon.flag-icon-us
+                                    span.lang-txt
+                                      | English
+                                      span  (US)
+                                  .lang(data-value='de')
+                                    i.flag-icon.flag-icon-de
+                                    span.lang-txt Deutsch
+                                  .lang(data-value='es')
+                                    i.flag-icon.flag-icon-es
+                                    span.lang-txt Español
+                                  .lang(data-value='fr')
+                                    i.flag-icon.flag-icon-fr
+                                    span.lang-txt Français
+                                  .lang(data-value='pt')
+                                    i.flag-icon.flag-icon-pt
+                                    span.lang-txt
+                                      | Português
+                                      span  (BR)
+                                  .lang(data-value='cn')
+                                    i.flag-icon.flag-icon-cn
+                                    span.lang-txt 简体中文
+                                  .lang(data-value='ae')
+                                    i.flag-icon.flag-icon-ae
+                                    span.lang-txt
+                                      | لعربية 
+                                      span  (ae)
+                            li                          
+                              span.header-search
+                                  i(data-feather='search')
+
+                            li.onhover-dropdown
+                                .notification-box
+                                  i(data-feather='bell')
+                                  span.badge.badge-pill.badge-secondary 4
+                                ul.notification-dropdown.onhover-show-div
+                                    li.bg-primary
+                                      h6.f-18.mb-0 Notitication
+                                      p.mb-0 You have 4 new notification
+                                    li
+                                      p.mb-0
+                                        i.fa.fa-circle-o.mr-3.font-primary 
+                                        | Delivery processing 
+                                        span.pull-right 10 min.
+                                    li
+                                      p.mb-0
+                                        i.fa.fa-circle-o.mr-3.font-success
+                                        | Order Complete
+                                        span.pull-right 1 hr
+                                    li
+                                      p.mb-0
+                                        i.fa.fa-circle-o.mr-3.font-info
+                                        | Tickets Generated
+                                        span.pull-right 3 hr
+                                    li
+                                      p.mb-0
+                                        i.fa.fa-circle-o.mr-3.font-danger
+                                        | Delivery Complete
+                                        span.pull-right 6 hr
+                                    li
+                                      a.btn.btn-primary(href="#") Check all notification
+                                      //a.f-15.f-w-500.txt-dark(href="#") Check all notification
+                            li
+                             .mode
+                                i.fa.fa-moon-o
+                            li.cart-nav.onhover-dropdown
+                                .cart-box
+                                  i(data-feather='shopping-cart')
+                                  span.badge.badge-pill.badge-primary 2
+                                ul.cart-dropdown.chat-dropdown.onhover-show-div
+                                  li.bg-primary.text-center
+                                    h6 Shoping Bag
+                                    
+                                  li.mt-0
+                                    .media
+                                      img.img-fluid.rounded-circle.mr-3.img-60(src='../assets/images/ecommerce/01.jpg', alt='')
+                                      .media-body
+                                        span V-Neck Shawl Collar Woman's Solid T-Shirt
+                                        p Yellow(#fcb102)
+                                        .qty-box
+                                          .input-group
+                                            span.input-group-prepend
+                                              button.btn.quantity-left-minus(type='button' data-type='minus' data-field='')
+                                                i.ti-angle-left
+                                            input.form-control.input-number(type='text' name='quantity' value='1')
+                                            span.input-group-prepend
+                                              button.btn.quantity-right-plus(type='button' data-type='plus' data-field='')
+                                                i.ti-angle-right
+
+                                        h6 $299.00
+                                      .close-circle
+                                        a(href='#')
+                                           i(data-feather='x')
+                                  li
+                                    .media
+                                      img.img-fluid.rounded-circle.mr-3.img-60(src='../assets/images/ecommerce/02.jpg', alt='')
+                                      .media-body
+                                        span Girls's T-shirt
+                                        p It is a long established fact that a reader
+                                        h6.f-12.light-font 1 x $ 199.00
+                                      .close-circle
+                                        a(href='#')
+                                          i(data-feather='x')
+                                  li
+                                    .media
+                                      img.img-fluid.rounded-circle.mr-3.img-60(src='../assets/images/ecommerce/08.jpg', alt='')
+                                      .media-body
+                                        span Girls's T-shirt
+                                        p It is a long established fact that a reader
+                                        h6.f-12.light-font 2 x $ 199.00
+                                      .close-circle
+                                        a(href='#')
+                                          i(data-feather='x')
+                                  li
+                                    .total
+                                      h6.mb-0.mt-1
+                                        | Order Total : 
+                                        span.f-right $799.00
+                                  li
+                                    a.btn.btn-primary.view-cart(href='cart.html')
+                                    a.btn.btn-secondary.view-cart(href='checkout.html')
+
+                                    //- .buttons
+                                    //-   h6.mb-0
+                                    //-     a.view-cart(href='cart.html')
+                                    //-       | View Cart
+                                    //-     a.checkout.f-right(href='#') Checkout
+
+                            li.onhover-dropdown
+                                i(data-feather='message-square')
+                                ul.chat-dropdown.onhover-show-div
+                                  li.bg-primary.text-center
+                                    h6.f-18.mb-0 Message Box
+                                    p.mb-0 You have 3 new messages 
+                                  li
+                                    .media
+                                      img.img-fluid.rounded-circle.mr-3(src='../assets/images/user/1.jpg', alt='')
+                                      .status-circle.online
+                                      .media-body
+                                        span Erica Hughes
+                                        p Lorem Ipsum is simply dummy...
+                                      p.f-12.font-success 58 mins ago
+                                  li
+                                    .media
+                                      img.img-fluid.rounded-circle.mr-3(src='../assets/images/user/2.jpg', alt='')
+                                      .status-circle.online
+                                      .media-body
+                                        span Kori Thomas
+                                        p Lorem Ipsum is simply dummy...
+                                      p.f-12.font-success 1 hr ago
+                                  li
+                                    .media
+                                      img.img-fluid.rounded-circle.mr-3(src='../assets/images/user/4.jpg', alt='')
+                                      .status-circle.offline
+                                      .media-body
+                                        span Ain Chavez
+                                        p Lorem Ipsum is simply dummy...
+                                      p.f-12.font-danger 32 mins ago
+                                  li.text-center 
+                                    a.btn.btn-primary(href="#") View All     
+
+
+                            li.maximize
+                                a.text-dark(href='#!', onclick='javascript:toggleFullScreen()')
+                                    i(data-feather='maximize')
+                            li.profile-nav.onhover-dropdown.p-0.mr-0
+                                .media.profile-media
+                                  img.b-r-10(src='../assets/images/dashboard/profile.jpg', alt='')
+                                  .media-body
+                                    span Emay Walter
+                                    p.mb-0.font-roboto Admin 
+                                      i.middle.fa.fa-angle-down
+                                ul.profile-dropdown.onhover-show-div
+                                  li
+                                    i(data-feather='user')
+                                    span Account 
+                                  li
+                                    i(data-feather='mail')
+                                    span Inbox
+                                  li
+                                    i(data-feather='file-text')
+                                    span Taskboard
+                                  li
+                                    i(data-feather='settings')
+                                    span Settings
+                                  li
+                                    i(data-feather='log-in') 
+                                    span Log in
+                                    
+                    //- .d-lg-none.mobile-toggle.pull-right
+                    //-     i(data-feather='more-horizontal')
+                    script.result-template(type='text/x-handlebars-template').
+                        <div class="ProfileCard u-cf">                        
+                        <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div>
+                        <div class="ProfileCard-details">
+                        <div class="ProfileCard-realName">{{name}}</div>
+                        </div>
+                        </div>
+                    script.empty-template(type='text/x-handlebars-template').
+                        <div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div>
+// Page Header Ends                              

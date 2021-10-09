@@ -1,0 +1,115 @@
+- var datatable             = true;
+- var page_datatable        = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Datatables Server Side
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Data Tables
+                                      li.breadcrumb-item.active Datatables Server Side
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        // Server Side Processing start
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Server Side Processing
+                              span In some tables you might wish to have some content generated automatically.
+                            .card-body
+                              .table-responsive
+                                table#server-side-datatable.display.datatables
+                                  thead
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                                  tfoot
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                        // Server Side Processing end
+                        // http Server Side start
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Custom HTTP variables
+                              span
+                                | The example below shows server-side processing being used with an extra parameter being sent to the server by using the ajax.data option as a function
+                            .card-body
+                              .table-responsive
+                                table#datatable-http.display.datatables
+                                  thead
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                                  tfoot
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                        // http Server Side end
+                        // post data Server Side start
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 POST Data
+                              span
+                                | The example below shows server-side processing being used with an extra parameter being sent to the server by using the ajax.data option as a function
+                            .card-body
+                              .table-responsive
+                                table#datatable-post.display.datatables
+                                  thead
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                                  tfoot
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

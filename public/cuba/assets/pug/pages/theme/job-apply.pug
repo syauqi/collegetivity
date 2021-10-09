@@ -1,0 +1,419 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var select2               = true;
+- var page_select2          = true;
+- var date_picker           = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Apply
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Job Search
+                                      li.breadcrumb-item.active Apply
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-xl-3.xl-40
+                          #accordionoc.default-according.style-1.faq-accordion.job-accordion
+                            .row
+                              .col-xl-12
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon', aria-expanded='true', aria-controls='collapseicon') Filter
+                                  #collapseicon.collapse.show(aria-labelledby='collapseicon', data-parent='#accordion')
+                                    .card-body.filter-cards-view.animate-chk
+                                      .job-filter
+                                        .faq-form
+                                          input.form-control(type='text', placeholder='Search..')
+                                          i.search-icon(data-feather='search')
+                                      .job-filter
+                                        .faq-form
+                                          input.form-control(type='text', placeholder='location..')
+                                          i.search-icon(data-feather='map-pin')
+                                      .checkbox-animated
+                                        label.d-block(for='chk-ani')
+                                          input#chk-ani.checkbox_animated(type='checkbox')
+                                          |  Full-time (8688)
+                                        label.d-block(for='chk-ani1')
+                                          input#chk-ani1.checkbox_animated(type='checkbox')
+                                          |  Contract (503)
+                                        label.d-block(for='chk-ani2')
+                                          input#chk-ani2.checkbox_animated(type='checkbox')
+                                          |  Part-time (288)
+                                        label.d-block(for='chk-ani3')
+                                          input#chk-ani3.checkbox_animated(type='checkbox')
+                                          |  Internship (236)
+                                        label.d-block(for='chk-ani4')
+                                          input#chk-ani4.checkbox_animated(type='checkbox')
+                                          |  Temporary (146)
+                                        label.d-block(for='chk-ani5')
+                                          input#chk-ani5.checkbox_animated(type='checkbox')
+                                          |  Commission (25)
+                                      button.btn.btn-primary.text-center(type='button') Find jobs
+                              .col-xl-12
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon1', aria-expanded='true', aria-controls='collapseicon1') Location
+                                  #collapseicon1.collapse.show(aria-labelledby='collapseicon1', data-parent='#accordion')
+                                    .card-body.animate-chk
+                                      .location-checkbox
+                                        label.d-block(for='chk-ani6')
+                                          input#chk-ani6.checkbox_animated(type='checkbox')
+                                          |                           New York
+                                          span.d-block NY (399)
+                                        label.d-block(for='chk-ani7')
+                                          input#chk-ani7.checkbox_animated(type='checkbox')
+                                          |                            San Francisco
+                                          span.d-block CA (252)
+                                        label.d-block.mb-0(for='chk-ani8')
+                                          input#chk-ani8.checkbox_animated(type='checkbox')
+                                          |                             Washington
+                                          span.d-block DC (226)
+                                        label.d-block.mb-0(for='chk-ani9')
+                                          input#chk-ani9.checkbox_animated(type='checkbox')
+                                          |                            Seattle
+                                          span.d-block WA (242)
+                                        label.d-block.mb-0(for='chk-ani10')
+                                          input#chk-ani10.checkbox_animated(type='checkbox')
+                                          |                           Chicago
+                                          span.d-block IL (187)
+                                    button.btn.btn-block.btn-primary.text-center(type='button') All Locations
+                              .col-xl-12
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon2', aria-expanded='true', aria-controls='collapseicon2') Job Title
+                                  #collapseicon2.collapse.show(data-parent='#accordion', aria-labelledby='collapseicon2')
+                                    .card-body.animate-chk
+                                      label.d-block(for='chk-ani11')
+                                        input#chk-ani11.checkbox_animated(type='checkbox')
+                                        |                           UI/Ux designer(25)
+                                      label.d-block(for='chk-ani12')
+                                        input#chk-ani12.checkbox_animated(type='checkbox')
+                                        |                           Graphic designer(10)
+                                      label.d-block(for='chk-ani13')
+                                        input#chk-ani13.checkbox_animated(type='checkbox')
+                                        |                           Front end designer(15)
+                                      label.d-block(for='chk-ani14')
+                                        input#chk-ani14.checkbox_animated(type='checkbox')
+                                        |                           PHP developer(42)
+                                      label.d-block.mb-0(for='chk-ani15')
+                                        input#chk-ani15.checkbox_animated(type='checkbox')
+                                        |                          React Developer( 5 )
+                                    button.btn.btn-block.btn-primary.text-center(type='button') All Job Title
+                              .col-xl-12
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon3', aria-expanded='true', aria-controls='collapseicon3') Industry
+                                  #collapseicon3.collapse.show(data-parent='#accordion', aria-labelledby='collapseicon3')
+                                    .card-body.animate-chk
+                                      label.d-block(for='chk-ani16')
+                                        input#chk-ani16.checkbox_animated(type='checkbox')
+                                        |                           Computer Software(14)
+                                      label.d-block(for='chk-ani17')
+                                        input#chk-ani17.checkbox_animated(type='checkbox')
+                                        |                           IT Engineer(10)
+                                      label.d-block(for='chk-ani18')
+                                        input#chk-ani18.checkbox_animated(type='checkbox')
+                                        |                           Service industry(20)
+                                      label.d-block(for='chk-ani19')
+                                        input#chk-ani19.checkbox_animated(type='checkbox')
+                                        |                          Accounting(34)
+                                      label.d-block.mb-0(for='chk-ani20')
+                                        input#chk-ani20.checkbox_animated(type='checkbox')
+                                        |                           Financial Services(5)
+                                    button.btn.btn-block.btn-primary.text-center(type='button') All Industries
+                              .col-xl-12
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon4', aria-expanded='true', aria-controls='collapseicon4') Specific skills
+                                  #collapseicon4.collapse.show(data-parent='#accordion', aria-labelledby='collapseicon4')
+                                    .card-body.animate-chk
+                                      label.d-block(for='chk-ani21')
+                                        input#chk-ani21.checkbox_animated(type='checkbox')
+                                        |                           HTML,scss & sass
+                                      label.d-block(for='chk-ani23')
+                                        input#chk-ani23.checkbox_animated(type='checkbox')
+                                        |                           Javascript
+                                      label.d-block(for='chk-ani24')
+                                        input#chk-ani24.checkbox_animated(type='checkbox')
+                                        |                           Node.js
+                                      label.d-block(for='chk-ani25')
+                                        input#chk-ani25.checkbox_animated(type='checkbox')
+                                        |                           Gulp & Pug
+                                      label.d-block.mb-0(for='chk-ani26')
+                                        input#chk-ani26.checkbox_animated(type='checkbox')
+                                        |                           Angular.js
+                                    button.btn.btn-block.btn-primary.text-center(type='button') All Skills
+                        .col-xl-9.xl-60
+                          .card
+                            .job-search
+                              .card-body.pb-0
+                                .media
+                                  img.img-40.img-fluid.m-r-20(src='../assets/images/job-search/1.jpg', alt='')
+                                  .media-body
+                                    h6.f-w-600
+                                      a(href='#') UI Designer
+                                      span.pull-right
+                                        button.btn.btn-primary(type='button')
+                                          span
+                                            i.fa.fa-check.text-white
+                                          |  Save this job
+                                    p
+                                      | Endless Telecom & Technologies , NY
+                                      span
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                .job-description
+                                  h6.mb-0 Personal Details 
+                                  form.form.theme-form
+                                    .row
+                                      .col
+                                        .form-group
+                                          label(for='exampleFormControlInput1')
+                                            | Full Name:
+                                            span.font-danger *
+                                          input#exampleFormControlInput1.form-control(type='email', placeholder='Enter your full name')
+                                    .row
+                                      .col
+                                        .form-group
+                                          label(for='exampleFormControlInput3')
+                                            | Email:
+                                            span.font-danger *
+                                          input#exampleFormControlInput3.form-control(type='email', placeholder='Enter email')
+                                    .row
+                                      .col
+                                        .form-group
+                                          label(for='exampleFormControlpassword')
+                                            | Password:
+                                            span.font-danger *
+                                          input#exampleFormControlpassword.form-control(type='password', placeholder='Enter password')
+                                    .row
+                                      .col
+                                        .form-group
+                                          label(for='exampleFormControlpassword1')
+                                            | Repeat Password:
+                                            span.font-danger *
+                                          input#exampleFormControlpassword1.form-control(type='password', placeholder='Repeat password')
+                                    .row
+                                      .col-sm-4
+                                        .form-group
+                                          .col-form-label.pt-0 Birth Date
+                                          select.js-example-basic-single.col-sm-12
+                                            optgroup(label='Month')
+                                              option(value='Jan') January
+                                              option(value='Feb') February
+                                              option(value='Mar') March
+                                              option(value='Apr') April
+                                              option(value='May') May
+                                              option(value='Jun') June
+                                              option(value='Jul') July
+                                              option(value='Aug') August
+                                              option(value='Sep') September
+                                              option(value='Oct') October
+                                              option(value='Nov') November
+                                              option(value='Dec') December
+                                      .col-sm-4
+                                        .form-group                                          
+                                          select.js-example-basic-single.col-sm-12
+                                            optgroup(label='Day')
+                                              option(value='1') 1
+                                              option(value='2') 2
+                                              option(value='3') 3
+                                              option(value='4') 4
+                                              option(value='5') 5
+                                              option(value='6') 6
+                                              option(value='7') 7
+                                              option(value='8') 8
+                                              option(value='9') 9
+                                              option(value='10') 10
+                                              option(value='11') 11
+                                              option(value='12') 12
+                                              option(value='13') 13
+                                              option(value='14') 14
+                                              option(value='15') 15
+                                              option(value='16') 16
+                                              option(value='17') 17
+                                              option(value='18') 18
+                                              option(value='19') 19
+                                              option(value='20') 20
+                                              option(value='21') 21
+                                              option(value='22') 22
+                                              option(value='23') 23
+                                              option(value='24') 24
+                                              option(value='25') 25
+                                              option(value='26') 26
+                                              option(value='27') 27
+                                              option(value='28') 28
+                                              option(value='29') 29
+                                              option(value='30') 30
+                                              option(value='31') 31
+                                      .col-sm-4
+                                        .form-group                                          
+                                          select.js-example-basic-single.col-sm-12
+                                            optgroup(label='Year')
+                                              option(value='1985') 1985
+                                              option(value='1986') 1986
+                                              option(value='1987') 1987
+                                              option(value='1988') 1988
+                                              option(value='1989') 1989
+                                              option(value='1990') 1990
+                                              option(value='1991') 1991
+                                              option(value='1992') 1992
+                                              option(value='1993') 1993
+                                              option(value='1994') 1994
+                                              option(value='1995') 1995
+                                              option(value='1996') 1996
+                                              option(value='1997') 1997
+                                              option(value='1998') 1998
+                                              option(value='1999') 1999
+                                              option(value='2000') 2000
+                                              option(value='2001') 2001
+                                              option(value='2002') 2002
+                                              option(value='2003') 2003
+                                              option(value='2004') 2004
+                                              option(value='2005') 2005
+                                              option(value='2006') 2006
+                                              option(value='2007') 2007
+                                              option(value='2008') 2008
+                                              option(value='2009') 2009
+                                              option(value='2010') 2010
+                                              option(value='2011') 2011
+                                              option(value='2012') 2012
+                                              option(value='2013') 2013
+                                              option(value='2014') 2014
+                                              option(value='2015') 2015
+                                    .row
+                                      .col
+                                        .form-group
+                                          label(for='exampleFormControlInput4') Phone Number:
+                                          input#exampleFormControlInput4.form-control(type='email', placeholder='Enter Phone no.')
+                                  h6.mb-0 Your Education
+                                  form.form.theme-form
+                                    .row
+                                      .col-lg-6
+                                        .form-group
+                                          label(for='exampleFormControlInput5')
+                                            | College Name:
+                                            span.font-danger *
+                                          input#exampleFormControlInput5.form-control(type='email', placeholder='Enter college name')
+                                      .col-xl-6.xl-100.xl-mt-job
+                                        label.col-form-label.text-right.pt-0
+                                          | Period:
+                                          span.font-danger *
+                                        .row
+                                          .col-sm-6
+                                            .input-group
+                                              input.datepicker-here.form-control(type='text', data-language='en', placeholder='Start Date')
+                                          .col-sm-6.xs-mt-period
+                                            .input-group
+                                              input.datepicker-here.form-control(type='text', data-language='en', placeholder='End Date')
+                                      .col-lg-6
+                                        .form-group
+                                          .col-form-label.pt-0
+                                            | Degree Level:
+                                            span.font-danger *
+                                          select.js-example-basic-single.col-sm-12.job-select2
+                                            optgroup(label='Choose a Option')
+                                              option(value='student') Student
+                                              option(value='Bachelor') Bachelor
+                                              option(value='Master') Master
+                                              option(value='Associate') Associate
+                                      .col-lg-6
+                                        .form-group
+                                          label(for='exampleFormControlInput6')
+                                            | Specialization:
+                                            span.font-danger *
+                                          input#exampleFormControlInput6.form-control(type='email', placeholder='Enter specialization')
+                                  h6.mb-0 Your Experience
+                                  form.form.theme-form
+                                    .row
+                                      .col-lg-6
+                                        .form-group
+                                          label(for='exampleFormControlInput7')
+                                            | Location:
+                                            span.font-danger *
+                                          input#exampleFormControlInput7.form-control(type='email', placeholder='Enter Location')
+                                      .col-xl-6.xl-100.xl-mt-job
+                                        label.col-form-label.text-right.pt-0
+                                          | Period:
+                                          span.font-danger *
+                                        .row
+                                          .col-sm-6
+                                            .input-group
+                                              input.datepicker-here.form-control(type='text', data-language='en', placeholder='Start Date')
+                                          .col-sm-6.xs-mt-period
+                                            .input-group
+                                              input.datepicker-here.form-control(type='text', data-language='en', placeholder='End Date')
+                                      .col-lg-6
+                                        .form-group
+                                          .col-form-label.pt-0
+                                            | Position:
+                                            span.font-danger *
+                                          select.js-example-basic-single.col-sm-12.job-select2
+                                            optgroup(label='Enter Position')
+                                              option(value='position') Choose a option
+                                              option(value='Web designer') Web Designer
+                                              option(value='Graphic designer') Graphic Designer
+                                              option(value='UI designer') UI Designer
+                                              option(value='UI/UX designer') UI/UX Designer
+                                      .col-lg-6
+                                        .form-group
+                                          label(for='exampleFormControlInput8')
+                                            | Company Name:
+                                            span.font-danger *
+                                          input#exampleFormControlInput8.form-control(type='email', placeholder='Enter Company Name')
+                                  h6.mb-0 Upload Your Files
+                                  form.form.theme-form
+                                    .row
+                                      .col
+                                        .form-group
+                                          label.col-form-label.pt-0
+                                            | Upload Cover Letter:
+                                            span.font-danger *
+                                          input.form-control(type='file')
+                                    .row
+                                      .col
+                                        .form-group
+                                          label.col-form-label.pt-0
+                                            | Upload Your CV:
+                                            span.font-danger *
+                                          input.form-control(type='file')
+                                    .row
+                                      .col
+                                        .form-group.mb-0
+                                          label.col-form-label.pt-0 Upload Recommendations:
+                                          input.form-control(type='file')
+                              .card-footer
+                                button.btn.btn-primary(type='submit') Submit
+                                input.btn.btn-light(type='reset', value='Cancel')
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

@@ -1,0 +1,285 @@
+- var select2               = true;
+- var page_select2          = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Select2
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Form Widgets
+                                      li.breadcrumb-item.active Select2
+                    // Container-fluid starts
+                    .container-fluid
+                      .select2-drpdwn
+                        .row
+                          // Default Textbox start
+                          .col-md-12
+                            .card
+                              .card-header
+                                h5.card-title Select-2
+                              .card-body
+                                .mb-2
+                                  .col-form-label Default Placeholder
+                                  select.js-example-placeholder-multiple.col-sm-12(multiple='multiple')
+                                    option(value='AL') Alabama
+                                    option(value='WY') Wyoming
+                                    option(value='WY') Coming
+                                    option(value='WY') Hanry Die
+                                    option(value='WY') John Doe
+                                .mb-2
+                                  .col-form-label Select2 single select
+                                  select.js-example-basic-single.col-sm-12
+                                    optgroup(label='Developer')
+                                      option(value='AL') Alabama
+                                      option(value='WY') Wyoming
+                                    optgroup(label='Designer')
+                                      option(value='WY') Peter
+                                      option(value='WY') Hanry Die
+                                      option(value='WY') John Doe
+                                .mb-2
+                                  .col-form-label Select2 multi select
+                                  select.js-example-basic-multiple.col-sm-12(multiple='multiple')
+                                    option(value='AL') Alabama
+                                    option(value='WY') Wyoming
+                                    option(value='WY') Coming
+                                    option(value='WY') Hanry Die
+                                    option(value='WY') John Doe
+                                .mb-2
+                                  .col-form-label RTL support
+                                  select.js-example-rtl.col-sm-12(multiple='multiple')
+                                    option(value='AL') Alabama
+                                    option(value='WY') Wyoming
+                                    option(value='WY') Coming
+                                    option(value='WY') Hanry Die
+                                    option(value='WY') John Doe
+                                .mb-2
+                                  .col-form-label Limiting The Number Of Selections
+                                  select.js-example-basic-multiple-limit.col-sm-12(multiple='multiple')
+                                    option(value='AL') Alabama
+                                    option(value='WY') Wyoming
+                                    option(value='WY') Coming
+                                    option(value='WY') Hanry Die
+                                    option(value='WY') John Doe
+                                .mb-2
+                                  .col-form-label Disabled Results
+                                  select.js-example-disabled-results.col-sm-12
+                                    option(value='one') First
+                                    option(value='two', disabled='disabled')
+                                      | Second
+                                      | (disabled)
+                                    option(value='three') Third
+                                div
+                                  .col-form-label Hiding The Search Box
+                                  select.js-example-basic-hide-search.col-sm-12(multiple='multiple')
+                                    optgroup(label='Developer')
+                                      option(value='AL') Smith
+                                      option(value='WY') Peter
+                                      option(value='WY') James
+                                      option(value='WY') Hanry Die
+                                      option(value='WY') John Doe
+                                      option(value='WY') Harry Poter
+                                div
+                                  .col-form-label Enable-Disable
+                                  select.js-example-disabled.col-sm-10
+                                    option(value='AL') Smith
+                                    option(value='WY') Peter
+                                    option(value='WY') James
+                                    option(value='WY') Hanry Die
+                                    option(value='WY') John Doe
+                                    option(value='WY') Harry Poter
+                                  button.btn.btn-primary.js-programmatic-enable.p-2
+                                    | Enable
+                                  button.btn.btn-secondary.js-programmatic-disable.p-2
+                                    | Disable
+                          // Default Textbox end
+                          // Input Groups start
+                          .col-md-6
+                            .card
+                              .card-header
+                                h5.card-title Outline Color Variant
+                              .card-body
+                                .mb-2
+                                  .col-form-label Primary Select
+                                  select.form-control.form-control-primary.btn-square(name='select')
+                                    option(value='opt1') Select One Value Only
+                                    option(value='opt2') Type 2
+                                    option(value='opt3') Type 3
+                                    option(value='opt4') Type 4
+                                    option(value='opt5') Type 5
+                                    option(value='opt6') Type 6
+                                    option(value='opt7') Type 7
+                                    option(value='opt8') Type 8
+                                .mb-2
+                                  .col-form-label Secondary Select
+                                  select.form-control.form-control-secondary.btn-square(name='select')
+                                    option(value='opt1') Select One Value Only
+                                    option(value='opt2') Type 2
+                                    option(value='opt3') Type 3
+                                    option(value='opt4') Type 4
+                                    option(value='opt5') Type 5
+                                    option(value='opt6') Type 6
+                                    option(value='opt7') Type 7
+                                    option(value='opt8') Type 8
+                                .mb-2
+                                  .col-form-label Success Select
+                                  select.form-control.form-control-success.btn-square(name='select')
+                                    option(value='opt1') Select One Value Only
+                                    option(value='opt2') Type 2
+                                    option(value='opt3') Type 3
+                                    option(value='opt4') Type 4
+                                    option(value='opt5') Type 5
+                                    option(value='opt6') Type 6
+                                    option(value='opt7') Type 7
+                                    option(value='opt8') Type 8
+                                .mb-2
+                                  .col-form-label Info Select
+                                  select.form-control.form-control-info.btn-square(name='select')
+                                    option(value='opt1') Select One Value Only
+                                    option(value='opt2') Type 2
+                                    option(value='opt3') Type 3
+                                    option(value='opt4') Type 4
+                                    option(value='opt5') Type 5
+                                    option(value='opt6') Type 6
+                                    option(value='opt7') Type 7
+                                    option(value='opt8') Type 8
+                                .mb-2
+                                  .col-form-label Warning Select
+                                  select.form-control.form-control-warning.btn-square(name='select')
+                                    option(value='opt1') Select One Value Only
+                                    option(value='opt2') Type 2
+                                    option(value='opt3') Type 3
+                                    option(value='opt4') Type 4
+                                    option(value='opt5') Type 5
+                                    option(value='opt6') Type 6
+                                    option(value='opt7') Type 7
+                                    option(value='opt8') Type 8
+                                .mb-2
+                                  .col-form-label Danger Select
+                                  select.form-control.form-control-danger.btn-square(name='select')
+                                    option(value='opt1') Select One Value Only
+                                    option(value='opt2') Type 2
+                                    option(value='opt3') Type 3
+                                    option(value='opt4') Type 4
+                                    option(value='opt5') Type 5
+                                    option(value='opt6') Type 6
+                                    option(value='opt7') Type 7
+                                    option(value='opt8') Type 8
+                                div
+                                  .col-form-label Inverse Select
+                                  select.form-control.form-control-inverse.btn-square(name='select')
+                                    option(value='opt1') Select One Value Only
+                                    option(value='opt2') Type 2
+                                    option(value='opt3') Type 3
+                                    option(value='opt4') Type 4
+                                    option(value='opt5') Type 5
+                                    option(value='opt6') Type 6
+                                    option(value='opt7') Type 7
+                                    option(value='opt8') Type 8
+                          .col-md-6
+                            .card
+                              .card-header
+                                h5.card-title Full Colored Variant
+                              .card-body
+                                .mb-2
+                                  .col-form-label Primary Select
+                                  select.form-control.form-control-primary-fill.btn-square(name='select')
+                                    option(value='opt1') Select One Value Only
+                                    option(value='opt2') Type 2
+                                    option(value='opt3') Type 3
+                                    option(value='opt4') Type 4
+                                    option(value='opt5') Type 5
+                                    option(value='opt6') Type 6
+                                    option(value='opt7') Type 7
+                                    option(value='opt8') Type 8
+                                .mb-2
+                                  .col-form-label Secondary Select
+                                  select.form-control.form-control-secondary-fill.btn-square(name='select')
+                                    option(value='opt1') Select One Value Only
+                                    option(value='opt2') Type 2
+                                    option(value='opt3') Type 3
+                                    option(value='opt4') Type 4
+                                    option(value='opt5') Type 5
+                                    option(value='opt6') Type 6
+                                    option(value='opt7') Type 7
+                                    option(value='opt8') Type 8
+                                .mb-2
+                                  .col-form-label Success Select
+                                  select.form-control.form-control-success-fill.btn-square(name='select')
+                                    option(value='opt1') Select One Value Only
+                                    option(value='opt2') Type 2
+                                    option(value='opt3') Type 3
+                                    option(value='opt4') Type 4
+                                    option(value='opt5') Type 5
+                                    option(value='opt6') Type 6
+                                    option(value='opt7') Type 7
+                                    option(value='opt8') Type 8
+                                .mb-2
+                                  .col-form-label Info Select
+                                  select.form-control.form-control-info-fill.btn-square(name='select')
+                                    option(value='opt1') Select One Value Only
+                                    option(value='opt2') Type 2
+                                    option(value='opt3') Type 3
+                                    option(value='opt4') Type 4
+                                    option(value='opt5') Type 5
+                                    option(value='opt6') Type 6
+                                    option(value='opt7') Type 7
+                                    option(value='opt8') Type 8
+                                .mb-2
+                                  .col-form-label Warning Select
+                                  select.form-control.form-control-warning-fill.btn-square(name='select')
+                                    option(value='opt1') Select One Value Only
+                                    option(value='opt2') Type 2
+                                    option(value='opt3') Type 3
+                                    option(value='opt4') Type 4
+                                    option(value='opt5') Type 5
+                                    option(value='opt6') Type 6
+                                    option(value='opt7') Type 7
+                                    option(value='opt8') Type 8
+                                .mb-2
+                                  .col-form-label Danger Select
+                                  select.form-control.form-control-danger-fill.btn-square(name='select')
+                                    option(value='opt1') Select One Value Only
+                                    option(value='opt2') Type 2
+                                    option(value='opt3') Type 3
+                                    option(value='opt4') Type 4
+                                    option(value='opt5') Type 5
+                                    option(value='opt6') Type 6
+                                    option(value='opt7') Type 7
+                                    option(value='opt8') Type 8
+                                div
+                                  .col-form-label Inverse Select
+                                  select.form-control.form-control-inverse-fill.btn-square(name='select')
+                                    option(value='opt1') Select One Value Only
+                                    option(value='opt2') Type 2
+                                    option(value='opt3') Type 3
+                                    option(value='opt4') Type 4
+                                    option(value='opt5') Type 5
+                                    option(value='opt6') Type 6
+                                    option(value='opt7') Type 7
+                                    option(value='opt8') Type 8
+                          // Input Groups end
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

@@ -1,0 +1,222 @@
+- var animate               = true;
+- var page_animate          = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                        | Animate
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Animation
+                                      li.breadcrumb-item.active Animate
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                          .col-sm-12
+                            .card
+                              .card-body
+                                .row
+                                  .col-xl-6.col-md-8.offset-xl-3.offset-md-2
+                                    #animation-box
+                                      .card
+                                        .animate-widget
+                                          div
+                                            img.img-fluid(src='../assets/images/banner/3.jpg', alt='')
+                                          .text-center.p-25
+                                            p.text-muted.mb-0
+                                              | Denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings
+                                    form.theme-form.text-center
+                                      .form-group
+                                        select.form-control.input.input--dropdown.js-animations
+                                          optgroup(label='Attention Seekers')
+                                            option(value='bounce') bounce
+                                            option(value='flash') flash
+                                            option(value='pulse') pulse
+                                            option(value='rubberBand') rubberBand
+                                            option(value='shake') shake
+                                            option(value='swing') swing
+                                            option(value='tada') tada
+                                            option(value='wobble') wobble
+                                            option(value='jello') jello
+                                          optgroup(label='Bouncing Entrances')
+                                            option(value='bounceIn') bounceIn
+                                            option(value='bounceInDown') bounceInDown
+                                            option(value='bounceInLeft') bounceInLeft
+                                            option(value='bounceInRight') bounceInRight
+                                            option(value='bounceInUp') bounceInUp
+                                          optgroup(label='Bouncing Exits')
+                                            option(value='bounceOut') bounceOut
+                                            option(value='bounceOutDown') bounceOutDown
+                                            option(value='bounceOutLeft') bounceOutLeft
+                                            option(value='bounceOutRight') bounceOutRight
+                                            option(value='bounceOutUp') bounceOutUp
+                                          optgroup(label='Fading Entrances')
+                                            option(value='fadeIn') fadeIn
+                                            option(value='fadeInDown') fadeInDown
+                                            option(value='fadeInDownBig') fadeInDownBig
+                                            option(value='fadeInLeft') fadeInLeft
+                                            option(value='fadeInLeftBig') fadeInLeftBig
+                                            option(value='fadeInRight') fadeInRight
+                                            option(value='fadeInRightBig') fadeInRightBig
+                                            option(value='fadeInUp') fadeInUp
+                                            option(value='fadeInUpBig') fadeInUpBig
+                                          optgroup(label='Fading Exits')
+                                            option(value='fadeOut') fadeOut
+                                            option(value='fadeOutDown') fadeOutDown
+                                            option(value='fadeOutDownBig') fadeOutDownBig
+                                            option(value='fadeOutLeft') fadeOutLeft
+                                            option(value='fadeOutLeftBig') fadeOutLeftBig
+                                            option(value='fadeOutRight') fadeOutRight
+                                            option(value='fadeOutRightBig') fadeOutRightBig
+                                            option(value='fadeOutUp') fadeOutUp
+                                            option(value='fadeOutUpBig') fadeOutUpBig
+                                          optgroup(label='Flippers')
+                                            option(value='flip') flip
+                                            option(value='flipInX') flipInX
+                                            option(value='flipInY') flipInY
+                                            option(value='flipOutX') flipOutX
+                                            option(value='flipOutY') flipOutY
+                                          optgroup(label='Lightspeed')
+                                            option(value='lightSpeedIn') lightSpeedIn
+                                            option(value='lightSpeedOut') lightSpeedOut
+                                          optgroup(label='Rotating Entrances')
+                                            option(value='rotateIn') rotateIn
+                                            option(value='rotateInDownLeft') rotateInDownLeft
+                                            option(value='rotateInDownRight') rotateInDownRight
+                                            option(value='rotateInUpLeft') rotateInUpLeft
+                                            option(value='rotateInUpRight') rotateInUpRight
+                                          optgroup(label='Rotating Exits')
+                                            option(value='rotateOut') rotateOut
+                                            option(value='rotateOutDownLeft') rotateOutDownLeft
+                                            option(value='rotateOutDownRight') rotateOutDownRight
+                                            option(value='rotateOutUpLeft') rotateOutUpLeft
+                                            option(value='rotateOutUpRight') rotateOutUpRight
+                                          optgroup(label='Sliding Entrances')
+                                            option(value='slideInUp') slideInUp
+                                            option(value='slideInDown') slideInDown
+                                            option(value='slideInLeft') slideInLeft
+                                            option(value='slideInRight') slideInRight
+                                          optgroup(label='Sliding Exits')
+                                            option(value='slideOutUp') slideOutUp
+                                            option(value='slideOutDown') slideOutDown
+                                            option(value='slideOutLeft') slideOutLeft
+                                            option(value='slideOutRight') slideOutRight
+                                          optgroup(label='Zoom Entrances')
+                                            option(value='zoomIn') zoomIn
+                                            option(value='zoomInDown') zoomInDown
+                                            option(value='zoomInLeft') zoomInLeft
+                                            option(value='zoomInRight') zoomInRight
+                                            option(value='zoomInUp') zoomInUp
+                                          optgroup(label='Zoom Exits')
+                                            option(value='zoomOut') zoomOut
+                                            option(value='zoomOutDown') zoomOutDown
+                                            option(value='zoomOutLeft') zoomOutLeft
+                                            option(value='zoomOutRight') zoomOutRight
+                                            option(value='zoomOutUp') zoomOutUp
+                                          optgroup(label='Specials')
+                                            option(value='hinge') hinge
+                                            option(value='jackInTheBox') jackInTheBox
+                                            option(value='rollIn') rollIn
+                                            option(value='rollOut') rollOut
+                                      button.js-triggeraNimation.btn.btn-primary Animate it
+                          .col-sm-12
+                            .card
+                              .card-header
+                                h5 How to use it?
+                                span
+                                  | All you have to do is to add animation name class attribute to html element, like :
+                                  code Fade
+                              .card-body.options
+                                div flash
+                                div pulse
+                                div rubberBand
+                                div shake
+                                div swing
+                                div tada
+                                div wobble
+                                div jello
+                                div bounceIn
+                                div bounceInDown
+                                div bounceInLeft
+                                div bounceInRight
+                                div bounceInUp
+                                div bounceOut
+                                div bounceOutDown
+                                div bounceOutLeft
+                                div bounceOutRight
+                                div bounceOutUp
+                                div bounceOut
+                                div bounceOutDown
+                                div bounceOutLeft
+                                div bounceOutRight
+                                div bounceOutUp
+                                div fadeOut
+                                div fadeOutDown
+                                div fadeOutDownBig
+                                div fadeOutLeft
+                                div fadeOutLeftBig
+                                div fadeOutRight
+                                div fadeOutRightBig
+                                div fadeOutUp
+                                div fadeOutUpBig
+                                div flip
+                                div flipInX
+                                div flipInY
+                                div flipOutX
+                                div flipOutY
+                                div lightSpeedIn
+                                div lightSpeedOut
+                                div rotateIn
+                                div rotateInDownLeft
+                                div rotateInDownRight
+                                div rotateInUpLeft
+                                div rotateInUpRight
+                                div rotateOut
+                                div rotateOutDownLeft
+                                div rotateOutDownRight
+                                div rotateOutUpLeft
+                                div rotateOutUpRight
+                                div slideInUp
+                                div slideInDown
+                                div slideInLeft
+                                div slideInRight
+                                div slideOutUp
+                                div slideOutDown
+                                div slideOutLeft
+                                div slideOutRight
+                                div zoomIn
+                                div zoomInDown
+                                div zoomInLeft
+                                div zoomInRight
+                                div zoomInUp
+                                div zoomOut
+                                div zoomOutDown
+                                div zoomOutLeft
+                                div zoomOutRight
+                                div zoomOutUp
+                                div hinge
+                                div jackInTheBox
+                                div rollIn
+                                div rollOut
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files      

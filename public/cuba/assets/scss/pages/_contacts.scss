@@ -1,0 +1,403 @@
+/**=====================
+      86. contacts CSS Start
+==========================**/
+.alert-contactadd {
+  background-color: $white;
+  border: 1px solid var(--theme-deafult);
+  width: 12%;
+  padding: 10px;
+}
+
+.updateimg {
+  position: absolute;
+  left: 15px;
+  width: 100px;
+  top: 32px;
+  line-height: 93px;
+  opacity: 0;
+}
+
+#right-history {
+  top: 81px;
+  right: -320px;
+  height: 100%;
+  position: fixed;
+  width: 320px;
+  z-index: 9;
+  background-color: $white;
+  transition: .5s;
+  box-shadow: 0 0 9px rgba(191, 191, 191, 0.36);
+
+  h6 {
+    span {
+      a {
+        color: $theme-body-font-color;
+      }
+    }
+  }
+
+  &.show {
+    right: 0;
+    transition: .3s;
+  }
+}
+
+.history-details {
+  >div {
+    padding: 30px 0;
+  }
+
+  .media {
+    padding: 30px 15px;
+    border-top: 1px solid $light-color;
+
+    i {
+      padding: 5px;
+      background: #fed112;
+      color: $white;
+      border-radius: 100%;
+    }
+
+    h6 {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.delete-contact {
+  display: none;
+}
+
+.more-data {
+  animation: displayTransition 1s;
+}
+
+.contact-editform {
+  padding: 30px;
+  animation: displayTransition 1s;
+
+  a {
+    display: block;
+  }
+
+  button {
+    margin-top: 30px;
+  }
+
+  .select2-container {
+    .select2-selection--single {
+      height: 39px !important;
+      border-color: #ced4da !important;
+    }
+  }
+}
+
+#deletemodal {
+  .modal-header {
+    border-bottom: none;
+
+    .delete-data {
+      span {
+        svg {
+          vertical-align: middle;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+.contact-options {
+  li {
+    .btn-category {
+      line-height: 39px;
+      border-radius: 3px;
+      padding-left: 40px !important;
+      padding: 0;
+      color: var(--theme-deafult);
+      font-weight: 500;
+    }
+  }
+}
+
+.list-persons {
+  p {
+    font-family: $font-roboto, $font-serif;
+  }
+
+  .profile-mail {
+    padding: 30px 0;
+
+    .media {
+      img {
+        height: 100px;
+      }
+
+      .media-body {
+        h5 {
+          margin-bottom: 5px;
+        }
+
+        ul {
+          margin-top: 5px;
+
+          li {
+            display: inline-block;
+
+            a {
+              font-size: 13px;
+            }
+
+            +li {
+              padding-left: 10px;
+              margin-left: 5px;
+              border-left: 2px solid $light-color;
+            }
+          }
+        }
+      }
+    }
+
+    .email-general {
+      padding-top: 50px;
+
+      ul {
+        padding-right: 20px;
+
+        li {
+          color: $dark-gray;
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+
+          &:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+          }
+
+          >span {
+            float: right;
+          }
+        }
+      }
+
+      p {
+        span {
+          margin-left: 30px;
+        }
+      }
+
+      .gender {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.contacts-tabs {
+  .nav-pills {
+    border-right: 1px solid $light-color;
+    height: 100%;
+
+    .nav-link,
+    .show {
+
+      &.active,
+      >.nav-link {
+        background-color: rgba($primary-color, 0.05);
+        color: $theme-body-font-color;
+      }
+    }
+
+    .nav-link {
+      color: $theme-body-font-color;
+      padding: 0;
+
+      .media {
+        .img-50 {
+          height: 50px;
+        }
+      }
+
+      +.nav-link {
+        border-top: 1px solid $light-color;
+      }
+    }
+
+    .media {
+      padding: 20px;
+    }
+  }
+
+  .tab-content {
+    .tab-content-child {
+      animation: displayTransition 1s;
+    }
+  }
+}
+
+// responsive
+@media only screen and (max-width: 991px) {
+  #right-history {
+    top: 60px;
+  }
+
+  .updateimg {
+    top: 21px;
+  }
+
+  .list-persons {
+    .profile-mail {
+      padding: 20px 0;
+
+      .email-general {
+        .gender {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .contact-editform {
+    button {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-editform {
+    padding: 20px;
+
+    &.pl-0 {
+      padding-left: 20px !important;
+    }
+  }
+
+  .contacts-tabs {
+    .nav-pills {
+      border-right: none;
+      border-bottom: 1px solid $light-color;
+    }
+  }
+
+  .list-persons {
+    .profile-mail {
+      padding: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #right-history {
+    width: 270px;
+  }
+
+  .updateimg {
+    top: 16px;
+    left: 29px;
+  }
+
+  .contacts-tabs {
+    .media {
+      img {
+        &.m-r-20 {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .nav-pills {
+      .media {
+        padding: 15px;
+      }
+    }
+  }
+
+  .list-persons {
+    .profile-mail {
+      padding: 15px;
+
+      .email-general {
+        .gender {
+          margin-top: 15px;
+        }
+      }
+    }
+
+    .nav-pills {
+      .nav-link {
+        .media {
+          .media-body {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-editform {
+    padding: 15px;
+
+    button {
+      margin-top: 15px;
+    }
+
+    &.pl-0 {
+      padding-left: 15px !important;
+    }
+  }
+
+  .contact-editform,
+  .contact-options {
+    form {
+      .form-row {
+        .form-group {
+          .row {
+            div {
+              .form-group {
+                margin-bottom: 0;
+              }
+
+              +div {
+                margin-top: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .updateimg {
+    line-height: 73px;
+    width: 80px;
+  }
+
+  .list-persons {
+    .profile-mail {
+      .email-general {
+        p {
+          span {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .media {
+        display: block;
+
+        img {
+          height: 80px;
+          width: 80px !important;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+/**=====================
+    86. contacts CSS Ends
+==========================**/

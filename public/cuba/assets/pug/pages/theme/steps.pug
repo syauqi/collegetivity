@@ -1,0 +1,337 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Steps
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Bonus Ui
+                                      li.breadcrumb-item.active Steps
+                    // Container-fluid starts                    
+                    .container-fluid
+                      .row
+                        // basic u-steps
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Default Step
+                            .card-body
+                              .u-steps.row
+                                .u-step.col-sm-4
+                                  span.u-step-number 1
+                                  .u-step-desc
+                                    span.u-step-title Shopping
+                                    p Choose what you want
+                                .u-step.col-sm-4.current
+                                  span.u-step-number 2
+                                  .u-step-desc
+                                    span.u-step-title Billing
+                                    p Pay for the bill
+                                .u-step.col-sm-4
+                                  span.u-step-number 3
+                                  .u-step-desc
+                                    span.u-step-title Getting
+                                    p Waiting for the goods
+                        // u-step with icon
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Step with icon
+                            .card-body
+                              .u-steps.row
+                                .u-step.col-md-4
+                                  span.u-step-icon.icon-shopping-cart-full(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Shopping
+                                .u-step.col-md-4.current
+                                  span.u-step-icon.icon-notepad(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Billing
+                                .u-step.col-md-4
+                                  span.u-step-icon.icon-time(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Getting
+                        // u-step with icon
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Step States
+                              span
+                                | A u-step with classname 
+                                code .done
+                                |  A u-step with classname 
+                                code .error
+                                | A u-step with classname 
+                                code .current
+                                | A u-step with classname 
+                                code .disabled
+                            .card-body
+                              .row.row-lg
+                                .col-xl-3.col-lg-6
+                                  .u-step.done.bg-primary
+                                    span.u-step-number.txt-primary 1
+                                    .u-step-desc
+                                      span.u-step-title Getting
+                                      p Waiting for the goods
+                                .col-xl-3.col-lg-6.steps-md-mt
+                                  .u-step.error.bg-secondary
+                                    span.u-step-number.txt-secondary 2
+                                    .u-step-desc
+                                      span.u-step-title Getting
+                                      p Waiting for the goods
+                                .col-xl-3.col-lg-6.lg-mt
+                                  .u-step.current.bg-success
+                                    span.u-step-number.txt-success 3
+                                    .u-step-desc
+                                      span.u-step-title Getting
+                                      p Waiting for the goods
+                                .col-xl-3.col-lg-6.lg-mt
+                                  .u-step.disabled
+                                    span.u-step-number 4
+                                    .u-step-desc
+                                      span.u-step-title Getting
+                                      p Waiting for the goods
+                        // u-step with icon
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Step Sizing
+                              span
+                                | A step with classname 
+                                code .u-steps-xs
+                                code .u-steps-sm
+                                code .u-steps-lg
+                            .card-body
+                              .u-steps.row.u-steps-xs.steps-sizing-sm-mb
+                                .u-step.col-md-4
+                                  span.u-step-icon.icon.wb-shopping-cart(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Shopping
+                                .u-step.col-md-4.current
+                                  span.u-step-icon.icon.wb-pluse(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Billing
+                                .u-step.col-md-4
+                                  span.u-step-icon.icon.wb-time(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Getting
+                              .u-steps.row.u-steps-sm.steps-sizing-sm-mb
+                                .u-step.col-md-4
+                                  span.u-step-icon.icon.wb-shopping-cart(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Shopping
+                                .u-step.col-md-4.current
+                                  span.u-step-icon.icon.wb-pluse(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Billing
+                                .u-step.col-md-4
+                                  span.u-step-icon.icon.wb-time(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Getting
+                              .u-steps.row.steps-sizing-sm-mb
+                                .u-step.col-md-4
+                                  span.u-step-icon.icon.wb-shopping-cart(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Shopping
+                                .u-step.col-md-4.current
+                                  span.u-step-icon.icon.wb-pluse(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Billing
+                                .u-step.col-md-4
+                                  span.u-step-icon.icon.wb-time(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Getting
+                              .u-steps.row.u-steps-lg
+                                .u-step.col-md-4
+                                  span.u-step-icon.icon.wb-shopping-cart(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Shopping
+                                .u-step.col-md-4.current
+                                  span.u-step-icon.icon.wb-pluse(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Billing
+                                .u-step.col-md-4
+                                  span.u-step-icon.icon.wb-time(aria-hidden='true')
+                                  .u-step-desc
+                                    span.u-step-title Getting
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Vertical Step
+                            .card-body
+                              .row
+                                .col-lg-4
+                                  .u-steps.u-steps-vertical
+                                    .u-step
+                                      span.u-step-number 1
+                                      .u-step-desc
+                                        span.u-step-title Shopping
+                                        p Choose what you want
+                                    .u-step.current
+                                      span.u-step-number 2
+                                      .u-step-desc
+                                        span.u-step-title Billing
+                                        p Pay for the bill
+                                    .u-step
+                                      span.u-step-number 3
+                                      .u-step-desc
+                                        span.u-step-title Getting
+                                        p Waiting for the goods
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Default Pearls Steps
+                            .card-body
+                              .row
+                                .u-pearl.done.col-4
+                                  span.u-pearl-number 1
+                                  span.u-pearl-title Account Info
+                                .u-pearl.current.col-4
+                                  span.u-pearl-number 2
+                                  span.u-pearl-title Billing Info
+                                .u-pearl.col-4
+                                  span.u-pearl-number 3
+                                  span.u-pearl-title Confirmation
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Pearls Steps with icon
+                            .card-body
+                              .row
+                                .u-pearl.done.col-4
+                                  .u-pearl-icon
+                                    i.icon-shopping-cart(aria-hidden='true')
+                                  span.u-pearl-title Account Info
+                                .u-pearl.current.col-4
+                                  .u-pearl-icon
+                                    i.icon-write(aria-hidden='true')
+                                  span.u-pearl-title Billing Info
+                                .u-pearl.col-4
+                                  .u-pearl-icon
+                                    i.icon-check(aria-hidden='true')
+                                  span.u-pearl-title Confirmation
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Pearls Step Sizing
+                              span
+                                | A Pearls step with classname 
+                                code .u-pearls-xs
+                                code .u-pearls-sm
+                                code .u-pearls-lg
+                            .card-body
+                              .u-pearls-xs.row.mb-5
+                                .u-pearl.done.col-4
+                                  span.u-pearl-number 1
+                                  span.u-pearl-title Account Info
+                                .u-pearl.current.col-4
+                                  span.u-pearl-number 2
+                                  span.u-pearl-title Billing Info
+                                .u-pearl.col-4
+                                  span.u-pearl-number 3
+                                  span.u-pearl-title Confirmation
+                              .u-pearls-sm.row.mb-5
+                                .u-pearl.done.col-4
+                                  span.u-pearl-number 1
+                                  span.u-pearl-title Account Info
+                                .u-pearl.current.col-4
+                                  span.u-pearl-number 2
+                                  span.u-pearl-title Billing Info
+                                .u-pearl.col-4
+                                  span.u-pearl-number 3
+                                  span.u-pearl-title Confirmation
+                              .row.mb-5
+                                .u-pearl.done.col-4
+                                  span.u-pearl-number 1
+                                  span.u-pearl-title Account Info
+                                .u-pearl.current.col-4
+                                  span.u-pearl-number 2
+                                  span.u-pearl-title Billing Info
+                                .u-pearl.col-4
+                                  span.u-pearl-number 3
+                                  span.u-pearl-title Confirmation
+                              .u-pearls-lg.row
+                                .u-pearl.done.col-4
+                                  span.u-pearl-number 1
+                                  span.u-pearl-title Account Info
+                                .u-pearl.current.col-4
+                                  span.u-pearl-number 2
+                                  span.u-pearl-title Billing Info
+                                .u-pearl.col-4
+                                  span.u-pearl-number 3
+                                  span.u-pearl-title Confirmation
+                        // u-step with icon
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Pearls Step States
+                              span
+                                | A pearls step states with different class
+                                code .done
+                                code .currunt
+                                code .error
+                                code .disabled
+                            .card-body
+                              .row.mb-5
+                                .u-pearl.current.col-4
+                                  .u-pearl-icon 1
+                                  span.u-pearl-title Account Info
+                                .u-pearl.disabled.col-4
+                                  .u-pearl-icon 2
+                                  span.u-pearl-title Billing Info
+                                .u-pearl.disabled.col-4
+                                  .u-pearl-icon 3
+                                  span.u-pearl-title Confirmation
+                              .row.mb-5
+                                .u-pearl.done.col-4
+                                  .u-pearl-icon 1
+                                  span.u-pearl-title Account Info
+                                .u-pearl.current.col-4
+                                  .u-pearl-icon 2
+                                  span.u-pearl-title Billing Info
+                                .u-pearl.disabled.col-4
+                                  .u-pearl-icon 3
+                                  span.u-pearl-title Confirmation
+                              .row.mb-5
+                                .u-pearl.done.col-4
+                                  .u-pearl-icon 1
+                                  span.u-pearl-title Account Info
+                                .u-pearl.current.error.col-4
+                                  .u-pearl-icon 2
+                                  span.u-pearl-title Billing Info
+                                .u-pearl.disabled.col-4
+                                  .u-pearl-icon 3
+                                  span.u-pearl-title Confirmation
+                              .row
+                                .u-pearl.done.col-4
+                                  .u-pearl-icon 1
+                                  span.u-pearl-title Account Info
+                                .u-pearl.done.col-4
+                                  .u-pearl-icon 2
+                                  span.u-pearl-title Billing Info
+                                .u-pearl.current.col-4
+                                  .u-pearl-icon 3
+                                  span.u-pearl-title Confirmation
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files   

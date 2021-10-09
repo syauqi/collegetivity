@@ -1,0 +1,57 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var form_builder_1        = true;
+- var counter               = true;
+- var sidebar               = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Form Builder 1
+
+                                .col-6
+                                      ol.breadcrumb
+                                        li.breadcrumb-item
+                                          a(href='index.html')                                        
+                                            i(data-feather="home")
+                                        li.breadcrumb-item Builders
+                                        li.breadcrumb-item.active  Form Builder 1
+                    // Container-fluid starts
+                    .form-builder
+                      .container-fluid
+                        .row
+                          .col-sm-12
+                            .card
+                              .card-header
+                                h5 Drag & Drop components
+                                span Copy the html code from View HTML tab 
+                              .card-body
+                                .row.clearfix.form-builder
+                                  .col-lg-12.col-xl-6
+                                    .form-builder-header-1
+                                      ul#formtabs.nav.nav-primary
+                                    form#components.form-horizontal.theme-form
+                                      fieldset
+                                        .tab-content
+                                  .col-lg-12.col-xl-6.lg-mt-col
+                                    .form-builder-header-1
+                                      h6 Drag Elements Here
+                                    #build
+                                      form#target.form-horizontal.drag-box
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

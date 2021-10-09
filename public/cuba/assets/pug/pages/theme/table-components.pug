@@ -1,0 +1,640 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Table Components
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Bootstrap Tables
+                                      li.breadcrumb-item.active Table Components
+                    // Container-fluid starts                    
+                    .container-fluid
+                      // Table Row Starts
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 UI Components
+                            div
+                              .card-block.row
+                                .col-sm-12.col-lg-12.col-xl-12
+                                  .table-responsive
+                                    table.table.table-bordered
+                                      tbody
+                                        tr
+                                          td Button
+                                          td.w-50
+                                            button.btn.btn-primary Default Button
+                                          td
+                                            span
+                                              | Bootstrap includes six predefined button styles, each serving its own semantic purpose.
+                                        tr
+                                          td Round Buttons
+                                          td
+                                            button.btn.btn-pill.btn-primary Default Button
+                                          td
+                                            span
+                                              | Use 
+                                              code .btn-pill
+                                              |  class to button for Round Buttons.
+                                        tr
+                                          td Button dropdowns
+                                          td
+                                            button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Primary
+                                            .dropdown-menu
+                                              h6.dropdown-header Dropdown header
+                                              a.dropdown-item(href='#') Action
+                                              a.dropdown-item(href='#') Another action
+                                              a.dropdown-item(href='#') Something else here
+                                              .dropdown-divider
+                                              a.dropdown-item(href='#') Separated link
+                                          td
+                                            span
+                                              | Use 
+                                              code .dropdown-toggle
+                                              |  class to button for Dropdown-toggle.
+                                        tr
+                                          td Basic Button group
+                                          td
+                                            .btn-group
+                                              button.btn.btn-primary Primary
+                                              button.btn.btn-secondary Secondary
+                                              button.btn.btn-primary Success
+                                          td
+                                            span
+                                              | Use 
+                                              code btn-group
+                                              |  class to button for 
+                                              code div
+                                              | .
+                                        tr
+                                          td Buttons with Icon
+                                          td
+                                            button.btn.btn-primary
+                                              i.fa.fa-info-circle
+                                              |  Primary
+                                          td
+                                            span
+                                              | Bootstrap includes six predefined button styles, each serving its own semantic purpose.
+                                        tr
+                                          td Icon Button
+                                          td
+                                            button.btn.btn-primary
+                                              i.fa.fa-camera
+                                          td
+                                            span Simple Icon Button
+                                        tr
+                                          td Loading Buttons
+                                          td
+                                            button.btn.btn-primary
+                                              i.fa.fa-spin.fa-spinner.mr-2
+                                              | Expand UP
+                                          td
+                                            span Expand Animation Buttons
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Alerts
+                            div
+                              .card-block.row
+                                .col-sm-12.col-lg-12.col-xl-12
+                                  .table-responsive
+                                    table.table.table-bordered
+                                      tbody
+                                        tr
+                                          td Basic Alert
+                                          td.w-50
+                                            .alert.alert-primary
+                                              p
+                                                strong Success!
+                                                |  Indicates a successful or positive action.
+                                          td
+                                            p
+                                              span
+                                                | Alerts are available for any length of text, as well as an optional dismiss button. Add 
+                                                code  alert alert-primary
+                                                | ,
+                                                code  alert alert-secondary
+                                                | ,
+                                                code  alert alert-success
+                                                | ,
+                                                code  alert alert-info
+                                                |  classes for alert with all theme colors.
+                                        tr
+                                          td Alerts with Links
+                                          td
+                                            .alert.alert-primary
+                                              p
+                                                strong Success!
+                                                |  You should 
+                                                a.alert-link(href='#') read this message
+                                                | .
+                                          td
+                                            p
+                                              span
+                                                | Alerts are available for any length of text, as well as an optional dismiss button. Add 
+                                                code  alert alert-primary
+                                                | ,
+                                                code  alert alert-secondary
+                                                | ,
+                                                code  alert alert-success
+                                                | ,
+                                                code  alert alert-info
+                                                |  classes for alert with all theme colors.
+                                        tr
+                                          td Dismissible Alerts
+                                          td
+                                            .alert.alert-secondary.alert-dismissible.fade.show(role='alert')
+                                              p
+                                                strong Holy !
+                                                |  You can check in on some of those fields below.
+                                              button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                                span(aria-hidden='true') ×
+                                          td
+                                            span
+                                              | Add a dismiss button and the
+                                              code  alert alert-dismissable
+                                              | class, which adds extra padding to the right of the alert and positions the
+                                              code close
+                                              | a link On the dismiss button, add the data-dismiss="alert" attribute, which triggers the JavaScript functionality. Be sure to use the
+                                              code a
+                                              | element with it for proper behavior across all devices. To animate alerts when dismissing them, be sure to add the .fade and .in classes.
+                                        tr
+                                          td Alerts with icons
+                                          td
+                                            .alert.alert-primary.inverse.alert-dismissible.fade.show(role='alert')
+                                              i.icofont.icofont-heart-alt
+                                              p
+                                                | Good Morning! Start your day with some alerts.
+                                              button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                                span(aria-hidden='true') ×
+                                          td
+                                            span
+                                              | Add a dismiss button and the
+                                              code  alert alert-dismissable
+                                              | class, which adds extra padding to the right of the alert and positions the
+                                              code close
+                                              | a link On the dismiss button, add the data-dismiss="alert" attribute, which triggers the JavaScript functionality. Be sure to use the
+                                              code a
+                                              | element with it for proper behavior across all devices. To animate alerts when dismissing them, be sure to add the .fade and .in classes.
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Progressbar
+                            div
+                              .card-block.row
+                                .col-sm-12.col-lg-12.col-xl-12
+                                  .table-responsive
+                                    table.table.table-bordered.checkbox-td-width
+                                      tbody
+                                        tr
+                                          td Default Progress
+                                          td.w-50
+                                            .progress
+                                              .progress-bar.bg-primary(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                                          td
+                                            span
+                                              | Uses a progress bar with class
+                                              code progress-bar
+                                              |  and background color
+                                              code bg-primary, bg-secondary
+                                              | also change
+                                        tr
+                                          td Striped Progress 
+                                          td
+                                            .progress
+                                              .progress-bar.progress-bar-striped.bg-primary(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                                          td
+                                            span
+                                              | Uses a gradient to create a striped effect class.
+                                              code progress-bar-striped
+                                        tr
+                                          td Progress Sizes
+                                          td
+                                            .progress.lg-progress-bar
+                                              .progress-bar.bg-primary(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                                          td
+                                            span
+                                              | Different sized progress. For Default progress, class need
+                                              code lg-progress-bar
+                                              | on div.
+                        // CHECKBOXES Row Starts
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Checkbox
+                            div
+                              .card-block.row
+                                .col-sm-12.col-lg-12.col-xl-12
+                                  .table-responsive
+                                    table.table.table-bordered.checkbox-td-width
+                                      tbody
+                                        tr
+                                          td Basic Checkbox
+                                          td.w-50
+                                            input#checkbox1(type='checkbox')
+                                            label(for='checkbox1') Default
+                                          td
+                                            span Basic Checkbox
+                                        tr
+                                          td Default Checkbox Squar
+                                          td
+                                            .checkbox.m-squar
+                                              input#checkbox3(type='checkbox')
+                                              label(for='checkbox3') Default
+                                          td
+                                            span
+                                              | Wrap with use 
+                                              code .m-squar
+                                              |  checkbox.
+                                        tr
+                                          td Basic Skin Check
+                                          td
+                                            .checkbox.checkbox-dark
+                                              input#checkbox-state-dark(type='checkbox')
+                                              label(for='checkbox-state-dark') Brand state
+                                          td
+                                            span
+                                              | Wrap with use
+                                              code checkbox-dark
+                                              | for this style of checkbox.
+                                        tr
+                                          td Flat Skin Check
+                                          td
+                                            .checkbox.checkbox-solid-primary
+                                              input#solid6(type='checkbox', checked='')
+                                              label(for='solid6') checked
+                                          td
+                                            span
+                                              | Wrap with use
+                                              code checkbox-solid-*
+                                              | ,
+                                              code primary, secondary, success, info, warning, danger
+                                              | for this style of checkbox.
+                                        tr
+                                          td Disable Check
+                                          td
+                                            .checkbox.checkbox-solid-primary
+                                              input#solid2(type='checkbox', disabled='')
+                                              label(for='solid2') Disabled
+                                          td
+                                            span
+                                              | Wrap with use
+                                              code disabled
+                                              | ,
+                                              code primary, secondary, success, info, warning, danger
+                                              | for this style of checkbox disable.
+                                        tr
+                                          td Inline  Checkbox
+                                          td
+                                            .form-group.m-b-0.m-checkbox-inline
+                                              .checkbox.checkbox-primary
+                                                input#inline-1(type='checkbox')
+                                                label(for='inline-1') Option 1
+                                              .checkbox.checkbox-secondary
+                                                input#inline-2(type='checkbox')
+                                                label(for='inline-2') Option 1
+                                              .checkbox.checkbox-success
+                                                input#inline-3(type='checkbox')
+                                                label(for='inline-3') Option 1
+                                          td
+                                            span
+                                              | Wrap with use
+                                              code disabled
+                                              | ,
+                                              code primary, secondary, success, info, warning, danger
+                                              | for this style of checkbox disable.
+                        // CHECKBOXES Row Ends
+                        // Radio Row Starts
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Radio Buttons
+                            div
+                              .card-block.row
+                                .col-sm-12.col-lg-12.col-xl-12
+                                  .table-responsive
+                                    table.table.table-bordered.radio-first-col-width
+                                      tbody
+                                        tr
+                                          td Basic Radio Buttons
+                                          td.w-50
+                                            input#radio(type='radio')
+                                            label(for='radio') Default radio
+                                          td
+                                            span Basic Radio Buttons
+                                        tr
+                                          td Default Radio
+                                          td
+                                            .radio.radio-primary
+                                              input#radio1(type='radio', name='radio1', value='option1')
+                                              label(for='radio1') Option 1
+                                          td
+                                            span
+                                              | Wrap with use 
+                                              code .radio-*
+                                              |  and color 
+                                              code .radio-*
+                                              code primary , secondary , success , info
+                                              |  on Radio.
+                                        tr
+                                          td Checked Radio
+                                          td
+                                            .radio.radio-primary
+                                              input#radio44(type='radio', name='radio1', value='option1', checked='')
+                                              label(for='radio44') Checked
+                                          td
+                                            span
+                                              | Wrap with use
+                                              code checkbox-dark
+                                              | for this style of checkbox.
+                                        tr
+                                          td Flat Skin Check
+                                          td
+                                            .radio.radio-primary
+                                              input#radio33(type='radio', name='radio1', value='option1', disabled='')
+                                              label(for='radio33') Disabled
+                                          td
+                                            span
+                                              | Wrap with use
+                                              code checkbox-solid-*
+                                              | ,
+                                              code primary, secondary, success, info, warning, danger
+                                              | for this style of checkbox.
+                                        tr
+                                          td Inline  Checkbox
+                                          td
+                                            .form-group.m-b-0.m-checkbox-inline
+                                              .radio.radio-primary
+                                                input#radioinline1(type='radio', name='radio1', value='option1')
+                                                label(for='radioinline1') Option 1
+                                              .radio.radio-secondary
+                                                input#radioinline2(type='radio', name='radio1', value='option1')
+                                                label(for='radioinline2') Option 1
+                                              .radio.radio-success
+                                                input#radioinline3(type='radio', name='radio1', value='option1')
+                                                label(for='radioinline3') Option 1
+                                          td
+                                            span
+                                              | Wrap with use
+                                              code disabled
+                                              | ,
+                                              code primary, secondary, success, info, warning, danger, light, dark
+                                              | for this style of checkbox disable.
+                        // Radio Row Ends
+                        // Select Row Starts
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Select 
+                            div
+                              .card-block.row
+                                .col-sm-12.col-lg-12.col-xl-12
+                                  .table-responsive
+                                    table.table.table-bordered.checkbox-td-width
+                                      tbody
+                                        tr
+                                          td Single Select
+                                          td.w-50
+                                            select#exampleFormControlSelect45.form-control
+                                              option 1
+                                              option 2
+                                              option 3
+                                              option 4
+                                              option 5
+                                          td
+                                            span Use for basic select control.
+                                        tr
+                                          td Disabled Select Mode
+                                          td
+                                            select#exampleFormControlSelect4.form-control(disabled='')
+                                              option 1
+                                              option 2
+                                              option 3
+                                              option 4
+                                              option 5
+                                          td
+                                            span
+                                              | Use for disabled select control add 
+                                              code disabled
+                                              | .
+                                        tr
+                                          td Large Select Mode
+                                          td
+                                            select#exampleFormControlSelect1.form-control.form-control-lg.mb-10
+                                              option 1
+                                              option 2
+                                              option 3
+                                              option 4
+                                              option 5
+                                            select#exampleFormControlSelect3.form-control.form-control-sm.mt-5.mb-10
+                                              option 1
+                                              option 2
+                                              option 3
+                                              option 4
+                                              option 5
+                                          td
+                                            span
+                                              | Use for large and small select control add class
+                                              code form-control-*
+                                              code lg, sm
+                                              | .
+                                        tr
+                                          td Example multiple select
+                                          td
+                                            select#exampleFormControlSelect22.form-control(multiple='')
+                                              option 1
+                                              option 2
+                                              option 3
+                                              option 4
+                                              option 5
+                                          td
+                                            span
+                                              | Use for multi select control add code 
+                                              code multiple
+                                              | on select.
+                        // Select Row Ends
+                        // Input Row Starts
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Input
+                            div
+                              .card-block.row
+                                .col-sm-12.col-lg-12.col-xl-12
+                                  .table-responsive
+                                    table.table.table-bordered.checkbox-td-width
+                                      tbody
+                                        tr
+                                          td Default Input text
+                                          td.w-50
+                                            input#exampleFormControlInput1.form-control.input-primary(type='email', placeholder='Input text')
+                                          td
+                                            span Use for basic select control.
+                                        tr
+                                          td Input Hover Color 
+                                          td.w-50
+                                            input#exampleFormControlInput2.form-control(type='email', placeholder='Input text')
+                                          td
+                                            span
+                                              | Use for basic input color add class
+                                              code input-air-*
+                                              code primary, secondary, success, info
+                                              | .on input
+                        // Input Row Ends
+                        // Badges Row Starts
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Badges
+                            div
+                              .card-block.row
+                                .col-sm-12.col-lg-12.col-xl-12
+                                  .table-responsive
+                                    table.table.table-bordered
+                                      tbody
+                                        tr
+                                          td.pills-component Basic Pills
+                                          td.w-50
+                                            span.badge.badge-primary Primary
+                                          td
+                                            span
+                                              | Use the 
+                                              code .badge
+                                              |  class, followed by. with badge color use class 
+                                              code .badge-*
+                                              code primary , secondary , success , info, warning, danger, light
+                                              |   class within element to create default pill.
+                                        tr
+                                          td Label With Icon
+                                          td.w-50.m-5
+                                            .badge.badge-primary.label-square
+                                              i.fa.fa-paperclip.fa-lg
+                                              span.f-14 Primary Label
+                                          td
+                                            span
+                                              | Use the 
+                                              code label-square
+                                              |  class with 
+                                              code div
+                        // Badges Row Ends
+                        // Tooltip  Row Starts
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Tooltip Triggers
+                            div
+                              .card-block.row
+                                .col-sm-12.col-lg-12.col-xl-12
+                                  .table-responsive
+                                    table.table.table-bordered
+                                      tbody
+                                        tr
+                                          td Hover
+                                          td.w-50
+                                            button.btn.btn-primary(type='button', data-original-title='btn btn-link btn-lg', title='Hover') Primary
+                                          td
+                                            span Use data-toggle="tooltip" for hover trigger. This is a default trigger
+                                        tr
+                                          td Link
+                                          td.w-50
+                                            a.btn.btn-primary(href='#', data-toggle='tooltip', title='', role='button', data-original-title='Hooray!') Link
+                                          td
+                                            span
+                                              | Use  
+                                              code a href="#"
+                                              |  for link trigger. This is a link trigger
+                                        tr
+                                          td outline button
+                                          td.w-50
+                                            button.btn.btn-outline-primary(type='button', data-original-title='btn btn-outline-danger-2x', title='') Primary
+                                          td
+                                            span
+                                              | Use  
+                                              code btn btn-outline-info
+                                              |  for outline trigger. and button bold Border use class
+                                              code btn btn-outline-dark-2x
+                        // Tooltip Row Ends
+                        // Switch Row Starts
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 SWITCH
+                            div
+                              .card-block.row
+                                .col-sm-12.col-lg-12.col-xl-12
+                                  .table-responsive
+                                    table.table.table-bordered
+                                      tbody
+                                        tr
+                                          td.pills-component Default Switch
+                                          td.w-50
+                                            label.switch
+                                              input(type='checkbox', checked='')
+                                              span.switch-state
+                                          td
+                                            span
+                                              | Use class 
+                                              code switch
+                                              |  for label.
+                                        tr
+                                          td Disable Switch
+                                          td.w-50
+                                            label.switch
+                                              input(type='checkbox', disabled='')
+                                              span.switch-state
+                                          td
+                                            span
+                                              | this Disable Switch 
+                                              code disabled
+                                        tr
+                                          td Switch Color
+                                          td.w-50
+                                            .media-body.icon-state
+                                              label.switch
+                                                input(type='checkbox', checked='')
+                                                span.switch-state.bg-primary
+                                          td
+                                            span
+                                              | Use  class 
+                                              code bg-*
+                                              code Primary , Secondary , Success , Info , Warning , Danger
+                                              | in span with icon show switch 
+                                              code icon-state
+                                              | on div.
+                                        tr
+                                          td Switch Outline
+                                          td.w-50
+                                            .media-body.icon-state.switch-outline
+                                              label.switch
+                                                input(type='checkbox', checked='')
+                                                span.switch-state.bg-primary
+                                          td
+                                            span
+                                              | Use  class 
+                                              code switch-outline
+                                              | on div.
+                        // Switch Row Ends
+                        // Table Row Ends
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files   

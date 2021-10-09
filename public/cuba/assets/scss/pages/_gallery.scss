@@ -1,0 +1,425 @@
+/**=====================
+     45. Gallery CSS Start
+==========================**/
+.profile-img-style, .scroll-bar-wrap {
+  img {
+    width: 100%;
+  }
+}
+.gallery{
+  margin-bottom: -30px;
+  > a{
+    margin-bottom: 30px;
+    &:before{
+      content: "\edee";
+      font-family: $font-ICO;
+      position: absolute;
+      height: calc(100% - 10px);
+      left: 20px;
+      width: calc(100% - 40px);
+      background-color: rgba(255, 255, 255, 0.27);
+      top: 5px;
+      transform: scale(0);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: $black;
+    }
+    &:hover{
+      &:before{
+        transform: scale(1);
+        transition: all 0.3s ease;
+      }
+    }
+    .img-thumbnail {
+      border-radius: 0;
+    }
+  }
+}
+.gallery-with-description{
+  margin-bottom: -30px;
+  a{
+    > div{
+      padding: 10px;
+      border: 1px solid lighten($dark-color , 70%);
+      margin-bottom: 30px;
+      border-radius: 0 0 5px 5px;
+    }
+    &:hover{
+      text-decoration: none !important;
+    }
+  }
+  h4{
+    color: $dark-color;
+    margin-top: 15px;
+    font-size:18px;
+  }
+  p{
+    color: lighten($dark-gray , 10%);
+  }
+}
+.lg-backdrop{
+  background-color: $white;
+}
+.lg-outer{
+  .lg-actions {
+    .lg-next,.lg-prev{
+      background-color: rgb(255, 255, 255);
+      border: 1px solid $light-semi-gray;
+      &:hover{
+        color: $dark-color;
+      }
+    }
+  }
+  .lg-toolbar {
+    background-color: rgba(255, 255, 255, 0.45);
+    border-bottom: 1px solid $dark-color;
+    .lg-icon:hover{
+      color: $dark-color;
+    }
+  }
+  #lg-counter {
+    color: $dark-color;
+  }
+  .lg-sub-html{
+    background-color: rgba(255, 255, 255, 0.45);
+    h4{
+      font-size: inherit;
+      color: $dark-color;
+    }
+    p{
+      color: $dark-color;
+    }
+  }
+  .lg-thumb-outer{
+    background-color: $light-gray;
+  }
+  .lg-thumb-item{
+    padding: 4px;
+    border: 1px solid $light-semi-gray;
+    border-radius: 0;
+    .active,&:hover{
+      border-color: $black;
+    }
+  }
+}
+.gallery{
+  a{
+    &:before,&:after{
+      content: none;
+    }
+  }
+  .img-hover{
+    > div{
+      overflow: hidden;
+    }
+  }
+  .hover-1{
+    img {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      &:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+    }
+  }
+  .hover-2{
+    img {
+      width: 100%;
+      height: auto;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      transform: translateX(0px);
+    }
+    &:hover{
+      img{
+        transform: translateX(40px) scale(1.2);
+      }
+    }
+  }
+  .hover-3{
+    img {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    &:hover{
+      img{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+  }
+  .hover-4{
+    img {
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    &:hover{
+      img{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+  }
+  .hover-5{
+    img {
+      margin-left: 30px;
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    &:hover{
+      img{
+        margin-left: 0;
+      }
+    }
+  }
+  .hover-6{
+    img {
+      -webkit-transform: rotate(15deg) scale(1.4);
+      transform: rotate(15deg) scale(1.4);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    &:hover{
+      img{
+        -webkit-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
+      }
+    }
+  }
+  .hover-7{
+    img {
+      -webkit-filter: blur(3px);
+      filter: blur(3px);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    &:hover{
+      img{
+        -webkit-filter: blur(0);
+        filter: blur(0);
+      }
+    }
+  }
+
+  .hover-8{
+    img {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    &:hover{
+      img{
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
+    }
+  }
+
+  .hover-9{
+    img {
+      -webkit-filter: sepia(100%);
+      filter: sepia(100%);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    &:hover{
+      img{
+        -webkit-filter: sepia(0);
+        filter: sepia(0);
+      }
+    }
+  }
+  .hover-10{
+    img {
+      -webkit-filter: grayscale(0) blur(0);
+      filter: grayscale(0) blur(0);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    &:hover{
+      img{
+        -webkit-filter: grayscale(100%) blur(3px);
+        filter: grayscale(100%) blur(3px);
+      }
+    }
+  }
+  .hover-11{
+    img {
+      opacity: 1;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    &:hover{
+      img{
+        opacity: .5;
+      }
+    }
+  }
+
+  @-webkit-keyframes flash {
+    0% {
+      opacity: .4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes flash {
+    0% {
+      opacity: .4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .hover-13{
+    &:hover{
+      img{
+        opacity: 1;
+        -webkit-animation: flash 1.5s;
+        animation: flash 1.5s;
+      }
+    }
+  }
+
+  @-webkit-keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
+  @keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
+  .hover-14{
+
+   div{
+     position: relative;
+    &:before{
+      position: absolute;
+      top: 0;
+      left: -75%;
+      z-index: 2;
+      display: block;
+      content: '';
+      width: 50%;
+      height: 100%;
+      background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+      -webkit-transform: skewX(-25deg);
+      transform: skewX(-25deg);
+    }
+     &:hover{
+       &:before{
+         -webkit-animation: shine .75s;
+         animation: shine .75s;
+
+       }
+     }
+   }
+  }
+  .hover-15{
+    div{
+      position: relative;
+      &:before{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        background: rgba(255,255,255,.2);
+        border-radius: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+      }
+      &:hover{
+        &:before{
+          -webkit-animation: circle .75s;
+          animation: circle .75s;
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+* {
+  box-sizing: border-box;
+  &:after, &:before {
+    box-sizing: border-box;
+  }
+}
+.grid {
+  position: relative;
+}
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* ---- .grid-item ---- */
+.grid-item {
+  img{
+    max-width: 100%;
+    padding: 0.25rem;
+    background-color: $white;
+    border: 1px solid #dee2e6;
+  }
+}
+.gallery-with-description {
+  .grid-item {
+    img {
+      border: 0;
+      padding: 0;
+    }
+  }
+}
+
+/**=====================
+     45. Gallery CSS Ends
+==========================**/

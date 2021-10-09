@@ -1,0 +1,388 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var photo_swipe           = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Search Images
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')
+                                         i(data-feather="home")
+                                      li.breadcrumb-item Search Pages
+                                .col-6
+                                  include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid.search-page
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              form.search-form
+                                .form-group.m-0
+                                  label.sr-only Email
+                                  input.form-control-plaintext(type='search', placeholder='Search..')
+                            .card-body
+                              ul#top-tab.nav.nav-tabs.border-tab(role='tablist')
+                                li.nav-item
+                                  a#all-link.nav-link(data-toggle='tab', href='#all-links', role='tab', aria-selected='false')
+                                    i.icon-target
+                                    | All
+                                  .material-border
+                                li.nav-item
+                                  a#image-link.nav-link.active(data-toggle='tab', href='#image-links', role='tab', aria-selected='true')
+                                    i.icon-image
+                                    | Images
+                                  .material-border
+                                li.nav-item
+                                  a#video-link.nav-link(data-toggle='tab', href='#video-links', role='tab', aria-selected='false')
+                                    i.icon-video-clapper
+                                    | Videos
+                                  .material-border
+                                li.nav-item
+                                  a#map-link.nav-link(data-toggle='tab', href='#map-links', role='tab', aria-selected='false')
+                                    i.icon-map-alt
+                                    | Maps
+                                  .material-border
+                                li.nav-item
+                                  a#setting-link.nav-link(data-toggle='tab', href='#setting-links', role='tab', aria-selected='false')
+                                    i.icon-settings
+                                    | Settings
+                                  .material-border
+                              #top-tabContent.tab-content
+                                #all-links.search-links.tab-pane.fade(role='tabpanel', aria-labelledby='all-link')
+                                  .row
+                                    .col-xl-6
+                                      p.pb-4 About 6,000 results (0.60 seconds)
+                                      .info-block
+                                        h6 Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                        a(href='') Cubaeducation.info/
+                                        p
+                                          | Cuba introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.
+                                        .star-ratings
+                                          ul.search-info
+                                            li 2.5 stars
+                                            li 590 votes
+                                            li Music
+                                      .info-block
+                                        h6 Proin eleifend metus vel erat faucibus, ut bibendum nulla iaculis.
+                                        a(href='') Cubaeducation.info/
+                                        p
+                                          | Cuba introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.
+                                        .star-ratings
+                                          ul.search-info
+                                            li 2.5 stars
+                                            li 590 votes
+                                            li Music
+                                      .info-block
+                                        h6 Fusce rutrum elit aliquet nisi malesuada cursus.
+                                        a(href='') Cubaeducation.info/
+                                        p
+                                          | Cuba introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.
+                                        .star-ratings
+                                          ul.search-info
+                                            li
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rate-blank
+                                              i.icofont.icofont-ui-rate-blank
+                                            li 2.5 stars
+                                            li 590 votes
+                                            li Music
+                                      .info-block
+                                        h6 Morbi feugiat mauris vel semper fringilla.
+                                        a(href='') Cubaeducation.info/
+                                        p
+                                          | Cuba introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.
+                                        .star-ratings
+                                          ul.search-info
+                                            li
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rate-blank
+                                              i.icofont.icofont-ui-rate-blank
+                                            li 2.5 stars
+                                            li 590 votes
+                                            li Music
+                                      .info-block
+                                        h6 Morbi feugiat mauris vel semper fringilla.
+                                        a(href='') Cubaeducation.info/
+                                        p
+                                          | Cuba introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.
+                                        .star-ratings
+                                          ul.search-info
+                                            li
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rate-blank
+                                              i.icofont.icofont-ui-rate-blank
+                                            li 2.5 stars
+                                            li 590 votes
+                                            li Music
+                                      .info-block
+                                        nav(aria-label='...')
+                                          ul.pagination.pagination-primary
+                                            li.page-item.disabled
+                                              a.page-link(href='#', tabindex='-1') Previous
+                                            li.page-item
+                                              a.page-link(href='#') 1
+                                            li.page-item.active
+                                              a.page-link(href='#')
+                                                | 2 
+                                                span.sr-only (current)
+                                            li.page-item
+                                              a.page-link(href='#') 3
+                                            li.page-item
+                                              a.page-link(href='#') Next
+                                    .col-xl-6
+                                      .card.lg-mt.mb-0
+                                        .blog-box.blog-shadow
+                                          img.img-fluid(src='../assets/images/blog/blog.jpg', alt='')
+                                          .blog-details
+                                            p 25 July 2018
+                                            h4 Accusamus et iusto odio dignissimos ducimus qui blanditiis.
+                                            ul.blog-social
+                                              li
+                                                i.icofont.icofont-user
+                                                | Mark Jecno
+                                              li
+                                                i.icofont.icofont-thumbs-up
+                                                | 02 Hits
+                                #image-links.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='image-link')
+                                  .info-block.m-t-30
+                                    p.pb-4.col-sm-12 About 12,120 results (0.50 seconds)
+                                    #aniimated-thumbnials.my-gallery.row.gallery-with-description(itemscope='')
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/01.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/01.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/02.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/02.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/03.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/03.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/04.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/04.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/05.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/05.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/011.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/011.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/010.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/010.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/08.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/08.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                    // Root element of PhotoSwipe. Must have class pswp.
+                                    .pswp(tabindex='-1', role='dialog', aria-hidden='true')
+                                      //
+                                        Background of PhotoSwipe.
+                                        It's a separate element, as animating opacity is faster than rgba().
+                                      .pswp__bg
+                                      // Slides wrapper with overflow:hidden.
+                                      .pswp__scroll-wrap
+                                        // Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory.
+                                        // don't modify these 3 pswp__item elements, data is added later on.
+                                        .pswp__container
+                                          .pswp__item
+                                          .pswp__item
+                                          .pswp__item
+                                        // Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.
+                                        .pswp__ui.pswp__ui--hidden
+                                          .pswp__top-bar
+                                            // Controls are self-explanatory. Order can be changed.
+                                            .pswp__counter
+                                            button.pswp__button.pswp__button--close(title='Close (Esc)')
+                                            button.pswp__button.pswp__button--share(title='Share')
+                                            button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
+                                            button.pswp__button.pswp__button--zoom(title='Zoom in/out')
+                                            // Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR
+                                            // element will get class pswp__preloader--active when preloader is running
+                                            .pswp__preloader
+                                              .pswp__preloader__icn
+                                                .pswp__preloader__cut
+                                                  .pswp__preloader__donut
+                                          .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+                                            .pswp__share-tooltip
+                                          button.pswp__button.pswp__button--arrow--left(title='Previous (arrow left)')
+                                          button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
+                                          .pswp__caption
+                                            .pswp__caption__center
+                                  .info-block.m-t-30
+                                    nav(aria-label='...')
+                                      ul.pagination.pagination-primary
+                                        li.page-item.disabled
+                                          a.page-link(href='#', tabindex='-1') Previous
+                                        li.page-item
+                                          a.page-link(href='#') 1
+                                        li.page-item.active
+                                          a.page-link(href='#')
+                                            | 2 
+                                            span.sr-only (current)
+                                        li.page-item
+                                          a.page-link(href='#') 3
+                                        li.page-item
+                                          a.page-link(href='#') Next
+                                #video-links.tab-pane.fade(role='tabpanel', aria-labelledby='video-link')
+                                  .row
+                                    .col-xl-6
+                                      p.pb-4 About 6,000 results (0.60 seconds)
+                                      .media.info-block
+                                        iframe.mr-3.mb-3(width='200', height='100', src='https://www.youtube.com/embed/CJnfAXlBRTE')
+                                        .media-body
+                                          h6 Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                          a(href='') Cubaeducation.info/
+                                          p
+                                            | Cuba introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.
+                                          .star-ratings
+                                            ul.search-info
+                                              li 2.5 stars
+                                              li 590 votes
+                                              li Music
+                                      .media.info-block
+                                        iframe.mr-3.mb-3(width='200', height='100', src='https://www.youtube.com/embed/-L4gEk7cOfk')
+                                        .media-body
+                                          h6
+                                            | Morbi eget quam et purus commodo dapibus.
+                                          a(href='') Cubaeducation.info/
+                                          p
+                                            | Cuba introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.
+                                          .star-ratings
+                                            ul.search-info
+                                              li 2.5 stars
+                                              li 590 votes
+                                              li Music
+                                      .media.info-block
+                                        iframe.mr-3.mb-3(width='200', height='100', src='https://www.youtube.com/embed/FZzWGr3ruVw')
+                                        .media-body
+                                          h6 Etiam eget ligula at ante eleifend rutrum.
+                                          a(href='') Cubaeducation.info/
+                                          p
+                                            | Cuba introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.
+                                          .star-ratings
+                                            ul.search-info
+                                              li 2.5 stars
+                                              li 590 votes
+                                              li Music
+                                      .media.info-block
+                                        iframe.mr-3.mb-3(width='200', height='100', src='https://www.youtube.com/embed/wpmHZspl4EM')
+                                        .media-body
+                                          h6 Lorem Ipsum is simply dummy text of the printing.
+                                          a(href='') Cubaeducation.info/
+                                          p
+                                            | Cuba introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.
+                                          .star-ratings
+                                            ul.search-info
+                                              li 2.5 stars
+                                              li 590 votes
+                                              li Music
+                                      .info-block
+                                        nav(aria-label='...')
+                                          ul.pagination.pagination-primary
+                                            li.page-item.disabled
+                                              a.page-link(href='#', tabindex='-1') Previous
+                                            li.page-item
+                                              a.page-link(href='#') 1
+                                            li.page-item.active
+                                              a.page-link(href='#')
+                                                | 2 
+                                                span.sr-only (current)
+                                            li.page-item
+                                              a.page-link(href='#') 3
+                                            li.page-item
+                                              a.page-link(href='#') Next
+                                    .col-xl-6
+                                      div
+                                        .embed-responsive.embed-responsive-21by9.lg-mt
+                                          iframe(width='560', height='315', src='https://www.youtube.com/embed/wpmHZspl4EM', allowfullscreen='')
+                                        .embed-responsive.embed-responsive-21by9
+                                          iframe(width='560', height='315', src='https://www.youtube.com/embed/I0-vBdh4sZ8', allowfullscreen='')
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

@@ -1,0 +1,140 @@
+/**=====================
+     22. User profile css start
+==========================**/
+.user-profile {
+  .ttl-info {
+    h6 {
+      font-size: 12px;
+      color: $semi-dark;
+    }
+  }
+  .border-right {
+    border-right: 1px solid $light-color;
+  }
+  hr {
+    margin: 30px 0;
+  }
+  .hovercard {
+    .cardheader {
+      background: url(../images/other-images/bg-profile.png);
+      background-size: cover;
+      background-position: 10%;
+      height: 470px;
+    }
+    .user-image {
+      position: relative;
+      height: 0;
+      .avatar {
+        margin-top: -100px;
+        img {
+          width: 125px;
+          height: 125px;
+          max-width: 155px;
+          max-height: 155px;
+          border-radius: 50%;
+          border: 7px solid $white;
+        }
+      }
+      .icon-wrapper {
+        position: absolute;
+        bottom: -20px;
+        left: 51%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: $white;
+        cursor: pointer;
+        overflow: hidden;
+        margin: 0 auto;
+        font-size: 17px;
+        box-shadow: 0 0 6px 3px rgba(68, 102, 242, 0.1);
+      }
+    }
+    .info {
+      padding: 30px;
+      .title {
+        margin-bottom: 4px;
+        font-size: 24px;
+        line-height: 1;
+        color: $dark-color;
+        vertical-align: middle;
+        a {
+          color: $theme-font-color;
+          font-size: 20px;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+      }
+      .desc {
+        overflow: hidden;
+        font-size: 14px;
+        line-height: 20px;
+        color: $semi-dark;
+        text-overflow: ellipsis;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .follow {
+    margin-top: 20px;
+    .follow-num {
+      font-size: 36px;
+      color: $theme-font-color;
+      font-family: $font-rubik, $font-serif;
+    }
+    span {
+      color: $semi-dark;
+    }
+  }
+  .profile-img-style {
+    padding: 30px;
+    .img-container{
+      margin-top: 30px;
+    }
+    .user-name {
+      font-size: 14px;
+      color: $theme-font-color;
+      margin: 0;
+      font-weight: 600;
+    }
+    p {
+      line-height: 30px;
+      font-size: 14px;
+      color: $dark-gray;
+      margin-bottom: 0;
+    }
+    .media {
+      img {
+        width: 50px;
+      }
+    }
+  }
+  .like-comment {
+    a{
+      color: $dark-gray;
+      &:hover{
+        color: $danger-color;
+      }
+    }
+    span {
+      font-family: $font-rubik, $font-serif;
+    }
+  }
+  .social-media {
+    a {
+      padding:0 15px;
+      color: $semi-dark;
+      font-size: 24px;
+      cursor: pointer;
+      &:hover {
+        color: var(--theme-deafult);
+      }
+    }
+  }
+}
+/**=====================
+     22. User profile css Ends
+==========================**/

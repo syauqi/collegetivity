@@ -1,0 +1,197 @@
+- var datatable             = true;
+- var page_datatable        = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Ajax DataTables
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Data Tables
+                                      li.breadcrumb-item.active  Ajax DataTables
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        // Ajax data source array start
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Ajax Data Source (Arrays)
+                              span
+                                | The example below shows DataTables loading data for a table from arrays as the data source, where the structure of the row's data source in this example is:
+                            .card-body
+                              .table-responsive
+                                table#ajax-data-array.display.datatables
+                                  thead
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                                  tfoot
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                        // Ajax data source array end
+                        // Ajax data source array start
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Ajax data source (Objects)
+                              span
+                                | The example below shows DataTables loading data for a table from arrays as the data source, where the structure of the row's data source in this example is:
+                            .card-body
+                              .table-responsive
+                                table#ajax-data-object.display.datatables
+                                  thead
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                                  tfoot
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                        // Ajax data source array end
+                        // Ajax  Nested object data start
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Nested object data (objects)
+                              span
+                                | The example below shows DataTables loading data for a table from arrays as the data source, where the structure of the row's data source in this example is:
+                            .card-body
+                              .table-responsive
+                                table#ajax-data-nested-object.display.datatables
+                                  thead
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                                  tfoot
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                        // Ajax Nested object data end
+                        // Ajax Orthogonal data start
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Orthogonal data
+                              span
+                                | In this example the Ajax source returns an array of objects, which DataTables uses to display the table. The structure of the row's data source in this example is:
+                            .card-body
+                              .table-responsive
+                                table#orthogonal-data.display.datatables
+                                  thead
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                                  tfoot
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                        // Ajax Orthogonal data end
+                        // Ajax Generated content for a column start
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Generated content for a column
+                              span In some tables you might wish to have some content generated automatically.
+                            .card-body
+                              .table-responsive
+                                table#auto-generate-content.display.datatables
+                                  thead
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                                  tfoot
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                        // Ajax Generated content for a column end
+                        // Ajax Deferred rendering for speed start
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Deferred rendering for speed
+                              span
+                                | The example below shows DataTables with deferred rendering enabled. For this small example you'll likely notice no difference, but larger tables can benefit significantly from simply enabling this parameter.
+                            .card-body
+                              .table-responsive
+                                table#render-datatable.display.datatables
+                                  thead
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                                  tfoot
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Office
+                                      th Age
+                                      th Start date
+                                      th Salary
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

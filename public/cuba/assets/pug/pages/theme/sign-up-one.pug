@@ -1,0 +1,64 @@
+- var sidebar               = false
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+      // login page start
+      .container-fluid.p-0 
+        .row
+          .col-xl-5
+            img.bg-img-cover.bg-center(src="../assets/images/login/3.jpg" alt="looginpage" )
+          .col-xl-7.p-0 
+              .login-card
+                div
+                  div
+                    a.logo(href="index.html")
+                      img.img-fluid.for-light(src="../assets/images/logo/login.png" alt="looginpage" )
+                      img.img-fluid.for-dark(src="../assets/images/logo/logo_dark.png" alt="looginpage" )
+                    
+                  .login-main 
+                    form.theme-form
+                      h4 Create your account
+                      p Enter your personal details to create account
+                      .form-group
+                        label.col-form-label.pt-0 Your Name
+                        .form-row
+                          .col-6
+                            input.form-control(type='text', required='' placeholder='First name')
+                          .col-6
+                            input.form-control(type='text', required='' placeholder='Last name')
+                      .form-group
+                        label.col-form-label Email Address
+                        input.form-control(type='email', required='' placeholder='Test@gmail.com')
+                      .form-group
+                        label.col-form-label Password
+                        input.form-control(type='password', name='login[password]', required='' placeholder="*********")
+                        .show-hide
+                          span.show
+
+                      .form-group.mb-0
+                        .checkbox.p-0
+                          input#checkbox1(type='checkbox')
+                          label.text-muted(for='checkbox1') Agree with
+                            a.ml-2(href="#") Privacy Policy
+                        button.btn.btn-primary.btn-block(type='submit') Create Account
+                      h6.text-muted.mt-4.or Or signup with
+                      .social.mt-4
+                          .btn-showcase
+                              a.btn.btn-light(href='https://www.linkedin.com/login' target='_blank')
+                                i.txt-linkedin(data-feather="linkedin")
+                                |  LinkedIn 
+                                
+                              a.btn.btn-light(href='https://twitter.com/login?lang=en' target='_blank')
+                                i.txt-twitter(data-feather="twitter")
+                                | twitter
+                              
+                              a.btn.btn-light(href='https://www.facebook.com/' target='_blank')
+                                                       
+                                i.txt-fb(data-feather="facebook")
+                                | facebook
+                      p.mt-4.mb-0 Already have an account?
+                        a.ml-2(href="login.html") Sign in
+
+
+        include ../../components/footer-files

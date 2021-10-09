@@ -1,0 +1,434 @@
+/*======= Page Header css Start ======= */
+/*======= Page Header css ends  ======= */
+
+
+/**======Main Header css Start ======**/
+.offcanvas,
+.offcanvas-bookmark {
+  .page-wrapper {
+    .page-body-wrapper {
+      .page-body {
+        position: relative;
+        filter: blur(5px) grayscale(100%);
+      }
+    }
+  }
+}
+
+.toggle-sidebar {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+
+  svg {
+    width: $header-wrapper-nav-icon-size;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: rgba($primary-color, 0.1);
+    border-radius: 100%;
+    left: -11px;
+    z-index: -2;
+    top: -8px;
+    transform: scale(0);
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    &:before {
+      height: 40px;
+      width: 40px;
+      transform: scale(1);
+      transition: all 0.3s ease;
+    }
+
+    >svg {
+      color: var(--theme-deafult) !important;
+      stroke: var(--theme-deafult) !important;
+    }
+  }
+}
+
+.onhover-dropdown {
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    .onhover-show-div {
+      @extend %for-animated-hover-box;
+    }
+  }
+}
+
+.onhover-show-div {
+  top: 80px;
+  position: absolute;
+  z-index: 8;
+  background-color: $white;
+  transition: all linear 0.3s;
+  @extend %for-animated-hover;
+
+  li {
+    a {
+      svg {
+        margin-top: 0 !important;
+
+        path,
+        line {
+          color: $theme-body-font-color !important;
+        }
+      }
+    }
+  }
+}
+
+
+/**======Main Header css Ends ======**/
+
+/*=======Mega menu css start=======*/
+.left-header {
+  .level-menu {
+    .nav-link {
+      display: inline-block;
+      border-radius: 5px;
+      background-color: rgba($secondary-color, 0.15%);
+      transition: all 0.3s ease;
+      color: var(--theme-secondary);
+      margin-left: 10px;
+
+      &.active {
+        background-color: var(--theme-secondary);
+        color: $white;
+        transition: all 0.3s ease;
+
+        svg {
+          stroke: $white;
+        }
+      }
+
+      svg {
+        height: 18px;
+        margin-right: 5px;
+        vertical-align: middle;
+        stroke: var(--theme-secondary);
+      }
+    }
+
+    .header-level-menu {
+      position: absolute;
+      top: 59px;
+      background-color: $white;
+      border-radius: 5px;
+      width: 180px;
+      padding: 0.7rem 0.5rem;
+      box-shadow: 0 0 37px rgba(8, 21, 66, 0.1);
+
+      li {
+        padding: 0.5rem 1rem;
+        width: 100%;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: rgba($primary-color, 0.1);
+          border-radius: 5px;
+          transition: all 0.3s ease;
+
+          >a {
+            >span {
+              color: var(--theme-deafult);
+              transition: all 0.3s ease;
+            }
+
+            >svg {
+              stroke: var(--theme-deafult);
+              transition: all 0.3s ease;
+            }
+          }
+        }
+      }
+
+      >li {
+        position: relative;
+        width: 100%;
+
+        &:hover {
+          .header-level-sub-menu {
+            opacity: 1;
+            box-shadow: 0 0 37px rgba(8, 21, 66, 0.1);
+            animation: fadeInLeft 300ms ease-in-out;
+          }
+        }
+
+        a {
+          color: $dark-color;
+        }
+
+        svg {
+          width: 16px;
+          vertical-align: middle;
+          margin-right: 5px;
+          stroke: $dark-color;
+        }
+
+        span {
+          vertical-align: middle;
+        }
+
+        >.header-level-sub-menu {
+          position: absolute;
+          padding: 0.7rem 0.5rem;
+          left: 173px;
+          z-index: 9;
+          background-color: $white;
+          width: 170px;
+          border-radius: 5px;
+          top: 0;
+          opacity: 0;
+          animation: fadeInLeft 300ms ease-in-out;
+        }
+      }
+    }
+  }
+
+  .mega-menu {
+    .nav-link {
+      display: inline-block;
+      border-radius: 5px;
+      background-color: rgba($primary-color, 0.15%);
+      transition: all 0.3s ease;
+
+      &.active {
+        transition: all 0.3s ease;
+        color: $white;
+        background-color: var(--theme-deafult);
+      }
+
+      .according-menu {
+        display: none;
+      }
+
+      svg {
+        height: 18px;
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .mega-menu-container {
+    min-width: 1100px;
+    position: absolute;
+    width: calc(100vw - 800px);
+    border-radius: 0px;
+    background-color: $white;
+    top: 59px;
+    left: -30px;
+    border-top: 1px solid $light-semi-gray;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    box-shadow: 0 0 20px rgba(89, 102, 122, 0.1);
+
+    .link-section {
+      >div {
+        h6 {
+          margin-top: 20px;
+        }
+      }
+
+      li {
+        width: 100%;
+        padding: 7px 0 7px 15px;
+
+        a {
+          transition: all 0.3s ease;
+        }
+
+        &:hover {
+          a {
+            color: var(--theme-deafult);
+            letter-spacing: 1.5px;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+    }
+
+    .mega-box {
+      &+.mega-box {
+        padding-left: 30px;
+        border-left: 1px solid $light-semi-gray;
+      }
+
+      .doted {
+        li {
+          position: relative;
+
+          &:hover {
+            &:before {
+              background-color: var(--theme-deafult);
+              transition: all 0.3s ease;
+            }
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            height: 5px;
+            width: 5px;
+            background-color: $light-text;
+            left: 0;
+            border-radius: 100%;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+
+      .dashed-links {
+        li {
+          position: relative;
+
+          &:hover {
+            &:before {
+              background-color: var(--theme-deafult);
+              transition: all 0.3s ease;
+            }
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 16px;
+            height: 2px;
+            width: 6px;
+            background-color: $light-text;
+            left: 0;
+          }
+        }
+      }
+
+      .icon {
+        li {
+          position: relative;
+
+          &:hover {
+            &:before {
+              color: var(--theme-deafult);
+              transition: all 0.3s ease;
+            }
+          }
+
+          &:before {
+            content: "\f101";
+            font-family: fontawesome;
+            position: absolute;
+            top: 7px;
+            left: 0px;
+          }
+        }
+      }
+
+      .svg-icon {
+        &~div {
+          h6 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+          }
+        }
+
+        li {
+          padding-left: 0px;
+
+          &:hover {
+            &:before {
+              color: var(--theme-deafult);
+              transition: all 0.3s ease;
+            }
+          }
+
+          a {
+            svg {
+              width: 16px;
+              margin-right: 5px;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+
+    .submenu-title {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    .according-menu {
+      display: none;
+    }
+  }
+}
+
+.horizontal-menu {
+  li {
+    display: inline-block;
+  }
+}
+
+.mega-menu {
+  .default-according {
+    .card {
+      .btn-link {
+        font-weight: 500;
+        color: gray;
+      }
+
+      .card-body {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .onhover-show-div {
+    width: 1500px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  div {
+    >div {
+      a {
+        margin-bottom: 0px;
+        display: inline-block;
+        color: $theme-body-sub-title-color;
+      }
+    }
+  }
+
+  .list-unstyled {
+    div {
+      a {
+        padding: 8px 35px 8px 0;
+        transition: $sidebar-transition;
+
+        &:hover {
+          padding: 8px 35px 8px 10px;
+          transition: $sidebar-transition;
+        }
+      }
+    }
+  }
+}
+
+/*=======Mega menu css end=======*/
+
+/**=====================
+    05. Header CSS Ends
+==========================**/

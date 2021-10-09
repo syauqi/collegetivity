@@ -1,0 +1,156 @@
+//colors
+$color_iron_approx: #f1f1f1;
+$white: #fff;
+$black: #000;
+
+
+%extend_1 {
+	background: $black;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: .5s ease-in-out;
+}
+
+.kanban-container {
+	position: relative;
+	box-sizing: border-box;
+	width: auto;
+
+	* {
+		box-sizing: border-box;
+	}
+
+	&:after {
+		clear: both;
+		display: block;
+		content: "";
+	}
+}
+
+.kanban-board {
+	position: relative;
+	float: left;
+	transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+
+	&.disabled-board {
+		opacity: 0.3;
+	}
+
+	header {
+		font-size: 16px;
+		padding: 20px 30px;
+
+		.kanban-title-board {
+			font-weight: 500;
+			margin: 0;
+			padding: 0;
+			display: inline;
+		}
+
+		.kanban-title-button {
+			float: right;
+		}
+	}
+
+	.kanban-drag {
+		min-height: 200px;
+		padding: 20px;
+	}
+
+	&:after {
+		clear: both;
+		display: block;
+		content: "";
+	}
+
+	&.is-moving.gu-mirror {
+		transform: rotate(3deg);
+
+		.kanban-drag {
+			overflow: hidden;
+			padding-right: 50px;
+		}
+	}
+}
+
+.kanban-item {
+	background: $white;
+	padding: 15px;
+	margin-bottom: 20px;
+	transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+
+	&:hover {
+		cursor: move;
+	}
+
+	&:last-child {
+		margin: 0;
+	}
+
+	&.is-moving.gu-mirror {
+		transform: rotate(3deg);
+		height: auto !important;
+	}
+}
+
+.gu-mirror {
+	position: fixed !important;
+	margin: 0 !important;
+	z-index: 9999 !important;
+}
+
+.gu-hide {
+	display: none !important;
+}
+
+.gu-unselectable {
+	user-select: none !important;
+}
+
+.gu-transit {
+	opacity: 0.2 !important;
+	transform: rotate(0deg) !important;
+}
+
+.drag_handler {
+	background: $white;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	position: relative;
+	float: left;
+	top: -3px;
+	margin-right: 4px;
+
+	&:hover {
+		cursor: move;
+	}
+}
+
+.drag_handler_icon {
+	position: relative;
+	display: block;
+	background: $black;
+	width: 24px;
+	height: 2px;
+	top: 12px;
+	transition: .5s ease-in-out;
+
+	&:before {
+		@extend %extend_1;
+		top: 6px;
+	}
+
+	&:after {
+		@extend %extend_1;
+		bottom: 6px;
+	}
+}
+
+#myKanban {
+	overflow-x: auto;
+	padding: 20px 0;
+}

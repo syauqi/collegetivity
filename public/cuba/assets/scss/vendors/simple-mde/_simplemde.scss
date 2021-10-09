@@ -1,0 +1,689 @@
+@import "elements";
+
+.CodeMirror {
+  color: $black;
+  position: relative;
+  overflow: hidden;
+  background: $white;
+  height: auto;
+  min-height: 300px;
+  border: 1px solid $color_alto_approx;
+  //Instead of the line below you could use @include border-bottom-left-radius($radius)
+  border-bottom-left-radius: 4px;
+  //Instead of the line below you could use @include border-bottom-right-radius($radius)
+  border-bottom-right-radius: 4px;
+  padding: 10px;
+  font: inherit;
+  z-index: 1;
+  pre {
+    padding: 0 4px;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 0;
+    border-width: 0;
+    background: 0 0;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    white-space: pre;
+    word-wrap: normal;
+    line-height: inherit;
+    color: inherit;
+    z-index: 2;
+    position: relative;
+    overflow: visible;
+    font-variant-ligatures: none;
+  }
+  .CodeMirror-code {
+    .cm-tag {
+      color: $color_fruit_salad_approx;
+    }
+    .cm-attribute {
+      color: $color_deluge_approx;
+    }
+    .cm-string {
+      color: $color_torea_bay_approx;
+    }
+    .cm-header-1 {
+      font-size: 200%;
+      line-height: 200%;
+    }
+    .cm-header-2 {
+      font-size: 160%;
+      line-height: 160%;
+    }
+    .cm-header-3 {
+      font-size: 125%;
+      line-height: 125%;
+    }
+    .cm-header-4 {
+      font-size: 110%;
+      line-height: 110%;
+    }
+    .cm-comment {
+      background: $black_5;
+      //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+      border-radius: 2px;
+    }
+    .cm-link {
+      color: $color_oslo_gray_approx;
+    }
+    .cm-url {
+      color: $color_aluminium_approx;
+    }
+    .cm-strikethrough {
+      text-decoration: line-through;
+    }
+  }
+  .CodeMirror-selected {
+    background: $color_alto_approx;
+  }
+  .CodeMirror-placeholder {
+    opacity: .5;
+  }
+  div.CodeMirror-secondarycursor {
+    border-left: 1px solid $silver;
+  }
+  .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
+    background: $red_15;
+  }
+}
+.CodeMirror-lines {
+  padding: 4px 0;
+  cursor: text;
+  min-height: 1px;
+}
+.CodeMirror-gutter-filler {
+  background-color: $white;
+  position: absolute;
+  z-index: 6;
+  display: none;
+  left: 0;
+  bottom: 0;
+}
+.CodeMirror-scrollbar-filler {
+  background-color: $white;
+  position: absolute;
+  z-index: 6;
+  display: none;
+  right: 0;
+  bottom: 0;
+}
+.CodeMirror-gutters {
+  border-right: 1px solid $color_alto_approx;
+  background-color: $color_black_haze_approx;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  z-index: 3;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: content-box;
+}
+.CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  min-width: 20px;
+  text-align: right;
+  color: $color_mountain_mist_approx;
+  white-space: nowrap;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: content-box;
+}
+.CodeMirror-guttermarker {
+  color: $black;
+}
+.CodeMirror-guttermarker-subtle {
+  color: $color_mountain_mist_approx;
+}
+.CodeMirror-cursor {
+  border-left: 1px solid $black;
+  border-right: none;
+  width: 0;
+  position: absolute;
+}
+.cm-fat-cursor {
+  .CodeMirror-cursor {
+    width: auto;
+    border: 0!important;
+    background: $color_pastel_green_approx;
+  }
+  div.CodeMirror-cursors {
+    z-index: 1;
+  }
+}
+.cm-animate-fat-cursor {
+  width: auto;
+  border: 0;
+  animation: blink 1.06s steps(1) infinite;
+  background-color: $color_pastel_green_approx;
+}
+@-moz-keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+.cm-tab {
+  display: inline-block;
+  text-decoration: inherit;
+}
+.CodeMirror-ruler {
+  border-left: 1px solid $color_celeste_approx;
+  position: absolute;
+}
+.cm-s-default {
+  .cm-header {
+    color: $blue;
+  }
+  .cm-quote {
+    color: $color_japanese_laurel_approx;
+  }
+  .cm-keyword {
+    color: $color_purple_approx;
+  }
+  .cm-atom {
+    color: $color_blue_gem_approx;
+  }
+  .cm-number {
+    color: $color_jewel_approx;
+  }
+  .cm-def {
+    color: $blue;
+  }
+  .cm-variable-2 {
+    color: $color_endeavour_approx;
+  }
+  .cm-variable-3 {
+    color: $color_salem_approx;
+  }
+  .cm-comment {
+    color: $color_rich_gold_approx;
+  }
+  .cm-string {
+    color: $color_tamarillo_approx;
+  }
+  .cm-string-2 {
+    color: $color_international_orange_approx;
+  }
+  .cm-meta {
+    color: $color_fuscous_gray_approx;
+  }
+  .cm-qualifier {
+    color: $color_fuscous_gray_approx;
+  }
+  .cm-builtin {
+    color: $color_blue_gem_approx;
+  }
+  .cm-bracket {
+    color: $color_gurkha_approx;
+  }
+  .cm-tag {
+    color: $color_japanese_laurel_approx;
+  }
+  .cm-attribute {
+    color: $color_dark_blue_approx;
+  }
+  .cm-hr {
+    color: $color_mountain_mist_approx;
+  }
+  .cm-link {
+    color: $color_dark_blue_approx;
+  }
+  .cm-error {
+    color: $red;
+  }
+}
+.cm-negative {
+  color: $color_valencia_approx;
+}
+.cm-positive {
+  color: $color_forest_green_approx;
+}
+.cm-header {
+  font-weight: 700;
+}
+.cm-strong {
+  font-weight: 700;
+}
+.cm-em {
+  font-style: italic;
+}
+.cm-link {
+  text-decoration: underline;
+}
+.cm-strikethrough {
+  text-decoration: line-through;
+}
+.cm-invalidchar {
+  color: $red;
+}
+.CodeMirror-composing {
+  border-bottom: 2px solid;
+}
+div {
+  &.CodeMirror-cursors {
+    visibility: hidden;
+    position: relative;
+    z-index: 3;
+  }
+  &.CodeMirror-dragcursors {
+    visibility: visible;
+  }
+  &.CodeMirror span {
+    &.CodeMirror-matchingbracket {
+      color: $green;
+    }
+    &.CodeMirror-nonmatchingbracket {
+      color: $color_torch_red_approx;
+    }
+  }
+}
+.CodeMirror-matchingtag {
+  background: $color_pizazz_30_approx;
+}
+.CodeMirror-activeline-background {
+  background: $color_solitude_approx;
+}
+.CodeMirror-scroll {
+  overflow: scroll!important;
+  margin-bottom: -30px;
+  margin-right: -30px;
+  padding-bottom: 30px;
+  height: 100%;
+  outline: 0;
+  position: relative;
+  min-height: 300px;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: content-box;
+}
+.CodeMirror-sizer {
+  position: relative;
+  border-right: 30px solid transparent;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: content-box;
+}
+.CodeMirror-hscrollbar {
+  position: absolute;
+  z-index: 6;
+  display: none;
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.CodeMirror-vscrollbar {
+  position: absolute;
+  z-index: 6;
+  display: none;
+  right: 0;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.CodeMirror-gutter {
+  white-space: normal;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: -30px;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: content-box;
+}
+.CodeMirror-gutter-wrapper {
+  position: absolute;
+  z-index: 4;
+  background: 0 0!important;
+  border: none!important;
+  //Instead of the line below you could use @include user-select($select)
+  user-select: none;
+}
+.CodeMirror-gutter-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 4;
+}
+.CodeMirror-gutter-elt {
+  position: absolute;
+  cursor: default;
+  z-index: 4;
+}
+.CodeMirror-linebackground {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.CodeMirror-linewidget {
+  position: relative;
+  z-index: 2;
+  overflow: auto;
+}
+.CodeMirror-code {
+  outline: 0;
+}
+.CodeMirror-measure {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  pre {
+    position: static;
+  }
+}
+.CodeMirror-focused {
+  .CodeMirror-selected {
+    background: $color_moon_raker_approx;
+  }
+  div.CodeMirror-cursors {
+    visibility: visible;
+  }
+}
+.CodeMirror-selected {
+  background: $color_alto_approx;
+}
+.CodeMirror-line::selection {
+  background: $color_moon_raker_approx;
+}
+.CodeMirror-line {
+  > span::selection {
+    background: $color_moon_raker_approx;
+  }
+  > span {
+    > span::selection {
+      background: $color_moon_raker_approx;
+    }
+    > span::-moz-selection {
+      background: $color_moon_raker_approx;
+    }
+  }
+  > span::-moz-selection {
+    background: $color_moon_raker_approx;
+  }
+}
+.CodeMirror-crosshair {
+  cursor: crosshair;
+}
+.CodeMirror-line::-moz-selection {
+  background: $color_moon_raker_approx;
+}
+.cm-searching {
+  background: $color_milan_approx;
+  background: $yellow_40;
+}
+.cm-force-border {
+  padding-right: .1px;
+}
+@media print {
+  .CodeMirror div.CodeMirror-cursors {
+    visibility: hidden;
+  }
+}
+.CodeMirror-fullscreen {
+  background: $white;
+  position: fixed!important;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  z-index: 9;
+}
+.CodeMirror-sided {
+  width: 50%!important;
+}
+.editor-toolbar {
+  position: relative;
+  opacity: .6;
+  //Instead of the line below you could use @include user-select($select)
+  user-select: none;
+  padding: 0 10px;
+  border-top: 1px solid $color_pink_swan_approx;
+  border-left: 1px solid $color_pink_swan_approx;
+  border-right: 1px solid $color_pink_swan_approx;
+  //Instead of the line below you could use @include border-top-left-radius($radius)
+  border-top-left-radius: 4px;
+  //Instead of the line below you could use @include border-top-right-radius($radius)
+  border-top-right-radius: 4px;
+  &:after {
+    display: block;
+    content: ' ';
+    height: 1px;
+    margin-top: 8px;
+  }
+  &:before {
+    display: block;
+    content: ' ';
+    height: 1px;
+    margin-bottom: 8px;
+  }
+  &:hover {
+    opacity: .8;
+  }
+  &.fullscreen {
+    width: 100%;
+    height: 50px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+    background: $white;
+    border: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 9;
+  }
+  &.fullscreen::before {
+    width: 20px;
+    height: 50px;
+    background: linear-gradient(to right, $white_100 0, rgba(255, 255, 255, 0) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+  &.fullscreen::after {
+    width: 20px;
+    height: 50px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, $white_100 100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none!important;
+    color: $color_pickled_bluewood_approx!important;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    border: 1px solid transparent;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 3px;
+    cursor: pointer;
+    &.active {
+      background: $color_alabaster_approx;
+      border-color: $color_pewter_approx;
+    }
+    &:hover {
+      background: $color_alabaster_approx;
+      border-color: $color_pewter_approx;
+    }
+    &:before {
+      line-height: 30px;
+    }
+    &.fa-header-x:after {
+      font-family: $font_0, $font_1, $font_2, $font_3;
+      font-size: 65%;
+      vertical-align: text-bottom;
+      position: relative;
+      top: 2px;
+    }
+    &.fa-header-1:after {
+      content: "1";
+    }
+    &.fa-header-2:after {
+      content: "2";
+    }
+    &.fa-header-3:after {
+      content: "3";
+    }
+    &.fa-header-bigger:after {
+      content: "▲";
+    }
+    &.fa-header-smaller:after {
+      content: "▼";
+    }
+  }
+  i.separator {
+    display: inline-block;
+    width: 0;
+    border-left: 1px solid $color_alto_approx;
+    border-right: 1px solid $white;
+    color: transparent;
+    text-indent: -10px;
+    margin: 0 6px;
+  }
+  &.disabled-for-preview a:not(.no-disable) {
+    pointer-events: none;
+    background: $white;
+    border-color: transparent;
+    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: inherit;
+  }
+}
+@media only screen and(max-width:700px) {
+  .editor-toolbar a.no-mobile {
+    display: none;
+  }
+}
+.editor-statusbar {
+  padding: 8px 10px;
+  font-size: 12px;
+  color: $color_mountain_mist_approx;
+  text-align: right;
+  span {
+    display: inline-block;
+    min-width: 4em;
+    margin-left: 1em;
+  }
+  .lines:before {
+    content: 'lines: ';
+  }
+  .words:before {
+    content: 'words: ';
+  }
+  .characters:before {
+    content: 'characters: ';
+  }
+}
+.editor-preview {
+  padding: 10px;
+  background: $alabaster;
+  overflow: auto;
+  display: none;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  > p {
+    margin-top: 0;
+  }
+  pre {
+    background: $color_gallery_approx;
+    margin-bottom: 10px;
+  }
+  table {
+    td {
+      border: 1px solid $color_alto_approx;
+      padding: 5px;
+    }
+    th {
+      border: 1px solid $color_alto_approx;
+      padding: 5px;
+    }
+  }
+}
+.editor-preview-side {
+  padding: 10px;
+  background: $alabaster;
+  overflow: auto;
+  display: none;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  width: 50%;
+  top: 50px;
+  right: 0;
+  z-index: 9;
+  border: 1px solid $color_alto_approx;
+  > p {
+    margin-top: 0;
+  }
+  pre {
+    background: $color_gallery_approx;
+    margin-bottom: 10px;
+  }
+  table {
+    td {
+      border: 1px solid $color_alto_approx;
+      padding: 5px;
+    }
+    th {
+      border: 1px solid $color_alto_approx;
+      padding: 5px;
+    }
+  }
+}
+.editor-preview-active {
+  display: block;
+}
+.editor-preview-active-side {
+  display: block;
+}
+.CodeMirror-wrap pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  //Instead of the line below you could use @include word-break($value)
+  word-break: normal;
+}
+.cm-tab-wrap-hack:after {
+  content: '';
+}
+span.CodeMirror-selectedtext {
+  background: 0 0;
+}
+.editor-wrapper input.title {
+  &:focus {
+    opacity: .8;
+  }
+  &:hover {
+    opacity: .8;
+  }
+}

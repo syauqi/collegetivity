@@ -1,0 +1,46 @@
+- var sticky                = true;
+- var jquery_ui             = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Sticky
+
+                                .col-6
+                                      ol.breadcrumb
+                                        li.breadcrumb-item
+                                          a(href='index.html')                                        
+                                            i(data-feather="home")
+                                        li.breadcrumb-item Bonus Ui
+                                        li.breadcrumb-item.active Sticky
+                    // Container-fluid starts                    
+                    .container-fluid
+                      .row.sticky-header-main
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5
+                                | Sticky Note 
+                                a#add_new.btn.btn-primary.pull-right.m-l-10(href='javascript:;') Add New Note
+                            .card-body
+                              #board.sticky-note
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files   

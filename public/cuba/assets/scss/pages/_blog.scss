@@ -1,0 +1,246 @@
+/**=====================
+    46. Blog CSS start
+==========================**/
+.blog-box{
+  img{
+    border-radius: 0.25rem;
+  }
+  .top-radius-blog{
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+  }
+  h6{
+    font-weight: 600;
+    margin: 15px 0;
+  }
+  .blog-details{
+    padding-right: 20px;
+    .blog-social{
+      margin-top: 30px;
+      li{
+        display: inline-block;
+        font-size: 12px;
+        color: $theme-body-sub-title-color;
+        +li{
+         padding-left: 20px;
+          line-height: 1;
+          padding-right: 0;
+        }
+        i{
+          padding-right: 5px;
+          font-weight: 300;
+        }
+        &:first-child{
+          border-right: 1px solid gray;
+          padding-right:20px;
+        }
+      }
+    }
+  }
+  .blog-details-main{
+    hr{
+          background-color: $gray-60;
+      }
+    .blog-social{
+      margin:20px 0;
+      li{
+        display: inline-block;
+        font-size: 12px;
+        color: $theme-body-sub-title-color;
+        padding: 0 24px;
+        border-right: 1px dotted;
+        &:last-child{
+          border-right: 0;
+        }
+        i{
+          padding-right: 5px;
+        }
+      }
+    }
+    .blog-bottom-details{
+      margin: 20px;
+      font-size: 14px;
+      line-height: 1.714;
+      font-weight: 500;
+    }
+  }
+  .blog-date{
+    color: $theme-body-sub-title-color;
+    span{
+      font-size: 36px;
+      font-weight: 500;
+      padding-right: 5px;
+    }
+  }
+}
+.blog-box.blog-shadow{
+  &:before{
+    box-shadow: inset 0px -200px 100px -13px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+  }
+  &:hover{
+    &:before{
+      box-shadow: inset 0px -200px 100px -13px rgba(0, 0, 0, 0.65);
+      transition: all 0.3s ease;
+    }
+  }
+  .blog-details{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+    h4{
+      color: $white;
+      margin-bottom: 0;
+    }
+    p{
+      font-size: 14px;
+      color: $white;
+      margin-bottom: 10px;
+    }
+    .blog-social{
+      li{
+        color: $white;
+      }
+    }
+  }
+}
+.blog-list{
+  .blog-details{
+    .blog-social{
+      margin-top: 0;
+    }
+    h6{
+      margin-top: 0;
+          color: gray;
+    font-weight: 500;
+    }
+    hr{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  img{
+    padding: 17px;
+  }
+}
+.blog-grid{
+  img{
+    width: 100%;
+  }
+  .blog-details{
+    padding: 20px;
+    h6{
+      font-size: 14px;
+      margin-bottom: 0;
+      line-height: 1.8;
+    }
+  }
+}
+
+.blog-box{
+  position: relative;
+  max-height: 100%;
+  align-items: center;
+  .blog-details{
+    p{
+      font-size: 14px;
+      line-height: 1.8;
+      letter-spacing: 0.7px;
+      margin-top: 30px;
+      margin-bottom: 0;
+      color: $theme-body-sub-title-color;
+    }
+    h4{
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.5;
+      margin-top:20px;
+      margin-bottom: 0;
+    }
+    .single-blog-content-top{
+      margin-top:20px;
+      border-top:1px solid $light-semi-gray;
+    }
+    .blog-social,.comment-social{
+      li{
+        font-size: 14px;
+      }
+    }
+  }
+}
+.comment-box{
+  padding-top: 50px ;
+  padding-bottom: 50px ;
+  hr{
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  li{
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  ul {
+    ul{
+      margin-left: 135px;
+    }
+  }
+  p{
+      font-size: 14px;
+      line-height: 2;
+      color: $theme-body-sub-title-color;
+      text-align: justify;
+      margin-bottom: 0;
+  }
+  h4{
+    font-weight: 600;
+  }
+  .media{
+    img{
+      margin-right:30px;
+      border-radius: 10px;
+      height: 90px;
+      padding: 7px;
+      width: 90px;
+      border: 1px solid $light-semi-gray;
+    }
+    h6{
+      font-weight: 500;
+      margin-bottom: 20px;
+      span{
+        padding-left: 10px;
+        font-size: 13px;
+        color: $theme-body-sub-title-color;
+        font-weight: 400;
+      }
+    }
+  }
+  .comment-social{
+    li{
+      display: inline-block;
+      color: $gray-60;
+      padding-left: 20px;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      &:first-child{
+        border-right:1px solid $light-semi-gray;
+        padding-right: 20px;
+      }
+      i{
+        padding-right: 10px;
+      }
+    }
+  }
+}
+/**=====================
+    46. Blog CSS ends
+==========================**/

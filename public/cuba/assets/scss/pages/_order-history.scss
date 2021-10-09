@@ -1,0 +1,148 @@
+/**=====================
+     76. Order History CSS start
+==========================**/
+.prooduct-details-box {
+  margin-bottom: 30px;
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  .media {
+    border: 1px solid $light-background;
+    border-radius: 10px;
+    padding: 15px 0;
+    width: 100%;
+    position: relative;
+  }
+
+  .rating {
+    color: #ffaf45;
+    letter-spacing: 3px;
+  }
+
+  .product-name {
+    a {
+      color: gray;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+
+}
+
+.order-history {
+  .input-group {
+    text-align: right;
+    max-width: 300px;
+  }
+
+  table {
+
+    th,
+    td {
+      text-align: center;
+    }
+
+    thead {
+      tr {
+        th {
+          vertical-align: middle;
+          border-top: none;
+          background-color: $body-color;
+          border: 1px solid $light-gray;
+          padding: 1.25rem;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .qty-box {
+      width: 120px;
+      margin: 0 auto;
+      border-radius: 5px;
+      overflow: hidden;
+
+      input {
+        width: 40px;
+      }
+
+      button {
+        padding: 0.375rem 0.75rem;
+        font-size: 10px;
+        background-color: #e6e6e6 !important;
+        border: none;
+        color: $dark-gray;
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          vertical-align: middle;
+
+          .product-name {
+            a {
+              font-size: 15px;
+              color: $dark-gray;
+            }
+
+            .order-process {
+              font-size: 13px;
+              padding-left: 15px;
+
+              .order-process-circle {
+                position: relative;
+
+                &:before {
+                  position: absolute;
+                  content: '';
+                  width: 4px;
+                  height: 4px;
+                  border-radius: 100%;
+                  background-color: $dark-gray;
+                  left: -15px;
+                  top: 4px;
+                }
+
+                &.shipped-order {
+                  &:before {
+                    background-color: $success-color;
+                  }
+                }
+
+                &.cancel-order {
+                  &:before {
+                    background-color: $danger-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .order-history {
+    table {
+      width: 900px;
+      overflow: auto;
+    }
+  }
+
+}
+
+/**=====================
+     76. Order History CSS end
+==========================**/

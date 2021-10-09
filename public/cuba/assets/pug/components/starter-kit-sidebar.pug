@@ -1,0 +1,71 @@
+// Page Sidebar Start
+.sidebar-wrapper
+  .logo-wrapper
+    a(href='index.html')
+        img.img-fluid(src='../assets/images/logo/logo.png', alt='')
+  .logo-icon-wrapper
+    a(href="index.html")
+      img.img-fluid(src='../assets/images/logo/logo-icon.png', alt='')
+
+  nav
+    .sidebar-main
+      #sidebar-menu
+        ul.sidebar-links.custom-scrollbar
+          li.back-btn
+            .mobile-back.text-right
+              span Back
+              i.fa.fa-angle-right.pl-2(aria-hidden='true')
+          li.sidebar-list
+            a.nav-link.sidebar-title(href='../theme/index.html', target='_blank')
+              i(data-feather='home')
+              span Dashboard
+          li.sidebar-list
+            a.nav-link.sidebar-title(href='#')
+              i(data-feather='anchor')
+              span Starter kit
+            ul.sidebar-submenu
+              li
+                a.submenu-title(href='#')
+                  | color version
+                  span.sub-arrow
+                    i.fa.fa-chevron-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='index.html') Layout Light
+                  li
+                    a(href='layout-dark.html') Layout Dark
+              li      
+                a.submenu-title(href='#')
+                  | Page layout
+                  span.sub-arrow
+                    i.fa.fa-chevron-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='boxed.html') Boxed
+                  li
+                    a(href='layout-rtl.html') RTL
+              li
+                  a.submenu-title(href='hide-on-scroll.html')
+                    span Hide menu on Scroll
+              li      
+                a.submenu-title(href='#')
+                  | Footers
+                  span.sub-arrow
+                    i.fa.fa-chevron-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='footer-light.html') Footer Light
+                  li
+                    a(href='footer-dark.html') Footer Dark
+                  li
+                    a(href='footer-fixed.html') Footer Fixed
+          li.sidebar-list
+            a.nav-link.sidebar-title(href='http://support.pixelstrap.com/help-center', target='_blank')
+              i(data-feather='headphones')
+              span Raise Support
+          li.sidebar-list
+            a.nav-link.sidebar-title(href='../document/index.html', target='_blank')
+              i(data-feather='file-text')
+              span Documentation                                    
+
+// Page Sidebar Ends

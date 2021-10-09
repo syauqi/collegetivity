@@ -1,0 +1,94 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var form_wizard           = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Form Wizard
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Form Layout
+                                      li.breadcrumb-item.active  Form Wizard
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-md-12
+                          .card
+                            .card-header
+                              h5 Simple Form Wizard
+                              span Please Make sure fill all the filed before click on next button
+                            .card-body
+                              form#regForm.form-wizard(action='#', method='POST')
+                                .tab
+                                  .form-group.mb-3
+                                    label(for='name') First Name
+                                    input#name.form-control(type='text', placeholder='Johan', required='required')
+                                  .form-group.mb-3
+                                    label(for='lname') Last Name
+                                    input#lname.form-control(type='text', placeholder='Deo')
+                                  .form-group.mb-3
+                                    label(for='contact') Contact No.
+                                    input#contact.form-control(type='number', placeholder='123456789')
+                                .tab
+                                  .form-group.mb-3.m-t-15
+                                    label(for='exampleFormControlInput1') Email address
+                                    input#exampleFormControlInput1.form-control(type='email', placeholder='name@example.com')
+                                  .form-group.mb-3
+                                    label(for='exampleInputPassword1') Password
+                                    input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+                                  .form-group.mb-3
+                                    label(for='exampleInputPassword1') Confirm Password
+                                    input#exampleInputcPassword1.form-control(type='password', placeholder='Enter again')
+                                .tab
+                                  .form-group.mb-3
+                                    label(for='exampleFormControlInput1') Birthday:
+                                    input.form-control(type='date')
+                                  .form-group.mb-3
+                                    label.control-label Age
+                                    input.form-control(placeholder='Age', type='text')
+                                  .form-group.mb-3
+                                    label.control-label Have Passport
+                                    input.form-control(placeholder='Yes/No', type='text')
+                                .tab
+                                  .form-group.mb-3
+                                    label.control-label Country
+                                    input.form-control.mt-1(type='text', placeholder='Country', required='required')
+                                  .form-group.mb-3
+                                    label.control-label State
+                                    input.form-control.mt-1(type='text', placeholder='State', required='required')
+                                  .form-group.mb-3
+                                    label.control-label City
+                                    input.form-control.mt-1(type='text', placeholder='City', required='required')
+                                div
+                                  .text-right.btn-mb
+                                    button#prevBtn.btn.btn-secondary(type='button', onclick='nextPrev(-1)') Previous
+                                    button#nextBtn.btn.btn-primary(type='button', onclick='nextPrev(1)') Next
+                                // Circles which indicates the steps of the form:
+                                .text-center
+                                  span.step
+                                  span.step
+                                  span.step
+                                  span.step
+                                // Circles which indicates the steps of the form:
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

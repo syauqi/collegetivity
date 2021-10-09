@@ -1,0 +1,27 @@
+/*Row reorder css*/
+$move-outline: 2px solid #888 !default;
+$moved-outline: 2px solid #555 !default;
+
+table.dt-rowReorder-float {
+  position: absolute !important;
+  opacity: 0.8;
+  table-layout: fixed;
+  outline: $move-outline;
+  outline-offset: -2px;
+  z-index: 2001;
+}
+
+tr.dt-rowReorder-moving {
+  outline: $moved-outline;
+  outline-offset: -2px;
+}
+
+body.dt-rowReorder-noOverflow {
+  overflow-x: hidden;
+}
+
+table.dataTable td.reorder {
+  text-align: center;
+  cursor: move;
+}
+/*Row reorder css*/

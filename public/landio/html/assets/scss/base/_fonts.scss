@@ -1,0 +1,31 @@
+/*=======  Fonts =======*/
+@font-face {
+    font-family: "CircularStdBold";
+    src: url("../fonts/circularstd/CircularStdBold.eot");
+    src: url("../fonts/circularstd/CircularStdBold.eot") format("embedded-opentype"),
+        url("../fonts/circularstd/CircularStdBold.woff2") format("woff2"),
+        url("../fonts/circularstd/CircularStdBold.woff") format("woff"),
+        url("../fonts/circularstd/CircularStdBold.ttf") format("truetype"),
+        url("../fonts/circularstd/CircularStdBold.svg#CircularStdBold")
+            format("svg");
+}
+
+@font-face {
+    font-family: "CircularStdMedium";
+    src: url("../fonts/circularstd/CircularStdMedium.eot");
+    src: url("../fonts/circularstd/CircularStdMedium.eot") format("embedded-opentype"),
+        url("../fonts/circularstd/CircularStdMedium.woff2") format("woff2"),
+        url("../fonts/circularstd/CircularStdMedium.woff") format("woff"),
+        url("../fonts/circularstd/CircularStdMedium.ttf") format("truetype"),
+        url("../fonts/circularstd/CircularStdMedium.svg#CircularStdMedium") format("svg");
+}
+
+@font-face {
+    font-family: "CircularStdBook";
+    src: url("../fonts/circularstd/CircularStdBook.eot");
+    src: url("../fonts/circularstd/CircularStdBook.eot") format("embedded-opentype"),
+        url("../fonts/circularstd/CircularStdBook.woff2") format("woff2"),
+        url("../fonts/circularstd/CircularStdBook.woff") format("woff"),
+        url("../fonts/circularstd/CircularStdBook.ttf") format("truetype"),
+        url("../fonts/circularstd/CircularStdBook.svg#CircularStdBook") format("svg");
+}

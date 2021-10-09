@@ -1,0 +1,241 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var owlcarousel           = true;
+- var rating                = true;
+- var ecommerce             = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Product Page
+                                .col-6
+                                      ol.breadcrumb
+                                        li.breadcrumb-item
+                                          a(href='index.html')                                        
+                                            i(data-feather="home")
+                                        li.breadcrumb-item ECommerce
+                                        li.breadcrumb-item.active Product Page
+                    // Container-fluid starts
+                    .container-fluid
+                      div
+                        .row.product-page-main
+                          .col-xl-4.xl-cs-65
+                            .card
+                              .card-body
+                                #sync1.product-slider.owl-carousel.owl-theme
+                                  .item
+                                    img(src='../assets/images/ecommerce/01.jpg', alt='')
+                                  .item
+                                    img(src='../assets/images/ecommerce/02.jpg', alt='')
+                                  .item
+                                    img(src='../assets/images/ecommerce/03.jpg', alt='')
+                                  .item
+                                    img(src='../assets/images/ecommerce/04.jpg', alt='')
+                                  .item
+                                    img(src='../assets/images/ecommerce/05.jpg', alt='')
+                                  .item
+                                    img(src='../assets/images/ecommerce/06.jpg', alt='')
+                                  .item
+                                    img(src='../assets/images/ecommerce/07.jpg', alt='')
+                                  .item
+                                    img(src='../assets/images/ecommerce/08.jpg', alt='')
+                                #sync2.owl-carousel.owl-theme
+                                  .item
+                                    img(src='../assets/images/ecommerce/01.jpg', alt='')
+                                  .item
+                                    img(src='../assets/images/ecommerce/02.jpg', alt='')
+                                  .item
+                                    img(src='../assets/images/ecommerce/03.jpg', alt='')
+                                  .item
+                                    img(src='../assets/images/ecommerce/04.jpg', alt='')
+                                  .item
+                                    img(src='../assets/images/ecommerce/05.jpg', alt='')
+                                  .item
+                                    img(src='../assets/images/ecommerce/06.jpg', alt='')
+                                  .item
+                                    img(src='../assets/images/ecommerce/07.jpg', alt='')
+                                  .item
+                                    img(src='../assets/images/ecommerce/08.jpg', alt='')
+                          .col-xl-5.xl-100
+                            .card
+                              .card-body
+                                .product-page-details
+                                  h3 Women Pink shirt.
+                                .product-price.f-28
+                                  | $26.00  
+                                  del $350.00 
+                                ul.product-color.m-t-15
+                                  li.bg-primary
+                                  li.bg-secondary
+                                  li.bg-success
+                                  li.bg-info
+                                  li.bg-warning
+
+                                hr
+                                p
+                                  | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that.
+
+                                hr
+
+                                div
+                                  table.product-page-width
+                                    tbody
+                                      tr
+                                        td 
+                                          b Brand &nbsp;&nbsp;&nbsp;:
+                                        td Pixelstrap
+                                      tr
+                                        td 
+                                          b Availability &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;
+                                        td.txt-success In stock
+                                      tr
+                                        td 
+                                          b Seller &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;
+                                        td ABC
+                                      tr
+                                        td 
+                                          b Fabric &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;
+                                        td Cotton
+                                hr
+                                .row
+                                  .col-md-6
+                                      h6.product-title share it
+                                  .col-md-6
+                                      .product-icon
+                                        ul.product-social
+                                          li.d-inline-block
+                                            a(href='#')
+                                              i.fa.fa-facebook
+                                          li.d-inline-block
+                                            a(href='#')
+                                              i.fa.fa-google-plus
+                                          li.d-inline-block
+                                            a(href='#')
+                                              i.fa.fa-twitter
+                                          li.d-inline-block
+                                            a(href='#')
+                                              i.fa.fa-instagram
+                                          li.d-inline-block
+                                            a(href='#')
+                                              i.fa.fa-rss
+                                        form.d-inline-block.f-right
+                                hr
+                                .row
+                                  .col-md-6
+                                      h6.product-title Rate Now
+                                  .col-md-6
+                                      .d-flex
+                                        select#u-rating-fontawesome(name='rating', autocomplete='off')
+                                          option(value='1') 1
+                                          option(value='2') 2
+                                          option(value='3') 3
+                                          option(value='4') 4
+                                          option(value='5') 5
+                                        span (250 review)
+                                hr
+                                .m-t-15
+                                  button.btn.btn-primary.m-r-10(type='button', title='') 
+                                    i.fa.fa-shopping-basket.mr-1
+                                    | Add To Cart
+                                  button.btn.btn-success.m-r-10(type='button', title='') 
+                                    i.fa.fa-shopping-cart.mr-1
+                                    | Buy Now
+                                  a.btn.btn-secondary(href="#") 
+                                      i.fa.fa-heart.mr-1
+                                      | Add To WishList
+                          .col-xl-3.xl-cs-35
+                            .card
+                              .card-body
+                                // side-bar colleps block stat
+                                .filter-block
+                                  h4 Brand
+                                  ul
+                                    li Clothing
+                                    li Bags
+                                    li Footwear
+                                    li Watches
+                                    li ACCESSORIES
+                            .card
+                              .card-body
+                                .collection-filter-block
+                                  ul
+                                    li
+                                      .media
+                                        i(data-feather='truck')
+                                        .media-body
+                                          h5 Free Shipping                                    
+                                          p Free Shipping World Wide
+                                    li
+                                      .media
+                                        i(data-feather='clock')
+                                        .media-body
+                                          h5 24 X 7 Service                                    
+                                          p Online Service For New Customer
+                                    li
+                                      .media
+                                        i(data-feather='gift')
+                                        .media-body
+                                          h5 Festival Offer                                 
+                                          p New Online Special Festival
+                                    li
+                                      .media
+                                        i(data-feather='credit-card')
+                                        .media-body
+                                          h5 Online Payment                                  
+                                          p Contrary To Popular Belief.                                   
+                                  
+                              // silde-bar colleps block end here
+
+
+                      .card
+                        .row.product-page-main
+                          .col-sm-12
+                            ul#top-tab.nav.nav-tabs.border-tab.mb-0(role='tablist')
+                              li.nav-item
+                                a#top-home-tab.nav-link.active(data-toggle='tab', href='#top-home', role='tab', aria-controls='top-home', aria-selected='false')
+                                  | Febric
+                                .material-border
+                              li.nav-item
+                                a#profile-top-tab.nav-link(data-toggle='tab', href='#top-profile', role='tab', aria-controls='top-profile', aria-selected='false') Video
+                                .material-border
+                              li.nav-item
+                                a#contact-top-tab.nav-link(data-toggle='tab', href='#top-contact', role='tab', aria-controls='top-contact', aria-selected='true')
+                                  | Details
+                                .material-border
+                              li.nav-item
+                                a#brand-top-tab.nav-link(data-toggle='tab', href='#top-brand', role='tab', aria-controls='top-brand', aria-selected='true')
+                                  | Brand
+                                .material-border
+                            #top-tabContent.tab-content
+                              #top-home.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='top-home-tab')
+                                p.mb-0.m-t-20
+                                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                p.mb-0.m-t-20
+                                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                              #top-profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-top-tab')
+                                p.mb-0.m-t-20
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                              #top-contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-top-tab')
+                                p.mb-0.m-t-20
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                              #top-brand.tab-pane.fade(role='tabpanel', aria-labelledby='brand-top-tab')
+                                p.mb-0.m-t-20
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                   
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

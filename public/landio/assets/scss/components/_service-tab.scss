@@ -1,0 +1,61 @@
+/*======= Service Tab  =======*/
+.service-tab {
+    .service-tab-nav {
+        margin-bottom: 80px;
+
+        .nav-tabs {
+            display: flex;
+            border: none;
+            margin: -15px;
+
+            .nav-item {
+                padding: 15px;
+                flex: 0 0 25%;
+            }
+
+            .nav-link {
+                margin: 0;
+                border: none;
+                line-height: 1.2;
+                font: {
+                    size: 18px;
+                    family: $font-cs-bold;
+                    weight: 700;
+                }
+                color: $color-heading-4;
+                letter-spacing: -0.5px;
+                box-shadow: 0px 10px 30px 0px rgba(71, 59, 240, 0.1);
+                background-color: $color-white;
+                padding: 20px 25px;
+                display: block;
+
+                i {
+                    margin-right: 10px;
+                }
+
+                &.active,
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-primary-5;
+                    box-shadow: 0px 10px 30px 0px rgba(85, 128, 255, 0.75);
+                }
+            }
+        }
+    }
+}
+
+.service-tab-section {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 66%;
+        z-index: -1;
+        background-color: #f7f7f7;
+    }
+}

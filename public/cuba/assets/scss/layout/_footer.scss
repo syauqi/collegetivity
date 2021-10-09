@@ -1,0 +1,25 @@
+/**=====================
+     47. Footer CSS Start
+==========================**/
+.footer{
+  background-color: $footer_bg_color;
+  box-shadow: $footer_box_shadow;
+  padding: 15px;
+  bottom: 0;
+  left: 0;
+  margin-left: 280px;
+  transition: 0.5s;  
+  &.footer-dark{
+    background-color: $footer_dark_color;
+    p{
+      color: $white;
+    }
+  }
+}
+.footer-fix{
+  width: calc(100% - 280px);
+  position: fixed;
+}
+/**=====================
+     47. Footer CSS Ends
+==========================**/

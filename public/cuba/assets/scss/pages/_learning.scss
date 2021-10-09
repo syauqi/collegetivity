@@ -1,0 +1,115 @@
+/**=====================
+     75. Learning CSS start
+==========================**/
+.learning-header {
+  margin-bottom: 10px;
+}
+
+.categories {
+  padding: 30px 0;
+
+  .learning-header {
+    padding-left: 30px;
+  }
+
+  ul {
+    li {
+      padding: 10px 30px;
+
+      a {
+        color: $theme-body-font-color;
+      }
+
+      &:hover {
+        background-color: $light-color;
+      }
+    }
+  }
+}
+
+.upcoming-course {
+  .media {
+    +.media {
+      margin-top: 30px;
+    }
+  }
+}
+
+.job-accordion {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
+  .learning-comment {
+    margin-left: -14px !important;
+    float: left !important;
+  }
+
+  .blog-box {
+    .blog-details {
+      .blog-social {
+        li {
+          &:first-child {
+            padding-right: 30px;
+          }
+
+          +li {
+            padding-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .categories {
+    padding: 20px 0;
+
+    .learning-header {
+      padding-left: 20px;
+    }
+
+    ul {
+      li {
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  .upcoming-course {
+    .media {
+      +.media {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .categories {
+    padding: 15px 0;
+
+    .learning-header {
+      padding-left: 15px;
+    }
+
+    ul {
+      li {
+        padding: 10px 15px;
+      }
+    }
+  }
+
+  .upcoming-course {
+    .media {
+      +.media {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+/**=====================
+     75. Learning CSS end
+==========================**/

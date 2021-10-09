@@ -1,0 +1,654 @@
+- var prism                 = true;
+- var clipboard             = true;
+- var customcard            = true;
+- var button_tooltip_custom = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Default Style
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Buttons
+                                      li.breadcrumb-item.active Default Style
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          #default.card
+                            .card-header
+                              h5 Default buttons
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                              span Bootstrap state buttons
+                            .card-body.btn-showcase
+                              button.btn.btn-primary(type='button') Primary Button
+                              button.btn.btn-secondary(type='button') Secondary Button
+                              button.btn.btn-success(type='button') Success Button
+                              button.btn.btn-info(type='button') Info Button
+                              button.btn.btn-warning(type='button') Warning Button
+                              button.btn.btn-danger(type='button') Danger Button
+                              button.btn.btn-light(type='button') Light Button
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;button type="button" class="btn btn-primary"&gt;primary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-secondary"&gt;secondary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-success"&gt;Success button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-info"&gt;Info button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-warning"&gt;warning button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-danger"&gt;danger button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-light"&gt;light button&lt;/button&gt; 
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          #large-btn.card
+                            .card-header
+                              h5 Large buttons
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                              span
+                                | Add 
+                                code .btn-lg
+                                |  class for large size buttons
+                            .card-body.btn-showcase
+                              button.btn.btn-primary.btn-lg(type='button') Primary Button
+                              button.btn.btn-secondary.btn-lg(type='button') Secondary Button
+                              button.btn.btn-success.btn-lg(type='button') Success Button
+                              button.btn.btn-info.btn-lg(type='button') Info Button
+                              button.btn.btn-warning.btn-lg(type='button') Warning Button
+                              button.btn.btn-danger.btn-lg(type='button') Danger Button
+                              button.btn.btn-light.btn-lg(type='button') Light Button
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head1', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head1
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;button type="button" class="btn btn-primary btn-lg"&gt;primary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-secondary btn-lg"&gt;secondary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-success btn-lg"&gt;Success button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-info btn-lg"&gt;Info button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-warning btn-lg"&gt;warning button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-danger btn-lg"&gt;danger button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-light btn-lg"&gt;light button&lt;/button&gt; 
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          #small-btn.card
+                            .card-header
+                              h5 Small buttons
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                              span
+                                | Add 
+                                code .btn-sm
+                                |  class for small size buttons
+                            .card-body.btn-showcase
+                              button.btn.btn-primary.btn-sm(type='button') Primary Button
+                              button.btn.btn-secondary.btn-sm(type='button') Secondary Button
+                              button.btn.btn-success.btn-sm(type='button') Success Button
+                              button.btn.btn-info.btn-sm(type='button') Info Button
+                              button.btn.btn-warning.btn-sm(type='button') Warning Button
+                              button.btn.btn-danger.btn-sm(type='button') Danger Button
+                              button.btn.btn-light.btn-sm(type='button') Light Button
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head2', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head2
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;button type="button" class="btn btn-primary btn-sm"&gt;primary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-secondary btn-sm"&gt;secondary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-success btn-sm"&gt;Success button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-info btn-sm"&gt;Info button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-warning btn-sm"&gt;warning button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-danger btn-sm"&gt;danger button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-light btn-sm"&gt;light button&lt;/button&gt; 
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          #ex-small-btn.card
+                            .card-header
+                              h5 Extra Small buttons
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                              span
+                                | Add 
+                                code .btn-xs
+                                |  class for extra small size buttons
+                            .card-body.btn-showcase
+                              button.btn.btn-primary.btn-xs(type='button') Primary Button
+                              button.btn.btn-secondary.btn-xs(type='button') Secondary Button
+                              button.btn.btn-success.btn-xs(type='button') Success Button
+                              button.btn.btn-info.btn-xs(type='button') Info Button
+                              button.btn.btn-warning.btn-xs(type='button') Warning Button
+                              button.btn.btn-danger.btn-xs(type='button') Danger Button
+                              button.btn.btn-light.btn-xs(type='button') Light Button
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head3', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head3
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;button type="button" class="btn btn-primary btn-xs"&gt;primary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-secondary btn-xs"&gt;secondary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-success btn-xs"&gt;Success button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-info btn-xs"&gt;Info button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-warning btn-xs"&gt;warning button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-danger btn-xs"&gt;danger button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-light btn-xs"&gt;light button&lt;/button&gt; 
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          #active-btn.card
+                            .card-header
+                              h5 Active Buttons
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                              span
+                                | Add 
+                                code .active
+                                |  class for active state
+                            .card-body.btn-showcase
+                              button.btn.btn-primary.active(type='button') Active
+                              button.btn.btn-secondary.active(type='button') Active
+                              button.btn.btn-success.active(type='button') Active
+                              button.btn.btn-info.active(type='button') Active
+                              button.btn.btn-warning.active(type='button') Active
+                              button.btn.btn-danger.active(type='button') Active
+                              button.btn.btn-light.active.txt-dark(type='button') Active
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head4', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head4
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;button type="button" class="btn btn-primary active"&gt;Active&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-secondary active"&gt;Active&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-success active"&gt;Active&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-info active"&gt;Active&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-warning active"&gt;Active&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-danger active"&gt;Active&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-light active"&gt;Active&lt;/button&gt; 
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          #disabled-btn.card
+                            .card-header
+                              h5 Disabled buttons
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                              span
+                                | Add 
+                                code .disabled
+                                |  class or 
+                                code disabled="disabled"
+                                |  attribute for disabled button
+                            .card-body.btn-showcase
+                              button.btn.btn-primary.disabled(type='button') Disabled
+                              button.btn.btn-secondary.disabled(type='button') Disabled
+                              button.btn.btn-success.disabled(type='button') Disabled
+                              button.btn.btn-info.disabled(type='button') Disabled
+                              button.btn.btn-warning.disabled(type='button') Disabled
+                              button.btn.btn-danger.disabled(type='button') Disabled
+                              button.btn.btn-light.disabled(type='button') Disabled
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head5', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head5
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;button type="button" class="btn btn-primary disabled"&gt;Disabled&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-secondary disabled"&gt;Disabled&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-success disabled"&gt;Disabled&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-info disabled"&gt;Info button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-warning disabled"&gt;Disabled&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-danger disabled"&gt;Disabled&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-light disabled"&gt;Disabled&lt;/button&gt; 
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          #custom-state-button.card
+                            .card-header
+                              h5 Custom state buttons
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                              span
+                                | The 
+                                code .btn
+                                |  class used with 
+                                code &lt;button&gt;
+                                | , 
+                                code &lt;a&gt;
+                                |  and 
+                                code &lt;input&gt;
+                                |  elements.
+                            .card-body.btn-showcase
+                              a.btn.btn-primary(href='#', data-toggle='tooltip', title='btn btn-primary', role='button') Link
+                              input.btn.btn-secondary(type='button', value='Input', data-toggle='tooltip', title='btn btn-secondary')
+                              input.btn.btn-success(type='submit', value='Submit', data-toggle='tooltip', title='btn btn-success')
+                              button.btn.btn-info(type='submit') Button
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head6', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head6
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;a class="btn btn-primary" href="#" data-toggle="tooltip;" title="btn btn-primary" role="button"&gt;link&lt;/button&gt;
+                                            | &lt;input class="btn btn-primary" type="button" value="Input"  data-toggle="tooltip;" title="btn btn-secondary"&gt;
+                                            | &lt;input class="btn btn-success" type="submit" value="Submit" data-toggle="tooltip" title="btn btn-success"&gt;
+                                            | &lt;button class="btn btn-info" type="submit"&gt;Button&lt;/button&gt;
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          #outline-button.card
+                            .card-header
+                              h5 outline buttons
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                              span
+                                | Add 
+                                code .btn-outline-*
+                                |  class for border button
+                            .card-body.btn-showcase
+                              button.btn.btn-outline-primary(type='button') Primary Button
+                              button.btn.btn-outline-secondary(type='button') Secondary Button
+                              button.btn.btn-outline-success(type='button') Success Button
+                              button.btn.btn-outline-info(type='button') Info Button
+                              button.btn.btn-outline-warning(type='button') Warning Button
+                              button.btn.btn-outline-danger(type='button') Danger Button
+                              button.btn.btn-outline-light.txt-dark(type='button') Light Button
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head7', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head7
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;button type="button" class="btn btn-outline-primary"&gt;primary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-secondary"&gt;secondary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-success"&gt;Success button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-info"&gt;Info button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-warning"&gt;warning button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-danger"&gt;danger button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-light txt-dark"&gt;light button&lt;/button&gt; 
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          #outline-bold-button.card
+                            .card-header
+                              h5 bold Border outline buttons
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                              span
+                                | Add 
+                                code .btn-outline-*-2x
+                                |  class for bold outline
+                            .card-body.btn-showcase
+                              button.btn.btn-outline-primary-2x(type='button') Primary Button
+                              button.btn.btn-outline-secondary-2x(type='button') Secondary Button
+                              button.btn.btn-outline-success-2x(type='button') Success Button
+                              button.btn.btn-outline-info-2x(type='button') Info Button
+                              button.btn.btn-outline-warning-2x(type='button') Warning Button
+                              button.btn.btn-outline-danger-2x(type='button') Danger Button
+                              button.btn.btn-outline-light-2x.txt-dark(type='button') Light Button
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head8', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head8
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;button type="button" class="btn btn-outline-primary-2x"&gt;primary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-secondary-2x"&gt;secondary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-success-2x"&gt;Success button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-info-2x"&gt;Info button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-warning-2x"&gt;warning button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-danger-2x"&gt;danger button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-light-2x txt-dark"&gt;light button&lt;/button&gt; 
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          #outline-large-button.card
+                            .card-header
+                              h5 outline Large buttons
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                              span
+                                | Add 
+                                code .btn-outline-*
+                                |  class for outline and 
+                                code .btn-lg
+                                |  class for large button
+                            .card-body.btn-showcase
+                              button.btn.btn-outline-primary.btn-lg(type='button') Primary Button
+                              button.btn.btn-outline-secondary.btn-lg(type='button')
+                                | Secondary Button
+                              button.btn.btn-outline-success.btn-lg(type='button') Success Button
+                              button.btn.btn-outline-info.btn-lg(type='button') Info Button
+                              button.btn.btn-outline-warning.btn-lg(type='button') Warning Button
+                              button.btn.btn-outline-danger.btn-lg(type='button') Danger Button
+                              button.btn.btn-outline-light.btn-lg.txt-dark(type='button')
+                                | Light Button
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head9', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head9
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;button type="button" class="btn btn-outline-primary btn-lg"&gt;primary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-secondary btn-lg"&gt;secondary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-success btn-lg"&gt;Success button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-info btn-lg"&gt;Info button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-warning btn-lg"&gt;warning button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-danger btn-lg"&gt;danger button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-light btn-lg txt-dark"&gt;light button&lt;/button&gt; 
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          #outline-small-button.card
+                            .card-header
+                              h5 outline small buttons
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                              span
+                                | Add 
+                                code .btn-outline-*
+                                |  class for outline and 
+                                code .btn-sm
+                                |  class for small button
+                            .card-body.btn-showcase
+                              button.btn.btn-outline-primary.btn-sm(type='button') Primary Button
+                              button.btn.btn-outline-secondary.btn-sm(type='button')
+                                | Secondary Button
+                              button.btn.btn-outline-success.btn-sm(type='button') Success Button
+                              button.btn.btn-outline-info.btn-sm(type='button') Info Button
+                              button.btn.btn-outline-warning.btn-sm(type='button') Warning Button
+                              button.btn.btn-outline-danger.btn-sm(type='button') Danger Button
+                              button.btn.btn-outline-light.btn-sm.txt-dark(type='button')
+                                | Light Button
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head10', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head10
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;button type="button" class="btn btn-outline-primary btn-sm"&gt;primary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-secondary btn-sm"&gt;secondary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-success btn-sm"&gt;Success button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-info btn-sm"&gt;Info button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-warning btn-sm"&gt;warning button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-danger btn-sm"&gt;danger button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-light btn-sm txt-dark"&gt;light button&lt;/button&gt; 
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          #ex-outline-small-button.card
+                            .card-header
+                              h5 Outline extra small buttons
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                              span
+                                | Add 
+                                code .btn-outline-*
+                                |  class for outline and 
+                                code .btn-xs
+                                |  class for extra small button
+                            .card-body.btn-showcase
+                              button.btn.btn-outline-primary.btn-xs(type='button') Primary Button
+                              button.btn.btn-outline-secondary.btn-xs(type='button')
+                                | Secondary Button
+                              button.btn.btn-outline-success.btn-xs(type='button') Success Button
+                              button.btn.btn-outline-info.btn-xs(type='button') Info Button
+                              button.btn.btn-outline-warning.btn-xs(type='button') Warning Button
+                              button.btn.btn-outline-danger.btn-xs(type='button') Danger Button
+                              button.btn.btn-outline-light.btn-xs.txt-dark(type='button')
+                                | Light Button
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head11', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head11
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;button type="button" class="btn btn-outline-primary btn-xs"&gt;primary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-secondary btn-xs"&gt;secondary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-success btn-xs"&gt;Success button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-info btn-xs"&gt;Info button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-warning btn-xs"&gt;warning button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-danger btn-xs"&gt;danger button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-light btn-xs txt-dark"&gt;light button&lt;/button&gt; 
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          .card
+                            .card-header
+                              h5 Disabled outline buttons
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                              span
+                                | Add 
+                                code .disabled
+                                |  class or 
+                                code disabled="disabled"
+                                |  attribute for disabled state
+                            .card-body.btn-showcase
+                              button.btn.btn-outline-primary.disabled(type='button') Disabled
+                              button.btn.btn-outline-secondary.disabled(type='button') Disabled
+                              button.btn.btn-outline-success.disabled(type='button') Disabled
+                              button.btn.btn-outline-info.disabled(type='button') Disabled
+                              button.btn.btn-outline-warning.disabled(type='button') Disabled
+                              button.btn.btn-outline-danger.disabled(type='button') Disabled
+                              button.btn.btn-outline-light.txt-dark.disabled(type='button')
+                                | Disabled
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head12', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head12
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;button type="button" class="btn btn-outline-primary disabled"&gt;Disabled&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-secondary disabled"&gt;Disabled&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-success disabled"&gt;Disabled&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-info disabled"&gt;Disabled&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-warning disabled"&gt;Disabled&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-danger disabled"&gt;Disabled&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-outline-light disabled txt-dark"&gt;Disabled&lt;/button&gt; 
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          #gradiant.card
+                            .card-header
+                              h5 Gradien buttons
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                              span
+                                | Add 
+                                code .btn-*-gradien
+                                |  class for gradien button
+                            .card-body.btn-showcase
+                              button.btn.btn-primary-gradien(type='button') Primary Button
+                              button.btn.btn-secondary-gradien(type='button') Secondary Button
+                              button.btn.btn-success-gradien(type='button') Success Button
+                              button.btn.btn-info-gradien(type='button') Info Button
+                              button.btn.btn-warning-gradien(type='button') Warning Button
+                              button.btn.btn-danger-gradien(type='button') Danger Button
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head13', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head13
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;button type="button" class="btn btn-primary-gradien"&gt;primary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-secondary-gradien"&gt;secondary button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-success-gradien"&gt;Success button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-info-gradien"&gt;Info button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-warning-gradien"&gt;warning button&lt;/button&gt;
+                                            | &lt;button type="button" class="btn btn-danger-gradien"&gt;danger button&lt;/button&gt; 
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

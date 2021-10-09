@@ -1,0 +1,62 @@
+/**=====================
+    20.  Touchspin  CSS Start
+==========================**/
+.bootstrap-touchspin {
+  input{
+    &.touchspin {
+      padding: 0 12px;
+    }
+  }
+  .input-group .btn{
+    padding: 0.5rem 1.75rem;
+  }
+  .touchspin-vertical-tab {
+    .input-group {
+      .input-group-btn-vertical {
+        position: relative;
+        white-space: nowrap;
+        width: 1%;
+        vertical-align: middle;
+        display: table-cell;
+        .bootstrap-touchspin-down {
+          margin-top: -2px;
+        }
+        i {
+          position: absolute;
+          top: 4px;
+          left: 7px;
+          font-size: 10px;
+          font-weight: normal;
+        }
+        > .btn {
+          display: block;
+          float: none;
+          width: 100%;
+          max-width: 100%;
+          padding: 9px;
+          margin-left: -1px;
+          position: relative;
+        }
+      }
+    }
+  }
+  .input-group{
+    font-family: $font-rubik, $font-serif;
+    .btn{
+      border-radius: 0 !important;
+    }
+  }
+  .dropdown-basic{
+    .dropdown{
+      .dropbtn{
+        padding: 9px 30px;
+      }
+      .dropdown-content{
+        z-index: 9999;
+      }
+    }
+  }
+}
+/**=====================
+     20. Touchspin  CSS Ends
+==========================**/

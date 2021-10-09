@@ -1,0 +1,71 @@
+- var chat_menu             = true;
+- var theme_customizer      = true;
+- var typeahead             = true;
+- var typeahead_search      = true;
+- var tooltip               = true;
+- var animate               = true;
+- var jkanban              = true;
+- var sidebar               = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.default-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.default-menu.default-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3 
+                                      | Kanban Board
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item  Apps
+                                      li.breadcrumb-item.active  Kanban Board
+                    // Container-fluid starts
+                    .container-fluid.jkanban-container
+                      .row
+                        .col-12
+                          .card
+                            .card-header
+                              h5 Default Demo                            
+                            .card-body                     
+                              #demo1
+                        .col-12
+                          .card
+                            .card-header
+                              h5 Custom Board  
+                              p.mb-0 | colors, gutter, click on board&apos;s item and restricting which boards to drag items to                         
+                            .card-body                     
+                              #demo2
+                        .col-12
+                          .card
+                            .card-header
+                              h5 API
+                              p.mb-0 add item, add board, delete board:                    
+                            .card-body                     
+                              #demo3
+                              button#addDefault.btn.btn-success Add &quot;Default&quot; board
+                              button#addToDo.btn.btn-success Add element in &quot;To Do&quot; Board
+                              button#removeBoard.btn.btn-danger Remove &quot;Done&quot; Board
+                        .col-12
+                          .card.note.p-20
+                            | jKanban is Pure agnostic Javascript plugin for Kanban boards for more options please refer 
+                            a(href="http://www.riccardotartaglia.it/jkanban/" target="_blank") jkanban Official site  
+                            | And 
+                            a(href="https://github.com/riktar/jkanban" target="_blank") githup link
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

@@ -1,0 +1,949 @@
+/**=====================
+      67. Dashboard 2 CSS Start
+==========================**/
+.dash-chart {
+  .profit-card {
+    margin: -30px 0 -14px;
+
+    #negative-chart {
+      .apexcharts-tooltip {
+        &.light {
+          .apexcharts-tooltip-title {
+            display: none;
+          }
+        }
+      }
+
+      .apexcharts-tooltip-series-group {
+        &.active {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .media {
+    .media-body {
+      p {
+        color: $theme-body-sub-title-color;
+
+        .font-roboto {
+          color: $theme-body-sub-title-color;
+        }
+      }
+    }
+  }
+
+  .progress-animate {
+    margin-top: -6px;
+    margin-right: 2px;
+  }
+}
+
+.support-ticket-font {
+  ul {
+    font-size: 12px;
+  }
+}
+
+.negative-container {
+  margin: -36px -15px -29px;
+
+  .apexcharts-xaxis {
+    .apexcharts-xaxis-texts-g {
+      text {
+        font-size: 13px;
+        fill: rgba($theme-body-font-color, 0.4);
+        font-family: $font-roboto, $font-serif !important;
+      }
+    }
+  }
+}
+
+.ecommerce-widgets {
+  align-items: center;
+  position: relative;
+
+  .ecommerce-box {
+    width: 60px;
+    height: 60px;
+
+    &.light-bg-primary {
+      background-color: rgba($primary-color, 0.15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+    }
+  }
+
+  .fa-heart {
+    font-size: 24px;
+    background: linear-gradient(to right, var(--theme-deafult) 10%, $info-color 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 2px;
+  }
+}
+
+.dash-map {
+  #map {
+    height: 300px;
+    width: 100%;
+
+    .gmnoprint {
+      display: none;
+    }
+  }
+}
+
+.monthly-visit {
+  margin: -4px 0 -35px;
+}
+
+.new-update {
+  .media {
+    .media-body {
+
+      span,
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.activity-timeline {
+  .media {
+    align-items: center;
+
+    .activity-line {
+      top: 132px;
+      height: 57%;
+      position: absolute;
+      width: 4px;
+      background-color: #f8f8f8;
+      margin: 0 auto;
+      left: 46px;
+      z-index: 1;
+    }
+
+    @each $circle-name,
+    $circle-color in (primary, var(--theme-deafult)),
+    (secondary, $secondary-color),
+    (success, $success-color),
+    (danger, $danger-color),
+    (info, $info-color),
+    (light, $light-color),
+    (dark, $dark-color),
+    (warning, $warning-color) {
+      .circle-dot-#{$circle-name} {
+        background-color: rgba($circle-color, 0.25);
+        border-radius: 100%;
+        padding: 6px;
+        font-size: 5px;
+        color: $circle-color;
+        animation: round 1.3s ease-in-out infinite;
+      }
+    }
+
+    +.media {
+      margin-top: 45px;
+    }
+
+    .media-body {
+      margin-left: 20px;
+
+      p {
+        color: rgba($theme-body-font-color, 0.6);
+        font-size: 12px;
+        margin-top: 2px;
+      }
+    }
+  }
+}
+
+@each $activity-dot-name,
+$activity-dot-color in (primary, var(--theme-deafult)),
+(secondary, $secondary-color),
+(success, $success-color),
+(danger, $danger-color),
+(info, $info-color),
+(light, $light-color),
+(dark, $dark-color),
+(warning, $warning-color) {
+  .activity-dot-#{$activity-dot-name} {
+    width: 16px;
+    height: 16px;
+    background-color: $white;
+    border-radius: 100%;
+    border: 3px solid $activity-dot-color;
+    box-shadow: 0.5px 4.33px 15px 0px rgba($activity-dot-color, 0.25);
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.offer-box {
+  background: $transparent-color;
+  box-shadow: none;
+
+  .offer-slider {
+    background: $gradient-primary;
+    border-radius: 15px;
+    height: 200px;
+    width: 100%;
+
+    .carousel-control-prev {
+      right: 0;
+      left: unset;
+    }
+
+    .carousel-control-prev-icon {
+      top: 116px;
+      position: absolute;
+    }
+
+    .carousel-control-next-icon {
+      top: 75px;
+      position: absolute;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 12px;
+      height: 12px;
+      background-color: rgba($white, 0.1);
+      border-radius: 10px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 10%;
+    }
+
+    .selling-slide {
+      .d-flex {
+        height: 73%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      p {
+        color: rgba($white, 0.5);
+        font-weight: 500;
+        font-family: $font-roboto, $font-serif;
+        margin-bottom: 5px;
+      }
+
+      .badge-white {
+        background-color: rgba($white, 0.1);
+      }
+
+      .badge-dotted {
+        border: 1px dashed rgba($white, 0.4);
+      }
+
+      .badge {
+        font-size: 13px;
+        color: $white;
+        font-weight: 500;
+        padding: 8px 15px;
+      }
+
+      h4 {
+        color: $white;
+        margin-bottom: 14px;
+      }
+
+      .center-img {
+        margin-top: -60px;
+      }
+    }
+  }
+}
+
+.total-users {
+  .goal-chart {
+    margin: -35px -15px -30px;
+
+    .apexcharts-datalabels-group {
+      text {
+        font-weight: 700;
+
+        &:last-child {
+          fill: $theme-body-font-color;
+        }
+      }
+    }
+  }
+
+  .goal-status {
+    ul {
+      li {
+        +li {
+          margin-top: 30px;
+          padding-top: 30px;
+        }
+
+        .goal-detail {
+          margin-bottom: 30px;
+
+          h6 {
+            margin-bottom: 16px;
+          }
+        }
+      }
+
+      &:last-child {
+        li {
+          border-top: 1px solid $light-gray;
+          margin-top: 27px;
+          padding-top: 27px;
+        }
+      }
+    }
+
+    .rate-card {
+      >ul {
+        li {
+          &:last-child {
+            border-top: none;
+          }
+        }
+      }
+    }
+
+    >ul {
+      li {
+        &:last-child {
+          border-top: none;
+        }
+      }
+    }
+
+    .goal-end-point {
+      ul {
+        li {
+          &:first-child {
+            border-top: none;
+          }
+        }
+      }
+    }
+
+    .progress {
+      background-image: linear-gradient(to right, $transparent-color 15%, rgba($info-color, 0.1) 25%, $transparent-color);
+    }
+
+    .progress-gradient-primary {
+      border-radius: 15%;
+      background-image: linear-gradient(to right, $transparent-color 25%, rgba($info-color, 0.1), var(--theme-deafult));
+
+      &:after {
+        display: none;
+      }
+    }
+
+  }
+}
+
+.best-seller-table {
+  table {
+    margin-bottom: 0px;
+
+    th,
+    td {
+      border: none;
+    }
+
+    thead {
+      tr {
+        th {
+          padding-top: 0;
+          font-size: 16px;
+          font-weight: 500;
+
+          h5 {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    tr {
+
+      th,
+      td {
+        padding: 19px 10px;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          vertical-align: middle;
+          transition: 0.5s;
+          position: relative;
+
+          .flag-icon {
+            font-size: 18px;
+            position: relative;
+            display: inline-block;
+            width: 1.33333em;
+            line-height: 1em;
+          }
+
+          font-weight:500;
+
+          p {
+            font-size: 11px;
+            color: rgba($theme-body-font-color, 0.8);
+            transition: 0.5s;
+          }
+
+          .fa-check-circle {
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            opacity: 0;
+            color: var(--theme-deafult);
+            transition: 0.5s;
+          }
+
+          .label {
+            padding: 8px 12px;
+            color: $theme-body-font-color;
+            border-radius: 10px;
+            transition: 0.5s;
+            font-size: 13px;
+          }
+
+          .align-middle {
+            position: relative;
+
+            .status-circle {
+              width: 10px;
+              height: 10px;
+              top: 2px;
+              left: 32px;
+              opacity: 0;
+              transition: 0.5s;
+            }
+          }
+        }
+
+        &:hover {
+          td {
+            color: var(--theme-deafult);
+            transition: 0.5s;
+
+            p {
+              color: var(--theme-deafult);
+              transition: 0.5s;
+            }
+
+            span {
+              color: $theme-body-font-color;
+            }
+
+            .label {
+              background-color: rgba($primary-color, 0.1);
+              color: var(--theme-deafult);
+              transition: 0.5s;
+            }
+
+            .fa-check-circle {
+              opacity: 1;
+              transition: 0.5s;
+            }
+
+            .align-middle {
+              .status-circle {
+                opacity: 1;
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+
+        &:last-child {
+          td {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+#riskfactorchart {
+  path {
+    stroke-width: 10px;
+    stroke-dasharray: 10, 20;
+    stroke-linecap: round;
+  }
+
+  #apexcharts-radialbarTrack-0 {
+    stroke: #ecd8d8;
+
+    stroke-linecap: round;
+  }
+
+}
+
+.our-product {
+  table {
+    thead {
+      tr {
+
+        th,
+        td {
+          border: none;
+          padding-top: 0;
+          padding-bottom: 40px;
+
+          span {
+            color: rgba($theme-body-font-color, 0.3);
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    tr {
+      td {
+        padding: 20px 20px 0;
+        border-top: none;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+          text-align: right;
+        }
+
+        p {
+          color: rgba($theme-body-font-color, 0.6);
+          margin-bottom: 0;
+          text-transform: capitalize;
+        }
+
+        .btn {
+          font-size: 12px;
+          font-weight: 500;
+        }
+
+        .flag-icon {
+          font-size: 18px;
+        }
+
+        .badge {
+          font-size: 13px;
+          font-weight: 600;
+          padding: 7px 14px;
+        }
+
+        .btn-secondary {
+          background-color: lighten($secondary-color, 38%) !important;
+          border-color: lighten($secondary-color, 38%) !important;
+          color: var(--theme-secondary);
+          font-weight: 700;
+        }
+      }
+
+      &:first-child {
+        td {
+          padding-top: 0;
+        }
+      }
+
+      &:last-child {
+        td {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+// responsive
+@media only screen and (max-width: 1660px) {
+  .risk-col {
+    .goal-status {
+      &.row {
+
+        >div,
+        >ul {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+      }
+    }
+  }
+
+  .total-users {
+    .goal-status {
+      >ul {
+        li {
+          &:first-child {
+            border-top: none;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1460px) {
+  .offer-box {
+    .offer-slider {
+      .selling-slide {
+        .d-flex {
+          height: 80%;
+        }
+
+        .center-img {
+          margin-top: -49px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .offer-box {
+    .offer-slider {
+      .selling-slide {
+        .d-flex {
+          height: 81%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .best-seller-table {
+    table {
+      tbody {
+        tr {
+          td {
+            .fa-check-circle {
+              left: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .offer-box {
+    .offer-slider {
+      height: 100%;
+
+      .selling-slide {
+        .d-flex {
+          height: 100%;
+
+          .left-content {
+            padding-left: 15px;
+          }
+        }
+
+        .center-img {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px) and (min-width: 1200px) {
+  .offer-box {
+    .offer-slider {
+      .selling-slide {
+        >div {
+          flex: 0 0 25%;
+          max-width: 25%;
+
+          &:first-child {
+            flex: 0 0 40%;
+            max-width: 40%;
+          }
+
+          &:nth-child(2) {
+            flex: 0 0 28%;
+            max-width: 28%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1305px) {
+  .size-column {
+    >.xl-50 {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .best-seller-table {
+    table {
+      tbody {
+        tr {
+          td {
+            min-width: 150px;
+
+            .fa-check-circle {
+              left: 18px;
+            }
+
+            &:first-child {
+              min-width: 200px;
+            }
+
+            &:nth-child(4) {
+              min-width: 100px;
+            }
+
+            &:last-child {
+              min-width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .offer-box {
+    .offer-slider {
+      .selling-slide {
+        padding-bottom: 40px;
+
+        >div {
+          &:nth-child(2) {
+            order: -1;
+          }
+        }
+
+        .center-img {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .profit-card {
+    .progress-animate {
+      margin-bottom: 15px;
+      overflow: inherit;
+      background-color: transparent;
+    }
+  }
+
+  .activity-timeline {
+    .media {
+      +.media {
+        margin-top: 30px;
+      }
+
+      .activity-line {
+        top: 78px;
+        height: 63%;
+        left: 26px;
+      }
+    }
+  }
+
+  .monthly-visit {
+    margin-top: 0;
+  }
+
+  .ecommerce-widgets {
+    .ecommerce-box {
+      width: 50px;
+      height: 50px;
+    }
+
+    .fa-heart {
+      font-size: 20px;
+      margin-top: 4px;
+    }
+  }
+
+  .offer-box {
+    .offer-slider {
+      .selling-slide {
+        padding-bottom: 20px;
+
+        .d-flex {
+          .left-content {
+            padding-left: 0;
+          }
+        }
+      }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        right: 20px;
+      }
+    }
+  }
+
+  .best-seller-table {
+    table {
+      thead {
+        tr {
+          th {
+            h5 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .offer-box {
+    .offer-slider {
+      .selling-slide {
+        padding-bottom: 20px;
+
+        .d-flex {
+
+          .left-content,
+          .right-content {
+            text-align: center;
+            width: 100%;
+          }
+
+          .right-content {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .activity-timeline {
+    .media {
+      +.media {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .offer-box {
+    .offer-slider {
+      .selling-slide {
+        .center-img {
+          img {
+            width: 50%;
+          }
+        }
+
+        h4 {
+          font-size: 18px;
+        }
+
+        .badge {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .risk-col {
+    .goal-status {
+      &.row {
+
+        >div,
+        >ul {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .total-users {
+    .goal-status {
+      >ul {
+        li {
+          &:first-child {
+            border-top: 1px solid $light-gray;
+          }
+        }
+      }
+
+      ul {
+        &:last-child {
+          li {
+            padding-top: 20px;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .our-product {
+    table {
+      tr {
+        td {
+
+          &:first-child,
+          &:nth-child(2) {
+            min-width: 160px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .profit-card {
+    span {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+
+  .activity-timeline {
+    .media {
+      .activity-line {
+        height: 67%;
+      }
+    }
+  }
+}
+
+/**=====================
+     67. Dashboard 2  CSS End
+==========================**/

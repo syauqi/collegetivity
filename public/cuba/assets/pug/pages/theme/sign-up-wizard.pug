@@ -1,0 +1,109 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var form_wizard_four      = true;
+- var sidebar               = false
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+      // login page start
+      .container-fluid
+        .row          
+          .col-12.p-0
+              div
+                .theme-form                      
+                      #wizard.wizard-4                        
+                        ul
+                          li
+                            a.logo.text-left.pl-0(href="index.html")
+                              img.img-fluid.for-light(src="../assets/images/logo/login.png" alt="looginpage" )
+                              img.img-fluid.for-dark(src="../assets/images/logo/logo_dark.png" alt="looginpage" )
+                          li
+                            a(href='#step-1')
+                              h4 1
+                              h5 personal
+                              small Add personal details
+                          li
+                            a(href='#step-2')
+                              h4 2
+                              h5 Address
+                              small Add additional info
+                          li
+                            a(href='#step-3')
+                              h4 3
+                              h5 Message
+                              small Add message(optional)
+                          li.pb-0
+                            a(href='#step-4')
+                              h4 4
+                              h5  Done 
+                                i.fa.fa-thumbs-o-up
+                              small Complete.. !
+                          li                            
+                            img(src="../assets/images/login/icon.png" alt="looginpage" )       
+
+                        #step-1
+
+                          h2 Sign up to account
+                          h5.text-muted.mb-4 Enter your email & password to login
+
+                          .login-main
+                            .theme-form
+                              .form-group.mb-3
+                                label(for='name') First Name
+                                input#name.form-control(type='text', placeholder='Johan', required='required')
+                              .form-group.mb-3
+                                label(for='lname') Last Name
+                                input#lname.form-control(type='text', placeholder='Deo')
+                              .form-group.mb-3
+                                label(for='contact') Contact No.
+                                input#contact.form-control(type='number', placeholder='123456789')
+                        #step-2
+
+                          h2 Sign up to account
+                          h5.text-muted.mb-4 Enter your email & password to login
+
+                          .login-main
+                            .theme-form
+                              .form-group.mb-3.m-t-15
+                                label(for='exampleFormControlInput1') Email address
+                                input#exampleFormControlInput1.form-control(type='email', placeholder='name@example.com')
+                              .form-group.mb-3
+                                label(for='exampleInputPassword1') Password
+                                input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+                              .form-group.mb-3
+                                label(for='exampleInputPassword1') Confirm Password
+                                input#exampleInputcPassword1.form-control(type='password', placeholder='Enter again')
+                        #step-3
+
+                          h2 Sign up to account
+                          h5.text-muted.mb-4 Enter your email & password to login
+
+                          .login-main
+                            .theme-form
+                              .form-group.mb-3
+                                label(for='exampleFormControlInput1') Birthday:
+                                input.form-control(type='date')
+                              .form-group.mb-3
+                                label.control-label Age
+                                input.form-control(placeholder='Age', type='text')
+                              .form-group.mb-3
+                                label.control-label Have Passport
+                                input.form-control(placeholder='Yes/No', type='text')
+                        #step-4
+                          h2 Sign up to account
+                          h5.text-muted.mb-4 Enter your email & password to login
+                          .login-main
+                            .theme-form
+                              .form-group.mb-3
+                                label.control-label Country
+                                input.form-control.mt-1(type='text', placeholder='Country', required='required')
+                              .form-group.mb-3
+                                label.control-label State
+                                input.form-control.mt-1(type='text', placeholder='State', required='required')
+                              .form-group.mb-3
+                                label.control-label City
+                                input.form-control.mt-1(type='text', placeholder='City', required='required')
+                                // Smart Wizard Ends
+
+        include ../../components/footer-files

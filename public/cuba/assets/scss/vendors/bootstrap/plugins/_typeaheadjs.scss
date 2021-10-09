@@ -1,0 +1,31 @@
+/*========Typeaheadjs css start=======*/
+span.twitter-typeahead {
+  width: 100%;
+
+  .tt-menu {
+    @extend .dropdown-menu;
+    width: 100%;
+  }
+
+  .tt-suggestion {
+    @extend .dropdown-item;
+    font-size: 14px;
+  }
+
+  .tt-suggestion.tt-cursor {
+    @extend .dropdown-item.active;
+  }
+
+  .input-group & {
+    display: flex !important;
+    align-items: center;
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+
+    .tt-menu, .tt-hint, .tt-input {
+      width: 100%;
+    }
+  }
+}
+/*========Typeaheadjs css end=======*/

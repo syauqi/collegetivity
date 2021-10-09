@@ -1,0 +1,299 @@
+/**=====================
+    File Manager
+==========================**/
+
+.file-sidebar,
+.file-content {
+    .card {
+
+        .card-body,
+        .card-header {
+            padding: 20px !important;
+        }
+    }
+}
+
+.file-sidebar {
+    ul {
+        li {
+            &+li {
+                margin-top: 8px;
+            }
+        }
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+
+        &.btn-light {
+            &:hover {
+                color: var(--theme-deafult) !important;
+
+                svg {
+                    stroke: var(--theme-deafult);
+                }
+            }
+        }
+
+        svg {
+            width: 15px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    }
+
+    .pricing-plan {
+        border: 1px solid $light-gray;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 15px;
+        position: relative;
+        overflow: hidden;
+
+        h6 {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 2px;
+            color: $dark-gray;
+        }
+
+        h5 {
+            font-weight: 800;
+        }
+
+        p {
+            margin-bottom: 5px;
+            color: $dark-gray;
+        }
+
+        .btn {
+            display: inline-block;
+        }
+
+        .bg-img {
+            position: absolute;
+            top: 40px;
+            opacity: 0.1;
+            transform: rotate(-45deg);
+            right: -40px;
+        }
+    }
+}
+
+.file-manager {
+    >h6 {
+        opacity: 0.6;
+        font-weight: 400 !important;
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .files {
+        .file-box {
+            $show-numbers: true;
+
+            @if $show-numbers {
+                @for $i from 1 through 15 {
+                    &:nth-child(#{$i}) {
+                        animation-fill-mode: both;
+                        animation: fadeIncustom .5s linear #{$i}00000ms;
+                    }
+                }
+
+            }
+        }
+
+        h6 {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+
+    p {
+        opacity: 0.9;
+        font-size: 12px;
+    }
+}
+
+.files,
+.folder {
+    h6 {
+        opacity: 0.9;
+        font-weight: 500 !important;
+        font-size: 14px;
+    }
+}
+
+.file-content {
+    .ellips {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        opacity: 0.7;
+    }
+
+    .form-inline {
+        border: 1px solid #f4f4f4;
+        border-radius: 5px;
+        padding: 0 20px;
+
+        i {
+            padding-right: 10px;
+            color: $dark-gray;
+            line-height: 3;
+        }
+
+        input {
+            &::-webkit-input-placeholder {
+                color: $dark-gray;
+            }
+
+            &:focus {
+                outline: none !important;
+            }
+        }
+    }
+
+    .search-form {
+        input {
+            padding: 5px 10px 5px 70px;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            &:before {
+                left: 82px;
+                top: 37px;
+            }
+
+            &:after {
+                top: 39px;
+                left: 53px;
+            }
+        }
+    }
+
+    .btn {
+        svg {
+            height: 15px;
+            margin-right: 2px;
+            vertical-align: middle;
+        }
+    }
+
+    h4 {
+        font-weight: 500;
+    }
+
+    .folder {
+        .folder-box {
+            border: 1px solid #f1f1f1;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #f6f7fb;
+            width: calc(25% - 15px);
+            display: inline-block;
+
+            $show-numbers: true;
+
+            @if $show-numbers {
+                @for $i from 1 through 15 {
+                    &:nth-child(#{$i}) {
+                        animation-fill-mode: both;
+                        animation: fadeIncustom .5s linear #{$i}00000ms;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .files {
+        .file-box {
+            border: 1px solid #f1f1f1;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #f6f7fb;
+            width: calc(25% - 15px);
+            display: inline-block;
+            position: relative;
+
+            .file-top {
+                height: 100px;
+                background-color: #fff;
+                border: 1px solid #ececec;
+                border-radius: 5px;
+                font-size: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .file-content .folder .folder-box .media {
+        display: block;
+
+        .media-body {
+            margin-left: 0 !important;
+            margin-top: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .file-content .files {
+        margin-bottom: -10px;
+
+        .file-box {
+            width: calc(50% - 15px);
+            margin-bottom: 10px;
+            margin-right: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .file-content {
+        .folder {
+            margin-bottom: -10px;
+
+            .folder-box {
+                width: calc(50% - 15px);
+                margin-bottom: 10px;
+                margin-right: 8px;
+            }
+        }
+
+        .media {
+            display: block;
+            text-align: center;
+
+            .media-body {
+                margin-top: 20px;
+                text-align: center !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .file-content .folder .folder-box,
+    .file-content .files .file-box {
+        width: calc(100%);
+    }
+
+    .file-content {
+        .btn-outline-primary {
+            margin-top: 10px;
+        }
+    }
+}
+
+/**=====================
+     File Manager
+==========================**/

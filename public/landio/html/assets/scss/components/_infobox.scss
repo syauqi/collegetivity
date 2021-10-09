@@ -1,0 +1,51 @@
+/*======= Info Box =======*/
+.info-boxes-wrapper {
+    border-radius: 15px;
+    background-color: rgb(1, 70, 246);
+    box-shadow: 0px 2px 14px 0px rgba(0, 64, 229, 0.59);
+    position: relative;
+    z-index: 1;
+    padding: 70px 105px;
+    border-top: 4px solid #dce5fb;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 2px;
+        background-color: #215ffb;
+        top: 15%;
+        bottom: 15%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+
+    .info-boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 250px;
+    }
+
+    .box-item {
+        color: $color-white;
+        display: flex;
+        align-items: center;
+
+        .box-icon {
+            margin-right: 40px;
+            flex: 0 0 80px;
+            width: 80px;
+            font-size: 80px;
+            line-height: 0.5;
+        }
+
+        .box-title {
+            font: {
+                size: 24px;
+                family: $font-cs-medium;
+                weight: 500;
+            }
+            margin-bottom: 15px;
+            color: $color-white;
+        }
+    }
+}

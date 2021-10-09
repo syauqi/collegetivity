@@ -1,0 +1,197 @@
+/**=====================
+   61. base_inputs CSS start
+==========================**/
+.jkanban-container {
+  .btn {
+    margin-bottom: 10px;
+  }
+
+  .note {
+    a {
+      display: contents;
+    }
+  }
+}
+
+.kanban-board-header {
+  height: auto;
+  width: auto;
+  line-height: unset;
+  background: $body-color;
+  border-bottom: 1px solid #ddd;
+
+  &.bg-info {
+    &~.kanban-drag {
+      background-color: rgba($info-color, 0.3);
+    }
+  }
+
+  &.bg-warning {
+    &~.kanban-drag {
+      background-color: rgba($warning-color, 0.3);
+    }
+  }
+
+  &.bg-success {
+    &~.kanban-drag {
+      background-color: rgba($success-color, 0.3);
+    }
+  }
+}
+
+.kanban-container {
+  display: contents;
+}
+
+.kanban-board {
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  box-shadow: 1px 5px 24px 0 rgba(68, 102, 242, 0.05);
+  overflow: hidden;
+
+  .kanban-drag {
+    background: $body-color;
+  }
+}
+
+.kanban-item {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 20px;
+
+  p {
+    opacity: 0.7;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .list {
+    display: inline-block;
+    opacity: 0.4;
+
+    li {
+      display: inline-block;
+      font-size: 12px;
+
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .kanban-box {
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    display: block;
+    color: inherit;
+    background-color: $white;
+
+    &:hover {
+      color: inherit;
+    }
+
+    &+.kanban-box {
+      margin-top: 20px;
+    }
+
+    .badge {
+      font-weight: 400;
+    }
+
+    h6 {
+      font-size: 15px;
+      margin-top: 5px;
+      font-weight: 500;
+    }
+
+    .dropdown {
+      display: inline-block;
+      right: 10px;
+      position: absolute;
+      top: 20px;
+
+      .dropdown-item {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 5px 10px;
+        text-align: left;
+      }
+
+      svg {
+        height: 14px;
+      }
+    }
+
+    .d-flex {
+      justify-content: space-between;
+    }
+
+    .dropdown-toggle {
+      &:after {
+        content: none;
+      }
+    }
+
+    .customers ul li+li {
+      margin-left: -10px;
+    }
+
+    .date {
+      font-size: 11px;
+      opacity: 0.5;
+    }
+  }
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+  .jkanban-container .btn {
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .kanban-board .kanban-drag,
+  .kanban-container .kanban-item .kanban-box {
+    padding: 10px 15px;
+  }
+
+  .kanban-container .kanban-board {
+    width: 320px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .jkanban-container {
+    .card-body {
+      padding: 20px 0 !important;
+    }
+  }
+
+  .kanban-board .kanban-drag,
+  .kanban-container .kanban-item .kanban-box {
+    padding: 10px 15px;
+  }
+
+  .kanban-container .kanban-board {
+    width: 270px !important;
+  }
+}
+
+/**=====================
+    61. base_inputs CSS ends
+==========================**/

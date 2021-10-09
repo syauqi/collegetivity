@@ -1,0 +1,552 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var datatable             = true;
+- var counter               = true;
+- var support_ticket_custom = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3 Support Ticket
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Apps
+                                      li.breadcrumb-item.active Support Ticket
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Support Ticket List
+                              span List of ticket opend by customers
+                            .card-body
+                              .row
+                                .col-xl-4.col-sm-6
+                                  .card.ecommerce-widget
+                                    .card-body.support-ticket-font
+                                      .row
+                                        .col-5
+                                          span Order
+                                          h3.total-num.counter 2563
+                                        .col-7
+                                          .text-md-right
+                                            ul
+                                              li
+                                                | Profit
+                                                span.product-stts.txt-success.ml-2
+                                                  | 8989
+                                                  i.icon-angle-up.f-12.ml-1
+                                              li
+                                                | Loss
+                                                span.product-stts.txt-danger.ml-2
+                                                  | 2560
+                                                  i.icon-angle-down.f-12.ml-1
+                                      .progress-showcase
+                                        .progress.sm-progress-bar
+                                          .progress-bar.bg-primary(role='progressbar', style='width: 70%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                .col-xl-4.col-sm-6
+                                  .card.ecommerce-widget
+                                    .card-body.support-ticket-font
+                                      .row
+                                        .col-5
+                                          span Pending
+                                          h3.total-num.counter 8943
+                                        .col-7
+                                          .text-md-right
+                                            ul
+                                              li
+                                                | Profit
+                                                span.product-stts.txt-success.ml-2
+                                                  | 8989
+                                                  i.icon-angle-up.f-12.ml-1
+                                              li
+                                                | Loss
+                                                span.product-stts.txt-danger.ml-2
+                                                  | 2560
+                                                  i.icon-angle-down.f-12.ml-1
+                                      .progress-showcase
+                                        .progress.sm-progress-bar
+                                          .progress-bar.bg-secondary(role='progressbar', style='width: 70%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                .col-xl-4.col-sm-6
+                                  .card.ecommerce-widget
+                                    .card-body.support-ticket-font
+                                      .row
+                                        .col-5
+                                          span Running
+                                          h3.total-num.counter 2500
+                                        .col-7
+                                          .text-md-right
+                                            ul
+                                              li
+                                                | Profit
+                                                span.product-stts.txt-success.ml-2
+                                                  | 8989
+                                                  i.icon-angle-up.f-12.ml-1
+                                              li
+                                                | Loss
+                                                span.product-stts.txt-danger.ml-2
+                                                  | 2560
+                                                  i.icon-angle-down.f-12.ml-1
+                                      .progress-showcase.mt-4
+                                        .progress.sm-progress-bar
+                                          .progress-bar.bg-warning(role='progressbar', style='width: 70%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                .col-xl-4.col-sm-6
+                                  .card.ecommerce-widget
+                                    .card-body.support-ticket-font
+                                      .row
+                                        .col-5
+                                          span Smooth
+                                          h3.total-num.counter 2060
+                                        .col-7
+                                          .text-md-right
+                                            ul
+                                              li
+                                                | Profit
+                                                span.product-stts.txt-success.ml-2
+                                                  | 8989
+                                                  i.icon-angle-up.f-12.ml-1
+                                              li
+                                                | Loss
+                                                span.product-stts.txt-danger.ml-2
+                                                  | 2560
+                                                  i.icon-angle-down.f-12.ml-1
+                                      .progress-showcase.mt-4
+                                        .progress.sm-progress-bar
+                                          .progress-bar.bg-info(role='progressbar', style='width: 70%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                .col-xl-4.col-sm-6
+                                  .card.ecommerce-widget
+                                    .card-body.support-ticket-font
+                                      .row
+                                        .col-5
+                                          span Done
+                                          h3.total-num.counter 5600
+                                        .col-7
+                                          .text-md-right
+                                            ul
+                                              li
+                                                | Profit
+                                                span.product-stts.txt-success.ml-2
+                                                  | 8989
+                                                  i.icon-angle-up.f-12.ml-1
+                                              li
+                                                | Loss
+                                                span.product-stts.txt-danger.ml-2
+                                                  | 2560
+                                                  i.icon-angle-down.f-12.ml-1
+                                      .progress-showcase.mt-4
+                                        .progress.sm-progress-bar
+                                          .progress-bar.bg-success(role='progressbar', style='width: 70%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                .col-xl-4.col-sm-6
+                                  .card.ecommerce-widget
+                                    .card-body.support-ticket-font
+                                      .row
+                                        .col-5
+                                          span Cancle
+                                          h3.total-num.counter 2560
+                                        .col-7
+                                          .text-md-right
+                                            ul
+                                              li
+                                                | Profit
+                                                span.product-stts.txt-success.ml-2
+                                                  | 8989
+                                                  i.icon-angle-up.f-12.ml-1
+                                              li
+                                                | Loss
+                                                span.product-stts.txt-danger.ml-2
+                                                  | 2560
+                                                  i.icon-angle-down.f-12.ml-1
+                                      .progress-showcase
+                                        .progress.sm-progress-bar
+                                          .progress-bar.bg-danger(role='progressbar', style='width: 70%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                              .table-responsive
+                                table#basic-6.display
+                                  thead
+                                    tr
+                                      th(rowspan='2') Name
+                                      th(colspan='2') HR Information
+                                      th(colspan='4') Contact
+                                    tr
+                                      th Position
+                                      th Salary
+                                      th Office
+                                      th Skill
+                                      th Extn.
+                                      th E-mail
+                                  tbody
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/1.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Tiger Nixon
+                                      td System Architect
+                                      td $320,800
+                                      td Edinburgh
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-primary(role='progressbar', style='width: 30%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 5421
+                                      td t.nixon@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/2.png', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Garrett Winters
+                                      td Accountant
+                                      td $170,750
+                                      td Tokyo
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-secondary(role='progressbar', style='width: 40%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 8422
+                                      td g.winters@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/3.png', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Ashton Cox
+                                      td Junior Technical Author
+                                      td $86,000
+                                      td San Francisco
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-danger(role='progressbar', style='width: 60%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 1562
+                                      td a.cox@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/4.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Cedric Kelly
+                                      td Senior Javascript Developer
+                                      td $433,060
+                                      td Edinburgh
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-secondary(role='progressbar', style='width: 80%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 6224
+                                      td c.kelly@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/5.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Airi Satou
+                                      td Accountant
+                                      td $162,700
+                                      td Tokyo
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-success(role='progressbar', style='width: 70%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 5407
+                                      td a.satou@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/6.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Brielle Williamson
+                                      td Integration Specialist
+                                      td $372,000
+                                      td New York
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-info(role='progressbar', style='width: 55%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 4804
+                                      td b.williamson@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/7.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Herrod Chandler
+                                      td Sales Assistant
+                                      td $137,500
+                                      td San Francisco
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-warning(role='progressbar', style='width: 80%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 9608
+                                      td h.chandler@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/8.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Rhona Davidson
+                                      td Integration Specialist
+                                      td $327,900
+                                      td Tokyo
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-secondary(role='progressbar', style='width: 90%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 6200
+                                      td r.davidson@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/9.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Colleen Hurst
+                                      td Javascript Developer
+                                      td $205,500
+                                      td San Francisco
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-success(role='progressbar', style='width: 24%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 2360
+                                      td c.hurst@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/10.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Sonya Frost
+                                      td Software Engineer
+                                      td $103,600
+                                      td Edinburgh
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-primary(role='progressbar', style='width: 58%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 1667
+                                      td s.frost@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/11.png', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Jena Gaines
+                                      td Office Manager
+                                      td $90,560
+                                      td London
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-warning(role='progressbar', style='width: 80%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 3814
+                                      td j.gaines@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/12.png', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Quinn Flynn
+                                      td Support Lead
+                                      td $342,000
+                                      td Edinburgh
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-danger(role='progressbar', style='width: 70%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 9497
+                                      td q.flynn@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/1.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Charde Marshall
+                                      td Regional Director
+                                      td $470,600
+                                      td San Francisco
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-info(role='progressbar', style='width: 100%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 6741
+                                      td c.marshall@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/2.png', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Haley Kennedy
+                                      td Senior Marketing Designer
+                                      td $313,500
+                                      td London
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-success(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 3597
+                                      td h.kennedy@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/3.png', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Tatyana Fitzpatrick
+                                      td Regional Director
+                                      td $385,750
+                                      td London
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-warning(role='progressbar', style='width: 30%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 1965
+                                      td t.fitzpatrick@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/4.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Michael Silva
+                                      td Marketing Designer
+                                      td $198,500
+                                      td London
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-primary(role='progressbar', style='width: 20%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 1581
+                                      td m.silva@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/5.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Paul Byrd
+                                      td Chief Financial Officer (CFO)
+                                      td $725,000
+                                      td New York
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-success(role='progressbar', style='width: 10%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 3059
+                                      td p.byrd@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/6.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Gloria Little
+                                      td Systems Administrator
+                                      td $237,500
+                                      td New York
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-success(role='progressbar', style='width: 15%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 1721
+                                      td g.little@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/7.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Bradley Greer
+                                      td Software Engineer
+                                      td $132,000
+                                      td London
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-primary(role='progressbar', style='width: 30%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 2558
+                                      td b.greer@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/8.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Dai Rios
+                                      td Personnel Lead
+                                      td $217,500
+                                      td Edinburgh
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-warning(role='progressbar', style='width: 40%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 2290
+                                      td d.rios@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/9.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Jenette Caldwell
+                                      td Development Lead
+                                      td $345,000
+                                      td New York
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-primary(role='progressbar', style='width: 20%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 1937
+                                      td j.caldwell@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/10.jpg', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Yuri Berry
+                                      td Chief Marketing Officer (CMO)
+                                      td $675,000
+                                      td New York
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-danger(role='progressbar', style='width: 60%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 6154
+                                      td y.berry@datatables.net
+                                    tr
+                                      td
+                                        .media
+                                          img.rounded-circle.img-30.mr-3(src='../assets/images/user/11.png', alt='Generic placeholder image')
+                                          .media-body.align-self-center
+                                            div Caesar Vance
+                                      td Pre-Sales Support
+                                      td $106,450
+                                      td New York
+                                      td
+                                        .progress-showcase
+                                          .progress.sm-progress-bar
+                                            .progress-bar.bg-success(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 8330
+                                      td c.vance@datatables.net
+                                  tfoot
+                                    tr
+                                      th Name
+                                      th Position
+                                      th Salary
+                                      th Office
+                                      th Skill
+                                      th Extn.
+                                      th E-mail
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

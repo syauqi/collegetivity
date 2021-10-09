@@ -1,0 +1,21 @@
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+          // error-500 start
+          .error-wrapper
+            .container
+              img.img-100(src='../assets/images/other-images/sad.png', alt='')
+              .error-heading
+                h2.headline.font-primary 500
+              .col-md-8.offset-md-2
+                p.sub-content
+                  | The page you are attempting to reach is currently not available. This may be because the page does not exist or has been moved.
+              div
+                a.btn.btn-primary-gradien.btn-lg(href='index.html') BACK TO HOME PAGE
+          // error-500 end
+        include ../../components/footer-files

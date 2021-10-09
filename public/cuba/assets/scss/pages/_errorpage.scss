@@ -1,0 +1,125 @@
+/**=====================
+     09. Error-page  CSS Start
+==========================**/
+.error-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  &.maintenance-bg {
+    background-image: url(../images/other-images/maintenance-bg.jpg);
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: overlay;
+  }
+  .maintenance-icons{
+    li{
+      i{
+        color: $semi-dark;
+        font-size: 50px;
+        animation: rotate-effect 40s infinite linear reverse;
+      }
+      &:nth-child(2){
+        i{
+          font-size: 100px;
+          margin-left: 110px;
+          margin-top: -25px;
+          animation: rotate-effect 40s linear infinite reverse;
+        }
+      }
+      &:nth-child(3){
+        i{
+          animation: rotate-effect 30s infinite linear;
+          font-size: 150px;
+          margin-top: -85px;
+          margin-right: 120px;
+        }
+      }
+    }
+  }
+  .maintenance-heading {
+    margin-top: 70px;
+    .headline {
+      font-size: 99px;
+      font-weight: 900;
+      letter-spacing: 10px;
+      color: var(--theme-deafult);
+      z-index: 2;
+      position: relative;
+      margin-top: -70px;
+    }
+  }
+  .error-heading {
+    margin-top: 115px;
+    .headline {
+      font-size: 285px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-top: -130px;
+    }
+
+  }
+  .sub-content {
+    font-size: 18px;
+    color: $theme-body-font-color;
+    letter-spacing: 1px;
+    font-weight: normal;
+    line-height: 35px;
+    z-index: 3;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .btn{
+    margin-top: 40px;
+  }
+
+}
+.error{
+  margin: 70px 0 100px;
+  color:$black;
+  .error-title{
+    font-size: 9.5rem;
+    color:$white;
+    text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.32);
+  }
+  .line-bottom{
+    width: 10%;
+    height: 5px;
+    background-color: $warning-color;
+    border: none;
+  }
+  .c-white{
+    color:$white;
+  }
+  .error-btn{
+    text-align: center;
+  }
+  .padd{
+    padding: 10px 30px 10px 30px;
+  }
+  .btn-back-home{
+    background-color:$light-color;
+    color:$black;
+
+    &:hover{
+      background-color:$warning-color;
+      color:$white;
+      box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.21);
+    }
+  }
+  .btn-adnc-serc{
+    background-color:$dark-color;
+    color:$white;
+    &:hover{
+      background-color:$warning-color;
+      color:$white;
+      box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.21);
+
+    }
+  }
+}
+/**=====================
+     09. Error-page CSS Ends
+==========================**/
+

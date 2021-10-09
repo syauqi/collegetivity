@@ -1,0 +1,81 @@
+/*======= Page Title  =======*/
+.page-title-area {
+    padding-top: 145px;
+    padding-bottom: 145px;
+    background-color: $color-soft-grey-2;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    .page-title {
+        font-size: 65px;
+        margin-bottom: 20px;
+    }
+
+    .breadcrumb-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            position: relative;
+            line-height: 1;
+            font: {
+                size: 24px;
+                family: $font-cs-medium;
+                weight: 500;
+            }
+            color: $color-heading;
+
+            &:not(:last-child) {
+                &::after {
+                    display: inline-block;
+                    content: "\f105";
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    font-family: "Font Awesome 5 Pro";
+                    font-size: inherit;
+                    color: $color-heading;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+    }
+
+    .page-title-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .page-title-effect {
+        img {
+            position: absolute;
+        }
+
+        .particle-1 {
+            top: 30%;
+            left: 15%;
+        }
+
+        .particle-2 {
+            top: 45%;
+            left: 19%;
+        }
+
+        .particle-3 {
+            right: 26%;
+            top: 20%;
+        }
+
+        .particle-4 {
+            left: 25%;
+            bottom: 15%;
+        }
+
+        .particle-5 {
+            right: 15%;
+            bottom: 36%;
+        }
+    }
+}

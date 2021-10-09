@@ -1,0 +1,68 @@
+/*======= Progress Bar =======*/
+.progress-bars {
+    .single-progress {
+        &:not(:last-child) {
+            margin-bottom: 35px;
+        }
+
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .title,
+        .percentage {
+            color: $color-heading;
+            font: {
+                size: 18px;
+                family: $font-cs-bold;
+                weight: 700;
+            }
+            line-height: 1;
+        }
+
+        .progress-line {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 3px;
+            background-color: $color-white;
+
+            .line-inner {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 0;
+                height: 100%;
+                background-color: $color-primary;
+                transition: linear 1s;
+            }
+        }
+
+        &:nth-child(2) {
+            .progress-line {
+                .line-inner {
+                    background-color: $color-secondary;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            .progress-line {
+                .line-inner {
+                    background-color: #ff00fc;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            .progress-line {
+                .line-inner {
+                    background-color: #00b9ee;
+                }
+            }
+        }
+    }
+}

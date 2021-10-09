@@ -1,0 +1,60 @@
+@import "variables";
+@import '../../../utils/variables.scss';
+
+.br-theme-fontawesome-stars {
+
+  .br-widget {
+    height: 28px;
+    white-space: nowrap;
+  
+    a {
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      text-decoration: none;
+      margin-right: 2px;
+    }
+
+    a:after {
+      content: '\f005';
+      color: $star-default;
+    }
+
+    a.br-active:after {
+      color: var(--theme-deafult);
+    }
+
+    a.br-selected:after {
+      color: var(--theme-deafult);
+    }
+
+    .br-current-rating {
+      display: none;
+    }
+  }
+
+  .br-readonly {
+    a {
+      cursor: default;
+    }
+  }
+
+}
+
+@media print {
+  .br-theme-fontawesome-stars {
+
+    .br-widget {
+      a:after {
+        content: '\f006';
+        color: black;
+      }
+
+      a.br-active:after,
+      a.br-selected:after {
+        content: '\f005';
+        color: black;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,185 @@
+/**=====================
+    44. Tabs CSS Start
+==========================**/
+.nav-pills {
+  .nav-link.active, .show > .nav-link {
+    background-color: var(--theme-deafult);
+  }
+}
+.nav{
+  i{
+    margin-right: 10px;
+  }
+}
+
+$nav-name:theme,
+primary,
+secondary,
+success,
+danger,
+info,
+light,
+dark,
+warning;
+$nav-color:var(--theme-deafult),
+var(--theme-deafult),
+$secondary-color,
+$success-color,
+$danger-color,
+$info-color,
+$light-color,
+$dark-color,
+$warning-color;
+@each $var in $nav-name {
+  $i: index($label-name, $var);
+  .nav-#{$var} , .nav-pills.nav-#{$var} {
+    .nav-link{
+      color: nth($nav-color, $i);
+    }
+    .nav-link.active, .show > .nav-link {
+      background-color: nth($nav-color, $i);
+      color: $white;
+    }
+  }
+}
+.nav-tabs.nav-bottom {
+  .nav-item {
+    .nav-link.active,.nav-link.focus,.nav-link.hover{
+      border-color: $white #dee2e6 #dee2e6;
+    }
+  }
+}
+.tab-content{
+  ~ .nav-tabs{
+    &.border-tab {
+      margin-bottom: 0;
+      margin-top: 30px;
+    }
+  }
+}
+// Material style css
+.border-tab.nav-tabs{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+  .nav-item{
+    .nav-link{
+      font-size: 16px;
+      color: $dark-color;
+      text-align: center;
+      padding:10px 25px;
+      border: none;
+      border-bottom: 2px solid $transparent-color;
+      transition: 0.3s;
+      &.active, &.show, &:focus, &:hover {
+        color: var(--theme-deafult);
+      }
+      &.active, &.show, &:focus {
+        border-bottom: 2px solid var(--theme-deafult);
+      }
+    }
+  }
+}
+.border-tab.nav-left{
+  .nav-link{
+    border-left: 2px solid transparent;
+    transition: all 0.3s ease;
+    color: $dark-color;
+  }
+  .nav-link.active,.show > .nav-link{
+    background-color: transparent;
+    border-left-color: var(--theme-deafult);
+    color: var(--theme-deafult);
+    border-radius: 0;
+    transition: all 0.3s ease;
+  }
+}
+.border-tab.nav-right{
+  .nav-link{
+    border-right: 2px solid transparent;
+    transition: all 0.3s ease;
+    color: $dark-color;
+    text-align: right;
+  }
+  .nav-link.active,.show > .nav-link{
+    background-color: transparent;
+    border-right-color: var(--theme-deafult);
+    color: var(--theme-deafult);
+    border-radius: 0;
+    transition: all 0.3s ease;
+  }
+}
+$m-nav-name:theme,
+primary,
+secondary,
+success,
+danger,
+info,
+light,
+dark,
+warning;
+$nav-color:var(--theme-deafult),
+var(--theme-deafult),
+$secondary-color,
+$success-color,
+$danger-color,
+$info-color,
+$light-color,
+$dark-color,
+$warning-color;
+@each $var in $m-nav-name {
+  $i: index($label-name, $var);
+  .border-tab.nav-#{$var} {
+    .nav-link.active,.nav-item.show,.nav-link:focus,.nav-link:hover {
+      color: nth($nav-color, $i);
+      background-color: transparent;
+    }
+    .nav-item {
+      .nav-link {
+        transition: 0.3s;
+        &.active, &.show, &:focus {
+          border-bottom: 2px solid nth($nav-color, $i);
+        }
+        &.active, &.show, &:focus, &:hover {
+          color: nth($nav-color, $i);
+        }
+      }
+    }
+  }
+  .border-tab.nav-left.nav-#{$var}{
+    .nav-link.active,.show > .nav-link{
+      border-left-color: nth($nav-color, $i);
+      color: nth($nav-color, $i);
+    }
+  }
+  .border-tab.nav-right.nav-#{$var}{
+    .nav-link.active,.show > .nav-link{
+      border-right-color: nth($nav-color, $i);
+      color: nth($nav-color, $i);
+    }
+  }
+}
+.tabbed-card{
+  ul{
+    position: absolute;
+    right: 22px;
+    top: 33px;
+    border-bottom: none;
+    &.border-tab{
+      &.nav-tabs{
+        top: 12px;
+        .nav-item{
+          float: right;
+          .nav-link{
+            padding: 32px 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**=====================
+     44. Tabs CSS Ends
+==========================**/

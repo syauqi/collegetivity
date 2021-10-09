@@ -1,0 +1,868 @@
+- var status_toggle = (sidebar_open ? undefined : 'checked');
+// Page Sidebar Start
+.sidebar-wrapper
+  .logo-wrapper
+    a(href='index.html')
+        img.img-fluid.for-light(src='../assets/images/logo/logo.png', alt='')
+        img.img-fluid.for-dark(src='../assets/images/logo/logo_dark.png', alt='')
+    .back-btn
+      i.fa.fa-angle-left
+    .toggle-sidebar
+      i.status_toggle.middle(data-feather='grid').sidebar-toggle 
+  .logo-icon-wrapper
+    a(href="index.html")
+      img.img-fluid(src='../assets/images/logo/logo-icon.png', alt='')
+
+  nav.sidebar-main
+      .left-arrow#left-arrow
+        i(data-feather='arrow-left')
+      #sidebar-menu
+        ul.sidebar-links.custom-scrollbar
+          li.back-btn
+            a(href="index.html")
+              img.img-fluid(src='../assets/images/logo/logo-icon.png', alt='')
+            .mobile-back.text-right
+              span Back
+              i.fa.fa-angle-right.pl-2(aria-hidden='true')
+          li.sidebar-main-title
+            div
+              h6.lan-1 General
+              p.lan-2 Dashboards,widgets & layout.
+          li.sidebar-list
+            label.badge.badge-success 2
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='home')
+              span.lan-3 Dashboard              
+            ul.sidebar-submenu
+              li
+                a(href='index.html').lan-4
+                  | Default
+              li
+                a(href='dashboard-02.html').lan-5 Ecommerce
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='airplay')
+              span.lan-6 Widgets
+            ul.sidebar-submenu
+              li
+                a(href='general-widget.html') General
+              li
+                a(href='chart-widget.html') Chart
+
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='layout')
+              span.lan-7 Page layout
+            ul.sidebar-submenu
+              li
+                a(href='box-layout.html') Boxed
+              li
+                a(href='layout-rtl.html') RTL
+              li
+                a(href='layout-dark.html') Dark Layout
+              li
+                a(href='hide-on-scroll.html') Hide Nav Scroll
+              li
+                a(href='footer-light.html') Footer Light
+              li
+                a(href='footer-dark.html') Footer Dark
+              li
+                a(href='footer-fixed.html') Footer Fixed
+
+          li.sidebar-main-title
+            div
+              h6.lan-8 Applications
+              p.lan-9 Ready to use Apps
+
+
+          li.sidebar-list
+            label.badge.badge-danger New
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='box')
+              span Project                
+            ul.sidebar-submenu
+              li
+                a(href='projects.html') Project List
+              li
+                a(href='projectcreate.html') Create new
+
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='file-manager.html')
+              i(data-feather='git-pull-request') 
+              span File manager
+          li.sidebar-list   
+            label.badge.badge-info Latest             
+            a.sidebar-link.sidebar-title.link-nav(href='kanban.html')
+              i(data-feather='monitor') 
+              span kanban Board
+                
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='shopping-bag')
+              span Ecommerce
+            ul.sidebar-submenu
+              li
+                a(href='product.html') Product
+              li
+                a(href='product-page.html') Product page
+              li
+                a(href='list-products.html') Product list
+              li
+                a(href='payment-details.html') Payment Details
+              li
+                a(href='order-history.html') Order History
+              li
+                a(href='invoice-template.html') Invoice
+              li
+                a(href='cart.html') Cart
+              li
+                a(href='list-wish.html') Wishlist
+              li
+                a(href='checkout.html') Checkout
+              li
+                a(href='pricing.html') Pricing              
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='mail')
+              span Email
+            ul.sidebar-submenu
+              li
+                a(href='email-application.html') Email App
+              li
+                a(href='email-compose.html') Email Compose
+
+
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='message-circle')
+              span Chat
+            ul.sidebar-submenu
+              li
+                a(href='chat.html') Chat App
+              li
+                a(href='chat-video.html') Video chat
+
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='users')
+              span Users
+            ul.sidebar-submenu
+              li
+                a(href='user-profile.html') Users Profile
+              li
+                a(href='edit-profile.html') Users Edit
+              li
+                a(href='user-cards.html') Users Cards
+
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='bookmark.html')
+              i(data-feather='heart') 
+              span Bookmarks
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='contacts.html')
+              i(data-feather='list') 
+              span Contacts
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='task.html')
+              i(data-feather='check-square') 
+              span Tasks
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='calendar-basic.html')
+              i(data-feather='calendar') 
+              span Calendar
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='social-app.html')
+              i(data-feather='zap') 
+              span Social App
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='to-do.html')
+              i(data-feather='clock') 
+              span To-Do
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='search.html')
+              i(data-feather='search') 
+              span Search Result
+
+          li.sidebar-main-title
+            div
+              h6 Forms & Table
+              p Ready to use froms & tables 
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='file-text')
+              span Forms
+            ul.sidebar-submenu
+              li
+                a.submenu-title(href='#')
+                  | Form Controls
+                  span.sub-arrow
+                    i.fa.fa-angle-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='form-validation.html') Form Validation
+                  li
+                    a(href='base-input.html') Base Inputs
+                  li
+                    a(href='radio-checkbox-control.html') Checkbox & Radio
+                  li
+                    a(href='input-group.html') Input Groups
+                  li
+                    a(href='megaoptions.html') Mega Options
+              li
+                a.submenu-title(href='#')
+                  | Form Widgets
+                  span.sub-arrow
+                    i.fa.fa-angle-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='datepicker.html') Datepicker
+                  li
+                    a(href='time-picker.html') Timepicker
+                  li
+                    a(href='datetimepicker.html') Datetimepicker
+                  li
+                    a(href='daterangepicker.html') Daterangepicker
+                  li
+                    a(href='touchspin.html') Touchspin
+                  li
+                    a(href='select2.html') Select2
+                  li
+                    a(href='switch.html') Switch
+                  li
+                    a(href='typeahead.html') Typeahead
+                  li
+                    a(href='clipboard.html') Clipboard
+              li
+                a.submenu-title(href='#')
+                  | Form layout
+                  span.sub-arrow
+                    i.fa.fa-angle-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='default-form.html') Default Forms
+                  li
+                    a(href='form-wizard.html') Form Wizard 1
+                  li
+                    a(href='form-wizard-two.html') Form Wizard 2
+                  li
+                    a(href='form-wizard-three.html') Form Wizard 3
+                  li
+                    a(href='form-wizard-four.html') Form Wizard 4
+
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='server')
+              span Tables
+            ul.sidebar-submenu
+              li
+                a.submenu-title(href='#')
+                  | Bootstrap Tables
+                  span.sub-arrow
+                    i.fa.fa-angle-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='bootstrap-basic-table.html') Basic Tables
+                  li
+                    a(href='bootstrap-sizing-table.html') Sizing Tables
+                  li
+                    a(href='bootstrap-border-table.html') Border Tables
+                  li
+                    a(href='bootstrap-styling-table.html') Styling Tables
+                  li
+                    a(href='table-components.html') Table components
+              li
+                a.submenu-title(href='#')
+                  | Data Tables
+                  span.sub-arrow
+                    i.fa.fa-angle-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='datatable-basic-init.html') Basic Init
+                  li
+                    a(href='datatable-advance.html') Advance Init
+                  li
+                    a(href='datatable-styling.html') Styling
+                  li
+                    a(href='datatable-AJAX.html') AJAX
+                  li
+                    a(href='datatable-server-side.html') Server Side
+                  li
+                    a(href='datatable-plugin.html') Plug-in
+                  li
+                    a(href='datatable-API.html') API
+                  li
+                    a(href='datatable-data-source.html') Data Sources
+              li
+                a.submenu-title(href='#')
+                  | Ex. Data Tables
+                  span.sub-arrow
+                    i.fa.fa-angle-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='datatable-ext-autofill.html') Auto Fill
+                  li
+                    a(href='datatable-ext-basic-button.html') Basic Button
+                  li
+                    a(href='datatable-ext-col-reorder.html') Column Reorder
+                  li
+                    a(href='datatable-ext-fixed-header.html') Fixed Header
+                  li
+                    a(href='datatable-ext-html-5-data-export.html') HTML 5 Export
+                  li
+                    a(href='datatable-ext-key-table.html') Key Table
+                  li
+                    a(href='datatable-ext-responsive.html') Responsive
+                  li
+                    a(href='datatable-ext-row-reorder.html') Row Reorder
+                  li
+                    a(href='datatable-ext-scroller.html') Scroller
+              li
+                a(href='jsgrid-table.html') Js Grid Table        
+
+          
+          li.sidebar-main-title
+            div
+              h6 Components
+              p UI Components & Elements 
+
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='box')
+              span Ui Kits
+            ul.sidebar-submenu
+              li
+                a(href='state-color.html') State color
+              li
+                a(href='typography.html') Typography
+              li
+                a(href='avatars.html') Avatars
+              li
+                a(href='helper-classes.html') helper classes
+              li
+                a(href='grid.html') Grid
+              li
+                a(href='tag-pills.html') Tag & pills
+              li
+                a(href='progress-bar.html') Progress
+              li
+                a(href='modal.html') Modal
+              li
+                a(href='alert.html') Alert
+              li
+                a(href='popover.html') Popover
+              li
+                a(href='tooltip.html') Tooltip
+              li
+                a(href='loader.html') Spinners
+              li
+                a(href='dropdown.html') Dropdown
+              li
+                a(href='according.html') Accordion
+              li
+                a.submenu-title(href='#')
+                  | Tabs
+                  span.sub-arrow
+                    i.fa.fa-angle-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='tab-bootstrap.html') Bootstrap Tabs
+                  li
+                    a(href='tab-material.html') Line Tabs
+              li
+                a(href='box-shadow.html') Shadow
+              li
+                a(href='list.html') Lists
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='folder-plus')
+              span Bonus Ui
+            ul.sidebar-submenu
+              li
+                a(href='scrollable.html') Scrollable
+              li
+                a(href='tree.html') Tree view
+              li
+                a(href='bootstrap-notify.html') Bootstrap Notify
+              li
+                a(href='rating.html') Rating
+              li
+                a(href='dropzone.html') dropzone
+              li
+                a(href='tour.html') Tour
+              li
+                a(href='sweet-alert2.html') SweetAlert2
+              li
+                a(href='modal-animated.html') Animated Modal
+              li
+                a(href='owl-carousel.html') Owl Carousel
+              li
+                a(href='ribbons.html') Ribbons
+              li
+                a(href='pagination.html') Pagination
+              li
+                a(href='breadcrumb.html') Breadcrumb
+              li
+                a(href='range-slider.html') Range Slider
+              li
+                a(href='image-cropper.html') Image cropper
+              li
+                a(href='sticky.html') Sticky
+              li
+                a(href='basic-card.html') Basic Card
+              li
+                a(href='creative-card.html') Creative Card
+              li
+                a(href='tabbed-card.html') Tabbed Card
+              li
+                a(href='dragable-card.html') Draggable Card
+              li
+                a.submenu-title(href='#')
+                  | Timeline
+                  span.sub-arrow
+                    i.fa.fa-angle-right
+                ul.nav-sub-childmenu.submenu-content
+                    li
+                      a(href='timeline-v-1.html') Timeline 1
+                    li
+                      a(href='timeline-v-2.html') Timeline 2
+
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='edit-3')
+              span Builders
+            ul.sidebar-submenu
+              li
+                a(href='form-builder-1.html')  Form Builder 1
+              li
+                a(href='form-builder-2.html')  Form Builder 2
+              li
+                a(href='pagebuild.html') Page Builder
+              li
+                a(href='button-builder.html') Button Builder
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='cloud-drizzle')
+              span Animation
+            ul.sidebar-submenu
+              li
+                a(href='animate.html') Animate
+              li
+                a(href='scroll-reval.html') Scroll Reveal
+              li
+                a(href='AOS.html') AOS animation
+              li
+                a(href='tilt.html') Tilt Animation
+              li
+                a(href='wow.html') Wow Animation
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='command')
+              span Icons
+            ul.sidebar-submenu
+              li
+                a(href='flag-icon.html') Flag icon
+              li
+                a(href='font-awesome.html') Fontawesome Icon
+              li
+                a(href='ico-icon.html') Ico Icon
+              li
+                a(href='themify-icon.html') Thimify Icon
+              li
+                a(href='feather-icon.html') Feather icon
+              li
+                a(href='whether-icon.html') Whether Icon
+              li
+                a(href='simple-line-icon.html') Simple line Icon
+              li
+                a(href='material-design-icon.html') Material Design Icon
+              li
+                a(href='pe7-icon.html') pe7 icon
+              li
+                a(href='typicons-icon.html') Typicons icon
+              li
+                a(href='ionic-icon.html') Ionic icon
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='cloud')
+              span Buttons
+            ul.sidebar-submenu
+              li
+                a(href='buttons.html') Default Style
+              li
+                a(href='buttons-flat.html') Flat Style
+              li
+                a(href='buttons-edge.html') Edge Style
+              li
+                a(href='raised-button.html') Raised Style
+              li
+
+                a(href='button-group.html') Button Group
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='bar-chart')
+              span Charts
+            ul.sidebar-submenu
+              li
+                a(href='chart-apex.html') Apex Chart
+              li
+                a(href='chart-google.html') Google Chart
+              li
+                a(href='chart-sparkline.html') Sparkline chart
+              li
+                a(href='chart-flot.html') Flot Chart
+              li
+                a(href='chart-knob.html') Knob Chart
+              li
+                a(href='chart-morris.html') Morris Chart
+              li
+                a(href='chartjs.html') Chatjs Chart
+              li
+                a(href='chartist.html') Chartist Chart
+              li
+                a(href='chart-peity.html') Peity Chart
+
+          li.sidebar-main-title
+            div
+              h6 Forms & Table
+              p Ready to use froms & tables 
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='file-text')
+              span Forms
+            ul.sidebar-submenu
+              li
+                a.submenu-title(href='#')
+                  | Form Controls
+                  span.sub-arrow
+                    i.fa.fa-angle-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='form-validation.html') Form Validation
+                  li
+                    a(href='base-input.html') Base Inputs
+                  li
+                    a(href='radio-checkbox-control.html') Checkbox & Radio
+                  li
+                    a(href='input-group.html') Input Groups
+                  li
+                    a(href='megaoptions.html') Mega Options
+              li
+                a.submenu-title(href='#')
+                  | Form Widgets
+                  span.sub-arrow
+                    i.fa.fa-angle-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='datepicker.html') Datepicker
+                  li
+                    a(href='time-picker.html') Timepicker
+                  li
+                    a(href='datetimepicker.html') Datetimepicker
+                  li
+                    a(href='daterangepicker.html') Daterangepicker
+                  li
+                    a(href='touchspin.html') Touchspin
+                  li
+                    a(href='select2.html') Select2
+                  li
+                    a(href='switch.html') Switch
+                  li
+                    a(href='typeahead.html') Typeahead
+                  li
+                    a(href='clipboard.html') Clipboard
+              li
+                a.submenu-title(href='#')
+                  | Form layout
+                  span.sub-arrow
+                    i.fa.fa-angle-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='default-form.html') Default Forms
+                  li
+                    a(href='form-wizard.html') Form Wizard 1
+                  li
+                    a(href='form-wizard-two.html') Form Wizard 2
+                  li
+                    a(href='form-wizard-three.html') Form Wizard 3
+                  li
+                    a(href='form-wizard-four.html') Form Wizard 4
+
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='server')
+              span Tables
+            ul.sidebar-submenu
+              li
+                a.submenu-title(href='#')
+                  | Bootstrap Tables
+                  span.sub-arrow
+                    i.fa.fa-angle-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='bootstrap-basic-table.html') Basic Tables
+                  li
+                    a(href='bootstrap-sizing-table.html') Sizing Tables
+                  li
+                    a(href='bootstrap-border-table.html') Border Tables
+                  li
+                    a(href='bootstrap-styling-table.html') Styling Tables
+                  li
+                    a(href='table-components.html') Table components
+              li
+                a.submenu-title(href='#')
+                  | Data Tables
+                  span.sub-arrow
+                    i.fa.fa-angle-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='datatable-basic-init.html') Basic Init
+                  li
+                    a(href='datatable-advance.html') Advance Init
+                  li
+                    a(href='datatable-styling.html') Styling
+                  li
+                    a(href='datatable-AJAX.html') AJAX
+                  li
+                    a(href='datatable-server-side.html') Server Side
+                  li
+                    a(href='datatable-plugin.html') Plug-in
+                  li
+                    a(href='datatable-API.html') API
+                  li
+                    a(href='datatable-data-source.html') Data Sources
+              li
+                a.submenu-title(href='#')
+                  | Ex. Data Tables
+                  span.sub-arrow
+                    i.fa.fa-angle-right
+                ul.nav-sub-childmenu.submenu-content
+                  li
+                    a(href='datatable-ext-autofill.html') Auto Fill
+                  li
+                    a(href='datatable-ext-basic-button.html') Basic Button
+                  li
+                    a(href='datatable-ext-col-reorder.html') Column Reorder
+                  li
+                    a(href='datatable-ext-fixed-header.html') Fixed Header
+                  li
+                    a(href='datatable-ext-html-5-data-export.html') HTML 5 Export
+                  li
+                    a(href='datatable-ext-key-table.html') Key Table
+                  li
+                    a(href='datatable-ext-responsive.html') Responsive
+                  li
+                    a(href='datatable-ext-row-reorder.html') Row Reorder
+                  li
+                    a(href='datatable-ext-scroller.html') Scroller
+              li
+                a(href='jsgrid-table.html') Js Grid Table        
+
+          li.sidebar-main-title
+            div
+              h6 Pages
+              p All neccesory pages added
+
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='landing-page.html')
+              i(data-feather='cast') 
+              span Landing page
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='sample-page.html')
+              i(data-feather='file-text') 
+              span Sample page
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='internationalization.html')
+              i(data-feather='globe') 
+              span Internationalization
+
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='../starter-kit/index.html' target='_blank')
+              i(data-feather='anchor')
+              span Starter kit
+
+          li.mega-menu
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='layers')
+              span Others
+            .mega-menu-container.menu-content
+              .container-fluid
+                .row
+                  .col.mega-box
+                    .link-section
+                      .submenu-title
+                        h5 Error Page
+                      ul.submenu-content.opensubmegamenu
+                          li
+                            a(href='error-400.html') Error 400
+                          li
+                            a(href='error-401.html') Error 401
+                          li
+                            a(href='error-403.html') Error 403
+                          li
+                            a(href='error-404.html') Error 404
+                          li
+                            a(href='error-500.html') Error 500
+                          li
+                            a(href='error-503.html') Error 503
+                  .col.mega-box
+                    .link-section
+                      .submenu-title
+                        h5  Authentication
+                      ul.submenu-content.opensubmegamenu
+                          li
+                            a(href='login.html' target="_blank") Login Simple
+                          li
+                            a(href='login_one.html' target="_blank") Login with bg image
+                          li
+                            a(href='login_two.html' target="_blank") Login with image two                      
+                          li
+                            a(href='login-bs-validation.html' target="_blank") Login With validation
+                          li
+                            a(href='login-bs-tt-validation.html' target="_blank") Login with tooltip
+                          li
+                            a(href='login-sa-validation.html' target="_blank") Login with sweetalert
+
+                          li
+                            a(href='sign-up.html' target="_blank") Register Simple
+                          li
+                            a(href='sign-up-one.html' target="_blank")
+                              | Register with Bg Image                              
+                          li
+                            a(href='sign-up-two.html' target="_blank") Register with Bg video
+                          li
+                            a(href='sign-up-wizard.html' target="_blank") Register wizard
+
+
+                          li
+                            a(href='unlock.html') Unlock User
+                          li
+                            a(href='forget-password.html') Forget Password
+                          li
+                            a(href='reset-password.html') Reset Password
+                          li
+                            a(href='maintenance.html') Maintenance
+                  .col.mega-box
+                    .link-section
+                      .submenu-title
+                        h5 Coming Soon
+                      ul.submenu-content.opensubmegamenu
+                          li
+                            a(href='comingsoon.html') Coming Simple
+                          li
+                            a(href='comingsoon-bg-video.html') Coming with Bg video
+                          li
+                            a(href='comingsoon-bg-img.html') Coming with Bg Image
+                  .col.mega-box
+                    .link-section
+                      .submenu-title
+                        h5 Email templates
+                      ul.submenu-content.opensubmegamenu
+                          li
+                            a(href='basic-template.html')
+                              | Basic Email
+                          li
+                            a(href='email-header.html')
+                              | Basic With Header
+                          li
+                            a(href='template-email.html')
+                              | Ecomerce Template
+                          li
+                            a(href='template-email-2.html')
+                              | Email Template 2
+                          li
+                            a(href='ecommerce-templates.html')
+                              | Ecommerce Email
+                          li
+                            a(href='email-order-success.html')
+                              | Order Success
+          li.sidebar-main-title
+            div
+              h6 Miscellaneous
+              p Bouns pages & apps
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='image')
+              span Gallery
+            ul.sidebar-submenu
+              li
+                a(href='gallery.html') Gallery Grid
+              li
+                a(href='gallery-with-description.html') Gallery Grid Desc
+              li
+                a(href='gallery-masonry.html') Masonry Gallery
+              li
+                a(href='masonry-gallery-with-disc.html') Masonry with Desc
+              li
+                a(href='gallery-hover.html') Hover Effects
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='film')
+              span Blog
+            ul.sidebar-submenu
+              li
+                a(href='blog.html') Blog Details
+              li
+                a(href='blog-single.html') Blog Single
+              li
+                a(href='add-post.html') Add Post
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='faq.html')
+              i(data-feather='help-circle') 
+              span FAQ
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='package')
+              span Job Search
+            ul.sidebar-submenu
+              li
+                a(href='job-cards-view.html') Cards view
+              li
+                a(href='job-list-view.html') List View
+              li
+                a(href='job-details.html') Job Details
+              li
+                a(href='job-apply.html') Apply
+
+
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='radio')
+              span Learning
+            ul.sidebar-submenu
+              li
+                a(href='learning-list-view.html') Learning List
+              li
+                a(href='learning-detailed.html') Detailed Course
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='map')
+              span Maps
+            ul.sidebar-submenu
+              li
+                a(href='map-js.html') Maps JS
+              li
+                a(href='vector-map.html') Vector Maps
+          li.sidebar-list
+            a.sidebar-link.sidebar-title(href='#')
+              i(data-feather='edit')
+              span Editors
+            ul.sidebar-submenu
+              li
+                a(href='summernote.html') Summer Note
+              li
+                a(href='ckeditor.html') CK editor
+              li
+                a(href='simple-MDE.html') MDE editor
+              li
+                a(href='ace-code-editor.html') ACE code editor 
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='knowledgebase.html')
+              i(data-feather='sunrise') 
+              span Knowledgebase
+          li.sidebar-list
+            a.sidebar-link.sidebar-title.link-nav(href='support-ticket.html')
+              i(data-feather='users') 
+              span Support Ticket
+      .right-arrow#right-arrow
+        i(data-feather='arrow-right')
+// Page Sidebar Ends

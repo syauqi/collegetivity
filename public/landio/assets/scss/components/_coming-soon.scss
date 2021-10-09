@@ -1,0 +1,30 @@
+/*======= Coming Soon =======*/
+.coming-soon-area {
+    background-color: $color-soft-grey-2;
+    padding: 150px 0 100px;
+
+    .title {
+        margin-bottom: 25px;
+        font-size: 92px;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+
+    .newsletter-notice {
+        color: $color-heading;
+        font-size: 20px;
+        font-family: $font-cs-medium;
+        padding-top: 30px;
+    }
+}
+
+.coming-soon-page {
+    .template-header {
+        padding: 20px 0;
+        border-bottom: 2px solid rgb(220 221 224 / 50%);
+
+        .off-canvas-btn span {
+            background-color: $color-primary;
+        }
+    }
+}

@@ -1,0 +1,149 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var flotchart             = true;
+- var page_flotchart        = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Flot Chart
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Charts
+                                      li.breadcrumb-item.active Flot Chart
+                    // Container-fluid starts
+                    .container-fluid
+                      .row.all-chart
+                        .col-sm-12.col-xl-6.box-col-12
+                          .card
+                            .card-header
+                              h5 Real-Time Updates
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #real-time-update.flot-chart-placeholder
+                        .col-sm-12.col-xl-6.box-col-12
+                          .card
+                            .card-header
+                              h5 Multiple Real-Time Updates
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #multiple-real-timeupdate.flot-chart-placeholder
+                        .col-sm-12.col-xl-6.box-col-12
+                          .card
+                            .card-header
+                              h5 Error chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #error-flot-chart.flot-chart-placeholder
+                        .col-sm-12.col-xl-6.box-col-12
+                          .card
+                            .card-header
+                              h5 Adding Annotations chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #annotations-chart.flot-chart-placeholder
+                        .col-sm-12.col-xl-6.box-col-12
+                          .card
+                            .card-header
+                              h5 Basic chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #flot-basic-chart.flot-chart-placeholder
+                        .col-sm-12.col-xl-6.box-col-12
+                          .card
+                            .card-header
+                              h5 Categories Chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #flot-categories.flot-chart-placeholder
+                        .col-sm-12.col-xl-6.box-col-12
+                          .card
+                            .card-header
+                              h5 Toggling Series Chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #toggling-series-flot.flot-chart-placeholder.float-left
+                                p#choices.float-right
+                        .col-sm-12.col-xl-6.box-col-12
+                          .card
+                            .card-header
+                              h5 Stacking chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #stacking-flot-chart.flot-chart-placeholder          
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5 Default pie chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #default-pie-flot-chart.flot-chart-placeholder
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5 Default pie chart (Interactive)
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #default-pie-flot-chart-hover.flot-chart-placeholder
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5 Default pie chart without legend
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #default-pie-legend-flot-chart.flot-chart-placeholder
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5 Custom Label Formatter
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #custom-label1pie.flot-chart-placeholder
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5 Label Radius chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #label-radius-flot-chart.flot-chart-placeholder
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5 Hidden Labels chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #hidden-label-radius-flot-chart.flot-chart-placeholder
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5 Tilted Pie chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #title-pie-flot-chart.flot-chart-placeholder
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5 Donut Hole chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #dount-hole-flot-chart.flot-chart-placeholder
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

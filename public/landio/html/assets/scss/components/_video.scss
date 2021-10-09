@@ -1,0 +1,59 @@
+/*======= Landio Vidoe v1  =======*/
+.landio-video {
+    position: relative;
+    z-index: 3;
+    height: 650px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    .play-btn {
+        z-index: 1;
+        height: 80px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-primary;
+        color: $color-white;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(1.4);
+            background-color: $color-primary;
+            opacity: 0.15;
+        }
+
+        &.color-heading-3 {
+            &,
+            &::before {
+                background-color: $color-heading-3;
+            }
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: $color-heading-3;
+        z-index: -1;
+        border-radius: 10px;
+        opacity: 0.3;
+    }
+}

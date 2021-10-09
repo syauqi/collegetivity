@@ -1,0 +1,76 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var range_slider          = true;
+- var page_range_slider     = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Range Slider
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Bonus Ui
+                                      li.breadcrumb-item.active Range Slider
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Ion Range Slider
+                            .card-body
+                              form.theme-form.form-label-align-right.range-slider
+                                .form-group.row
+                                  label.col-md-2.col-form-label.sm-left-text(for='u-range-01') Default
+                                  .col-md-10
+                                    input#u-range-01(type='text')
+                                .form-group.row
+                                  label.col-md-2.control-label.sm-left-text(for='u-range-02') Min-Max Value
+                                  .col-md-10
+                                    input#u-range-02(type='text')
+                                .form-group.row
+                                  label.col-md-2.control-label.sm-left-text(for='u-range-03') Prefix
+                                  .col-md-10
+                                    input#u-range-03(type='text')
+                                .form-group.row
+                                  label.col-md-2.control-label.sm-left-text(for='u-range-04') Nagative value
+                                  .col-md-10
+                                    input#u-range-04(type='text')
+                                .form-group.row
+                                  label.col-md-2.control-label.sm-left-text(for='u-range-05') Steps
+                                  .col-md-10
+                                    input#u-range-05(type='text')
+                                .form-group.row
+                                  label.col-md-2.control-label.sm-left-text(for='u-range-06') Custom Values
+                                  .col-md-10
+                                    input#u-range-06(type='text')
+                                .form-group.row
+                                  label.col-md-2.control-label.sm-left-text(for='u-range-07') Prettify Numbers
+                                  .col-md-10
+                                    input#u-range-07(type='text')
+                                .form-group.row.mb-0
+                                  label.col-md-2.control-label.sm-left-text(for='u-range-08') Disabled
+                                  .col-md-10
+                                    input#u-range-08(type='text')
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

@@ -1,0 +1,208 @@
+/**=====================
+    84. Checkout CSS start
+==========================**/
+.checkout {
+	.checkout-details {
+		background-color: #f9f9f9;
+		border: 1px solid #dddddd;
+		padding: 40px;
+	}
+}
+
+.order-box {
+	.title-box {
+		padding-bottom: 20px;
+		color: #444444;
+		font-size: 22px;
+		border-bottom: 1px solid #ededed;
+		margin-bottom: 20px;
+
+		span {
+			width: 35%;
+			float: right;
+			font-weight: 600;
+		}
+
+		h4 {
+			font-weight: 600;
+		}
+
+		.checkbox-title {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	.sub-total {
+		li {
+			position: relative;
+			display: inline-block;
+			font-size: 16px;
+			font-weight: 600;
+			color: #333333;
+			line-height: 20px;
+			margin-bottom: 20px;
+			width: 100%;
+
+			.count {
+				position: relative;
+				font-size: 18px;
+				line-height: 20px;
+				font-weight: 400;
+				width: 35%;
+				float: right;
+			}
+		}
+
+		.shipping-class {
+			margin-bottom: 12px;
+
+			.shopping-checkout-option {
+				margin-top: -4px;
+				position: relative;
+				font-size: 18px;
+				line-height: 20px;
+				color: var(--theme-deafult);
+				font-weight: 400;
+				width: 35%;
+				float: right;
+			}
+		}
+
+	}
+
+	.total {
+		position: relative;
+		margin-bottom: 30px;
+
+		li {
+			position: relative;
+			display: block;
+			font-weight: 400;
+			color: #333333;
+			line-height: 20px;
+			font-size: 18px;
+		}
+	}
+
+	.qty {
+		position: relative;
+		border-bottom: 1px solid #ededed;
+		margin-bottom: 30px;
+
+		li {
+			position: relative;
+			display: block;
+			font-size: 15px;
+			color: #444444;
+			line-height: 20px;
+			margin-bottom: 20px;
+
+			span {
+				float: right;
+				font-size: 18px;
+				line-height: 20px;
+				color: #232323;
+				font-weight: 400;
+				width: 35%;
+			}
+		}
+	}
+}
+
+.radio-option {
+	position: relative;
+}
+
+.img-paypal {
+	width: 30%;
+	margin-left: 15px;
+}
+
+
+/**=====================
+    86. Checkout CSS Ends
+==========================**/
+
+/**=====================
+    Responsive CSS Start
+==========================**/
+@media screen and (max-width: 1199px) {
+	.checkout {
+		.checkout-details {
+			padding: 25px;
+		}
+	}
+
+	.order-box {
+		.title-box {
+			span {
+				width: 30%;
+			}
+		}
+
+		.sub-total {
+			li {
+				.count {
+					width: 30%;
+				}
+			}
+
+			.shipping-class {
+				.shopping-checkout-option {
+					width: 32%;
+				}
+			}
+		}
+
+		.qty {
+			li {
+				span {
+					width: 30%;
+				}
+			}
+		}
+
+		.total {
+			li {
+				.count {
+					width: 30%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.order-box {
+		.sub-total {
+			.shipping-class {
+				.shopping-checkout-option {
+					width: 30%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.order-box {
+		.sub-total {
+			.shipping-class {
+				.shopping-checkout-option {
+					width: 50%;
+				}
+			}
+
+			li {
+				.count {
+					width: 50%;
+				}
+			}
+		}
+	}
+}
+
+/**=====================
+    84. Checkout CSS ends
+==========================**/

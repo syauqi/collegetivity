@@ -1,0 +1,96 @@
+/*======= Seo Score Box =======*/
+.seo-score-box {
+    position: relative;
+    z-index: 2;
+    border-radius: 12px;
+    background: linear-gradient(
+        110deg,
+        rgb(0, 64, 229) 0%,
+        rgb(2, 140, 235) 59%,
+        rgb(4, 215, 241) 100%
+    );
+    padding: 80px 0;
+    text-align: center;
+
+    .score-box-title {
+        font-size: 50px;
+        line-height: 1.2;
+        color: $color-white;
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: $color-white;
+        font-size: 18px;
+    }
+
+    .score-box-form {
+        margin-top: 35px;
+    }
+
+    .form-group {
+        position: relative;
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        &:after {
+            position: absolute;
+            content: "";
+            height: 40px;
+            width: 3px;
+            background-color: #e5ecfc;
+            left: 45%;
+        }
+
+        input {
+            height: 80px;
+            padding: 0 20px;
+            border: 0;
+            font-size: 18px;
+            color: $color-heading-2;
+        }
+
+        input:first-of-type {
+            border-radius: 50px 0 0 50px;
+            padding-left: 45px;
+            width: 45%;
+        }
+
+        input:last-of-type {
+            border-radius: 0 50px 50px 0;
+            padding-right: 213px;
+            width: 55%;
+            padding-left: 25px;
+        }
+
+        button {
+            position: absolute;
+            right: 15px;
+        }
+    }
+
+    .seo-images {
+        position: absolute;
+        height: 80%;
+        width: 100%;
+        bottom: 0;
+        background-image: url("../img/particle/announcement.png"),
+            url("../img/particle/launch-rocket.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 20px 0px, bottom right;
+        z-index: -1;
+    }
+
+    &.particle-image-two {
+        background: $color-primary;
+        .seo-images {
+            height: 100%;
+            background-image: url("../img/particle/announcement.png"),
+                url("../img/particle/seo-lines.png");
+            background-position: 2% 100%, top right;
+            background-size: inherit;
+        }
+    }
+}

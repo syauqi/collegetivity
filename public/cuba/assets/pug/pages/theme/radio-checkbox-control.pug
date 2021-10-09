@@ -1,0 +1,242 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Checkbox & Radio
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Form Controls
+                                      li.breadcrumb-item.active  Checkbox & Radio
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-md-6
+                          .card
+                            .card-header
+                              h5 Custom Radio
+                            .card-body
+                              .row
+                                .col-sm-12
+                                  h5 Custom Radio
+                                .col
+                                  .form-group.m-t-15.custom-radio-ml
+                                    .radio.radio-primary
+                                      input#radio1(type='radio', name='radio1', value='option1')
+                                      label(for='radio1')
+                                        | Option
+                                        span  1
+                                    .radio.radio-primary
+                                      input#radio3(type='radio', name='radio1', value='option1', disabled='')
+                                      label(for='radio3') Disabled
+                                    .radio.radio-primary
+                                      input#radio4(type='radio', name='radio1', value='option1', checked='')
+                                      label(for='radio4') Checked
+                                .col-sm-12
+                                  h5 Radio states
+                                .col
+                                  .form-group.m-t-15.custom-radio-ml
+                                    .radio.radio-primary
+                                      input#radio11(type='radio', name='radio1', value='option1')
+                                      label(for='radio11')
+                                        | Option
+                                        span  1
+                                    .radio.radio-secondary
+                                      input#radio22(type='radio', name='radio1', value='option1')
+                                      label(for='radio22')
+                                        | Option
+                                        span  2
+                                    .radio.radio-success
+                                      input#radio55(type='radio', name='radio1', value='option1')
+                                      label(for='radio55')
+                                        | Option
+                                        span  3
+                                    .radio.radio-info
+                                      input#radio33(type='radio', name='radio1', value='option1', disabled='')
+                                      label(for='radio33')
+                                        | Option
+                                        span  4
+                                    .radio.radio-warning
+                                      input#radio44(type='radio', name='radio1', value='option1')
+                                      label(for='radio44')
+                                        | Option
+                                        span  5
+                                    .radio.radio-danger
+                                      input#radio66(type='radio', name='radio1', value='option1', checked='')
+                                      label(for='radio66')
+                                        | Option
+                                        span  6
+                                .col-sm-12
+                                  h5 Inline checkbox
+                                .col
+                                  .form-group.m-t-15.m-checkbox-inline.mb-0.custom-radio-ml
+                                    .radio.radio-primary
+                                      input#radioinline1(type='radio', name='radio1', value='option1')
+                                      label.mb-0(for='radioinline1')
+                                        | Option
+                                        span  1
+                                    .radio.radio-primary
+                                      input#radioinline2(type='radio', name='radio1', value='option1')
+                                      label.mb-0(for='radioinline2')
+                                        | Option
+                                        span  2
+                                    .radio.radio-primary
+                                      input#radioinline3(type='radio', name='radio1', value='option1')
+                                      label.mb-0(for='radioinline3')
+                                        | Option
+                                        span  3
+                        .col-md-6
+                          .card
+                            .card-header
+                              h5 Custom checkbox
+                            .card-body
+                              .row
+                                .col-sm-12
+                                  h5 Custom checkbox
+                                .col
+                                  .form-group.m-t-15
+                                    .checkbox
+                                      input#checkbox1(type='checkbox')
+                                      label(for='checkbox1') Default
+                                    .checkbox
+                                      input#checkbox2(type='checkbox', disabled='')
+                                      label(for='checkbox2') Disabled
+                                    .checkbox
+                                      input#checkbox3(type='checkbox', checked='')
+                                      label(for='checkbox3') Checked
+                                .col-sm-12
+                                  h5 Checkbox states
+                                .col
+                                  .form-group.m-t-15
+                                    .checkbox.checkbox-primary
+                                      input#checkbox-primary-1(type='checkbox')
+                                      label(for='checkbox-primary-1') Success state
+                                    .checkbox.checkbox-secondary
+                                      input#checkbox-dark(type='checkbox', disabled='')
+                                      label(for='checkbox-dark') Brand state
+                                    .checkbox.checkbox-success
+                                      input#checkbox-primary(type='checkbox')
+                                      label(for='checkbox-primary') primary state
+                                .col-sm-12
+                                  h5 Inline checkbox
+                                .col
+                                  .form-group.m-t-15.m-checkbox-inline.mb-0
+                                    .checkbox.checkbox-dark
+                                      input#inline-1(type='checkbox')
+                                      label(for='inline-1')
+                                        | Option
+                                        span  1
+                                    .checkbox.checkbox-dark
+                                      input#inline-2(type='checkbox')
+                                      label(for='inline-2')
+                                        | Option
+                                        span  2
+                                    .checkbox.checkbox-dark
+                                      input#inline-3(type='checkbox')
+                                      label(for='inline-3')
+                                        | Option
+                                        span  3
+                        .col-md-6
+                          .card
+                            .card-header
+                              h5 Animated radio buttons
+                            .card-body.animate-chk
+                              .row
+                                .col
+                                  label.d-block(for='edo-ani')
+                                    input#edo-ani.radio_animated(type='radio', name='rdo-ani', checked='')
+                                    |                                                 Option 1
+                                  label.d-block(for='edo-ani1')
+                                    input#edo-ani1.radio_animated(type='radio', name='rdo-ani')
+                                    |                                                 Option 2
+                                  label.d-block(for='edo-ani2')
+                                    input#edo-ani2.radio_animated(type='radio', name='rdo-ani', checked='')
+                                    |                                                 Option 3
+                                  label.d-block(for='edo-ani13')
+                                    input#edo-ani13.radio_animated(type='radio', name='rdo-ani')
+                                    |                                                 Option 4
+                        .col-md-6
+                          .card
+                            .card-header
+                              h5 Animated checkbox buttons
+                            .card-body.animate-chk
+                              .row
+                                .col
+                                  label.d-block(for='chk-ani')
+                                    input#chk-ani.checkbox_animated(type='checkbox', checked='')
+                                    |                                                 Option 1
+                                  label.d-block(for='chk-ani1')
+                                    input#chk-ani1.checkbox_animated(type='checkbox')
+                                    |                                                 Option 2
+                                  label.d-block(for='chk-ani2')
+                                    input#chk-ani2.checkbox_animated(type='checkbox', checked='')
+                                    |                                                 Option 3
+                                  label.d-block(for='chk-ani3')
+                                    input#chk-ani3.checkbox_animated(type='checkbox')
+                                    |                                                 Option 4
+                        .col-md-12
+                          .card
+                            .card-header
+                              h5 Square checkbox
+                            .card-body
+                              .row
+                                .col
+                                  .form-group
+                                    .checkbox.checkbox-dark.m-squar
+                                      input#inline-sqr-1(type='checkbox')
+                                      label.mt-0(for='inline-sqr-1') Default
+                                    .checkbox.checkbox-dark.m-squar
+                                      input#inline-sqr-2(type='checkbox', disabled='')
+                                      label(for='inline-sqr-2') Disabled
+                                    .checkbox.checkbox-dark.m-squar
+                                      input#inline-sqr-3(type='checkbox', checked='')
+                                      label(for='inline-sqr-3') checked
+                                .col-sm-12
+                                  h5 Solid checkbox
+                                .col
+                                  .form-group.m-t-15.mb-0
+                                    .checkbox.checkbox-solid-success
+                                      input#solid1(type='checkbox')
+                                      label(for='solid1') Default
+                                    .checkbox.checkbox-solid-dark
+                                      input#solid2(type='checkbox', disabled='')
+                                      label(for='solid2') Disabled
+                                    .checkbox.checkbox-solid-primary
+                                      input#solid3(type='checkbox', checked='')
+                                      label(for='solid3') checked
+                                    .checkbox.checkbox-solid-danger
+                                      input#solid4(type='checkbox', checked='')
+                                      label(for='solid4') checked
+                                    .checkbox.checkbox-solid-light
+                                      input#solid5(type='checkbox', checked='')
+                                      label(for='solid5') checked
+                                    .checkbox.checkbox-solid-info
+                                      input#solid6(type='checkbox', checked='')
+                                      label(for='solid6') checked
+                                    .checkbox.checkbox-solid-dark
+                                      input#solid7(type='checkbox', checked='')
+                                      label.mb-0(for='solid7') checked
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

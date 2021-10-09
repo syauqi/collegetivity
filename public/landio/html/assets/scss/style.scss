@@ -1,0 +1,169 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Landio - Multipurpose Landing Page HTML Template
+    Template URI: https://webtend.net/demo/html/landio/
+    Author: WebTend
+    Author URI:  https://webtend.net/
+    Version: 1.1
+
+    Note: This is Main Style CSS File.
+-----------------------------------------------------------------------------------
+	CSS INDEX
+	===================
+    #. Fonts
+    #. Common
+    #. Input field
+    #. Keyframes & Animation
+    #. Header
+        ##. Header Common
+        ##. Header Search
+        ##. Off Canvas And Mobile Slide Panel
+    #. components
+        ##. Preloader
+        ##. Template Button
+        ##. Hero Area
+            ###. Hero Buttons
+            ###. Hero Area v1
+            ###. Hero Area v2
+            ###. Hero Area v3
+            ###. Hero Area v4
+            ###. Hero Area v5
+            ###. Hero Area v6
+            ###. Hero Area v7
+            ###. Hero Area v8
+        ##. Common Heading
+        ##. Check List
+            ###. Check List
+            ###. Check List Two
+            ###. Check List Three
+        ##. Simple Icon Box
+        ##. Image Boxes
+            ###. Image Boxes v1
+            ###. Image Boxes v2
+            ###. Image Boxes v3
+        ##. Iconic Boxes
+            ###. Iconic Boxes v1
+            ###. Iconic Boxes v1 Square Bordered
+            ###. Iconic Boxes v2
+            ###. Iconic Boxes v3
+            ###. Icon Bordered Box
+        ##. Fancy Icon Boxes
+            ###. Fancy Icon Boxes v1
+            ###. Fancy Icon Boxes v2
+        ##. Preview
+            ###. Preview Gallery v1
+            ###. Preview Gallery v2
+            ###. Preview Gallery v3
+            ###. Preview Gallery v4
+            ###. Preview Gallery v5
+            ###. Preview Gallery v6
+            ###. Preview Gallery v7
+            ###. Preview Gallery v8
+            ###. Preview Gallery v9
+            ###. Preview Image v1
+            ###. Preview Image v2
+            ###. Preview Image v3
+            ###. Preview Image v4
+            ###. Preview Image v5
+            ###. Preview Square oval Image
+            ###. Preview Blob Image
+            ###. Preview Image showcase
+        ##. Counter
+            ###. Counter Items v1
+            ###. Counter Items v2
+        ##. Fancy Check List
+            ###. Fancy Check List v1
+            ###. Fancy Check List v2
+        ##. Testimonials
+            ###. Testimonials v1
+            ###. Testimonials v1 Boxed
+            ###. Testimonials v1 Fancy Boxed
+            ###. Testimonials SLider v2
+            ###. Testimonials Boxes v1
+            ###. Testimonials Quote Bordered
+            ###. Testimonials Boxes v2
+        ##. Pricing Table
+            ###. Pricing Table One
+            ###. Pricing Table Two
+            ###. Pricing Table Three
+        ##. Team Member
+        ##. Seo Score Box
+        ##. Accordion
+            ###. Accordion v1
+            ###. Accordion v1 Bordered
+        ##. Landio Vidoe v1
+        ##. Info Box
+        ##. Brand Items
+        ##. Latest News
+            ###. Latest News v1
+            ###. Latest News v2
+        ##. Contact
+            ###. Contact Boxes v1
+            ###. Contact Boxes v2
+            ###. Contact Form v1
+            ###. Contact Form v2
+            ###. Contact Map
+        ##. Progress Bar
+        ##. Newsletter Form
+        ##. Projects
+        ##. Video Call To Action
+        ##. Service Tab
+        ##. Screenshot Slider
+        ##. Specific Section
+        ##. Blog
+            ###. Blog Standard
+            ###. Blog Details
+            ###. Blog Details
+            ###. Blog Sidebar
+            ###. Blog Pagination
+            ###. Comment Template
+        ##. Footer
+        ##. Page Title
+        ##. 404
+        ##. Coming Soon
+-----------------------------------------------------------------------------------*/
+@import 'abstracts/mixin';
+@import 'abstracts/variables';
+@import 'base/fonts';
+@import 'base/common';
+@import 'base/input-field';
+@import 'base/keyframes-animation';
+@import 'header/header';
+@import 'header/header-panel';
+@import 'components/preloader';
+@import 'components/button';
+@import 'components/hero-area';
+@import 'components/common-heading';
+@import 'components/check-list';
+@import 'components/simple-icon-box';
+@import 'components/image-box';
+@import 'components/iconic-boxes';
+@import 'components/fancy-icon-boxes';
+@import 'components/preview-galley';
+@import 'components/counter';
+@import 'components/fancy-check-list';
+@import 'components/testimonial';
+@import 'components/pricing-table';
+@import 'components/team-members';
+@import 'components/seo-score-box';
+@import 'components/accordion';
+@import 'components/video';
+@import 'components/infobox';
+@import 'components/brands';
+@import 'components/latest-news';
+@import 'components/contact';
+@import 'components/progress-bars';
+@import 'components/newsletter';
+@import 'components/project';
+@import 'components/video-cta';
+@import 'components/service-tab';
+@import 'components/screenshot-slider';
+@import 'sections/sections';
+@import 'blog/blog-standard';
+@import 'blog/blog-detail';
+@import 'blog/sidebar';
+@import 'blog/pagination';
+@import 'blog/comments';
+@import 'footer/footer';
+@import 'components/page-title';
+@import 'components/404';
+@import 'components/coming-soon';

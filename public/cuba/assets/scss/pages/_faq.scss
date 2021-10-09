@@ -1,0 +1,350 @@
+//According settings
+$card-padding :30px;
+$card-margin-bottom :30px;
+$card-border-width :0px;
+$card-border-color :$light-color;
+$card-border-radious :8px;
+$card-box-shadow :0 0 10px 0 rgba(68, 102, 242, 0.05);
+$card-header-font-weight : 600;
+$card-header-bg-color : $white;
+$card-header-font-size : 18px;
+$card-header-font-transform : uppercase;
+$card-header-font-color : $theme-body-font-color;
+$card-header-span-size : 12px;
+$card-header-span-color : $theme-body-sub-title-color;
+$card-body-bg-color : $transparent-color;
+$card-footer-bg-color : $white;
+
+/**=====================
+     71. Faq CSS start
+==========================**/
+.knowledgebase-bg {
+  height: 500px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+
+}
+
+.knowledgebase-search {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  left: 5%;
+
+  .form-inline {
+    background-color: $white;
+    width: 500px;
+    padding: 12px 50px;
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+    margin-top: 10px;
+    position: relative;
+
+    ::placeholder {
+      color: $gray-60;
+    }
+
+    svg {
+      position: absolute;
+      left: 20px;
+      width: 20px;
+      top: 20px;
+      stroke: $gray-60;
+    }
+  }
+}
+
+.faq-widgets {
+  align-items: center;
+
+  .media-body {
+    h5 {
+      font-weight: 600;
+    }
+
+    p {
+      padding-right: 20px;
+    }
+  }
+
+  svg {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+  }
+}
+
+.header-faq {
+  h5 {
+    font-weight: 600;
+  }
+
+  margin-bottom: 30px;
+}
+
+.features-faq {
+  &.card {
+
+    .card-body,
+    .card-footer {
+      padding: 20px 25px;
+    }
+  }
+
+  .faq-image {
+    img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      width: 100%;
+    }
+  }
+
+  .card-body {
+    h6 {
+      font-weight: 500;
+    }
+  }
+}
+
+.add-project {
+  &.table td {
+    vertical-align: middle;
+  }
+
+  .text-inherit {
+    color: black;
+  }
+}
+
+.faq-accordion {
+  margin-bottom: 30px;
+
+  .card {
+    .btn-link {
+      display: flex;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .faq-header {
+    position: relative;
+    padding: 30px !important;
+
+    svg {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+    }
+
+    span {
+      margin-top: 3px;
+    }
+  }
+
+  .faq-body {
+    padding: 20px !important;
+  }
+
+  .card-mb-faq {
+    margin-bottom: 30px;
+  }
+}
+
+.faq-title {
+  margin: 30px 0;
+
+  h6 {
+    color: $light-text;
+    font-weight: 600;
+  }
+}
+
+.faq-form {
+  position: relative;
+
+  .search-icon {
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.navigation-btn {
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  margin-bottom: 30px;
+}
+
+.navigation-option {
+  ul {
+    li {
+      position: relative;
+      padding: 15px 15px 15px 0;
+
+      &:hover {
+        background-color: $light;
+      }
+
+      a {
+        padding-left: 40px;
+        color: $theme-body-font-color;
+
+        svg {
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          top: 17px;
+          left: 15px;
+        }
+      }
+    }
+  }
+}
+
+.updates-faq {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--theme-deafult);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.updates-bottom-time {
+  p {
+    margin-bottom: 2px;
+
+    +p {
+      color: $light-text;
+    }
+  }
+}
+
+.updates-faq-main {
+  margin-bottom: 30px;
+
+  a {
+    font-weight: 500;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .faq-accordion {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .faq-accordion {
+    .faq-header {
+      padding: 20px !important;
+
+      svg {
+        right: 20px;
+        top: 20px;
+      }
+    }
+  }
+
+  .navigation-option {
+    ul {
+      li {
+        padding: 10px 10px 10px 0;
+
+        a {
+          svg {
+            top: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .navigation-btn,
+  .updates-faq-main {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .xs-mt-search {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .xs-mt-search {
+    margin-top: 0px;
+  }
+
+  .faq-widgets {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .faq-title {
+    margin: 15px 0;
+  }
+
+  .header-faq {
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
+  .faq-accordion {
+    margin-bottom: 0px;
+
+    .faq-header {
+      padding: 15px !important;
+
+      .pull-right {
+        float: right;
+      }
+
+      svg {
+        right: 15px;
+        top: 15px;
+      }
+    }
+  }
+
+  .navigation-btn,
+  .updates-faq-main {
+    margin-bottom: 15px;
+  }
+}
+
+/**=====================
+     71. Faq CSS end
+==========================**/

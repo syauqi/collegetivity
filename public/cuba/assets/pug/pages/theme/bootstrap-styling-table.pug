@@ -1,0 +1,325 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Bootstrap Styling Tables
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Bootstrap Tables
+                                      li.breadcrumb-item.active Bootstrap Styling Tables
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Defult Styling
+                              span
+                                | use class 
+                                code table table-styling
+                                |    inside table element
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive
+                                  table.table.table-styling
+                                    thead
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') First Name
+                                        th(scope='col') Last Name
+                                        th(scope='col') Username
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                      tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                      tr
+                                        th(scope='row') 3
+                                        td Larry
+                                        td the Bird
+                                        td @twitter
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Table head options
+                              span
+                                | Use class
+                                code .table-primary
+                                |  inside thead tr element.
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive
+                                  table.table
+                                    thead.table-primary
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') First Name
+                                        th(scope='col') Last Name
+                                        th(scope='col') Username
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                      tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                      tr
+                                        th(scope='row') 3
+                                        td Larry
+                                        td the Bird
+                                        td @twitter
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Table head options With Primary Background
+                              span
+                                | Use background classes
+                                code .bg-*
+                                | and 
+                                code table-primary
+                                | ,
+                                code table-secondary
+                                | ,
+                                code table-success
+                                | ,
+                                code table-danger
+                                |  ,
+                                code table-info
+                                | ,
+                                code table-warning
+                                |   to make custom 
+                                code thead
+                                |  background. You can also use Stack Admin color palette classes for background.
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive
+                                  table.table
+                                    thead.bg-primary
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') First Name
+                                        th(scope='col') Last Name
+                                        th(scope='col') Username
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                      tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                      tr
+                                        th(scope='row') 3
+                                        td Larry
+                                        td the Bird
+                                        td @twitter
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive
+                                  table.table
+                                    thead.table-success
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') First Name
+                                        th(scope='col') Last Name
+                                        th(scope='col') Username
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                      tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                      tr
+                                        th(scope='row') 3
+                                        td Larry
+                                        td the Bird
+                                        td @twitter
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Table Footer Styling
+                              span
+                                | Use class 
+                                code table-info
+                                | ,
+                                code table-success
+                                | ,
+                                code table-success
+                                | ,
+                                code table-info
+                                | ,
+                                code table-danger
+                                | ,
+                                code table-primary
+                                | ,
+                                code table-secondary
+                                | ,
+                                code table-light
+                                | ,
+                                code table-active
+                                | and also use 
+                                code bg-*
+                                |  inside tfoot  element.
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive.table-border-radius
+                                  table.table
+                                    thead
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') First Name
+                                        th(scope='col') Last Name
+                                        th(scope='col') Username
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                      tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                    tfoot.table-success
+                                      tr
+                                        th(scope='row') 3
+                                        td Larry
+                                        td the Bird
+                                        td @twitter
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Custom Table Color
+                              span
+                                | Use class
+                                code table-*
+                                |  inside table element.
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive.table-border-radius
+                                  table.table.table-styling.table-primary
+                                    thead
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') First Name
+                                        th(scope='col') Last Name
+                                        th(scope='col') Username
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                      tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                      tr
+                                        th(scope='row') 3
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Custom Table Color with Hover and Stripped
+                              span
+                                | Use class
+                                code table-hover, table-striped table-*
+                                code table-info
+                                | ,
+                                code table-success
+                                | ,
+                                code table-success
+                                | ,
+                                code table-info
+                                | ,
+                                code table-danger
+                                | ,
+                                code table-primary
+                                | ,
+                                code table-secondary
+                                | ,
+                                code table-light
+                                | ,
+                                code table-active
+                                |  inside table element.
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive.table-border-radius
+                                  table.table.table-styling.table-hover.table-striped.table-primary
+                                    thead
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') First Name
+                                        th(scope='col') Last Name
+                                        th(scope='col') Username
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                      tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                      tr
+                                        th(scope='row') 3
+                                        td Larry
+                                        td the Bird
+                                        td @twitter
+                                      tr
+                                        th(scope='row') 3
+                                        td Larry
+                                        td the Bird
+                                        td @twitter
+                                      tr
+                                        th(scope='row') 3
+                                        td Larry
+                                        td the Bird
+                                        td @twitter
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files      

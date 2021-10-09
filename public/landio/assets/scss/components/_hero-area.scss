@@ -1,0 +1,853 @@
+/*======= Hero Buttons =======*/
+.hero-btns {
+    margin: -5px;
+
+    li {
+        padding: 5px;
+    }
+
+    .play-btn {
+        height: 54px;
+        width: 54px;
+        background-color: $color-white;
+        color: $color-primary;
+        font-size: 14px;
+        text-align: center;
+        line-height: 54px;
+        border-radius: 50px;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+/*======= Hero Area v1 =======*/
+.hero-area-v1 {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 135px;
+    background-image: url(../img/hero/hero-1-overly.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        padding-top: 130px;
+        padding-bottom: 135px;
+        text-align: center;
+
+        .title-tag {
+            margin-bottom: 20px;
+            color: $color-primary;
+            font: {
+                size: 18px;
+                family: $font-cs-medium;
+                weight: 500;
+            }
+            line-height: 1.3;
+            background-color: transparent;
+
+            span {
+                background-color: #d3d3f8;
+                border-radius: 25px;
+                padding: 5px 15px;
+                margin-right: 12px;
+            }
+        }
+
+        .hero-title {
+            font-size: 85px;
+            line-height: 1.15;
+            margin-bottom: 45px;
+            letter-spacing: -1px;
+
+            span {
+                color: $color-primary;
+                padding: 5px 20px;
+                position: relative;
+                z-index: 1;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    left: 0;
+                    background-image: url(../img/particle/heading-line.png);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    z-index: -1;
+                    background-attachment: scroll;
+                    background-position: bottom;
+                    top: auto;
+                    bottom: 0;
+                    height: 100%;
+                }
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: url(../img/hero/hero-1-shadow.png) no-repeat scroll;
+            background-size: 100% 100%;
+            background-position: 0 0;
+        }
+    }
+
+    .hero-img {
+        img {
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px 0px rgb(225 223 255 / 36%);
+        }
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .hero-particle-effect {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+
+        img {
+            position: absolute;
+        }
+
+        .particle-1 {
+            top: 100px;
+            left: -120px;
+        }
+
+        .particle-2 {
+            left: -55px;
+            top: 160px;
+        }
+
+        .particle-3 {
+            right: 20px;
+            top: 80px;
+        }
+
+        .particle-4 {
+            bottom: 130px;
+            left: 0;
+        }
+
+        .particle-5 {
+            right: 0;
+            bottom: 100px;
+        }
+    }
+}
+
+/*======= Hero Area v2 =======*/
+.hero-area-v2 {
+    background-color: $color-primary-2;
+    background-image: url(../img/hero/hero-map-bg.png);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 155px 0 40px;
+
+    .hero-content-wrapper {
+        padding-left: calc((100% - 1200px) / 2);
+        padding-bottom: 100px;
+    }
+
+    .hero-content {
+        .title-tag {
+            margin-bottom: 30px;
+            color: $color-white;
+            font: {
+                size: 18px;
+                family: $font-cs-medium;
+                weight: 500;
+            }
+            line-height: 1.3;
+            background-color: transparent;
+
+            span {
+                background-color: $color-secondary;
+                border-radius: 25px;
+                padding: 5px 15px;
+                margin-right: 12px;
+            }
+        }
+
+        .hero-title {
+            font-size: 90px;
+            line-height: 1.15;
+            margin-bottom: 65px;
+            letter-spacing: -2px;
+            color: $color-white;
+
+            span {
+                position: relative;
+                z-index: 1;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    left: 0;
+                    z-index: -1;
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                    bottom: -18px;
+                    height: 39px;
+                    background-image: url(../img/particle/title-line-white.png);
+                    background-size: contain;
+                }
+            }
+        }
+
+        .template-btn.bordered-btn {
+            border-color: rgba(255, 255, 255, 0.2);
+            color: $color-white;
+
+            &:hover {
+                border-color: $color-white;
+                background-color: $color-white;
+                color: $color-secondary;
+            }
+        }
+
+        .play-btn {
+            color: $color-secondary;
+        }
+    }
+}
+
+/*======= Hero Area v3 =======*/
+.hero-area-v3 {
+    position: relative;
+    z-index: 1;
+    background-color: $color-heading-3;
+    background-image: url(../img/hero/hero-leaf-bg.jpg);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 340px;
+        width: 270px;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background-image: url(../img/hero/hero-3-line.png);
+        background-size: contain;
+        background-position: top left;
+        background-repeat: no-repeat;
+    }
+
+    .hero-content {
+        padding-top: 265px;
+        padding-bottom: 150px;
+
+        .hero-title {
+            font-size: 85px;
+            line-height: 1.15;
+            margin-bottom: 60px;
+            letter-spacing: -3px;
+            color: $color-white;
+
+            span {
+                position: relative;
+                z-index: 1;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 65%;
+                    left: 0;
+                    z-index: -1;
+                    background-attachment: scroll;
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                    bottom: -15px;
+                    height: 39px;
+                    background-image: url(../img/particle/title-line-white-2.png);
+                    background-size: contain;
+                }
+            }
+        }
+
+        p {
+            color: $color-white;
+            margin-bottom: 35px;
+        }
+    }
+
+    .hero-img {
+        padding-left: 50px;
+    }
+
+    .particle-1 {
+        position: absolute;
+        left: 6%;
+        top: 22%;
+    }
+
+    .particle-2 {
+        position: absolute;
+        left: 12%;
+        bottom: 10%;
+    }
+}
+
+/*======= Hero Area v4 =======*/
+.hero-area-v4 {
+    background-color: #f0f6ff;
+    background-image: url(../img/hero/hero-curve-bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 52%;
+    overflow: hidden;
+    padding-bottom: 50px;
+
+    .hero-content {
+        padding-top: 260px;
+        padding-bottom: 110px;
+
+        .hero-title {
+            font-size: 90px;
+            line-height: 1;
+            margin-bottom: 45px;
+
+            span {
+                position: relative;
+                z-index: 1;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    right: 0;
+                    z-index: -1;
+                    background-image: url(../img/particle/heading-line-2.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: right center;
+                    top: auto;
+                    bottom: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .user-images {
+            margin-top: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            li {
+                width: 50px;
+                flex: 0 0 50px;
+
+                &:not(:first-child) {
+                    margin-left: -25px;
+                }
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: 3px solid $color-white;
+                }
+
+                &.note {
+                    margin-left: 20px;
+                    font: {
+                        size: 20px;
+                        family: $font-cs-bold;
+                        weight: 700;
+                    }
+                    line-height: 1;
+                    color: $color-heading;
+                    width: auto;
+                    flex: 0 0 auto;
+                }
+            }
+
+            .more-icon {
+                display: block;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                background-color: #ffc001;
+                color: $color-heading;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    background-color: $color-primary-3;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+
+    .hero-preview-galley {
+        position: relative;
+        z-index: 1;
+        height: 700px;
+        width: 100%;
+
+        img {
+            position: absolute;
+            z-index: 1;
+
+            &.main-image-1 {
+                left: 0;
+                top: 0;
+            }
+
+            &.main-image-2 {
+                right: -250px;
+                bottom: 0;
+            }
+        }
+
+        .preview-inner {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 2;
+
+            img {
+                border-radius: 15px;
+
+                &.image-1 {
+                    right: 20px;
+                    top: 94px;
+                    z-index: 2;
+                }
+
+                &.image-2 {
+                    right: 50px;
+                    bottom: 160px;
+                    z-index: 2;
+                    box-shadow: 0 10px 30px 0px rgb(89 89 89 / 18%);
+                }
+
+                &.image-3 {
+                    right: 180px;
+                    bottom: 105px;
+                    box-shadow: 0 10px 30px 0px rgb(89 89 89 / 10%);
+                }
+            }
+        }
+    }
+}
+
+/*======= Hero Area v5 =======*/
+.hero-area-v5 {
+    background-color: $color-dark;
+    padding-top: 330px;
+    padding-bottom: 230px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url(../img/hero/map-bg.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.2;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-thumbnail-wrap {
+        height: 685px;
+        width: 740px;
+        position: absolute;
+        right: -100px;
+        top: -148px;
+        z-index: -1;
+
+        .hero-thumbnail {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                background-color: $color-dark;
+                opacity: 0.5;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 10px;
+            right: -10px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: $color-primary;
+        }
+
+        &::before,
+        .hero-thumbnail,
+        .hero-thumbnail::after {
+            border-radius: 50% 50% 50% 50% / 0% 50% 50% 50%;
+        }
+    }
+
+    .hero-content {
+        .hero-title {
+            font-size: 90px;
+            line-height: 1.12;
+            letter-spacing: -2px;
+            margin-bottom: 40px;
+            color: $color-white;
+        }
+
+        p {
+            font-size: 17px;
+            color: $color-white;
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 35px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 4px;
+                background-color: $color-primary;
+            }
+        }
+    }
+}
+
+/*======= Hero Area v6 =======*/
+.hero-area-v6 {
+    background-color: $color-dark;
+
+    .single-slider {
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(
+                310deg,
+                rgba(9, 16, 35, 0.2902) 0%,
+                rgba(6, 14, 34, 0.58) 61%,
+                rgba(4, 13, 34, 0.87843) 100%
+            );
+        }
+    }
+
+    .hero-content {
+        padding-top: 280px;
+        padding-bottom: 180px;
+
+        .hero-title {
+            font-size: 80px;
+            line-height: 1.12;
+            letter-spacing: -2px;
+            margin-bottom: 40px;
+            color: $color-white;
+        }
+
+        p {
+            font-size: 17px;
+            color: $color-white;
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 35px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 4px;
+                background-color: $color-white;
+            }
+        }
+
+        .template-btn {
+            box-shadow: none;
+        }
+
+        .play-text-btn {
+            font-size: 15px;
+            font-family: $font-cs-bold;
+            color: $color-white;
+            position: relative;
+            margin-left: 14px;
+
+            &:after {
+                position: absolute;
+                content: "";
+                height: 3px;
+                width: 100%;
+                background-color: $color-white;
+                bottom: -2px;
+                left: 0;
+            }
+        }
+    }
+}
+
+/*======= Hero Area v7 =======*/
+.hero-area-v7 {
+    position: relative;
+    z-index: 1;
+    padding-left: calc((100% - 1200px) / 2);
+    padding-top: 200px;
+    padding-bottom: 125px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: $color-soft-grey;
+        z-index: -1;
+    }
+
+    .hero-img {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        max-width: 50%;
+        max-height: 90%;
+    }
+
+    .hero-content {
+        max-width: 35%;
+
+        .hero-title {
+            font-size: 80px;
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 45px;
+        }
+
+        p {
+            font-size: 17px;
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 45px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 3px;
+                height: 100%;
+                background-color: #dde6ff;
+            }
+        }
+
+        .notice {
+            margin-top: 35px;
+            display: block;
+            font-size: 17px;
+
+            img {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+/*======= Hero Area v8 =======*/
+.hero-area-v8 {
+    background-color: $color-dark-2;
+    overflow: hidden;
+
+    .hero-content {
+        padding: 280px 60px 150px 0;
+        position: relative;
+        z-index: 6;
+
+        .hero-title {
+            font-size: 80px;
+            line-height: 1.05;
+            letter-spacing: -2px;
+            color: $color-white;
+            margin-bottom: 45px;
+        }
+
+        p {
+            font-size: 17px;
+            color: #abb0bf;
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 45px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 3px;
+                height: 100%;
+                background-color: #abb0bf;
+            }
+        }
+
+        .notice {
+            margin-top: 35px;
+            display: block;
+            color: #abb0bf;
+            font-size: 17px;
+
+            i {
+                margin-right: 8px;
+                color: #f7d71e;
+            }
+        }
+    }
+
+    .hero-img {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .hero-img-inner {
+            position: relative;
+            z-index: 1;
+        }
+
+        .circle-shape {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translate(-42%, -42%);
+            z-index: -1;
+            opacity: 0.15;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            z-index: -1;
+            height: 100%;
+            width: 150%;
+            background-image: url(../img/hero/hero-v8-overly.png);
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+/*======= Hero Slider Arrow & Nav =======*/
+.hero-slider {
+    .slick-dots {
+        position: absolute;
+        right: 13%;
+        top: 50%;
+        display: block;
+        margin: 0;
+        transform: translateY(-50%);
+
+        li {
+            display: block;
+            margin: 20px 0;
+            background-color: $color-white;
+
+            &::after {
+                border-color: $color-white;
+            }
+
+            &.slick-active {
+                background-color: $color-white;
+            }
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        right: 4%;
+        bottom: 0;
+        height: 50px;
+        width: 50px;
+        background-color: $color-white;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-heading;
+        font-size: 18px;
+        z-index: 2;
+        transition: 0.3s;
+        box-shadow: none;
+
+        &.prev-arrow {
+            right: calc(4% + 52px);
+        }
+
+        &:hover {
+            background-color: $color-primary-4;
+            color: $color-white;
+        }
+    }
+}

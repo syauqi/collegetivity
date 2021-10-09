@@ -1,0 +1,919 @@
+- var chartist              = true;
+- var apex                  = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var animate               = true;
+- var owlcarousel           = true;
+- var dashboard_2           = true;
+- var counter               = true;
+- var customcard            = true;
+- var clipboard             = true;
+- var prism                 = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+  include ../../components/header-files
+  body
+    include ../../components/taptop
+    // page-wrapper Start
+    #pageWrapper.page-wrapper.compact-wrapper
+      include ../../components/header
+      // Page Body Start
+      .page-body-wrapper.sidebar-icon
+        include ../../components/sidebar
+        .page-body
+          .container-fluid
+              .page-title
+                  .row
+                      .col-6
+                          h3 
+                            | Ecommerce
+
+                      .col-6
+                        ol.breadcrumb
+                            li.breadcrumb-item
+                              a(href='index.html')
+                                i(data-feather="home")
+                            li.breadcrumb-item Dashboard
+                            li.breadcrumb-item.active Ecommerce
+          // Container-fluid starts
+          .container-fluid
+            .row.size-column
+              .col-xl-7.box-col-12.xl-100
+                .row.dash-chart
+                  .col-xl-6.box-col-6.col-md-6
+                    .card.o-hidden
+                      .card-header.card-no-border
+                        .card-header-right
+                          ul.list-unstyled.card-option
+                            li
+                              i.fa.fa-spin.fa-cog
+                            li
+                              i.view-html.fa.fa-code
+                            li
+                              i.icofont.icofont-maximize.full-card
+                            li
+                              i.icofont.icofont-minus.minimize-card
+                            li
+                              i.icofont.icofont-refresh.reload-card
+                            li
+                              i.icofont.icofont-error.close-card
+                        .media
+                          .media-body
+                            p
+                              span.f-w-500.font-roboto Today Total sale
+                              span.f-w-700.font-primary.ml-2 89.21%
+                            h4.f-w-500.mb-0.f-26 $
+                              span.counter 3000.56
+                      .card-body.p-0
+                        .media
+                          .media-body
+                            .profit-card
+                              #spaline-chart
+                        .code-box-copy
+                          button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head', title='Copy')
+                            i.icofont.icofont-copy-alt
+                          pre
+                            code.language-html#example-head
+                                | &lt;!-- Cod Box Copy begin --&gt;
+                                | &lt;div class=&quot;card o-hidden&quot;&gt;
+                                |   &lt;div class=&quot;card-header card-no-border&quot;&gt;
+                                |     &lt;div class=&quot;card-header-right&quot;&gt;
+                                |       &lt;ul class=&quot;list-unstyled card-option&quot;&gt;
+                                |         &lt;li&gt;&lt;i class=&quot;fa fa-spin fa-cog&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                                |         &lt;li&gt;&lt;i class=&quot;view-html fa fa-code&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                                |         &lt;li&gt;&lt;i class=&quot;icofont icofont-maximize full-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                                |         &lt;li&gt;&lt;i class=&quot;icofont icofont-minus minimize-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                                |         &lt;li&gt;&lt;i class=&quot;icofont icofont-refresh reload-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                                |         &lt;li&gt;&lt;i class=&quot;icofont icofont-error close-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                                |       &lt;/ul&gt;
+                                |     &lt;/div&gt;
+                                |     &lt;div class=&quot;media&quot;&gt;
+                                |       &lt;div class=&quot;media-body&quot;&gt;
+                                |         &lt;p&gt;&lt;span class=&quot;f-w-500 font-roboto&quot;&gt;Month Total sale&lt;/span&gt;&lt;span class=&quot;f-w-700 font-primary ml-2&quot;&gt;79.21%&lt;/span&gt;&lt;/p&gt;
+                                |         &lt;h4 class=&quot;f-w-500 mb-0 f-26&quot;&gt;$&lt;span class=&quot;counter&quot;&gt;3465.56&lt;/span&gt;&lt;/h4&gt;
+                                |       &lt;/div&gt;
+                                |     &lt;/div&gt;
+                                |   &lt;/div&gt;
+                                |   &lt;div class=&quot;card-body p-0&quot;&gt;
+                                |     &lt;div class=&quot;media&quot;&gt;
+                                |       &lt;div class=&quot;media-body&quot;&gt;
+                                |         &lt;div class=&quot;profit-card&quot;&gt;
+                                |           &lt;div id=&quot;spaline-chart&quot;&gt;&lt;/div&gt;
+                                |         &lt;/div&gt;
+                                |       &lt;/div&gt;
+                                |     &lt;/div&gt;
+                                |   &lt;/div&gt;
+                                | &lt;/div&gt;
+                                | &lt;!-- Cod Box Copy end --&gt; 
+                  .col-xl-6.box-col-6.col-md-6
+                    .card.o-hidden
+                      .card-header.card-no-border
+                        .card-header-right
+                          ul.list-unstyled.card-option
+                            li
+                              i.fa.fa-spin.fa-cog
+                            li
+                              i.view-html.fa.fa-code
+                            li
+                              i.icofont.icofont-maximize.full-card
+                            li
+                              i.icofont.icofont-minus.minimize-card
+                            li
+                              i.icofont.icofont-refresh.reload-card
+                            li
+                              i.icofont.icofont-error.close-card
+                        .media
+                          .media-body
+                            p
+                              span.f-w-500.font-roboto Today Total visits
+                              span.f-w-700.font-primary.ml-2 35.00%
+                            h4.f-w-500.mb-0.f-26.counter 9,050
+                      .card-body.pt-0
+                        .monthly-visit
+                          #column-chart
+                        .code-box-copy
+                          button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head1', title='Copy')
+                            i.icofont.icofont-copy-alt
+                          pre
+                            code.language-html#example-head1
+                                | &lt;!-- Cod Box Copy begin --&gt;
+                                | &lt;div class=&quot;card o-hidden&quot;&gt;
+                                |   &lt;div class=&quot;card-header card-no-border&quot;&gt;
+                                |     &lt;div class=&quot;card-header-right&quot;&gt;
+                                |       &lt;ul class=&quot;list-unstyled card-option&quot;&gt;
+                                |         &lt;li&gt;&lt;i class=&quot;fa fa-spin fa-cog&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                                |         &lt;li&gt;&lt;i class=&quot;view-html fa fa-code&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                                |         &lt;li&gt;&lt;i class=&quot;icofont icofont-maximize full-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                                |         &lt;li&gt;&lt;i class=&quot;icofont icofont-minus minimize-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                                |         &lt;li&gt;&lt;i class=&quot;icofont icofont-refresh reload-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                                |         &lt;li&gt;&lt;i class=&quot;icofont icofont-error close-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                                |       &lt;/ul&gt;
+                                |     &lt;/div&gt;
+                                |     &lt;div class=&quot;media&quot;&gt;
+                                |       &lt;div class=&quot;media-body&quot;&gt;
+                                |         &lt;p&gt;&lt;span class=&quot;f-w-500 font-roboto&quot;&gt;Month Total visits&lt;/span&gt;&lt;span class=&quot;f-w-700 font-primary ml-2&quot;&gt;95.56%&lt;/span&gt;&lt;/p&gt;
+                                |         &lt;h4 class=&quot;f-w-500 mb-0 f-26&quot;&gt;$&lt;span class=&quot;counter&quot;&gt;5,953&lt;/span&gt;&lt;/h4&gt;
+                                |       &lt;/div&gt;
+                                |     &lt;/div&gt;
+                                |   &lt;/div&gt;
+                                |   &lt;div class=&quot;card-body pt-0&quot;&gt;
+                                |     &lt;div class=&quot;monthly-visit&quot;&gt;
+                                |        &lt;div id=&quot;column-chart&quot;&gt;&lt;/div&gt;
+                                |     &lt;/div&gt;
+                                |   &lt;/div&gt;
+                                | &lt;/div&gt;
+                                | &lt;!-- Cod Box Copy end --&gt;
+                  .col-xl-6.box-col-6.col-lg-12.col-md-6
+                    .card.o-hidden
+                      .card-body
+                        .ecommerce-widgets.media
+                          .media-body
+                            p.f-w-500.font-roboto Our Sale Value
+                              span.badge.pill-badge-primary.ml-3 New
+                            h4.f-w-500.mb-0.f-26 $
+                              span.counter 7454.25
+                          .ecommerce-box.light-bg-primary
+                            i.fa.fa-heart(aria-hidden='true')
+                  .col-xl-6.box-col-6.col-lg-12.col-md-6
+                    .card.o-hidden
+                      .card-body
+                        .media
+                          .media-body
+                            p.f-w-500.font-roboto Today Stock value
+                              span.badge.pill-badge-primary.ml-3 Hot
+                            .progress-box
+                              h4.f-w-500.mb-0.f-26 $
+                                span.counter 9000.04
+                              .progress.sm-progress-bar.progress-animate.app-right.d-flex.justify-content-end
+                                .progress-gradient-primary(role='progressbar' style='width: 35%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100')
+                                    span.font-primary 88%
+                                    span.animate-circle
+              .col-xl-5.box-col-12.xl-50
+                .card.o-hidden.dash-chart
+                  .card-header.card-no-border
+                    .card-header-right
+                      ul.list-unstyled.card-option
+                        li
+                          i.fa.fa-spin.fa-cog
+                        li
+                          i.view-html.fa.fa-code
+                        li
+                          i.icofont.icofont-maximize.full-card
+                        li
+                          i.icofont.icofont-minus.minimize-card
+                        li
+                          i.icofont.icofont-refresh.reload-card
+                        li
+                          i.icofont.icofont-error.close-card
+                    .media
+                      .media-body
+                        p
+                          span.f-w-500.font-roboto Total Profit
+                          span.font-primary.f-w-700.ml-2 99.00%
+                        h4.f-w-500.mb-0.f-26 $
+                          span.counter 3000.56
+                  .card-body.pt-0
+                    .negative-container
+                      #negative-chart
+                    .code-box-copy
+                      button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head2', title='Copy')
+                        i.icofont.icofont-copy-alt
+                      pre
+                        code.language-html#example-head2
+                            | &lt;!-- Cod Box Copy begin --&gt;
+                            | &lt;div class=&quot;card o-hidden dash-chart&quot;&gt;
+                            |   &lt;div class=&quot;card-header card-no-border&quot;&gt;
+                            |     &lt;div class=&quot;card-header-right&quot;&gt;
+                            |       &lt;ul class=&quot;list-unstyled card-option&quot;&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;fa fa-spin fa-cog&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;view-html fa fa-code&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-maximize full-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-minus minimize-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-refresh reload-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-error close-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |       &lt;/ul&gt;
+                            |     &lt;/div&gt;
+                            |     &lt;div class=&quot;media&quot;&gt;
+                            |       &lt;div class=&quot;media-body&quot;&gt;
+                            |         &lt;p&gt;&lt;span class=&quot;f-w-500 font-roboto&quot;&gt;Total Earning&lt;/span&gt;&lt;span class=&quot;f-w-700 font-primary ml-2&quot;&gt;79.21%&lt;/span&gt;&lt;/p&gt;
+                            |         &lt;h4 class=&quot;f-w-500 mb-0 f-26&quot;&gt;$&lt;span class=&quot;counter&quot;&gt;3465.56&lt;/span&gt;&lt;/h4&gt;
+                            |       &lt;/div&gt;
+                            |     &lt;/div&gt;
+                            |   &lt;/div&gt;
+                            |   &lt;div class=&quot;card-body pt-0&quot;&gt;
+                            |     &lt;div class=&quot;profit-card&quot;&gt;
+                            |         &lt;div id=&quot;negative-chart&quot;&gt;&lt;/div&gt;
+                            |     &lt;/div&gt;
+                            |   &lt;/div&gt;
+                            | &lt;/div&gt;
+                            | &lt;!-- Cod Box Copy end --&gt;  
+              .col-xl-4.xl-50.box-col-12
+                .card
+                  .card-header.card-no-border
+                    h5 New Product
+                    .card-header-right
+                      ul.list-unstyled.card-option
+                        li
+                          i.fa.fa-spin.fa-cog
+                        li
+                          i.view-html.fa.fa-code
+                        li
+                          i.icofont.icofont-maximize.full-card
+                        li
+                          i.icofont.icofont-minus.minimize-card
+                        li
+                          i.icofont.icofont-refresh.reload-card
+                        li
+                          i.icofont.icofont-error.close-card
+
+                  .card-body.pt-0
+                    .our-product
+                      .table-responsive
+                        table.table.table-bordernone
+                          tbody.f-w-500
+                            tr
+                              td
+                                .media
+                                  img.img-fluid.m-r-15.rounded-circle(src='../assets/images/dashboard-2/product-1.png' alt="")
+                                  .media-body
+                                    span Hike Shoes
+                                    p.font-roboto 100 item
+                              td
+                                p coupon code
+                                span PIX001
+                              td
+                                p -51%
+                                span $99.00
+
+                            tr
+                              td
+                                .media
+                                  img.img-fluid.m-r-15.rounded-circle(src='../assets/images/dashboard-2/product-3.png' alt="")
+                                  .media-body
+                                    span Tree Pot
+                                    p.font-roboto 105 item
+                              td
+                                p coupon code
+                                span PIX002
+                              td
+                                p -78%
+                                span $66.00
+                            tr
+                              td
+                                .media
+                                  img.img-fluid.m-r-15.rounded-circle(src='../assets/images/dashboard-2/product-4.png' alt="")
+                                  .media-body
+                                    span Bag
+                                    p.font-roboto 604 item
+                              td
+                                p coupon code
+                                span PIX003
+                              td
+                                p -04%
+                                span $116.00
+                            tr
+                              td
+                                .media
+                                  img.img-fluid.m-r-15.rounded-circle(src='../assets/images/dashboard-2/product-5.png' alt="")
+                                  .media-body
+                                    span Wtach
+                                    p.font-roboto 541 item
+                              td
+                                p coupon code
+                                span PIX004
+                              td
+                                p -60%
+                                span $99.00
+                            tr
+                              td
+                                .media
+                                  img.img-fluid.m-r-15.rounded-circle(src='../assets/images/dashboard-2/product-6.png' alt="")
+                                  .media-body
+                                    span T-shirt
+                                    p.font-roboto 999 item
+                              td
+                                p coupon code
+                                span PIX005
+                              td
+                                p -50%
+                                span $58.00
+                    .code-box-copy
+                      button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head3', title='Copy')
+                        i.icofont.icofont-copy-alt
+                      pre
+                        code.language-html#example-head3
+                            | &lt;!-- Cod Box Copy begin --&gt;
+                            | &lt;div class=&quot;card&quot;&gt;
+                            |   &lt;div class=&quot;card-header card-no-border&quot;&gt;
+                            |     &lt;h5&gt;Our Product&lt;/h5&gt;
+                            |     &lt;div class=&quot;card-header-right&quot;&gt;
+                            |       &lt;ul class=&quot;list-unstyled card-option&quot;&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;fa fa-spin fa-cog&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;view-html fa fa-code&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-maximize full-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-minus minimize-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-refresh reload-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-error close-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |       &lt;/ul&gt;
+                            |     &lt;/div&gt;
+                            |   &lt;/div&gt;
+                            |   &lt;div class=&quot;card-body pt-0&quot;&gt;
+                            |     &lt;div class=&quot;our-product&quot;&gt;
+                            |       &lt;div class=&quot;table-responsive&quot;&gt;
+                            |         &lt;table class=&quot;table table-bordernone&quot;&gt;
+                            |           &lt;tbody class=&quot;f-w-500&quot;&gt;
+                            |             &lt;tr&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;div class=&quot;media&quot;&gt;&lt;img class=&quot;img-fluid m-r-15 rounded-circle&quot; src=&quot;../assets/images/dashboard-2/product-1.png&quot;&gt;
+                            |                   &lt;div class=&quot;media-body&quot;&gt;&lt;span&gt;Nike Shoes&lt;/span&gt;
+                            |                     &lt;p class=&quot;font-roboto&quot;&gt;451 item&lt;/p&gt;
+                            |                   &lt;/div&gt;
+                            |                 &lt;/div&gt;
+                            |               &lt;/td&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;p&gt;coupon code&lt;/p&gt;&lt;span&gt;NIK584&lt;/span&gt;
+                            |               &lt;/td&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;p&gt;-50%&lt;/p&gt;&lt;span&gt;$49.00&lt;/span&gt;
+                            |               &lt;/td&gt;
+                            |             &lt;/tr&gt;
+                            |             &lt;tr&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;div class=&quot;media&quot;&gt;&lt;img class=&quot;img-fluid m-r-15 rounded-circle&quot; src=&quot;../assets/images/dashboard-2/product-3.png&quot;&gt;
+                            |                   &lt;div class=&quot;media-body&quot;&gt;&lt;span&gt;Head Phon&lt;/span&gt;
+                            |                     &lt;p class=&quot;font-roboto&quot;&gt;165 item&lt;/p&gt;
+                            |                   &lt;/div&gt;
+                            |                 &lt;/div&gt;
+                            |               &lt;/td&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;p&gt;coupon code&lt;/p&gt;&lt;span&gt;HEA415&lt;/span&gt;
+                            |               &lt;/td&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;p&gt;-28%&lt;/p&gt;&lt;span&gt;$36.00&lt;/span&gt;
+                            |               &lt;/td&gt;
+                            |             &lt;/tr&gt;
+                            |             &lt;tr&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;div class=&quot;media&quot;&gt;&lt;img class=&quot;img-fluid m-r-15 rounded-circle&quot; src=&quot;../assets/images/dashboard-2/product-4.png&quot;&gt;
+                            |                   &lt;div class=&quot;media-body&quot;&gt;&lt;span&gt;Tree Pot&lt;/span&gt;
+                            |                     &lt;p class=&quot;font-roboto&quot;&gt;364 item&lt;/p&gt;
+                            |                   &lt;/div&gt;
+                            |                 &lt;/div&gt;
+                            |               &lt;/td&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;p&gt;coupon code&lt;/p&gt;&lt;span&gt;TRE113&lt;/span&gt;
+                            |               &lt;/td&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;p&gt;-14%&lt;/p&gt;&lt;span&gt;$16.00&lt;/span&gt;
+                            |               &lt;/td&gt;
+                            |             &lt;/tr&gt;
+                            |             &lt;tr&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;div class=&quot;media&quot;&gt;&lt;img class=&quot;img-fluid m-r-15 rounded-circle&quot; src=&quot;../assets/images/dashboard-2/product-5.png&quot;&gt;
+                            |                   &lt;div class=&quot;media-body&quot;&gt;&lt;span&gt;Nike Shoes&lt;/span&gt;
+                            |                     &lt;p class=&quot;font-roboto&quot;&gt;451 item&lt;/p&gt;
+                            |                   &lt;/div&gt;
+                            |                 &lt;/div&gt;
+                            |               &lt;/td&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;p&gt;coupon code&lt;/p&gt;&lt;span&gt;NIK584&lt;/span&gt;
+                            |               &lt;/td&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;p&gt;-50%&lt;/p&gt;&lt;span&gt;$49.00&lt;/span&gt;
+                            |               &lt;/td&gt;
+                            |             &lt;/tr&gt;
+                            |             &lt;tr&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;div class=&quot;media&quot;&gt;&lt;img class=&quot;img-fluid m-r-15 rounded-circle&quot; src=&quot;../assets/images/dashboard-2/product-6.png&quot;&gt;
+                            |                   &lt;div class=&quot;media-body&quot;&gt;&lt;span&gt;Nike Shoes&lt;/span&gt;
+                            |                     &lt;p class=&quot;font-roboto&quot;&gt;451 item&lt;/p&gt;
+                            |                   &lt;/div&gt;
+                            |                 &lt;/div&gt;
+                            |               &lt;/td&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;p&gt;coupon code&lt;/p&gt;&lt;span&gt;NIK584&lt;/span&gt;
+                            |               &lt;/td&gt;
+                            |               &lt;td&gt;
+                            |                 &lt;p&gt;-50%&lt;/p&gt;&lt;span&gt;$49.00&lt;/span&gt;
+                            |               &lt;/td&gt;
+                            |             &lt;/tr&gt;
+                            |           &lt;/tbody&gt;
+                            |         &lt;/table&gt;
+                            |       &lt;/div&gt;
+                            |     &lt;/div&gt;
+                            |   &lt;/div&gt;
+                            | &lt;/div&gt;
+                            | &lt;!-- Cod Box Copy end --&gt;
+              .col-xl-4.xl-50.box-col-12
+                .card
+                  .card-header.card-no-border
+                    h5 Location
+                    .card-header-right
+                      ul.list-unstyled.card-option
+                        li
+                          i.fa.fa-spin.fa-cog
+                        li
+                          i.view-html.fa.fa-code
+                        li
+                          i.icofont.icofont-maximize.full-card
+                        li
+                          i.icofont.icofont-minus.minimize-card
+                        li
+                          i.icofont.icofont-refresh.reload-card
+                        li
+                          i.icofont.icofont-error.close-card
+                  .card-body.pt-0
+                    .dash-map
+                      #map
+                    .code-box-copy
+                      button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head4', title='Copy')
+                        i.icofont.icofont-copy-alt
+                      pre
+                        code.language-html#example-head4
+                            | &lt;!-- Cod Box Copy begin --&gt;
+                            | &lt;div class=&quot;card&quot;&gt;
+                            |   &lt;div class=&quot;card-header card-no-border&quot;&gt;
+                            |     &lt;h5&gt;Location&lt;/h5&gt;
+                            |     &lt;div class=&quot;card-header-right&quot;&gt;
+                            |       &lt;ul class=&quot;list-unstyled card-option&quot;&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;fa fa-spin fa-cog&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;view-html fa fa-code&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-maximize full-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-minus minimize-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-refresh reload-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-error close-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |       &lt;/ul&gt;
+                            |     &lt;/div&gt;
+                            |   &lt;/div&gt;
+                            |   &lt;div class=&quot;card-body pt-0&quot;&gt;
+                            |     &lt;div class=&quot;dash-map&quot;&gt;
+                            |       &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+                            |     &lt;/div&gt;
+                            |   &lt;/div&gt;
+                            | &lt;/div&gt;
+                            | &lt;!-- Cod Box Copy end --&gt;
+              .col-xl-4.xl-50.box-col-12
+                .card
+                  .card-header.card-no-border
+                    h5 News & Updates
+                    .card-header-right
+                      ul.list-unstyled.card-option
+                        li
+                          i.fa.fa-spin.fa-cog
+                        li
+                          i.view-html.fa.fa-code
+                        li
+                          i.icofont.icofont-maximize.full-card
+                        li
+                          i.icofont.icofont-minus.minimize-card
+                        li
+                          i.icofont.icofont-refresh.reload-card
+                        li
+                          i.icofont.icofont-error.close-card
+                  .card-body.new-update.pt-0
+                    .activity-timeline
+                      .media
+                        .activity-line
+                        .activity-dot-secondary
+                        .media-body
+                          span Update Product
+                          p.font-roboto Quisque a consequat ante Sit amet magna at volutapt.
+                      .media
+                        .activity-dot-primary
+                        .media-body
+                          span James liked Nike Shoes
+                          p.font-roboto Aenean sit amet magna vel magna fringilla ferme.
+                      .media
+                        .activity-dot-secondary
+                        .media-body
+                          span john just buy your product
+                            i.fa.fa-circle.circle-dot-secondary.pull-right
+                          p.font-roboto Vestibulum nec mi suscipit, dapibus purus.....
+                      .media
+                        .activity-dot-primary
+                        .media-body
+                          span Jihan Doe just save your product
+                            i.fa.fa-circle.circle-dot-primary.pull-right
+                          p.font-roboto Curabitur egestas consequat lorem.
+                    .code-box-copy
+                      button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head5', title='Copy')
+                        i.icofont.icofont-copy-alt
+                      pre
+                        code.language-html#example-head5
+                            | &lt;!-- Cod Box Copy begin --&gt;
+                            | &lt;div class=&quot;card&quot;&gt;
+                            |   &lt;div class=&quot;card-header card-no-border&quot;&gt;
+                            |     &lt;h5&gt;New &amp; Updates&lt;/h5&gt;
+                            |     &lt;div class=&quot;card-header-right&quot;&gt;
+                            |       &lt;ul class=&quot;list-unstyled card-option&quot;&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;fa fa-spin fa-cog&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;view-html fa fa-code&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-maximize full-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-minus minimize-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-refresh reload-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-error close-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |       &lt;/ul&gt;
+                            |     &lt;/div&gt;
+                            |   &lt;/div&gt;
+                            |   &lt;div class=&quot;card-body new-update pt-0&quot;&gt;
+                            |     &lt;div class=&quot;activity-timeline&quot;&gt;
+                            |       &lt;div class=&quot;media&quot;&gt;
+                            |         &lt;div class=&quot;activity-line&quot;&gt;&lt;/div&gt;
+                            |         &lt;div class=&quot;activity-dot-secondary&quot;&gt;&lt;/div&gt;
+                            |         &lt;div class=&quot;media-body&quot;&gt;&lt;span&gt;Updated Product&lt;/span&gt;
+                            |           &lt;p class=&quot;font-roboto&quot;&gt;Quisque a consequat ante Sit amet magna at volutapt.&lt;/p&gt;
+                            |         &lt;/div&gt;
+                            |       &lt;/div&gt;
+                            |       &lt;div class=&quot;media&quot;&gt;
+                            |         &lt;div class=&quot;activity-dot-primary&quot;&gt;&lt;/div&gt;
+                            |         &lt;div class=&quot;media-body&quot;&gt;&lt;span&gt;You liked James products&lt;/span&gt;
+                            |           &lt;p class=&quot;font-roboto&quot;&gt;Aenean sit amet magna vel magna fringilla ferme.&lt;/p&gt;
+                            |         &lt;/div&gt;
+                            |       &lt;/div&gt;
+                            |       &lt;div class=&quot;media&quot;&gt;
+                            |         &lt;div class=&quot;activity-dot-secondary&quot;&gt;&lt;/div&gt;
+                            |         &lt;div class=&quot;media-body&quot;&gt;&lt;span&gt;James just like your product&lt;i class=&quot;fa fa-circle circle-dot-secondary pull-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                            |           &lt;p class=&quot;font-roboto&quot;&gt;Vestibulum nec mi suscipit, dapibus purus.....&lt;/p&gt;
+                            |         &lt;/div&gt;
+                            |       &lt;/div&gt;
+                            |       &lt;div class=&quot;media&quot;&gt;
+                            |         &lt;div class=&quot;activity-dot-primary&quot;&gt;&lt;/div&gt;
+                            |         &lt;div class=&quot;media-body&quot;&gt;&lt;span&gt;Jihan Doe just like your product&lt;i class=&quot;fa fa-circle circle-dot-primary pull-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                            |           &lt;p class=&quot;font-roboto&quot;&gt;Curabitur egestas consequat lorem.&lt;/p&gt;
+                            |         &lt;/div&gt;
+                            |       &lt;/div&gt;
+                            |     &lt;/div&gt;
+                            |   &lt;/div&gt;
+                            | &lt;/div&gt;
+                            | &lt;!-- Cod Box Copy end --&gt;
+              .col-xl-3.risk-col.xl-100.box-col-12
+                .card.total-users
+                  .card-header.card-no-border
+                    h5 Risk Factor
+                    .card-header-right
+                      ul.list-unstyled.card-option
+                        li
+                          i.fa.fa-spin.fa-cog
+                        li
+                          i.view-html.fa.fa-code
+                        li
+                          i.icofont.icofont-maximize.full-card
+                        li
+                          i.icofont.icofont-minus.minimize-card
+                        li
+                          i.icofont.icofont-refresh.reload-card
+                        li
+                          i.icofont.icofont-error.close-card
+                  .card-body.pt-0
+                    .apex-chart-container.goal-status.text-center.row
+                      .rate-card.col-xl-12
+                        .goal-chart
+                          #riskfactorchart
+                        .goal-end-point
+                          ul
+                            li.mt-0.pt-0
+                              h6.font-primary As From
+                              h6.f-w-400 24 March 2021
+                            li
+                              h6.mb-2.f-w-400 Total Goal
+                              h5.mb-0 $94,000.20
+                      ul.col-xl-12
+                        li
+                          .goal-detail
+                            h6 
+                              span.font-primary Goal Archive : 
+                              | $91,000.000
+                            .progress.sm-progress-bar.progress-animate
+                              .progress-gradient-primary(role='progressbar' style='width: 60%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100')
+                          .goal-detail.mb-0       
+                            h6
+                              span.font-primary Duration: 
+                              | 9 Month
+                            .progress.sm-progress-bar.progress-animate
+                              .progress-gradient-primary(role='progressbar' style='width: 50%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100')
+                        li
+                          .btn-download.btn.btn-gradient.f-w-500 Download details
+                    .code-box-copy
+                      button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head6', title='Copy')
+                        i.icofont.icofont-copy-alt
+                      pre
+                        code.language-html#example-head6
+                            | &lt;!-- Cod Box Copy begin --&gt;
+                            | &lt;div class=&quot;card total-users&quot;&gt;
+                            |   &lt;div class=&quot;card-header card-no-border&quot;&gt;
+                            |     &lt;h5&gt;Risk Factor&lt;/h5&gt;
+                            |     &lt;div class=&quot;card-header-right&quot;&gt;
+                            |       &lt;ul class=&quot;list-unstyled card-option&quot;&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;fa fa-spin fa-cog&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;view-html fa fa-code&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-maximize full-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-minus minimize-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-refresh reload-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |         &lt;li&gt;&lt;i class=&quot;icofont icofont-error close-card&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+                            |       &lt;/ul&gt;
+                            |     &lt;/div&gt;
+                            |   &lt;/div&gt;
+                            |   &lt;div class=&quot;card-body pt-0&quot;&gt;
+                            |     &lt;div class=&quot;apex-chart-container goal-status text-center row&quot;&gt;
+                            |       &lt;div class=&quot;rate-card col-xl-12&quot;&gt;
+                            |         &lt;div class=&quot;goal-chart&quot;&gt;
+                            |           &lt;div id=&quot;riskfactorchart&quot;&gt;&lt;/div&gt;
+                            |         &lt;/div&gt;
+                            |         &lt;div class=&quot;goal-end-point&quot;&gt;
+                            |           &lt;ul&gt;
+                            |             &lt;li class=&quot;mt-0 pt-0&quot;&gt;
+                            |               &lt;h6 class=&quot;font-primary&quot;&gt;As From&lt;/h6&gt;
+                            |               &lt;h6 class=&quot;f-w-400&quot;&gt;24 January 2019&lt;/h6&gt;
+                            |             &lt;/li&gt;
+                            |             &lt;li&gt;
+                            |               &lt;h6 class=&quot;mb-2 f-w-400&quot;&gt;Total Goal&lt;/h6&gt;
+                            |               &lt;h5 class=&quot;mb-0&quot;&gt;$84,376.29&lt;/h5&gt;
+                            |             &lt;/li&gt;
+                            |           &lt;/ul&gt;
+                            |         &lt;/div&gt;
+                            |       &lt;/div&gt;
+                            |       &lt;ul class=&quot;col-xl-12&quot;&gt;
+                            |         &lt;li&gt;
+                            |           &lt;div class=&quot;goal-detail&quot;&gt;
+                            |             &lt;h6&gt; &lt;span class=&quot;font-primary&quot;&gt;Goal Archive : &lt;/span&gt;$81,586.253&lt;/h6&gt;
+                            |             &lt;div class=&quot;progress sm-progress-bar progress-animate&quot;&gt;
+                            |               &lt;div class=&quot;progress-gradient-primary&quot; role=&quot;progressbar&quot; style=&quot;width: 60%&quot; aria-valuenow=&quot;75&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+                            |             &lt;/div&gt;
+                            |           &lt;/div&gt;
+                            |           &lt;div class=&quot;goal-detail mb-0&quot;&gt;      
+                            |             &lt;h6&gt;&lt;span class=&quot;font-primary&quot;&gt;Duration: &lt;/span&gt;6 Month&lt;/h6&gt;
+                            |             &lt;div class=&quot;progress sm-progress-bar progress-animate&quot;&gt;
+                            |               &lt;div class=&quot;progress-gradient-primary&quot; role=&quot;progressbar&quot; style=&quot;width: 50%&quot; aria-valuenow=&quot;75&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+                            |             &lt;/div&gt;
+                            |           &lt;/div&gt;
+                            |         &lt;/li&gt;
+                            |         &lt;li&gt;
+                            |           &lt;div class=&quot;btn-download btn btn-gradient f-w-500&quot;&gt;Download Report&lt;/div&gt;
+                            |         &lt;/li&gt;
+                            |       &lt;/ul&gt;
+                            |     &lt;/div&gt;
+                            |   &lt;/div&gt;
+                            | &lt;/div&gt;
+                            | &lt;!-- Cod Box Copy end --&gt;
+              .col-xl-9.xl-100.box-col-12
+                .row
+                  .col-xl-12
+                    .card.offer-box
+                      .card-body.p-0
+                        .offer-slider
+                          #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+                            .carousel-inner
+                              .carousel-item.active
+                                .selling-slide.row
+                                  .col-xl-4.col-md-6
+                                    .d-flex
+                                      .left-content
+                                        p Much More Selling product
+                                        h4.f-w-600 Best Selling Product
+                                        span.badge.badge-white.badge-pill 78% offer
+                                        span.badge.badge-dotted.badge-pill.ml-2 Coupon Code : 12345
+                                  .col-xl-4.col-md-12
+                                    .center-img
+                                      img.img-fluid(src='../assets/images/dashboard-2/offer-shoes-3.png' alt='...')
+                                  .col-xl-4.col-md-6
+                                    .d-flex
+                                      .right-content
+                                        p Money back Guarrantee
+                                        h4.f-w-600 Women Straight Kurta
+                                        span.badge.badge-white.badge-pill $100.00
+                              .carousel-item
+                                .selling-slide.row
+                                  .col-xl-4.col-md-6
+                                    .d-flex
+                                      .left-content
+                                        p Money back Guarrantee
+                                        h4.f-w-600 Women Straight Kurta
+                                        span.badge.badge-white.badge-pill $100.00
+                                  .col-xl-4.col-md-12
+                                    .center-img
+                                      img.img-fluid(src='../assets/images/dashboard-2/offer-shoes-3.png' alt='...')
+                                  .col-xl-4.col-md-6
+                                    .d-flex
+                                      .right-content
+                                        p Money back Guarrantee
+                                        h4.f-w-600 Nike Air Shoes
+                                        span.badge.badge-white.badge-pill $120.55
+                              .carousel-item
+                                .selling-slide.row
+                                  .col-xl-4.col-md-6
+                                    .d-flex
+                                      .left-content
+                                        p Maximum Selling product
+                                        h4.f-w-600 Best Selling Product
+                                        span.badge.badge-white.badge-pill 50% offer
+                                        span.badge.badge-dotted.badge-pill.ml-2 Coupon Code : 21546
+                                  .col-xl-4.col-md-12
+                                    .center-img
+                                      img.img-fluid(src='../assets/images/dashboard-2/offer-shoes-3.png' alt='...')
+                                  .col-xl-4.col-md-6
+                                    .d-flex
+                                      .right-content
+                                        p Money back Guarrantee
+                                        h4.f-w-600 Nike Air Shoes
+                                        span.badge.badge-white.badge-pill $120.55
+                            a.carousel-control-prev(href='#carouselExampleCaptions' role='button' data-slide='prev')
+                              span.carousel-control-prev-icon(aria-hidden='true')
+                              span.sr-only Previous
+                            a.carousel-control-next(href='#carouselExampleCaptions' role='button' data-slide='next')
+                              span.carousel-control-next-icon(aria-hidden='true')
+                              span.sr-only Next
+                  .col-xl-12
+                    .card
+                      .card-body
+                        .best-seller-table.responsive-tbl
+                          .item
+                            .table-responsive.product-list
+                              table.table.table-bordernone
+                                thead
+                                  tr
+                                    th.f-22 
+                                       |Best Seller
+                                    th Date
+                                    th Product
+                                    th Country
+                                    th Total
+                                    th.text-right Status
+                                tbody
+                                  tr
+                                    td
+                                      .d-inline-block.align-middle
+                                        img.img-40.m-r-15.rounded-circle.align-top(src='../assets/images/avtar/7.jpg' alt="")
+                                        .status-circle.bg-primary
+                                        .d-inline-block
+                                          span John keter
+                                          p.font-roboto 2019
+                                    td 06 August
+                                    td CAP
+                                    td
+                                      i.flag-icon.flag-icon-gb
+                                    td 
+                                      span.label $5,08,652
+                                    td.text-right
+                                      i.fa.fa-check-circle
+                                      | Done
+
+                                  tr
+                                    td
+                                      .d-inline-block.align-middle
+                                        img.img-40.m-r-15.rounded-circle.align-top(src='../assets/images/avtar/4.jpg' alt="")
+                                        .status-circle.bg-primary
+                                        .d-inline-block
+                                          span Herry Venter
+                                          p.font-roboto 2020
+                                    td 21 March
+                                    td Branded Shoes
+                                    td
+                                      i.flag-icon.flag-icon-us
+                                    td 
+                                      span.label $59,105
+                                    td.text-right
+                                      i.fa.fa-check-circle
+                                      | Pending
+                                  tr
+
+                                    td
+                                      .d-inline-block.align-middle
+                                        img.img-40.m-r-15.rounded-circle.align-top(src='../assets/images/avtar/16.jpg' alt="")
+                                        .status-circle.bg-primary
+                                        .d-inline-block
+                                          span loain deo
+                                          p.font-roboto 2020
+                                    td 09 March
+                                    td Headphone
+                                    td
+                                      i.flag-icon.flag-icon-za
+                                    td 
+                                      span.label $10,155
+                                    td.text-right
+                                      i.fa.fa-check-circle
+                                      | Success
+                                  tr
+                                    td
+                                      .d-inline-block.align-middle
+                                        img.img-40.m-r-15.rounded-circle.align-top(src='../assets/images/avtar/11.jpg' alt="")
+                                        .status-circle.bg-primary
+                                        .d-inline-block
+                                          span Horen Hors
+                                          p.font-roboto 2020
+                                    td 14 February
+                                    td Cell Phone
+                                    td
+                                      i.flag-icon.flag-icon-at
+                                    td 
+                                      span.label $90,568
+                                    td.text-right 
+                                      i.fa.fa-check-circle
+                                      | In process
+                                  tr
+                                    td
+                                      .d-inline-block.align-middle
+                                        img.img-40.m-r-15.rounded-circle.align-top(src='../assets/images/avtar/3.jpg' alt="")
+                                        .status-circle.bg-primary
+                                        .d-inline-block
+                                          span fenter Jessy
+                                          p.font-roboto 2021
+                                    td 12 January
+                                    td Earings
+                                    td
+                                      i.flag-icon.flag-icon-br
+                                    td 
+                                      span.label $10,652
+                                    td.text-right
+                                      i.fa.fa-check-circle
+                                      | Pending
+
+          // Container-fluid Ends
+        include ../../components/footer
+        script.
+          var map;
+          function initMap() {
+            map = new google.maps.Map(
+              document.getElementById('map'),
+              {center: new google.maps.LatLng(-33.91700, 151.233), zoom: 18});
+
+            var iconBase =
+              '../assets/images/dashboard-2/';
+
+            var icons = {
+              userbig: {
+                icon: iconBase + '1.png'
+              },
+              library: {
+                icon: iconBase + '3.png'
+              },
+              info: {
+                icon: iconBase + '2.png'
+              }
+            };
+
+            var features = [
+              {
+                position: new google.maps.LatLng(-33.91752, 151.23270),
+                type: 'info'
+              }, {
+                position: new google.maps.LatLng(-33.91700, 151.23280),
+                type: 'userbig'
+              },  {
+                position: new google.maps.LatLng(-33.91727341958453, 151.23348314155578),
+                type: 'library'
+              }
+            ];
+
+            // Create markers.
+            for (var i = 0; i < features.length; i++) {
+              var marker = new google.maps.Marker({
+                position: features[i].position,
+                icon: icons[features[i].type].icon,
+                map: map
+              });
+            };
+          }
+        script(async='' defer='' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDGCQvcXUsXwCdYArPXo72dLZ31WS3WQRw&callback=initMap')
+
+    include ../../components/footer-files

@@ -1,0 +1,89 @@
+/**=====================
+    80. avatars CSS start
+==========================**/
+.avatars{
+    .avatar{
+        display: inline-block;
+        margin-right: 10px;
+        position: relative;
+        &:last-child{
+            margin-right: 0;
+        }
+        .b-r-30 {
+            border-radius: 30px;
+        }
+        .b-r-35 {
+            border-radius: 35px;
+        }
+        .b-r-25 {
+            border-radius: 25px;
+        }
+        .b-r-15 {
+            border-radius: 15px;
+        }
+        &.ratio{
+            img{
+                width: auto;
+            }
+        }        
+        .status{
+            position: absolute;
+            background-color: $light-text;
+            bottom: 0;
+            right: 4px;
+            border-radius: 100%;
+            border: 1px solid $white;
+        }
+        .status{
+            position: absolute;
+            height: 12%;
+            width: 12%;
+            background-color: $success-color;
+            border-radius: 100%;
+            bottom: 12%;
+            right: 4%;
+        }
+    }
+}
+.customers{
+    ul{
+        display: inline-block;
+        li{
+            img{
+                border: 2px solid $white;
+                box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+                transition: 0.5s;
+                &:hover{
+                    transform: translateY(-4px) scale(1.02);
+                    transition: 0.5s;
+                }
+            }
+            + li{
+                margin-left: -10%;
+            }
+            &:nth-child(4){
+                margin-left: -4px;
+            }
+        }
+    }
+    &.avatar-group{
+       margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.avatar-showcase{
+    margin-bottom: -10px;
+    .avatars{
+        .avatar{
+            margin-bottom: 10px;
+        }
+    }
+    .avatar-group{
+        margin-bottom: 10px;
+    }
+}
+/**=====================
+     80. avatars CSS Ends
+==========================**/

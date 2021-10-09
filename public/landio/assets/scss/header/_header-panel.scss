@@ -1,0 +1,186 @@
+/*=======  Off Canvas And Mobile Slide Panel  =======*/
+.off-canvas-wrapper,
+.mobile-slide-panel {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    transition: all 0.3s ease-out 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.off-canvas-wrapper .canvas-inner,
+.mobile-slide-panel .panel-inner {
+    max-width: 400px;
+    height: 100vh;
+    background-color: $color-white;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-right: -400px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-out 0s;
+}
+
+.off-canvas-wrapper .canvas-overlay,
+.mobile-slide-panel .panel-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-heading;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.5s ease-out 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.off-canvas-wrapper .canvas-close,
+.mobile-slide-panel .panel-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    font-size: 28px;
+    line-height: 1;
+    color: $color-heading;
+}
+
+.mobile-slide-panel {
+    .panel-inner {
+        width: 300px;
+        margin-right: -300px;
+        padding: 40px 30px;
+    }
+
+    .mobile-logo {
+        margin-bottom: 30px;
+    }
+
+    .mobile-menu {
+        li {
+            a {
+                position: relative;
+                display: block;
+                line-height: 1.5;
+                padding: 10px 45px 10px 0;
+                border-bottom: 1px solid #e5e5e5;
+                color: $color-heading;
+                font: {
+                    size: 15px;
+                    family: $font-cs-medium;
+                    weight: 500;
+                }
+
+                .dd-trigger {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 45px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    line-height: 1;
+                    z-index: 2;
+                    border-left: 1px solid #e5e5e5;
+                }
+            }
+
+            .sub-menu {
+                display: none;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+.off-canvas-wrapper {
+    .canvas-close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        z-index: 2;
+        font-size: 28px;
+        line-height: 1;
+        color: $color-heading;
+    }
+
+    .canvas-widget-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        position: relative;
+        border-bottom: 1px solid #e8e9ec;
+        font-weight: 600;
+        color: $color-heading;
+    }
+
+    .canvas-logo,
+    .contact-us,
+    .about-us {
+        margin-bottom: 40px;
+    }
+
+    .contact-us li {
+        position: relative;
+        padding-left: 60px;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        &,
+        a {
+            color: $color-body;
+        }
+
+        i {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: $color-primary;
+            border-radius: 50%;
+            font-size: 14px;
+            border-radius: 50%;
+            color: $color-white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.off-canvas-wrapper.canvas-on,
+.mobile-slide-panel.panel-on {
+    opacity: 1;
+    visibility: visible;
+}
+
+.off-canvas-wrapper.canvas-on .canvas-inner,
+.mobile-slide-panel.panel-on .panel-inner {
+    visibility: visible;
+    opacity: 1;
+    margin-right: -18px;
+}
+
+.off-canvas-wrapper.canvas-on .canvas-overlay,
+.mobile-slide-panel.panel-on .panel-overlay {
+    opacity: 1;
+    visibility: visible;
+    opacity: 0.4;
+}

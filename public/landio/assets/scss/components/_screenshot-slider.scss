@@ -1,0 +1,25 @@
+/*======= Screenshot Slider =======*/
+.screenshot-slider .screenshot-item img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.screenshot-arrows .slick-arrow {
+    width: 45px;
+    height: 45px;
+    border-radius: 7px;
+    font-size: 18px;
+    color: $color-white;
+    background-color: $color-dark-4;
+    transition: 0.3s;
+    border: none;
+
+    &:hover,
+    &.next-arrow {
+        background-color: $color-primary-6;
+    }
+
+    &.next-arrow {
+        margin-left: 8px;
+    }
+}

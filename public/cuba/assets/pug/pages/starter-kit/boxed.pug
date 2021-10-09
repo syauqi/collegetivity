@@ -1,0 +1,260 @@
+- var prism                 = true;
+- var clipboard             = true;
+- var customcard            = true;
+
+- var theme_customizer      = true;
+- var tooltip               = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body.box-layout
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/starter-kit-sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-lg-6
+                                    h3
+                                      | Box Layout
+                                    ol.breadcrumb
+                                        li.breadcrumb-item
+                                          a(href='../ltr/index.html')
+                                            | Home
+                                        li.breadcrumb-item Page layout
+                                .col-lg-6
+                                      ol.breadcrumb
+                                        li.breadcrumb-item
+                                          a(href='index.html')                                        
+                                            i(data-feather="home")
+                                        li.breadcrumb-item Dashboard
+                                        li.breadcrumb-item.active Default
+                    // Container-fluid starts
+                    .container-fluid
+                        .row.starter-main
+                            .col-sm-12
+                              .card
+                                .card-header
+                                  h5 Kick start your project development !
+                                  .card-header-right
+                                    ul.list-unstyled.card-option
+                                      li
+                                        i.fa.fa-spin.fa-cog
+                                      li
+                                        i.view-html.fa.fa-code
+                                      li
+                                        i.icofont.icofont-maximize.full-card
+                                      li
+                                        i.icofont.icofont-minus.minimize-card
+                                      li
+                                        i.icofont.icofont-refresh.reload-card
+                                      li
+                                        i.icofont.icofont-error.close-card
+                                .card-body
+                                  p
+                                    | Getting start with your project custom requirements using a ready template which is quite difficult and time taking process, Cuba Admin provides useful features to kick start your project development with no efforts !
+                                  ul
+                                    li
+                                      p
+                                        | Cuba Admin provides you getting start pages with different layouts, use the layout as per your custom requirements and just change the branding, menu & content.
+                                    li
+                                      p
+                                        | Every components in Cuba Admin are decoupled, it means use only components you actually need! Remove unnecessary and extra code easily just by excluding the path to specific SCSS, JS file.
+                                    li
+                                      p
+                                        | It use PUG as template engine to generate pages and whole template quickly using node js. Save your time for doing the common changes for each page (i.e menu, branding and footer) by generating template with pug.
+                                  .code-box-copy
+                                    button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head', title='Copy')
+                                      i.icofont.icofont-copy-alt
+                                    pre
+                                      code.language-html#example-head
+                                          | &lt;!-- Cod Box Copy begin --&gt;
+                                          | &lt;p&gt;Getting start with your project custom requirements using a ready template which is quite difficult and time taking process, Cuba Admin provides useful features to kick start your project development with no efforts !&lt;/p&gt;
+                                          | &lt;ul&gt;
+                                          | &lt;li&gt;&lt;p&gt;Cuba Admin provides you getting start pages with different layouts, use the layout as per your custom requirements and just change the branding, menu & content.&lt;/p&gt;&lt;/li&gt;
+                                          | &lt;li&gt;&lt;p&gt;Every components in Cuba Admin are decoupled, it means use only components you actually need! Remove unnecessary and extra code easily just by excluding the path to specific SCSS, JS file.&lt;/p&gt;&lt;/li&gt;
+                                          | &lt;li&gt;&lt;p&gt;It use PUG as template engine to generate pages and whole template quickly using node js. Save your time for doing the common changes for each page (i.e menu, branding and footer) by generating template with pug.&lt;/p&gt;&lt;/li&gt;
+                                          | &lt;/ul&gt;
+                                          | &lt;!-- Cod Box Copy end --&gt;
+                            .col-sm-12
+                              .card
+                                .card-header
+                                  h5 What is starter kit ?
+                                  .card-header-right
+                                    ul.list-unstyled.card-option
+                                      li
+                                        i.fa.fa-spin.fa-cog
+                                      li
+                                        i.view-html.fa.fa-code
+                                      li
+                                        i.icofont.icofont-maximize.full-card
+                                      li
+                                        i.icofont.icofont-minus.minimize-card
+                                      li
+                                        i.icofont.icofont-refresh.reload-card
+                                      li
+                                        i.icofont.icofont-error.close-card
+                                .card-body
+                                  p
+                                    | Starter kit is a set of pages with different layouts, useful for your next project to start development process from scratch with no time.
+                                  ul
+                                    li
+                                      p Each layout includes basic components only.
+                                    li
+                                      p
+                                        | Select your choice of layout from starter kit, customize it with optional changes like colors and branding, add required dependency only.
+                                    li
+                                      p
+                                        | Using template engine to generate whole template quickly with your selected layout and other custom changes. 
+                                  .code-box-copy
+                                    button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head1', title='Copy')
+                                      i.icofont.icofont-copy-alt
+                                    pre
+                                      code.language-html#example-head1
+                                          | &lt;!-- Cod Box Copy begin --&gt;
+                                          | &lt;p&gt;Starter kit is a set of pages with different layouts, useful for your next project to start development process from scratch with no time. &lt;/p&gt;
+                                          | &lt;ul&gt;
+                                          | &lt;li&gt;&lt;p&gt;Each layout includes basic components only.&lt;/p&gt;&lt;/li&gt;
+                                          | &lt;li&gt;&lt;p&gt;Select your choice of layout from starter kit, customize it with optional changes like colors and branding, add required dependency only.&lt;/p&gt;&lt;/li&gt;
+                                          | &lt;li&gt;&lt;p&gt;Using template engine to generate whole template quickly with your selected layout and other custom changes.&lt;/p&gt;&lt;/li&gt;
+                                          | &lt;/ul&gt;
+                                          | &lt;!-- Cod Box Copy end --&gt;
+                            .col-sm-12
+                              .card
+                                .card-header
+                                  h5 How to use starter kit ?
+                                  .card-header-right
+                                    ul.list-unstyled.card-option
+                                      li
+                                        i.fa.fa-spin.fa-cog
+                                      li
+                                        i.view-html.fa.fa-code
+                                      li
+                                        i.icofont.icofont-maximize.full-card
+                                      li
+                                        i.icofont.icofont-minus.minimize-card
+                                      li
+                                        i.icofont.icofont-refresh.reload-card
+                                      li
+                                        i.icofont.icofont-error.close-card
+                                .card-body
+                                  p
+                                    span.f-w-600 HTML
+                                  p
+                                    | If you know just HTML, select your choice of layout from starter kit folder, customize it with optional changes like colors and branding, add required dependency only.
+                                  p
+                                    span.f-w-600 PUG
+                                  p
+                                    | To use PUG it required node.js and basic knowledge of using it. Using PUG as template engine to generate whole template quickly with your selected layout and other custom changes. To getting start with PUG usage & template generating process please refer template documentation.
+                                  .alert.alert-primary.inverse(role='alert')
+                                    i.icon-info-alt
+                                    h5 Tips!
+                                    p
+                                      | Hideable navbar option is available for fixed navbar with static navigation only. Works in top and bottom positions, single and multiple navbars.
+                                  .code-box-copy
+                                    button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head2', title='Copy')
+                                      i.icofont.icofont-copy-alt
+                                    pre
+                                      code.language-html#example-head2
+                                          | &lt;!-- Cod Box Copy begin --&gt;
+                                          | &lt;p&gt;&lt;span class="f-w-600"&gt;HTML&lt;/span&gt;&lt;/p&gt;
+                                          | &lt;p&gt;If you know just HTML, select your choice of layout from starter kit folder, customize it with optional changes like colors and branding, add required dependency only.&lt;/p&gt;
+                                          | &lt;p&gt;&lt;span class="f-w-600"&gt;PUG&lt;/span&gt;&lt;/p&gt;
+                                          | &lt;p&gt;To use PUG it required node.js and basic knowledge of using it. Using PUG as template engine to generate whole template quickly with your selected layout and other custom changes. To getting start with PUG usage & template generating process please refer template documentation.&lt;/p&gt;
+                                          | &lt;div class="alert alert-primary inverse" role="alert"&gt;
+                                          | &lt;i class="icon-info-alt"&gt;&lt;/i&gt;
+                                          | &lt;h5&gt;Tips!&lt;/h5&gt;
+                                          | &lt;p&gt;Hideable navbar option is available for fixed navbar with static navigation only. Works in top and bottom positions, single and multiple navbars.&lt;/p&gt;
+                                          | &lt;/div&gt;
+                                          | &lt;!-- Cod Box Copy end --&gt;
+                            .col-sm-12
+                              .card
+                                .card-header
+                                  h5 Simple Card
+                                .card-body
+                                  h6 HTML Ipsum Presents
+                                  p
+                                    strong Pellentesque habitant morbi tristique
+                                    |  senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+                                    |                                     semper. 
+                                    em Aenean ultricies mi vitae est.
+                                    |  Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, 
+                                    code commodo vitae
+                                    | , ornare sit amet, wisi. Aenean
+                                    |                                     fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. 
+                                    a(href='#') Donec non enim
+                                    |  in turpis pulvinar facilisis. Ut felis.
+                                  h6 Header Level 2
+                                  ol
+                                    li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    li Aliquam tincidunt mauris eu risus.
+                                  blockquote
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada
+                                      | tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
+                                  h4
+                                    | Header Level
+                                    span  3
+                                  ul
+                                    li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    li Aliquam tincidunt mauris eu risus.
+                                  pre.
+                                    #header h1 a {
+                                      display: block;
+                                      width: 300px;
+                                      height: 80px;
+                                    }
+                                  dl
+                                    dt Definition list
+                                    dd
+                                      | Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    dt Lorem ipsum dolor sit amet
+                                    dd
+                                      | Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            .col-md-6
+                              .card
+                                .card-header
+                                  h5 With Header
+                                .card-body
+                                  h5 Content title
+                                  p
+                                    | Add a heading to card with 
+                                    code .card-header
+                                    |  class
+                                  p
+                                    | You may also include any &lt;h1&gt;-&lt;h6&gt; with a 
+                                    code .card-header 
+                                    |  & 
+                                    code .card-title
+                                    |  class to add heading.
+                                  p
+                                    | Jelly beans sugar plum cheesecake cookie oat cake soufflé. Tart lollipop carrot cake sugar plum. Marshmallow wafer tiramisu jelly beans.
+                            .col-md-6
+                              .card
+                                .card-header.card-no-border
+                                  h5 With Header & No Border
+                                .card-body
+                                  h5 Content title
+                                  p
+                                    | Add a heading to card with 
+                                    code .card-header 
+                                    |  class & without header border
+                                    code .border-bottom-0
+                                    |  class.
+                                  p
+                                    | You may also include any &lt;h1&gt;-&lt;h6&gt; with a 
+                                    code .card-header 
+                                    |  & 
+                                    code .card-title
+                                    |  class to add heading.
+                                  p
+                                    | Gingerbread brownie sweet roll cheesecake chocolate cake jelly beans marzipan gummies dessert. Jelly beans sugar plum cheesecake cookie oat cake soufflé.
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

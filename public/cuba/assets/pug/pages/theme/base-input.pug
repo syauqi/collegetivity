@@ -1,0 +1,407 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Base inputs
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Form Controls
+                                      li.breadcrumb-item.active Base inputs
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                          .col-sm-12
+                            .card
+                              .card-header
+                                h5 Basic form control
+                              form.form.theme-form
+                                .card-body
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlInput1') Email address
+                                        input#exampleFormControlInput1.form-control(type='email', placeholder='name@example.com')
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleInputPassword2') Password
+                                        input#exampleInputPassword2.form-control(type='password', placeholder='Password')
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlSelect9') Example select
+                                        select#exampleFormControlSelect9.form-control
+                                          option 1
+                                          option 2
+                                          option 3
+                                          option 4
+                                          option 5
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlSelect3') Example multiple select
+                                        select#exampleFormControlSelect3.form-control(multiple='')
+                                          option 1
+                                          option 2
+                                          option 3
+                                          option 4
+                                          option 5
+                                  .row
+                                    .col
+                                      .form-group.mb-0
+                                        label(for='exampleFormControlTextarea4') Example textarea
+                                        textarea#exampleFormControlTextarea4.form-control(rows='3')
+                                .card-footer
+                                  button.btn.btn-primary(type='submit') Submit
+                                  input.btn.btn-light(type='reset', value='Cancel')
+                            .card
+                              .card-header
+                                h5 Basic HTML input control
+                              form.form.theme-form
+                                .card-body
+                                  .row
+                                    .col
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label Simple Input
+                                        .col-sm-9
+                                          input.form-control(type='text')
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label Placeholder
+                                        .col-sm-9
+                                          input.form-control(type='text', placeholder='Type your title in Placeholder')
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label Password
+                                        .col-sm-9
+                                          input.form-control(type='password', placeholder='Password input')
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label Number
+                                        .col-sm-9
+                                          input.form-control(type='number', placeholder='Number')
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label Telephone
+                                        .col-sm-9
+                                          input.form-control.m-input(type='tel', value='91-(999)-999-999')
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label URL
+                                        .col-sm-9
+                                          input.form-control(type='url', value='https://getbootstrap.com')
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label Date and time
+                                        .col-sm-9
+                                          input#example-datetime-local-input.form-control(type='datetime-local', value='2018-01-19T18:45:00')
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label Date
+                                        .col-sm-9
+                                          input.form-control(type='date', value='2018-01-01')
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label Month
+                                        .col-sm-9
+                                          input.form-control(type='month', value='2018-01')
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label Week
+                                        .col-sm-9
+                                          input.form-control(type='week', value='2018-W09')
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label Time
+                                        .col-sm-9
+                                          input.form-control(type='time', value='21:45:00')
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label.pt-0 Color picker
+                                        .col-sm-9
+                                          input.form-control(type='color', value='#563d7c')
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label
+                                          | Maximum
+                                          | Length
+                                        .col-sm-9
+                                          input.form-control(type='text', placeholder='Content must be in 6 characters', maxlength='6')
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label.pt-0 Static Text
+                                        .col-sm-9
+                                          .form-control-static
+                                            | Hello !... This is
+                                            | static text
+                                      .form-group.row.mb-0
+                                        label.col-sm-3.col-form-label Textarea
+                                        .col-sm-9
+                                          textarea.form-control(rows='5', cols='5', placeholder='Default textarea')
+                                .card-footer
+                                  .col-sm-9.offset-sm-3
+                                    button.btn.btn-primary(type='submit') Submit
+                                    input.btn.btn-light(type='reset', value='Cancel')
+                            .card
+                              .card-header
+                                h5 Edges input style
+                              form.form.theme-form
+                                .card-body
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlInput5') Email address
+                                        input#exampleFormControlInput5.form-control.btn-pill(type='email', placeholder='name@example.com')
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleInputPassword6') Password
+                                        input#exampleInputPassword6.form-control.btn-pill(type='password', placeholder='Password')
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlSelect7') Example select
+                                        select#exampleFormControlSelect7.form-control.btn-pill
+                                          option 1
+                                          option 2
+                                          option 3
+                                          option 4
+                                          option 5
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlSelect8') Example multiple select
+                                        select#exampleFormControlSelect8.form-control.btn-pill.p-l-45(multiple='')
+                                          option 1
+                                          option 2
+                                          option 3
+                                          option 4
+                                          option 5
+                                  .row
+                                    .col
+                                      .form-group.mb-0
+                                        label(for='exampleFormControlTextarea9') Example textarea
+                                        textarea#exampleFormControlTextarea9.form-control.btn-pill(rows='3')
+                                .card-footer
+                                  button.btn.btn-primary(type='submit') Submit
+                                  input.btn.btn-light(type='reset', value='Cancel')
+                            .card
+                              .card-header
+                                h5 Flat input style
+                              form.form.theme-form
+                                .card-body
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlInput10') Email address
+                                        input#exampleFormControlInput10.form-control.btn-square(type='email', placeholder='name@example.com')
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleInputPassword11') Password
+                                        input#exampleInputPassword11.form-control.btn-square(type='password', placeholder='Password')
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlSelect12') Example select
+                                        select#exampleFormControlSelect12.form-control.btn-square
+                                          option 1
+                                          option 2
+                                          option 3
+                                          option 4
+                                          option 5
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlSelect13') Example multiple select
+                                        select#exampleFormControlSelect13.form-control.btn-square(multiple='')
+                                          option 1
+                                          option 2
+                                          option 3
+                                          option 4
+                                          option 5
+                                  .row
+                                    .col
+                                      .form-group.mb-0
+                                        label(for='exampleFormControlTextarea14') Example textarea
+                                        textarea#exampleFormControlTextarea14.form-control.btn-square(rows='3')
+                                .card-footer
+                                  button.btn.btn-primary(type='submit') Submit
+                                  input.btn.btn-light(type='reset', value='Cancel')
+                            .card
+                              .card-header
+                                h5 Raise input style
+                              form.form.theme-form
+                                .card-body
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlInput15') Email address
+                                        input#exampleFormControlInput15.form-control.input-air-primary(type='email', placeholder='name@example.com')
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleInputPassword16') Password
+                                        input#exampleInputPassword16.form-control.input-air-primary(type='password', placeholder='Password')
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlSelect17') Example select
+                                        select#exampleFormControlSelect17.form-control.input-air-primary
+                                          option 1
+                                          option 2
+                                          option 3
+                                          option 4
+                                          option 5
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlSelect18') Example multiple select
+                                        select#exampleFormControlSelect18.form-control.input-air-primary(multiple='')
+                                          option 1
+                                          option 2
+                                          option 3
+                                          option 4
+                                          option 5
+                                  .row
+                                    .col
+                                      .form-group.mb-0
+                                        label(for='exampleFormControlTextarea19') Example textarea
+                                        textarea#exampleFormControlTextarea19.form-control.input-air-primary(rows='3')
+                                .card-footer
+                                  button.btn.btn-primary(type='submit') Submit
+                                  input.btn.btn-light(type='reset', value='Cancel')
+                            .card
+                              .card-header
+                                h5 Solid input style
+                              form.form.theme-form
+                                .card-body
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlInput20') Email address
+                                        input#exampleFormControlInput20.form-control(type='email', placeholder='name@example.com')
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleInputPassword21') Password
+                                        input#exampleInputPassword21.form-control(type='password', placeholder='Password')
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleInputPassword22') Disabled
+                                        input#exampleInputPassword22.form-control(type='text', disabled='', placeholder='Disabled')
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlSelect23') Example select
+                                        select#exampleFormControlSelect23.form-control
+                                          option 1
+                                          option 2
+                                          option 3
+                                          option 4
+                                          option 5
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlSelect24') Example multiple select
+                                        select#exampleFormControlSelect24.form-control(multiple='')
+                                          option 1
+                                          option 2
+                                          option 3
+                                          option 4
+                                          option 5
+                                  .row
+                                    .col
+                                      .form-group.mb-0
+                                        label(for='exampleFormControlTextarea25') Example textarea
+                                        textarea#exampleFormControlTextarea25.form-control(rows='3')
+                                .card-footer
+                                  button.btn.btn-primary(type='submit') Submit
+                                  input.btn.btn-light(type='reset', value='Cancel')
+                            .card
+                              .card-header
+                                h5 Input sizing
+                              form.form.theme-form
+                                .card-body
+                                  .row
+                                    .col
+                                      .form-group
+                                        label.col-form-label-sm(for='colFormLabelSm26') Large input
+                                        input#colFormLabelSm26.form-control.form-control-lg(type='text', placeholder='col-form-label-lg')
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleInputPassword27') Default input
+                                        input#exampleInputPassword27.form-control(type='text', placeholder='form-control')
+                                  .row
+                                    .col
+                                      .form-group
+                                        label.col-form-label-sm(for='colFormLabelSm28') Small input
+                                        input#colFormLabelSm28.form-control.form-control-sm(type='text', placeholder='col-form-label-sm')
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlSelect29') Large select
+                                        select#exampleFormControlSelect29.form-control.form-control-lg
+                                          option 1
+                                          option 2
+                                          option 3
+                                          option 4
+                                          option 5
+                                  .row
+                                    .col
+                                      .form-group
+                                        label(for='exampleFormControlSelect30') Default select
+                                        select#exampleFormControlSelect30.form-control
+                                          option 1
+                                          option 2
+                                          option 3
+                                          option 4
+                                          option 5
+                                  .row
+                                    .col
+                                      .form-group.mb-0
+                                        label(for='exampleFormControlSelect31') Small select
+                                        select#exampleFormControlSelect31.form-control.form-control-sm
+                                          option 1
+                                          option 2
+                                          option 3
+                                          option 4
+                                          option 5
+                                .card-footer
+                                  button.btn.btn-primary(type='submit') Submit
+                                  input.btn.btn-light(type='reset', value='Cancel')
+                            .card
+                              .card-header
+                                h5 Custom controls
+                              form.form.theme-form
+                                .card-body
+                                  .row
+                                    .col
+                                      .form-group.row
+                                        label.col-sm-3.col-form-label Upload File
+                                        .col-sm-9
+                                          input.form-control(type='file')
+                                  .row
+                                    .col
+                                      .form-group.row.mb-0
+                                        label.col-sm-3.col-form-label Custom select
+                                        .col-sm-9
+                                          select.custom-select.form-control
+                                            option(selected='') Open this select menu
+                                            option(value='1') One
+                                            option(value='2') Two
+                                            option(value='3') Three
+                                .card-footer
+                                  button.btn.btn-primary(type='submit') Submit
+                                  input.btn.btn-light(type='reset', value='Cancel')
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files      

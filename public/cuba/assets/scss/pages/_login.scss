@@ -1,0 +1,152 @@
+/**=====================
+    25. Authentication CSS Start
+==========================**/
+
+.login-card {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: url('../images/login/login_bg.jpg');
+  background-position: center;
+  padding: 30px 0;
+
+  .logo {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .btn-showcase {
+    .btn {
+      line-height: 1;
+      padding: 10px 15px;
+      margin: 0;
+
+      &+.btn {
+        margin-left: 5px;
+      }
+
+      svg {
+        height: 16px;
+        vertical-align: bottom;
+      }
+    }
+  }
+
+  .login-main {
+    width: 450px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 37px rgba(8, 21, 66, 0.05);
+    margin: 0 auto;
+    background-color: $white;
+
+    .theme-form {
+      h4 {
+        margin-bottom: 5px;
+      }
+
+      label {
+        font-size: 15px;
+        letter-spacing: 0.4px;
+      }
+
+      .checkbox label::before {
+        background-color: $card-body-color;
+        border: 1px solid #dfdfdf;
+      }
+
+      .or {
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 65%;
+          height: 2px;
+          background-color: #f3f3ff;
+          top: 9px;
+          z-index: 0;
+          right: 0;
+        }
+      }
+
+      input {
+        background-color: #f3f3ff;
+        transition: all 0.3s ease;
+
+        &::-webkit-input-placeholder {
+          color: $light-text;
+        }
+
+        &:hover,
+        &:focus {
+          border: 1px solid lighten($semi-dark, 35%);
+          box-shadow: none !important;
+          transition: all 0.3s ease;
+        }
+      }
+
+      p {
+        margin-bottom: 25px;
+        font-size: 14px;
+        color: $dark-gray;
+      }
+
+      .form-group {
+        margin-bottom: 10px;
+        position: relative;
+      }
+
+      .link {
+        position: absolute;
+        top: 10px;
+        right: 0;
+      }
+    }
+  }
+}
+
+.show-hide {
+  position: absolute;
+  top: 52px;
+  right: 20px;
+  transform: translateY(-50%);
+
+  span {
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--theme-deafult);
+
+    &.show {
+      &:before {
+        content: "show";
+      }
+    }
+
+    &:before {
+      content: "hide";
+    }
+  }
+}
+
+.needs-validation {
+  .invalid-feedback {
+    color: $dark-gray;
+  }
+
+  .show-hide {
+    right: 30px;
+  }
+
+  .invalid-tooltip {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/**=====================
+    25. Authentication CSS Ends
+==========================**/

@@ -1,0 +1,139 @@
+/*=============Scrollable css start=============*/
+
+
+%scroll-xy {
+  background-color: $transparent-color;
+  display: block;
+}
+.scroll-demo {
+  padding: 10px;
+  position: relative;
+  border: 1px solid $light-color;
+  overflow: auto;
+  height: 300px;
+  .horz-scroll-content {
+    width: 1600px;
+  }
+}
+.ps-container {
+  touch-action: none;
+  overflow: hidden !important;
+  &.ps-in-scrolling {
+    pointer-events: none;
+    &.ps-x > .ps-scrollbar-x-rail {
+      background-color: $light-color;
+      opacity: 0.9;
+      > .ps-scrollbar-x {
+        background-color: $semi-dark;
+      }
+    }
+    &.ps-y > .ps-scrollbar-y-rail {
+      background-color: $light-color;
+      opacity: 0.9;
+      > .ps-scrollbar-y {
+        background-color: $semi-dark;
+      }
+    }
+  }
+  > {
+    .ps-scrollbar-x-rail {
+      display: none;
+      position: absolute;
+      border-radius: 4px;
+      opacity: 0;
+      transition: background-color 0.2s linear, opacity 0.2s linear;
+      bottom: 3px;
+      height: 8px;
+      > .ps-scrollbar-x {
+        position: absolute;
+        background-color: $semi-dark;
+        border-radius: 4px;
+        transition: background-color 0.2s linear;
+        bottom: 0;
+        height: 8px;
+      }
+    }
+    .ps-scrollbar-y-rail {
+      right: 3px;
+      width: 8px;
+      display: none;
+      position: absolute;
+      border-radius: 4px;
+      opacity: 0;
+      transition: background-color 0.2s linear, opacity 0.2s linear;
+      > .ps-scrollbar-y {
+        width: 10px;
+        position: absolute;
+        background-color: $semi-dark;
+        border-radius: 4px;
+        transition: background-color 0.2s linear;
+        right: 0;
+      }
+    }
+  }
+  &:hover {
+    &.ps-in-scrolling {
+      pointer-events: none;
+      &.ps-x > .ps-scrollbar-x-rail {
+        background-color: $semi-dark;
+        opacity: 0.9;
+        > .ps-scrollbar-x {
+          width: 128px;
+          background-color: lighten($black , 60%); ;
+        }
+      }
+      &.ps-y > .ps-scrollbar-y-rail {
+        background-color: $semi-dark;
+        opacity: 0.9;
+        > .ps-scrollbar-y {
+          background-color: lighten($black , 60%); ;
+        }
+      }
+    }
+    > {
+      .ps-scrollbar-x-rail {
+        opacity: 0.6;
+        &:hover {
+          background-color: $light-color;
+          opacity: 0.9;
+          > .ps-scrollbar-x {
+            background-color: lighten($black , 60%); ;
+          }
+        }
+      }
+      .ps-scrollbar-y-rail {
+        opacity: 0.6;
+        &:hover {
+          background-color: $light-color;
+          opacity: 0.9;
+          > .ps-scrollbar-y {
+            background-color: $semi-dark;
+          }
+        }
+      }
+    }
+  }
+  &.ps-active-x > .ps-scrollbar-x-rail {
+    @extend %scroll-xy;
+  }
+  &.ps-active-y > .ps-scrollbar-y-rail {
+    @extend %scroll-xy;
+  }
+}
+.always-visible.ps-container > {
+  .ps-scrollbar-x-rail {
+    opacity: 0.6;
+  }
+  .ps-scrollbar-y-rail {
+    opacity: 0.6;
+  }
+}
+.large-margin.ps-container > {
+  .ps-scrollbar-x-rail {
+    margin: 0 25%;
+  }
+  .ps-scrollbar-y-rail {
+    margin: 100px 0;
+  }
+}
+/*=============Scrollable css end=============*/

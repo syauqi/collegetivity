@@ -1,0 +1,84 @@
+- var datatable             = true;
+- var datatable_extension   = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Scroller
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Extension Data Tables
+                                      li.breadcrumb-item.active Scroller
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Basic Table Scroll
+                              span
+                                | Scroller is a plug-in for DataTables which enhances DataTables' built-in scrolling features to allow large amounts of data to be rendered on page very quickly.This is done by Scroller through the use of a virtual rendering technique that will render only the part of the table that is actually required for the current view.
+                            .card-body
+                              .dt-ext.table-responsive
+                                table#basic-scroller.display.nowrap
+                                  thead
+                                    tr
+                                      th ID
+                                      th First name
+                                      th Last name
+                                      th ZIP / Post code
+                                      th Country
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 State Saving
+                              span
+                                | Scroller will automatically integrate with DataTables in order to save the scrolling position of the table, if state saving is enabled in the DataTable (stateSave). This example shows that in practice - to demonstrate, scroll the table and then reload the page.
+                            .card-body
+                              .dt-ext.table-responsive
+                                table#state-saving.display.nowrap
+                                  thead
+                                    tr
+                                      th ID
+                                      th First name
+                                      th Last name
+                                      th ZIP / Post code
+                                      th Country
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 API
+                              span
+                                | This example shows a trivial use of the API methods that Scroller adds to the DataTables API to scroll to a row once the table's data has been loaded.
+                            .card-body
+                              .dt-ext.table-responsive
+                                table#api.display.nowrap
+                                  thead
+                                    tr
+                                      th ID
+                                      th First name
+                                      th Last name
+                                      th ZIP / Post code
+                                      th Country
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

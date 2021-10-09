@@ -1,0 +1,79 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var time_picker           = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Time Picker
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Form Widgets
+                                      li.breadcrumb-item.active Time Picker
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-md-6
+                          .card
+                            .card-header
+                              h5 Default:
+                            .card-body
+                              form.theme-form
+                                .form-group.mb-0
+                                  .input-group.clockpicker
+                                    input.form-control(type='text', value='09:30')
+                                    span.input-group-addon
+                                      span.glyphicon.glyphicon-time
+                        .col-md-6
+                          .card
+                            .card-header
+                              h5 Align the arrow to top, auto close:
+                            .card-body
+                              form.theme-form
+                                .form-group.mb-0
+                                  .input-group.clockpicker.pull-center(data-placement='left', data-align='top', data-autoclose='true')
+                                    input.form-control(type='text', value='13:14')
+                                    span.input-group-addon
+                                      span.glyphicon.glyphicon-time
+                        .col-md-6
+                          .card
+                            .card-header
+                              h5 Set options in javascript, instead of data-* :
+                            .card-body
+                              form.theme-form
+                                .form-group.mb-0
+                                  .input-group.clockpicker(data-placement='top', data-align='left', data-donetext='Done')
+                                    input.form-control(type='text', value='18:00')
+                                    span.input-group-addon
+                                      span.glyphicon.glyphicon-time
+                        .col-md-6
+                          .card
+                            .card-header
+                              h5 Set default value, input without addon:
+                            .card-body
+                              .clearfix
+                                form.theme-form
+                                  .form-group.mb-0
+                                    input#single-input.form-control(type='text', value='', placeholder='Addon')
+
+                    // Container-fluid ends                    
+                include ../../components/footer
+        include ../../components/footer-files

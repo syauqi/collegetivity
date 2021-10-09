@@ -1,0 +1,32 @@
+/**=====================
+     50. Tree  CSS Start
+==========================**/
+.jstree-default{
+	.jstree-clicked{
+		background-color: lighten($primary-color , 42%);
+		box-shadow: none;
+		color: $dark-color;
+	}
+}
+.vakata-context, .vakata-context ul{
+	background-color: $white;
+	border: none;
+	box-shadow: 0 0 2px 2px $light-semi-gray;
+	 li{
+		 a{
+			 .vakata-contextmenu-sep{
+				 display: none;
+			 }
+			 &:hover{
+				 background-color: lighten($primary-color , 45%);
+				 box-shadow: None;
+			 }
+		}
+	}
+	.vakata-context-separator{
+		display: none;
+	}
+}
+/**=====================
+     50. Tree CSS Ends
+==========================**/

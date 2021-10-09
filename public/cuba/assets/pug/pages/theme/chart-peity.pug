@@ -1,0 +1,118 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var peitychart            = true;
+- var page_peitychart       = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Peity Chart
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Charts
+                                      li.breadcrumb-item.active Peity Chart
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-xl-4
+                          .card
+                            .card-header
+                              h5 Updating Chart
+                            .card-body.peity-charts.peity-chart-primary
+                              span.updating-chart 4,3,5,4,5,10,2,3,9,1,2,8
+                        .col-xl-4
+                          .card
+                            .card-header
+                              h5 Line Chart 1
+                            .card-body.peity-charts.peity-chart-primary
+                              span.line 5,3,9,6,5,9,7,3,5,2
+                        .col-xl-4
+                          .card
+                            .card-header
+                              h5 Line Chart 2
+                            .card-body.peity-charts.peity-chart-primary
+                              span.line 0,-3,-6,-4,-5,-4,-7,-3,-5,-2
+                        .col-xl-4.box-col-6
+                          .card
+                            .card-header
+                              h5 Bar Chart 1
+                            .card-body.peity-charts.bar-odd-even
+                              span.bar 5,3,9,6,5,9,7,3,5,2
+                        .col-xl-4.box-col-6
+                          .card
+                            .card-header
+                              h5 Bar Chart 2
+                            .card-body.peity-charts.bar-odd-even
+                              span.bar 5,3,2,-1,-3,-2,2,3,5,2
+                        .col-xl-4.box-col-6
+                          .card
+                            .card-header
+                              h5 Donut Chart 1
+                            .card-body.peity-charts.donut-peity
+                              span.donut 226/360
+                        .col-xl-4.box-col-6
+                          .card
+                            .card-header
+                              h5 Donut Chart 2
+                            .card-body.peity-charts.donut-peity2
+                              span.donut 1,2,3,2,2
+                        .col-xl-4.box-col-6
+                          .card
+                            .card-header
+                              h5 Pie Chart 1
+                            .card-body.peity-charts.pie-peity
+                              span.pie 226,134
+                        .col-xl-4.box-col-6
+                          .card
+                            .card-header
+                              h5 Pie Chart 2
+                            .card-body.peity-charts.pie-peity
+                              span.pie 1,2,3,2,2
+                        .col-xl-6.xl-100.box-col-12
+                          .card
+                            .card-header
+                              h5 Donut Charts with Radius
+                            .card-body
+                              p.data-attributes
+                                span.small-donut(data-peity='{"innerRadius": 10, "radius": 40 }') 1/7
+                                span.small-donut2(data-peity='{"innerRadius": 14, "radius": 36 }') 2/7
+                                span.small-donut3(data-peity='{"innerRadius": 16, "radius": 32 }') 3/7
+                                span.small-donut4(data-peity='{"innerRadius": 18, "radius": 28 }') 4/7
+                                span.small-donut5(data-peity='{"innerRadius": 20, "radius": 24 }') 5/7
+                                span.small-donut6(data-peity='{"innerRadius": 18, "radius": 20 }') 6/7
+                        .col-xl-6.xl-100.box-col-12
+                          .card
+                            .card-header
+                              h5 Peity Charts With Different Colors
+                            .card-body
+                              .row
+                                .col-sm-3.text-center.col-6
+                                  .xm-mb-peity
+                                    span.bar-colours-1 5,3,9,6,5,9,7,3,5,2
+                                .col-sm-3.text-center.col-6
+                                  .xm-mb-peity
+                                    span.bar-colours-2 5,3,2,-1,-3,-2,2,3,5,2
+                                .col-sm-3.text-center.col-6
+                                  span.bar-colours-3 0,-3,-6,-4,-5,-4,-7,-3,-5,-2
+                                .col-sm-3.text-center.col-6
+                                  span.pie-colours-1 4,7,6,5
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

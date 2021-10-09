@@ -1,0 +1,270 @@
+/*======= Image Boxes v1 =======*/
+.image-boxes-v1 {
+    .image-box {
+        background: #fff;
+        box-shadow: 0px 10px 30px 0px rgba(225, 223, 255, 0.4);
+        padding: 50px 50px;
+        text-align: center;
+        position: relative;
+        border-radius: 7px;
+        overflow: hidden;
+        transition: 0.4s;
+
+        &:before {
+            position: absolute;
+            content: "";
+            height: 3px;
+            width: 0;
+            top: 0;
+            left: 0;
+            background: $color-primary;
+            transition: 0.3s;
+        }
+
+        .thumb {
+            margin-bottom: 30px;
+        }
+
+        .title {
+            margin-bottom: 25px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .box-link {
+            height: 55px;
+            width: 55px;
+            border-radius: 50px;
+            transition: 0.3s;
+            z-index: 1;
+            color: $color-primary;
+            border: 2px solid #ecebfd;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &:hover,
+        &.active {
+            &::before {
+                width: 100%;
+            }
+
+            .box-link {
+                border-color: #473bf0;
+            }
+        }
+    }
+
+    &.image-thumbnail-boxed {
+        .image-box {
+            padding: 45px 30px;
+            box-shadow: none;
+            position: relative;
+
+            .thumb {
+                background-color: #f2f5fe;
+                height: 180px;
+                width: 180px;
+                margin: 0 auto 25px;
+                border-radius: 50%;
+                margin-bottom: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    max-width: 120px;
+                }
+            }
+
+            .title {
+                font-size: 22px;
+            }
+
+            &:before {
+                background-color: $color-primary-2;
+            }
+
+            .box-link {
+                color: $color-primary-2;
+            }
+
+            &:hover {
+                .box-link {
+                    background-color: $color-primary-2;
+                    border-color: $color-primary-2;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+/*======= Image Boxes v2 =======*/
+.image-boxes-v2 {
+    .image-box {
+        .box-image {
+            border-radius: 7px;
+            overflow: hidden;
+            width: 100%;
+            height: 210px;
+            position: relative;
+            z-index: 1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                transition: 0.3s;
+            }
+        }
+
+        .box-content {
+            background-color: $color-white;
+            border-radius: 0 0 7px 7px;
+            padding: 30px;
+
+            .title {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+
+            .box-link {
+                color: #7a7a7a;
+                margin-top: 12px;
+                font: {
+                    size: 15px;
+                    family: $font-cs-bold;
+                    weight: 700;
+                }
+                line-height: 1;
+                position: relative;
+                z-index: 1;
+
+                i {
+                    margin-left: 8px;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    height: 2px;
+                    width: 0;
+                    background-color: $color-primary;
+                    left: 0;
+                    bottom: -4px;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+        &:hover {
+            .box-image {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+            .box-link {
+                color: $color-primary;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/*======= Image Boxes v3 =======*/
+.image-boxes-v3 {
+    .image-box {
+        background-color: $color-white;
+        border-radius: 15px;
+        padding: 40px 50px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        transition: 0.3s;
+
+        .box-image {
+            width: 130px;
+            height: 130px;
+            flex: 0 0 130px;
+            margin-right: 35px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-position: center;
+                object-fit: cover;
+            }
+        }
+
+        .box-content {
+            .title {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .box-link {
+                color: $color-body-3;
+                margin-top: 12px;
+                font: {
+                    size: 15px;
+                    family: $font-cs-bold;
+                    weight: 700;
+                }
+                line-height: 1;
+                position: relative;
+                z-index: 1;
+
+                i {
+                    margin-left: 8px;
+                }
+            }
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            transition: all 0.3s linear;
+            border-radius: 15px;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+
+        &::before {
+            opacity: 0;
+            visibility: hidden;
+            left: -5px;
+            top: -5px;
+            z-index: -1;
+            background-color: $color-primary-4;
+            transform: rotateY(-70deg);
+            transform-origin: left;
+        }
+
+        &::after {
+            left: 0;
+            top: 0;
+            background-color: $color-white;
+            opacity: 1;
+        }
+
+        &:hover {
+            box-shadow: 0px 10px 45px 0px rgba(71, 59, 240, 0.1);
+
+            &::before {
+                visibility: visible;
+                opacity: 1;
+                transform: rotateY(0);
+            }
+        }
+    }
+}

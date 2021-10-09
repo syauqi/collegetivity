@@ -1,0 +1,349 @@
+/**=====================
+     48. Form Wizard CSS Start
+==========================**/
+/*Form Wizard One Start*/
+
+.form-wizard {
+	.tab {
+		display: none;
+	}
+
+	.btn-mb {
+		margin-bottom: 30px;
+	}
+
+	.step {
+		height: 10px;
+		width: 10px;
+		margin: 0 2px;
+		background-color: var(--theme-deafult);
+		border: none;
+		border-radius: 50%;
+		display: inline-block;
+		opacity: 0.5;
+
+		&.active {
+			opacity: 1;
+		}
+
+		&.finish {
+			background-color: var(--theme-secondary);
+		}
+	}
+}
+
+/*Form Wizard One ends*/
+
+/*Form Wizard Two Start*/
+.stepwizard {
+	display: table;
+	width: 100%;
+	position: relative;
+	margin-bottom: 30px;
+
+	.stepwizard-row {
+		display: table-row;
+
+		&:before {
+			top: 16px;
+			bottom: 0;
+			position: absolute;
+			content: " ";
+			width: 100%;
+			height: 1px;
+			background-color: $light-gray;
+		}
+
+		.stepwizard-step {
+			display: table-cell;
+			text-align: center;
+			position: relative;
+
+			p {
+				margin-top: 10px;
+			}
+
+			button[disabled] {
+				opacity: 1 !important;
+				filter: alpha(opacity=100) !important;
+			}
+		}
+	}
+}
+
+
+
+/*Form Wizard Two Ends*/
+
+
+/*Form Wizard Three Start*/
+.f1 {
+	fieldset {
+		display: none;
+	}
+
+	.input-error {
+		border-color: $danger-color;
+	}
+
+	.f1-steps {
+		overflow: hidden;
+		position: relative;
+		margin-top: 30px;
+		margin-bottom: 30px;
+
+		.f1-progress {
+			position: absolute;
+			top: 24px;
+			width: 100%;
+			height: 1px;
+			background: $dark-gray;
+
+			.f1-progress-line {
+				height: 1px;
+				background: var(--theme-deafult);
+				width: 16%;
+			}
+		}
+
+		.f1-step {
+			position: relative;
+			float: left;
+			width: 33.333333%;
+			text-align: center;
+
+			&.activated {
+				.f1-step-icon {
+					background: $white;
+					border: 1px solid var(--theme-deafult);
+					color: var(--theme-deafult);
+					line-height: 38px;
+				}
+
+				p {
+					color: var(--theme-deafult);
+				}
+			}
+
+			&.active {
+				.f1-step-icon {
+					width: 48px;
+					height: 48px;
+					background: var(--theme-deafult);
+					font-size: 22px;
+					line-height: 20px;
+				}
+
+				p {
+					color: var(--theme-deafult);
+				}
+			}
+
+			p {
+				color: $dark-gray;
+			}
+
+			.f1-step-icon {
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				background: $dark-gray;
+				font-size: 16px;
+				color: $white;
+				line-height: 20px;
+				border-radius: 50%;
+			}
+		}
+	}
+
+	.f1-buttons {
+		text-align: right;
+	}
+}
+
+/*Form Wizard Three ends*/
+
+
+/*Form Wizard Four Start*/
+.wizard-4 {
+	.action-bar {
+		position: absolute;
+		bottom: 50px;
+		right: 50px;
+	}
+
+
+	.action-bar {
+		.btn {
+			float: right;
+			margin: 0 5px;
+			background-color: #e3e0ff !important;
+			border-color: #e3e0ff !important;
+			color: var(--theme-deafult);
+		}
+
+		.buttonDisabled {
+			color: $semi-dark;
+			background-color: rgba($semi-dark, 0.05) !important;
+			border: 1px solid rgba($semi-dark, 0.05) !important;
+			cursor: text;
+		}
+
+	}
+
+	.step-container {
+		background: #f8f9fe;
+	}
+
+	.loader {
+		display: none;
+	}
+
+	.msg-box {
+		position: fixed;
+		display: none;
+		padding: 5px 10px;
+		background-color: lighten($primary-color, 10%);
+		top: 30px;
+		border-radius: 5px;
+		right: 60px;
+		padding: 10px 20px;
+
+		.content {
+			padding: 0;
+			float: left;
+			padding-top: 3px;
+			color: $white;
+		}
+
+		.close {
+			color: $white;
+			margin-left: 10px;
+			opacity: 1;
+			font-size: 18px;
+			line-height: 1.4;
+		}
+	}
+
+	ul.anchor {
+		float: left;
+		width: 30%;
+		height: 100vh;
+		padding: 80px;
+
+		.disabled {
+			opacity: 0.7;
+			color: $semi-dark;
+
+			h4 {
+				background-color: rgba($semi-dark, 0.15);
+			}
+		}
+
+		.logo {
+			padding-bottom: 20px;
+		}
+
+		li {
+			position: relative;
+			display: block;
+			margin: 0;
+			padding: 0;
+			padding-bottom: 19px;
+			float: left;
+			clear: both;
+			width: 100%;
+			box-sizing: border-box;
+			z-index: 0;
+
+			&+li {
+				a {
+					padding-left: 80px;
+				}
+			}
+
+			&:last-child {
+				position: absolute;
+				bottom: 0;
+
+				img {
+					height: 300px;
+				}
+			}
+
+			h4 {
+				display: inline-block;
+				background-color: rgba($primary-color, 0.2);
+				padding: 16px 23px;
+				border-radius: 100%;
+				position: absolute;
+				left: 0;
+				top: 6px;
+			}
+
+			a {
+				display: block;
+				position: relative;
+				float: left;
+				margin: 0;
+				padding: 10px 20px;
+				width: 100%;
+				box-sizing: border-box;
+				text-decoration: none;
+				outline-style: none;
+				z-index: 1;
+				font-size: 18px;
+
+				small {
+					display: block;
+					font-size: 14px;
+				}
+
+				.stepNumber {
+					position: relative;
+					float: left;
+					width: 30px;
+					text-align: center;
+					padding: 5px;
+					padding-top: 0;
+				}
+
+				&.done {
+					h4 {
+						color: $white;
+						background: var(--theme-deafult);
+
+						&:before {
+							font-size: 12px;
+							position: absolute;
+							left: 5px;
+							top: -3px;
+							content: "\e64c";
+							font-family: 'themify';
+							background-color: $white;
+							color: var(--theme-deafult);
+							border-radius: 15px;
+							padding: 2px;
+							border: 1px solid;
+						}
+					}
+				}
+
+				&.error {
+					color: $dark-gray;
+					background: $pitch-color;
+					border: 1px solid $danger-color;
+
+					&:hover {
+						color: $black;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*Form Wizard Four Ends*/
+/**=====================
+    48. Form Wizard CSS Ends
+==========================**/

@@ -1,0 +1,132 @@
+/**=====================
+     87. task app CSS Start
+==========================**/
+.modal-open {
+  .datepickers-container {
+    z-index: 1075;
+  }
+}
+.date-details {
+  align-items: center;
+  > div {
+    + div {
+      margin-left: 10px;
+    }
+  }
+}
+.taskadd {
+  table {
+    tr {
+      td {
+        border-top: none;
+        &:first-child {
+          padding-left: 30px;
+        }
+        &:last-child {
+          padding-right: 30px;
+        }
+        svg {
+          width: 18px;
+          height: 18px;
+          color: $semi-dark;
+        }
+      }
+      &:first-child {
+        td {
+          padding-top: 30px;
+        }
+      }
+      &:last-child {
+        td {
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+// responsive
+@media only screen and (max-width: 1660px) {
+  .taskadd {
+    table {
+      tr {
+        td {
+          &:first-child {
+            min-width: 160px;
+          }
+          &:nth-child(3) {
+            min-width: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .date-details {
+    display: block ! important;
+    margin-bottom: -10px;
+    .d-inline-block {
+      margin-bottom: 10px;
+    }
+  }
+  .taskadd {
+    table {
+      tr {
+        td {
+          &:first-child {
+            padding-left: 20px;
+          }
+        }
+        &:first-child {
+          td {
+            padding-top: 20px;
+          }
+        }
+        &:last-child {
+          td {
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .taskadd {
+    table {
+      tr {
+        td {
+          &:nth-child(2) {
+            min-width: 745px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .taskadd {
+    table {
+      tr {
+        td {
+          &:first-child {
+            padding-left: 15px;
+          }
+        }
+        &:first-child {
+          td {
+            padding-top: 15px;
+          }
+        }
+        &:last-child {
+          td {
+            padding-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+/**=====================
+   87. task app CSS Ends
+==========================**/

@@ -1,0 +1,285 @@
+/**=====================
+     72. Job CSS start
+==========================**/
+.filter-cards-view {
+  .job-filter {
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  .checkbox-animated {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.location-checkbox {
+  span {
+    color: $light-text;
+    padding-left: 33px;
+  }
+}
+
+.job-accordion {
+  .card {
+    margin-bottom: 30px;
+  }
+
+  .btn-block {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.job-search {
+  p {
+    margin-top: 30px;
+  }
+
+  .media {
+    .media-body {
+      h6 {
+        margin-bottom: 3px;
+
+        span {
+          font-size: 13px;
+          color: $light-text;
+          font-weight: normal;
+
+          &.badge {
+            color: $white;
+          }
+        }
+      }
+
+      p {
+        margin-top: 0;
+        color: $light-text;
+      }
+    }
+  }
+
+  .job-description {
+    margin-top: 30px;
+
+    h6 {
+      font-weight: 600;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+
+    ul {
+      list-style-type: disc;
+      list-style-position: inside;
+
+      li {
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .theme-form {
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      .row {
+        div[class^="col-"] {
+          +div[class^="col-"] {
+            .select2-container {
+              margin-top: 14px;
+              max-width: 100%;
+            }
+          }
+
+          .job-select2 {
+            ~.select2-container {
+              margin-top: 0 !important;
+            }
+          }
+
+          .input-group {
+            .datepicker-here {
+              font-size: 14px;
+              border: 1px solid $light-color;
+              padding-top: 20px;
+              padding-bottom: 20px;
+            }
+          }
+        }
+      }
+
+      input[type='file'] {
+        height: calc(2.25rem + 5px);
+      }
+    }
+  }
+}
+
+.select2-container {
+  .select2-selection--single {
+    border-radius: 0.25rem !important;
+    border-color: #f6f7fb;
+    height: 40px !important;
+    padding: 5px;
+  }
+}
+
+.job-pagination {
+  margin-bottom: 30px;
+
+  nav {
+    ul {
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .xl-mt-job {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .filter-cards-view {
+    padding: 20px !important;
+
+    .job-filter {
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+
+    .checkbox-animated {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .job-accordion {
+    .animate-chk {
+      padding: 20px !important;
+    }
+  }
+
+  .job-search {
+    p {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .filter-cards-view {
+    padding: 15px !important;
+
+    .job-filter {
+      &:first-child {
+        margin-bottom: 15px;
+      }
+    }
+
+    .checkbox-animated {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .job-accordion {
+    .animate-chk {
+      padding: 15px !important;
+    }
+  }
+
+  .job-search {
+    p {
+      margin-top: 15px;
+    }
+
+    .media {
+      display: block;
+      text-align: center;
+
+      .media-body {
+        h6 {
+          .pull-right {
+            float: none;
+            margin-top: 3px;
+          }
+
+          a {
+            display: block;
+          }
+        }
+
+        p {
+          span {
+            +span {
+              display: block;
+            }
+          }
+        }
+      }
+
+      img {
+        margin-bottom: 15px;
+      }
+
+      .m-r-20 {
+        margin-right: 0;
+      }
+    }
+
+    .job-description {
+      margin-top: 15px;
+
+      .theme-form {
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        .row {
+          div[class^="col-"] {
+            +div[class^="col-"] {
+              .select2-container {
+                margin-top: 2px;
+              }
+            }
+          }
+        }
+
+        .xs-mt-period {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  .job-pagination {
+    margin-bottom: 15px;
+  }
+
+  .xl-mt-job {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .job-search {
+    .job-description {
+      .btn {
+        padding: 6px 12px;
+      }
+    }
+  }
+}
+
+/**=====================
+     72. Job CSS end
+==========================**/

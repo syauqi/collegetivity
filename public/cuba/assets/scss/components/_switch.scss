@@ -1,0 +1,358 @@
+/**=====================
+    18. Switch  CSS Start
+==========================**/
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+
+	input {
+		display: none;
+
+		&:checked+.switch-state {
+			background-color: var(--theme-deafult);
+
+			&:before {
+				transform: translateX(26px);
+			}
+		}
+
+		&:focus+.switch-state {
+			box-shadow: 0 0 1px var(--theme-deafult);
+		}
+	}
+}
+
+.switch-state {
+	border-radius: 20px;
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: $light-color;
+	transition: .4s;
+
+	&:before {
+		position: absolute;
+		content: "";
+		height: 26px;
+		width: 26px;
+		left: 4px;
+		bottom: 4px;
+		background-color: $white;
+		transition: .4s;
+		border-radius: 20px;
+	}
+}
+
+.icon-state {
+	.switch-state {
+		&:after {
+			content: "\efb8";
+			font-family: $font-ICO;
+			left: 10px;
+			position: absolute;
+			top: 10px;
+			color: $dark-color;
+			transition: .4s;
+			opacity: 0.3;
+		}
+	}
+
+	input {
+		&:checked+.switch-state {
+			&:after {
+				content: "\efad";
+				left: 36px;
+				opacity: 1;
+				transition: .4s;
+
+			}
+		}
+	}
+}
+
+.switch-lg {
+	.switch {
+		width: 75px;
+		height: 40px;
+
+		.switch-state {
+			&:before {
+				height: 30px;
+				width: 30px;
+				left: 7px;
+				bottom: 5px;
+				top: 4px;
+			}
+		}
+	}
+}
+
+.switch-lg.icon-state {
+	.switch {
+		.switch-state {
+			&:after {
+				left: 12px;
+				font-size: 18px;
+			}
+		}
+
+		input {
+			&:checked+.switch-state {
+				&:after {
+					left: 47px;
+				}
+
+				&:before {
+					transform: translateX(32px);
+				}
+			}
+		}
+	}
+}
+
+.switch-sm {
+	&.icon-state {
+		.switch {
+			.switch-state {
+				&:after {
+					top: 4px;
+					left: 4px;
+					font-size: 8px;
+				}
+			}
+
+			input {
+				&:checked+.switch-state {
+					&:after {
+						left: 13px;
+						top: 4px;
+					}
+				}
+			}
+		}
+	}
+
+	.switch {
+		width: 25px;
+		height: 16px;
+		margin-top: 10px;
+		margin-bottom: 0px;
+
+		.switch-state {
+			&:before {
+				height: 8px;
+				width: 8px;
+				left: 4px;
+				bottom: 4px;
+			}
+		}
+	}
+
+	input {
+		&:checked+.switch-state {
+			&:before {
+				left: -13px;
+			}
+		}
+	}
+}
+
+.switch-outline {
+	.switch-state {
+		background-color: $white;
+		border: 1px solid var(--theme-deafult);
+		transition: .4s;
+
+		&:before {
+			background-color: $light-color;
+			bottom: 3px;
+			color: $white;
+		}
+	}
+}
+
+.switch-outline {
+	.switch {
+		input {
+			display: none;
+
+			&:checked+.switch-state {
+				background-color: $transparent-color;
+				border: 1px solid var(--theme-deafult);
+
+				&:before {
+					background-color: var(--theme-deafult);
+					bottom: 3px;
+					transform: translateX(26px);
+				}
+
+				&:after {
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+.switch-outline {
+	.switch-state.bg-primary {
+		border: 1px solid var(--theme-deafult);
+		background-color: $transparent-color !important;
+	}
+
+	.switch {
+		input {
+			&:checked+.switch-state.bg-primary {
+				background-color: $transparent-color !important;
+				border: 1px solid var(--theme-deafult);
+
+				&:before {
+					background-color: var(--theme-deafult);
+				}
+			}
+		}
+	}
+
+	.switch-state.bg-dark {
+		border: 1px solid $dark-color;
+		background-color: $transparent-color !important;
+	}
+
+	.switch {
+		input {
+			&:checked+.switch-state.bg-dark {
+				background-color: $transparent-color !important;
+				border: 1px solid $dark-color;
+
+				&:before {
+					background-color: $dark-color;
+				}
+			}
+		}
+	}
+
+	.switch-state.bg-warning {
+		border: 1px solid $warning-color;
+		background-color: $transparent-color !important;
+	}
+
+	.switch {
+		input {
+			&:checked+.switch-state.bg-warning {
+				background-color: $transparent-color !important;
+				border: 1px solid $warning-color;
+
+				&:before {
+					background-color: $warning-color;
+				}
+			}
+		}
+	}
+
+	.switch-state.bg-success {
+		border: 1px solid $success-color;
+		background-color: $transparent-color !important;
+	}
+
+	.switch {
+		input {
+			&:checked+.switch-state.bg-success {
+				background-color: $transparent-color !important;
+				border: 1px solid $success-color;
+
+				&:before {
+					background-color: $success-color;
+				}
+			}
+		}
+	}
+
+	.switch-state.bg-info {
+		border: 1px solid $info-color;
+		background-color: $transparent-color !important;
+	}
+
+	.switch {
+		input {
+			&:checked+.switch-state.bg-info {
+				background-color: $transparent-color !important;
+				border: 1px solid $info-color;
+
+				&:before {
+					background-color: $info-color;
+				}
+			}
+		}
+	}
+
+	.switch-state.bg-danger {
+		border: 1px solid $danger-color;
+		background-color: $transparent-color !important;
+	}
+
+	.switch {
+		input {
+			&:checked+.switch-state.bg-danger {
+				background-color: $transparent-color !important;
+				border: 1px solid $danger-color;
+
+				&:before {
+					background-color: $danger-color;
+				}
+			}
+		}
+	}
+
+	.switch-state.bg-primary {
+		border: 1px solid var(--theme-deafult);
+		background-color: $transparent-color !important;
+	}
+
+	.switch {
+		input {
+			&:checked+.switch-state.bg-primary {
+				background-color: $transparent-color !important;
+				border: 1px solid var(--theme-deafult);
+
+				&:before {
+					background-color: var(--theme-deafult);
+				}
+			}
+		}
+	}
+
+	.switch-state.bg-secondary {
+		border: 1px solid var(--theme-secondary);
+		background-color: $transparent-color !important;
+	}
+
+	.switch {
+		input {
+			&:checked+.switch-state.bg-secondary {
+				background-color: $transparent-color !important;
+				border: 1px solid var(--theme-secondary);
+
+				&:before {
+					background-color: var(--theme-secondary);
+				}
+			}
+		}
+	}
+}
+
+.switch-showcase {
+	margin-bottom: -8px;
+
+	.media {
+		line-height: 1;
+	}
+}
+
+/**=====================
+     18. Switch  CSS Ends
+==========================**/

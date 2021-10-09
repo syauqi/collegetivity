@@ -1,0 +1,88 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var page_builder          = true;
+- var ckeditor              = true;
+- var jquery_ui             = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Page Builder
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Builders
+                                      li.breadcrumb-item.active Page Builder
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Page Builder
+                            .card-body
+                              // Page grid builder start
+                              .page-builder
+                                #myGrid
+                                  .row
+                                    .col-md-12
+                                      h5 Lorem ipsum dolor sit amet, consectetur
+                                      p
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit exercitationem eaque aperiam rem quia quibusdam dolor ducimus quo similique eos pariatur nostrum aliquam nam eius, doloremque quis voluptatum unde. Porro voluptates aspernatur voluptate ipsam, magni vero. Accusamus, iusto tempore id!
+                                      p
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laboriosam, excepturi quas.
+                                  .row
+                                    .col-md-4
+                                      h5 Lorem ipsum dolor
+                                      p
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea facilis vel aliquam aspernatur dolor placeat totam saepe perferendis. Odio quia vel sed eveniet cupiditate, illum doloremque sint veniam eum? Corporis?
+                                    .col-md-4
+                                      h5 Pariatur reprehenderit
+                                      p
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo adipisci ipsa, consequuntur cum, sunt dolores veniam. Enim inventore in dolore deserunt vitae sequi nemo!
+                                    .col-md-4
+                                      h5 Pariatur reprehenderit
+                                      p
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea excepturi ducimus numquam aut error corporis aspernatur ipsum quos eius culpa!
+                                  .row
+                                    .col-md-8
+                                      h5 Lorem ipsum dolor.
+                                      p
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro distinctio atque molestiae optio, consequuntur? Iusto ratione cumque dolor aut dolore!
+                                      .row
+                                        .col-md-6
+                                          h5 Lorem ipsum dolor.
+                                          hr
+                                          p
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis facilis molestias voluptatum laudantium fuga ratione tempora rem dolor dicta rerum vero ut, suscipit ex qui amet quam vel cupiditate quaerat minus assumenda reiciendis, similique omnis delectus! Autem, repudiandae cumque eaque?
+                                        .col-md-6
+                                          h5 Lorem ipsum dolor.
+                                          hr
+                                          p
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet molestiae quaerat illum, consequuntur iusto aspernatur quam provident? Possimus!
+                                    .col-md-4
+                                      h5 Lusto ratione
+                                      p
+                                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugit quasi officiis id laudantium error aut ut aperiam dicta saepe non vel, cupiditate illum ipsam velit deleniti natus incidunt impedit molestias dolore quos dolores enim. Aliquid ipsam eaque consequuntur quaerat, suscipit a in. Praesentium repudiandae quibusdam recusandae sequi eligendi quos, dignissimos, officiis officia minima necessitatibus eaque consequatur in id adipisci qui minus voluptatum quae debitis, quas maxime iure. Tempore vero unde quia reiciendis ad beatae voluptate omnis, ipsa expedita ab, quasi, neque. Doloribus, pariatur. Aut hic voluptate.
+                              // Page grid builder start
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

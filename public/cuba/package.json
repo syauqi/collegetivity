@@ -1,0 +1,28 @@
+{
+  "name": "gulp_setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-install": "^1.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-image": "^5.1.0",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-w3c-html-validator": "^1.4.4",
+    "pug": "^2.0.4",
+    "through2": "^3.0.1"
+  }
+}

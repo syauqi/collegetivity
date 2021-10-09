@@ -1,0 +1,270 @@
+/**=====================
+    63.  Document CSS Start
+==========================**/
+.document p {
+  font-size: 16px;
+  margin-bottom: 0; }
+
+.document .nav-pills {
+  margin: 0 20px; }
+  .document .nav-pills .nav-link {
+    padding-left: 30px;
+    color: #222222;
+    position: relative; }
+    .document .nav-pills .nav-link i {
+      position: absolute;
+      left: 20px;
+      top: 10px; }
+  .document .nav-pills .nav-link.active {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#7366ff), to(#a26cf8));
+    background-image: linear-gradient(90deg, #7366ff 0%, #a26cf8 100%);
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(115, 102, 255, 0.35);
+            box-shadow: 0px 0px 12px 0px rgba(115, 102, 255, 0.35); }
+
+.document .page-wrapper .page-header {
+  margin-left: 255px;
+  width: calc(100% - 255px); }
+  .document .page-wrapper .page-header.document-header {
+    height: 80px; }
+  .document .page-wrapper .page-header .header-wrapper {
+    padding: 0 0; }
+  .document .page-wrapper .page-header .mobile-sidebar .media-body .switch a svg {
+    stroke: #212529; }
+  .document .page-wrapper .page-header .navbar-collapse .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 0;
+    width: 100%; }
+    .document .page-wrapper .page-header .navbar-collapse .navbar-nav .nav-item {
+      padding-right: 15px; }
+      .document .page-wrapper .page-header .navbar-collapse .navbar-nav .nav-item:last-child {
+        padding-right: 0; }
+  .document .page-wrapper .page-header svg line {
+    color: #fff; }
+  .document .page-wrapper .page-header .document-right-nav .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    text-shadow: none; }
+
+.document .page-wrapper .page-sidebar {
+  -webkit-box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.1);
+          box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.1);
+  width: 255px;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  height: calc(100vh);
+  z-index: 9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #000;
+  top: 0; }
+  .document .page-wrapper .page-sidebar .logo-wrapper {
+    -webkit-box-shadow: -9px 0 20px rgba(89, 102, 122, 0.1);
+            box-shadow: -9px 0 20px rgba(89, 102, 122, 0.1); }
+    .document .page-wrapper .page-sidebar .logo-wrapper img {
+      vertical-align: middle;
+      border-style: none;
+      padding: 23px -7px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      padding-left: 30px; }
+
+.document .page-wrapper .page-body-wrapper .page-body {
+  padding-top: 35px !important;
+  min-height: calc(100vh - 81px);
+  margin-top: 81px;
+  padding: 0 15px;
+  position: relative;
+  margin-left: 255px; }
+
+.document .page-wrapper .page-body-wrapper footer {
+  margin-left: 255px; }
+
+form.form-inline.support-res .nav-link {
+  background-color: transparent;
+  border: none; }
+
+.document-content ul.nav-pills {
+  overflow-y: scroll;
+  max-height: calc(100vh - 180px);
+  display: block; }
+  .document-content ul.nav-pills li {
+    line-height: 25px; }
+    .document-content ul.nav-pills li h4 {
+      color: #fff;
+      padding: 0 15px; }
+    .document-content ul.nav-pills li .nav-link {
+      border-radius: .25rem;
+      font-size: 14px;
+      display: block;
+      text-decoration: none;
+      color: #000000;
+      font-weight: 500;
+      padding: 3px 15px;
+      letter-spacing: 1px; }
+      .document-content ul.nav-pills li .nav-link i {
+        margin-top: 5px;
+        text-decoration: none;
+        color: #000;
+        margin-right: 20px; }
+      .document-content ul.nav-pills li .nav-link.active {
+        background-color: unset !important;
+        color: var(--theme-deafult); }
+      .document-content ul.nav-pills li .nav-link p {
+        font-size: 16px;
+        margin-bottom: 0;
+        padding-top: 7px;
+        font-weight: 600; }
+    .document-content ul.nav-pills li .show > .nav-link {
+      background-color: unset !important;
+      color: var(--theme-deafult); }
+
+.document-content .table thead th {
+  width: 50%; }
+
+.document-content .set-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.document-content i.fa-star {
+  color: #a927f9; }
+
+.document-content .col-9 {
+  padding-left: 40px; }
+  .document-content .col-9 .set-height {
+    overflow: scroll;
+    overflow-x: hidden; }
+  .document-content .col-9 .tab-content {
+    overflow: auto;
+    overflow-x: hidden;
+    max-height: calc(100% - 200px);
+    position: fixed;
+    width: 976px;
+    margin-left: 30px;
+    -webkit-box-shadow: 0 0 15px 0 rgba(220, 220, 220, 0.4);
+    -o-box-shadow: 0 0 15px 0 rgba(220, 220, 220, 0.4);
+    box-shadow: 0 0 15px 0 rgba(220, 220, 220, 0.4); }
+    .document-content .col-9 .tab-content .section-head {
+      font-weight: 600;
+      font-size: 32px;
+      margin-bottom: 40px;
+      padding: 0; }
+
+.document-content .card-body.tree-color {
+  padding: 0; }
+
+.document-content .jstree-default {
+  padding: 30px;
+  background-color: #262932;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.08);
+          box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.08); }
+  .document-content .jstree-default .jstree-anchor {
+    color: #a6aaaf; }
+  .document-content .jstree-default .jstree-hovered {
+    background-color: #1d1e26;
+    border: 1px solid #1d1e26; }
+  .document-content .jstree-default .jstree-clicked {
+    color: #fff !important;
+    background: transparent !important; }
+  .document-content .jstree-default .jstree-icon {
+    color: #656b78 !important; }
+
+.document-content hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+
+.document-content .html-editor {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #2b2b2b; }
+  .document-content .html-editor pre {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: #000; }
+
+.document-content .progress {
+  margin-bottom: 10px; }
+
+.document-content ul.list-ticked li {
+  margin-bottom: 10px;
+  padding-left: 1rem; }
+
+.document-content.faq {
+  font-size: 18px; }
+  .document-content.faq .btn {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--theme-deafult); }
+    .document-content.faq .btn.btn-link {
+      color: #000; }
+      .document-content.faq .btn.btn-link.collapsed {
+        color: var(--theme-deafult); }
+  .document-content.faq ul {
+    border: unset; }
+    .document-content.faq ul.nav {
+      display: block; }
+      .document-content.faq ul.nav li .nav-link {
+        border-radius: .25rem;
+        font-size: 18px;
+        display: block;
+        padding: 3px 20px 3px 30px;
+        text-decoration: none;
+        line-height: 30px;
+        color: #4c5667;
+        font-weight: 500;
+        border: unset; }
+        .document-content.faq ul.nav li .nav-link i {
+          margin-top: 3px;
+          text-decoration: none;
+          line-height: 25px;
+          color: var(--theme-deafult);
+          margin-right: 20px; }
+        .document-content.faq ul.nav li .nav-link.active {
+          color: var(--theme-deafult);
+          background-color: unset;
+          border: unset; }
+        .document-content.faq ul.nav li .nav-link:hover {
+          border: unset; }
+
+.document-content .reviews {
+  background-color: #fff;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.08);
+          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.08); }
+  .document-content .reviews h1 {
+    text-transform: uppercase;
+    font-weight: 600; }
+  .document-content .reviews h5 {
+    text-transform: capitalize; }
+
+@media only screen and (max-width: 991.98px) {
+  .document.page-wrapper.horizontal-wrapper .page-header.document-header {
+    height: 60px; } }
+
+@media only screen and (max-width: 767.98px) {
+  .document .page-header {
+    background-color: var(--theme-deafult); }
+    .document .page-header .document-right-nav .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+      color: var(--theme-deafult) !important; }
+  .document .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    top: 60px;
+    padding: 15px;
+    left: 0;
+    right: 0; } }
+
+/**=====================
+    63. Document CSS Ends
+==========================**/

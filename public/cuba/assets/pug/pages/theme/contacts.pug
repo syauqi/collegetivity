@@ -1,0 +1,790 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var form_validation_custom= true;
+- var select2               = true;
+- var page_select2          = true;
+- var sweetalert2           = true;
+- var notify                = true;
+- var contact_page          = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Contacts
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Apps
+                                      li.breadcrumb-item.active Contacts
+                    // Container-fluid starts
+                    .container-fluid
+                      .email-wrap.bookmark-wrap
+                        .row
+                          .col-xl-3.box-col-6
+                            .email-left-aside
+                              .card
+                                .card-body
+                                  .email-app-sidebar.left-bookmark
+                                    .media
+                                      .media-size-email
+                                        img.mr-3.rounded-circle(src='../assets/images/user/user.png', alt='')
+                                      .media-body
+                                        h6.f-w-600 MARK JENCO
+                                        p Markjecno@gmail.com
+                                    ul.nav.main-menu(role='tablist').contact-options
+                                      li.nav-item
+                                        button.badge-light-primary.btn-block.btn-mail(type='button', data-toggle='modal', data-target='#exampleModal')
+                                          i.mr-2(data-feather='users')
+                                          |  New Contacts
+                                        #exampleModal.modal.fade.modal-bookmark(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+                                          .modal-dialog.modal-lg(role='document')
+                                            .modal-content
+                                              .modal-header
+                                                h5#exampleModalLabel.modal-title Add Contact
+                                                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                                  span(aria-hidden='true') ×
+                                              .modal-body
+                                                form#bookmark-form.form-bookmark.needs-validation(novalidate='')
+                                                  .form-row
+                                                    .form-group.mb-3.col-md-12
+                                                      label(for='con-name') Name
+                                                      .row
+                                                        .col-sm-6
+                                                          input.form-control#con-name(type='text', required='', placeholder='First Name', autocomplete='off')
+                                                        .col-sm-6    
+                                                          input.form-control#con-last(type='text', required='', placeholder='Last Name', autocomplete='off')
+                                                    .form-group.mb-3.col-md-12
+                                                      label(for='con-mail') Email Address
+                                                      input.form-control#con-mail(type='text', required='', autocomplete='off')
+                                                    .form-group.mb-3.col-md-12.my-0
+                                                      label(for='con-phone') Phone
+                                                      .row
+                                                        .col-sm-6
+                                                          input.form-control#con-phone(type='number', required='', autocomplete='off')
+                                                        .col-sm-6
+                                                          select.form-control#con-select
+                                                            option Mobile
+                                                            option Work
+                                                            option Others
+                                                  input#index_var(type='hidden' value='5')          
+                                                  button.btn.btn-secondary(type='submit', onclick='submitContact()') Save
+                                                  button.btn.btn-primary(type='button', data-dismiss='modal') Cancel
+                                      li.nav-item
+                                        span.main-title
+                                          |  Views
+                                      li
+                                        a#pills-personal-tab(data-toggle='pill', href='#pills-personal', role='tab', aria-controls='pills-personal', aria-selected='true')
+                                          span.title
+                                            |  Personal
+                                      li
+                                        button.btn.btn-category(type='button', data-toggle='modal', data-target='#exampleModal1')
+                                          span.title
+                                            |  + Add Category
+                                        #exampleModal1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel1', aria-hidden='true')
+                                          .modal-dialog(role='document')
+                                            .modal-content
+                                              .modal-header
+                                                h5#exampleModalLabel1.modal-title Add Category
+                                                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                                  span(aria-hidden='true') ×
+                                              .modal-body
+                                                form.form-bookmark
+                                                  .form-row
+                                                    .form-group.mb-3.col-md-12.my-0
+                                                      input.form-control(type='text', required='', placeholder='Enter category name', autocomplete='off')
+                                                  button.btn.btn-secondary(type='button') Save
+                                                  button.btn.btn-primary(type='button', data-dismiss='modal') Cancel
+                                      li
+                                        a#pills-organization-tab.show(data-toggle='pill', href='#pills-organization', role='tab', aria-controls='pills-organization', aria-selected='false')
+                                          span.title
+                                            |  Organization
+                                      li
+                                        a(href="#")
+                                          span.title Follow up
+                                      li
+                                        a(href="#")
+                                          span.title Favorites
+                                      li
+                                        a(href="#")
+                                          span.title Ideas
+                                      li
+                                        a(href="#")
+                                          span.title Important
+                                      li
+                                        a(href="#")
+                                          span.title Business
+                                      li
+                                        a(href="#")
+                                          span.title Holidays
+                          .col-xl-9.col-md-12.box-col-12
+                            .email-right-aside.bookmark-tabcontent.contacts-tabs
+                              .card.email-body.radius-left
+                                .pl-0
+                                  .tab-content
+                                    #pills-personal.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='pills-personal-tab')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h5 Personal
+                                          span.f-14.pull-right.mt-0 5 Contacts
+                                        .card-body.p-0
+                                          .row.list-persons#addcon
+                                            .col-xl-4.xl-50.col-md-5
+                                              #v-pills-tab.nav.flex-column.nav-pills(role='tablist', aria-orientation='vertical')
+                                                a#v-pills-user-tab.contact-tab-0.nav-link.active(data-toggle='pill', onclick= 'activeDiv(0)', href='#v-pills-user', role='tab', aria-controls='v-pills-user', aria-selected='true')
+                                                  .media
+                                                    img.img-50.img-fluid.m-r-20.rounded-circle.update_img_0(src='../assets/images/user/2.png' alt='')
+                                                    .media-body
+                                                      h6 
+                                                        span.first_name_0 Bucky 
+                                                        span.last_name_0 Barnes
+                                                      p.email_add_0 barnes@gmail.com
+                                                a#v-pills-profile-tab.contact-tab-1.nav-link(data-toggle='pill', onclick= 'activeDiv(1)', href='#v-pills-profile', role='tab', aria-controls='v-pills-profile', aria-selected='false') 
+                                                  .media
+                                                    img.img-50.img-fluid.m-r-20.rounded-circle.update_img_1(src='../assets/images/user/8.jpg' alt='')
+                                                    .media-body
+                                                      h6 
+                                                        span.first_name_1 Comeren 
+                                                        span.last_name_1 Diaz
+                                                      p.email_add_1 comeren@gmail.com
+                                                a#v-pills-messages-tab.contact-tab-2.nav-link(data-toggle='pill', onclick= 'activeDiv(2)', href='#v-pills-messages', role='tab', aria-controls='v-pills-messages', aria-selected='false')
+                                                  .media
+                                                    img.img-50.img-fluid.m-r-20.rounded-circle.update_img_2(src='../assets/images/user/1.jpg' alt='')
+                                                    .media-body
+                                                      h6 
+                                                        span.first_name_2 Issa 
+                                                        span.last_name_2 Bell
+                                                      p.email_add_2 issabell@gmail.com
+                                                a#v-pills-settings-tab.contact-tab-3.nav-link(data-toggle='pill', onclick= 'activeDiv(3)', href='#v-pills-settings', role='tab', aria-controls='v-pills-settings', aria-selected='false')
+                                                  .media
+                                                    img.img-50.img-fluid.m-r-20.rounded-circle.update_img_3(src='../assets/images/user/14.png' alt='')
+                                                    .media-body
+                                                      h6 
+                                                        span.first_name_3 Andew 
+                                                        span.last_name_3 Jon
+                                                      p.email_add_3 andewjon@gmail.com
+                                                a#v-pills-contact1-tab.contact-tab-4.nav-link(data-toggle='pill', onclick= 'activeDiv(4)', href='#v-pills-contact1', role='tab', aria-controls='v-pills-settings', aria-selected='false')
+                                                  .media
+                                                    img.img-50.img-fluid.m-r-20.rounded-circle.update_img_4(src='../assets/images/user/5.jpg' alt='')
+                                                    .media-body
+                                                      h6 
+                                                        span.first_name_4 Jason 
+                                                        span.last_name_4 Borne
+                                                      p.email_add_4 jasonb@gmail.com
+                                                a#v-pills-contact8-tab.contact-tab-5.nav-link(data-toggle='pill', onclick= 'activeDiv(5)', href='#v-pills-contact1', role='tab', aria-controls='v-pills-settings', aria-selected='false')
+                                                  .media
+                                                    img.img-50.img-fluid.m-r-20.rounded-circle.update_img_5(src='../assets/images/avtar/11.jpg' alt='')
+                                                    .media-body
+                                                      h6 
+                                                        span.first_name_5 Monty 
+                                                        span.last_name_5 Carlo
+                                                      p.email_add_5 monty@gmail.com
+                                                a#v-pills-contact3-tab.contact-tab-6.nav-link(data-toggle='pill', onclick= 'activeDiv(6)', href='#v-pills-contact1', role='tab', aria-controls='v-pills-settings', aria-selected='false')
+                                                  .media
+                                                    img.img-50.img-fluid.m-r-20.rounded-circle.update_img_6(src='../assets/images/avtar/16.jpg' alt='')
+                                                    .media-body
+                                                      h6 
+                                                        span.first_name_6 Brock 
+                                                        span.last_name_6 Lee
+                                                      p.email_add_6 lee@gmail.com
+                                            .col-xl-8.xl-50.col-md-7
+                                              #v-pills-tabContent.tab-content
+                                                #v-pills-user.tab-pane.contact-tab-0.tab-content-child.fade.show.active(role='tabpanel', aria-labelledby='v-pills-user-tab')
+                                                  .profile-mail
+                                                    .media
+                                                      img.img-100.img-fluid.m-r-20.rounded-circle.update_img_0(src='../assets/images/user/2.png' alt='')
+                                                      input.updateimg(type='file', name='img', onchange='readURL(this,0)') 
+                                                      .media-body.mt-0
+                                                        h5
+                                                          span.first_name_0 Bucky 
+                                                          span.last_name_0 Barnes
+                                                        p.email_add_0 barnes@gmail.com
+                                                        ul
+                                                          li
+                                                            a(href='#', onclick='editContact(0)') Edit
+                                                          li
+                                                            a(href='#', onclick='deleteContact(0)') Delete
+                                                          li
+                                                            a(href='#', onclick='history(0)') History
+                                                          li
+                                                            a(href='#', onclick='printContact(0)', data-toggle='modal', data-target='#printModal') Print
+                                                    .email-general
+                                                      h6.mb-3 General
+                                                      ul
+                                                        li Name 
+                                                            span.font-primary.first_name_0 Bucky
+                                                        li Gender 
+                                                            span.font-primary Male
+                                                        li Birthday
+                                                            span.font-primary 
+                                                                span.birth_day_0 18
+                                                                span.birth_month_0.ml-1 May
+                                                                span.birth_year_0.ml-1 1994
+                                                        li Personality
+                                                            span.font-primary.personality_0 Cool
+                                                        li City
+                                                            span.font-primary.city_0 moline acres
+                                                        li Mobile No
+                                                            span.font-primary.mobile_num_0 +0 1800 76855
+                                                        li Email Address 
+                                                            span.font-primary.email_add_0 barnes@gmail.com 
+                                                        li Website
+                                                            span.font-primary.url_add_0 www.test.com
+                                                        li Interest
+                                                            span.font-primary.interest_0 photography
+                                                #v-pills-profile.tab-pane.contact-tab-1.tab-content-child.fade(role='tabpanel', aria-labelledby='v-pills-profile-tab')
+                                                  .profile-mail
+                                                    .media
+                                                      img.img-100.img-fluid.m-r-20.rounded-circle.update_img_1(src='../assets/images/user/8.jpg' alt='')
+                                                      input.updateimg(type='file', name='img', onchange='readURL(this,1)')
+                                                      .media-body.mt-0
+                                                        h5
+                                                          span.first_name_1 Comeren 
+                                                          span.last_name_1 Diaz
+                                                        p.email_add_1 comeren@gmail.com
+                                                        ul
+                                                          li
+                                                            a(href='#', onclick='editContact(1)') Edit
+                                                          li
+                                                            a(href='#', onclick='deleteContact(1)') Delete
+                                                          li
+                                                            a(href='#', onclick='history(1)') History
+                                                          li
+                                                            a(href='#', onclick='printContact(1)', data-toggle='modal', data-target='#printModal') Print
+                                                    .email-general
+                                                      h6.mb-3 General
+                                                      ul
+                                                        li Name 
+                                                            span.font-primary.first_name_1 Comeren
+                                                        li Gender 
+                                                            span.font-primary Female
+                                                        li Birthday
+                                                            span.font-primary 
+                                                                span.birth_day_1 7
+                                                                span.birth_month_1.ml-1 Feb
+                                                                span.birth_year_1.ml-1 1995
+                                                        li Personality
+                                                            span.font-primary.personality_1 Cool
+                                                        li City
+                                                            span.font-primary.city_1 Delhi
+                                                        li Mobile No
+                                                            span.font-primary.mobile_num_1 +0 1800 55812
+                                                        li Email Address 
+                                                            span.font-primary.email_add_1 comeren@gmail.com
+                                                        li Website
+                                                            span.font-primary.url_add_1 www.cometest@.com
+                                                        li Interest
+                                                            span.font-primary.interest_1 sports
+                                                #v-pills-messages.tab-pane.contact-tab-2.tab-content-child.fade(role='tabpanel', aria-labelledby='v-pills-messages-tab')
+                                                  .profile-mail
+                                                    .media
+                                                      img.img-100.img-fluid.m-r-20.rounded-circle.update_img_2(src='../assets/images/user/1.jpg' alt='')
+                                                      input.updateimg(type='file', name='img', onchange='readURL(this,2)')
+                                                      .media-body.mt-0
+                                                        h5 
+                                                          span.first_name_2 Issa 
+                                                          span.last_name_2 Bell
+                                                        p.email_add_2 issabell@gmail.com
+                                                        ul
+                                                          li
+                                                            a(href='#', onclick='editContact(2)') Edit
+                                                          li
+                                                            a(href='#', onclick='deleteContact(2)') Delete
+                                                          li
+                                                            a(href='#', onclick='history(2)') History
+                                                          li
+                                                            a(href='#', onclick='printContact(2)', data-toggle='modal', data-target='#printModal') Print
+                                                    .email-general
+                                                      h6.mb-3 General
+                                                      ul
+                                                        li Name 
+                                                            span.font-primary.first_name_2 Issa
+                                                        li Gender 
+                                                            span.font-primary Male
+                                                        li Birthday
+                                                            span.font-primary 
+                                                                span.birth_day_2 20
+                                                                span.birth_month_2.ml-1 Jul
+                                                                span.birth_year_2.ml-1 1993
+                                                        li Personality
+                                                            span.font-primary.personality_2 Cool
+                                                        li City
+                                                            span.font-primary.city_2 Mumbai
+                                                        li Mobile No
+                                                            span.font-primary.mobile_num_2 +0 1800 87412
+                                                        li Email Address 
+                                                            span.font-primary.email_add_2 issabell@gmail.com
+                                                        li Website
+                                                            span.font-primary.url_add_2 www.belltest@.com
+                                                        li Interest
+                                                            span.font-primary.interest_2 cooking
+                                                #v-pills-settings.tab-pane.contact-tab-3.tab-content-child.fade(role='tabpanel', aria-labelledby='v-pills-settings-tab')
+                                                  .profile-mail
+                                                    .media
+                                                      img.img-100.img-fluid.m-r-20.rounded-circle.update_img_3(src='../assets/images/user/14.png' alt='')
+                                                      input.updateimg(type='file', name='img', onchange='readURL(this,3)')
+                                                      .media-body.mt-0
+                                                        h5 
+                                                          span.first_name_3 Andew 
+                                                          span.last_name_3 Jon
+                                                        p.email_add_3 andewjon@gmail.com
+                                                        ul
+                                                          li
+                                                            a(href='#', onclick='editContact(3)') Edit
+                                                          li
+                                                            a(href='#', onclick='deleteContact(3)') Delete
+                                                          li
+                                                            a(href='#', onclick='history(3)') History
+                                                          li
+                                                            a(href='#', onclick='printContact(3)', data-toggle='modal', data-target='#printModal') Print
+                                                    .email-general
+                                                      h6.mb-3 General
+                                                      ul
+                                                        li Name 
+                                                            span.font-primary.first_name_3 Andew
+                                                        li Gender 
+                                                            span.font-primary Male
+                                                        li Birthday
+                                                            span.font-primary 
+                                                                span.birth_day_3 25
+                                                                span.birth_month_3.ml-1 Aug
+                                                                span.birth_year_3.ml-1 1996
+                                                        li Personality
+                                                            span.font-primary.personality_3 Cool
+                                                        li City
+                                                            span.font-primary.city_3 Amreli
+                                                        li Mobile No
+                                                            span.font-primary.mobile_num_3 +0 1800 79877
+                                                        li Email Address 
+                                                            span.font-primary.email_add_3 andewjon@gmail.com
+                                                        li Website
+                                                            span.font-primary.url_add_3 www.test@.com
+                                                        li Interest
+                                                            span.font-primary.interest_3 photography
+                                                #v-pills-contact1.tab-pane.contact-tab-4.tab-content-child.fade(role='tabpanel', aria-labelledby='v-pills-contact1-tab')
+                                                  .profile-mail
+                                                    .media
+                                                      img.img-100.img-fluid.m-r-20.rounded-circle.update_img_4(src='../assets/images/user/5.jpg' alt='')
+                                                      input.updateimg(type='file', name='img', onchange='readURL(this,4)')
+                                                      .media-body.mt-0
+                                                        h5 
+                                                          span.first_name_4 Jason 
+                                                          span.last_name_4 Borne
+                                                        p.email_add_4 jasonb@gmail.com
+                                                        ul
+                                                          li
+                                                            a(href='#', onclick='editContact(4)') Edit
+                                                          li
+                                                            a(href='#', onclick='deleteContact(4)') Delete
+                                                          li
+                                                            a(href='#', onclick='history(4)') History
+                                                          li
+                                                            a(href='#', onclick='printContact(4)', data-toggle='modal', data-target='#printModal') Print
+                                                    .email-general
+                                                      h6.mb-3 General
+                                                      ul
+                                                        li Name 
+                                                            span.font-primary.first_name_4 Jason
+                                                        li Gender 
+                                                            span.font-primary Male
+                                                        li Birthday
+                                                            span.font-primary 
+                                                                span.birth_day_4 30
+                                                                span.birth_month_4.ml-1 Oct
+                                                                span.birth_year_4.ml-1 1992
+                                                        li Personality
+                                                            span.font-primary.personality_4 Cool
+                                                        li City
+                                                            span.font-primary.city_4 Delhi
+                                                        li Mobile No
+                                                            span.font-primary.mobile_num_4 +0 1800 11547
+                                                        li Email Address 
+                                                            span.font-primary.email_add_4 jasonb@gmail.com
+                                                        li Website
+                                                            span.font-primary.url_add_4 www.jason@.com
+                                                        li Interest
+                                                            span.font-primary.interest_4 photography
+                                                #v-pills-contact8.tab-pane.contact-tab-5.tab-content-child.fade(role='tabpanel', aria-labelledby='v-pills-contact1-tab')
+                                                  .profile-mail
+                                                    .media
+                                                      img.img-100.img-fluid.m-r-20.rounded-circle.update_img_5(src='../assets/images/avtar/11.jpg' alt='')
+                                                      input.updateimg(type='file', name='img', onchange='readURL(this,5)')
+                                                      .media-body.mt-0
+                                                        h5 
+                                                          span.first_name_5 Monty  
+                                                          span.last_name_5 Carlo
+                                                        p.email_add_5 monty@gmail.com
+                                                        ul
+                                                          li
+                                                            a(href='#', onclick='editContact(5)') Edit
+                                                          li
+                                                            a(href='#', onclick='deleteContact(5)') Delete
+                                                          li
+                                                            a(href='#', onclick='history(5)') History
+                                                          li
+                                                            a(href='#', onclick='printContact(5)', data-toggle='modal', data-target='#printModal') Print
+                                                    .email-general
+                                                      h6.mb-3 General
+                                                      ul
+                                                        li Name 
+                                                            span.font-primary.first_name_5 Monty
+                                                        li Gender 
+                                                            span.font-primary Male
+                                                        li Birthday
+                                                            span.font-primary 
+                                                                span.birth_day_5 12
+                                                                span.birth_month_5.ml-1 Nov
+                                                                span.birth_year_5.ml-1 1994
+                                                        li Personality
+                                                            span.font-primary.personality_5 Cool
+                                                        li City
+                                                            span.font-primary.city_5 Amreli
+                                                        li Mobile No
+                                                            span.font-primary.mobile_num_5 +0 1800 87944
+                                                        li Email Address 
+                                                            span.font-primary.email_add_5 monty@gmail.com
+                                                        li Website
+                                                            span.font-primary.url_add_5 www.mon@.com
+                                                        li Interest
+                                                            span.font-primary.interest_5 sports
+                                                #v-pills-contact9.tab-pane.contact-tab-6.tab-content-child.fade(role='tabpanel', aria-labelledby='v-pills-contact8-tab')
+                                                  .profile-mail
+                                                    .media
+                                                      img.img-100.img-fluid.m-r-20.rounded-circle.update_img_6(src='../assets/images/avtar/16.jpg' alt='')
+                                                      input.updateimg(type='file', name='img', onchange='readURL(this,6)')
+                                                      .media-body.mt-0
+                                                        h5 
+                                                          span.first_name_6 Brock 
+                                                          span.last_name_6 Lee
+                                                        p.email_add_6 lee@gmail.com
+                                                        ul
+                                                          li
+                                                            a(href='#', onclick='editContact(6)') Edit
+                                                          li
+                                                            a(href='#', onclick='deleteContact(6)') Delete
+                                                          li
+                                                            a(href='#', onclick='history(6)') History
+                                                          li
+                                                            a(href='#', onclick='printContact(6)', data-toggle='modal', data-target='#printModal') Print
+                                                    .email-general
+                                                      h6.mb-3 General
+                                                      ul
+                                                        li Name 
+                                                            span.font-primary.first_name_6 Brock
+                                                        li Gender 
+                                                            span.font-primary Male
+                                                        li Birthday
+                                                            span.font-primary 
+                                                                span.birth_day_6 8
+                                                                span.birth_month_6.ml-1 Dec
+                                                                span.birth_year_6.ml-1 1992
+                                                        li Personality
+                                                            span.font-primary.personality_6 Cool
+                                                        li City
+                                                            span.font-primary.city_6 Ahemdabad
+                                                        li Mobile No
+                                                            span.font-primary.mobile_num_6 +0 1800 58712
+                                                        li Email Address 
+                                                            span.font-primary.email_add_6 lee@gmail.com
+                                                        li Website
+                                                            span.font-primary.url_add_6 www.lee.com
+                                                        li Interest
+                                                            span.font-primary.interest_6 photography             
+                                              .contact-editform.pl-0
+                                                form
+                                                  .form-row
+                                                    .form-group.mb-3.col-md-12
+                                                      label Name
+                                                      .row
+                                                        .col-sm-6
+                                                          input.form-control#first_name(type='text', required='', placeholder='First Name', value='first_name')
+                                                        .col-sm-6    
+                                                          input.form-control#last_name(type='text', required='', placeholder='Last Name', value='last_name')
+                                                    .form-group.mb-3.col-md-12
+                                                      label Email Address
+                                                      input.form-control#email_add(type='text', required='', autocomplete='off')
+                                                    .form-group.mb-3.col-md-12
+                                                      label Phone
+                                                      .row
+                                                        .col-sm-6
+                                                          input.form-control#mobile_num(type='text', required='', autocomplete='off')
+                                                        .col-sm-6
+                                                          select.form-control
+                                                            option Mobile
+                                                            option Work
+                                                            option Others
+                                                  .form-row.more-data
+                                                    .form-group.mb-3.col-md-12
+                                                      label URLS
+                                                      .row
+                                                        .col-lg-6.col-sm-6
+                                                          input.form-control#url_add(type='text', required='')
+                                                        .col-lg-4.col-sm-6    
+                                                          select.js-example-basic-single
+                                                            option(value='pw') Personal web address
+                                                            option(value='cw') Company web address
+                                                            option(value='fb') Fabebook URL
+                                                            option(value='tw') Twitter URL
+                                                    .form-group.mb-3.col-md-12
+                                                      label Personal
+                                                      .d-block
+                                                        label.mr-3(for='edo-ani')
+                                                          input#edo-ani.radio_animated(type='radio', name='rdo-ani' checked='')
+                                                          span Male
+                                                        label(for='edo-ani1')
+                                                          input#edo-ani1.radio_animated(type='radio', name='rdo-ani')
+                                                          span Female
+                                                    .form-group.mb-3.col-md-12
+                                                      .row
+                                                        .col-lg-2.col-sm-4
+                                                          select.form-control#birth_day
+                                                            option.f-w-600 Day
+                                                            option 01
+                                                            option 02
+                                                            option 03
+                                                            option 04
+                                                            option 05
+                                                            option 06
+                                                            option 07
+                                                            option 08
+                                                            option 09
+                                                            option 10
+                                                            option 11
+                                                            option 12
+                                                            option 13
+                                                            option 14
+                                                            option 15
+                                                            option 16
+                                                            option 17
+                                                            option 18
+                                                            option 19
+                                                            option 20
+                                                            option 21
+                                                            option 22
+                                                            option 23
+                                                            option 24
+                                                            option 25
+                                                            option 26
+                                                            option 27
+                                                            option 28
+                                                            option 29
+                                                            option 30
+                                                            option 31
+                                                        .col-lg-3.col-sm-4
+                                                          select.form-control#birth_month
+                                                            option.f-w-600 Month
+                                                            option January
+                                                            option February
+                                                            option March
+                                                            option April
+                                                            option May
+                                                            option June
+                                                            option July
+                                                            option August
+                                                            option September
+                                                            option October
+                                                            option November
+                                                            option December
+                                                        .col-lg-3.col-sm-4
+                                                          input.form-control#birth_year(type='text')
+                                                    .form-group.mb-3.col-md-12
+                                                      
+                                                      .row
+                                                        .col-sm-6
+                                                          label Personality
+                                                          input.form-control#personality(type='text', required='', autocomplete='off')
+                                                        .col-sm-6
+                                                          label Interest
+                                                          input.form-control#interest(type='text', required='', autocomplete='off')
+                                                    .form-group.mb-3.col-md-12.mb-0
+                                                      label Home Address
+                                                      .row
+                                                        .col-12
+                                                          .form-group.mb-2
+                                                            input.form-control(type='text', placeholder='Address')
+                                                        .col-sm-6
+                                                          .form-group.mb-2
+                                                            input.form-control#city(type='text', placeholder='City')
+                                                        .col-sm-6
+                                                          .form-group.mb-2
+                                                            input.form-control(type='text', placeholder='State')
+                                                        .col-sm-6
+                                                          .form-group.mb-0
+                                                            input.form-control(type='text', placeholder='Country')
+                                                        .col-sm-6
+                                                          .form-group.mb-0
+                                                            input.form-control(type='text', placeholder='Pin Code')           
+                                                  a.pl-0.edit-information(href='#') Edit more information
+                                                  button.btn.btn-secondary.update-contact(type='button') Save
+                                                  button.btn.btn-primary(type='button', data-dismiss='modal') Cancel
+                                    #pills-organization.fade.tab-pane(role='tabpanel', aria-labelledby='pills-organization')
+                                      .card.mb-0
+                                        .card-header.d-flex
+                                          h5 Organization
+                                          span.f-14.pull-right.mt-0 10 Contacts
+                                        .card-body.p-0
+                                          .row.list-persons
+                                            .col-xl-4.xl-50.col-md-5
+                                              #v-pills-tab1.nav.flex-column.nav-pills(role='tablist', aria-orientation='vertical')
+                                                a#v-pills-iduser-tab.nav-link.active(data-toggle='pill', href='#v-pills-iduser', role='tab', aria-controls='v-pills-iduser', aria-selected='true')
+                                                  .media
+                                                    img.img-50.img-fluid.m-r-20.rounded-circle(src='../assets/images/user/user.png' alt='')
+                                                    .media-body
+                                                      h6 Mark jecno
+                                                      p markjecno@gmail.com
+                                                a#v-pills-iduser1-tab.nav-link(data-toggle='pill', href='#v-pills-iduser1', role='tab', aria-controls='v-pills-iduser1', aria-selected='false') 
+                                                  .media
+                                                    img.img-50.img-fluid.m-r-20.rounded-circle(src='../assets/images/user/3.jpg' alt='')
+                                                    .media-body
+                                                      h6 Jason Borne
+                                                      p jasonb@gmail.com
+                                                a#v-pills-iduser2-tab.nav-link(data-toggle='pill', href='#v-pills-iduser2', role='tab', aria-controls='v-pills-iduser2', aria-selected='false')
+                                                  .media
+                                                    img.img-50.img-fluid.m-r-20.rounded-circle(src='../assets/images/user/4.jpg' alt='')
+                                                    .media-body
+                                                      h6 Sarah Loren
+                                                      p barnes@gmail.com
+                                                a#v-pills-iduser3-tab.nav-link(data-toggle='pill', href='#v-pills-iduser3', role='tab', aria-controls='v-pills-iduser3', aria-selected='false')
+                                                  .media
+                                                    img.img-50.img-fluid.m-r-20.rounded-circle(src='../assets/images/user/10.jpg' alt='')
+                                                    .media-body
+                                                      h6 Andew Jon
+                                                      p andrewj@gmail.com
+                                            .col-xl-8.xl-50.col-md-7
+                                              #v-pills-tabContent1.tab-content
+                                                #v-pills-iduser.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='v-pills-iduser-tab')
+                                                  .profile-mail
+                                                    .media
+                                                      img.img-100.img-fluid.m-r-20.rounded-circle.update_img_5(src='../assets/images/user/user.png' alt='')
+                                                      .media-body.mt-0
+                                                        h5
+                                                          span.first_name_5 Mark 
+                                                          span.last_name_5 jecno
+                                                        p.email_add_5 markjecno@gmail.com
+                                                        ul
+                                                          li
+                                                            a(href='#', onclick='printContact(5)', data-toggle='modal', data-target='#printModal') Print
+                                                    .email-general
+                                                      h6 General
+                                                      p Email Address: 
+                                                        span.font-primary.email_add_5 markjecno@gmail.com
+                                                      .gender
+                                                        h6 Personal
+                                                        p Gender: 
+                                                          span Male
+                                                #v-pills-iduser1.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-iduser1-tab')
+                                                  .profile-mail
+                                                    .media
+                                                      img.img-100.img-fluid.m-r-20.rounded-circle.update_img_6(src='../assets/images/user/3.jpg' alt='')
+                                                      .media-body.mt-0
+                                                        h5
+                                                          span.first_name_6 Jason 
+                                                          span.last_name_6 Borne
+                                                        p.email_add_6 jasonb@gmail.com
+                                                        ul
+                                                          li
+                                                            a(href='#', onclick='printContact(6)', data-toggle='modal', data-target='#printModal') Print
+                                                    .email-general
+                                                      h6 General
+                                                      p Email Address: 
+                                                        span.font-primary.email_add_6 jasonb@gmail.com
+                                                      .gender
+                                                        h6 Personal
+                                                        p Gender: 
+                                                          span Male
+                                                #v-pills-iduser2.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-iduser2-tab')
+                                                  .profile-mail
+                                                    .media
+                                                      img.img-100.img-fluid.m-r-20.rounded-circle.update_img_7(src='../assets/images/user/4.jpg' alt='')
+                                                      .media-body.mt-0
+                                                        h5 
+                                                          span.first_name_7 Sarah 
+                                                          span.last_name_7 Loren
+                                                        p.email_add_7 barnes@gmail.com
+                                                        ul
+                                                          li
+                                                            a(href='#', onclick='printContact(7)', data-toggle='modal', data-target='#printModal') Print
+                                                    .email-general
+                                                      h6 General
+                                                      p Email Address: 
+                                                        span.font-primary.email_add_7 barnes@gmail.com
+                                                      .gender
+                                                        h6 Personal
+                                                        p Gender: 
+                                                          span Female
+                                                #v-pills-iduser3.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-iduser3-tab')
+                                                  .profile-mail
+                                                    .media
+                                                      img.img-100.img-fluid.m-r-20.rounded-circle.update_img_8(src='../assets/images/user/10.jpg' alt='')
+                                                      .media-body.mt-0
+                                                        h5 
+                                                          span.first_name_8 Andew 
+                                                          span.last_name_8 Jon
+                                                        p.email_add_8 andrewj@gmail.com
+                                                        ul
+                                                          li
+                                                            a(href='#', onclick='printContact(8)', data-toggle='modal', data-target='#printModal') Print
+                                                    .email-general
+                                                      h6 General
+                                                      p Email Address: 
+                                                        span.font-primary.email_add_8 andrewj@gmail.com
+                                                      .gender
+                                                        h6 Personal
+                                                        p Gender: 
+                                                          span Female
+                                    #right-history
+                                      .modal-header.p-l-20.p-r-20
+                                        h6.modal-title.w-100 Contact History
+                                          span.pull-right
+                                            a.closehistory(href='#')
+                                              i.icofont.icofont-close
+                                      .history-details
+                                        .text-center
+                                          i.icofont.icofont-ui-edit
+                                          p Contact has not been modified yet.
+                                        .media
+                                          i.icofont.icofont-star.mr-3
+                                          .media-body.mt-0
+                                            h6.mt-0 Contact Created
+                                            p.mb-0 Contact is created via mail
+                                            span.f-12 Sep 10, 2019 4:00
+                                    #printModal.modal.fade.modal-bookmark(tabindex='-1', role='dialog', aria-hidden='true')
+                                      .modal-dialog.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            h5.modal-title Print preview
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                              span(aria-hidden='true') ×
+                                          .modal-body.list-persons
+                                            .profile-mail.pt-0#DivIdToPrint
+                                              .media
+                                                img.img-100.img-fluid.m-r-20.rounded-circle#updateimg(src='../assets/images/user/2.png' alt='')
+                                                .media-body.mt-0
+                                                  h5
+                                                    span#printname Bucky 
+                                                    span#printlast Barnes
+                                                  p#printmail barnes@gmail.com
+                                              .email-general
+                                                h6 General
+                                                p Email Address: 
+                                                  span.font-primary#mailadd barnes@gmail.com   
+                                            button.btn.btn-secondary#btnPrint(type='button',  onclick='printDiv();') Print
+                                            button.btn.btn-primary(type='button', data-dismiss='modal') Cancel
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

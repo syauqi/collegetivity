@@ -1,0 +1,423 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var photo_swipe           = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Search Website
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Search Pages
+                                      li.breadcrumb-item.active Search Website
+                    // Container-fluid starts
+                    .container-fluid.search-page
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header.bg-light-primary
+                              form.theme-form
+                                .input-group.m-0
+                                  input.form-control-plaintext(type='search', placeholder='Pixelstrap ..')
+                                  .input-group-append
+                                    span.btn.btn-primary Search
+                              
+                            .card-body
+                              div.text-center
+                                ul#top-tab.nav.nav-tabs.search-list(role='tablist')
+                                  li.nav-item
+                                    a#all-link.nav-link.active(data-toggle='tab', href='#all-links', role='tab', aria-selected='true')
+                                      i.icon-target
+                                      | All
+                                  li.nav-item
+                                    a#image-link.nav-link(data-toggle='tab', href='#image-links', role='tab', aria-selected='false')
+                                      i.icon-image
+                                      | Images
+                                  li.nav-item
+                                    a#video-link.nav-link(data-toggle='tab', href='#video-links', role='tab', aria-selected='false')
+                                      i.icon-video-clapper
+                                      | Videos
+                                  li.nav-item
+                                    a#audios-link.nav-link(data-toggle='tab', href='#audios-links', role='tab', aria-selected='false')
+                                      i.icon-map-alt
+                                      | Audios
+                                  li.nav-item.bg-light-success
+                                    a#setting-link.nav-link.txt-success(data-toggle='tab', href='#setting-links', role='tab', aria-selected='false')
+                                      | Settings
+                                  li.nav-item.bg-light-secondary
+                                    a#setting-link.nav-link.txt-secondary(data-toggle='tab', href='#tools-links', role='tab', aria-selected='false')
+                                      | Tools
+
+
+                              #top-tabContent.tab-content
+                                #all-links.search-links.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='all-link')
+                                  .row
+                                    .col-xl-8.box-col-12
+                                      h6.mb-2 Search result for "Pixelstrap"
+                                      .info-block
+                                        a(href='') https://themeforest.net/user/pixelstrap/portfolio/
+                                        h6 PixelStrap - Portfolio | ThemeForest
+                                        p
+                                          | 2020's Best Selling Creative WP Themes. The #1 Source of Premium WP Themes! ThemeForest 45,000+ WP Themes & Website Templates From $2. Check it Out! 
+                                        .star-ratings
+                                          ul.search-info
+                                            li 3 stars
+                                            li 590 votes
+                                            li Theme
+                                      .info-block
+                                        a(href='') PixelStrap - Portfolio | ThemeForestthemeforest.net › user › 
+                                        h6 PixelStrap - Portfolio | ThemeForest
+                                        p
+                                          | The #1 marketplace for premium website templates, including themes for WordPress, Magento, Drupal, Joomla, and more. Create a website, fast.
+                                        .star-ratings
+                                          ul.search-info
+                                            li 3 stars
+                                            li 590 votes
+                                            li Theme
+                                      .info-block
+                                        a(href='') https://themeforest.net/user/pixelstrap/portfolio
+                                        h6 Morbi feugiat mauris vel semper fringilla.
+                                        p
+                                          | Cuba introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.
+                                        .star-ratings
+                                          ul.search-info
+                                            li
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rate-blank
+                                              i.icofont.icofont-ui-rate-blank
+                                            li 3 stars
+                                            li 590 votes
+                                            li Theme
+                                      .info-block
+                                        a(href='' ) https://themeforest.net/user/pixelstrap/portfolio
+                                        h6 Morbi feugiat mauris vel semper fringilla.
+                                        p
+                                          | Cuba introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.
+                                        .star-ratings
+                                          ul.search-info
+                                            li
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rate-blank
+                                              i.icofont.icofont-ui-rate-blank
+                                            li 3 stars
+                                            li 590 votes
+                                            li Theme
+
+                                    .col-xl-4.box-col-12.mt-4
+                                      .card.lg-mt.o-hidden
+                                        .blog-box.blog-shadow
+                                          img.img-fluid(src='../assets/images/blog/blog.jpg', alt='')
+                                          .blog-details
+                                            p 25 July 2018
+                                            h4 Accusamus et iusto odio dignissimos ducimus qui blanditiis.
+                                            ul.blog-social
+                                              li
+                                                i.icofont.icofont-user
+                                                | Mark Jecno
+                                              li
+                                                i.icofont.icofont-thumbs-up
+                                                | 02 Hits
+                                      .info-block
+                                        a(href='') https://themeforest.net/user/pixelstrap/portfolio
+                                        h6 Pixelstrap Website Templates from       ThemeForest                                  
+                                        p
+                                          | Get 59 pixelstrap website templates on ThemeForest. Buy pixelstrap website templates from $7. All created by our Global Community of independent Web ...
+                                        .star-ratings
+                                          ul.search-info
+                                            li
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rate-blank
+                                              i.icofont.icofont-ui-rate-blank
+                                            li 3 stars
+                                            li 590 votes
+                                            li Theme
+                                      .info-block
+                                        a(href='' ) https://themeforest.net/user/pixelstrap/portfolio
+                                        h6 Morbi feugiat mauris vel semper fringilla.
+                                        p
+                                          | Cuba introduces a IELTS Coaching, TOEFL Coaching, GRE Coaching, GMAT Coaching, SAT Coaching in Surat.
+                                        .star-ratings
+                                          ul.search-info
+                                            li
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rating
+                                              i.icofont.icofont-ui-rate-blank
+                                              i.icofont.icofont-ui-rate-blank
+                                            li 3 stars
+                                            li 590 votes
+                                            li Theme
+                                    .col-12.m-t-30
+                                        nav(aria-label='...')
+                                          ul.pagination.pagination-primary
+                                            li.page-item.disabled
+                                              a.page-link(href='#', tabindex='-1') Previous
+                                            li.page-item
+                                              a.page-link(href='#') 1
+                                            li.page-item.active
+                                              a.page-link(href='#')
+                                                | 2
+                                                span.sr-only (current)
+                                            li.page-item
+                                              a.page-link(href='#') 3
+                                            li.page-item
+                                              a.page-link(href='#') Next
+                                
+                                #image-links.tab-pane.fade(role='tabpanel', aria-labelledby='image-link')
+                                  div
+                                    h6.mb-2 About 12,120 results (0.50 seconds)
+                                    #aniimated-thumbnials.my-gallery.row.gallery-with-description(itemscope='')
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/01.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/01.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/02.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/02.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/03.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/03.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/04.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/04.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/05.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/05.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/011.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/011.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/010.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/010.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/big-lightgallry/08.jpg', itemprop='contentUrl', data-size='1600x950')
+                                          img(src='../assets/images/lightgallry/08.jpg', itemprop='thumbnail', alt='Image description')
+                                          .caption
+                                            h4 Portfolio Title
+                                            p
+                                              | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                        figcaption(itemprop='caption description')
+                                          h4 Portfolio Title
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                    // Root element of PhotoSwipe. Must have class pswp.
+                                    .pswp(tabindex='-1', role='dialog', aria-hidden='true')
+                                      //
+                                        Background of PhotoSwipe.
+                                        It's a separate element, as animating opacity is faster than rgba().
+                                      .pswp__bg
+                                      // Slides wrapper with overflow:hidden.
+                                      .pswp__scroll-wrap
+                                        // Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory.
+                                        // don't modify these 3 pswp__item elements, data is added later on.
+                                        .pswp__container
+                                          .pswp__item
+                                          .pswp__item
+                                          .pswp__item
+                                        // Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.
+                                        .pswp__ui.pswp__ui--hidden
+                                          .pswp__top-bar
+                                            // Controls are self-explanatory. Order can be changed.
+                                            .pswp__counter
+                                            button.pswp__button.pswp__button--close(title='Close (Esc)')
+                                            button.pswp__button.pswp__button--share(title='Share')
+                                            button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
+                                            button.pswp__button.pswp__button--zoom(title='Zoom in/out')
+                                            // Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR
+                                            // element will get class pswp__preloader--active when preloader is running
+                                            .pswp__preloader
+                                              .pswp__preloader__icn
+                                                .pswp__preloader__cut
+                                                  .pswp__preloader__donut
+                                          .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+                                            .pswp__share-tooltip
+                                          button.pswp__button.pswp__button--arrow--left(title='Previous (arrow left)')
+                                          button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
+                                          .pswp__caption
+                                            .pswp__caption__center
+                                  .m-t-30
+                                    nav(aria-label='...')
+                                      ul.pagination.pagination-primary
+                                        li.page-item.disabled
+                                          a.page-link(href='#', tabindex='-1') Previous
+                                        li.page-item
+                                          a.page-link(href='#') 1
+                                        li.page-item.active
+                                          a.page-link(href='#')
+                                            | 2 
+                                            span.sr-only (current)
+                                        li.page-item
+                                          a.page-link(href='#') 3
+                                        li.page-item
+                                          a.page-link(href='#') Next
+                                #video-links.tab-pane.fade(role='tabpanel', aria-labelledby='video-link')
+                                  .row
+                                    .col-xl-6
+                                      h6.mb-2 About 6,000 results (0.60 seconds)
+                                      .media.info-block
+                                        iframe.mr-3(width='200', height='100', src='https://www.youtube.com/embed/CJnfAXlBRTE')
+                                        .media-body
+                                          a(href='') https://themeforest.net/user/pixelstrap/portfolio
+                                          h6 Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                          .star-ratings
+                                            ul.search-info
+                                              li 3 stars
+                                              li 590 votes
+                                              li Theme
+                                      .media.info-block
+                                        iframe.mr-3(width='200', height='100', src='https://www.youtube.com/embed/wpmHZspl4EM')
+                                        .media-body
+                                          a(href='') https://themeforest.net/user/pixelstrap/portfolio
+                                          h6 Lorem Ipsum is simply dummy text of the printing.
+
+                                          .star-ratings
+                                            ul.search-info
+                                              li 3 stars
+                                              li 590 votes
+                                              li Theme
+                                      .media.info-block
+                                        iframe.mr-3(width='200', height='100', src='https://www.youtube.com/embed/-L4gEk7cOfk')
+                                        .media-body
+                                          a(href='') https://themeforest.net/user/pixelstrap/portfolio
+                                          h6
+                                            | Morbi eget quam et purus commodo dapibus.
+                                          .star-ratings
+                                            ul.search-info
+                                              li 3 stars
+                                              li 590 votes
+                                              li Theme
+                                    .col-xl-6
+                                      p.pb-4 About 6,000 results (0.60 seconds)
+                                      .media.info-block
+                                        iframe.mr-3(width='200', height='100', src='https://www.youtube.com/embed/CJnfAXlBRTE')
+                                        .media-body
+                                          a(href='') https://themeforest.net/user/pixelstrap/portfolio
+                                          h6 Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                          .star-ratings
+                                            ul.search-info
+                                              li 3 stars
+                                              li 590 votes
+                                              li Theme
+                                      .media.info-block
+                                        iframe.mr-3(width='200', height='100', src='https://www.youtube.com/embed/-L4gEk7cOfk')
+                                        .media-body
+                                          a(href='') https://themeforest.net/user/pixelstrap/portfolio
+                                          h6
+                                            | Morbi eget quam et purus commodo dapibus.
+
+                                          .star-ratings
+                                            ul.search-info
+                                              li 3 stars
+                                              li 590 votes
+                                              li Theme
+                                      .media.info-block
+                                        iframe.mr-3(width='200', height='100', src='https://www.youtube.com/embed/wpmHZspl4EM')
+                                        .media-body
+                                          a(href='') https://themeforest.net/user/pixelstrap/portfolio
+                                          h6 Lorem Ipsum is simply dummy text of the printing.
+
+                                          .star-ratings
+                                            ul.search-info
+                                              li 3 stars
+                                              li 590 votes
+                                              li Theme
+
+
+                                    .col-xl-12.m-t-30    
+                                        div
+                                          nav(aria-label='...')
+                                            ul.pagination.pagination-primary
+                                              li.page-item.disabled
+                                                a.page-link(href='#', tabindex='-1') Previous
+                                              li.page-item
+                                                a.page-link(href='#') 1
+                                              li.page-item.active
+                                                a.page-link(href='#')
+                                                  | 2 
+                                                  span.sr-only (current)
+                                              li.page-item
+                                                a.page-link(href='#') 3
+                                              li.page-item
+                                                a.page-link(href='#') Next
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

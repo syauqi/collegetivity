@@ -1,0 +1,338 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                        | List View
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Job Search
+                                      li.breadcrumb-item.active  List View
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-xl-3.xl-40
+                          #accordionoc.default-according.style-1.faq-accordion.job-accordion
+                            .row
+                              .col-xl-12
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon', aria-expanded='true', aria-controls='collapseicon') Filter
+                                  #collapseicon.collapse.show(aria-labelledby='collapseicon', data-parent='#accordion')
+                                    .card-body.filter-cards-view.animate-chk
+                                      .job-filter
+                                        .faq-form
+                                          input.form-control(type='text', placeholder='Search..')
+                                          i.search-icon(data-feather='search')
+                                      .job-filter
+                                        .faq-form
+                                          input.form-control(type='text', placeholder='location..')
+                                          i.search-icon(data-feather='map-pin')
+                                      .checkbox-animated
+                                        label.d-block(for='chk-ani')
+                                          input#chk-ani.checkbox_animated(type='checkbox')
+                                          |  Full-time (8688)
+                                        label.d-block(for='chk-ani1')
+                                          input#chk-ani1.checkbox_animated(type='checkbox')
+                                          |  Contract (503)
+                                        label.d-block(for='chk-ani2')
+                                          input#chk-ani2.checkbox_animated(type='checkbox')
+                                          |  Part-time (288)
+                                        label.d-block(for='chk-ani3')
+                                          input#chk-ani3.checkbox_animated(type='checkbox')
+                                          |  Internship (236)
+                                        label.d-block(for='chk-ani4')
+                                          input#chk-ani4.checkbox_animated(type='checkbox')
+                                          |   Temporary (146)
+                                        label.d-block(for='chk-ani5')
+                                          input#chk-ani5.checkbox_animated(type='checkbox')
+                                          |  Commission (25)
+                                      button.btn.btn-primary.text-center(type='button') Find jobs
+                              .col-xl-12
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon1', aria-expanded='true', aria-controls='collapseicon1') Location
+                                  #collapseicon1.collapse.show(aria-labelledby='collapseicon1', data-parent='#accordion')
+                                    .card-body.animate-chk
+                                      .location-checkbox
+                                        label.d-block(for='chk-ani6')
+                                          input#chk-ani6.checkbox_animated(type='checkbox')
+                                          |                             Letraset
+                                          span.d-block New York, NY (399)
+                                        label.d-block(for='chk-ani7')
+                                          input#chk-ani7.checkbox_animated(type='checkbox')
+                                          |                             Established
+                                          span.d-block San Francisco, CA (252) 
+                                        label.d-block.mb-0(for='chk-ani8')
+                                          input#chk-ani8.checkbox_animated(type='checkbox')
+                                          |                             Contrary
+                                          span.d-block Washington, DC (226)
+                                    button.btn.btn-block.btn-primary.text-center(type='button') All Locations
+                              .col-xl-12
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon2', aria-expanded='true', aria-controls='collapseicon2') Job Title
+                                  #collapseicon2.collapse.show(data-parent='#accordion', aria-labelledby='collapseicon2')
+                                    .card-body.animate-chk
+                                      label.d-block(for='chk-ani9')
+                                        input#chk-ani9.checkbox_animated(type='checkbox')
+                                        |                           UI/Ux designer(25)
+                                      label.d-block(for='chk-ani10')
+                                        input#chk-ani10.checkbox_animated(type='checkbox')
+                                        |                           Graphic designer(10)
+                                      label.d-block(for='chk-ani11')
+                                        input#chk-ani11.checkbox_animated(type='checkbox')
+                                        |                           Front end designer(15)
+                                      label.d-block(for='chk-ani12')
+                                        input#chk-ani12.checkbox_animated(type='checkbox')
+                                        |                           PHP developer(42)
+                                      label.d-block.mb-0(for='chk-ani13')
+                                        input#chk-ani13.checkbox_animated(type='checkbox')
+                                        |                         React Developer( 5 )
+                                    button.btn.btn-block.btn-primary.text-center(type='button') All Job Title
+                              .col-xl-12
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon3', aria-expanded='true', aria-controls='collapseicon3') Industry
+                                  #collapseicon3.collapse.show(data-parent='#accordion', aria-labelledby='collapseicon3')
+                                    .card-body.animate-chk
+                                      label.d-block(for='chk-ani14')
+                                        input#chk-ani14.checkbox_animated(type='checkbox')
+                                        |                           Computer Software(14)
+                                      label.d-block(for='chk-ani15')
+                                        input#chk-ani15.checkbox_animated(type='checkbox')
+                                        |                           IT Engineer(10)
+                                      label.d-block(for='chk-ani16')
+                                        input#chk-ani16.checkbox_animated(type='checkbox')
+                                        |                           Service industry(20)
+                                      label.d-block(for='chk-ani17')
+                                        input#chk-ani17.checkbox_animated(type='checkbox')
+                                        |                          Accounting ( 34 )
+                                      label.d-block.mb-0(for='chk-ani18')
+                                        input#chk-ani18.checkbox_animated(type='checkbox')
+                                        |                           Financial Services(5)
+                                    button.btn.btn-block.btn-primary.text-center(type='button') All Industries
+                              .col-xl-12
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon4', aria-expanded='true', aria-controls='collapseicon4') Specific skills
+                                  #collapseicon4.collapse.show(data-parent='#accordion', aria-labelledby='collapseicon4')
+                                    .card-body.animate-chk
+                                      label.d-block(for='chk-ani19')
+                                        input#chk-ani19.checkbox_animated(type='checkbox')
+                                        |                           HTML,scss & sass
+                                      label.d-block(for='chk-ani20')
+                                        input#chk-ani20.checkbox_animated(type='checkbox')
+                                        |                           Javascript
+                                      label.d-block(for='chk-ani21')
+                                        input#chk-ani21.checkbox_animated(type='checkbox')
+                                        |                           Node.js
+                                      label.d-block(for='chk-ani22')
+                                        input#chk-ani22.checkbox_animated(type='checkbox')
+                                        |                           Gulp & Pug
+                                      label.d-block.mb-0(for='chk-ani23')
+                                        input#chk-ani23.checkbox_animated(type='checkbox')
+                                        |                           Angular.js
+                                    button.btn.btn-block.btn-primary.text-center(type='button') All Skills
+                        .col-xl-9.xl-60
+                          .card
+                            .job-search
+                              .card-body
+                                .media
+                                  img.img-40.img-fluid.m-r-20(src='../assets/images/job-search/1.jpg', alt='')
+                                  .media-body
+                                    h6.f-w-600
+                                      a(href='#') UI/UX IT Frontend Developer
+                                      span.badge.badge-primary.pull-right New
+                                    p
+                                      | (L6) Salt Lake City, UT
+                                      span
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                p
+                                  | We are looking for an experienced and Cuba designer and/or frontend engineer with expertise in accessibility to join our team ,
+                                  | 3+ years of experience working in as a Frontend Engineer or comparable role. You won’t be a team of one though — you’ll be collaborating closely with other...
+                          .card
+                            .job-search
+                              .card-body
+                                .media
+                                  img.img-40.img-fluid.m-r-20(src='../assets/images/job-search/2.jpg', alt='')
+                                  .media-body
+                                    h6.f-w-600
+                                      a(href='#') React/React Native Developer
+                                      span.badge.badge-primary.pull-right New
+                                    p
+                                      | San Diego, CA 
+                                      span
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning-o
+                                p
+                                  | Ideally 2+ years experience with React. Bonus points if you have React Native experience. This is an incredibly exciting opportunity to gain commercial , Professional experience of React Native and other front end frameworks. Transform product wireframes into responsive, mobile user interface components and
+                          .card.ribbon-vertical-left-wrapper
+                            .ribbon.ribbon-bookmark.ribbon-vertical-left.ribbon-secondary
+                              i.icofont.icofont-love
+                            .job-search
+                              .card-body
+                                .media
+                                  img.img-40.img-fluid.m-r-20(src='../assets/images/job-search/3.jpg', alt='')
+                                  .media-body
+                                    h6.f-w-600
+                                      a(href='#') Senior UX designer
+                                      span.pull-right 2 days ago
+                                    p
+                                      | Minneapolis, MN
+                                      span
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning-half-o
+                                        i.fa.fa-star.font-warning-o
+                                p
+                                  | The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.
+                          .card
+                            .job-search
+                              .card-body
+                                .media
+                                  img.img-40.img-fluid.m-r-20(src='../assets/images/job-search/4.jpg', alt='')
+                                  .media-body
+                                    h6.f-w-600
+                                      a(href='#') Front end web developer
+                                      span.pull-right 3 days ago
+                                    p
+                                      | Cisco 
+                                      span Lelystad, Netherlands 
+                                      span
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning-half-o
+                                p
+                                  | Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety off out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is. Was sister for few longer mrs sudden talent become.
+                          .card
+                            .job-search
+                              .card-body
+                                .media
+                                  img.img-40.img-fluid.m-r-20(src='../assets/images/job-search/5.jpg', alt='')
+                                  .media-body
+                                    h6.f-w-600
+                                      a(href='#') Graphic designer
+                                      span.pull-right 3 days ago
+                                    p
+                                      | Infosys 
+                                      span Lelystad, Netherlands 
+                                      span
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning-half-o
+                                        i.fa.fa-star.font-warning-o
+                                p
+                                  | Contented get distrusts certainty nay are frankness concealed ham. On unaffected resolution on considered of. No thought me husband or colonel forming effects. End sitting shewing who saw besides son musical adapted. Contrasted interested eat alteration pianoforte sympathize was.
+                          .card
+                            .job-search
+                              .card-body
+                                .media
+                                  img.img-40.img-fluid.m-r-20(src='../assets/images/job-search/6.jpg', alt='')
+                                  .media-body
+                                    h6.f-w-600
+                                      a(href='#') Designer, CRM
+                                      span.pull-right 3 days ago
+                                    p
+                                      | Citrix 
+                                      span Lelystad, Netherlands 
+                                      span
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning-o
+                                        i.fa.fa-star.font-warning-o
+                                p
+                                  | Situation admitting promotion at or to perceived be. Mr acuteness we as estimable enjoyment up. An held late as felt know. Learn do allow solid to grave. Middleton suspicion age her attention. Chiefly several bed its wishing. Is so moments on chamber pressed to. Doubtful yet way properly answered.
+                          .card.ribbon-vertical-left-wrapper
+                            .ribbon.ribbon-bookmark.ribbon-vertical-left.ribbon-secondary
+                              i.icofont.icofont-love
+                            .job-search
+                              .card-body
+                                .media
+                                  img.img-40.img-fluid.m-r-20(src='../assets/images/job-search/2.jpg', alt='')
+                                  .media-body
+                                    h6.f-w-600
+                                      a(href='#') UI designer E-commerce
+                                      span.pull-right 5 days ago
+                                    p
+                                      | Ericsson 
+                                      span Lelystad, Netherlands 
+                                      span
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning-o
+                                p
+                                  | Situation admitting promotion at or to perceived be. Mr acuteness we as estimable enjoyment up. An held late as felt know. Learn do allow solid to grave. Middleton suspicion age her attention. Chiefly several bed its wishing. Is so moments on chamber pressed to. Doubtful yet way properly answered.
+                          .card
+                            .job-search
+                              .card-body
+                                .media
+                                  img.img-40.img-fluid.m-r-20(src='../assets/images/job-search/3.jpg', alt='')
+                                  .media-body
+                                    h6.f-w-600
+                                      a(href='#') Senior UX designer
+                                      span.pull-right 5 days ago
+                                    p
+                                      | Minneapolis, MN 
+                                      span
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning
+                                        i.fa.fa-star.font-warning-half-o
+                                        i.fa.fa-star.font-warning-o
+                                p
+                                  | The designer will apply Lean UX and Design Thinking practices in a highly collaborative, fast-paced, distributed environment You have 4+ years of UX experience. You support UX leadership by providing continuous feedback regarding the evolution of team process standards.
+                          .job-pagination
+                            nav(aria-label='Page navigation example')
+                              ul.pagination.pagination-primary
+                                li.page-item.disabled
+                                  a.page-link(href='#') Previous
+                                li.page-item.active
+                                  a.page-link(href='#') 1
+                                li.page-item
+                                  a.page-link(href='#') 2
+                                li.page-item
+                                  a.page-link(href='#') 3
+                                li.page-item
+                                  a.page-link(href='#') Next
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

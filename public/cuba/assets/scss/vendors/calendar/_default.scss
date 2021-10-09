@@ -1,0 +1,198 @@
+//colors
+$color_alto_approx: #ddd;
+$color_silver_approx: #bbb;
+$white: #fff;
+$color_alabaster_approx: #f9f9f9;
+$color_royal_blue_5_approx: rgba(81, 92, 230, 0.05);
+$color_mine_shaft_approx: #333;
+$alabaster: #fafafa;
+$mercury: #e5e5e5;
+$color_orange_approx: #ff6618;
+$color_hot_cinnamon_approx: #e55b15;
+$color_orange_roughy_approx: #d95614;
+$color_martini_approx: #999;
+$color_gallery_approx: #eee;
+$color_blue_ribbon_approx: #005aff;
+$black: #000;
+
+.btn {
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 25px;
+  border-color: $color_alto_approx;
+  &:hover {
+    border: solid 1px $color_silver_approx;
+    background-color: $white;
+  }
+  &:active {
+    background-color: $color_alabaster_approx;
+    border: solid 1px $color_silver_approx;
+    outline: none;
+    outline: none;
+  }
+  &:disabled {
+    background-color: $color_alabaster_approx;
+    border: solid 1px $color_alto_approx;
+    color: $color_silver_approx;
+  }
+  &:focus {
+    outline: none;
+    &:active {
+      outline: none;
+    }
+  }
+}
+.dropdown-menu {
+  top: 25px;
+  padding: 3px 0;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 2px;
+  border: 1px solid $color_silver_approx;
+  > li > a {
+        padding: 0px 12px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    &:hover {
+      background-color: $color_royal_blue_5_approx;
+      color: $color_mine_shaft_approx;
+    }
+  }
+}
+.bi15 {
+  width: 15px;
+  height: 15px;
+}
+.calendar-icon {
+  width: 14px;
+  height: 14px;
+}
+#lnb {
+    border-right: 1px solid #ecf3fa;
+    padding: 17px 0;
+    width: 180px;
+  label {
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+}
+#right {
+      width: calc(100% - 200px);
+}
+.lnb-new-schedule {
+  padding-bottom: 12px;
+  border-bottom: 1px solid $mercury;
+}
+.lnb-calendars-d1 {
+  padding-left: 8px;
+  label {
+    font-weight: normal;
+  }
+}
+.lnb-calendars-item {
+  min-height: 14px;
+  line-height: 14px;
+  padding: 8px 0;
+}
+.lnb-footer {
+  color: $color_martini_approx;
+  font-size: 11px;
+  position: absolute;
+  bottom: 12px;
+  padding-left: 16px;
+}
+#menu-navi{
+      .btn-default{        
+        color: $black;
+      } 
+}
+#menu {
+  padding: 16px;
+  .dropdown{
+      .btn-default{
+        border: 1px solid #ddd;
+        color: $black;
+      }
+  }
+  .move-today{
+    border: 1px solid #ddd;
+  }
+  .move-day{
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+  }
+  .dropdown-toggle{
+  &:after{
+    display: none;
+  }
+}
+}
+#dropdownMenu-calendarType {
+  padding: 0 8px 0 11px;
+}
+#calendarTypeName {
+  min-width: 62px;
+  display: inline-block;
+  text-align: left;
+  line-height: 30px;
+}
+.move-today {
+  padding: 0 16px;
+  line-height: 30px;
+}
+.move-day {
+  padding: 8px;
+  font-size: 0;
+}
+#renderRange {
+  padding-left: 12px;
+  font-size: 18px;
+  vertical-align: middle;
+  float: right;
+}
+.calendar-bar {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  display: inline-block;
+  border: 1px solid $color_gallery_approx;
+  vertical-align: middle;
+}
+.calendar-name {
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.schedule-time {
+  color: $color_blue_ribbon_approx;
+}
+.fa {
+  width: 12px;
+  height: 12px;
+  margin-right: 2px;
+}
+.weekday-grid-more-schedules {
+  float: right;
+  margin-top: 4px;
+  margin-right: 6px;
+  height: 18px;
+  line-height: 17px;
+  padding: 0 5px;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 3px;
+  border: 1px solid $color_alto_approx;
+  font-size: 12px;
+  text-align: center;
+  color: $black;
+}
+.open > .dropdown-toggle.btn-default {
+  background-color: $white;
+}
+.lnb-calendars > div {
+  padding: 12px 16px;
+  border-bottom: 1px solid $mercury;
+  font-weight: normal;
+}
+.dropdown-menu-title .calendar-icon {
+  margin-right: 8px;
+}

@@ -1,0 +1,196 @@
+/*======= Contact Boxes v1  =======*/
+.contact-info-boxes-v1 {
+    .contact-info-box {
+        background-color: $color-white;
+        box-shadow: 0px 10px 45px 0px rgba(71, 59, 240, 0.1);
+        padding: 40px 55px 45px 55px;
+        border-radius: 7px;
+        margin-bottom: 25px;
+
+        .title {
+            font-size: 24px;
+            line-height: 1.4;
+            margin-bottom: 25px;
+
+            span {
+                color: $color-primary;
+            }
+        }
+
+        .template-btn {
+            padding: 12px 30px;
+        }
+    }
+}
+
+/*======= Contact Boxes v2  =======*/
+.contact-info-boxes-v2 {
+    .contact-info-box {
+        .info-body {
+            box-shadow: 0px 0px 30px 0px rgba(234, 234, 234, 0.5);
+            padding: 80px 35px 35px 35px;
+            margin-top: -45px;
+            text-align: center;
+            border-radius: 5px;
+            line-height: 1.6;
+            font: {
+                weight: 500;
+                family: $font-cs-medium;
+            }
+        }
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+
+        &,
+        a {
+            color: $color-body;
+        }
+
+        .icon {
+            height: 90px;
+            width: 90px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            line-height: 0.5;
+            border-radius: 50px;
+            background-color: $color-primary;
+            color: $color-white;
+            box-shadow: 0px 10px 30px 0px rgb(71 59 240 / 36%);
+            position: relative;
+            z-index: 2;
+
+            &.icon-gradient-1 {
+                background-image: linear-gradient(
+                    135deg,
+                    rgb(243, 57, 70) 0%,
+                    rgb(200, 29, 154) 59%,
+                    rgb(156, 0, 237) 100%
+                );
+                box-shadow: 0px 10px 60px 0px rgba(218, 9, 212, 0.28);
+            }
+
+            &.icon-gradient-2 {
+                background-image: linear-gradient(
+                    135deg,
+                    rgb(70, 57, 243) 0%,
+                    rgb(113, 29, 240) 59%,
+                    rgb(156, 0, 237) 100%
+                );
+                box-shadow: 0px 10px 60px 0px rgba(84, 54, 240, 0.28);
+            }
+
+            &.icon-gradient-3 {
+                background-image: linear-gradient(
+                    135deg,
+                    rgb(253, 186, 26) 0%,
+                    rgb(245, 93, 100) 59%,
+                    rgb(237, 0, 173) 100%
+                );
+                box-shadow: 0px 10px 60px 0px rgba(218, 9, 212, 0.28);
+            }
+        }
+    }
+}
+
+/*======= Contact Form v1  =======*/
+.contact-form-v1 {
+    padding: 58px 45px;
+    border: 2px solid #efeff0;
+    border-radius: 7px;
+
+    .input-field {
+        .nice-select,
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .nice-select,
+    input,
+    textarea {
+        border-radius: 7px;
+    }
+
+    textarea {
+        height: 160px;
+    }
+}
+
+/*======= Contact Form v2  =======*/
+.contact-form-v2 {
+    .input-field {
+        position: relative;
+        z-index: 1;
+    }
+
+    label {
+        font: {
+            size: 18px;
+            family: $font-cs-medium;
+            weight: 500;
+        }
+        line-height: 1;
+        color: $color-heading;
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.3s;
+        opacity: 0;
+        visibility: hidden;
+        margin: 0;
+    }
+
+    .textarea-field {
+        label {
+            display: none;
+        }
+    }
+
+    input,
+    textarea {
+        border-radius: 7px;
+        background-color: rgba(#473bf0, 0.07);
+        height: 75px;
+        border: 2px solid transparent;
+        padding: 0 30px;
+        transition: 0.3s;
+
+        &:focus {
+            border-color: $color-primary;
+            padding-left: 115px;
+
+            + label {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    textarea {
+        padding-top: 25px;
+        height: 255px;
+
+        &:focus {
+            padding-left: 30px;
+        }
+    }
+}
+
+.contact-map {
+    width: 100%;
+    height: 620px;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}

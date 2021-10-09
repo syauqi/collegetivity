@@ -1,0 +1,98 @@
+/**=====================
+    81. Bookmark CSS start
+==========================**/
+.bookmark {
+  ul {
+    li {
+      display: inline-block;
+      .search-form {
+        position: absolute;
+        bottom: 53px;
+        z-index: 1;
+        .form-control-search {
+          top: 65px;
+          position: absolute;
+          transition: all linear 0.3s;
+          right: -20px;
+          transform: translateY(-35px) scaleY(0);
+          opacity: 0;
+          visibility: hidden;
+          input {
+            width: 240px;
+            background-color: $white;
+            box-shadow: 0 5px 21px rgba(0, 0, 0, 0.10);
+          }
+          &.open {
+            transform: translateY(0px) scaleY(1);
+            opacity: 1;
+            visibility: visible;
+            transition: all linear 0.3s;
+            z-index: 100;
+          }
+          &:after {
+            top: 12px;
+            left: 20px;
+            z-index: 1;
+          }
+          &:before {
+            left: 50px;
+            top: 9px;
+            z-index: 2;
+          }
+        }
+      }
+      a{
+        position: relative;
+        color: $theme-body-font-color;
+        svg {
+          vertical-align: middle;
+          height: 20px;
+          width: 20px;
+        }
+      }
+      + li {
+        margin-left: 10px;
+      }
+      &:last-child {
+        padding-right: 0;
+        a {
+          border-radius: 5px;
+          svg {
+            color: #ff9f40;
+          }
+        }
+      }
+    }
+  }
+}
+.offcanvas-bookmark {
+  &.page-wrapper.horizontal-wrapper {
+    .page-body-wrapper {
+      .page-body {
+        .bookmark {
+          ul {
+            li {
+              a {
+                z-index: 99999;
+                color: rgba(255, 255, 255, 0.5);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &:before {
+    position: fixed;
+    content: '';
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    right: 0;
+    left: 0;
+  }
+}
+/**=====================
+    81. Bookmark CSS Ends
+==========================**/

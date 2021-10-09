@@ -1,0 +1,66 @@
+@import "photoswipe/photoswipe-default";
+@import "photoswipe/photoswipe";
+
+.my-gallery {
+  padding-right: 0;
+  img {
+    width: 100%;
+  }
+  figure{
+    margin-bottom: 30px;
+  }
+  figcaption {
+    display: none;
+  }
+  &.gallery-with-description{
+    img{
+      padding: 10px !important;
+      border: 1px solid #ddd !important;
+      border-bottom: none ! important;
+      border-radius: 5px 5px 0 0;
+    }
+    a{
+      > div{
+        border-top: none !important;
+        margin-bottom: 0;
+        padding: 5px 10px 10px 10px;
+      }
+    }
+    h4{
+      margin-top: 0px;
+    }
+  }
+  &.gallery{
+    figure{
+      &.img-hover{
+        a{
+          > div {
+            overflow: hidden;
+          }
+        }
+        &.hover-12{
+          a{
+            > div {
+              background: #776aff;
+              &:hover {
+                img {
+                  opacity: .7;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#aniimated-thumbnials{
+  figure{
+    &:nth-child(12),
+    &:nth-child(11),
+    &:nth-child(10),
+    &:nth-child(9){
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,274 @@
+/**=====================
+    06. Button CSS start
+==========================**/
+.btn-link {
+  color: var(--theme-deafult);
+}
+
+@mixin btn-gradien($deg,$leftcolor,$leftcolor-per,$rightcolor,$rightcolor-per,$font-color){
+  background-image: linear-gradient(to right,$leftcolor 0%,$rightcolor 51%,$leftcolor 100%);
+  border:none;
+  color:$font-color;
+  background-size: auto 200%;
+  transition: all 0.3s ease;
+}
+.btn-primary-gradien{
+  @include btn-gradien(60,lighten($primary-color,8%),0%,darken($primary-color,8%),100%,$white);
+  color: $white;
+  &:focus,&:active,&.active{
+      transition: 1.5s;
+      background-position: right center;
+      background-image: linear-gradient(to right, lighten($primary-color,8%),0%,darken($primary-color,8%),100%,$white) !important;
+  }
+}
+.btn-secondary-gradien{
+  @include btn-gradien(60,lighten($secondary-color,8%),0%,darken($secondary-color,8%),100%,$white);
+ &:hover,&:focus,&:active,&.active,&.hover{
+    transition: 1.5s;
+    background-position: right center;
+   background-image: linear-gradient(to right, lighten($secondary-color,8%),0%,darken($secondary-color,8%),100%,$white) !important;
+  }
+}
+.btn-success-gradien{
+  @include btn-gradien(60,lighten($success-color,8%),0%,darken($success-color,8%),100%,$white);
+ &:hover,&:focus,&:active,&.active,&.hover{
+    transition: 1.5s;
+    background-position: right center;
+   background-image: linear-gradient(to right, lighten($success-color,8%),0%,darken($success-color,8%),100%,$white) !important;
+  }
+}
+.btn-danger-gradien{
+  @include btn-gradien(60,lighten($danger-color,8%),0%,darken($danger-color,8%),100%,$white);
+ &:hover,&:focus,&:active,&.active,&.hover{
+    transition: 1.5s;
+    background-position: right center;
+   background-image: linear-gradient(to right, lighten($danger-color,8%),0%,darken($danger-color,8%),100%,$white) !important;
+  }
+}
+.btn-warning-gradien{
+  @include btn-gradien(60,lighten($warning-color,8%),0%,darken($warning-color,8%),100%,$white);
+ &:hover,&:focus,&:active,&.active,&.hover{
+    transition: 1.5s;
+    background-position: right center;
+   background-image: linear-gradient(to right, lighten($warning-color,8%),0%,darken($warning-color,8%),100%,$white) !important;
+  }
+}
+.btn-info-gradien{
+  @include btn-gradien(60,lighten($info-color,8%),0%,darken($info-color,8%),100%,$white);
+ &:hover,&:focus,&:active,&.active,&.hover{
+    transition: 1.5s;
+    background-position: right center;
+   background-image: linear-gradient(to right, lighten($info-color,8%),0%,darken($info-color,8%),100%,$white) !important;
+  }
+}
+.btn-light-gradien{
+  @include btn-gradien(60,lighten($light-color,8%),0%,darken($light-color,8%),100%,$white);
+ &:hover,&:focus,&:active,&.active,&.hover{
+    transition: 1.5s;
+    background-position: right center;
+   background-image: linear-gradient(to right, lighten($light-color,8%),0%,darken($light-color,8%),100%,$white) !important;
+  }
+}
+.btn-dark-gradien{
+  @include btn-gradien(60,lighten($dark-color,8%),0%,darken($dark-color,8%),100%,$white);
+ &:hover,&:focus,&:active,&.active,&.hover{
+    transition: 1.5s;
+    background-position: right center;
+   background-image: linear-gradient(to right, lighten($dark-color,8%),0%,darken($dark-color,8%),100%,$white) !important;
+  }
+}
+
+
+@mixin btn-squre($border-radius){
+  border-radius:$border-radius+px;
+}
+@mixin btn-pill($border-radius){
+  border-radius:$border-radius+px;
+}
+@mixin btn-pill-first($radius){
+  border-radius: $radius+px 0 0 $radius+px;
+}
+@mixin btn-pill-last($radius){
+  border-radius: 0 $radius+px $radius+px 0;
+}
+
+.btn{
+  padding: $btn-padding;
+}
+.btn-lg{
+  font-size: $btn-lg-font-size;
+}
+.btn-sm{
+  font-size: $btn-sm-font-size;
+}
+.btn-xs {
+  padding: $btn-xs-padding;
+  font-size: $btn-xs-font-size;
+}
+.large-btn{
+  .btn{
+    margin-right: 5px;
+    margin-bottom: 15px;
+  }
+  margin-bottom: -20px;
+}
+// outline buttons//
+@each $btn-name, $btn-color in (primary, $primary-color),
+        (secondary, $secondary-color) ,
+        (success, $success-color),
+        (danger, $danger-color),
+        (info, $info-color),
+        (light, $light-color),
+        (dark, $dark-color),
+        (warning, $warning-color) {
+  .btn-air-#{$btn-name}{
+    box-shadow: 0 5px 10px 2px rgba(88,103,221,.19)!important;
+    &:hover,&:active,&:not([disabled]):not(.disabled):active{
+      background-color: darken( $btn-color, 10% );
+      border-color: darken( $btn-color, 10% );
+    }
+  }
+  .input-air-#{$btn-name}{
+    box-shadow: 0 3px 5px 1px rgba($btn-color , 0.10)!important;
+    &:focus{
+      border-color:$btn-color;
+    }
+  }
+}
+
+.btn-gradient {
+  color: $white !important;
+  font-weight:500;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: $gradient-primary;
+  letter-spacing: 0.06rem;  
+  &:hover {
+    background-size: 100% !important;
+  }
+}
+
+.btn-warning{
+  color: $white;
+  &:hover,
+  &.disabled{
+    color: $white;
+  }
+}
+
+[class*='-gradien']{
+  &:hover{
+    background-size: 50% 100%;
+    transition: all 0.3s ease;
+    color: $white;
+  }
+}
+
+.btn-square{
+  @include btn-squre(0);
+}
+.btn-pill{
+  @include btn-squre(60);
+}
+.btn-group-pill {
+  .btn{
+    &:first-child{
+      @include btn-pill-first(60);
+    }
+    &:last-child{
+      @include btn-pill-last(60);
+    }
+  }
+}
+.btn-group-square{
+  .btn{
+    &:first-child{
+      @include btn-pill-first(0);
+    }
+    &:last-child{
+      @include btn-pill-last(0);
+    }
+  }
+}
+.btn-showcase{
+  .btn{
+    margin-bottom: 10px;
+    margin-right: 18px;
+  }
+  margin-bottom:-10px;
+}
+
+.btn-dropdown-showcase{
+  .dropdown{
+    margin-bottom: 10px;
+    margin-right: 18px;
+  }
+  .btn-group{
+    margin-bottom: 10px;
+    margin-right: 18px;
+  }
+  margin-bottom:-10px;
+}
+.btn-group{
+  .radio{
+    label{
+      &::before{
+        top: 2px;
+      }
+      &::after{
+        top: 7px;
+      }
+    }
+  }
+  .checkbox{
+    label{
+      margin-top: 3px;
+    }
+  }
+}
+.btn-group-showcase{
+  >div{
+    margin-bottom: -20px;
+    label{
+      margin-bottom: 0;
+    }
+  }
+  .btn-group{
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .checkbox {
+    input[type="checkbox"] {
+      display: none;
+    }
+  }
+}
+.tooltiptext {
+  visibility: visible;
+  width: 120px;
+  background-color: #555;
+  color: $white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 1;
+  transition: opacity 0.3s;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+}
+/**=====================
+     06. Button CSS end
+==========================**/

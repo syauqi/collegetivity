@@ -1,0 +1,504 @@
+/*======= Iconic Boxes v1  =======*/
+.iconic-boxes-v1 {
+    .iconic-box {
+        position: relative;
+        z-index: 1;
+        padding: 45px 30px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 60px 0px rgba(189, 189, 189, 0.3);
+
+        &.no-shadow {
+            padding: 0;
+            box-shadow: none;
+        }
+
+        .icon {
+            height: 60px;
+            width: 60px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-primary;
+            color: $color-white;
+            border-radius: 50%;
+            font-size: 30px;
+            color: #fff;
+            margin-bottom: 30px;
+
+            &.icon-gradient-1 {
+                background: linear-gradient(
+                    130deg,
+                    rgb(120, 57, 243) 0%,
+                    rgb(179, 29, 225) 59%,
+                    rgb(237, 0, 206) 100%
+                );
+                box-shadow: 0px 10px 60px 0px rgba(218, 9, 212, 0.28);
+            }
+
+            &.icon-gradient-2 {
+                background-image: linear-gradient(
+                    130deg,
+                    rgb(255, 146, 0) 0%,
+                    rgb(246, 73, 103) 59%,
+                    rgb(237, 0, 206) 100%
+                );
+                box-shadow: 0px 10px 60px 0px rgba(253, 132, 19, 0.28);
+            }
+
+            &.icon-gradient-3 {
+                background-image: linear-gradient(
+                    130deg,
+                    rgb(243, 57, 70) 0%,
+                    rgb(200, 29, 154) 59%,
+                    rgb(156, 0, 237) 100%
+                );
+                box-shadow: 0px 10px 60px 0px rgba(218, 9, 212, 0.28);
+            }
+
+            &.icon-gradient-4 {
+                background-image: linear-gradient(
+                    130deg,
+                    rgb(70, 57, 243) 0%,
+                    rgb(113, 29, 240) 59%,
+                    rgb(156, 0, 237) 100%
+                );
+                box-shadow: 0px 10px 60px 0px rgba(84, 54, 240, 0.28);
+            }
+
+            &.icon-gradient-5 {
+                background-image: linear-gradient(
+                    130deg,
+                    rgb(31, 93, 251) 0%,
+                    rgb(16, 165, 207) 59%,
+                    rgb(0, 237, 162) 100%
+                );
+                box-shadow: 0px 10px 60px 0px rgba(33, 113, 238, 0.28);
+            }
+
+            &.icon-gradient-6 {
+                background-image: linear-gradient(
+                    130deg,
+                    rgb(253, 186, 26) 0%,
+                    rgb(245, 93, 100) 59%,
+                    rgb(237, 0, 173) 100%
+                );
+                box-shadow: 0px 10px 60px 0px rgba(218, 9, 212, 0.28);
+            }
+        }
+
+        .title {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: $color-body-2;
+        }
+
+        .box-link {
+            color: $color-body-2;
+            font: {
+                size: 15px;
+                family: $font-cs-bold;
+                weight: 700;
+            }
+            text-transform: capitalize;
+            position: relative;
+            z-index: 1;
+            line-height: 1;
+            margin-top: 20px;
+
+            i {
+                padding-left: 10px;
+            }
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 100%;
+                background-color: $color-body-2;
+                left: 0;
+                bottom: -3px;
+                z-index: -1;
+                transition: 0.3s;
+            }
+
+            &::after {
+                width: 40%;
+                background-color: $color-heading;
+                opacity: 0;
+            }
+        }
+
+        &:hover {
+            .box-link {
+                color: $color-heading;
+
+                &::after {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+/*======= Iconic Boxes v1 Square Bordered   =======*/
+.iconic-boxes-v1 {
+    &.icon-boxes-square-bordered {
+        border-left: 1px solid rgba(54, 35, 75, 0.07);
+        border-top: 1px solid rgba(54, 35, 75, 0.07);
+
+        .iconic-box {
+            padding: 38px 35px;
+            transition: all 0.3s linear;
+            border-right: 1px solid rgba(54, 35, 75, 0.07);
+            border-bottom: 1px solid rgba(54, 35, 75, 0.07);
+            border-radius: 0;
+            box-shadow: none;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                transition: all 0.3s linear;
+                border-radius: 10px;
+                z-index: -1;
+                opacity: 0;
+                visibility: hidden;
+                transform: rotateY(-70deg);
+                transform-origin: left;
+            }
+
+            &::before {
+                left: -20px;
+                top: -20px;
+                bottom: -10px;
+                right: -10px;
+                background-color: $color-secondary;
+            }
+
+            &::after {
+                left: -15px;
+                top: -15px;
+                bottom: -15px;
+                right: -15px;
+                background-color: $color-white;
+                box-shadow: 0px 10px 60px 0px rgb(189 189 189 / 30%);
+            }
+
+            &:hover {
+                z-index: 2;
+                &::before,
+                &::after {
+                    visibility: visible;
+                    opacity: 1;
+                    transform: rotateY(0);
+                }
+            }
+        }
+    }
+}
+
+/*======= Iconic Boxes v2  =======*/
+.iconic-boxes-v2 {
+    .iconic-box {
+        .icon {
+            margin-bottom: 30px;
+
+            img,
+            i {
+                transition: all 1s ease;
+            }
+        }
+
+        .title {
+            font-size: 22px;
+            margin-bottom: 15px;
+
+            a:hover {
+                color: $color-primary-4;
+            }
+        }
+
+        .box-link {
+            margin-top: 30px;
+            color: $color-primary-4;
+            border: 2px solid rgba(#3377ff, 20%);
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 0;
+                height: 0;
+                border-radius: 50%;
+                z-index: -1;
+                background-color: $color-primary-4;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.3s;
+            }
+        }
+
+        &:hover {
+            .box-link {
+                color: $color-white;
+                border-color: $color-primary-4;
+
+                &::after {
+                    width: 100%;
+                    height: 100%;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            .icon {
+                img,
+                i {
+                    transform: rotateY(360deg);
+                }
+            }
+        }
+
+        &.color-1 {
+            .title a:hover {
+                color: #19cb55;
+            }
+
+            .box-link {
+                color: #19cb55;
+                border-color: rgba(#19cb55, 20%);
+
+                &::after {
+                    background-color: #19cb55;
+                }
+            }
+
+            &:hover {
+                .box-link {
+                    color: $color-white;
+                    border-color: #19cb55;
+                }
+            }
+        }
+
+        &.color-2 {
+            .title a:hover {
+                color: #1d79fb;
+            }
+
+            .box-link {
+                color: #1d79fb;
+                border-color: rgba(#1d79fb, 20%);
+
+                &::after {
+                    background-color: #1d79fb;
+                }
+            }
+
+            &:hover {
+                .box-link {
+                    color: $color-white;
+                    border-color: #1d79fb;
+                }
+            }
+        }
+
+        &.color-3 {
+            .title a:hover {
+                color: #f95f75;
+            }
+
+            .box-link {
+                color: #f95f75;
+                border-color: rgba(#f95f75, 20%);
+
+                &::after {
+                    background-color: #f95f75;
+                }
+            }
+
+            &:hover {
+                .box-link {
+                    color: $color-white;
+                    border-color: #f95f75;
+                }
+            }
+        }
+
+        &.color-4 {
+            .title a:hover {
+                color: #ff8500;
+            }
+
+            .box-link {
+                color: #ff8500;
+                border-color: rgba(#ff8500, 20%);
+
+                &::after {
+                    background-color: #ff8500;
+                }
+            }
+
+            &:hover {
+                .box-link {
+                    color: $color-white;
+                    border-color: #ff8500;
+                }
+            }
+        }
+    }
+}
+
+/*======= Iconic Boxes v3  =======*/
+.icon-boxes-v3 {
+    .iconic-box {
+        .icon {
+            position: relative;
+            z-index: 1;
+
+            i {
+                height: 65px;
+                width: 65px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $color-white;
+                border-radius: 50%;
+                background-color: $color-primary-5;
+                font-size: 24px;
+                line-height: 0.5;
+                margin-bottom: 30px;
+            }
+        }
+
+        &.have-icon-overly {
+            .icon {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 72px;
+                    height: 72px;
+                    background-color: $color-white;
+                    z-index: -1;
+                    border-radius: 50%;
+                    opacity: 0.07;
+                }
+            }
+        }
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+
+            a:hover {
+                color: inherit;
+            }
+        }
+
+        .box-btn {
+            border: 2px solid $color-body;
+            color: $color-body-4;
+            font-weight: 700;
+            line-height: 1;
+            padding: 13px 30px;
+            border-radius: 30px;
+            margin-top: 30px;
+            font: {
+                size: 15px;
+            }
+
+            i {
+                margin-left: 5px;
+            }
+
+            &:hover {
+                background-color: $color-primary-5;
+                border-color: $color-primary-5;
+                color: $color-white;
+            }
+        }
+
+        &.color-v1 .icon i,
+        &.color-v1 .box-btn:hover {
+            background-color: #2ecea8;
+            border-color: #2ecea8;
+        }
+
+        &.color-v2 .icon i,
+        &.color-v2 .box-btn:hover {
+            background-color: #fead44;
+            border-color: #fead44;
+        }
+
+        &.color-v3 .icon i,
+        &.color-v3 .box-btn:hover {
+            background-color: #ff00ff;
+            border-color: #ff00ff;
+        }
+
+        &.color-v4 .icon i,
+        &.color-v4 .box-btn:hover {
+            background-color: #009fe3;
+            border-color: #009fe3;
+        }
+
+        &.box-version-white {
+            &,
+            .title a {
+                color: $color-white;
+            }
+
+            .box-btn:not(:hover) {
+                border-color: rgb(70, 68, 107);
+                color: #afade9;
+            }
+        }
+    }
+}
+
+/*======= Icon Bordered Box  =======*/
+.icon-bordered-box {
+    padding: 30px;
+    border: 1px solid #eaeaed;
+
+    .title {
+        font-size: 22px;
+        letter-spacing: -1px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+
+    .icon {
+        font-size: 30px;
+        color: $color-primary-5;
+        line-height: 0.5;
+        margin-bottom: 20px;
+    }
+
+    &.icon-left {
+        display: flex;
+        align-items: flex-start;
+
+        .icon {
+            margin: 0 20px 0 0;
+        }
+    }
+}

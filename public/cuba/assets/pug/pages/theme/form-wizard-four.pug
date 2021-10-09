@@ -1,0 +1,105 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var form_wizard_four      = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Form Vertical Wizard
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item  Form Layout
+                                      li.breadcrumb-item.active Form Vertical Wizard
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Form Vertical Wizard
+                            .card-body
+                              // Smart Wizard start
+                              #wizard.wizard-4
+                                ul
+                                  li
+                                    a(href='#step-1')
+                                      | Step 1
+                                    small Registration
+                                  li
+                                    a(href='#step-2')
+                                      | Step 2
+                                    small Email
+                                  li
+                                    a(href='#step-3')
+                                      | Step 3
+                                    small Birth Date
+                                  li.pb-0
+                                    a(href='#step-4')
+                                      i.fa.fa-thumbs-o-up
+                                    small Login Info
+                                #step-1
+                                  .col-sm-12.pl-0
+                                    .form-group.mb-3
+                                      label(for='name') First Name
+                                      input#name.form-control(type='text', placeholder='Johan', required='required')
+                                    .form-group.mb-3
+                                      label(for='lname') Last Name
+                                      input#lname.form-control(type='text', placeholder='Deo')
+                                    .form-group.mb-3
+                                      label(for='contact') Contact No.
+                                      input#contact.form-control(type='number', placeholder='123456789')
+                                #step-2
+                                  .col-sm-12.pl-0
+                                    .form-group.mb-3.m-t-15
+                                      label(for='exampleFormControlInput1') Email address
+                                      input#exampleFormControlInput1.form-control(type='email', placeholder='name@example.com')
+                                    .form-group.mb-3
+                                      label(for='exampleInputPassword1') Password
+                                      input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+                                    .form-group.mb-3
+                                      label(for='exampleInputPassword1') Confirm Password
+                                      input#exampleInputcPassword1.form-control(type='password', placeholder='Enter again')
+                                #step-3
+                                  .col-sm-12.pl-0
+                                    .form-group.mb-3
+                                      label(for='exampleFormControlInput1') Birthday:
+                                      input.form-control(type='date')
+                                    .form-group.mb-3
+                                      label.control-label Age
+                                      input.form-control(placeholder='Age', type='text')
+                                    .form-group.mb-3
+                                      label.control-label Have Passport
+                                      input.form-control(placeholder='Yes/No', type='text')
+                                #step-4
+                                  .col-sm-12.pl-0
+                                    .form-group.mb-3
+                                      label.control-label Country
+                                      input.form-control.mt-1(type='text', placeholder='Country', required='required')
+                                    .form-group.mb-3
+                                      label.control-label State
+                                      input.form-control.mt-1(type='text', placeholder='State', required='required')
+                                    .form-group.mb-3
+                                      label.control-label City
+                                      input.form-control.mt-1(type='text', placeholder='City', required='required')
+                              // Smart Wizard Ends
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

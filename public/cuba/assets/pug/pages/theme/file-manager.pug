@@ -1,0 +1,258 @@
+- var chat_menu             = true;
+- var theme_customizer      = true;
+- var typeahead             = true;
+- var typeahead_search      = true;
+- var tooltip               = true;
+- var page_feather_icon     = true;
+- var sidebar               = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3 
+                                      | File Manager
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Apps
+                                      li.breadcrumb-item.active  File Manager
+                                  
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-xl-3.box-col-6.pr-0
+                            .file-sidebar
+                              .card
+                                .card-body
+                                  ul
+                                    li     
+                                     .btn.btn-primary
+                                        i(data-feather="home")                                     
+                                        | Home 
+                                    li
+                                      .btn.btn-light
+                                        i(data-feather="folder")
+                                        | All    
+                                    li
+                                      .btn.btn-light
+                                        i(data-feather="clock")
+                                        | Recent    
+                                    li
+                                      .btn.btn-light
+                                        i(data-feather="star")
+                                        | Starred      
+                                    li
+                                      .btn.btn-light
+                                        i(data-feather="alert-circle")
+                                        | Recovery        
+                                    li
+                                      .btn.btn-light
+                                        i(data-feather="trash-2")
+                                        | Deleted 
+                                  hr
+                                  ul
+                                    li
+                                      .btn.btn-outline-primary
+                                          i(data-feather="database")    
+                                          | Storage   
+                                      .m-t-15
+                                          .progress.sm-progress-bar.mb-1
+                                              .progress-bar.bg-primary(role='progressbar' style='width: 25%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+                                          p 25 GB of 100 GB used
+                                  hr
+                                  ul
+                                    li
+                                      .btn.btn-outline-primary
+                                          i(data-feather="grid")    
+                                          | Pricing plan
+                                    li 
+                                      .pricing-plan
+                                         h6 Trial Version 
+                                         h5 FREE
+                                         p  100 GB Space
+                                         .btn.btn-outline-primary.btn-xs
+                                          | Selected
+                                         img.bg-img(src='../assets/images/dashboard/folder.png', alt='')   
+                                    li 
+                                      .pricing-plan
+                                         h6 Premium
+                                         h5 $5/month
+                                         p  200 GB Space
+                                         .btn.btn-outline-primary.btn-xs
+                                          | Contact Us
+                                         img.bg-img(src='../assets/images/dashboard/folder1.png', alt='')  
+
+                        .col-xl-9.col-md-12.box-col-12
+                            .file-content
+                               .card
+                                  .card-header
+                                    .media
+                                      form.form-inline(action='#' method='get')
+                                        .form-group.mb-0                                       
+                                              i.fa.fa-search
+                                              input.form-control-plaintext(type='text' placeholder='Search...')
+
+                                      .media-body.text-right
+                                          form.d-inline-flex(action='#', method='POST', enctype='multipart/form-data', name='myForm')
+                                            .btn.btn-primary(onclick='getFile()') 
+                                              i(data-feather="plus-square")
+                                              | Add New
+                                            div(style='height: 0px;width: 0px; overflow:hidden;')
+                                              input#upfile(type='file', onchange='sub(this)')                    
+
+                                          .btn.btn-outline-primary
+                                            i(data-feather="upload")    
+                                            | Upload  
+                                  .card-body.file-manager
+                                      h4.mb-3 All Files
+                                      h6 Recently opened files
+                                      ul.files
+                                          li.file-box
+                                            .file-top   
+                                                i.fa.fa-file-image-o.txt-primary
+                                                i.fa.fa-ellipsis-v.f-14.ellips
+                                            .file-bottom
+                                                h6 Logo.psd 
+                                                p.mb-1 2.0 MB
+                                                p 
+                                                  b last open : 
+                                                  | 1 hour ago
+                                          li.file-box
+                                            .file-top   
+                                                i.fa.fa-file-archive-o.txt-secondary
+                                                i.fa.fa-ellipsis-v.f-14.ellips
+                                            .file-bottom
+                                                h6 Project.zip 
+                                                p.mb-1 1.90 GB
+                                                p 
+                                                  b last open : 
+                                                  | 1 hour ago
+                                          li.file-box
+                                            .file-top   
+                                                i.fa.fa-file-excel-o.txt-success
+                                                i.fa.fa-ellipsis-v.f-14.ellips
+                                            .file-bottom
+                                                h6 Backend.xls
+                                                p.mb-1 2.00 GB
+                                                p 
+                                                  b last open : 
+                                                  | 1 hour ago
+                                          li.file-box
+                                            .file-top   
+                                                i.fa.fa-file-text-o.txt-info
+                                                i.fa.fa-ellipsis-v.f-14.ellips
+                                            .file-bottom
+                                                h6 requirements.txt 
+                                                p.mb-1 0.90 KB
+                                                p 
+                                                  b last open : 
+                                                  | 1 hour ago
+
+                                      h6.mt-4 Folders
+                                      ul.folder
+                                          li.folder-box
+                                            .media
+                                              i.fa.fa-file-archive-o.f-36.txt-warning
+                                              .media-body.ml-3
+                                                h6.mb-0 Endless admin
+                                                p 204 files, 50mb
+                                          li.folder-box
+                                            .media
+                                              i.fa.fa-folder.f-36.txt-warning
+                                              .media-body.ml-3
+                                                h6.mb-0 Endless admin
+                                                p 101 files, 10mb
+                                          li.folder-box
+                                            .media
+                                              i.fa.fa-file-archive-o.f-36.txt-warning
+                                              .media-body.ml-3
+                                                h6.mb-0 Endless admin
+                                                p 25 files, 2mb
+                                          li.folder-box
+                                            .media
+                                              i.fa.fa-folder.f-36.txt-warning
+                                              .media-body.ml-3
+                                                h6.mb-0 Endless admin
+                                                p 108 files, 5mb
+
+                                      h6.mt-4 Files
+                                      ul.files
+                                          li.file-box
+                                            .file-top   
+                                                i.fa.fa-file-archive-o.txt-secondary
+                                                i.fa.fa-ellipsis-v.f-14.ellips
+                                            .file-bottom
+                                                h6 Project.zip 
+                                                p.mb-1 1.90 GB
+                                                p 
+                                                  b last open : 
+                                                  | 1 hour ago
+                                          li.file-box
+                                            .file-top   
+                                                i.fa.fa-file-excel-o.txt-success
+                                                i.fa.fa-ellipsis-v.f-14.ellips
+                                            .file-bottom
+                                                h6 Backend.xls
+                                                p.mb-1 2.00 GB
+                                                p 
+                                                  b last open : 
+                                                  | 1 hour ago
+                                          li.file-box
+                                            .file-top   
+                                                i.fa.fa-file-text-o.txt-info
+                                                i.fa.fa-ellipsis-v.f-14.ellips
+                                            .file-bottom
+                                                h6 requirements.txt 
+                                                p.mb-1 0.90 KB
+                                                p 
+                                                  b last open : 
+                                                  | 1 hour ago
+                                          li.file-box
+                                            .file-top   
+                                                i.fa.fa-file-text-o.txt-primary
+                                                i.fa.fa-ellipsis-v.f-14.ellips
+                                            .file-bottom
+                                                h6 Logo.psd 
+                                                p.mb-1 2.0 MB
+                                                p 
+                                                  b last open : 
+                                                  | 1 hour ago
+
+
+
+                    // Container-fluid Ends
+                include ../../components/footer
+            .icon-hover-bottom.p-fixed.fa-fa-icon-show-div.opecity-0
+              .container-fluid
+                .row
+                  .icon-popup
+                    .close-icon
+                      i.icofont.icofont-close
+                    .icon-first
+                      i#icon_main
+                    .icon-class
+                      label.icon-title data-feather
+                      span#fclass1
+                    .icon-last.icon-last
+                      label.icon-title Markup
+                      .form-inline
+                        .form-group
+                          input#input_copy.inp-val.form-control.m-r-10(type='text', value='', readonly='readonly')
+                          button.btn.btn-primary.notification(onclick='myFunction()') Copy text
+        include ../../components/footer-files

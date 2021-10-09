@@ -1,0 +1,65 @@
+/**=====================
+    24. According CSS start
+==========================**/
+.default-according{
+    .card{
+        margin-bottom: 0;
+        box-shadow: none;
+        &+.card{
+            margin-top: $according-card-top-margin;
+        }
+        .btn-link{
+            font-weight: $according-btn-weight;
+            color: $theme-body-font-color;
+            text-decoration: none;
+        }
+        .btn-link{
+            &:focus,&:hover{
+                text-decoration: none;
+            }
+        }
+        .card-header{
+            padding: $according-card-header-padding;
+            border: $card-border-color;
+            i{
+                position: absolute;
+                left: 18px;
+                font-size: 20px;
+                top: 20px;
+            }
+            h5{
+                margin-top: 2px;
+            }
+        }
+        .card-body {
+            border: $card-border-color;
+            border-top: none;
+        }
+    }
+}
+.default-according.style-1{
+    button{
+        width: 100%;
+        text-align: left;
+        &:before{
+            right: 20px;
+            position: absolute;
+            transition: 0.4s;
+        }
+        &[aria-expanded="true"]{
+            &:before{
+                content: $according-open-icon;
+                font-family: $according-card-header-icon;
+            }
+        }
+        &[aria-expanded="false"]{
+            &:before{
+                content: $according-close-icon;
+                font-family: $according-card-header-icon;
+            }
+        }
+    }
+}
+/**=====================
+     24. According CSS Ends
+==========================**/

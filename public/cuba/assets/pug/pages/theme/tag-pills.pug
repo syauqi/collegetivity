@@ -1,0 +1,188 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Tag & Pills
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item  Ui Kits
+                                      li.breadcrumb-item.active Tag & Pills
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Contextual variations
+                            .card-body
+                              span.badge.badge-primary Primary
+                              span.badge.badge-secondary Secondary
+                              span.badge.badge-success Success
+                              span.badge.badge-info Info
+                              span.badge.badge-warning Warning
+                              span.badge.badge-danger Danger
+                              span.badge.badge-light Light
+                              span.badge.badge-dark.tag-pills-sm-mb Dark
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Contextual variations
+                            .card-body
+                              span.badge.badge-pill.badge-primary Primary
+                              span.badge.badge-pill.badge-secondary Secondary
+                              span.badge.badge-pill.badge-success Success
+                              span.badge.badge-pill.badge-info Info
+                              span.badge.badge-pill.badge-warning Warning
+                              span.badge.badge-pill.badge-danger Danger
+                              span.badge.badge-pill.badge-light Light
+                              span.badge.badge-pill.badge-dark.tag-pills-sm-mb Dark
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Tags with number
+                            .card-body
+                              a.badge.badge-primary(href='#') 1
+                              a.badge.badge-secondary(href='#') 2
+                              a.badge.badge-success(href='#') 3
+                              a.badge.badge-info(href='#') 4
+                              a.badge.badge-warning(href='#') 5
+                              a.badge.badge-danger(href='#') 6
+                              a.badge.badge-light(href='#') 7
+                              a.badge.badge-dark(href='#') 8
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Pills with number
+                            .card-body
+                              span.badge.badge-pill.badge-primary 1
+                              span.badge.badge-pill.badge-secondary 2
+                              span.badge.badge-pill.badge-success 3
+                              span.badge.badge-pill.badge-info 4
+                              span.badge.badge-pill.badge-warning 5
+                              span.badge.badge-pill.badge-danger 6
+                              span.badge.badge-pill.badge-light 7
+                              span.badge.badge-pill.badge-dark 8
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Tags With icon
+                            .card-body
+                              a.badge.badge-primary(href='#')
+                                i(data-feather='dollar-sign')
+                              a.badge.badge-secondary(href='#')
+                                i(data-feather='headphones')
+                              a.badge.badge-success(href='#')
+                                i(data-feather='link')
+                              a.badge.badge-info(href='#')
+                                i(data-feather='github')
+                              a.badge.badge-warning(href='#')
+                                i(data-feather='award')
+                              a.badge.badge-danger(href='#')
+                                i(data-feather='activity')
+                              a.badge.badge-light(href='#')
+                                i(data-feather='heart')
+                              a.badge.badge-dark(href='#')
+                                i(data-feather='mail')
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Pills with Icon
+                            .card-body
+                              a.badge.badge-pill.badge-primary(href='#')
+                                i(data-feather='dollar-sign')
+                              a.badge.badge-pill.badge-secondary(href='#')
+                                i(data-feather='headphones')
+                              a.badge.badge-pill.badge-success(href='#')
+                                i(data-feather='link')
+                              a.badge.badge-pill.badge-info(href='#')
+                                i(data-feather='github')
+                              a.badge.badge-pill.badge-warning(href='#')
+                                i(data-feather='award')
+                              a.badge.badge-pill.badge-danger(href='#')
+                                i(data-feather='activity')
+                              a.badge.badge-pill.badge-light(href='#')
+                                i(data-feather='heart')
+                              a.badge.badge-pill.badge-dark(href='#')
+                                i(data-feather='mail')
+                        .col-sm-12.col-xl-6
+                          .card.height-equal
+                            .card-header
+                              h5 Badges Example
+                            .card-body
+                              h1
+                                | heading 
+                                span.badge.badge-primary New
+                              h2
+                                | heading 
+                                span.badge.badge-primary New
+                              h3
+                                | heading 
+                                span.badge.badge-primary New
+                              h4
+                                | heading 
+                                span.badge.badge-primary New
+                              h5
+                                | heading 
+                                span.badge.badge-primary New
+                              h6
+                                | heading 
+                                span.badge.badge-primary New
+                        .col-sm-12.col-xl-6
+                          .card.height-equal
+                            .card-header
+                              h5 Badges as part buttons
+                            .card-body
+                              .mb-3
+                                button.btn.btn-primary(type='button')
+                                  | Messages 
+                                  span.badge.badge-pill.badge-light
+                                    i(data-feather='mail')
+                              .mb-3
+                                button.btn.btn-secondary(type='button')
+                                  | notifications 
+                                  span.badge.badge-pill.badge-light
+                                    i(data-feather='bell')
+                              .mb-3
+                                button.btn.badge-success(type='button')
+                                  | Update available 
+                                  span.badge.badge-pill.badge-light
+                                    i(data-feather='settings')
+                              .mb-3
+                                button.btn.badge-info(type='button')
+                                  | Playing Now 
+                                  span.badge.badge-pill.badge-light
+                                    i(data-feather='music')
+                              .mb-3
+                                button.btn.badge-warning(type='button')
+                                  | 1.2 GB Used 
+                                  span.badge.badge-pill.badge-light
+                                    i(data-feather='alert-triangle')
+                              div
+                                button.btn.badge-danger(type='button')
+                                  | Alert 
+                                  span.badge.badge-pill.badge-light
+                                    i(data-feather='alert-circle')
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files   

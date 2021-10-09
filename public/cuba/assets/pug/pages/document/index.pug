@@ -1,0 +1,1794 @@
+- var chat_menu             = true;
+- var pe7_icon              = true;
+- var tree                  = true;
+- var popover_custom        = true;
+- var tooltip               = true;
+- var documents             = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body.document(data-spy='scroll', data-target='#myScrollspy', data-offset='1')
+        include ../../components/taptop
+        // page-wrapper Start
+        .page-wrapper
+            include ../../components/document-header
+            // Page Body Start
+            .page-body-wrapper.document-content
+                include ../../components/document-sidebar
+                .page-body
+                    .container-fluid
+                        .row
+                          .col-sm-12.set-height.set-padding
+                            #section1
+                              .card
+                                .card-body
+                                  h4.mb-4 Introduction
+                                  p
+                                    | Cuba Admin is a responsive HTML template that is based on the CSS framework Bootstrap 4 and it is built with Sass, Gulp and Pug. Sass compiler makes it easier to code and customize. If you are unfamiliar with Bootstrap or Gulp, visit their website and read through the documentation. All of Bootstrap components have been modified to fit the style of Cuba Admin and provide a consistent look throughout the
+                                    | template.
+                                  p
+                                    | Before you start working with the template, we suggest you go through the pages that are bundled with the theme. Most of the template example pages contain quick tips on how to create or use a component which can be really helpful when you need to create something on the fly.
+                            #section2
+                              .card
+                                .card-body
+                                  h4.mb-4 Getting started
+                                  p
+                                    | You can directly use the compiled and ready-to-use the version of the template. But in
+                                    | case you plan to customize the template extensively the template allows you to do
+                                    | so.
+                                  p
+                                    | Within the download you'll find the following directories and files, logically grouping
+                                    | common assets and providing both compiled and minified variations:
+                                  .card-body.tree-color
+                                    #basicTree
+                                      ul
+                                        li
+                                          | Cuba Admin
+                                          ul
+                                            li(data-jstree='{"opened":true}')
+                                              | Assets
+                                              ul
+                                                li(data-jstree='{"opened":true}') Ajax
+                                                li(data-jstree='{"opened":true}') Css
+                                                li(data-jstree='{"opened":true}') Fonts
+                                                li(data-jstree='{"opened":true}') Images
+                                                li(data-jstree='{"opened":true}') Js
+                                                li(data-jstree='{"opened":true}') Json
+                                                li(data-jstree='{"opened":true}') Scss
+                                                li(data-jstree='{"opened":true}') Video
+                                            li(data-jstree='{"opened":true}') Boxes
+                                            li(data-jstree='{"opened":true}') Dark
+                                            li(data-jstree='{"opened":true}') Default
+                                            li(data-jstree='{"opened":true}') Document
+                                            li(data-jstree='{"opened":true}') Extra
+                                            li(data-jstree='{"opened":true}') RTL
+                                            li(data-jstree='{"opened":true}') Starter-kit
+                                  p.mt-1
+                                    | Note: The root folder denoted further in this documentation refers to the
+                                    | 'template' folder inside the downloaded folder
+                                  hr.mt-4
+                                  h5.mt-4 Template Installation
+                                  h6.mt-4 FTP Upload:
+                                  p.m-b-0 Open up your FTP manager and connect to your hosting
+                                  p.m-b-0 Browse to required directory (Normally public_html)
+                                  p.m-b-0
+                                    | Upload the files inside strong Main
+                                    |  folder.
+                            #section3
+                              .card
+                                .card-body
+                                  h4.my-4 Options
+                                  hr.hr
+                                  h5.my-4 Layouts
+                                  p
+                                    | We have provided a bunch of page layouts and menu layouts that can be implemented with
+                                    | just a options change to body! Please refer the below table for corresponding
+                                    | classes.
+                                  table.table
+                                    thead
+                                      tr
+                                        th Layout
+                                        th Options
+                                    tbody
+                                      tr
+                                        td
+                                          | Boxed Layout
+                                        td
+                                          | Class:
+                                          br
+                                          | box-layout
+                                      tr
+                                        td
+                                          | RTL Layout
+                                        td
+                                          | Class:
+                                          br
+                                          | rtl
+                                      tr
+                                        td
+                                          | Light layout
+                                        td
+                                          | -
+                                      tr
+                                        td
+                                          | Dark Sidebar
+                                        td
+                                          | Class:
+                                          br
+                                          | dark-only
+                                      tr
+                                        td
+                                          | Dark Layout
+                                        td
+                                          | Class:
+                                          br
+                                          | sidebar-dark
+
+                            #section4
+                              .card
+                                .card-body
+                                  h4.my-4 Components
+                                  hr.hr
+                                  #section41
+                                    h5.my-4 Basic UI Elements
+                                    ul#myTab.nav.nav-tabs(role='tablist')
+                                      li.nav-item
+                                        a.nav-link.active(data-toggle='tab', href='#Button', role='tab', aria-selected='true', data-original-title='', title='') Button
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#tag-pills', role='tab', aria-selected='false', data-original-title='', title='') Tag & pills
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#progress-bar', role='tab', aria-selected='false', data-original-title='', title='') progress bar
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#alert', role='tab', aria-selected='false', data-original-title='', title='') Alert
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#popover', role='tab', aria-selected='false', data-original-title='', title='') popover
+                                    #myTabContent.tab-content
+                                      #Button.tab-pane.fade.show.active(role='tabpanel')
+                                        .fluid-container.py-4
+                                          button.btn.btn-primary(type='button', data-original-title='', title='') Primary
+                                          button.btn.btn-secondary(type='button', data-original-title='', title='') Secondary
+                                          button.btn.btn-success(type='button', data-original-title='', title='') Success
+                                          button.btn.btn-info(type='button', data-original-title='', title='') Info
+                                          button.btn.btn-warning(type='button', data-original-title='', title='') Warning
+                                          button.btn.btn-danger(type='button', data-original-title='', title='') Danger
+                                        .card-body.html-editor
+                                          | &lt;button type="button" class="btn btn-primary"&gt;Primary Button&lt;/button&gt;
+                                          br
+                                          | &lt;button type="button" class="btn btn-secondary"&gt;Secondary Button&lt;/button&gt;
+                                          br
+                                          | &lt;button type="button" class="btn btn-success"&gt;Success Button&lt;/button&gt;
+                                          br
+                                          | &lt;button type="button" class="btn btn-info"&gt;Info Button&lt;/button&gt;
+                                          br
+                                          | &lt;button type="button" class="btn btn-warning"&gt;Warning Button&lt;/button&gt;
+                                          br
+                                          | &lt;button type="button" class="btn btn-danger"&gt;Danger Button&lt;/button&gt;
+                                          br
+                                          | &lt;button type="button" class="btn btn-light"&gt;Light Button&lt;/button&gt;
+                                        p.m-t-25
+                                          | To use another types button you have to link the related css
+                                          | file according to types of buttons in a head tag
+                                      #tag-pills.tab-pane.fade(role='tabpanel')
+                                        .fluid-container.py-4
+                                          span.badge.badge-primary Primary
+                                          span.badge.badge-secondary Secondary
+                                          span.badge.badge-success Success
+                                          span.badge.badge-info Info
+                                          span.badge.badge-warning Warning
+                                          span.badge.badge-danger Danger
+                                          span.badge.badge-light Light
+                                          span.badge.badge-dark.tag-pills-sm-mb Dark
+                                        .card-body.html-editor
+                                          | &lt;span class="badge badge-primary"&gt;Primary&lt;/span&gt;
+                                          br
+                                          | &lt;span class="badge badge-secondary"&gt;Secondary&lt;/span&gt;
+                                          br
+                                          | &lt;span class="badge badge-success"&gt;Success&lt;/span&gt;
+                                          br
+                                          | &lt;span class="badge badge-info"&gt;Info&lt;/span&gt;
+                                          br
+                                          | &lt;span class="badge badge-warning"&gt;Warning&lt;/span&gt;
+                                          br
+                                          | &lt;span class="badge badge-danger"&gt;Danger&lt;/span&gt;
+                                          br
+                                          | &lt;span class="badge badge-light"&gt;Light&lt;/span&gt;
+                                          br
+                                          | &lt;span class="badge badge-dark tag-pills-sm-mb"&gt;Dark&lt;/span&gt;
+                                      #progress-bar.tab-pane.fade(role='tabpanel')
+                                        .fluid-container.py-4
+                                          .progress
+                                            .progress-bar(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100')
+                                          .progress
+                                            .progress-bar.bg-primary(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                          .progress
+                                            .progress-bar.bg-secondary(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                          .progress
+                                            .progress-bar.bg-success(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                                          .progress
+                                            .progress-bar.bg-info(role='progressbar', style='width: 100%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
+                                        .card-body.html-editor
+                                          | &lt;div class="progress"&gt;
+                                          br
+                                          | &lt;div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;div class="progress"&gt;
+                                          br
+                                          | &lt;div class="progress-bar bg-primary" role="progressbar" style="width: 25%"           aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;div class="progress"&gt;
+                                          br
+                                          | &lt;div class="progress-bar bg-secondary" role="progressbar" style="width: 50%"         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;div class="progress"&gt;
+                                          br
+                                          | &lt;div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;div class="progress"&gt;
+                                          br
+                                          | &lt;div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                      #alert.tab-pane.fade(role='tabpanel')
+                                        .fluid-container.py-4
+                                          .alert.alert-primary.dark(role='alert')
+                                            | This is a info alert—check it out!
+                                          .alert.alert-secondary.dark(role='alert')
+                                            | This is a light alert—check it out!
+                                          .alert.alert-success.dark(role='alert')
+                                            | This is a success alert—check it out!
+                                          .alert.alert-info.dark(role='alert')
+                                            | This is a danger alert—check it out!
+                                          .alert.alert-warning.dark(role='alert')
+                                            | This is a secondary alert—check it out!
+                                          .alert.alert-danger.dark(role='alert')
+                                            | This is a warning alert—check it out!
+                                          .alert.alert-light.dark(role='alert')
+                                            | This is a dark alert—check it out!
+                                          .alert.alert-dark.dark(role='alert')
+                                            | This is a dark alert—check it out!
+                                        .card-body.html-editor
+                                          | &lt;div class="alert alert-primary dark" role="alert"&gt;This is a info alert—check it out!&lt;/div&gt;
+                                          br
+                                          | &lt;div class="alert alert-secondary dark" role="alert"&gt;This is a light alert—check it out!&lt;/div&gt;
+                                          br
+                                          | &lt;div class="alert alert-success dark" role="alert"&gt;This is a success alert—check it out!&lt;/div&gt;
+                                          br
+                                          | &lt;div class="alert alert-info dark" role="alert"&gt;This is a danger alert—check it out!&lt;/div&gt;
+                                          br
+                                          | &lt;div class="alert alert-warning dark" role="alert"&gt;This is a secondary alert—check it out!&lt;/div&gt;
+                                          br
+                                          | &lt;div class="alert alert-danger dark" role="alert"&gt;This is a warning alert—check it out!&lt;/div&gt;
+                                          br
+                                          | &lt;div class="alert alert-light dark" role="alert"&gt;This is a dark alert—check it out!&lt;/div&gt;
+                                          br
+                                          | &lt;div class="alert alert-dark dark" role="alert"&gt;This is a dark alert—check it out!&lt;/div&gt;
+                                      #popover.tab-pane.fade(role='tabpanel')
+                                        .fluid-container.py-4
+                                          button.btn.btn-primary.example-popover.mr-1(type='button', data-toggle='popover', title='', data-content="And here's some amazing content. It's very engaging. Right?", data-original-title='Popover title')
+                                            | Click to toggle popover
+                                          a.example-popover.btn.btn-secondary(tabindex='0', role='button', data-toggle='popover', data-trigger='focus', title='', data-content="And here's some amazing content. It's very engaging. Right?", data-original-title='Popover title')
+                                            | Dismissible
+                                            | popover
+                                          button.example-popover.btn.btn-success(type='button', data-trigger='hover', data-container='body', data-toggle='popover', data-placement='bottom', title='', data-offset='-20px -20px', data-content='Vivamus sagittis lacus vel augue laoreet rutrum faucibus.', data-original-title='Popover title')
+                                            | On Hover Tooltip
+                                        .card-body.html-editor
+                                          | &lt;button type="button" class="btn btn-primary example-popover mr-1" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"&gt;Click to toggle popover&lt;/button&gt;
+                                          br
+                                          | &lt;a tabindex="0" class="example-popover btn btn-secondary" role="button" data-toggle="popover" data-trigger="focus" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"&gt;Dismissible                                              popover&lt;/a&gt;
+                                          br
+                                          | &lt;button type="button" data-trigger="hover" class="example-popover btn btn-success" data-container="body" data-toggle="popover" data-placement="bottom" title="Popover title" data-offset="-20px -20px" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." &gt;On Hover Tooltip&lt;/button&gt;
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!--popover js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/popover-custom.js"&gt;&lt;/script&gt;
+                                    ul#myTab2.nav.nav-tabs.m-t-25(role='tablist')
+                                      li.nav-item
+                                        a.nav-link.active(data-toggle='tab', href='#tooltip', role='tab', aria-selected='false', data-original-title='', title='') Tooltip
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#dropdown', role='tab', aria-selected='true', data-original-title='', title='') Dropdown
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#tabs', role='tab', aria-selected='false', data-original-title='', title='') Tabs
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#according', role='tab', aria-selected='false', data-original-title='', title='') According
+                                    #myTabContent2.tab-content
+                                      #tooltip.tab-pane.fade.show.active(role='tabpanel')
+                                        .fluid-container.py-4
+                                          button.example-popover.btn.btn-primary(type='button', data-container='body', data-toggle='popover', data-placement='top', title='', data-original-title='Popover title')
+                                            | Hover Me
+                                        .card-body.html-editor
+                                          | &lt;button type="button" class="example-popover btn btn-primary" data-container="body" data-toggle="popover" data-placement="top" title="Popover title" &gt;Hover Me&lt;/button&gt;
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!--tooltip js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/tooltip-init.js"&gt;&lt;/script&gt;
+                                      #dropdown.tab-pane.fade(role='tabpanel')
+                                        .fluid-container.py-4
+                                          .dropdown-basic
+                                            .dropdown
+                                              button.dropbtn.btn-primary(type='button', data-original-title='', title='')
+                                                | Dropdown
+                                                | Button
+                                                span
+                                                  i.icofont.icofont-arrow-down
+                                              .dropdown-content
+                                                a(href='#', data-original-title='', title='') Action
+                                                a(href='#', data-original-title='', title='') Another Action
+                                                a(href='#', data-original-title='', title='') Something Else Here
+                                        .card-body.html-editor
+                                          | &lt;div class="dropdown-basic"&gt;
+                                          br
+                                          | &lt;div class="dropdown"&gt;
+                                          br
+                                          | &lt;button type="button" class="dropbtn btn-primary"&gt;Dropdown Button &lt;span&gt;&lt;i class="icofont icofont-arrow-down"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/button&gt;
+                                          br
+                                          | &lt;div class="dropdown-content"&gt;
+                                          br
+                                          | &lt;a href="#"&gt;Action&lt;/a&gt;
+                                          br
+                                          | &lt;a href="#"&gt;Another Action&lt;/a&gt;
+                                          br
+                                          | &lt;a href="#"&gt;Something Else Here&lt;/a&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                      #tabs.tab-pane.fade(role='tabpanel')
+                                        .fluid-container.py-4
+                                          ul#myTab3.nav.nav-tabs(role='tablist')
+                                            li.nav-item
+                                              a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true', data-original-title='', title='')                                         
+                                            li.nav-item.dropdown
+                                              a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false', data-original-title='', title='') Dropdown
+                                              .dropdown-menu
+                                                a#profile-tab.dropdown-item(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false', data-original-title='', title='') Action
+                                                a.dropdown-item(href='#', data-original-title='', title='') Another action
+                                                a.dropdown-item(href='#', data-original-title='', title='') Something else here
+                                                .dropdown-divider
+                                                a.dropdown-item(href='#', data-original-title='', title='') Separated link
+                                            li.nav-item
+                                              a#profile-tabs.nav-link(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false', data-original-title='', title='') Profile
+                                            li.nav-item
+                                              a#contact-tab.nav-link(data-toggle='tab', href='#contact', role='tab', aria-controls='contact', aria-selected='false', data-original-title='', title='') Contact
+                                          #myTabContent3.tab-content
+                                            #home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+                                              p.mb-0.m-t-30
+                                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                            #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+                                              p.mb-0.m-t-30
+                                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                            #contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-tab')
+                                              p.mb-0.m-t-30
+                                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                        .card-body.html-editor
+                                          | &lt;ul class="nav nav-tabs" id="myTab3" role="tablist"&gt;
+                                          br
+                                          | &lt;li class="nav-item"&gt;
+                                          br
+                                          | &lt;a class="nav-link active" id="home-tab"         data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"&gt;Home&lt;/a&gt;
+                                          br
+                                          | &lt;/li&gt;
+                                          br
+                                          br
+                                          | &lt;li class="nav-item dropdown"&gt;
+                                          br
+                                          | &lt;a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"&gt;Dropdown&lt;/a&gt;
+                                          br
+                                          | &lt;div class="dropdown-menu"&gt;
+                                          br
+                                          | &lt;a class="dropdown-item" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"&gt;Action&lt;/a&gt;
+                                          br
+                                          | &lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;
+                                          br
+                                          | &lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;
+                                          br
+                                          | &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                                          br
+                                          | &lt;a class="dropdown-item" href="#"&gt;Separated link&lt;/a&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;/li&gt;
+                                          br
+                                          br
+                                          | &lt;li class="nav-item"&gt;
+                                          br
+                                          | &lt;a class="nav-link" id="profile-tabs" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"&gt;Profile&lt;/a&gt;
+                                          br
+                                          | &lt;/li&gt;
+                                          br
+                                          | &lt;li class="nav-item"&gt;
+                                          br
+                                          | &lt;a class="nav-link" id="contact-tab"           data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"&gt;Contact&lt;/a&gt;
+                                          br
+                                          | &lt;/li&gt;
+                                          br
+                                          | &lt;/ul&gt;
+                                          br
+                                          | &lt;div class="tab-content" id="myTabContent3"&gt;
+                                          br
+                                          | &lt;div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"&gt;
+                                          br
+                                          | &lt;p class="mb-0 m-t-30"&gt;
+                                          br
+                                          | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                          br
+                                          | &lt;/p&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;div class="tab-pane fade" id="profile"        role="tabpanel" aria-labelledby="profile-tab"&gt;
+                                          br
+                                          | &lt;p class="mb-0 m-t-30"&gt;
+                                          br
+                                          | ...
+                                          br
+                                          | &lt;/p&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"&gt;
+                                          br
+                                          | &lt;p class="mb-0 m-t-30"&gt;
+                                          br
+                                          | ...
+                                          br
+                                          | &lt;/p&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                      #according.tab-pane.fade(role='tabpanel')
+                                        .fluid-container.py-4
+                                          #accordion.default-according
+                                            .card
+                                              #headingOne.card-header
+                                                h6.mb-0
+                                                  button.btn.btn-link(data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne', data-original-title='', title='')
+                                                    | Collapsible Group Item #
+                                                    span 1
+                                              #collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='#accordion')
+                                                .card-body
+                                                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                            .card
+                                              #headingTwo.card-header
+                                                h6.mb-0
+                                                  button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo', data-original-title='', title='')
+                                                    | Collapsible Group Item #
+                                                    span 2
+                                              #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
+                                                .card-body
+                                                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                            .card
+                                              #headingThree.card-header
+                                                h6.mb-0
+                                                  button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree', data-original-title='', title='')
+                                                    | Collapsible Group Item #
+                                                    span 3
+                                              #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion')
+                                                .card-body
+                                                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                        .card-body.html-editor
+                                          | &lt;div id="accordion" class="default-according"&gt;
+                                          br
+                                          | &lt;div class="card"&gt;
+                                          br
+                                          | &lt;div class="card-header" id="headingOne"&gt;
+                                          br
+                                          | &lt;h5 class="mb-0"&gt;
+                                          br
+                                          | &lt;button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"      aria-controls="collapseOne"&gt;
+                                          br
+                                          | Collapsible Group Item #
+                                          | &lt;span class="digits"&gt;1&lt;/span&gt;
+                                          br
+                                          | &lt;/button&gt;
+                                          br
+                                          | &lt;/h5&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion"&gt;
+                                          br
+                                          | &lt;div class="card-body"&gt;
+                                          br
+                                          | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;div class="card"&gt;
+                                          br
+                                          | ...
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;div class="card"&gt;
+                                          br
+                                          | ...
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                #section42
+                                  .card-body
+                                    hr.hr
+                                    h5.my-4 Advance UI Elements
+                                    ul#myTab4.nav.nav-tabs(role='tablist')
+                                      li.nav-item
+                                        a.nav-link.active(data-toggle='tab', href='#scrollable', role='tab', aria-selected='true', data-original-title='', title='') Scrollable
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#tree', role='tab', aria-selected='false', data-original-title='', title='') Tree
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#notify', role='tab', aria-selected='false', data-original-title='', title='') Notify
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#rating', role='tab', aria-selected='false', data-original-title='', title='') rating
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#dropzone', role='tab', aria-selected='false', data-original-title='', title='') dropzone
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#tour', role='tab', aria-selected='true', data-original-title='', title='') Tour
+                                    #myTabContent4.tab-content
+                                      #scrollable.tab-pane.fade.show.active(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style
+                                          | and script tag
+                                        .card-body.html-editor
+                                          | &lt;!--Scrollable css--&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/scrollable.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!--scrollable js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/scrollable/scrollable-custom.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/scrollable/perfect-scrollbar.min.js" &gt;&lt;/script&gt;
+                                      #tree.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style
+                                          | and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- Tree css --&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/tree.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!-- Tree js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/tree/jstree.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/tree/tree.js" &gt;&lt;/script&gt;
+                                      #notify.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following
+                                          | script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- bootstrap notify js --&gt;
+                                          br
+                                          | &lt;script src="../assets/js/notify/bootstrap-notify.min.js" &gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/notify/notify-script.js" &gt;&lt;/script&gt;
+                                      #rating.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style
+                                          | and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- range slider css start here --&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/rating.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!-- Ion Range Slider js --&gt;
+                                          br
+                                          | &lt;script src="../assets/js/rating/jquery.barrating.js" &gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/rating/rating-script.js" &gt;&lt;/script&gt;
+                                      #dropzone.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style
+                                          | and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- Dropzone start here --&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/dropzone.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!-- Dropzone js --&gt;
+                                          br
+                                          | &lt;script src="../assets/js/dropzone/dropzone.js" &gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/dropzone/dropzone-script.js" &gt;&lt;/script&gt;
+                                      #tour.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style
+                                          | and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- tour js --&gt;
+                                          br
+                                          | &lt;script src="../assets/js/tour/intro.js" &gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/tour/intro-init.js" &gt;&lt;/script&gt;
+                                    ul#myTab5.nav.nav-tabs.m-t-35(role='tablist')
+                                      li.nav-item
+                                        a.nav-link.active(data-toggle='tab', href='#sweet-alert', role='tab', aria-selected='false', data-original-title='', title='') sweet alert
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#demo-animated', role='tab', aria-selected='false', data-original-title='', title='') Animated modal
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#owl-carousel', role='tab', aria-selected='false', data-original-title='', title='') owl carousel
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#range-slider', role='tab', aria-selected='false', data-original-title='', title='') Range slider
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#image-cropper', role='tab', aria-selected='false', data-original-title='', title='') Image cropper
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#sticky', role='tab', aria-selected='false', data-original-title='', title='') Sticky
+                                    #myTabContent5.tab-content
+                                      #sweet-alert.tab-pane.fade.show.active(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style
+                                          | and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- Sweet alert jquery--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/sweet-alert/sweetalert.min.js" &gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/sweet-alert/app.js" &gt;&lt;/script&gt;
+                                          br
+                                      #demo-animated.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following css
+                                          | and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- animate css --&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/animate.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!-- Modal js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/modal-animated.js"&gt;&lt;/script&gt;
+                                      #owl-carousel.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style
+                                          | and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- Owl css --&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/owlcarousel.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!-- owlcarousel js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/owlcarousel/owl.carousel.js" &lt;&lt;/script&gt;
+                                      #range-slider.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style
+                                          | and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- range slider css start here --&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/range-slider.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!-- Ion Range Slider js --&gt;
+                                          br
+                                          | &lt;script src="../assets/js/range-slider/ion.rangeSlider.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/range-slider/rangeslider-script.js" &gt;&lt;/script&gt;
+                                      #image-cropper.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style
+                                          | and script tag
+                                        .card-body.html-editor
+                                          | &lt;!--Image cropper css--&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/image-cropper.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!--Cropper jquery--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/image-cropper/cropper.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/image-cropper/cropper-main.js"&gt;&lt;/script&gt;
+                                      #sticky.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style
+                                          | and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- sticky css --&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/sticky.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!--Sticky note js--&gt;
+                                          br
+                                          | &lt;script src='../assets/js/sticky/sticky.js'&gt;&lt;/script&gt;
+                                #section43
+                                  .card-body
+                                    hr.hr
+                                    h5.my-4 Animations
+                                    ul#myTab6.nav.nav-tabs(role='tablist')
+                                      li.nav-item
+                                        a.nav-link.active(data-toggle='tab', href='#animate', role='tab', aria-selected='true', data-original-title='', title='') Animate
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#scroll-reveal', role='tab', aria-selected='false', data-original-title='', title='') scroll reveal
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#aos', role='tab', aria-selected='false', data-original-title='', title='') AOS
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#tilt', role='tab', aria-selected='false', data-original-title='', title='') Tilt
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#wow', role='tab', aria-selected='true', data-original-title='', title='') Wow
+                                    #myTabContent6.tab-content
+                                      #animate.tab-pane.fade.show.active(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style
+                                          | and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- animate custom js --&gt;
+                                          br
+                                          | &lt;script src="../assets/js/animate-custom.js" &gt;&lt;/script&gt;
+                                          br
+                                          br
+                                          | &lt;!-- Animate icon --&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" href="../assets/css/animate.css"&gt;
+                                      #scroll-reveal.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- Scroll Reveal jquery--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/scroll-reveal/scrollreveal.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/modernizr.js" &gt;&lt;/script&gt;
+                                      #aos.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- AOS icon --&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/aos/aos.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!-- AOS js--&gt;
+                                          br
+                                          | &lt;script src='../assets/js/isotope.pkgd.js'&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/aos/aos.js" &gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/aos/aos-init.js" &gt;&lt;/script&gt;
+                                      #tilt.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- Tilt js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/tilt/tilt.jquery.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/tilt/tilt-custom.js"&gt;&lt;/script&gt;
+                                      #wow.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- WOW js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/wow/wow.min.js" &gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/wow/wow-init.js" &gt;&lt;/script&gt;
+                                #section44
+                                  .card-body
+                                    hr.hr
+                                    h5.my-4 Icons
+                                    p.m-t-25
+                                      | To use another types button you have to link the related css file
+                                      | according to types of buttons in a head tag
+                                #section45
+                                  .card-body
+                                    hr.hr
+                                    h5.my-4 Forms
+                                    ul#myTab7.nav.nav-tabs(role='tablist')
+                                      li.nav-item
+                                        a.nav-link.active(data-toggle='tab', href='#form-validation', role='tab', aria-selected='true', data-original-title='', title='') form-validation
+                                    #myTabContent7.tab-content
+                                      #form-validation.tab-pane.fade.show.active(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;script src="../assets/js/form-validation-custom.js" &gt;&lt;/script&gt;
+                                #section46
+                                  .card-body
+                                    hr.hr
+                                    h5.my-4 Tables
+                                    ul#myTab8.nav.nav-tabs(role='tablist')
+                                      li.nav-item
+                                        a.nav-link.active(data-toggle='tab', href='#bootstrap-tables', role='tab', aria-selected='true', data-original-title='', title='') Bootstrap tables
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#data-tables', role='tab', aria-selected='true', data-original-title='', title='') Data tables
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#extension-data-tables', role='tab', aria-selected='true', data-original-title='', title='')
+                                          | extension data
+                                          | tables
+                                    #myTabContent8.tab-content
+                                      #bootstrap-tables.tab-pane.fade.show.active(role='tabpanel')
+                                        .fluid-container.py-4
+                                          .table-responsive
+                                            table.table
+                                              thead
+                                                tr
+                                                  th(scope='col') #
+                                                  th(scope='col') First Name
+                                                  th(scope='col') Last Name
+                                                  th(scope='col') Username
+                                                  th(scope='col') Role
+                                                  th(scope='col') Country
+                                              tbody
+                                                tr
+                                                  th(scope='row') 1
+                                                  td Alexander
+                                                  td Orton
+                                                  td @mdorton
+                                                  td Admin
+                                                  td USA
+                                                tr
+                                                  th(scope='row') 2
+                                                  td John Deo
+                                                  td Deo
+                                                  td @johndeo
+                                                  td User
+                                                  td USA
+                                                tr
+                                                  th(scope='row') 3
+                                                  td Randy Orton
+                                                  td the Bird
+                                                  td @twitter
+                                                  td admin
+                                                  td UK
+                                                tr
+                                                  th(scope='row') 4
+                                                  td Randy Mark
+                                                  td Ottandy
+                                                  td @mdothe
+                                                  td user
+                                                  td AUS
+                                                tr
+                                                  th(scope='row') 5
+                                                  td Ram Jacob
+                                                  td Thornton
+                                                  td @twitter
+                                                  td admin
+                                                  td IND
+                                        .card-body.html-editor
+                                          | &lt;div class="table-responsive"&gt;
+                                          br
+                                          | &lt;table class="table"&gt;
+                                          br
+                                          | &lt;thead&gt;
+                                          br
+                                          | &lt;tr&gt;
+                                          br
+                                          | &lt;th scope="col"&gt;#&lt;/th&gt;
+                                          br
+                                          | &lt;th scope="col"&gt;First Name&lt;/th&gt;
+                                          br
+                                          | &lt;th scope="col"&gt;Last Name&lt;/th&gt;
+                                          br
+                                          | &lt;th scope="col"&gt;Username&lt;/th&gt;
+                                          br
+                                          | &lt;th scope="col"&gt;Role&lt;/th&gt;
+                                          br
+                                          | &lt;th scope="col"&gt;Country&lt;/th&gt;
+                                          br
+                                          | &lt;/tr&gt;
+                                          br
+                                          | &lt;/thead&gt;
+                                          br
+                                          | &lt;tbody&gt;
+                                          br
+                                          | &lt;tr&gt;
+                                          br
+                                          | &lt;th scope="row"&gt;1&lt;/th&gt;
+                                          br
+                                          | &lt;td&gt;Alexander&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;Orton&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;@mdorton&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;Admin&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;USA&lt;/td&gt;
+                                          br
+                                          | &lt;/tr&gt;
+                                          br
+                                          | &lt;tr&gt;
+                                          br
+                                          | &lt;th scope="row"&gt;2&lt;/th&gt;
+                                          br
+                                          | &lt;td&gt;John Deo&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;Deo&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;@johndeo&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;User&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;USA&lt;/td&gt;
+                                          br
+                                          | &lt;/tr&gt;
+                                          br
+                                          | &lt;tr&gt;
+                                          br
+                                          | &lt;th scope="row"&gt;3&lt;/th&gt;
+                                          br
+                                          | &lt;td&gt;Randy Orton&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;the Bird&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;@twitter&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;admin&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;UK&lt;/td&gt;
+                                          br
+                                          | &lt;/tr&gt;
+                                          br
+                                          | &lt;tr&gt;
+                                          br
+                                          | &lt;th scope="row"&gt;4&lt;/th&gt;
+                                          br
+                                          | &lt;td&gt;Randy Mark&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;Ottandy&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;@mdothe&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;user&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;AUS&lt;/td&gt;
+                                          br
+                                          | &lt;/tr&gt;
+                                          br
+                                          | &lt;tr&gt;
+                                          br
+                                          | &lt;th scope="row"&gt;5&lt;/th&gt;
+                                          br
+                                          | &lt;td&gt;Ram Jacob&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;Thornton&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;@twitter&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;admin&lt;/td&gt;
+                                          br
+                                          | &lt;td&gt;IND&lt;/td&gt;
+                                          br
+                                          | &lt;/tr&gt;
+                                          br
+                                          | &lt;/tbody&gt;
+                                          br
+                                          | &lt;/table&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                      #data-tables.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;script src="../assets/js/form-validation-custom.js" &gt;&lt;/script&gt;
+                                      #extension-data-tables.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style and script tag
+                                        .card-body.html-editor
+                                          | &lt;!--JSGrid css--&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/datatables.css" /&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/datatable-extension.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!--Datatable extension js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/datatables/jquery.dataTables.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/datatable-extension/dataTables.buttons.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/datatable-extension/jszip.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/datatable-extension/pdfmake.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/datatable-extension/vfs_fonts.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/datatable-extension/dataTables.autoFill.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/datatable-extension/dataTables.select.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/datatable-extension/buttons.print.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/datatable-extension/buttons.html5.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/datatable-extension/dataTables.bootstrap4.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/datatable-extension/dataTables.responsive.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/datatable-extension/responsive.bootstrap4.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/datatable-extension/dataTables.keyTable.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/datatable-extension/custom.js"&gt;&lt;/script&gt;
+                                #section47
+                                  .card-body
+                                    hr.hr
+                                    h5.my-4 Cards
+                                    ul#myTab9.nav.nav-tabs(role='tablist')
+                                      li.nav-item
+                                        a.nav-link.active(data-toggle='tab', href='#basic-card', role='tab', aria-selected='true', data-original-title='', title='') Basic cards
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#draggable-cards', role='tab', aria-selected='true', data-original-title='', title='') Draggable Cards
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#theme-cards', role='tab', aria-selected='true', data-original-title='', title='') Theme Cards
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#tabbed-cards', role='tab', aria-selected='true', data-original-title='', title='') Tabbed Cards    
+                                    #myTabContent9.tab-content
+                                      #basic-card.tab-pane.fade.show.active(role='tabpanel')
+                                        .fluid-container.py-4
+                                          .card
+                                            .card-header
+                                              h6 Basic Card
+                                        .card-body.html-editor
+                                          | &lt;div class="card"&gt;
+                                          br
+                                          |  &lt;div class="card-header"&gt;
+                                          br
+                                          |  &lt;h5&gt;Basic Card&lt;/h5&gt;
+                                          br
+                                          |  &lt;/div&gt;
+                                          br
+                                          |  &lt;div class="card-body"&gt;
+                                          br
+                                          |  &lt;p class="mb-0"&gt; Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. &lt;/p&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                      #draggable-cards.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!--Sortable JS--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/dragable/jquery.ui.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/dragable/sortable.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/dragable/sortable-custom.js"&gt;&lt;/script&gt;
+                                      #theme-cards.tab-pane.fade.show(role='tabpanel')
+                                        .fluid-container.py-4
+                                          .card
+                                            .card-header
+                                              h6 Theme Card
+                                        .card-body.html-editor
+                                          | &lt;div class="card card-g-primary"&gt;
+                                          br
+                                          |  &lt;div class="card-header"&gt;
+                                          br
+                                          |  &lt;h5&gt;primary-gradient&lt;/h5&gt;
+                                          br
+                                          |  &lt;/div&gt;
+                                          br
+                                          |  &lt;div class="card-body"&gt;
+                                          br
+                                          |  &lt;p class="mb-0"&gt; Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. &lt;/p&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                          br
+                                          | &lt;/div&gt;
+                                #section48
+                                  .card-body
+                                    hr.hr
+                                    h5.my-4 Timeline
+                                    ul#myTab10.nav.nav-tabs(role='tablist')
+                                      li.nav-item
+                                        a.nav-link.active(data-toggle='tab', href='#timeline1', role='tab', aria-selected='true', data-original-title='', title='') Timeline1
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#timeline2', role='tab', aria-selected='true', data-original-title='', title='') Timeline2
+                                    #myTabContent10.tab-content
+                                      #timeline1.tab-pane.fade.show.active(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- Timeline js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/timeline-v-1/main.js" &gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/modernizr.js" &gt;&lt;/script&gt;
+                                      #timeline2.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- Timeline js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/timeline-v-2/jquery.timeliny.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/timeline-v-2/timeline-v-2-custom.js" &gt;&lt;/script&gt;
+                                #section49
+                                  .card-body
+                                    hr.hr
+                                    h5.my-4 Charts
+                                    ul#myTab11.nav.nav-tabs(role='tablist')
+                                      li.nav-item
+                                        a.nav-link.active(data-toggle='tab', href='#chart-google', role='tab', aria-selected='true', data-original-title='', title='') Google Charts
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#chart-sparkline', role='tab', aria-selected='true', data-original-title='', title='') sparkline charts
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#chart-flot', role='tab', aria-selected='true', data-original-title='', title='')
+                                          | Flot charts
+                                          | tables
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#chart-radial', role='tab', aria-selected='true', data-original-title='', title='') Radial charts
+                                    #myTabContent11.tab-content
+                                      #chart-google.tab-pane.fade.show.active(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- google Chart JS--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/chart/google-chart-loader.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/chart/google-chart.js"&gt;&lt;/script&gt;
+                                      #chart-sparkline.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!--Sparkline Chart JS--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/sparkline/sparkline.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/sparkline/sparkline-script.js"&gt;&lt;/script&gt;
+                                      #chart-flot.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following style and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- flot Chart JS--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/flot-chart/excanvas.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/flot-chart/jquery.flot.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/flot-chart/jquery.flot.time.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/flot-chart/jquery.flot.symbol.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/flot-chart/jquery.flot.categories.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/flot-chart/jquery.flot.stack.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/flot-chart/flot-script.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/flot-chart/jquery.flot.pie.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/flot-chart/jquery.flot.symbol.js"&gt;&lt;/script&gt;
+                                      #chart-radial.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!--Sparkline Chart JS--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/sparkline/sparkline.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/sparkline/sparkline-script.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/radial-chart-tooltip.js" &gt;&lt;/script&gt;
+                                    ul#myTab12.nav.nav-tabs.m-t-45(role='tablist')
+                                      li.nav-item
+                                        a.nav-link.active(data-toggle='tab', href='#chart-morris', role='tab', aria-selected='true', data-original-title='', title='') morris Charts
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#chart-chatjs', role='tab', aria-selected='true', data-original-title='', title='') Chatjs charts
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#chart-chartlist', role='tab', aria-selected='true', data-original-title='', title='') Chartlist charts
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#chart-knob', role='tab', aria-selected='true', data-original-title='', title='') Knob charts
+                                    #myTabContent12.tab-content
+                                      #chart-morris.tab-pane.fade.show.active(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- Morris Chart JS--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/morris-chart/raphael.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/morris-chart/morris.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/morris-chart/prettify.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/morris-chart/morris-script.js"&gt;&lt;/script&gt;
+                                      #chart-chatjs.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- Chart JS--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/chart/chartjs/Chart.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/chart/chartjs/chart.custom.js"&gt;&lt;/script&gt;
+                                      #chart-chartlist.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use css and java script you have to add the following style and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- Chartist --&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/chartist.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!-- Chartist --&gt;
+                                          br
+                                          | &lt;script src="../assets/js/chartist/chartist.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/chartist/chartist-custom.js"&gt;&lt;/script&gt;
+                                      #chart-knob.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!--Knob Chart JS--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/knob/knob.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/knob/knob-chart.js"&gt;&lt;/script&gt;
+                                #section410
+                                  .card-body
+                                    hr.hr
+                                    h5.my-4 Maps
+                                    ul#myTab13.nav.nav-tabs(role='tablist')
+                                      li.nav-item
+                                        a.nav-link.active(data-toggle='tab', href='#g-map', role='tab', aria-selected='true', data-original-title='', title='') Map Js
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#vector-map', role='tab', aria-selected='true', data-original-title='', title='') Vector map
+                                    #myTabContent13.tab-content
+                                      #g-map.tab-pane.fade.show.active(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!--Map css--&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/mapsjs-ui.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!-- Map js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/map-js/mapsjs-core.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/map-js/mapsjs-service.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/map-js/mapsjs-ui.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/map-js/mapsjs-mapevents.js"&gt;&lt;/script&gt;
+                                      #vector-map.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use css and java script you have to add the following style and script tag
+                                        .card-body.html-editor
+                                          | &lt;!--Vector Map css--&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" type="text/css" href="../assets/css/vector-map.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!--vector map js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/vector-map/jquery-jvectormap-2.0.2.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/vector-map/map/jquery-jvectormap-world-mill-en.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/vector-map/map/jquery-jvectormap-us-aea-en.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/vector-map/map/jquery-jvectormap-uk-mill-en.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/vector-map/map/jquery-jvectormap-au-mill.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/vector-map/map/jquery-jvectormap-chicago-mill-en.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/vector-map/map/jquery-jvectormap-in-mill.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/vector-map/map/jquery-jvectormap-asia-mill.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/vector-map/map-vector.js"&gt;&lt;/script&gt;
+                                #section411
+                                  .card-body
+                                    hr.hr
+                                    h5.my-4 Editors
+                                    ul#myTab14.nav.nav-tabs(role='tablist')
+                                      li.nav-item
+                                        a.nav-link.active(data-toggle='tab', href='#summer-note', role='tab', aria-selected='true', data-original-title='', title='') Summer note
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#ckeditor', role='tab', aria-selected='true', data-original-title='', title='') Ckeditor
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#simple-mde', role='tab', aria-selected='true', data-original-title='', title='') Simple Mde
+                                      li.nav-item
+                                        a.nav-link(data-toggle='tab', href='#ace-code', role='tab', aria-selected='true', data-original-title='', title='') Ace Code
+                                    #myTabContent14.tab-content
+                                      #summer-note.tab-pane.fade.show.active(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use css and java script you have to add the following style and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- Summernote css --&gt;
+                                          br
+                                          | &lt;link rel="stylesheet" href="../assets/css/summernote.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!--Summer-note js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/summernote/summernote.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/summernote/summernote.custom.js"&gt;&lt;/script&gt;
+                                      #ckeditor.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use java script you have to add the following script tag
+                                        .card-body.html-editor
+                                          | &lt;!--ckeditor js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/ckeditor/ckeditor.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/ckeditor/styles.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/ckeditor/adapters/jquery.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/ckeditor/ckeditor.custom.js"&gt;&lt;/script&gt;
+                                      #simple-mde.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use css and java script you have to add the following style and script tag
+                                        .card-body.html-editor
+                                          | &lt;!-- Simple-MDE css --&gt;
+                                          br
+                                          | &lt;link rel="stylesheet prefetch" href="../assets/css/simple-mde.css"&gt;
+                                          br
+                                          br
+                                          | &lt;!-- Simple MDE editor jquery--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/simple-mde/simplemde.min.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/simple-mde/simplemde.custom.js"&gt;&lt;/script&gt;
+                                      #ace-code.tab-pane.fade(role='tabpanel')
+                                        h6.p-t-20.p-b-20
+                                          | To use css and java script you have to add the following style and script tag
+                                        .card-body.html-editor
+                                          | &lt;!--ace code editor js--&gt;
+                                          br
+                                          | &lt;script src="../assets/js/ace-editor/ace.js"&gt;&lt;/script&gt;
+                                          br
+                                          | &lt;script src="../assets/js/ace-editor/ace-custom.js"&gt;&lt;/script&gt;
+                              #section5
+                                .card
+                                  .card-body
+                                    h4.my-4 Apps
+                                    hr.hr
+                                    #section51
+                                      h5.my-4 Users
+                                      ul#myTab15.nav.nav-tabs(role='tablist')
+                                        li.nav-item
+                                          a.nav-link.active(data-toggle='tab', href='#users-profile', role='tab', aria-selected='true', data-original-title='', title='') Users profile
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#users-card', role='tab', aria-selected='false', data-original-title='', title='') Users card
+                                      #myTabContent15.tab-content
+                                        #users-profile.tab-pane.fade.show.active(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | You don't need to add any additional css or js.
+                                            | The css and js which describe in a html page is default. Use the code of
+                                            | it to use it
+                                        #users-card.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | You don't need to add any additional css or js.
+                                            | The css and js which describe in a html page is default. Use the code of
+                                            | it to use it
+                                  #section52
+                                    .card-body.p-t-0
+                                      hr.hr
+                                      h5.my-4.mt-0 Calender
+                                      ul#myTab16.nav.nav-tabs(role='tablist')
+                                        li.nav-item
+                                          a.nav-link.active(data-toggle='tab', href='#full-calender-basic', role='tab', aria-selected='true', data-original-title='', title='') Full Calender Basic
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#full-calender-events', role='tab', aria-selected='false', data-original-title='', title='') Full Calender Events
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#full-calender-advance', role='tab', aria-selected='false', data-original-title='', title='') Calender Advance
+                                      #myTabContent16.tab-content
+                                        #full-calender-basic.tab-pane.fade.show.active(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | To use java script you have to add the following style and script tag
+                                          .card-body.html-editor
+                                            | &lt;!-- calendar css --&gt;
+                                            br
+                                            | &lt;link rel="stylesheet" type="text/css" href="../assets/css/calendar.css"&gt;
+                                            br
+                                            br
+                                            | &lt;!--Calendar js--&gt;
+                                            br
+                                            | &lt;script src="../assets/js/calendar/moment.min.js"&gt;&lt;/script&gt;
+                                            br
+                                            | &lt;script src="../assets/js/calendar/fullcalendar.min.js"&gt;&lt;/script&gt;
+                                            br
+                                            | &lt;script src="../assets/js/calendar/fullcalendar-custom.js"&gt;&lt;/script&gt;
+                                        #full-calender-events.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | for events of calender you have to add the same css and js which are used for basic calender
+                                        #full-calender-advance.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | for advance calender you have to add the same css and js which are used for basic calender
+                                  #section53
+                                    .card-body
+                                      hr.hr
+                                      h5.my-4 Gallery
+                                      ul#myTab17.nav.nav-tabs(role='tablist')
+                                        li.nav-item
+                                          a.nav-link.active(data-toggle='tab', href='#gallery-grid', role='tab', aria-selected='true', data-original-title='', title='') Gallery grid
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#gallery-desk', role='tab', aria-selected='false', data-original-title='', title='') Gallery with desk
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#Massonry', role='tab', aria-selected='false', data-original-title='', title='') Masonry gallery
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#Masonry-desk', role='tab', aria-selected='false', data-original-title='', title='') Masonry gallery desk
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#hover-effects', role='tab', aria-selected='true', data-original-title='', title='') Hover Effects
+                                      #myTabContent17.tab-content
+                                        #gallery-grid.tab-pane.fade.show.active(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | To use java script you have to add the following script tag
+                                          .card-body.html-editor
+                                            | &lt;!-- lightgallery js--&gt;
+                                            br
+                                            | &lt;script src="../assets/js/lightgallery/lightgallery.min.js"&gt;&lt;/script&gt;
+                                            br
+                                            | &lt;script src="../assets/js/lightgallery/lg-pager.min.js"&gt;&lt;/script&gt;
+                                            br
+                                            | &lt;script src="../assets/js/lightgallery/lg-autoplay.min.js"&gt;&lt;/script&gt;
+                                            br
+                                            | &lt;script src="../assets/js/lightgallery/lg-fullscreen.min.js"&gt;&lt;/script&gt;
+                                            br
+                                            | &lt;script src="../assets/js/lightgallery/lg-zoom.min.js"&gt;&lt;/script&gt;
+                                            br
+                                            | &lt;script src="../assets/js/lightgallery/lg-hash.min.js"&gt;&lt;/script&gt;
+                                            br
+                                            | &lt;script src="../assets/js/lightgallery/lg-share.min.js"&gt;&lt;/script&gt;
+                                            br
+                                            | &lt;script src="../assets/js/lightgallery/lg-thumbnail.min.js"&gt;&lt;/script&gt;
+                                        #gallery-desk.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | for this you have to add the same css and js which are used for grid gallery
+                                        #Massonry.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | To use java script you have to add the grid gallery js also following script tag
+                                          .card-body.html-editor
+                                            | &lt;!--Masonry gallery js--&gt;
+                                            br
+                                            | &lt;script src="../assets/js/masonry-gallery.js"&gt;&lt;/script&gt;
+                                        #Masonry-desk.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | for this you have to add the same css and js which are used for masonry gallery
+                                        #hover-effects.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | You don't need to add any additional css or js for the gallery hover page
+                                  #section54
+                                    .card-body
+                                      hr.hr
+                                      h5.my-4 Email
+                                      ul#myTab18.nav.nav-tabs(role='tablist')
+                                        li.nav-item
+                                          a.nav-link.active(data-toggle='tab', href='#email-app', role='tab', aria-selected='true', data-original-title='', title='') Email App
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#email-compose', role='tab', aria-selected='false', data-original-title='', title='') Email Compose
+                                      #myTabContent18.tab-content
+                                        #email-app.tab-pane.fade.show.active(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | To use java script you have to add the following script tag
+                                          .card-body.html-editor
+                                            | &lt;!--Email js--&gt;
+                                            br
+                                            | &lt;script src="../assets/js/email-app.js"&gt;&lt;/script&gt;
+                                        #email-compose.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | for this you have to add the same js which are used for Email application
+                                  #section55
+                                    .card-body
+                                      hr.hr
+                                      h5.my-4 Blog
+                                      h6.p-t-20.p-b-20
+                                        | You don't need to add any extra css or js to add the blog code
+                                  #section56
+                                    .card-body
+                                      hr.hr
+                                      h5.my-4 Chat
+                                      ul#myTab19.nav.nav-tabs(role='tablist')
+                                        li.nav-item
+                                          a.nav-link.active(data-toggle='tab', href='#chat-app', role='tab', aria-selected='true', data-original-title='', title='') Chat App
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#video-chat', role='tab', aria-selected='false', data-original-title='', title='') Video Chat
+                                      #myTabContent19.tab-content
+                                        #chat-app.tab-pane.fade.show.active(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | To use java script you have to add the following script tag
+                                        #video-chat.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | for this you don't need to add any additional css or js
+                                  #section57
+                                    .card-body
+                                      hr.hr
+                                      h5.my-4 Support ticket
+                                      h6.p-t-20.p-b-20
+                                        | To use java script you have to add the following script tag
+                                      .card-body.html-editor
+                                        | &lt;script src="../assets/js/support-ticket-custom.js" &gt;&lt;/script&gt;
+                                  #section58
+                                    .card-body
+                                      hr.hr
+                                      h5.my-4 TODO
+                                      h6.p-t-20.p-b-20
+                                        | To use java script you have to add the following script tag
+                                      .card-body.html-editor
+                                        | &lt;!-- To-do js --&gt;
+                                        br
+                                        | &lt;script src="../assets/js/todo/todo.js"&gt;&lt;/script&gt;
+                                  #section59
+                                    .card-body
+                                      hr.hr
+                                      h5.my-4 Landing page
+                                      h6.p-t-20.p-b-20
+                                        | You don't need to add any additional css or js for the landing page
+                                  #section510
+                                    .card-body.p-t-0
+                                      hr.hr
+                                      h5.my-4.mt-0 Ecommerce
+                                      ul#myTab20.nav.nav-tabs(role='tablist')
+                                        li.nav-item
+                                          a.nav-link.active(data-toggle='tab', href='#product', role='tab', aria-selected='true', data-original-title='', title='') Product
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#product-page', role='tab', aria-selected='false', data-original-title='', title='') Product page
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#payment-product', role='tab', aria-selected='false', data-original-title='', title='') Product List
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#payment-details', role='tab', aria-selected='false', data-original-title='', title='') Payment Details
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#ordre-history', role='tab', aria-selected='false', data-original-title='', title='') Order History  
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#invoice-template', role='tab', aria-selected='false', data-original-title='', title='') Invoice template
+                                      #myTabContent20.tab-content
+                                        #product.tab-pane.fade.show.active(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | There is no need to add any additional css or js
+                                        #product-page.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | There is no need to add any additional css or js
+                                        #payment-product.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | There is no need to add any additional css or js
+                                        #payment-details.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | There is no need to add any additional css or js
+                                        #order-history.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | There is no need to add any additional css or js    
+                                        #invoice-template.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | To use java script for print you have to add the following script tag
+                                          .card-body.html-editor
+                                            | &lt;!--print js--&gt;
+                                            br
+                                            | &lt;script src="../assets/js/print.js"&gt;&lt;/script&gt;
+                                  #section511
+                                    .card-body.p-t-0
+                                      hr.hr
+                                      h5.my-4.mt-0 Pricing
+                                      h6.p-t-20.p-b-20 There is no need to add any additional css or js
+                              #section6
+                                .card
+                                  .card-body
+                                    h4 Builder
+                                  #section62
+                                    .card-body.p-t-0
+                                      hr.hr
+                                      h5.my-4.mt-0 Form builder
+                                      ul#myTab21.nav.nav-tabs(role='tablist')
+                                        li.nav-item
+                                          a.nav-link.active(data-toggle='tab', href='#form-builder-1', role='tab', aria-selected='true', data-original-title='', title='') Full Calender Basic
+                                        li.nav-item
+                                          a.nav-link(data-toggle='tab', href='#form-builder-2', role='tab', aria-selected='false', data-original-title='', title='') Full Calender Events
+                                      #myTabContent21.tab-content
+                                        #form-builder-1.tab-pane.fade.show.active(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | To use java script you have to add the following script tag
+                                          .card-body.html-editor
+                                            | &lt;!--Form builder js--&gt;
+                                            br
+                                            | &lt;script src="../assets/js/form-builder-1/require.js"&gt;&lt;/script&gt;
+                                            br
+                                            | &lt;script src="../assets/js/form-builder-1/main-built.js"&gt;&lt;/script&gt;
+                                        #form-builder-2.tab-pane.fade(role='tabpanel')
+                                          h6.p-t-20.p-b-20
+                                            | To use java script you have to add the following script tag
+                                          .card-body.html-editor
+                                            | &lt;!--Form builder 2--&gt;
+                                            br
+                                            | &lt;script src="../assets/js/form-builder-2/beautifyhtml.js"&gt;&lt;/script&gt;
+                                            br
+                                            | &lt;script src="../assets/js/form-builder-2/form-builder-2.js"&gt;&lt;/script&gt;
+                                  #section63
+                                    .card-body
+                                      hr.hr
+                                      h5.my-4 Button builder
+                                      h6.p-t-20.p-b-20
+                                        | To use java css and java script you have to add the following style and script tag
+                                      .card-body.html-editor
+                                        | &lt;!-- ButtonBuilder css --&gt;
+                                        br
+                                        | &lt;link rel="stylesheet" type="text/css" href="../assets/css/button-builder.css"&gt;
+                                        br
+                                        br
+                                        | &lt;!--Button Builder--&gt;
+                                        br
+                                        | &lt;script src="../assets/js/button-builder/colorpicker.js"&gt;&lt;/script&gt;
+                                        br
+                                        | &lt;script src="../assets/js/button-builder/clipboard.min.js"&gt;&lt;/script&gt;
+                                        br
+                                        | &lt;script src="../assets/js/button-builder/generator.js"&gt;&lt;/script&gt;
+                                        br
+                                        | &lt;script src="../assets/js/button-builder/extend-1.0.js"&gt;&lt;/script&gt;
+                                #section7
+                                  .card
+                                    .card-body
+                                      h4.my-4 Credits
+                                      p We have used the following plugins in Serein admin
+                                      .row
+                                        .col-12
+                                          ul.list-ticked
+                                            li
+                                              | Ace editor
+                                              a(href='https://github.com/ajaxorg/ace', target='_blank', data-original-title='', title='') : https://github.com/ajaxorg/ace
+                                            li
+                                              | aos
+                                              a(href='https://michalsnik.github.io/aos/', target='_blank', data-original-title='', title='') : https://michalsnik.github.io/aos/
+                                            li
+                                              | Bootstrap
+                                              a(href='https://getbootstrap.com/', target='_blank', data-original-title='', title='') https://getbootstrap.com/
+                                            li
+                                              | Calender
+                                              a(href=' http://arshaw.com/fullcalendar/', target='_blank', data-original-title='', title='')  http://arshaw.com/fullcalendar/
+                                            li
+                                              | Chart.js
+                                              a(href='http://chartjs.org/', target='_blank', data-original-title='', title='') http://chartjs.org/
+                                            li
+                                              | Chartis
+                                              a(href='https://gionkunz.github.io/chartist-js/', target='_blank', data-original-title='', title='') https://gionkunz.github.io/chartist-js/
+                                            li
+                                              | Ckeditor
+                                              a(href=' https://docs.ckeditor.com/ckeditor4/docs/#!/guide/dev_styles-section-style-rules', target='_blank', data-original-title='', title='')
+                                                | https://docs.ckeditor.com/ckeditor4/docs/#!/guide/dev_styles-section-style-rules
+                                            li
+                                              | clipboard
+                                              a(href='https://zenorocha.github.io/clipboard.js', target='_blank', data-original-title='', title='') https://zenorocha.github.io/clipboard.js
+                                            li
+                                              | Counter
+                                              a(href='https://github.com/imakewebthings/waypoints/blob/master/', target='_blank', data-original-title='', title='') https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
+                                            li
+                                              | Datatable extension
+                                              a(href='https://raw.github.com/Stuk/jszip/master/', target='_blank', data-original-title='', title='') https://raw.github.com/Stuk/jszip/master/
+                                            li
+                                              | Datatables
+                                              a(href='https://datatables.net/', target='_blank', data-original-title='', title='') https://datatables.net/
+                                            li
+                                              | Date picker
+                                              a(href='http://www.daterangepicker.com/', target='_blank', data-original-title='', title='') http://www.daterangepicker.com/
+                                            li
+                                              | Date Time Picker
+                                              a(href='https://tempusdominus.github.io/bootstrap-4/', target='_blank', data-original-title='', title='') https://tempusdominus.github.io/bootstrap-4/
+                                            li
+                                              | Date range Picker
+                                              a(href='http://www.daterangepicker.com/', target='_blank', data-original-title='', title='') http://www.daterangepicker.com/
+                                            li
+                                              | Dragable
+                                              a(href='http://jqueryui.com', target='_blank', data-original-title='', title='') http://jqueryui.com
+                                            li
+                                              | Drop zone
+                                              a(href='http://www.dropzonejs.com', target='_blank', data-original-title='', title='') http://www.dropzonejs.com
+                                            li
+                                              | Flot chart
+                                              a(href='http://benalman.com/projects/jquery-resize-plugin/', target='_blank', data-original-title='', title='') http://benalman.com/projects/jquery-resize-plugin/
+                                            li
+                                              | Form builder 1
+                                              a(href='http://github.com/requirejs/', target='_blank', data-original-title='', title='') http://github.com/requirejs/
+                                            li
+                                              | Form builder 2
+                                              a(href='http://jsbeautifier.org/', target='_blank', data-original-title='', title='') http://jsbeautifier.org/
+                                            li
+                                              | Form wizard
+                                              a(href='http://srobbin.com/jquery-plugins/backstretch/', target='_blank', data-original-title='', title='') http://srobbin.com/jquery-plugins/backstretch/
+                                            li
+                                              | Image cropper
+                                              a(href='https://github.com/fengyuanchen/cropper', target='_blank', data-original-title='', title='') https://github.com/fengyuanchen/cropper
+                                            li
+                                              | Js grid
+                                              a(href='http://js-grid.com', target='_blank', data-original-title='', title='') http://js-grid.com
+                                            li
+                                              | Light gallery
+                                              a(href='http://brandon.aaron.sh', target='_blank', data-original-title='', title='') http://brandon.aaron.sh
+                                            li
+                                              | Morris chart
+                                              a(href='http://raphaeljs.com', target='_blank', data-original-title='', title='') http://raphaeljs.com
+                                            li
+                                              | Notify
+                                              a(href='https://notifyjs.jpillora.com/', target='_blank', data-original-title='', title='') https://notifyjs.jpillora.com/
+                                            li
+                                              | Owl carousel
+                                              a(href='https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE', target='_blank', data-original-title='', title='') https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+                                            li
+                                              | Page builder
+                                              a(href='http://ckeditor.com/license', target='_blank', data-original-title='', title='') http://ckeditor.com/license
+                                            li
+                                              | Particles
+                                              a(href='http://opensource.org/licenses/MIT', target='_blank', data-original-title='', title='') http://opensource.org/licenses/MIT
+                                            li
+                                              | Range slider
+                                              a(href='https://github.com/IonDen/ion.rangeSlider', target='_blank', data-original-title='', title='') https://github.com/IonDen/ion.rangeSlider
+                                            li
+                                              | Rating
+                                              a(href='http://github.com/antennaio/jquery-bar-rating', target='_blank', data-original-title='', title='') http://github.com/antennaio/jquery-bar-rating
+                                            li
+                                              | Scroll reveal
+                                              a(href='https://modernizr.com/download/', target='_blank', data-original-title='', title='') https://modernizr.com/download/
+                                            li
+                                              | Select 2
+                                              a(href=' https://github.com/select2/select2/blob/master/LICENSE.md', target='_blank', data-original-title='', title='')
+                                                | https://github.com/select2/select2/blob/master/LICENSE.md
+                                            li
+                                              | Simple mde
+                                              a(href='https://github.com/NextStepWebs/simplemde-markdown-editor', target='_blank', data-original-title='', title='') https://github.com/NextStepWebs/simplemde-markdown-editor
+                                            li
+                                              | Sparkline
+                                              a(href='http://omnipotent.net/jquery.sparkline/', target='_blank', data-original-title='', title='') http://omnipotent.net/jquery.sparkline/
+                                            li
+                                              | Sticky
+                                              a(href='http://sweetalert.js.org', target='_blank', data-original-title='', title='') http://sweetalert.js.org
+                                            li
+                                              | Summer note
+                                              a(href='https://summernote.org', target='_blank', data-original-title='', title='') https://summernote.org
+                                            li
+                                              | time picker
+                                              a(href='http://weareoutman.github.io/clockpicker/', target='_blank', data-original-title='', title='') http://weareoutman.github.io/clockpicker/
+                                            li
+                                              | Touch spin
+                                              a(href='https://www.virtuosoft.eu/code/bootstrap-touchspin/', target='_blank', data-original-title='', title='') https://www.virtuosoft.eu/code/bootstrap-touchspin/
+                                            li
+                                              | Tour
+                                              a(href='https://github.com/usablica/intro.js', target='_blank', data-original-title='', title='') https://github.com/usablica/intro.js
+                                            li
+                                              | Tree
+                                              a(href='https://www.jstree.com/', target='_blank', data-original-title='', title='') https://www.jstree.com/
+                                            li
+                                              | Typehead
+                                              a(href='https://github.com/twitter/typeahead.js', target='_blank', data-original-title='', title='') https://github.com/twitter/typeahead.js
+                                            li
+                                              | Wow
+                                              a(href='https://wowjs.uk', target='_blank', data-original-title='', title='') https://wowjs.uk
+                                            li
+                                              | Isotope
+                                              a(href='https://isotope.metafizzy.co', target='_blank', data-original-title='', title='') https://isotope.metafizzy.co
+                                            li
+                                              | jquery drill-down
+                                              a(href='http://opensource.org/licenses/mit-license.php', target='_blank', data-original-title='', title='') http://opensource.org/licenses/mit-license.php
+                                            li
+                                              | jqueryui
+                                              a(href='http://jqueryui.com', target='_blank', data-original-title='', title='') http://jqueryui.com
+                                            li
+                                              | Vertical menu js
+                                              a(href='http://www.smartmenus.org/', target='_blank', data-original-title='', title='') http://www.smartmenus.org/
+
+                include ../../components/footer
+        include ../../components/footer-files

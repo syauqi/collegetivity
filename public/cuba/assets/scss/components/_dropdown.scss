@@ -1,0 +1,103 @@
+/**=====================
+    37. Dropdown CSS Start
+==========================**/
+.dropdown-basic {
+	margin-bottom: -10px;
+	.btn-group {
+		margin-right: 18px;
+		.btn-round {
+			border-radius: 50px;
+		}
+	}
+	.separated-btn {
+		margin-left: -6px;
+		.btn {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			padding: 10px;
+		}
+	}
+	button{
+		max-height: 43px;
+	}
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 10px;
+		.dropbtn {
+			color: white;
+			padding: 12px 35px;
+			border: none;
+			cursor: pointer;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			right: 0;
+			background-color: #f9f9f9;
+			min-width: 175px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+			left: 0;
+			top: 45px;
+			a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			.dropdown-header{
+				padding:12px 16px;
+			}
+		}
+	}
+
+	.dropdown-content a:hover {
+		background-color: #f1f1f1;
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+}
+.dropup-basic {
+	.dropup {
+		position: relative;
+		display: inline-block;
+		.dropbtn {
+			color: white;
+			padding: 12px;
+			border: none;
+		}
+		.dropup-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 170px;
+			bottom: 45px;
+			z-index: 999;
+			left:0;
+			a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+		}
+	}
+
+	.dropup .dropup-content a:hover {
+		background-color: #f1f1f1;
+	}
+	.dropup:hover .dropup-content{
+		display: block;
+		a {
+			&.active {
+				background-color: #f1f1f1;
+			}
+		}
+	}
+}
+
+/**=====================
+    37. Dropdown CSS Ends
+==========================**/

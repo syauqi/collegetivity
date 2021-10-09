@@ -1,0 +1,266 @@
+/**=====================
+     07. Color CSS Start
+==========================**/
+.color-box {
+  margin-bottom: -10px;
+
+  button {
+    margin-bottom: 10px;
+
+    +button {
+      margin-left: 5px;
+    }
+  }
+}
+
+
+
+// primary Color
+$m-val:13;
+$or: $primary-color;
+
+@while $m-val>=1 {
+  .primary-color ul li {
+    &:nth-child(#{$m-val}) {
+      $or: lighten($or, 1.5%);
+      background-color: $or;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+
+      span:before {
+        content: "#{$or}";
+        display: block;
+        color: $white;
+        text-align: center;
+      }
+
+      $m-val: $m-val - 1;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//primary Color
+
+// secondary Color
+$m-val:13;
+$or: $secondary-color;
+
+@while $m-val>=1 {
+  .secondary-color ul li {
+    &:nth-child(#{$m-val}) {
+      $or: lighten($or, 3%);
+      background-color: $or;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+
+      span:before {
+        content: "#{$or}";
+        display: block;
+        color: $white;
+        text-align: center;
+      }
+
+      $m-val: $m-val - 1;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//secondary Color
+
+//Success Color
+$m-val:13;
+$or:$success-color;
+
+@while $m-val>=1 {
+  .success-color ul li {
+    &:nth-child(#{$m-val}) {
+      $or: lighten($or, .9%);
+      background-color: $or;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+
+      span:before {
+        content: "#{$or}";
+        display: block;
+        color: $white;
+        text-align: center;
+      }
+
+      $m-val: $m-val - 1;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//Success Color
+
+// Info Color
+$m-val:13;
+$or: $info-color;
+
+@while $m-val>=1 {
+  .info-color ul li {
+    &:nth-child(#{$m-val}) {
+      $or: lighten($or, 2.5%);
+      background-color: $or;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+
+      span:before {
+        content: "#{$or}";
+        display: block;
+        color: $white;
+        text-align: center;
+      }
+
+      $m-val: $m-val - 1;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//Info Color
+
+// warning Color
+$m-val:13;
+$or: $warning-color;
+
+@while $m-val>=1 {
+  .yellow-color ul li {
+    &:nth-child(#{$m-val}) {
+      $or: lighten($or, 3%);
+      background-color: $or;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+
+      span:before {
+        content: "#{$or}";
+        display: block;
+        color: $white;
+        text-align: center;
+      }
+
+      $m-val: $m-val - 1;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//warning Color
+
+//Danger Color
+$m-val:13;
+$or:$danger-color;
+
+@while $m-val>=1 {
+  .red-color ul li {
+    &:nth-child(#{$m-val}) {
+      $or: lighten($or, 2%);
+      background-color: $or;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+
+      span:before {
+        content: "#{$or}";
+        display: block;
+        color: $white;
+        text-align: center;
+      }
+
+      $m-val: $m-val - 1;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//Danger Color
+
+//Pink Color
+$m-val:13;
+$or:#e6155e;
+
+@while $m-val>=1 {
+  .pink-color ul li {
+    &:nth-child(#{$m-val}) {
+      $or: lighten($or, 3%);
+      background-color: $or;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+
+      span:before {
+        content: "#{$or}";
+        display: block;
+        color: $white;
+        text-align: center;
+      }
+
+      $m-val: $m-val - 1;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//Pink Color
+
+
+// Gray Color
+$m-val:13;
+$or: $dark-gray;
+
+@while $m-val>=1 {
+  .gray-color ul li {
+    &:nth-child(#{$m-val}) {
+      $or: lighten($or, 3%);
+      background-color: $or;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+
+      span:before {
+        content: "#{$or}";
+        display: block;
+        color: $white;
+        text-align: center;
+      }
+
+      $m-val: $m-val - 1;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//gray Color
+
+
+.light-font {
+  color: $theme-body-sub-title-color;
+}
+
+/**=====================
+     07. Color CSS Ends
+==========================**/

@@ -1,0 +1,47 @@
+/*======= Video Call To Action =======*/
+.video-cta {
+    .video-cta-text-block {
+        background-color: $color-primary-4;
+        padding: 60px 50px;
+        text-align: center;
+        color: $color-white;
+        border-radius: 7px;
+
+        .title {
+            font-size: 36px;
+            color: $color-white;
+            margin-bottom: 25px;
+        }
+
+        .template-btn {
+            margin-top: 25px;
+            padding: 14px 30px;
+
+            &:not(:hover) {
+                border-color: $color-white;
+            }
+        }
+    }
+
+    .landio-video {
+        min-height: 350px;
+        height: 100%;
+        border-radius: 7px;
+
+        .play-btn {
+            width: 75px;
+            height: 75px;
+            background-color: $color-primary-4;
+
+            &::before {
+                background-color: $color-primary-4;
+            }
+        }
+
+        &::after {
+            background-color: $color-secondary-4;
+            opacity: 0.5;
+        }
+
+    }
+}

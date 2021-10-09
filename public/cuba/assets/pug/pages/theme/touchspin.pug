@@ -1,0 +1,234 @@
+- var touchspin             = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Touchspin
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Form Widgets
+                                      li.breadcrumb-item.active Touchspin
+                    // Container-fluid starts
+                    // Container-fluid starts
+                    .container-fluid
+                      // Bootstrap TouchSpin Spinners start
+                      .bootstrap-touchspin
+                        .row
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5.card-title Default Touchspin
+                                span
+                                  | Add 
+                                  code .touchspin
+                                  |  class to input to add touchspin input group.
+                              .card-body
+                                fieldset
+                                  .input-group
+                                    input.touchspin(type='text', value='40')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5.card-title vertical Touchspin
+                                span
+                                  | Add 
+                                  code .touchspin-vertical
+                                  |  class for vertical touchspin input group.
+                              .card-body
+                                fieldset
+                                  .touchspin-vertical-tab
+                                    input.touchspin-vertical(type='text', value='55')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5.card-title Touchspin with Postfix
+                                span
+                                  | Add 
+                                  code data-bts-postfix="POSTFIX_VALUE"
+                                  |  attribute to input to add postfix to touchspin input group.
+                              .card-body
+                                fieldset
+                                  .input-group
+                                    input.touchspin(type='text', value='40', data-bts-postfix='%')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5.card-title Touchspin with Prefix
+                                span
+                                  | Add 
+                                  code data-bts-prefix="PREFIX_VALUE"
+                                  |  attribute to input to add prefix to touchspin input group.
+                              .card-body
+                                fieldset
+                                  .input-group
+                                    input.touchspin(type='text', value='40', data-bts-prefix='#')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5.card-title Min Max Value of Touchspin
+                                span
+                                  | Use 
+                                  code data-bts-min="VALUE" data-bts-max="VALUE"
+                                  |  attribute to input to set min and max value of touchspin input.
+                              .card-body
+                                fieldset
+                                  .input-group
+                                    input.touchspin(type='text', value='40', data-bts-min='1', data-bts-max='100')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5.card-title Touchspin with initial Value
+                                span
+                                  | Add 
+                                  code data-bts-init-val="VALUE"
+                                  |  attribute attribute to set initial value for input group.
+                              .card-body
+                                fieldset
+                                  .input-group
+                                    input.touchspin(type='text', data-bts-init-val='20')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5.card-title Touchspin steps
+                                span
+                                  | Add 
+                                  code data-bts-step="VALUE"
+                                  |  attribute for increament and decrement steps to touchspin input group.
+                              .card-body
+                                fieldset
+                                  .input-group
+                                    input.touchspin(type='text', value='40', data-bts-step='10')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5.card-title Decimal Value of Touchspin
+                                span
+                                  | Use 
+                                  code data-bts-decimal="VALUE"
+                                  |  attribute to use decimal value of touchspin input.
+                              .card-body
+                                fieldset
+                                  .input-group
+                                    input.touchspin(type='text', value='50.00', data-bts-step='0.25', data-bts-decimals='2')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5.card-title Change Button Class to link
+                                span
+                                  | Add 
+                                  code data-bts-button-down-class & data-bts-button-up-class
+                                  |  attribute to change button Class.
+                              .card-body
+                                fieldset
+                                  .input-group
+                                    input.touchspin(type='text', value='40', data-bts-button-down-class='btn btn-link', data-bts-button-up-class='btn btn-link')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5.card-title Touchspin With Icon
+                                span
+                                  | Add icon class in 
+                                  code data-bts-postfix
+                                  |  attribute to icon to postfix as well prefix.
+                              .card-body
+                                fieldset
+                                  .input-group
+                                    input.touchspin(type='text', data-bts-postfix="<i class='fa fa-check'></i>", value='40')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5.card-title Touchspin Icon Button
+                                span
+                                  | Use 
+                                  code data-bts-button-down-txt & data-bts-button-up-txt
+                                  |  attribute to set touchspin icon button.
+                              .card-body
+                                fieldset
+                                  .input-group
+                                    input.touchspin(type='text', value='50.00', data-bts-button-down-txt="<i class='fa fa-angle-down'></i>", data-bts-button-up-txt="<i class='fa fa-angle-up'></i>")
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5.card-title Touchspin With Dropdown
+                                span
+                                  | Use 
+                                  code data-bts-prefix & data-bts-postfix
+                                  |  attribute to set Prefix and Postfix to touchspin input with button.
+                              .card-body
+                                fieldset
+                                  .input-group
+                                    input.touchspin(type='text', value='50.00', data-bts-prefix='Pre', data-bts-postfix='Post')
+                                    .dropdown-basic
+                                      .dropdown
+                                        .btn-group.mb-0.mr-0
+                                          button.dropbtn.btn-light.txt-dark(type='button')
+                                            | Action 
+                                            span
+                                              i.icofont.icofont-arrow-down
+                                          .dropdown-content
+                                            a(href='#') Action
+                                            a(href='#') Another Action
+                                            a(href='#') Something Else Here
+                                            .dropdown-divider
+                                            a(href='#') Separated Link 
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5.card-title Touchspin mousewheel Disable
+                                span
+                                  | Add 
+                                  code .touchspin-stop-mousewheel
+                                  |  class to diable mousewheel.
+                              .card-body
+                                fieldset
+                                  .input-group
+                                    input.touchspin-stop-mousewheel(type='text', value='40')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5.card-title Small Horizontal Touchspin
+                                span
+                                  | Add 
+                                  code .input-group-sm
+                                  |  class to input-group.
+                              .card-body
+                                fieldset
+                                  .input-group.input-group-sm
+                                    input.touchspin(type='text', value='60')
+                          .col-sm-12
+                            .card
+                              .card-header
+                                h5.card-title Large Horizontal Touchspin
+                              .card-body
+                                p
+                                  | Add 
+                                  code .input-group-lg
+                                  |  class to input-group.
+                                fieldset
+                                  .input-group.input-group-lg
+                                    input.touchspin(type='text', value='40')
+                      // Bootstrap TouchSpin Spinners End
+                    // Container-fluid Ends
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

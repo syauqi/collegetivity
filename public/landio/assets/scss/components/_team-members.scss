@@ -1,0 +1,182 @@
+/*======= Team Member =======*/
+.team-members {
+    .member-box {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $color-primary;
+            border-radius: 7px;
+            transition: 0.4s;
+            transform: perspective(400px) rotateX(-90deg);
+            transform-origin: top;
+            border-radius: 6px;
+            z-index: 2;
+            opacity: 0;
+        }
+
+        .member-photo {
+            img {
+                width: 100%;
+                border-radius: 7px;
+            }
+        }
+
+        .member-info {
+            background-color: $color-white;
+            border-radius: 7px;
+            padding: 25px 15px;
+            text-align: center;
+            transition: 0.4s;
+            position: absolute;
+            z-index: 3;
+            left: 20px;
+            right: 20px;
+            bottom: -10px;
+            opacity: 0;
+            visibility: hidden;
+
+            .name {
+                font-size: 20px;
+                margin-bottom: 8px;
+                line-height: 1.2;
+            }
+
+            .title {
+                color: $color-secondary;
+                font-size: 15px;
+                font-family: $font-cs-medium;
+                font-weight: 500;
+                line-height: 1.3;
+            }
+
+            .social-links {
+                margin-top: 15px;
+
+                li {
+                    display: inline-block;
+                    margin: 0 2px;
+                    visibility: hidden;
+                    opacity: 0;
+                    transform: rotateY(-70deg);
+                    transform-origin: left;
+                    position: relative;
+                    left: 3px;
+                    transition: all 0.3s linear;
+
+                    a {
+                        display: block;
+                        background-color: #e5eeff;
+                        height: 35px;
+                        width: 35px;
+                        text-align: center;
+                        line-height: 35px;
+                        color: $color-primary;
+                        border-radius: 50%;
+                        font-size: 13px;
+                    }
+
+                    &.facebook {
+                        a {
+                            background-color: #0040e5;
+                            color: #fff;
+                        }
+                    }
+
+                    &.twitter {
+                        a {
+                            background-color: #ddeffb;
+                            color: #55aded;
+                        }
+                    }
+
+                    &.youtube {
+                        a {
+                            background-color: #ffe5e5;
+                            color: #ff0303;
+                        }
+                    }
+
+                    &.behance {
+                        a {
+                            background-color: #e5eeff;
+                            color: #0057ff;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            &::before {
+                opacity: 0.6;
+                -webkit-transform: perspective(400px) rotateX(0deg);
+                transform: perspective(400px) rotateX(0deg);
+            }
+
+            .member-info {
+                opacity: 1;
+                visibility: visible;
+                bottom: 20px;
+
+                .social-links {
+                    li {
+                        visibility: visible;
+                        opacity: 1;
+                        transform: rotateY(0deg);
+
+                        &:nth-child(2) {
+                            transition-delay: 0.2s;
+                        }
+
+                        &:nth-child(3) {
+                            transition-delay: 0.3s;
+                        }
+
+                        &:nth-child(4) {
+                            transition-delay: 0.4s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.team-masonry {
+        margin-top: -175px;
+        margin-left: -15px;
+        margin-right: -15px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .masonry-item {
+            max-width: 33.333%;
+            flex: 0 0 33.333%;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            &:nth-child(1) {
+                margin-top: 240px;
+            }
+
+            &:nth-child(3) {
+                margin-top: 90px;
+            }
+
+            &:nth-child(4) {
+                margin-top: -210px;
+                margin-left: 33.333333%;
+            }
+
+            &:nth-child(5) {
+                margin-top: -60px;
+            }
+        }
+    }
+}

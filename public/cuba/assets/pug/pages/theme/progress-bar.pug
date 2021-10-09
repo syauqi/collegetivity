@@ -1,0 +1,178 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Progress
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Ui Kits
+                                      li.breadcrumb-item.active Progress
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Basic Progress Bars
+                              span
+                                | Progress components are built with two HTML elements, some CSS to set the width, and a few attributes.
+                            .card-body.progress-showcase.row
+                              .col
+                                .progress
+                                  .progress-bar(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100')
+                                .progress
+                                  .progress-bar.bg-primary(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                .progress
+                                  .progress-bar.bg-secondary(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                .progress
+                                  .progress-bar.bg-success(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                                .progress
+                                  .progress-bar.bg-info(role='progressbar', style='width: 100%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
+                          .card
+                            .card-header
+                              h5 Small Progress Bars
+                              span
+                                | Use 
+                                code  .sm-progress-bar
+                                | class to change progress size to small:
+                            .card-body.progress-showcase.row
+                              .col
+                                .progress.sm-progress-bar
+                                  .progress-bar.bg-primary(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                .progress.sm-progress-bar
+                                  .progress-bar.bg-secondary(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                .progress.sm-progress-bar
+                                  .progress-bar.bg-success(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                                .progress.sm-progress-bar
+                                  .progress-bar.bg-info(role='progressbar', style='width: 100%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
+                          .card
+                            .card-header
+                              h5 Large Progress Bars
+                              span
+                                | Use 
+                                code  .lg-progress-bar
+                                | class to change progress size to small:
+                            .card-body.progress-showcase.row
+                              .col
+                                .progress.lg-progress-bar
+                                  .progress-bar.bg-primary(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                .progress.lg-progress-bar
+                                  .progress-bar.bg-secondary(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                .progress.lg-progress-bar
+                                  .progress-bar.bg-success(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                                .progress.lg-progress-bar
+                                  .progress-bar.bg-info(role='progressbar', style='width: 100%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
+                          .card
+                            .card-header
+                              h5 Custom Height Progress Bars
+                              span
+                                | Set a height value on the 
+                                code .progress-bar
+                                | , so if you change that value the outer 
+                                code .progress 
+                                |  will automatically resize accordingly.
+                            .card-body.progress-showcase.row
+                              .col
+                                .progress(style='height: 1px;')
+                                  .progress-bar.bg-primary(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                .progress(style='height: 5px;')
+                                  .progress-bar.bg-secondary(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                .progress(style='height: 11px;')
+                                  .progress-bar.bg-success(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                                .progress(style='height: 19px;')
+                                  .progress-bar.bg-info(role='progressbar', style='width: 100%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
+                          .card
+                            .card-header
+                              h5 Progress Bars states
+                              span Use state utility classes to change the appearance of individual progress bars.
+                            .card-body.progress-showcase.row
+                              .col
+                                .progress
+                                  .progress-bar.bg-primary(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                .progress
+                                  .progress-bar.bg-secondary(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                .progress
+                                  .progress-bar.bg-success(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                                .progress
+                                  .progress-bar.bg-info(role='progressbar', style='width: 100%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
+                          .card
+                            .card-header
+                              h5 Multiple bars
+                              span Include multiple progress bars in a progress component if you need.
+                            .card-body.progress-showcase.row
+                              .col
+                                .progress
+                                  .progress-bar.bg-primary(role='progressbar', style='width: 30%', aria-valuenow='30', aria-valuemin='0', aria-valuemax='100')
+                                  .progress-bar.bg-secondary(role='progressbar', style='width: 20%', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
+                                  .progress-bar.bg-success(role='progressbar', style='width: 15%', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100')
+                                .progress
+                                  .progress-bar.bg-primary(role='progressbar', style='width: 10%', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100')
+                                  .progress-bar.bg-secondary(role='progressbar', style='width: 10%', aria-valuenow='30', aria-valuemin='0', aria-valuemax='100')
+                                  .progress-bar.bg-success(role='progressbar', style='width: 10%', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100')
+                                  .progress-bar.bg-info(role='progressbar', style='width: 10%', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100')
+                                  .progress-bar.bg-warning(role='progressbar', style='width: 10%', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100')
+                                  .progress-bar.bg-danger(role='progressbar', style='width: 10%', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100')
+                                  .progress-bar.bg-primary(role='progressbar', style='width: 10%', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100')
+                                  .progress-bar.bg-light(role='progressbar', style='width: 10%', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100')
+                          .card
+                            .card-header
+                              h5 Progress Bars Striped
+                              span
+                                | Add 
+                                code .progress-bar-striped
+                                |  to any 
+                                code .progress-bar
+                                |  to apply a stripe via CSS gradient over the progress bar’s background color.
+                            .card-body.progress-showcase.row
+                              .col
+                                .progress
+                                  .progress-bar.bg-primary.progress-bar-striped(role='progressbar', style='width: 10%', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
+                                .progress
+                                  .progress-bar.progress-bar-striped.bg-secondary(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                .progress
+                                  .progress-bar.progress-bar-striped.bg-success(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                .progress
+                                  .progress-bar.progress-bar-striped.bg-info(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                          .card
+                            .card-header
+                              h5 Progress Bars animated
+                              span
+                                | The striped gradient can also be animated. Add 
+                                code .progress-bar-animated
+                                |  to 
+                                code .progress-bar 
+                                |  to animate the stripes right to left via CSS3 animations.
+                            .card-body.progress-showcase.row
+                              .col
+                                .progress
+                                  .progress-bar-animated.bg-primary.progress-bar-striped(role='progressbar', style='width: 10%', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
+                                .progress
+                                  .progress-bar-animated.progress-bar-striped.bg-secondary(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                .progress
+                                  .progress-bar-animated.progress-bar-striped.bg-success(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                .progress
+                                  .progress-bar-animated.progress-bar-striped.bg-info(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

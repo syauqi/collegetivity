@@ -1,0 +1,193 @@
+/**=====================
+    43. Timeline 2 CSS Start
+==========================**/
+$timeliny_classname: 'timeliny';
+$timeliny_dots-radius: 0.6rem;
+$timeliny_global-width: 100%;
+$timeliny_max-inner-width: 1024px;
+$timeliny_spacings: 5rem;
+$timeliny_transition-time: 0.35s;
+$timeliny_vertical-line-pos: 32%;
+$timeliny_small-breakdown: 768px;
+
+.#{$timeliny_classname} {
+	position: relative;
+	display: block;
+	padding: $timeliny_spacings * 2 0;
+	width: $timeliny_global-width;
+	border-top: 1px solid lighten($light-color, 3%);
+	border-bottom: 1px solid lighten($light-color, 3%);
+	text-rendering: optimizeLegibility;
+	color: $light-color;
+	opacity: 0;
+	overflow: hidden;
+	cursor: move;
+	&.loaded {
+		opacity: 1;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		background-color: $dark-gray;
+		width: 100%;
+		height: 1px;
+		top: 50%;
+		left: 0;
+	}
+	.#{$timeliny_classname}-wrapper {
+		display: block;
+		margin: auto;
+		width: 100%;
+		max-width: $timeliny_max-inner-width;
+	}
+	.#{$timeliny_classname}-dot {
+		-webkit-transition: all $timeliny_transition-time ease-in-out;
+		-moz-transition: all $timeliny_transition-time ease-in-out;
+		transition: all $timeliny_transition-time ease-in-out;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin-top: -$timeliny_dots-radius;
+		width: $timeliny_dots-radius * 2;
+		height: $timeliny_dots-radius * 2;
+		border-radius: 50%;
+		border: 1px solid $dark-gray;
+		background-color: $white;
+		&::before {
+			-webkit-transition: all $timeliny_transition-time ease-in-out;
+			-moz-transition: all $timeliny_transition-time ease-in-out;
+			transition: all $timeliny_transition-time ease-in-out;
+			content: attr(data-year);
+			display: block;
+			position: absolute;
+			top: -$timeliny_spacings;
+			left: $timeliny_spacings / 4;
+			color: $dark-color;
+			font-family: $font-rubik, $font-serif;
+			font-size: 22px;
+		}
+		&::after {
+			-webkit-transition: all $timeliny_transition-time ease-in-out;
+			-moz-transition: all $timeliny_transition-time ease-in-out;
+			transition: all $timeliny_transition-time ease-in-out;
+			-ms-transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			content: attr(data-text);
+			display: block;
+			position: absolute;
+			width: $timeliny_max-inner-width / 4;
+			top: $timeliny_spacings + $timeliny_dots-radius;
+			left: $timeliny_spacings / 4;
+			color: $light-color;
+			opacity: 0;
+			font-size: 0.9em;
+			@media (min-width: $timeliny_small-breakdown) {
+				width: $timeliny_max-inner-width / 3;
+			}
+		}
+	}
+	.#{$timeliny_classname}-timeline {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		display: table;
+		width: 100%;
+		z-index: 5;
+		.#{$timeliny_classname}-timeblock {
+			display: table-cell;
+			position: relative;
+			&.active {
+				.#{$timeliny_classname}-dot {
+					border-color: var(--theme-deafult);
+					background-color: var(--theme-deafult);
+					box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.33);
+					&::before {
+						color: $dark-color;
+					}
+					&::after {
+						color: $dark-color;
+						opacity: 1;
+						background-color: lighten($primary-color, 38%);
+						border: 1px solid $light-semi-gray;
+						padding: 10px;
+						border-radius: 5px;
+					}
+				}
+			}
+
+			&.inactive {
+				.#{$timeliny_classname}-dot {
+					cursor: move;
+
+					&::before {
+						color: $light-color;
+					}
+				}
+			}
+
+			&:not(.inactive):not(.active){
+				.#{$timeliny_classname}-dot:hover {
+					border-color: $dark-color;
+					background-color: $dark-color;
+					&::before {
+						color: $dark-color;
+					}
+				}
+			}
+
+			.#{$timeliny_classname}-dot:hover {
+				&::after {
+					color: $dark-color;
+					opacity: 1;
+					background-color: $white;
+					border: 1px solid $light-semi-gray;
+					padding: 10px;
+					border-radius: 5px;
+				}
+			}
+		}
+	}
+
+	.#{$timeliny_classname}-vertical-line {
+		position: absolute;
+		display: block;
+		z-index: 1;
+		left: $timeliny_vertical-line-pos / 2;
+		top: 0;
+		width: 1px;
+		height: 100%;
+		background-color: var(--theme-deafult);
+
+		@media (min-width: $timeliny_small-breakdown) {
+			left: $timeliny_vertical-line-pos;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -7px;
+			width: 0;
+			height: 0;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-top: 8px solid var(--theme-deafult);
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: -7px;
+			width: 0;
+			height: 0;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-bottom: 8px solid var(--theme-deafult);
+		}
+	}
+
+}
+/**=====================
+     43. Timeline 2 CSS Ends
+==========================**/

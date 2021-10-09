@@ -1,0 +1,117 @@
+/*======= Fancy Check List v1   =======*/
+.fancy-check-list-v1 {
+    li {
+        padding: 35px 35px 35px 80px;
+        position: relative;
+        z-index: 1;
+
+        &:first-child {
+            background-color: $color-white;
+            border-radius: 15px;
+            box-shadow: 0px 10px 60px 0px rgb(189 189 189 / 30%);
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+        &::before {
+            position: absolute;
+            z-index: -1;
+            left: 30px;
+            top: 35px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: $color-secondary;
+            color: $color-white;
+            content: "\f00c";
+            font: {
+                family: "Font Awesome 5 Pro";
+                weight: 900;
+                size: 15px;
+            }
+        }
+
+        .title {
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+/*======= Fancy Check List v2   =======*/
+.fancy-check-list-v2 {
+    li {
+        color: $color-heading;
+        font: {
+            size: 20px;
+            family: $font-cs-bold;
+            weight: 700;
+        }
+        line-height: 1.4;
+        display: flex;
+
+        .list-inner {
+            position: relative;
+            z-index: 1;
+            box-shadow: 0px 10px 60px 0px rgba(189, 189, 189, 0.28);
+            padding: 20px 35px 20px 85px;
+            border-radius: 10px;
+            background-color: $color-white;
+
+            &::before {
+                position: absolute;
+                z-index: -1;
+                left: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background-color: $color-primary;
+                color: $color-white;
+                content: "\f00c";
+                font: {
+                    family: "Font Awesome 5 Pro";
+                    weight: 900;
+                    size: 15px;
+                }
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &:nth-child(1),
+        &:nth-child(4) {
+            margin-left: 15px;
+        }
+
+        &:nth-child(2),
+        &:nth-child(5) {
+            margin-left: 30px;
+        }
+    }
+
+    &.color-heading-3 {
+        li {
+            color: $color-heading-3;
+
+            .list-inner {
+                &::before {
+                    background-color: $color-secondary;
+                }
+            }
+        }
+    }
+}

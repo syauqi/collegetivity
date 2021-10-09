@@ -1,0 +1,214 @@
+/*======= Fancy Icon Boxes v1  =======*/
+.fancy-icon-boxes-v1 {
+    .fancy-icon-box {
+        border: 2px solid rgb(71 59 240 / 7%);
+        padding: 45px 50px 45px 45px;
+        display: flex;
+        transition: 0.3s;
+        position: relative;
+        z-index: 1;
+        border-radius: 7px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 50%;
+            height: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(../img/fancy-icon-box/fancy-circle-dots.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+            transition: 0.3s;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .box-icon {
+            font-size: 75px;
+            line-height: 0.5;
+            max-width: 75px;
+            flex: 0 0 75px;
+            color: $color-primary;
+
+            img,
+            i {
+                transition: all 1s ease;
+            }
+        }
+
+        .box-content {
+            padding-left: 40px;
+        }
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-transform: capitalize;
+        }
+
+        &:hover {
+            border-color: $color-primary;
+            background-color: $color-primary;
+
+            &::before {
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                visibility: visible;
+                border-radius: 0;
+            }
+
+            .box-icon {
+                img,
+                i {
+                    transform: rotateY(360deg);
+                }
+            }
+
+            .box-icon,
+            .title,
+            .title a,
+            .box-content {
+                color: $color-white;
+            }
+        }
+    }
+
+    &.boxes-white-version {
+        .fancy-icon-box {
+            border-color: #262c3c;
+
+            &::before {
+                display: none;
+            }
+
+            .box-icon,
+            .title,
+            .title a {
+                color: $color-white;
+            }
+
+            .box-content {
+                color: #a8acb7;
+            }
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+/*======= Fancy Icon Boxes v2  =======*/
+.fancy-icon-boxes-v2 {
+    .fancy-icon-box {
+        border-radius: 7px;
+        box-shadow: 0px 10px 30px 0px rgba(219, 219, 219, 0.41);
+        padding: 50px;
+        display: flex;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 5px;
+            height: 0%;
+            background-color: #ff0101;
+            transition: 0.3s linear;
+            visibility: hidden;
+            border-radius: 2.5px;
+        }
+
+        &::after {
+            top: auto;
+            bottom: 0;
+        }
+
+        .box-icon {
+            color: #ff0101;
+            font-size: 55px;
+            flex: 0 0 55px;
+            line-height: 0.5;
+
+            img,
+            i {
+                transition: all 1s ease;
+            }
+
+            img {
+                max-width: 55px;
+            }
+        }
+
+        .box-content {
+            padding-left: 40px;
+
+            .title {
+                font-size: 24px;
+                margin-bottom: 15px;
+
+                a:hover {
+                    color: #ff0101;
+                }
+            }
+        }
+
+        &:hover {
+            &::before,
+            &::after {
+                height: 100%;
+                visibility: visible;
+            }
+
+            .box-icon {
+                img,
+                i {
+                    transform: rotateY(360deg);
+                }
+            }
+        }
+
+        &.color-2 {
+            .box-icon,
+            .title a:hover {
+                color: #dc64ff;
+            }
+
+            &::before,
+            &::after {
+                background-color: #dc64ff;
+            }
+        }
+
+        &.color-3 {
+            .box-icon,
+            .title a:hover {
+                color: #2f84fb;
+            }
+
+            &::before,
+            &::after {
+                background-color: #2f84fb;
+            }
+        }
+
+        &.color-4 {
+            .box-icon,
+            .title a:hover {
+                color: #ff6c02;
+            }
+
+            &::before,
+            &::after {
+                background-color: #ff6c02;
+            }
+        }
+    }
+}

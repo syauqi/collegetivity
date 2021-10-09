@@ -1,0 +1,803 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var page_datatable        = true;
+- var datatable             = true;
+- var sidebar               = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Recent Orders
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Ecommerce
+                                      li.breadcrumb-item.active  Recent Orders
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 New Orders
+                            .card-body
+                              .row
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box                                  
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-6.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-primary.btn-xs(href="#") Processing
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-5.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-primary.btn-xs(href="#") Processing
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-4.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-primary.btn-xs(href="#") Processing
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-3.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-primary.btn-xs(href="#") Processing
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-2.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-primary.btn-xs(href="#") Processing
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-1.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-primary.btn-xs(href="#") Processing
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-1.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-primary.btn-xs(href="#") Processing
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box                                  
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-6.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-primary.btn-xs(href="#") Processing
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-5.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-primary.btn-xs(href="#") Processing
+                                          i.close(data-feather='x')
+                              
+                          .card
+                            .card-header
+                              h5 Shipped Orders
+                            .card-body
+                              .row
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box                                  
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-6.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-success.btn-xs(href="#") Shipped
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-5.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-success.btn-xs(href="#") Shipped
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-4.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-success.btn-xs(href="#") Shipped
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-3.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-success.btn-xs(href="#") Shipped
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-3.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-success.btn-xs(href="#") Shipped
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-2.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-success.btn-xs(href="#") Shipped
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box                                  
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-6.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-success.btn-xs(href="#") Shipped
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-5.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-success.btn-xs(href="#") Shipped
+                                          i.close(data-feather='x')    
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-1.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-success.btn-xs(href="#") Shipped
+                                          i.close(data-feather='x')
+                          .card
+                            .card-header
+                              h5 Cancelled Orders
+                            .card-body
+                              .row
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box                                  
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-6.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-danger.btn-xs(href="#") Cancelled
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-5.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-danger.btn-xs(href="#") Cancelled
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-4.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-danger.btn-xs(href="#") Cancelled
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-3.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-danger.btn-xs(href="#") Cancelled
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-2.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-danger.btn-xs(href="#") Cancelled
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-1.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-danger.btn-xs(href="#") Cancelled
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-1.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-danger.btn-xs(href="#") Cancelled
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box                                  
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-6.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-danger.btn-xs(href="#") Cancelled
+                                          i.close(data-feather='x')
+                                .col-xl-4.col-md-6
+                                  .prooduct-details-box 
+                                      .media
+                                        img.align-self-center.img-fluid.img-60(src='../assets/images/ecommerce/product-table-5.png', alt='#')
+                                        .media-body.ml-3
+                                          .product-name
+                                            h6
+                                              a(href='#') Fancy Women's Cotton
+                                          .rating
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                              i.fa.fa-star
+                                          .price.d-flex 
+                                              .text-muted.mr-2 Price
+                                              | : 210$
+                                          .avaiabilty
+                                              .text-success In stock
+                                          a.btn.btn-danger.btn-xs(href="#") Cancelled
+                                          i.close(data-feather='x')
+                              
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Datatable order history
+                            .card-body
+                              .order-history
+                                table#basic-1.table.table-bordernone.display
+                                  thead
+                                    tr
+                                      th(scope='col') Prdouct
+                                      th(scope='col') Prdouct name
+                                      th(scope='col') Size
+                                      th(scope='col') Color
+                                      th(scope='col') Article number
+                                      th(scope='col') Units
+                                      th(scope='col') Price
+                                      th(scope='col')
+                                        i.fa.fa-angle-down
+                                  tbody
+                                    tr
+                                      td
+                                        img.img-fluid.img-30(src='../assets/images/product/1.png', alt='#')
+                                      td
+                                        .product-name
+                                          a(href='#') Long Top
+                                          .order-process
+                                            span.order-process-circle
+                                            | Processing
+                                      td M
+                                      td Lavander
+                                      td 4215738
+                                      td 1
+                                      td $21
+                                      td
+                                        i(data-feather='more-vertical')
+                                    tr
+                                      td
+                                        img.img-fluid.img-30(src='../assets/images/product/13.png', alt='#')
+                                      td
+                                        .product-name
+                                          a(href='#') Fancy watch
+                                          .order-process
+                                            span.order-process-circle
+                                            | Processing
+                                      td 35mm
+                                      td Blue
+                                      td 5476182
+                                      td 1
+                                      td $10
+                                      td
+                                        i(data-feather='more-vertical')
+                                    tr
+                                      td
+                                        img.img-fluid.img-30(src='../assets/images/product/4.png', alt='#')
+                                      td
+                                        .product-name
+                                          a(href='#') Man shoes
+                                          .order-process
+                                            span.order-process-circle
+                                            | Processing
+                                      td 8
+                                      td Black & white
+                                      td 1756457
+                                      td 1
+                                      td $18
+                                      td
+                                        i(data-feather='more-vertical')
+                                    tr
+                                      td
+                                        img.img-fluid.img-30(src='../assets/images/product/10.png', alt='#')
+                                      td
+                                        .product-name
+                                          a(href='#') Ledis side bag
+                                          .order-process
+                                            span.order-process-circle.shipped-order
+                                            | Shipped
+                                      td 22cm x 18cm
+                                      td Brown
+                                      td 7451725
+                                      td 1
+                                      td $13
+                                      td
+                                        i(data-feather='more-vertical')
+                                    tr
+                                      td
+                                        img.img-fluid.img-30(src='../assets/images/product/12.png', alt='#')
+                                      td
+                                        .product-name
+                                          a(href='#') Ledis Slipper
+                                          .order-process
+                                            span.order-process-circle.shipped-order
+                                            | Shipped
+                                      td 6
+                                      td Brown & white
+                                      td 4127421
+                                      td 1
+                                      td $6
+                                      td
+                                        i(data-feather='more-vertical')
+                                    tr
+                                      td
+                                        img.img-fluid.img-30(src='../assets/images/product/3.png', alt='#')
+                                      td
+                                        .product-name
+                                          a(href='#') Fancy ledis Jacket
+                                          .order-process
+                                            span.order-process-circle.shipped-order
+                                            | Shipped
+                                      td Xl
+                                      td Light gray
+                                      td 3581714
+                                      td 1
+                                      td $24
+                                      td
+                                        i(data-feather='more-vertical')
+                                    tr
+                                      td
+                                        img.img-fluid.img-30(src='../assets/images/product/2.png', alt='#')
+                                      td
+                                        .product-name
+                                          a(href='#') Ledis Handbag
+                                          .order-process
+                                            span.order-process-circle.shipped-order
+                                            | Shipped
+                                      td 25cm x 20cm
+                                      td Black
+                                      td 6748142
+                                      td 1
+                                      td $14
+                                      td
+                                        i(data-feather='more-vertical')
+                                    tr
+                                      td
+                                        img.img-fluid.img-30(src='../assets/images/product/15.png', alt='#')
+                                      td
+                                        .product-name
+                                          a(href='#') Iphone6 mobile
+                                          .order-process
+                                            span.order-process-circle.cancel-order
+                                            | Cancelled
+                                      td 10cm x 15cm
+                                      td Black
+                                      td 5748214
+                                      td 1
+                                      td $25
+                                      td
+                                        i(data-feather='more-vertical')
+                                    tr
+                                      td
+                                        img.img-fluid.img-30(src='../assets/images/product/14.png', alt='#')
+                                      td
+                                        .product-name
+                                          a(href='#') Watch
+                                          .order-process
+                                            span.order-process-circle.cancel-order
+                                            | Cancelled
+                                      td 27mm
+                                      td Brown
+                                      td 2471254
+                                      td 1
+                                      td $12
+                                      td
+                                        i(data-feather='more-vertical')
+                                    tr
+                                      td
+                                        img.img-fluid.img-30(src='../assets/images/product/11.png', alt='#')
+                                      td
+                                        .product-name
+                                          a(href='#') Slipper
+                                          .order-process
+                                            span.order-process-circle.cancel-order
+                                            | Cancelled
+                                      td 6
+                                      td Blue
+                                      td 8475112
+                                      td 1
+                                      td $6
+                                      td
+                                        i(data-feather='more-vertical')
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

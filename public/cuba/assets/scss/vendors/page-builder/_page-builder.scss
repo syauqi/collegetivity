@@ -1,0 +1,787 @@
+/**=====================
+      Page Builder CSS Start
+==========================**/
+.cke {
+  z-index: 0 !important;
+}
+
+.page-builder {
+  .btn-screen {
+    padding: 0px 18px;
+    background: transparent;
+    color: $gray-60;
+    border: none;
+  }
+
+  .btn-code {
+    padding: 0px 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    border-right: 1px solid $light-color;
+    color: $gray-60;
+  }
+
+  .btn-grid {
+    background-color: $white;
+    color: $theme-body-sub-title-color !important;
+    border-right: 1px solid $light-semi-gray;
+    padding: 0px;
+    margin-right: 8px;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+
+  .ge-mainControls {
+    margin-bottom: 10px;
+
+    .ge-wrapper {
+      color: $white;
+      font-family: $font-rubik, $font-serif;
+
+      &.ge-fixed {
+        position: fixed;
+        z-index: 8;
+        top: 0;
+      }
+
+      &.ge-top {
+        .container {
+          margin: 0;
+          padding: 0;
+          width: auto;
+        }
+      }
+    }
+
+    .ge-addRowGroup {
+      .ge-row-icon {
+        display: inline-flex;
+        width: 50px;
+        margin: 0;
+
+        .column {
+          height: 10px;
+          background: var(--theme-deafult);
+          padding: 0;
+          border-left: 3px solid $white;
+        }
+      }
+    }
+
+    .ge-layout-mode {
+      ul {
+        li {
+          a {
+            cursor: pointer;
+
+            &:active {
+              background-color: var(--theme-secondary);
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    .btn:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  .ge-html-output {
+    width: 100%;
+    display: none;
+  }
+
+  .ge-canvas {
+    .ge-tools-drawer {
+      display: none;
+    }
+
+    &.ge-editing {
+      .ge-tools-drawer {
+        user-select: none;
+        margin: 0 0 5px;
+        display: block;
+
+        >a {
+          display: inline-block;
+          padding: 5px;
+
+          &:hover {
+            cursor: pointer;
+            color: var(--theme-deafult) !important;
+          }
+        }
+
+        .ge-details {
+          padding: 5px;
+          border-top: 1px solid $dark-color;
+          display: none;
+
+          .btn-group a {
+            color: $dark-color;
+
+            &:hover {
+              text-decoration: none;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .row {
+        background-color: $light-body-bg-color;
+        padding: 25px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 4px;
+
+        >.ge-tools-drawer {
+          text-align: right;
+          width: 100%;
+
+          >a {
+            color: $gray-60;
+            font-size: 11px;
+          }
+        }
+      }
+
+      .column {
+        background-color: $white;
+        border: 1px solid $light-color;
+        padding: 15px;
+        border-radius: 4px;
+
+        >.ge-tools-drawer {
+          a {
+            color: $gray-60;
+            font-size: 11px;
+          }
+
+          >a.ge-add-row {
+            color: $dark-color;
+          }
+        }
+      }
+
+      .ui-sortable-placeholder {
+        background: $light-color;
+        visibility: visible !important;
+        min-height: 50px;
+      }
+
+      .ge-content-type-tinymce.active {
+        outline: 1px dotted $light-gray;
+      }
+    }
+
+    &.ge-layout-phone {
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .col-sm-1 {
+        width: inherit;
+      }
+
+      .col-md-1 {
+        width: inherit;
+      }
+
+      .col-lg-1 {
+        width: inherit;
+      }
+
+      .col-sm-2 {
+        width: inherit;
+      }
+
+      .col-md-2 {
+        width: inherit;
+      }
+
+      .col-lg-2 {
+        width: inherit;
+      }
+
+      .col-sm-3 {
+        width: inherit;
+      }
+
+      .col-md-3 {
+        width: inherit;
+      }
+
+      .col-lg-3 {
+        width: inherit;
+      }
+
+      .col-sm-4 {
+        width: inherit;
+      }
+
+      .col-md-4 {
+        width: inherit;
+      }
+
+      .col-lg-4 {
+        width: inherit;
+      }
+
+      .col-sm-5 {
+        width: inherit;
+      }
+
+      .col-md-5 {
+        width: inherit;
+      }
+
+      .col-lg-5 {
+        width: inherit;
+      }
+
+      .col-sm-6 {
+        width: inherit;
+      }
+
+      .col-md-6 {
+        width: inherit;
+      }
+
+      .col-lg-6 {
+        width: inherit;
+      }
+
+      .col-sm-7 {
+        width: inherit;
+      }
+
+      .col-md-7 {
+        width: inherit;
+      }
+
+      .col-lg-7 {
+        width: inherit;
+      }
+
+      .col-sm-8 {
+        width: inherit;
+      }
+
+      .col-md-8 {
+        width: inherit;
+      }
+
+      .col-lg-8 {
+        width: inherit;
+      }
+
+      .col-sm-9 {
+        width: inherit;
+      }
+
+      .col-md-9 {
+        width: inherit;
+      }
+
+      .col-lg-9 {
+        width: inherit;
+      }
+
+      .col-sm-10 {
+        width: inherit;
+      }
+
+      .col-md-10 {
+        width: inherit;
+      }
+
+      .col-lg-10 {
+        width: inherit;
+      }
+
+      .col-sm-11 {
+        width: inherit;
+      }
+
+      .col-md-11 {
+        width: inherit;
+      }
+
+      .col-lg-11 {
+        width: inherit;
+      }
+
+      .col-sm-12 {
+        width: inherit;
+      }
+
+      .col-md-12 {
+        width: inherit;
+      }
+
+      .col-lg-12 {
+        width: inherit;
+      }
+
+      .col-1 {
+        width: 8.33333333%;
+      }
+
+      .col-2 {
+        width: 16.66666667%;
+      }
+
+      .col-3 {
+        width: 25%;
+      }
+
+      .col-4 {
+        width: 33.33333333%;
+      }
+
+      .col-5 {
+        width: 41.66666667%;
+      }
+
+      .col-6 {
+        width: 50%;
+      }
+
+      .col-7 {
+        width: 58.33333333%;
+      }
+
+      .col-8 {
+        width: 66.66666667%;
+      }
+
+      .col-9 {
+        width: 75%;
+      }
+
+      .col-10 {
+        width: 83.33333333%;
+      }
+
+      .col-11 {
+        width: 91.66666667%;
+      }
+
+      .col-12 {
+        width: 100%;
+      }
+    }
+
+    &.ge-layout-tablet {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .col-1 {
+        width: inherit;
+      }
+
+      .col-md-1 {
+        width: inherit;
+      }
+
+      .col-lg-1 {
+        width: inherit;
+      }
+
+      .col-2 {
+        width: inherit;
+      }
+
+      .col-md-2 {
+        width: inherit;
+      }
+
+      .col-lg-2 {
+        width: inherit;
+      }
+
+      .col-3 {
+        width: inherit;
+      }
+
+      .col-md-3 {
+        width: inherit;
+      }
+
+      .col-lg-3 {
+        width: inherit;
+      }
+
+      .col-4 {
+        width: inherit;
+      }
+
+      .col-md-4 {
+        width: inherit;
+      }
+
+      .col-lg-4 {
+        width: inherit;
+      }
+
+      .col-5 {
+        width: inherit;
+      }
+
+      .col-md-5 {
+        width: inherit;
+      }
+
+      .col-lg-5 {
+        width: inherit;
+      }
+
+      .col-6 {
+        width: inherit;
+      }
+
+      .col-md-6 {
+        width: inherit;
+      }
+
+      .col-lg-6 {
+        width: inherit;
+      }
+
+      .col-7 {
+        width: inherit;
+      }
+
+      .col-md-7 {
+        width: inherit;
+      }
+
+      .col-lg-7 {
+        width: inherit;
+      }
+
+      .col-8 {
+        width: inherit;
+      }
+
+      .col-md-8 {
+        width: inherit;
+      }
+
+      .col-lg-8 {
+        width: inherit;
+      }
+
+      .col-9 {
+        width: inherit;
+      }
+
+      .col-md-9 {
+        width: inherit;
+      }
+
+      .col-lg-9 {
+        width: inherit;
+      }
+
+      .col-10 {
+        width: inherit;
+      }
+
+      .col-md-10 {
+        width: inherit;
+      }
+
+      .col-lg-10 {
+        width: inherit;
+      }
+
+      .col-11 {
+        width: inherit;
+      }
+
+      .col-md-11 {
+        width: inherit;
+      }
+
+      .col-lg-11 {
+        width: inherit;
+      }
+
+      .col-12 {
+        width: inherit;
+      }
+
+      .col-md-12 {
+        width: inherit;
+      }
+
+      .col-lg-12 {
+        width: inherit;
+      }
+
+      .col-sm-1 {
+        width: 8.33333333%;
+      }
+
+      .col-sm-2 {
+        width: 16.66666667%;
+      }
+
+      .col-sm-3 {
+        width: 25%;
+      }
+
+      .col-sm-4 {
+        width: 33.33333333%;
+      }
+
+      .col-sm-5 {
+        width: 41.66666667%;
+      }
+
+      .col-sm-6 {
+        width: 50%;
+      }
+
+      .col-sm-7 {
+        width: 58.33333333%;
+      }
+
+      .col-sm-8 {
+        width: 66.66666667%;
+      }
+
+      .col-sm-9 {
+        width: 75%;
+      }
+
+      .col-sm-10 {
+        width: 83.33333333%;
+      }
+
+      .col-sm-11 {
+        width: 91.66666667%;
+      }
+
+      .col-sm-12 {
+        width: 100%;
+      }
+    }
+
+    &.ge-layout-desktop {
+      max-width: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+
+      .col-1 {
+        width: inherit;
+      }
+
+      .col-sm-1 {
+        width: inherit;
+      }
+
+      .col-lg-1 {
+        width: inherit;
+      }
+
+      .col-2 {
+        width: inherit;
+      }
+
+      .col-sm-2 {
+        width: inherit;
+      }
+
+      .col-lg-2 {
+        width: inherit;
+      }
+
+      .col-3 {
+        width: inherit;
+      }
+
+      .col-sm-3 {
+        width: inherit;
+      }
+
+      .col-lg-3 {
+        width: inherit;
+      }
+
+      .col-4 {
+        width: inherit;
+      }
+
+      .col-sm-4 {
+        width: inherit;
+      }
+
+      .col-lg-4 {
+        width: inherit;
+      }
+
+      .col-5 {
+        width: inherit;
+      }
+
+      .col-sm-5 {
+        width: inherit;
+      }
+
+      .col-lg-5 {
+        width: inherit;
+      }
+
+      .col-6 {
+        width: inherit;
+      }
+
+      .col-sm-6 {
+        width: inherit;
+      }
+
+      .col-lg-6 {
+        width: inherit;
+      }
+
+      .col-7 {
+        width: inherit;
+      }
+
+      .col-sm-7 {
+        width: inherit;
+      }
+
+      .col-lg-7 {
+        width: inherit;
+      }
+
+      .col-8 {
+        width: inherit;
+      }
+
+      .col-sm-8 {
+        width: inherit;
+      }
+
+      .col-lg-8 {
+        width: inherit;
+      }
+
+      .col-9 {
+        width: inherit;
+      }
+
+      .col-sm-9 {
+        width: inherit;
+      }
+
+      .col-lg-9 {
+        width: inherit;
+      }
+
+      .col-10 {
+        width: inherit;
+      }
+
+      .col-sm-10 {
+        width: inherit;
+      }
+
+      .col-lg-10 {
+        width: inherit;
+      }
+
+      .col-11 {
+        width: inherit;
+      }
+
+      .col-sm-11 {
+        width: inherit;
+      }
+
+      .col-lg-11 {
+        width: inherit;
+      }
+
+      .col-12 {
+        width: inherit;
+      }
+
+      .col-sm-12 {
+        width: inherit;
+      }
+
+      .col-lg-12 {
+        width: inherit;
+      }
+
+      .col-md-1 {
+        width: 8.33333333%;
+      }
+
+      .col-md-2 {
+        width: 16.66666667%;
+      }
+
+      .col-md-3 {
+        width: 25%;
+      }
+
+      .col-md-4 {
+        width: 33.33333333%;
+      }
+
+      .col-md-5 {
+        width: 41.66666667%;
+      }
+
+      .col-md-6 {
+        width: 50%;
+      }
+
+      .col-md-7 {
+        width: 58.33333333%;
+      }
+
+      .col-md-8 {
+        width: 66.66666667%;
+      }
+
+      .col-md-9 {
+        width: 75%;
+      }
+
+      .col-md-10 {
+        width: 83.33333333%;
+      }
+
+      .col-md-11 {
+        width: 91.66666667%;
+      }
+
+      .col-md-12 {
+        width: 100%;
+      }
+    }
+  }
+
+  .ge-content-type-ckeditor {
+    padding: 10px;
+    color: $dark-gray;
+  }
+}
+
+/**=====================
+      Page Builder CSS Ends
+==========================**/

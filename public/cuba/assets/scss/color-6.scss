@@ -1,0 +1,140 @@
+/*! -----------------------------------------------------------------------------------
+
+    Template Name: Cuba Admin
+    Template URI: http://admin.pixelstrap.com/cuba/theme
+    Description: This is Admin theme
+    Author: Pixelstrap
+    Author URI: https://themeforest.net/user/pixelstrap
+
+-----------------------------------------------------------------------------------
+
+
+ */
+
+// *** utils ***
+
+
+@import "utils/variables";
+
+:root {
+    --theme-deafult: #7366ff;
+    --theme-secondary: #f73164;
+}
+
+$primary-color: #3949ab;
+$secondary-color : #4fc3f7;
+$gradient-primary: linear-gradient($secondary-color, $primary-color);
+$gradient-primary-direction: linear-gradient(to right, lighten($primary-color, 10%), darken($primary-color, 8%));
+$gradient-secondary-direction: linear-gradient(to right, lighten($secondary-color, 10%), darken($secondary-color, 5%));
+$all-focus-outline-color: $primary-color;
+$code-tag-color: $primary-color;
+$list-group-active-bg-color: $primary-color;
+$list-group-active-border-color: $primary-color;
+$tour-color: $primary-color;
+$main-header-right-toggle-color : $primary-color;
+$main-header-right-nav-icon-color : $primary-color;
+$light-body-bg-color: rgba($primary-color, 0.10);
+$page-body-bg-color: $light-color;
+$pre-tag-bg-color: rgba($primary-color, 0.05);
+// *** base ***
+@import "base/reset";
+@import "base/typography";
+
+
+//  *** components ***
+@import "components/according.scss";
+@import "components/alert.scss";
+@import "components/avatars.scss";
+@import "components/badge.scss";
+@import "components/bookmark.scss";
+@import "components/breadcrumb.scss";
+@import "components/builders.scss";
+
+@import "components/buttons.scss";
+
+@import "components/card.scss";
+@import "components/color.scss";
+@import "components/datatable.scss";
+@import "components/datepicker.scss";
+@import "components/dropdown.scss";
+@import "components/form-builder.scss";
+@import "components/form-input.scss";
+@import "components/form-wizard.scss";
+@import "components/forms.scss";
+@import "components/form_builder-2.scss";
+@import "components/icons.scss";
+@import "components/list.scss";
+@import "components/loader.scss";
+@import "components/popover.scss";
+@import "components/print.scss";
+@import "components/radio.scss";
+@import "components/ribbon.scss";
+@import "components/switch.scss";
+@import "components/tab.scss";
+@import "components/table.scss";
+@import "components/touchspin.scss";
+@import "components/tour.scss";
+@import "components/tree.scss";
+@import "components/typeahead-search.scss";
+
+
+
+//	*** pages ***
+
+@import "pages/blog.scss";
+@import "pages/bookmark-app.scss";
+@import "pages/cart.scss";
+@import "pages/chart.scss";
+@import "pages/chat.scss";
+@import "pages/checkout.scss";
+@import "pages/comingsoon.scss";
+@import "pages/contacts.scss";
+@import "pages/dashboard_2.scss";
+@import "pages/dashboard_default.scss";
+@import "pages/ecommerce.scss";
+@import "pages/email-application.scss";
+@import "pages/errorpage.scss";
+@import "pages/faq.scss";
+@import "pages/file.scss";
+@import "pages/gallery.scss";
+@import "pages/internationalization.scss";
+@import "pages/job-search.scss";
+@import "pages/jsgrid.scss";
+@import "pages/kanban.scss";
+@import "pages/knowledgebase.scss";
+@import "pages/landing.scss";
+@import "pages/language.scss";
+@import "pages/learning.scss";
+@import "pages/login.scss";
+@import "pages/megaoption.scss";
+@import "pages/order-history.scss";
+@import "pages/page.scss";
+@import "pages/pricing.scss";
+@import "pages/progress.scss";
+@import "pages/projectlist.scss";
+@import "pages/social-app.scss";
+@import "pages/task.scss";
+@import "pages/timeline-v.scss";
+@import "pages/timeliny.scss";
+@import "pages/user-profile.scss";
+@import "pages/wishlist.scss";
+
+
+/* ---------------------
+	*** themes ***
+-----------------------*/
+@import "themes/dark.scss";
+@import "themes/dark-sidebar.scss";
+@import "themes/theme-customizer.scss";
+
+// *** layout *** 
+
+@import "layout/footer.scss";
+@import "layout/grid.scss";
+@import "layout/header.scss";
+@import "layout/navs.scss";
+@import "layout/search.scss";
+@import "layout/select2.scss";
+@import "layout/sidebar.scss";
+@import "layout/rtl.scss";
+@import "layout/box-layout.scss";

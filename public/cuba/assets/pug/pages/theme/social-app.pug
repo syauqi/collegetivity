@@ -1,0 +1,1592 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var tooltip               = true;
+- var photo_swipe           = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Social App
+ 
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Apps
+                                      li.breadcrumb-item.active Social App
+                    // Container-fluid starts
+                    .container-fluid
+                      .user-profile.social-app-profile
+                        .row
+                          // user profile first-style start
+                          .col-sm-12.box-col-12
+                            .card.hovercard.text-center
+                              .cardheader.socialheader
+                              .user-image
+                                .avatar
+                                  img(alt='', src='../assets/images/user/1.jpg')
+                                .icon-wrapper
+                                  i.icofont.icofont-pencil-alt-5
+                                ul.share-icons
+                                  li
+                                    a(href='#').social-icon.bg-primary
+                                      i(class='fa fa-smile-o')
+                                  li
+                                    a(href='#').social-icon.bg-secondary
+                                      i(class='fa fa-wechat')
+                                  li
+                                    a(href='#').social-icon.bg-warning
+                                      i(class='fa fa-share-alt')
+                              .info.market-tabs.p-0
+                                ul#top-tab.nav.nav-tabs.border-tab.tabs-scoial(role='tablist')
+                                  li.nav-item
+                                    a#top-timeline.nav-link.active(data-toggle='tab', href='#timeline', role='tab', aria-controls='timeline', aria-selected='true')
+                                      | Timline
+                                  li.nav-item
+                                    a#top-about.nav-link(data-toggle='tab', href='#about', role='tab', aria-controls='about', aria-selected='false')
+                                      | About
+                                  li.nav-item
+                                    .user-designation
+                                    .title
+                                      a(target='_blank', href='') ElANA
+                                    .desc.mt-2 general manager
+                                  li.nav-item
+                                    a#top-friends.nav-link(data-toggle='tab', href='#friends', role='tab', aria-controls='friends', aria-selected='false')
+                                      | Friends
+                                  li.nav-item
+                                    a#top-photos.nav-link(data-toggle='tab', href='#photos', role='tab', aria-controls='photos', aria-selected='false')
+                                      | Photos
+                        #top-tabContent.tab-content
+                          .tab-pane.fade.show.active#timeline(role='tabpanel', aria-labelledby='timeline')
+                            .row
+                              .col-xl-3.xl-40.col-lg-12.col-md-5.box-col-4
+                                #accordionExample.default-according.style-1.faq-accordion
+                                  .card
+                                    #headingOne.card-header
+                                      h2.mb-0
+                                        button.btn.btn-link.btn-block.text-left(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                                          | My Profile
+                                    #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                                          .card-body.socialprofile.filter-cards-view
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(src='../assets/images/user/1.jpg', alt='')
+                                              .media-body
+                                                h6.font-primary.f-w-600 My Page
+                                                span.d-block
+                                                  span
+                                                    i.fa.fa-comments-o  
+                                                    span.px-2 Messages
+                                                        span.badge.badge-pill.badge-light 9
+                                                span.d-block
+                                                  span
+                                                    i.fa.fa-bell-o  
+                                                    span.px-2 notification
+                                                        span.badge.badge-pill.badge-light 9
+                                            .social-btngroup.d-flex
+                                              button.btn.btn-primary.text-center(type='button') Likes
+                                              button.btn.btn-light.text-center(type='button') View
+                                            .likes-profile.text-center
+                                              h5 
+                                                span 
+                                                  i.fa.fa-heart.font-danger
+                                                  |  884
+                                            div.text-center
+                                              | 35 New Likes This Week
+                                            .customers.text-center.social-group
+                                              ul
+                                                li.d-inline-block
+                                                  img.img-40.rounded-circle(src='../assets/images/user/3.jpg', alt=''
+                                                  data-container='body', data-toggle='popover', data-placement='top', title='', data-original-title='Johny Waston')
+                                                li.d-inline-block
+                                                  img.img-40.rounded-circle(src='../assets/images/user/5.jpg', alt=''
+                                                  data-container='body', data-toggle='popover', data-placement='top', title='', data-original-title='Andew Jon')
+                                                li.d-inline-block
+                                                  img.img-40.rounded-circle(src='../assets/images/user/1.jpg', alt=''
+                                                  data-container='body', data-toggle='popover', data-placement='top', title='', data-original-title='Comeren Diaz')
+                                                li.d-inline-block
+                                                  img.img-40.rounded-circle(src='../assets/images/user/2.png', alt=''
+                                                  data-container='body', data-toggle='popover', data-placement='top', title='', data-original-title='Bucky Barnes')
+                                                li.d-inline-block
+                                                  img.img-40.rounded-circle(src='../assets/images/user/8.jpg', alt=''
+                                                  data-container='body', data-toggle='popover', data-placement='top', title='', data-original-title='Jason Borne')
+                                                li.d-inline-block
+                                                  img.img-40.rounded-circle(src='../assets/images/user/11.png', alt='' data-container='body', data-toggle='popover', data-placement='top', title='', data-original-title='Comeren Diaz')
+                                            img.img-fluid.mt-5(alt='', src='../assets/images/social-app/timeline-3.png')
+                                  .card
+                                    #headingTwo.card-header
+                                      h2.mb-0
+                                        button.btn.btn-link.btn-block.text-left.collapsed(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='true' aria-controls='collapseTwo')
+                                          | Mutual Friends
+                                    #collapseTwo.collapse.show(aria-labelledby='headingTwo' data-parent='#accordionExample')
+                                          .card-body.social-status.filter-cards-view
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/2.png', alt='')
+                                              .social-status.social-online
+                                              .media-body
+                                                span.f-w-600.d-block Bucky Barnes
+                                                span.d-block winter@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/10.jpg', alt='')
+                                              .social-status.social-busy
+                                              .media-body
+                                                span.f-w-600.d-block Sarah Loren
+                                                span.d-block barnes@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/6.jpg', alt='')
+                                              .social-status.social-offline
+                                              .media-body
+                                                span.f-w-600.d-block Jason Borne
+                                                span.d-block jasonb@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/8.jpg', alt='')
+                                              .social-status.social-offline
+                                              .media-body
+                                                span.f-w-600.d-block Comeren Diaz
+                                                span.d-block comere@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/14.png', alt='')
+                                              .social-status.social-online
+                                              .media-body
+                                                span.f-w-600.d-block Andew Jon
+                                                span.d-block andrewj@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/4.jpg', alt='')
+                                              .social-status.social-busy
+                                              .media-body
+                                                span.f-w-600.d-block Johny Waston
+                                                span.d-block johny@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/3.png', alt='')
+                                              .social-status.social-offline
+                                              .media-body
+                                                span.f-w-600.d-block Johny William
+                                                span.d-block johnyw@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/2.png', alt='')
+                                              .social-status.social-online
+                                              .media-body
+                                                span.f-w-600.d-block Bucky Barnes
+                                                span.d-block winter@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/10.jpg', alt='')
+                                              .social-status.social-busy
+                                              .media-body
+                                                span.f-w-600.d-block Sarah Loren
+                                                span.d-block barnes@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/6.jpg', alt='')
+                                              .social-status.social-offline
+                                              .media-body
+                                                span.f-w-600.d-block Jason Borne
+                                                span.d-block jasonb@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/8.jpg', alt='')
+                                              .social-status.social-offline
+                                              .media-body
+                                                span.f-w-600.d-block Comeren Diaz
+                                                span.d-block comere@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/14.png', alt='')
+                                              .social-status.social-online
+                                              .media-body
+                                                span.f-w-600.d-block Andew Jon
+                                                span.d-block andrewj@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/4.jpg', alt='')
+                                              .social-status.social-busy
+                                              .media-body
+                                                span.f-w-600.d-block Johny Waston
+                                                span.d-block johny@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/3.png', alt='')
+                                              .social-status.social-offline
+                                              .media-body
+                                                span.f-w-600.d-block Johny William
+                                                span.d-block johnyw@gmail.com
+                                  .card
+                                    #headingThree.card-header
+                                      h2.mb-0
+                                        button.btn.btn-link.btn-block.text-left.collapsed(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='true' aria-controls='collapseThree')
+                                          | Activity Feed
+                                    #collapseThree.collapse.show(aria-labelledby='headingThree' data-parent='#accordionExample')
+                                          .card-body.social-status.filter-cards-view
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/10.jpg', alt='')
+                                              .media-body
+                                                span.f-w-600.d-block Andew Jon
+                                                p Commented on Shaun Park's 
+                                                  a(href='#') Photo
+                                                span.light-span 20 min Ago
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/3.jpg', alt='')
+                                              .media-body
+                                                span.f-w-600.d-block Johny Waston
+                                                p Commented on Shaun Park's 
+                                                  a(href='#') Photo
+                                                span.light-span 1 hour Ago
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/5.jpg', alt='')
+                                              .media-body
+                                                span.f-w-600.d-block Comeren Diaz
+                                                p Commented on Shaun Park's 
+                                                  a(href='#') Photo
+                                                span.light-span 1 days Ago
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/4.jpg', alt='')
+                                              .media-body
+                                                span.f-w-600.d-block Sarah Loren
+                                                p Commented on Shaun Park's 
+                                                  a(href='#') Photo
+                                                span.light-span 2 days Ago
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/3.jpg', alt='')
+                                              .media-body
+                                                span.f-w-600.d-block Johny Waston
+                                                p Commented on Shaun Park's 
+                                                  a(href='#') Photo
+                                                span.light-span 5 days Ago
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/5.jpg', alt='')
+                                              .media-body
+                                                span.f-w-600.d-block Comeren Diaz
+                                                p Commented on Shaun Park's 
+                                                  a(href='#') Photo
+                                                span.light-span 6 days Ago
+
+
+                              .col-xl-6.xl-60.col-lg-12.col-md-7.box-col-8
+                                .row
+                                  .col-sm-12
+                                    .card
+                                      .card-body
+                                        .new-users-social
+                                          .media
+                                            img.rounded-circle.image-radius.m-r-15(src='../assets/images/user/1.jpg', alt='')
+                                            .media-body
+                                              h6.mb-0.f-w-700 ELANA
+                                              p January, 12,2019
+                                            span.pull-right.mt-0
+                                              i(data-feather='more-vertical')
+                                        img.img-fluid(alt='', src='../assets/images/social-app/timeline-1.png')
+                                        .timeline-content
+                                          p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed urna in justo euismod condimentum. Fusce 
+                                            | placerat enim et odio molestie sagittis.
+                                          div.like-content
+                                            span
+                                              i.fa.fa-heart.font-danger
+                                            span.pull-right.comment-number
+                                              span 20 
+                                              span
+                                                i.fa.fa-share-alt.mr-0
+                                            span.pull-right.comment-number
+                                              span 10 
+                                              span
+                                                i.fa.fa-comments-o
+                                          .social-chat
+                                            .your-msg
+                                              .media
+                                                img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/1.jpg')
+                                                .media-body
+                                                  span.f-w-600 Jason Borne 
+                                                    span 1 Year Ago 
+                                                      i.fa.fa-reply.font-primary
+                                                  p we are working for the dance and sing songs. this car is very awesome for the youngster. please vote this car and like our post
+                                            .other-msg
+                                              .media
+                                                img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/2.png')
+                                                .media-body
+                                                  span.f-w-600 Alexendra Dhadio 
+                                                    span 1 Month Ago 
+                                                      i.fa.fa-reply.font-primary
+                                                  p yes, really very awesome car i see the features of this car in the official website of #Mercedes-Benz and really impressed :-)
+                                            .other-msg
+                                              .media
+                                                img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/3.png')
+                                                .media-body
+                                                  span.f-w-600 Olivia Jon 
+                                                    span 15 Days Ago 
+                                                      i.fa.fa-reply.font-primary
+                                                  p i like lexus cars, lexus cars are most beautiful with the awesome features, but this car is really outstanding than lexus
+                                            .your-msg
+                                              .media
+                                                img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/1.jpg')
+                                                .media-body
+                                                  span.f-w-600 Issa Bell 
+                                                    span 1 Year Ago 
+                                                      i.fa.fa-reply.font-primary
+                                                  p we are working for the dance and sing songs. this car is very awesome for the youngster. please vote this car and like our post
+                                            .text-center
+                                              a(href='#') More Commnets
+                                          .comments-box
+                                              .media
+                                                img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/1.jpg')
+                                                .media-body
+                                                  .input-group.text-box
+                                                    input.form-control.input-txt-bx(type='text', name='message-to-send', placeholder='Post Your commnets')
+                                                    .input-group-append
+                                                      button.btn.btn-transparent(type='button')
+                                                        i.fa.fa-smile-o   
+                                  .col-sm-12
+                                    .card
+                                      .card-body
+                                        .new-users-social
+                                          .media
+                                            img.rounded-circle.image-radius.m-r-15(src='../assets/images/user/1.jpg', alt='')
+                                            .media-body
+                                              h6.mb-0.f-w-700 ELANA
+                                              p January, 12,2019
+                                            span.pull-right.mt-0
+                                              i(data-feather='more-vertical')
+                                        img.img-fluid(alt='', src='../assets/images/social-app/timeline-2.png')
+                                        .timeline-content
+                                          p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed urna in justo euismod condimentum. Fusce 
+                                            | placerat enim et odio molestie sagittis.
+                                          div.like-content
+                                            span
+                                              i.fa.fa-heart.font-danger
+                                            span.pull-right.comment-number
+                                              span 20 
+                                              span
+                                                i.fa.fa-share-alt.mr-0
+                                            span.pull-right.comment-number
+                                              span 10 
+                                              span
+                                                i.fa.fa-comments-o
+                                          .social-chat
+                                            .your-msg
+                                              .media
+                                                img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/1.jpg')
+                                                .media-body
+                                                  span.f-w-600 Jason Borne 
+                                                    span 1 Year Ago 
+                                                      i.fa.fa-reply.font-primary
+                                                  p we are working for the dance and sing songs. this car is very awesome for the youngster. please vote this car and like our post
+                                            .your-msg
+                                              .media
+                                                img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/1.jpg')
+                                                .media-body
+                                                  span.f-w-600 Issa Bell 
+                                                    span 1 Year Ago 
+                                                      i.fa.fa-reply.font-primary
+                                                  p we are working for the dance and sing songs. this car is very awesome for the youngster. please vote this car and like our post
+                                            .text-center
+                                              a(href='#') More Commnets
+                                          .comments-box
+                                              .media
+                                                img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/1.jpg')
+                                                .media-body
+                                                  .input-group.text-box
+                                                    input.form-control.input-txt-bx(type='text', name='message-to-send', placeholder='Post Your commnets')
+                                                    .input-group-append
+                                                      button.btn.btn-transparent(type='button')
+                                                        i.fa.fa-smile-o   
+                              .col-xl-3.xl-100.box-col-12
+                                #accordionoc1.default-according.style-1.faq-accordion.job-accordion
+                                  .row
+                                    .col-xl-12.xl-50.box-col-6
+                                      .card
+                                        .card-header
+                                          h5.mb-0
+                                            button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon2', aria-expanded='true', aria-controls='collapseicon2')
+                                              | Profile Intro
+                                        #collapseicon2.collapse.show(aria-labelledby='collapseicon2', data-parent='#accordion')
+                                          .card-body.filter-cards-view
+                                            span.f-w-600 About Me :
+                                            p  
+                                              | Hi, I’m elana, I’m 30 and I work as a 
+                                              | web Designer for the “Daydreams” 
+                                              | Agency in Pier 56.
+                                            span.f-w-600 Favourite TV shows :
+                                            p  
+                                              | Breaking Good, RedDevil, People of
+                                              | Interest, The Running Dead, 
+                                              | Found, American Guy.
+                                            span.f-w-600 Favourite Music Bands :
+                                            p  
+                                              | Breaking Good, RedDevil, People of
+                                              | Interest, The Running Dead, 
+                                              | Found, American Guy.
+                                            div.social-network.theme-form
+                                              span.f-w-600 Social Networks
+                                              button.btn.social-btn.btn-fb.mb-2.text-center
+                                                i.fa.fa-facebook.m-r-5
+                                                | Facebook
+                                              button.btn.social-btn.btn-twitter.mb-2.text-center
+                                                i.fa.fa-twitter.m-r-5
+                                                | Twitter
+                                              button.btn.social-btn.btn-google.text-center
+                                                i.fa.fa-dribbble.m-r-5
+                                                | Dribbble
+                                    .col-xl-12.xl-50.box-col-6
+                                      .card
+                                        .card-header
+                                          h5.mb-0
+                                            button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon3', aria-expanded='true', aria-controls='collapseicon3')
+                                              | Followers
+                                        #collapseicon3.collapse.show(aria-labelledby='collapseicon3', data-parent='#accordion')
+                                          .card-body.social-list.filter-cards-view
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/2.png')
+                                              .media-body
+                                                span.d-block Bucky Barnes
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/3.png')
+                                              .media-body
+                                                span.d-block Sarah Loren
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/3.jpg')
+                                              .media-body
+                                                span.d-block Jason Borne
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/10.jpg')
+                                              .media-body
+                                                span.d-block Comeren Diaz
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/11.png')
+                                              .media-body
+                                                span.d-block Andew Jon
+                                                a(href='#') Add Friend
+                                    .col-xl-12.xl-50.box-col-6
+                                      .card
+                                        .card-header
+                                          h5.mb-0
+                                            button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon10', aria-expanded='true', aria-controls='collapseicon10')
+                                              | Followings
+                                        #collapseicon10.collapse.show(aria-labelledby='collapseicon10', data-parent='#accordion')
+                                          .card-body.social-list.filter-cards-view
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/3.png')
+                                              .media-body
+                                                span.d-block Sarah Loren
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/2.png')
+                                              .media-body
+                                                span.d-block Bucky Barnes
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/10.jpg')
+                                              .media-body
+                                                span.d-block Comeren Diaz
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/3.jpg')
+                                              .media-body
+                                                span.d-block Jason Borne
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/11.png')
+                                              .media-body
+                                                span.d-block Andew Jon
+                                                a(href='#') Add Friend
+                                    .col-xl-12.xl-50.box-col-6
+                                      .card
+                                        .card-header
+                                          h5.mb-0
+                                            button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon4', aria-expanded='true', aria-controls='collapseicon4')
+                                              | Latest Photos
+                                        #collapseicon4.collapse.show(data-parent='#accordion', aria-labelledby='collapseicon4')
+                                          .card-body.photos.filter-cards-view.px-0
+                                            ul.text-center
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-1.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-2.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-3.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-4.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-5.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-6.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-7.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-8.png')
+              
+                                    .col-xl-12.xl-50.box-col-6
+                                      .card
+                                        .card-header
+                                          h5.mb-0
+                                            button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon13', aria-expanded='true', aria-controls='collapseicon13')
+                                              | Friends
+                                        #collapseicon13.collapse.show(data-parent='#accordion', aria-labelledby='collapseicon13')
+                                          .card-body.avatar-showcase.filter-cards-view
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/3.jpg', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/5.jpg', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/1.jpg', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/2.png', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/3.png', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/6.jpg', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/10.jpg', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/14.png', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/1.jpg', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/4.jpg', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/11.png', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/8.jpg', alt='#')
+                                    .col-xl-12.xl-50.box-col-6
+                                      .card
+                                        img.img-fluid(src='../assets/images/social-app/timeline-4.png', alt='')
+                          .tab-pane.fade#about(role='tabpanel', aria-labelledby='about')
+                            .row
+                              .col-xl-3.xl-40.col-lg-12.col-md-5
+                                #accordionExample1.default-according.style-1.faq-accordion
+                                  .card
+                                    #headingOneone.card-header
+                                      h2.mb-0
+                                        button.btn.btn-link.btn-block.text-left(type='button' data-toggle='collapse' data-target='#collapseOneone' aria-expanded='true' aria-controls='collapseOneone')
+                                          | My Profile
+                                    #collapseOneone.collapse.show(aria-labelledby='headingOneone' data-parent='#accordionExample1')
+                                          .card-body.socialprofile.filter-cards-view
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(src='../assets/images/user/1.jpg', alt='')
+                                              .media-body
+                                                h6.font-primary.f-w-600 My Page
+                                                span.d-block
+                                                  span
+                                                    i.fa.fa-comments-o  
+                                                    span.px-2 Messages
+                                                        span.badge.badge-pill.badge-light 9
+                                                span.d-block
+                                                  span
+                                                    i.fa.fa-bell-o  
+                                                    span.px-2 notification
+                                                        span.badge.badge-pill.badge-light 9
+                                            .social-btngroup.d-flex
+                                              button.btn.btn-primary.text-center(type='button') Likes
+                                              button.btn.btn-light.text-center(type='button') View
+                                            .likes-profile.text-center
+                                              h5 
+                                                span 
+                                                  i.fa.fa-heart.font-danger
+                                                  |  884
+                                            div.text-center
+                                              | 35 New Likes This Week
+                                            .customers.text-center.social-group
+                                              ul
+                                                li.d-inline-block
+                                                  img.img-40.rounded-circle(src='../assets/images/user/3.jpg', alt=''
+                                                  data-container='body', data-toggle='popover', data-placement='top', title='', data-original-title='Johny Waston')
+                                                li.d-inline-block
+                                                  img.img-40.rounded-circle(src='../assets/images/user/5.jpg', alt=''
+                                                  data-container='body', data-toggle='popover', data-placement='top', title='', data-original-title='Andew Jon')
+                                                li.d-inline-block
+                                                  img.img-40.rounded-circle(src='../assets/images/user/1.jpg', alt=''
+                                                  data-container='body', data-toggle='popover', data-placement='top', title='', data-original-title='Comeren Diaz')
+                                                li.d-inline-block
+                                                  img.img-40.rounded-circle(src='../assets/images/user/2.png', alt=''
+                                                  data-container='body', data-toggle='popover', data-placement='top', title='', data-original-title='Bucky Barnes')
+                                                li.d-inline-block
+                                                  img.img-40.rounded-circle(src='../assets/images/user/8.jpg', alt=''
+                                                  data-container='body', data-toggle='popover', data-placement='top', title='', data-original-title='Jason Borne')
+                                                li.d-inline-block
+                                                  img.img-40.rounded-circle(src='../assets/images/user/11.png', alt='' data-container='body', data-toggle='popover', data-placement='top', title='', data-original-title='Comeren Diaz')
+                                            img.img-fluid.mt-5(alt='', src='../assets/images/social-app/timeline-3.png')
+                                  .card
+                                    #headingTwotwo.card-header
+                                      h2.mb-0
+                                        button.btn.btn-link.btn-block.text-left.collapsed(type='button' data-toggle='collapse' data-target='#collapseTwotwo' aria-expanded='true' aria-controls='collapseTwotwo')
+                                          | Mutual Friends
+                                    #collapseTwotwo.collapse.show(aria-labelledby='headingTwotwo' data-parent='#accordionExample1')
+                                          .card-body.social-status.filter-cards-view
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/2.png', alt='')
+                                              .social-status.social-online
+                                              .media-body
+                                                span.f-w-600.d-block Bucky Barnes
+                                                span.d-block winter@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/10.jpg', alt='')
+                                              .social-status.social-busy
+                                              .media-body
+                                                span.f-w-600.d-block Sarah Loren
+                                                span.d-block barnes@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/6.jpg', alt='')
+                                              .social-status.social-offline
+                                              .media-body
+                                                span.f-w-600.d-block Jason Borne
+                                                span.d-block jasonb@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/8.jpg', alt='')
+                                              .social-status.social-offline
+                                              .media-body
+                                                span.f-w-600.d-block Comeren Diaz
+                                                span.d-block comere@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/14.png', alt='')
+                                              .social-status.social-online
+                                              .media-body
+                                                span.f-w-600.d-block Andew Jon
+                                                span.d-block andrewj@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/4.jpg', alt='')
+                                              .social-status.social-busy
+                                              .media-body
+                                                span.f-w-600.d-block Johny Waston
+                                                span.d-block johny@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/3.png', alt='')
+                                              .social-status.social-offline
+                                              .media-body
+                                                span.f-w-600.d-block Johny William
+                                                span.d-block johnyw@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/2.png', alt='')
+                                              .social-status.social-online
+                                              .media-body
+                                                span.f-w-600.d-block Bucky Barnes
+                                                span.d-block winter@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/10.jpg', alt='')
+                                              .social-status.social-busy
+                                              .media-body
+                                                span.f-w-600.d-block Sarah Loren
+                                                span.d-block barnes@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/6.jpg', alt='')
+                                              .social-status.social-offline
+                                              .media-body
+                                                span.f-w-600.d-block Jason Borne
+                                                span.d-block jasonb@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/8.jpg', alt='')
+                                              .social-status.social-offline
+                                              .media-body
+                                                span.f-w-600.d-block Comeren Diaz
+                                                span.d-block comere@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/14.png', alt='')
+                                              .social-status.social-online
+                                              .media-body
+                                                span.f-w-600.d-block Andew Jon
+                                                span.d-block andrewj@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/4.jpg', alt='')
+                                              .social-status.social-busy
+                                              .media-body
+                                                span.f-w-600.d-block Johny Waston
+                                                span.d-block johny@gmail.com
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/3.png', alt='')
+                                              .social-status.social-offline
+                                              .media-body
+                                                span.f-w-600.d-block Johny William
+                                                span.d-block johnyw@gmail.com
+                                  .card
+                                    #headingThreeThree.card-header
+                                      h2.mb-0
+                                        button.btn.btn-link.btn-block.text-left.collapsed(type='button' data-toggle='collapse' data-target='#collapseThreeThree' aria-expanded='true' aria-controls='collapseThreeThree')
+                                          | Activity Feed
+                                    #collapseThreeThree.collapse.show(aria-labelledby='headingThreeThree' data-parent='#accordionExample1')
+                                          .card-body.social-status.filter-cards-view
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/10.jpg', alt='')
+                                              .media-body
+                                                span.f-w-600.d-block Andew Jon
+                                                p Commented on Shaun Park's 
+                                                  a(href='#') Photo
+                                                span.light-span 20 min Ago
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/3.jpg', alt='')
+                                              .media-body
+                                                span.f-w-600.d-block Johny Waston
+                                                p Commented on Shaun Park's 
+                                                  a(href='#') Photo
+                                                span.light-span 1 hour Ago
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/5.jpg', alt='')
+                                              .media-body
+                                                span.f-w-600.d-block Comeren Diaz
+                                                p Commented on Shaun Park's 
+                                                  a(href='#') Photo
+                                                span.light-span 1 days Ago
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/4.jpg', alt='')
+                                              .media-body
+                                                span.f-w-600.d-block Sarah Loren
+                                                p Commented on Shaun Park's 
+                                                  a(href='#') Photo
+                                                span.light-span 2 days Ago
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/3.jpg', alt='')
+                                              .media-body
+                                                span.f-w-600.d-block Johny Waston
+                                                p Commented on Shaun Park's 
+                                                  a(href='#') Photo
+                                                span.light-span 5 days Ago
+                                            .media
+                                              img.img-50.rounded-circle.m-r-15(src='../assets/images/user/5.jpg', alt='')
+                                              .media-body
+                                                span.f-w-600.d-block Comeren Diaz
+                                                p Commented on Shaun Park's 
+                                                  a(href='#') Photo
+                                                span.light-span 6 days Ago
+
+
+                              
+                                
+                              .col-xl-6.xl-60.col-lg-12.col-md-7
+                                .row
+                                  .col-sm-12
+                                    .card
+                                      .card-header
+                                        h5 Pepole You May Know
+                                      .card-body.avatar-showcase
+                                        .pepole-knows
+                                          ul
+                                            li
+                                              .add-friend.text-center
+                                                img.img-60.img-fluid.rounded-circle(alt='', src='../assets/images/user/2.png')
+                                                span.d-block Jason Borne
+                                                button.btn.btn-primary.btn-xs Add Friend
+                                            li
+                                              .add-friend.text-center
+                                                img.img-60.img-fluid.rounded-circle(alt='', src='../assets/images/user/3.png')
+                                                span.d-block Anna Mull
+                                                button.btn.btn-primary.btn-xs Add Friend
+                                            li
+                                              .add-friend.text-center
+                                                img.img-60.img-fluid.rounded-circle(alt='', src='../assets/images/user/3.jpg')
+                                                span.d-block Dion Cast
+                                                button.btn.btn-primary.btn-xs Add Friend
+                                            li
+                                              .add-friend.text-center
+                                                img.img-60.img-fluid.rounded-circle(alt='', src='../assets/images/user/4.jpg')
+                                                span.d-block Karlene Lex
+                                                button.btn.btn-primary.btn-xs Add Friend
+                                            li
+                                              .add-friend.text-center
+                                                img.img-60.img-fluid.rounded-circle(alt='', src='../assets/images/user/8.jpg')
+                                                span.d-block Vella Chism
+                                                button.btn.btn-primary.btn-xs Add Friend
+                                            li
+                                              .add-friend.text-center
+                                                img.img-60.img-fluid.rounded-circle(alt='', src='../assets/images/user/10.jpg')
+                                                span.d-block Wai Schalk
+                                                button.btn.btn-primary.btn-xs Add Friend
+                                            li
+                                              .add-friend.text-center
+                                                img.img-60.img-fluid.rounded-circle(alt='', src='../assets/images/user/14.png')
+                                                span.d-block Karlene Lex
+                                                button.btn.btn-primary.btn-xs Add Friend
+                                  .col-sm-12
+                                    .card
+                                      .card-header.social-header
+                                        h5 
+                                          span Hobbies and Interests
+                                          span.pull-right
+                                            i(data-feather='more-vertical')
+                                      .card-body
+                                        .row.details-about
+                                          .col-sm-6
+                                            .your-details
+                                              span.f-w-600 Hobbies:
+                                              p I like to ride the bike to work, swimming, and working out. I also like reading design magazines, go to museums, and binge watching a good tv show while it’s raining outside.
+                                          .col-sm-6
+                                            .your-details.your-details-xs
+                                              span.f-w-600 Favourite Music Bands / Artists:
+                                              p Iron Maid, DC/AC, Megablow, The Ill, Kung Fighters, System of a Revenge.
+                                        .row.details-about
+                                          .col-sm-6
+                                            .your-details
+                                              span.f-w-600 Favourite TV Shows:
+                                              p Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
+                                          .col-sm-6
+                                            .your-details.your-details-xs
+                                              span.f-w-600 Favourite Books:
+                                              p The Crime of the Century, Egiptian Mythology 101, The Scarred Wizard, Lord of the Wings, Amongst Gods, The Oracle, A Tale of Air and Water.
+                                        .row.details-about
+                                          .col-sm-6
+                                            .your-details
+                                              span.f-w-600 Favourite Movies:
+                                              p Idiocratic, The Scarred Wizard and the Fire Crown, Crime Squad Ferrum Man.
+                                          .col-sm-6
+                                            .your-details.your-details-xs
+                                              span.f-w-600 Favourite Writers:
+                                              p Martin T. Georgeston, Jhonathan R. Token, Ivana Rowle, Alexandr Platt, Marcus Roth.
+                                        .row.details-about
+                                          .col-sm-6
+                                            .your-details
+                                              span.f-w-600 Favourite Games:
+                                              p The First of Us, Assassin’s Squad, Dark Assylum, NMAK16, Last Cause 4, Grand Snatch Auto.
+                                          .col-sm-6
+                                            .your-details.your-details-xs
+                                              span.f-w-600 Other Interests:
+                                              p Swimming, Surfing, Scuba Diving, Anime, Photography, Tattoos, Street Art.
+                                  .col-sm-12
+                                    .card
+                                      .card-header.social-header
+                                        h5 
+                                          span Education and Employement
+                                          span.pull-right
+                                            i(data-feather='more-vertical')
+                                      .card-body
+                                        .row.details-about
+                                          .col-sm-6
+                                            .your-details
+                                              span.f-w-600 The New College of Design
+                                              p 2001 - 2006
+                                              p Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
+                                          .col-sm-6
+                                            .your-details.your-details-xs
+                                              span.f-w-600 Digital Design Intern
+                                              p 2006-2008
+                                              p Digital Design Intern for the “Multimedz” agency. Was in charge of the communication with the clients.
+                                        .row.details-about
+                                          .col-sm-6
+                                            .your-details
+                                              span.f-w-600 Rembrandt Institute
+                                              p 2008
+                                              p Five months Digital Illustration course. Professor: Leonardo Stagg.
+                                          .col-sm-6
+                                            .your-details.your-details-xs
+                                              span.f-w-600 UI/UX Designer
+                                              p 2001 - 2006
+                                              p Breaking Good, RedDevil, People of Interest, The Running Dead, Found, American Guy.
+                                        .row.details-about
+                                          .col-sm-6
+                                            .your-details
+                                              span.f-w-600 The Digital College
+                                              p 2010
+                                              p 6 months intensive Motion Graphics course. After Effects and Premire. Professor: Donatello Urtle.
+                                          .col-sm-6
+                                            .your-details.your-details-xs
+                                              span.f-w-600 The New College of Design
+                                              p 2008 - 2013
+                                              p UI/UX Designer for the “Daydreams” agency.
+                                  .col-sm-12
+                                    .card
+                                      .card-header
+                                        h5 Viewed Your Profile
+                                      .card-body.avatar-showcase
+                                        .pepole-knows
+                                          ul
+                                            li
+                                              .add-friend.text-center
+                                                img.img-60.img-fluid.rounded-circle(alt='', src='../assets/images/user/2.png')
+                                                span.d-block Jason Borne
+                                                button.btn.btn-primary.btn-xs Add Friend
+                                            li
+                                              .add-friend.text-center
+                                                img.img-60.img-fluid.rounded-circle(alt='', src='../assets/images/user/3.png')
+                                                span.d-block Anna Mull
+                                                button.btn.btn-primary.btn-xs Add Friend
+                                            li
+                                              .add-friend.text-center
+                                                img.img-60.img-fluid.rounded-circle(alt='', src='../assets/images/user/3.jpg')
+                                                span.d-block Dion Cast
+                                                button.btn.btn-primary.btn-xs Add Friend
+                                            li
+                                              .add-friend.text-center
+                                                img.img-60.img-fluid.rounded-circle(alt='', src='../assets/images/user/4.jpg')
+                                                span.d-block Karlene Lex
+                                                button.btn.btn-primary.btn-xs Add Friend
+                                            li
+                                              .add-friend.text-center
+                                                img.img-60.img-fluid.rounded-circle(alt='', src='../assets/images/user/8.jpg')
+                                                span.d-block Vella Chism
+                                                button.btn.btn-primary.btn-xs Add Friend
+                                            li
+                                              .add-friend.text-center
+                                                img.img-60.img-fluid.rounded-circle(alt='', src='../assets/images/user/10.jpg')
+                                                span.d-block Wai Schalk
+                                                button.btn.btn-primary.btn-xs Add Friend
+                                            li
+                                              .add-friend.text-center
+                                                img.img-60.img-fluid.rounded-circle(alt='', src='../assets/images/user/14.png')
+                                                span.d-block Karlene Lex
+                                                button.btn.btn-primary.btn-xs Add Friend
+                                  .col-sm-12
+                                    .card
+                                      .card-header
+                                        h5 Activity Log
+                                      .card-body
+                                        .activity-log
+                                          .my-activity
+                                            h6.f-w-600 Today
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='thumbs-up')
+                                              | Comeren Diaz likes your photos.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='user-plus')
+                                              | Karlene Lex and Comeren Diaz now friends.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='message-square')
+                                              | Sarah Loren wrote on your timeline 
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='thumbs-up')
+                                              | Johny Waston likes your post's.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='user-plus')
+                                              | Andew Jon became friends with Comeren Diaz.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='user-plus')
+                                              | Johny Waston became friends with Bucky Barnes.
+                                          .my-activity
+                                            h6.f-w-600 25 December
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='thumbs-up')
+                                              | Comeren Diaz likes your photos.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='thumbs-up')
+                                              | Johny Waston likes your post's.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='user-plus')
+                                              | Karlene Lex and Comeren Diaz now friends.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='user-plus')
+                                              | Johny Waston became friends with Bucky Barnes.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='message-square')
+                                              | Sarah Loren wrote on your timeline 
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='message-square')
+                                              | Comeren Diaz wrote on your timeline
+                                          .my-activity
+                                            h6.f-w-600 8 september
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='thumbs-up')
+                                              | Comeren Diaz likes your photos.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='thumbs-up')
+                                              | Johny Waston likes your post's.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='user-plus')
+                                              | Karlene Lex and Comeren Diaz now friends.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='user-plus')
+                                              | Johny Waston became friends with Bucky Barnes.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='message-square')
+                                              | Sarah Loren wrote on your timeline 
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='user-plus')
+                                              | Andew Jon became friends with Comeren Diaz.
+                                          .my-activity
+                                            h6.f-w-600 6 June
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='thumbs-up')
+                                              | Comeren Diaz likes your photos.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='user-plus')
+                                              | Karlene Lex and Comeren Diaz now friends.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='message-square')
+                                              | Sarah Loren wrote on your timeline 
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='thumbs-up')
+                                              | Johny Waston likes your post's.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='user-plus')
+                                              | Andew Jon became friends with Comeren Diaz.
+                                            p
+                                              span
+                                                i.m-r-20(data-feather='user-plus')
+                                              | Johny Waston became friends with Bucky Barnes.
+                              .col-xl-3.xl-100
+                                #accordionoc3.default-according.style-1.faq-accordion.job-accordion
+                                  .row
+                                    .col-xl-12.xl-50
+                                      .card
+                                        .card-header
+                                          h5.mb-0
+                                            button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon7', aria-expanded='true', aria-controls='collapseicon7')
+                                              | Profile Intro
+                                        #collapseicon7.collapse.show(aria-labelledby='collapseicon', data-parent='#accordion',aria-controls='collapseicon7')
+                                          .card-body.filter-cards-view
+                                            span.f-w-600 About Me :
+                                            p  
+                                              | Hi, I’m elana, I’m 30 and I work as a 
+                                              | web Designer for the “Daydreams” 
+                                              | Agency in Pier 56.
+                                            span.f-w-600 Favourite TV shows :
+                                            p  
+                                              | Breaking Good, RedDevil, People of
+                                              | Interest, The Running Dead, 
+                                              | Found, American Guy.
+                                            span.f-w-600 Favourite Music Bands :
+                                            p  
+                                              | Breaking Good, RedDevil, People of
+                                              | Interest, The Running Dead, 
+                                              | Found, American Guy.
+                                            div.social-network.theme-form
+                                              span.f-w-600 Social Networks
+                                              button.btn.social-btn.btn-fb.mb-2.text-center
+                                                i.fa.fa-facebook.m-r-5
+                                                | Facebook
+                                              button.btn.social-btn.btn-twitter.mb-2.text-center
+                                                i.fa.fa-twitter.m-r-5
+                                                | Twitter
+                                              button.btn.social-btn.btn-google.text-center
+                                                i.fa.fa-dribbble.m-r-5
+                                                | Dribbble
+                                    .col-xl-12.xl-50
+                                      .card
+                                        .card-header
+                                          h5.mb-0
+                                            button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon8', aria-expanded='true', aria-controls='collapseicon8')
+                                              | Followers
+                                        #collapseicon8.collapse.show(aria-labelledby='collapseicon8', data-parent='#accordion')
+                                          .card-body.social-list.filter-cards-view
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/2.png')
+                                              .media-body
+                                                span.d-block Bucky Barnes
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/3.png')
+                                              .media-body
+                                                span.d-block Sarah Loren
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/3.jpg')
+                                              .media-body
+                                                span.d-block Jason Borne
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/10.jpg')
+                                              .media-body
+                                                span.d-block Comeren Diaz
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/11.png')
+                                              .media-body
+                                                span.d-block Andew Jon
+                                                a(href='#') Add Friend
+                                    .col-xl-12.xl-50
+                                      .card
+                                        .card-header
+                                          h5.mb-0
+                                            button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon11', aria-expanded='true', aria-controls='collapseicon11')
+                                              | Followings
+                                        #collapseicon11.collapse.show(aria-labelledby='collapseicon11', data-parent='#accordion')
+                                          .card-body.social-list.filter-cards-view
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/3.png')
+                                              .media-body
+                                                span.d-block Sarah Loren
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/2.png')
+                                              .media-body
+                                                span.d-block Bucky Barnes
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/10.jpg')
+                                              .media-body
+                                                span.d-block Comeren Diaz
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/3.jpg')
+                                              .media-body
+                                                span.d-block Jason Borne
+                                                a(href='#') Add Friend
+                                            .media
+                                              img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/11.png')
+                                              .media-body
+                                                span.d-block Andew Jon
+                                                a(href='#') Add Friend
+                                    .col-xl-12.xl-50
+                                      .card
+                                        .card-header
+                                          h5.mb-0
+                                            button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon9', aria-expanded='true', aria-controls='collapseicon9')
+                                              | Latest Photos
+                                        #collapseicon9.collapse.show(data-parent='#accordion', aria-labelledby='collapseicon9')
+                                          .card-body.photos.filter-cards-view.px-0
+                                            ul.text-center
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-1.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-2.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-3.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-4.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-5.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-6.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-7.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-8.png')
+                                              li
+                                                .latest-post
+                                                  img.img-fluid(alt='', src='../assets/images/social-app/post-9.png')                
+                                    .col-xl-12.xl-50
+                                      .card
+                                        .card-header
+                                          h5.mb-0
+                                            button.btn.btn-link.pl-0(data-toggle='collapse', data-target='#collapseicon15', aria-expanded='true', aria-controls='collapseicon15')
+                                              | Friends
+                                        #collapseicon15.collapse.show(data-parent='#accordion', aria-labelledby='collapseicon15')
+                                          .card-body.avatar-showcase.filter-cards-view
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/3.jpg', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/5.jpg', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/1.jpg', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/2.png', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/3.png', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/6.jpg', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/10.jpg', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/14.png', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/1.jpg', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/4.jpg', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/11.png', alt='#')
+                                            .d-inline-block.friend-pic
+                                              img.img-50.rounded-circle(src='../assets/images/user/8.jpg', alt='#')
+                                    .col-xl-12.xl-50
+                                      .card
+                                        img.img-fluid(src='../assets/images/social-app/timeline-4.png', alt='')
+                          .tab-pane.fade#friends(role='tabpanel', aria-labelledby='friends')
+                            .row
+                              .col-md-6.col-lg-6.col-xl-4
+                                .card.custom-card
+                                  .card-header
+                                    img.img-fluid(src='../assets/images/user-card/1.jpg', alt='')
+                                  .card-profile
+                                    img.rounded-circle(src='../assets/images/avtar/3.jpg', alt='')
+                                  ul.card-social
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-facebook
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-google-plus
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-twitter
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-instagram
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-rss
+                                  .text-center.profile-details
+                                    h4 Mark Jecno
+                                    h6 Manager
+                                  .card-footer.row
+                                    .col-4.col-sm-4
+                                      h6 Follower
+                                      h3.counter 9564
+                                    .col-4.col-sm-4
+                                      h6 Following
+                                      h3
+                                        span.counter 49
+                                        | K
+                                    .col-4.col-sm-4
+                                      h6 Total Post
+                                      h3
+                                        span.counter 96
+                                        | M
+                              .col-md-6.col-lg-6.col-xl-4
+                                .card.custom-card
+                                  .card-header
+                                    img.img-fluid(src='../assets/images/user-card/2.jpg', alt='')
+                                  .card-profile
+                                    img.rounded-circle(src='../assets/images/avtar/16.jpg', alt='')
+                                  ul.card-social
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-facebook
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-google-plus
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-twitter
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-instagram
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-rss
+                                  .text-center.profile-details
+                                    h4 Johan Deo
+                                    h6 Designer
+                                  .card-footer.row
+                                    .col-4.col-sm-4
+                                      h6 Follower
+                                      h3.counter 2578
+                                    .col-4.col-sm-4
+                                      h6 Following
+                                      h3
+                                        span.counter 26
+                                        | K
+                                    .col-4.col-sm-4
+                                      h6 Total Post
+                                      h3
+                                        span.counter 96
+                                        | M
+                              .col-md-6.col-lg-6.col-xl-4
+                                .card.custom-card
+                                  .card-header
+                                    img.img-fluid(src='../assets/images/user-card/3.jpg', alt='')
+                                  .card-profile
+                                    img.rounded-circle(src='../assets/images/avtar/11.jpg', alt='')
+                                  ul.card-social
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-facebook
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-google-plus
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-twitter
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-instagram
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-rss
+                                  .text-center.profile-details
+                                    h4 Dev John
+                                    h6 Devloper
+                                  .card-footer.row
+                                    .col-4.col-sm-4
+                                      h6 Follower
+                                      h3.counter 6545
+                                    .col-4.col-sm-4
+                                      h6 Following
+                                      h3
+                                        span.counter 91
+                                        | K
+                                    .col-4.col-sm-4
+                                      h6 Total Post
+                                      h3
+                                        span.counter 21
+                                        | M
+                              .col-md-6.col-lg-6.col-xl-4
+                                .card.custom-card
+                                  .card-header
+                                    img.img-fluid(src='../assets/images/user-card/7.jpg', alt='')
+                                  .card-profile
+                                    img.rounded-circle(src='../assets/images/avtar/16.jpg', alt='')
+                                  ul.card-social
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-facebook
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-google-plus
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-twitter
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-instagram
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-rss
+                                  .text-center.profile-details
+                                    h4 Johan Deo
+                                    h6 Designer
+                                  .card-footer.row
+                                    .col-4.col-sm-4
+                                      h6 Follower
+                                      h3.counter 2578
+                                    .col-4.col-sm-4
+                                      h6 Following
+                                      h3
+                                        span.counter 26
+                                        | K
+                                    .col-4.col-sm-4
+                                      h6 Total Post
+                                      h3
+                                        span.counter 96
+                                        | M
+                              .col-md-6.col-lg-6.col-xl-4
+                                .card.custom-card
+                                  .card-header
+                                    img.img-fluid(src='../assets/images/user-card/5.jpg', alt='')
+                                  .card-profile
+                                    img.rounded-circle(src='../assets/images/avtar/11.jpg', alt='')
+                                  ul.card-social
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-facebook
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-google-plus
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-twitter
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-instagram
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-rss
+                                  .text-center.profile-details
+                                    h4 Dev John
+                                    h6 Devloper
+                                  .card-footer.row
+                                    .col-4.col-sm-4
+                                      h6 Follower
+                                      h3.counter 6545
+                                    .col-4.col-sm-4
+                                      h6 Following
+                                      h3
+                                        span.counter 91
+                                        | K
+                                    .col-4.col-sm-4
+                                      h6 Total Post
+                                      h3
+                                        span.counter 21
+                                        | M
+                              .col-md-6.col-lg-6.col-xl-4
+                                .card.custom-card
+                                  .card-header
+                                    img.img-fluid(src='../assets/images/user-card/6.jpg', alt='')
+                                  .card-profile
+                                    img.rounded-circle(src='../assets/images/avtar/3.jpg', alt='')
+                                  ul.card-social
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-facebook
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-google-plus
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-twitter
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-instagram
+                                    li
+                                      a(href='#')
+                                        i.fa.fa-rss
+                                  .text-center.profile-details
+                                    h4 Mark Jecno
+                                    h6 Manager
+                                  .card-footer.row
+                                    .col-4.col-sm-4
+                                      h6 Follower
+                                      h3.counter 9564
+                                    .col-4.col-sm-4
+                                      h6 Following
+                                      h3
+                                        span.counter 49
+                                        | K
+                                    .col-4.col-sm-4
+                                      h6 Total Post
+                                      h3
+                                        span.counter 96
+                                        | M
+                          .tab-pane.fade#photos(role='tabpanel', aria-labelledby='photos')
+                            .row
+                              .col-sm-12
+                                .card
+                                  .my-gallery.card-body.row.gallery-with-description(itemscope='')
+                                    figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                      a(href='../assets/images/big-lightgallry/01.jpg', itemprop='contentUrl', data-size='1600x950')
+                                        img(src='../assets/images/lightgallry/01.jpg', itemprop='thumbnail', alt='Image description')
+                                        .caption
+                                          h4 Johan Deo
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figcaption(itemprop='caption description')
+                                        h4 Johan Deo
+                                        p
+                                          | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                    figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                      a(href='../assets/images/big-lightgallry/02.jpg', itemprop='contentUrl', data-size='1600x950')
+                                        img(src='../assets/images/lightgallry/02.jpg', itemprop='thumbnail', alt='Image description')
+                                        .caption
+                                          h4 Dev John
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figcaption(itemprop='caption description')
+                                        h4 Dev John
+                                        p
+                                          | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                    figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                      a(href='../assets/images/big-lightgallry/03.jpg', itemprop='contentUrl', data-size='1600x950')
+                                        img(src='../assets/images/lightgallry/03.jpg', itemprop='thumbnail', alt='Image description')
+                                        .caption
+                                          h4 Johan Deo
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figcaption(itemprop='caption description')
+                                        h4 Johan Deo
+                                        p
+                                          | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                    figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                      a(href='../assets/images/big-lightgallry/04.jpg', itemprop='contentUrl', data-size='1600x950')
+                                        img(src='../assets/images/lightgallry/04.jpg', itemprop='thumbnail', alt='Image description')
+                                        .caption
+                                          h4 Comeren Diaz
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figcaption(itemprop='caption description')
+                                        h4 Comeren Diaz
+                                        p
+                                          | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                    figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                      a(href='../assets/images/big-lightgallry/05.jpg', itemprop='contentUrl', data-size='1600x950')
+                                        img(src='../assets/images/lightgallry/05.jpg', itemprop='thumbnail', alt='Image description')
+                                        .caption
+                                          h4 Andew Jon
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figcaption(itemprop='caption description')
+                                        h4 Andew Jon
+                                        p
+                                          | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                    figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                      a(href='../assets/images/big-lightgallry/011.jpg', itemprop='contentUrl', data-size='1600x950')
+                                        img(src='../assets/images/lightgallry/011.jpg', itemprop='thumbnail', alt='Image description')
+                                        .caption
+                                          h4 Sarah Loren
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figcaption(itemprop='caption description')
+                                        h4 Sarah Loren
+                                        p
+                                          | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                    figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                      a(href='../assets/images/big-lightgallry/010.jpg', itemprop='contentUrl', data-size='1600x950')
+                                        img(src='../assets/images/lightgallry/010.jpg', itemprop='thumbnail', alt='Image description')
+                                        .caption
+                                          h4 Andew Jon
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figcaption(itemprop='caption description')
+                                        h4 Andew Jon
+                                        p
+                                          | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                    figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                      a(href='../assets/images/big-lightgallry/08.jpg', itemprop='contentUrl', data-size='1600x950')
+                                        img(src='../assets/images/lightgallry/08.jpg', itemprop='thumbnail', alt='Image description')
+                                        .caption
+                                          h4 Bucky Barnes
+                                          p
+                                            | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                      figcaption(itemprop='caption description')
+                                        h4 Bucky Barnes
+                                        p
+                                          | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                  // Root element of PhotoSwipe. Must have class pswp.
+                                  .pswp(tabindex='-1', role='dialog', aria-hidden='true')
+                                    //
+                                      Background of PhotoSwipe.
+                                      It's a separate element, as animating opacity is faster than rgba().
+                                    .pswp__bg
+                                    // Slides wrapper with overflow:hidden.
+                                    .pswp__scroll-wrap
+                                      // Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory.
+                                      // don't modify these 3 pswp__item elements, data is added later on.
+                                      .pswp__container
+                                        .pswp__item
+                                        .pswp__item
+                                        .pswp__item
+                                      // Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.
+                                      .pswp__ui.pswp__ui--hidden
+                                        .pswp__top-bar
+                                          // Controls are self-explanatory. Order can be changed.
+                                          .pswp__counter
+                                          button.pswp__button.pswp__button--close(title='Close (Esc)')
+                                          button.pswp__button.pswp__button--share(title='Share')
+                                          button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
+                                          button.pswp__button.pswp__button--zoom(title='Zoom in/out')
+                                          // Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR
+                                          // element will get class pswp__preloader--active when preloader is running
+                                          .pswp__preloader
+                                            .pswp__preloader__icn
+                                              .pswp__preloader__cut
+                                                .pswp__preloader__donut
+                                        .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+                                          .pswp__share-tooltip
+                                        button.pswp__button.pswp__button--arrow--left(title='Previous (arrow left)')
+                                        button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
+                                        .pswp__caption
+                                          .pswp__caption__center
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

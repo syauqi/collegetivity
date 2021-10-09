@@ -1,0 +1,284 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var internationalization  = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Internationalization
+
+                                .col-6
+                                      ol.breadcrumb
+                                        li.breadcrumb-item
+                                          a(href='index.html')                                        
+                                            i(data-feather="home")
+                                        li.breadcrumb-item Pages
+                                        li.breadcrumb-item.active Internationalization
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                            .col-lg-12
+                              .site
+                                .site-bd
+                                  .wrapper
+                                    .card
+                                        .card-header.language-header
+                                            h5 Internationalization
+                                            .main(role='main')
+                                                select.langChoice.js-languageSelect
+                                                    option English
+                                                    option German
+                                                    option Russian
+                                                    option Arabic
+                                        .card-body.row
+                                            .col-sm-6
+                                                h5.hdg.hdg_main.js-languagePageHdg Static Sub Nav
+                                                .masthead(role='banner')
+                                                    ul.icon-lists.border.navs-icon.hList.hList_loose.masthead-nav.js-languageList
+                                                        li
+                                                            a(href='#')
+                                                                span  Base
+                                                        li
+                                                            a(href='#')
+                                                                span  Advance
+                                                            ul.hList.hList_loose.masthead-nav.js-languageList
+                                                                li.pl-navs-inline
+                                                                    a(href='#')
+                                                                        span Scrollable
+                                                                li.pl-navs-inline
+                                                                    a(href='#')
+                                                                        span Tree View
+                                                                li.pl-navs-inline
+                                                                    a(href='#')
+                                                                        span Rating
+                                                        li
+                                                            a(href='#')
+                                                                span(data-mlr-text='')  Forms
+                                                        li
+                                                            a(href='#')
+                                                                span(data-mlr-text='')  Tables
+                                            .col-sm-6.language-xs
+                                              h5.hdg.hdg_main.js-languagePageHdg Static Sub Nav
+                                              .masthead(role='banner')
+                                                ul.icon-lists.border.navs-icon.hList.hList_loose.masthead-nav.js-languageList
+                                                  li
+                                                    a(href='#')
+                                                      span  Base
+                                                  li
+                                                    a(href='#')
+                                                      span  Advance
+                                                    ul.hList.hList_loose.masthead-nav.js-languageList
+                                                      li.pl-navs-inline
+                                                        a(href='#')
+                                                          span Scrollable
+                                                        span.pull-right.badge.badge-primary New
+                                                      li.pl-navs-inline
+                                                        a(href='#')
+                                                          span Tree View
+                                                        span.pull-right.badge.badge-primary Find
+                                                      li.pl-navs-inline
+                                                        a(href='#')
+                                                          span Rating
+                                                  li
+                                                    a(href='#')
+                                                      span(data-mlr-text='')  Forms
+                                                  li
+                                                    a(href='#')
+                                                      span(data-mlr-text='')  Tables
+                            .col-lg-12
+                                .card
+                                    .card-header
+                                        h5 How to use it
+                                        span
+                                            | Add a class
+                                            code .hdg, .hdg_main, .js-languagePageHdg, .hList, .hList_loose, .masthead-nav., js-languageList, .langChoice, .js-languageSelect
+                                            | class to any tag for language translate
+                                    .card-body
+                                        .language
+                                            p Add a  
+                                              b language-picker 
+                                              | plugin js
+                                            p 
+                                                b HTML code
+                                            pre.mb-0  &lt;div class="site"&gt;<br />  &lt;div class="site-bd"&gt;<br />    &lt;div class="wrapper"&gt;<br />      &lt;div class="card"&gt;<br />        &lt;div class="card-header"&gt;<br />          &lt;h5 class="hdg hdg_main js-languagePageHdg"&gt;Internationalization&lt;/h5&gt;<br />        &lt;/div&gt;<br />        &lt;div class="main" role="main"&gt;<br />          &lt;select class="langChoice js-languageSelect"&gt;<br />            &lt;option val="0"&gt;English&lt;/option&gt;<br />            &lt;option val="1"&gt;German&lt;/option&gt;<br />            &lt;option val="2"&gt;Russian&lt;/option&gt;<br />            &lt;option val="3"&gt;Arabic&lt;/option&gt;<br />          &lt;/select&gt;<br />        &lt;/div&gt;<br />        &lt;div class="card-body row"&gt;<br />          &lt;div class="col-lg-6"&gt;<br />            &lt;h5 class="hdg hdg_main js-languagePageHdg"&gt;Static Sub Nav&lt;/h5&gt;<br />            &lt;div class="masthead" role="banner"&gt;<br />              &lt;ul class="icon-lists border navs-icon hList hList_loose masthead-nav js-languageList"&gt;<br />                &lt;li&gt;<br />                  &lt;a href="#"&gt;&lt;span&gt; Base&lt;/span&gt;&lt;/a&gt;<br />                &lt;/li&gt;<br />                &lt;li&gt;<br />                  &lt;a href="#"&gt;&lt;span&gt; Advance&lt;/span&gt;&lt;/a&gt;<br />                  &lt;ul class="hList hList_loose masthead-nav js-languageList"&gt;<br />                    &lt;li class="pl-navs-inline"&gt;&lt;a href="#"&gt;&lt;span&gt;Scrollable&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br />                    &lt;li class="pl-navs-inline"&gt;&lt;a href="#"&gt;&lt;span&gt;Tree View&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br />                    &lt;li class="pl-navs-inline"&gt;&lt;a href="#"&gt;&lt;span&gt;Rating&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br />                  &lt;/ul&gt;<br />                &lt;/li&gt;<br />                &lt;li&gt;<br />                  &lt;a href="#"&gt;&lt;span data-mlr-text&gt; Forms&lt;/span&gt;&lt;/a&gt;<br />                &lt;/li&gt;<br />                &lt;li&gt;<br />                  &lt;a href="#"&gt;&lt;span data-mlr-text&gt; Tables&lt;/span&gt;&lt;/a&gt;<br />                &lt;/li&gt;<br />              &lt;/ul&gt;<br />            &lt;/div&gt;<br />          &lt;/div&gt;<br />        &lt;/div&gt;<br />      &lt;/div&gt;<br />    &lt;/div&gt;<br />  &lt;/div&gt;<br /> &lt;/div&gt;
+                            .col-lg-12
+                                .card
+                                    .card-header
+                                        h5 How to add language
+                                        span
+                                            | you can also add other language according to below in js and add lanuage type in langChoice
+                                    .card-body
+                                        .language
+                                            span.font-danger var 
+                                            | LANGUAGES = {
+                                            br
+                                            | "English": {
+                                            br
+                                            | "columns": [
+                                            br
+                                            | "Base",
+                                            br
+                                            | "Advance",
+                                            br
+                                            | "scrollable",
+                                            br
+                                            | "Tree View",
+                                            br
+                                            | "Rating",
+                                            br
+                                            | "News",
+                                            br
+                                            | "Tables",
+                                            br
+                                            | "Base",
+                                            br
+                                            | "Advance",
+                                            br
+                                            | "scrollable",
+                                            br
+                                            | "Tree View",
+                                            br
+                                            | "Rating",
+                                            br
+                                            | "News",
+                                            br
+                                            | "Tables"
+                                            br
+                                            | ],
+                                            br
+                                            | "heading": "Static Sub Nav",
+                                            br
+                                            | },
+                                            br
+                                            | "German": {
+                                            br
+                                            | "columns": [
+                                            br
+                                            | "Basis",
+                                            br
+                                            | "Fortschritt",
+                                            br
+                                            | "scrollable",
+                                            br
+                                            | "Baumansicht",
+                                            br
+                                            | "Die Einschaltquote",
+                                            br
+                                            | "Nachrichten",
+                                            br
+                                            | "Tische",
+                                            br
+                                            | "Basis",
+                                            br
+                                            | "Fortschritt",
+                                            br
+                                            | "scrollable",
+                                            br
+                                            | "Baumansicht",
+                                            br
+                                            | "Die Einschaltquote",
+                                            br
+                                            | "Nachrichten",
+                                            br
+                                            | "Tische"
+                                            br
+                                            | ],
+                                            br
+                                            | "heading": "Statisches U-Boot Nav",
+                                            br
+                                            | },
+                                            br
+                                            | "Russian": {
+                                            br
+                                            | "columns": [
+                                            br
+                                            | "Основа",
+                                            br
+                                            | "Прогресс",
+                                            br
+                                            | "прокручиваемый",
+                                            br
+                                            | "Представление Дерева",
+                                            br
+                                            | "Оценка",
+                                            br
+                                            | "новости",
+                                            br
+                                            | "Столы",
+                                            br
+                                            | "Основа",
+                                            br
+                                            | "Прогресс",
+                                            br
+                                            | "прокручиваемый",
+                                            br
+                                            | "Представление Дерева",
+                                            br
+                                            | "Оценка",
+                                            br
+                                            | "новости",
+                                            br
+                                            | "Столы"
+                                            br
+                                            | ],
+                                            br
+                                            | "heading": "Статический Sub Военно - морской",
+                                            br
+                                            | },
+                                            br
+                                            | "Arabic": {
+                                            br
+                                            | "columns": [
+                                            br
+                                            | "قاعدة",
+                                            br
+                                            | "مقدما",
+                                            br
+                                            | "التمرير",
+                                            br
+                                            | "عرض الشجرة",
+                                            br
+                                            | "تصنيف",
+                                            br
+                                            | "أخبار",
+                                            br
+                                            | "الجداول",
+                                            br
+                                            | "قاعدة",
+                                            br
+                                            | "مقدما",
+                                            br
+                                            | "التمرير",
+                                            br
+                                            | "عرض الشجرة",
+                                            br
+                                            | "تصنيف",
+                                            br
+                                            | "أخبار",
+                                            br
+                                            | "الجداول"
+                                            br
+                                            | ],
+                                            br
+                                            | "heading": "صافي قيمة الأصول شبه الثابتة",
+                                            br
+                                            | }
+                                            br
+                                            | };
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

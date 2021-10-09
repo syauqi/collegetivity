@@ -1,0 +1,32 @@
+- var tree                  = true;
+- var popover_custom        = true;
+- var tooltip               = true;
+- var documents             = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body(data-spy='scroll', data-target='#myScrollspy', data-offset='1')
+        include ../../components/taptop
+        // page-wrapper Start
+        .page-wrapper.document
+              include ../../components/document-header
+              // Page Body Start
+              .page-body-wrapper.document-content
+                  include ../../components/document-changelog-sidebar
+                  .page-body
+                    .container-fluid
+                      .row
+                        .col-sm-12.set-height.set-padding
+                          #myTabContent.tab-content
+                            #general.tab-pane.fade.show.active(role='tabpanel')
+                              .card
+                                .card-header.b-l-primary
+                                  h5
+                                    | 23-8-2019 - 
+                                    span v1.0.0
+                                .card-body
+                                  p Initial Release
+
+                  include ../../components/footer
+        include ../../components/footer-files

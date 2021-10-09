@@ -1,0 +1,293 @@
+///////////////////JsGrid tables css
+
+//colors
+$color_gray_nurse_approx: #e9e9e9;
+$color_alabaster_approx: #f9f9f9;
+$seashell: #f1f1f1;
+$color_tropical_blue_approx: #c4e2ff;
+$color_lightning_yellow_approx: #ffc412;
+$color_concrete_approx: #f3f3f3;
+$white: #fff;
+$color_hint_of_green_approx: #e3ffe5;
+$color_half_and_half_approx: #fdffe3;
+$color_pippin_approx: #ffe3e5;
+$color_geraldine_approx: #ff808a;
+$color_quill_gray_approx: #d3d3d3;
+$color_alto_approx: #ddd;
+$color_green_haze_approx: #009a67;
+
+//urls
+$url_0: url(../../images/js-grid.png);
+
+.jsgrid-grid-body {
+	border: 1px solid $color_gray_nurse_approx;
+	border-top: none;
+	.jsgrid-cell {
+		&:first-child {
+			border-left: none;
+		}
+		&:last-child {
+			border-right: none;
+		}
+	}
+	.jsgrid-alt-row:first-child .jsgrid-cell {
+		border-top: none;
+	}
+	.jsgrid-row:first-child .jsgrid-cell {
+		border-top: none;
+	}
+}
+.jsgrid-grid-header {
+	border: 1px solid $color_gray_nurse_approx;
+	background: $color_alabaster_approx;
+}
+.jsgrid-header-row {
+	.jsgrid-align-left {
+		text-align: center;
+	}
+	.jsgrid-align-right {
+		text-align: center;
+	}
+	.jsgrid-header-sort {
+		background: $color_tropical_blue_approx;
+	}
+	> .jsgrid-header-cell {
+		border: 1px solid $color_gray_nurse_approx;
+		border-top: 0;
+		background: $color_alabaster_approx;
+		border-bottom: 0;
+		&:first-child {
+			border-left: none;
+		}
+		&:last-child {
+			border-right: none;
+		}
+	}
+}
+.jsgrid-header-scrollbar {
+	scrollbar-arrow-color: $seashell;
+	scrollbar-base-color: $seashell;
+	scrollbar-3dlight-color: $seashell;
+	scrollbar-highlight-color: $seashell;
+	scrollbar-track-color: $seashell;
+	scrollbar-shadow-color: $seashell;
+	scrollbar-dark-shadow-color: $seashell;
+}
+.jsgrid-header-scrollbar::-webkit-scrollbar {
+	visibility: hidden;
+}
+.jsgrid-header-scrollbar::-webkit-scrollbar-track {
+	background: $seashell;
+}
+.jsgrid-cell {
+	border: 1px solid $color_concrete_approx;
+}
+.jsgrid-invalid {
+	input {
+		background: $color_pippin_approx;
+		border: 1px solid $color_geraldine_approx;
+	}
+	select {
+		background: $color_pippin_approx;
+		border: 1px solid $color_geraldine_approx;
+	}
+	textarea {
+		background: $color_pippin_approx;
+		border: 1px solid $color_geraldine_approx;
+	}
+}
+.jsgrid-pager-current-page {
+	font-weight: 700;
+}
+.jsgrid-button {
+	&:hover {
+		opacity: .5;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: opacity 200ms linear;
+	}
+	+ .jsgrid-button {
+		margin-left: 5px;
+	}
+}
+.jsgrid {
+	.jsgrid-button {
+		width: 16px;
+		height: 16px;
+		border: none;
+		cursor: pointer;
+		background-image: $url_0;
+		background-repeat: no-repeat;
+		background-color: transparent;
+	}
+	.jsgrid-mode-button {
+		width: 24px;
+		height: 24px;
+	}
+}
+@media only screen and(-webkit-min-device-pixel-ratio:2),only screen and(min-device-pixel-ratio:2) {
+	.jsgrid .jsgrid-button {
+		background-image: $url_0;
+		background-size: 24px 352px;
+	}
+}
+.jsgrid-mode-on-button {
+	opacity: .5;
+}
+.jsgrid-cancel-edit-button {
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+}
+.jsgrid-clear-filter-button {
+	background-position: 0 -40px;
+	width: 16px;
+	height: 16px;
+}
+.jsgrid-delete-button {
+	background-position: 0 -80px;
+	width: 16px;
+	height: 16px;
+}
+.jsgrid-edit-button {
+	background-position: 0 -120px;
+	width: 16px;
+	height: 16px;
+}
+.jsgrid-insert-mode-button {
+	background-position: 0 -160px;
+	width: 24px;
+	height: 24px;
+}
+.jsgrid-insert-button {
+	background-position: 0 -208px;
+	width: 16px;
+	height: 16px;
+}
+.jsgrid-search-mode-button {
+	background-position: 0 -248px;
+	width: 24px;
+	height: 24px;
+}
+.jsgrid-search-button {
+	background-position: 0 -296px;
+	width: 16px;
+	height: 16px;
+}
+.jsgrid-update-button {
+	background-position: 0 -336px;
+	width: 16px;
+	height: 16px;
+}
+.jsgrid-load-shader {
+	background: $color_alto_approx;
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+.jsgrid-load-panel {
+	width: 15em;
+	height: 5em;
+	background: $white;
+	border: 1px solid $color_gray_nurse_approx;
+	padding-top: 3em;
+	text-align: center;
+	&:before {
+		content: ' ';
+		position: absolute;
+		top: .5em;
+		left: 50%;
+		margin-left: -1em;
+		width: 2em;
+		height: 2em;
+		border: 2px solid $color_green_haze_approx;
+		border-right-color: transparent;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 50%;
+		animation: indicator 1s linear infinite;
+	}
+}
+@-webkit-keyframes indicator {
+	from {
+	}
+	50% {
+	}
+	to {
+	}
+}
+@keyframes indicator {
+	from {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(0deg);
+	}
+	50% {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(180deg);
+	}
+	to {
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(360deg);
+	}
+}
+.jsgrid-edit-row > .jsgrid-cell {
+	border: 1px solid $color_gray_nurse_approx;
+	background: $color_half_and_half_approx;
+}
+.jsgrid-filter-row > .jsgrid-cell {
+	border: 1px solid $color_gray_nurse_approx;
+	border-bottom: 0;
+	background: $color_alabaster_approx;
+	&:first-child {
+		border-left: none;
+	}
+	&:last-child {
+		border-right: none;
+	}
+}
+.jsgrid-insert-row > .jsgrid-cell {
+	border: 1px solid $color_gray_nurse_approx;
+	border-bottom: 0;
+	background: $color_hint_of_green_approx;
+	&:first-child {
+		border-left: none;
+	}
+	&:last-child {
+		border-right: none;
+	}
+}
+.jsgrid-header-sortable:hover {
+	cursor: pointer;
+	background: $color_alabaster_approx;
+}
+.jsgrid-header-sort:before {
+	content: " ";
+	display: block;
+	float: right;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	margin-top: 8px;
+	margin-right: 9px;
+}
+.jsgrid-header-sort-asc:before {
+	border-width: 0 5px 5px;
+	border-color: transparent transparent $color_lightning_yellow_approx;
+}
+.jsgrid-header-sort-desc:before {
+	border-width: 5px 5px 0;
+	border-color: $color_lightning_yellow_approx transparent transparent;
+}
+.jsgrid-row > .jsgrid-cell {
+	background: $white;
+}
+.jsgrid-alt-row > .jsgrid-cell {
+	background: $color_alabaster_approx;
+}
+.jsgrid-selected-row > .jsgrid-cell {
+	background: $color_tropical_blue_approx;
+	border-color: $color_tropical_blue_approx;
+}
+.jsgrid-nodata-row > .jsgrid-cell {
+	background: $white;
+}
+.jsgrid-pager-nav-inactive-button a {
+	color: $color_quill_gray_approx;
+}

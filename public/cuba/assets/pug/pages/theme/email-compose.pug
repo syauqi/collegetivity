@@ -1,0 +1,308 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var ckeditor              = true;
+- var email_app             = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Email Compose
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Email
+                                      li.breadcrumb-item.active  Email Compose
+                    // Container-fluid starts
+                    .container-fluid
+                      .email-wrap
+                        .row
+                          .col-xl-3.col-md-6.box-col-6
+                            .email-left-aside
+                              .card
+                                .card-body
+                                  .email-app-sidebar
+                                    .media
+                                      .media-size-email
+                                        img.mr-3.rounded-circle(src='../assets/images/user/user.png', alt='')
+                                      .media-body
+                                        h6.f-w-600 MARKJENCO
+                                        p Markjecno@gmail.com
+                                    ul.nav.main-menu(role='tablist')
+                                      li.nav-item
+                                        a#pills-darkhome-tab.btn-primary.btn-block.btn-mail(data-toggle='pill', href='#pills-darkhome', role='tab', aria-controls='pills-darkhome', aria-selected='true')
+                                          i.icofont.icofont-envelope.mr-2
+                                          |  NEW MAIL
+                                      li.nav-item
+                                        a#pills-darkprofile-tab.show(data-toggle='pill', href='#pills-darkprofile', role='tab', aria-controls='pills-darkprofile', aria-selected='false')
+                                          span.title
+                                            i.icon-import
+                                            |  Inbox
+                                          span.badge.pull-right (236)
+                                      li
+                                        a(href='#')
+                                          span.title
+                                            i.icon-folder
+                                            |  All mail
+                                      li
+                                        a(href='#')
+                                          span.title
+                                            i.icon-new-window
+                                            |  Sent
+                                          span.badge.pull-right (69)
+                                      li
+                                        a(href='#')
+                                          span.title
+                                            i.icon-pencil-alt
+                                            |  DRAFT
+                                          span.badge.pull-right (59)
+                                      li
+                                        a(href='#')
+                                          span.title
+                                            i.icon-trash
+                                            |  TRASH
+                                          span.badge.pull-right (99)
+                                      li
+                                        a(href='#')
+                                          span.title
+                                            i.icon-info-alt
+                                            |  IMPORTANT
+                                      li
+                                        a(href='#')
+                                          span.title
+                                            i.icon-star
+                                            |  Starred
+                                      li
+                                        hr
+                                      li
+                                        a(href='#')
+                                          span.title
+                                            i.icon-email
+                                            |  UNREAD
+                                      li
+                                        a(href='#')
+                                          span.title
+                                            i.icon-export
+                                            |  SPAM
+                                      li
+                                        a(href='#')
+                                          span.title
+                                            i.icon-share
+                                            |  OUTBOX
+                                      li
+                                        a(href='#')
+                                          span.title
+                                            i.icon-file
+                                            |  UPDATE
+                                      li
+                                        a(href='#')
+                                          span.title
+                                            i.icon-bell
+                                            |  ALERT
+                                      li
+                                        a(href='#')
+                                          span.title
+                                            i.icon-notepad
+                                            |  NOTES
+                                          span.badge.pull-right (20)
+                          .col-xl-3.col-md-6.box-col-6
+                            .email-right-aside
+                              .card.email-body
+                                .pr-0.b-r-light
+                                  .email-top
+                                    .row
+                                      .col
+                                        h5 Inbox
+                                      .col.text-right
+                                        .dropdown
+                                          button#dropdownMenuButton.btn.bg-transparent.dropdown-toggle.p-0.text-muted(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                            | More
+                                          .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                                            a.dropdown-item(href='#') Action
+                                            a.dropdown-item(href='#') Another action
+                                            a.dropdown-item(href='#') Something else here
+                                  .inbox
+                                    .media
+                                      .media-size-email
+                                        img.mr-3.rounded-circle(src='../assets/images/user/user.png', alt='')
+                                      .media-body
+                                        h6
+                                          | Pork Lorn  
+                                          small
+                                            span (15
+                                            |  July 
+                                            span 2018)
+                                        p Mattis luctus. Donec nisi diam,
+                                    .media.active
+                                      .media-size-email
+                                        img.mr-3.rounded-circle(src='../assets/images/user/user.png', alt='')
+                                      .media-body
+                                        h6
+                                          | Lorm lpsa  
+                                          small
+                                            span (20
+                                            |  January)
+                                        p Mattis luctus. Donec nisi diam,
+                                    .media
+                                      .media-size-email
+                                        img.mr-3.rounded-circle(src='../assets/images/user/user.png', alt='')
+                                      .media-body
+                                        h6
+                                          | Hileri makr  
+                                          small
+                                            span (20
+                                            |  Aug
+                                            span  2018)
+                                        p Mattis luctus. Donec nisi diam,
+                                    .media
+                                      .media-size-email
+                                        img.mr-3.rounded-circle(src='../assets/images/user/user.png', alt='')
+                                      .media-body
+                                        h6
+                                          | Lion Lorpa  
+                                          small
+                                            span (02
+                                            |  Jun 
+                                            span 2016)
+                                        p Mattis luctus. Donec nisi diam,
+                                    .media
+                                      .media-size-email
+                                        img.mr-3.rounded-circle(src='../assets/images/user/user.png', alt='')
+                                      .media-body
+                                        h6.mt-0
+                                          | Solvn Relto  
+                                          small
+                                            span (25
+                                            |  July 
+                                            span 2015)
+                                        p Mattis luctus. Donec nisi diam,
+                                    .media
+                                      .media-size-email
+                                        img.mr-3.rounded-circle(src='../assets/images/user/user.png', alt='')
+                                      .media-body
+                                        h6
+                                          | Repro Soft  
+                                          small
+                                            span (15
+                                            |  July 
+                                            span 2018)
+                                        p Mattis luctus. Donec nisi diam,
+                                    .media
+                                      .media-size-email
+                                        img.mr-3.rounded-circle(src='../assets/images/user/user.png', alt='')
+                                      .media-body
+                                        h6
+                                          | Lion Lorpa  
+                                          small
+                                            span (02
+                                            |  Jun 
+                                            span 2016)
+                                        p Mattis luctus. Donec nisi diam,
+                          .col-xl-6.col-md-12.box-col-12
+                            .email-right-aside
+                              .card.email-body.radius-left
+                                .pl-0
+                                  .tab-content
+                                    #pills-darkhome.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='pills-darkhome-tab')
+                                      .email-compose
+                                        .email-top.compose-border
+                                          .row
+                                            .col-sm-8.xl-50
+                                              h4.mb-0 New Message
+                                            .col-sm-4.btn-middle.xl-50
+                                              button.btn.btn-primary.btn-block.btn-mail.text-center.mb-0.mt-0(type='button')
+                                                i.fa.fa-paper-plane.mr-2
+                                                |  SEND
+                                        .email-wrapper
+                                          form.theme-form
+                                            .form-group
+                                              label.col-form-label.pt-0(for='exampleInputEmail1') To
+                                              input#exampleInputEmail1.form-control(type='email')
+                                            .form-group
+                                              label(for='exampleInputPassword1') Subject
+                                              input#exampleInputPassword1.form-control(type='text')
+                                            .form-group.mb-0
+                                              label.text-muted Message
+                                              textarea#text-box(name='text-box', cols='10', rows='2')                                                             
+                                    #pills-darkprofile.tab-pane.fade(role='tabpanel', aria-labelledby='pills-darkprofile-tab')
+                                      .email-content
+                                        .email-top
+                                          .row
+                                            .col-md-6.xl-100.col-sm-12
+                                              .media
+                                                img.mr-3.rounded-circle(src='../assets/images/user/user.png', alt='')
+                                                .media-body
+                                                  h6
+                                                    | Lorm lpsa  
+                                                    small
+                                                      span (20
+                                                      |  January) 
+                                                      span 6:00
+                                                      |  AM
+                                                  p Mattis luctus. Donec nisi diam text.
+                                            .col-md-6.col-sm-12
+                                              .float-right.d-flex
+                                                p.user-emailid
+                                                  | Lormlpsa
+                                                  span 23
+                                                  | @company.com
+                                                i.fa.fa-star-o.f-18.mt-1
+                                        .email-wrapper
+                                          p Hello
+                                          p Dear Sir Good Morning,
+                                          h5 Elementum varius nisi vel tempus. Donec eleifend egestas viverra.
+                                          p.m-b-20
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non diam facilisis, commodo libero et, commodo sapien. Pellentesque sollicitudin massa sagittis dolor facilisis, sit amet vulputate nunc molestie. Pellentesque maximus nibh id luctus porta. Ut consectetur dui nec nulla mattis luctus. Donec nisi diam, congue vitae felis at, ullamcorper bibendum tortor. Vestibulum pellentesque felis felis. Etiam ac tortor felis. Ut elit arcu, rhoncus in laoreet vel, gravida sed tortor.
+                                          p
+                                            | In elementum varius nisi vel tempus. Donec eleifend egestas viverra. Donec dapibus sollicitudin blandit. Donec scelerisque purus sit amet feugiat efficitur. Quisque feugiat semper sapien vel hendrerit. Mauris lacus felis, consequat nec pellentesque viverra, venenatis a lorem. Sed urna lectus.Quisque feugiat semper sapien vel hendrerit
+                                          hr
+                                          .d-inline-block
+                                            h6.text-muted
+                                              i.icofont.icofont-clip
+                                              |  ATTACHMENTS
+                                            a.text-muted.text-right.right-download(href='#')
+                                              i.fa.fa-long-arrow-down.mr-2
+                                              | Download All
+                                            .clearfix
+                                          .attachment
+                                            ul.list-inline
+                                              li.list-inline-item
+                                                img.img-fluid(src='../assets/images/email/1.jpg', alt='')
+                                              li.list-inline-item
+                                                img.img-fluid(src='../assets/images/email/2.jpg', alt='')
+                                              li.list-inline-item
+                                                img.img-fluid(src='../assets/images/email/3.jpg', alt='')
+                                          hr
+                                          .action-wrapper
+                                            ul.actions
+                                              li
+                                                a.text-muted(href='#')
+                                                  i.fa.fa-reply.mr-2
+                                                  | Reply
+                                              li
+                                                a.text-muted(href='#')
+                                                  i.fa.fa-reply-all.mr-2
+                                                  | Reply All
+                                              li
+                                                a.text-muted(href='#')
+                                                  i.fa.fa-share.mr-2
+                                                | Forward
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

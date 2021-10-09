@@ -1,0 +1,210 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Bootstrap Table Sizes
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Bootstrap Tables
+                                      li.breadcrumb-item.active Bootstrap Table Sizes
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Extra Large Tables
+                              span
+                                | Example of Extra large table, Add 
+                                code .table-xl
+                                |  class to the 
+                                code .table
+                                |  to create a table with extra large spacing. Extra larger table all rows have 
+                                code 1.25rem
+                                |  height.
+                            .table-responsive
+                              table.table.table-xl
+                                thead
+                                  tr
+                                    th #
+                                    th First Name
+                                    th Last Name
+                                    th Username
+                                tbody
+                                  tr
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                  tr
+                                    th(scope='row') 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                  tr
+                                    th(scope='row') 3
+                                    td Larry
+                                    td the Bird
+                                    td @twitter
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Large Table
+                              span
+                                | Example of large table, Add 
+                                code .table-lg
+                                | class to the 
+                                code .table
+                                | to create a table with large spacing. larger table all rows have 
+                                code 0.9rem
+                                |  height.
+                            .table-responsive
+                              table.table.table-lg
+                                thead
+                                  tr
+                                    th(scope='col') #
+                                    th(scope='col') First
+                                    th(scope='col') Last
+                                    th(scope='col') Handle
+                                tbody
+                                  tr
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                  tr
+                                    th(scope='row') 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                  tr
+                                    th(scope='row') 3
+                                    td(colspan='2') Larry the Bird
+                                    td @twitter
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Default Table
+                              span
+                                | Example of large table, Add 
+                                code .table-de
+                                | class to the 
+                                code .table
+                                | to create a table with large spacing. larger table all rows have 
+                                code 0.75rem
+                                |  height.
+                            .table-responsive
+                              table.table.table-de
+                                thead
+                                  tr
+                                    th(scope='col') #
+                                    th(scope='col') First
+                                    th(scope='col') Last
+                                    th(scope='col') Handle
+                                tbody
+                                  tr
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                  tr
+                                    th(scope='row') 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                  tr
+                                    th(scope='row') 3
+                                    td(colspan='2') Larry the Bird
+                                    td @twitter
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Small table
+                              span
+                                | Example of small table, Add 
+                                code .table-sm
+                                |  class to the 
+                                code .table
+                                |  to create a table with small spacing. Small table all rows have 
+                                code 0.3rem
+                                |  height
+                            .table-responsive
+                              table.table.table-sm
+                                thead
+                                  tr
+                                    th(scope='col') #
+                                    th(scope='col') First
+                                    th(scope='col') Last
+                                    th(scope='col') Handle
+                                tbody
+                                  tr
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                  tr
+                                    th(scope='row') 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                  tr
+                                    th(scope='row') 3
+                                    td(colspan='2') Larry the Bird
+                                    td @twitter
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Extra Small table
+                              span
+                                | Example of small table, Add 
+                                code .table-xs
+                                |  class to the 
+                                code .table
+                                |  to create a table with extra small spacing. Small table all rows have 
+                                code 1.5rem
+                                |  height
+                            .table-responsive
+                              table.table.table-xs
+                                thead
+                                  tr
+                                    th(scope='col') #
+                                    th(scope='col') First
+                                    th(scope='col') Last
+                                    th(scope='col') Handle
+                                tbody
+                                  tr
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                  tr
+                                    th(scope='row') 2
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                  tr
+                                    th(scope='row') 3
+                                    td(colspan='2') Larry the Bird
+                                    td @twitter
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files      

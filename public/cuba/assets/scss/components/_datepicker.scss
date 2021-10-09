@@ -1,0 +1,164 @@
+/**=====================
+    52. Datepicker CSS Start
+==========================**/
+//colors
+.clockpicker-canvas {
+  line {
+    stroke: var(--theme-deafult);
+  }
+}
+.clockpicker-canvas-fg, .clockpicker-canvas-bearing {
+  fill: var(--theme-deafult);
+}
+.daterangepicker {
+  border: none;
+  box-shadow: $card-box-shadow;
+  td, th {
+    &.available {
+      &:hover {
+          background-color: var(--theme-deafult);
+      }
+    }
+  }
+}
+.datepicker{
+  z-index: 99;
+}
+.datepicker--day-name {
+  color: $black;
+  font-weight: bold;
+}
+.datepicker--cell {
+  &.-current- {
+    color: $black;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid var(--theme-deafult);
+  }
+  &.-focus- {
+    background: var(--theme-deafult);
+    color: $white;
+  }
+  &.-selected- {
+    background: var(--theme-deafult) !important;
+  }
+}
+.daterangepicker.ltr {
+  color: $dark-gray;
+  z-index: 8;
+  tr {
+    font-size: 13px;
+    td {
+      height: 34px;
+      width: 34px;
+      &.in-range {
+        background-color: $auth-bg-color;
+      }
+      &.active {
+        background-color: var(--theme-deafult);
+      }
+    }
+  }
+  .ranges {
+    float: none;
+    li {
+      color: var(--theme-deafult);
+      &:hover {
+        background-color: var(--theme-deafult);
+        border: 1px solid var(--theme-deafult);
+        color: $white;
+      }
+      &.active {
+        background-color: var(--theme-deafult);
+        border: 1px solid var(--theme-deafult);
+        color: $white;
+      }
+    }
+  }
+  .calendar-time select {
+    color: $dark-gray;
+  }
+}
+.datepickers-container, .bootstrap-datetimepicker-widget {
+  z-index: 7;
+}
+.datetime-picker {
+  .bootstrap-datetimepicker-widget.dropdown-menu {
+    width: auto;
+  }
+  .input-group-text i {
+    line-height: 1.3;
+}
+}
+.date-range-picker{
+  .theme-form{
+    margin-bottom: 30px;
+  }
+  > div{
+    &:last-child{
+      .theme-form{
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+.daterangepicker{
+  &:before {
+    border-bottom: 7px solid $light-semi-gray;
+  }
+  .daterangepicker_input {
+    i {
+      font-size: 14px;
+      color: $semi-dark;
+    }
+  }
+
+ .input-mini{
+   border-color: $light-semi-gray !important;
+   font-size: 14px;
+   color: $semi-dark;
+ }
+  th,td{
+    height: 34px;
+    width: 34px;
+    &:hover{
+      color: $dark-color;
+    }
+    &.prev,&.next{
+      color: $white;
+      height: 34px;
+      width: 34px;
+      background-color: var(--theme-deafult);
+    }
+    &.month{
+      color: var(--theme-deafult);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+}
+// timepicker css
+.clockpicker-popover {
+  border: none;
+  box-shadow: $card-box-shadow;
+  z-index: 7;
+  .popover-content {
+    background-color: rgba($primary-color, 0.05);
+  }
+}
+.clockpicker-canvas-bg {
+  fill: lighten($primary-color, 38%);
+}
+.clockpicker-tick {
+  &:hover {
+    color: inherit;
+    background-color: lighten($primary-color, 38%);
+  }
+}
+/**=====================
+   52. Datepicker CSS End
+==========================**/
+
+
+
+

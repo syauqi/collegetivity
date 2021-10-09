@@ -1,0 +1,224 @@
+@font-face {
+  font-family: summernote;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/summernote/summernote.eot?dbafe969167589eda84514394d126413);
+  src: url(../fonts/summernote/summernote.eot?#iefix) format("embedded-opentype"),url(../fonts/summernote/summernote.woff?dbafe969167589eda84514394d126413) format("woff"),url(../fonts/summernote/summernote.ttf?dbafe969167589eda84514394d126413) format("truetype");
+}
+
+%fonts {
+  display: inline-block;
+  font-family: summernote;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+
+.note-icon-align-center:before {
+  @extend %fonts;
+  content: "\f101";
+}
+.note-icon-align-indent:before {
+  @extend %fonts;
+  content: "\f102";
+}
+.note-icon-align-justify:before {
+  @extend %fonts;
+  content: "\f103";
+}
+.note-icon-align-left:before {
+  @extend %fonts;
+  content: "\f104";
+}
+.note-icon-align-outdent:before {
+  @extend %fonts;
+  content: "\f105";
+}
+.note-icon-align-right:before {
+  @extend %fonts;
+  content: "\f106";
+}
+.note-icon-align:before {
+  @extend %fonts;
+  content: "\f107";
+}
+.note-icon-arrow-circle-down:before {
+  @extend %fonts;
+  content: "\f108";
+}
+.note-icon-arrow-circle-left:before {
+  @extend %fonts;
+  content: "\f109";
+}
+.note-icon-arrow-circle-right:before {
+  @extend %fonts;
+  content: "\f10a";
+}
+.note-icon-arrow-circle-up:before {
+  @extend %fonts;
+  content: "\f10b";
+}
+.note-icon-arrows-alt:before {
+  @extend %fonts;
+  content: "\f10c";
+}
+.note-icon-arrows-h:before {
+  @extend %fonts;
+  content: "\f10d";
+}
+.note-icon-arrows-v:before {
+  @extend %fonts;
+  content: "\f10e";
+}
+.note-icon-bold:before {
+  @extend %fonts;
+  content: "\f10f";
+}
+.note-icon-caret:before {
+  @extend %fonts;
+  content: "\f110";
+}
+.note-icon-chain-broken:before {
+  @extend %fonts;
+  content: "\f111";
+}
+.note-icon-circle:before {
+  @extend %fonts;
+  content: "\f112";
+}
+.note-icon-close:before {
+  @extend %fonts;
+  content: "\f113";
+}
+.note-icon-code:before {
+  @extend %fonts;
+  content: "\f114";
+}
+.note-icon-col-after:before {
+  @extend %fonts;
+  content: "\f115";
+}
+.note-icon-col-before:before {
+  @extend %fonts;
+  content: "\f116";
+}
+.note-icon-col-remove:before {
+  @extend %fonts;
+  content: "\f117";
+}
+.note-icon-eraser:before {
+  @extend %fonts;
+  content: "\f118";
+}
+.note-icon-font:before {
+  @extend %fonts;
+  content: "\f119";
+}
+.note-icon-frame:before {
+  @extend %fonts;
+  content: "\f11a";
+}
+.note-icon-italic:before {
+  @extend %fonts;
+  content: "\f11b";
+}
+.note-icon-link:before {
+  @extend %fonts;
+  content: "\f11c";
+}
+.note-icon-magic:before {
+  @extend %fonts;
+  content: "\f11d";
+}
+.note-icon-menu-check:before {
+  @extend %fonts;
+  content: "\f11e";
+}
+.note-icon-minus:before {
+  @extend %fonts;
+  content: "\f11f";
+}
+.note-icon-orderedlist:before {
+  @extend %fonts;
+  content: "\f120";
+}
+.note-icon-pencil:before {
+  @extend %fonts;
+  content: "\f121";
+}
+.note-icon-picture:before {
+  @extend %fonts;
+  content: "\f122";
+}
+.note-icon-question:before {
+  @extend %fonts;
+  content: "\f123";
+}
+.note-icon-redo:before {
+  @extend %fonts;
+  content: "\f124";
+}
+.note-icon-row-above:before {
+  @extend %fonts;
+  content: "\f125";
+}
+.note-icon-row-below:before {
+  @extend %fonts;
+  content: "\f126";
+}
+.note-icon-row-remove:before {
+  @extend %fonts;
+  content: "\f127";
+}
+.note-icon-special-character:before {
+  @extend %fonts;
+  content: "\f128";
+}
+.note-icon-square:before {
+  @extend %fonts;
+  content: "\f129";
+}
+.note-icon-strikethrough:before {
+  @extend %fonts;
+  content: "\f12a";
+}
+.note-icon-subscript:before {
+  @extend %fonts;
+  content: "\f12b";
+}
+.note-icon-summernote:before {
+  @extend %fonts;
+  content: "\f12c";
+}
+.note-icon-superscript:before {
+  @extend %fonts;
+  content: "\f12d";
+}
+.note-icon-table:before {
+  @extend %fonts;
+  content: "\f12e";
+}
+.note-icon-text-height:before {
+  @extend %fonts;
+  content: "\f12f";
+}
+.note-icon-trash:before {
+  @extend %fonts;
+  content: "\f130";
+}
+.note-icon-underline:before {
+  @extend %fonts;
+  content: "\f131";
+}
+.note-icon-undo:before {
+  @extend %fonts;
+  content: "\f132";
+}
+.note-icon-unorderedlist:before {
+  @extend %fonts;
+  content: "\f133";
+}
+.note-icon-video:before {
+  @extend %fonts;
+  content: "\f134";
+}

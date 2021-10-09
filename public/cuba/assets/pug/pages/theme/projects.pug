@@ -1,0 +1,746 @@
+- var chat_menu             = true;
+- var theme_customizer      = true;
+- var typeahead             = true;
+- var typeahead_search      = true;
+- var tooltip               = true;
+- var animate               = true;
+- var sidebar               = true;
+
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.default-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.default-menu.default-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3 
+                                      | Project List
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Dashboard
+                                      li.breadcrumb-item.active Project List
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                          .col-md-12.project-list
+                              .card
+                                .row
+                                  .col-sm-6
+                                    ul#top-tab.nav.nav-tabs.border-tab(role='tablist')
+                                      li.nav-item
+                                        a#top-home-tab.nav-link.active(data-toggle='tab', href='#top-home', role='tab', aria-controls='top-home', aria-selected='true')
+                                          i(data-feather="target")
+                                          | All
+                                      li.nav-item
+                                        a#profile-top-tab.nav-link(data-toggle='tab', href='#top-profile', role='tab', aria-controls='top-profile', aria-selected='false')
+                                          i(data-feather="info")
+                                          | Doing
+                                      li.nav-item
+                                        a#contact-top-tab.nav-link(data-toggle='tab', href='#top-contact', role='tab', aria-controls='top-contact', aria-selected='false')
+                                          i(data-feather="check-circle")
+                                          | Done
+                                  .col-sm-6
+                                    .text-right
+                                      .form-group.mb-0.mr-0
+                                      a.btn.btn-primary(href="projectcreate.html") 
+                                        i(data-feather="plus-square") 
+                                        | Create New Project
+
+                          .col-sm-12
+                                  .card
+                                    .card-body
+                                      #top-tabContent.tab-content
+                                        #top-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='top-home-tab')
+                                          .row
+                                            .col-xl-4.col-lg-6
+                                              .project-box
+                                                span.badge.badge-primary Doing
+                                                h6 Endless admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Themeforest, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-primary 12 
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-primary 5
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-primary 7
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +10 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 70% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-primary.progress-bar-striped( role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6
+                                              .project-box
+                                                span.badge.badge-success Done
+                                                h6 Universal admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Envato, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-success 24
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-success 24
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-success 40
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +3 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 100% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-success( role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6
+                                              .project-box
+                                                span.badge.badge-success Done
+                                                h6 Poco admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Envato, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-success 40
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-success 40
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-success 20
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +2 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 100% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-success( role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6.mt-4
+                                              .project-box
+                                                span.badge.badge-success Done
+                                                h6 Universal admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Envato, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-success 24
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-success 24
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-success 40
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +3 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 100% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-success( role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6.mt-4
+                                              .project-box
+                                                span.badge.badge-primary Doing
+                                                h6 Endless admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Themeforest, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-primary 12 
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-primary 5
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-primary 7
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +10 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 70% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-primary.progress-bar-striped( role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6.mt-4
+                                              .project-box
+                                                span.badge.badge-success Done
+                                                h6 Poco admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Envato, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-success 40
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-success 40
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-success 20
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +2 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 100% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-success( role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                      
+                                        #top-profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-top-tab')
+                                          .row
+                                            .col-xl-4.col-lg-6
+                                              .project-box
+                                                span.badge.badge-primary Doing
+                                                h6 Endless admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Themeforest, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-primary 12 
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-primary 5
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-primary 7
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +10 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 70% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-primary.progress-bar-striped( role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6
+                                              .project-box
+                                                span.badge.badge-primary Doing
+                                                h6 Universal admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Envato, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-primary 24
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-primary 24
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-primary 40
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +3 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 100% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-primary( role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6
+                                              .project-box
+                                                span.badge.badge-primary Doing
+                                                h6 Poco admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Envato, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-primary 40
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-primary 40
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-primary 20
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +2 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 100% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-primary( role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6.mt-4
+                                              .project-box
+                                                span.badge.badge-primary Doing
+                                                h6 Universal admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Envato, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-primary 24
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-primary 24
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-primary 40
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +3 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 100% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-primary( role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6.mt-4
+                                              .project-box
+                                                span.badge.badge-primary Doing
+                                                h6 Endless admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Themeforest, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-primary 12 
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-primary 5
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-primary 7
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +10 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 70% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-primary.progress-bar-striped( role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6.mt-4
+                                              .project-box
+                                                span.badge.badge-primary Doing
+                                                h6 Poco admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Envato, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-primary 40
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-primary 40
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-primary 20
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +2 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 100% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-primary( role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                      
+                                        #top-contact.tab-pane.fade(role='tabpanel', aria-labelledby='contact-top-tab')
+                                          .row
+                                            .col-xl-4.col-lg-6
+                                              .project-box
+                                                span.badge.badge-success Done
+                                                h6 Endless admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Themeforest, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-success 12 
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-success 5
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-success 7
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +10 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 70% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-success.progress-bar-striped( role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6
+                                              .project-box
+                                                span.badge.badge-success Done
+                                                h6 Universal admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Envato, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-success 24
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-success 24
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-success 40
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +3 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 100% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-success( role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6
+                                              .project-box
+                                                span.badge.badge-success Done
+                                                h6 Poco admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Envato, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-success 40
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-success 40
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-success 20
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +2 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 100% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-success( role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6.mt-4
+                                              .project-box
+                                                span.badge.badge-success Done
+                                                h6 Universal admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Envato, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-success 24
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-success 24
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-success 40
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +3 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 100% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-success( role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6.mt-4
+                                              .project-box
+                                                span.badge.badge-primary Done
+                                                h6 Endless admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Themeforest, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-success 12 
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-success 5
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-success 7
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +10 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 70% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-success.progress-bar-striped( role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                            .col-xl-4.col-lg-6.mt-4
+                                              .project-box
+                                                span.badge.badge-success Done
+                                                h6 Poco admin Design
+                                                .media
+                                                  img.img-20.mr-1.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                  .media-body
+                                                    p Envato, australia
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                .row.details
+                                                  .col-6
+                                                    span Issues 
+                                                  .col-6.text-success 40
+                                                  .col-6 
+                                                    span Resolved
+                                                  .col-6.text-success 40
+                                                  .col-6 
+                                                    span Comment
+                                                  .col-6.text-success 20
+
+                                                .customers
+                                                  ul
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/5.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block
+                                                      img.img-30.rounded-circle(src='../assets/images/user/1.jpg' alt='' data-original-title='' title='')
+                                                    li.d-inline-block.ml-2
+                                                      p.f-12 +2 More
+                                                .project-status.mt-4
+                                                  .media.mb-0
+                                                    p 100% 
+                                                    .media-body.text-right
+                                                      span Done
+                                                  .progress(style="height: 5px")
+                                                    .progress-bar-animated.bg-success( role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100")
+                                                      
+
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

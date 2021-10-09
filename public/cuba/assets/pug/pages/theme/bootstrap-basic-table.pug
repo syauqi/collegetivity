@@ -1,0 +1,779 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                        | Bootstrap Basic Tables
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Bootstrap Tables
+                                      li.breadcrumb-item.active Bootstrap Basic Tables
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Basic Table
+                              span
+                                | Use a class
+                                code table
+                                |  to any table.
+                            .table-responsive
+                              table.table
+                                thead
+                                  tr
+                                    th(scope='col') #
+                                    th(scope='col') First Name
+                                    th(scope='col') Last Name
+                                    th(scope='col') Username
+                                    th(scope='col') Role
+                                    th(scope='col') Country
+                                tbody
+                                  tr
+                                    th(scope='row') 1
+                                    td Alexander
+                                    td Orton
+                                    td @mdorton
+                                    td Admin
+                                    td USA
+                                  tr
+                                    th(scope='row') 2
+                                    td John Deo
+                                    td Deo
+                                    td @johndeo
+                                    td User
+                                    td USA
+                                  tr
+                                    th(scope='row') 3
+                                    td Randy Orton
+                                    td the Bird
+                                    td @twitter
+                                    td admin
+                                    td UK
+                                  tr
+                                    th(scope='row') 4
+                                    td Randy Mark
+                                    td Ottandy
+                                    td @mdothe
+                                    td user
+                                    td AUS
+                                  tr
+                                    th(scope='row') 5
+                                    td Ram Jacob
+                                    td Thornton
+                                    td @twitter
+                                    td admin
+                                    td IND
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Inverse Table
+                              span
+                                | Use a class 
+                                code table-inverse
+                                |  inside table element.
+                            .table-responsive
+                              table.table.table-inverse
+                                thead
+                                  tr
+                                    th(scope='col') #
+                                    th(scope='col') First Name
+                                    th(scope='col') Last Name
+                                    th(scope='col') Username
+                                    th(scope='col') Role
+                                    th(scope='col') Country
+                                tbody
+                                  tr
+                                    th(scope='row') 1
+                                    td Alexander
+                                    td Orton
+                                    td @mdorton
+                                    td Admin
+                                    td USA
+                                  tr
+                                    th(scope='row') 2
+                                    td John Deo
+                                    td Deo
+                                    td @johndeo
+                                    td User
+                                    td USA
+                                  tr
+                                    th(scope='row') 3
+                                    td Randy Orton
+                                    td the Bird
+                                    td @twitter
+                                    td admin
+                                    td UK
+                                  tr
+                                    th(scope='row') 4
+                                    td Randy Mark
+                                    td Ottandy
+                                    td @mdothe
+                                    td user
+                                    td AUS
+                                  tr
+                                    th(scope='row') 5
+                                    td Ram Jacob
+                                    td Thornton
+                                    td @twitter
+                                    td admin
+                                    td IND
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Inverse Table with Primary background
+                              span
+                                | Use a class 
+                                code .bg-info, .bg-success, .bg-warning and .bg-danger classes.
+                                |  with light text on dark backgrounds inside table element.
+                                br
+                                | To set the light background color use .bg-[color] class where [color] is the value of your selected color from stack color palette. So for teal color background class will be .bg-teal
+                            .table-responsive
+                              table.table.table-striped.bg-primary
+                                thead.tbl-strip-thad-bdr
+                                  tr
+                                    th(scope='col') #
+                                    th(scope='col') First Name
+                                    th(scope='col') Last Name
+                                    th(scope='col') Username
+                                    th(scope='col') Role
+                                    th(scope='col') Country
+                                tbody
+                                  tr
+                                    th(scope='row') 1
+                                    td Alexander
+                                    td Orton
+                                    td @mdorton
+                                    td Admin
+                                    td USA
+                                  tr
+                                    th(scope='row') 2
+                                    td John Deo
+                                    td Deo
+                                    td @johndeo
+                                    td User
+                                    td USA
+                                  tr
+                                    th(scope='row') 3
+                                    td Randy Orton
+                                    td the Bird
+                                    td @twitter
+                                    td admin
+                                    td UK
+                                  tr
+                                    th(scope='row') 4
+                                    td Randy Mark
+                                    td Ottandy
+                                    td @mdothe
+                                    td user
+                                    td AUS
+                                  tr
+                                    th(scope='row') 5
+                                    td Ram Jacob
+                                    td Thornton
+                                    td @twitter
+                                    td admin
+                                    td IND
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Hoverable rows
+                              span
+                                | Use a class 
+                                code table-hover
+                                |  to enable a hover state on table rows within a 
+                                code tbody
+                                | .
+                            .table-responsive
+                              table.table.table-hover
+                                thead
+                                  tr
+                                    th(scope='col') #
+                                    th(scope='col') First Name
+                                    th(scope='col') Last Name
+                                    th(scope='col') Username
+                                    th(scope='col') Role
+                                    th(scope='col') Country
+                                tbody
+                                  tr
+                                    th(scope='row') 1
+                                    td Alexander
+                                    td Orton
+                                    td @mdorton
+                                    td Admin
+                                    td USA
+                                  tr
+                                    th(scope='row') 2
+                                    td John Deo
+                                    td Deo
+                                    td @johndeo
+                                    td User
+                                    td USA
+                                  tr
+                                    th(scope='row') 3
+                                    td Randy Orton
+                                    td the Bird
+                                    td @twitter
+                                    td admin
+                                    td UK
+                                  tr
+                                    th(scope='row') 4
+                                    td Randy Mark
+                                    td Ottandy
+                                    td @mdothe
+                                    td user
+                                    td AUS
+                                  tr
+                                    th(scope='row') 5
+                                    td Ram Jacob
+                                    td Thornton
+                                    td @twitter
+                                    td admin
+                                    td IND
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Contextual classes
+                              span
+                                | Use contextual classes to color table rows or individual cells. you may use Classes 
+                                code table-primary
+                                | ,
+                                code table-secondary
+                                | ,
+                                code table-success
+                                | ,
+                                code table-info
+                                | ,
+                                code table-warning
+                                | ,
+                                code table-danger
+                                | ,
+                                code table-light
+                                | ,
+                                code table-active
+                                |  in
+                                code tr
+                            .table-responsive
+                              table.table
+                                thead
+                                  tr
+                                    th(scope='col') Class
+                                    th(scope='col') Heading
+                                    th(scope='col') Heading
+                                tbody
+                                  tr.table-primary
+                                    th(scope='row') Primary
+                                    td Cell
+                                    td Cell
+                                  tr.table-secondary
+                                    th(scope='row') Secondary
+                                    td Cell
+                                    td Cell
+                                  tr.table-success
+                                    th(scope='row') Success
+                                    td Cell
+                                    td Cell
+                                  tr.table-info
+                                    th(scope='row') Info
+                                    td Cell
+                                    td Cell
+                                  tr.table-warning
+                                    th(scope='row') Warning
+                                    td Cell
+                                    td Cell
+                                  tr.table-danger
+                                    th(scope='row') Danger
+                                    td Cell
+                                    td Cell
+                                  tr.table-light
+                                    th(scope='row') Light
+                                    td Cell
+                                    td Cell
+                                  tr.table-active
+                                    th(scope='row') Active
+                                    td Cell
+                                    td Cell
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Text or background utilities
+                              span
+                                | Regular table background variants are not available with the inverse table, however, you may use Classes 
+                                code bg-dark
+                                | ,
+                                code bg-warning
+                                | ,
+                                code bg-success
+                                | ,
+                                code bg-info
+                                | ,
+                                code bg-danger
+                                | ,
+                                code bg-primary
+                                | ,
+                                code bg-secondary
+                                | ,
+                                code bg-light
+                                |  in
+                                code td
+                            .table-responsive
+                              table.table.table-borderedfor
+                                thead
+                                  tr
+                                    th(scope='col') #
+                                    th(scope='col') Heading
+                                    th(scope='col') Heading
+                                tbody
+                                  tr.table-active
+                                    td.bg-primary 1
+                                    td.bg-primary primary
+                                    td.bg-primary primary
+                                  tr.table-active
+                                    td.bg-secondary 2
+                                    td.bg-secondary secondary
+                                    td.bg-secondary secondary
+                                  tr
+                                    td.bg-success 3
+                                    td.bg-success success
+                                    td.bg-success success
+                                  tr
+                                    td.bg-info 4
+                                    td.bg-info info
+                                    td.bg-info info
+                                  tr
+                                    td.bg-warning 5
+                                    td.bg-warning warning
+                                    td.bg-warning warning
+                                  tr
+                                    td.bg-danger 6
+                                    td.bg-danger danger
+                                    td.bg-danger danger
+                                  tr.table-active
+                                    td.bg-light 7
+                                    td.bg-light light
+                                    td.bg-light light
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Table head options
+                              span
+                                | Similar to tables and dark tables, use the modifier classes 
+                                code .thead-dark
+                                |   to make 
+                                code thead
+                                |  appear light or dark gray.
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive
+                                  table.table
+                                    thead.thead-dark
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') First Name
+                                        th(scope='col') Last Name
+                                        th(scope='col') Username
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                      tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                      tr
+                                        th(scope='row') 3
+                                        td Larry
+                                        td the Bird
+                                        td @twitter
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Table head options
+                              span
+                                | Similar to tables and dark tables, use the modifier classes 
+                                code .bg-*
+                                | and  
+                                code .thead-light
+                                |  to make 
+                                code thead
+                                |  appear light or dark gray.
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive
+                                  table.table
+                                    thead.thead-light
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') First Name
+                                        th(scope='col') Last Name
+                                        th(scope='col') Username
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                      tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                      tr
+                                        th(scope='row') 3
+                                        td Larry
+                                        td the Bird
+                                        td @twitter
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Striped Row 
+                              span
+                                | Use 
+                                code .table-striped
+                                |  to add zebra-striping to any table row within the 
+                                code
+                                | . This styling doesn't work in IE8 and below as :nth-child CSS selector isn't supported.
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive
+                                  table.table.table-striped
+                                    thead
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') First Name
+                                        th(scope='col') Last Name
+                                        th(scope='col') Username
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                      tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                      tr
+                                        th(scope='row') 3
+                                        td Larry
+                                        td the Bird
+                                        td @twitter
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Striped Row with Inverse Table
+                              span
+                                | Use 
+                                code .table-striped
+                                |  to add zebra-striping to any table row within the 
+                                code
+                                | . This styling doesn't work in IE8 and below as :nth-child CSS selector isn't supported.
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive
+                                  table.table.table-inverse.table-striped
+                                    thead
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') First Name
+                                        th(scope='col') Last Name
+                                        th(scope='col') Username
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                      tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                      tr
+                                        th(scope='row') 3
+                                        td Larry
+                                        td the Bird
+                                        td @twitter
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Caption
+                              span
+                                | A 
+                                code &lt;caption&gt;
+                                |  functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive
+                                  table.table
+                                    caption List of users
+                                    thead
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') First Name
+                                        th(scope='col') Last Name
+                                        th(scope='col') Username
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                      tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                      tr
+                                        th(scope='row') 3
+                                        td Larry
+                                        td the Bird
+                                        td @twitter
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Responsive Tables
+                              span
+                                | A 
+                                code &lt;caption&gt;
+                                |  functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive
+                                  table.table
+                                    thead
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                      tr
+                                        th(scope='row') 2
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                      tr
+                                        th(scope='row') 3
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Breckpoint Specific
+                              span
+                                | Use  
+                                code .table-responsive{-sm|-md|-lg|-xl}
+                                |  functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive
+                                  table.table.table-responsive-sm
+                                    thead
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                      tr
+                                        th(scope='row') 2
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                      tr
+                                        th(scope='row') 3
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive
+                                  table.table.table-responsive-sm
+                                    thead
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                      tr
+                                        th(scope='row') 2
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                      tr
+                                        th(scope='row') 3
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive
+                                  table.table.table-responsive-sm
+                                    thead
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                      tr
+                                        th(scope='row') 2
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                      tr
+                                        th(scope='row') 3
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                            .card-block.row
+                              .col-sm-12.col-lg-12.col-xl-12
+                                .table-responsive
+                                  table.table.table-responsive-sm
+                                    thead
+                                      tr
+                                        th(scope='col') #
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                        th(scope='col') Table heading
+                                    tbody
+                                      tr
+                                        th(scope='row') 1
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                      tr
+                                        th(scope='row') 2
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                      tr
+                                        th(scope='row') 3
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                                        td Table cell
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files      

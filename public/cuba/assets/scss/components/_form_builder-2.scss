@@ -1,0 +1,177 @@
+/**=====================
+     12. Form Builder 2 CSS Start
+==========================**/
+.form-builder-column {
+    #pills-tabContent {
+        .theme-form {
+
+            .form-group,
+            .ui-draggable {
+                margin-bottom: 0 !important;
+
+                .checkbox {
+                    label {
+                        margin-top: 0;
+                    }
+                }
+
+                input {
+                    border-radius: 4px;
+                }
+
+                .input-group {
+                    #prependedcheckbox {
+                        margin-right: 0;
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                    }
+
+                    input {
+                        margin-right: 15px;
+                    }
+
+                    .input-group-prepend {
+                        .input-group-text {
+                            input {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+
+                    .input-group-btn {
+                        button {
+                            border-radius: 4px;
+                        }
+                    }
+                }
+
+                select {
+                    border-radius: 4px;
+                }
+
+                .m-t-help-block {
+                    margin-top: -3px;
+                }
+            }
+        }
+
+        #pills-button {
+            .theme-form {
+                button {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+
+    .droppable-active {
+        background-color: rgba($primary-color, 0.2) !important;
+        opacity: 0.1;
+    }
+
+    .form-body {
+        min-height: 540px;
+    }
+
+    .draggable {
+        cursor: move;
+    }
+
+    .drag-bx {
+        border: 1px dotted $light-gray;
+        border-radius: 4px;
+    }
+
+    .tools {
+        a {
+            cursor: pointer;
+            font-size: 80%;
+        }
+    }
+}
+
+.ui-front {
+    textarea {
+        font-family: $font-rubik, $font-serif !important;
+    }
+}
+
+.form-builder-2 {
+    .form-group {
+        .checkbox {
+            label {
+                margin-top: 0;
+            }
+        }
+
+        input {
+            border-radius: 4px;
+        }
+
+        .input-group {
+            #prependedcheckbox {
+                margin-right: 0;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            input {
+                margin-right: 15px;
+            }
+
+            .input-group-prepend {
+                .input-group-text {
+                    input {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .input-group-btn {
+                button {
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        select {
+            border-radius: 4px;
+        }
+
+        .m-t-help-block {
+            margin-top: -3px;
+        }
+    }
+}
+
+.form-builder-2-header {
+    background-color: $light-color;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 30px;
+
+    >div {
+        display: inline-block;
+        width: 49%;
+
+        nav {
+            text-align: right;
+            float: right;
+        }
+    }
+}
+
+.draggable {
+    input {
+        border-radius: 5px;
+    }
+
+    select {
+        border-radius: 4px;
+    }
+}
+
+/**=====================
+     12. Form Builder 2 CSS Ends
+==========================**/

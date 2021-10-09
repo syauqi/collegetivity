@@ -1,0 +1,176 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Input groups
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')
+                                         i(data-feather="home")
+                                      li.breadcrumb-item Form Controls
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Form Controls
+                                      li.breadcrumb-item.active  Input groups
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Basic Input groups
+                            .card-body
+                              .row
+                                .col
+                                  form
+                                    .form-group.m-form__group
+                                      label Left Addon
+                                      .input-group.mb-3
+                                        .input-group-prepend
+                                          span.input-group-text @
+                                        input.form-control(type='text', placeholder='Email')
+                                    .form-group
+                                      label Right Addon
+                                      .input-group.mb-3
+                                        input.form-control(type='text', placeholder="Recipient's username", aria-label="Recipient's username")
+                                        .input-group-append
+                                          span.input-group-text @example.com
+                                    .form-group
+                                      label Joint Addon
+                                      .input-group.mb-3
+                                        .input-group-prepend.d-flex
+                                          span.input-group-text $
+                                          span.input-group-text 0.00
+                                        input.form-control(type='text', aria-label='Amount (to the nearest dollar)')
+                                    .form-group.mb-0
+                                      label Left & Right Addon
+                                      .input-group.mb-3
+                                        .input-group-prepend
+                                          span.input-group-text $
+                                        input.form-control(type='text', aria-label='Amount (to the nearest dollar)')
+                                        .input-group-append
+                                          span.input-group-text .00
+                                    .form-group.input-group-solid
+                                      label Solid style
+                                      .input-group.mb-3
+                                        .input-group-prepend
+                                          span.input-group-text @
+                                        input.form-control(type='text', placeholder='Email')
+                                    .form-group.input-group-square
+                                      label Square style
+                                      .input-group.mb-3
+                                        .input-group-prepend
+                                          span.input-group-text +
+                                        input.form-control(type='text', placeholder='Email')
+                                    .form-group.input-group-square
+                                      label Raise style
+                                      .input-group.input-group-air.mb-3
+                                        .input-group-prepend
+                                          span.input-group-text #
+                                        input.form-control(type='text', placeholder='Email')
+                                    .form-group.mb-0
+                                      label Left & Right Addon
+                                      .input-group.pill-input-group.mb-3
+                                        .input-group-prepend
+                                          span.input-group-text $
+                                        input.form-control(type='text', aria-label='Amount (to the nearest dollar)')
+                                        .input-group-append
+                                          span.input-group-text .00
+                            .card-footer
+                              button.btn.btn-primary(type='submit') Submit
+                              button.btn.btn-light(type='submit') Cancel
+                          .card
+                            .card-header
+                              h5 Basic Input groups
+                            .card-body
+                              .row
+                                .col
+                                  form
+                                    .form-group.m-form__group.mb-3
+                                      label Left Addon
+                                      .input-group
+                                        .input-group-prepend
+                                          span.input-group-text
+                                            i.icofont.icofont-pencil-alt-5
+                                        input.form-control(type='text', placeholder='Email')
+                                    .form-group.mb-3
+                                      label Right Addon
+                                      .input-group
+                                        input.form-control(type='text', placeholder="Recipient's username", aria-label="Recipient's username")
+                                        .input-group-append
+                                          span.input-group-text
+                                            i.icofont.icofont-ui-dial-phone
+                                    .form-group.mb-3
+                                      label Joint Addon
+                                      .input-group
+                                        .input-group-prepend.d-flex
+                                          span.input-group-text
+                                            i.icofont.icofont-unlink
+                                          span.input-group-text 0.00
+                                        input.form-control(type='text', aria-label='Amount (to the nearest dollar)')
+                                    .form-group.mb-3
+                                      label Left & Right Addon
+                                      .input-group.mb-3
+                                        .input-group-prepend
+                                          span.input-group-text
+                                            i.icofont.icofont-ui-zoom-out
+                                        input.form-control(type='text', aria-label='Amount (to the nearest dollar)')
+                                        .input-group-append
+                                          span.input-group-text
+                                            i.icofont.icofont-ui-zoom-in
+                                    .form-group.input-group-solid.mb-3
+                                      label Solid style
+                                      .input-group
+                                        .input-group-prepend
+                                          span.input-group-text
+                                            i.icofont.icofont-users
+                                        input.form-control(type='text', placeholder='999999')
+                                    .form-group.input-group-square.mb-3
+                                      label Flat style
+                                      .input-group
+                                        .input-group-prepend
+                                          span.input-group-text
+                                            i.icofont.icofont-credit-card
+                                        input.form-control(type='text', placeholder='')
+                                    .form-group.input-group-square.mb-3
+                                      label Raise style
+                                      .input-group
+                                        .input-group-prepend
+                                          span.input-group-text
+                                            i.icofont.icofont-download
+                                        input.form-control.input-group-air(type='text', placeholder='https://www.example.com')
+                                    .form-group.mb-0.mb-3
+                                      label Left & Right Addon
+                                      .input-group.pill-input-group
+                                        .input-group-prepend
+                                          span.input-group-text
+                                            i.icofont.icofont-ui-copy
+                                        input.form-control(type='text', aria-label='Amount (to the nearest dollar)')
+                                        .input-group-append
+                                          span.input-group-text
+                                            i.icofont.icofont-stock-search
+                            .card-footer
+                              button.btn.btn-primary(type='submit') Submit
+                              button.btn.btn-light(type='submit') Cancel
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

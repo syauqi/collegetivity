@@ -1,0 +1,76 @@
+//fonts
+$font_0: tui-calendar-font-icon;
+
+//urls
+$url_0: url(../../fonts/calendar/icon.eot);
+$url_1: url(../../fonts/calendar/icon.ttf);
+$url_2: url(../../fonts/calendar/icon.woff);
+$url_3: url(../../fonts/calendar/icon.svg);
+
+$url_4: url(../../images/calender/img-bi.png);
+$url_5: url(../../images/calender/ic-view-month.png);
+$url_6: url(../../images/calender/ic-view-week.png);
+$url_7: url(../../images/calender/ic-view-day.png);
+$url_8: url(../../images/calender/ic-arrow-line-left.png);
+$url_9: url(../../images/calender/ic-arrow-line-right.png);
+$url_10: url(../../images/calender/ic-traveltime-w.png);
+
+@font-face {
+    font-family: $font_0;
+    src: $url_0 format('embedded-opentype'), $url_1 format('truetype'), $url_2 format('woff'), $url_3 format('svg');
+}
+.calendar-icon {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.calendar-font-icon {
+    font-family: $font_0;
+    font-size: 10px;
+    font-weight: normal;
+}
+.img-bi {
+    background: $url_4 no-repeat;
+    width: 215px;
+    height: 16px;
+}
+.ic_view_month {
+    background: $url_5 no-repeat;
+}
+.ic_view_week {
+    background: $url_6 no-repeat;
+}
+.ic_view_day {
+    background: $url_7 no-repeat;
+}
+.ic-arrow-line-left {
+    background: $url_8 no-repeat;
+}
+.ic-arrow-line-right {
+    background: $url_9 no-repeat;
+}
+.ic-travel-time {
+    background: $url_10 no-repeat;
+}
+.ic-location-b:before {
+    content: '\e900';
+}
+.ic-lock-b:before {
+    content: '\e901';
+}
+.ic-milestone-b:before {
+    content: '\e902';
+}
+.ic-readonly-b:before {
+    content: '\e903';
+}
+.ic-repeat-b:before {
+    content: '\e904';
+}
+.ic-state-b:before {
+    content: '\e905';
+}
+.ic-user-b:before {
+    content: '\e906';
+}

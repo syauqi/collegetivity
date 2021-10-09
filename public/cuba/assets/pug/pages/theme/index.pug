@@ -1,0 +1,388 @@
+- var chartist              = true;
+- var theme_customizer      = true;
+- var apex                  = true;
+- var tooltip               = true;
+- var dashboard_default     = true;
+- var notify                = true;
+- var animate               = true;
+- var knobchart             = true;
+- var page_knobchart        = true;
+- var date_picker           = true;
+- var typeahead             = true;
+- var typeahead_search      = true;
+- var sidebar               = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body(onload='startTime()')
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Default
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Dashboard
+                                      li.breadcrumb-item.active Default      
+                    // Container-fluid starts
+                    .container-fluid
+                        .row.second-chart-list.third-news-update
+                          .col-xl-4.col-lg-12.xl-50.morning-sec.box-col-12
+                            .card.o-hidden.profile-greeting
+                              .card-body
+                                  .media
+                                    .badge-groups.w-100
+                                      .badge.f-12
+                                        i.mr-1(data-feather='clock')
+                                        span#txt
+                                      .badge.f-12
+                                        i.fa.fa-spin.fa-cog.f-14
+                                  .greeting-user.text-center
+                                    .profile-vector
+                                      img.img-fluid(src='../assets/images/dashboard/welcome.png' alt='')
+                                    h4.f-w-600
+                                      span#greeting Good Morning
+                                      | 
+                                      span.right-circle
+                                        i.fa.fa-check-circle.f-14.middle
+                                    p
+                                      span  Today's earrning is $405 & your sales increase rate is 3.7 over the last 24 hours
+                                    .whatsnew-btn
+                                       a.btn.btn-primary Whats New !
+                                    .left-icon
+                                      i.fa.fa-bell  
+                          .col-xl-8.xl-100.dashboard-sec.box-col-12
+                            .card.earning-card
+                              .card-body.p-0
+                                .row.m-0
+                                  .col-xl-3.earning-content.p-0
+                                    .row.m-0.chart-left
+                                      .col-xl-12.p-0.left_side_earning
+                                        h5 Dashboard
+                                        p.font-roboto Overview of last month
+                                      .col-xl-12.p-0.left_side_earning
+                                        h5 $4055.56 
+                                        p.font-roboto This Month Earning
+                                      .col-xl-12.p-0.left_side_earning
+                                        h5 $1004.11
+                                        p.font-roboto This Month Profit
+                                      .col-xl-12.p-0.left_side_earning
+                                        h5 90%
+                                        p.font-roboto This Month Sale
+                                      .col-xl-12.p-0.left-btn
+                                        a.btn.btn-gradient Summary
+                                  .col-xl-9.p-0
+                                    .chart-right
+                                      .row.m-0.p-tb
+                                        .col-xl-8.col-md-8.col-sm-8.col-12.p-0
+                                          .inner-top-left
+                                            ul.d-flex.list-unstyled
+                                              li Daily
+                                              li.active Weekly
+                                              li Monthly
+                                              li Yearly
+                                        .col-xl-4.col-md-4.col-sm-4.col-12.p-0.justify-content-end
+                                          .inner-top-right
+                                            ul.d-flex.list-unstyled.justify-content-end
+                                              li Online
+                                              li Store
+                                      .row
+                                        .col-xl-12
+                                          .card-body.p-0
+                                            .current-sale-container
+                                              #chart-currently
+                                    .row.border-top.m-0
+                                      .col-xl-4.pl-0.col-md-6.col-sm-6
+                                        .media.p-0
+                                          .media-left
+                                            i.icofont.icofont-crown
+                                          .media-body
+                                            h6 Referral Earning
+                                            p $5,000.20
+                                      .col-xl-4.col-md-6.col-sm-6
+                                        .media.p-0
+                                          .media-left.bg-secondary
+                                             i.icofont.icofont-heart-alt
+                                          .media-body
+                                            h6 Cash Balance
+                                            p $2,657.21
+                                      .col-xl-4.col-md-12.pr-0
+                                        .media.p-0
+                                          .media-left
+                                             i.icofont.icofont-cur-dollar
+                                          .media-body
+                                            h6 Sales forcasting
+                                            p $9,478.50     
+                          .col-xl-9.xl-100.chart_data_left.box-col-12
+                            .card
+                              .card-body.p-0
+                                .row.m-0.chart-main
+                                  .col-xl-3.col-md-6.col-sm-6.p-0.box-col-6
+                                    .media.align-items-center
+                                      .hospital-small-chart
+                                          .small-bar
+                                            .small-chart.flot-chart-container
+                                      .media-body
+                                        .right-chart-content
+                                          h4 1001
+                                          span purchase 
+                                  .col-xl-3.col-md-6.col-sm-6.p-0.box-col-6
+                                    .media.align-items-center
+                                      .hospital-small-chart
+                                          .small-bar
+                                            .small-chart1.flot-chart-container
+                                      .media-body
+                                        .right-chart-content
+                                          h4 1005
+                                          span Sales
+                                  .col-xl-3.col-md-6.col-sm-6.p-0.box-col-6
+                                    .media.align-items-center
+                                      .hospital-small-chart
+                                          .small-bar
+                                            .small-chart2.flot-chart-container
+                                      .media-body
+                                        .right-chart-content
+                                          h4 100
+                                          span Sales return
+                                  .col-xl-3.col-md-6.col-sm-6.p-0.box-col-6
+                                    .media.border-none.align-items-center
+                                      .hospital-small-chart
+                                          .small-bar
+                                            .small-chart3.flot-chart-container
+                                      .media-body
+                                        .right-chart-content
+                                          h4 101
+                                          span Purchase ret
+                          .col-xl-3.xl-50.chart_data_right.box-col-12
+                              .card
+                                .card-body
+                                  .media.align-items-center
+                                    .media-body.right-chart-content
+                                      h4 $95,900
+                                        span.new-box Hot
+                                      span Purchase Order Value
+                                    .knob-block.text-center
+                                      input.knob1(data-width='10',data-height='70', data-thickness='.3', data-angleoffset='0',data-linecap='round', data-fgcolor='#7366ff',data-bgcolor="#eef5fb", value='60')
+                          .col-xl-3.xl-50.chart_data_right.second.d-none 
+                              .card
+                                .card-body
+                                  .media.align-items-center
+                                    .media-body.right-chart-content 
+                                      h4 $95,000
+                                        span.new-box New
+                                      span Product Order Value
+                                    .knob-block.text-center
+                                      input.knob1(data-width='50',data-height='70',  data-thickness='.3', data-fgcolor='#7366ff', data-linecap='round',data-angleoffset='0', value='60')
+                          .col-xl-4.xl-50.news.box-col-6
+                              .card
+                                .card-header
+                                  .header-top
+                                    h5.m-0 News & Update
+                                    .card-header-right-icon
+                                      select.button.btn.btn-primary
+                                        option Today
+                                          //- i.fa.fa-angle-down.mr-3
+                                        option Tomorrow
+                                          //- i.fa.fa-angle-down 
+                                        option Yesterday
+                                          //- i.fa.fa-angle-down  
+                                .card-body.p-0
+                                  .news-update
+                                    h6 36% off For pixel lights Couslations Types.
+                                    span Lorem Ipsum is simply dummy...
+                                  .news-update
+                                    h6 We are produce new product this
+                                    span  Lorem Ipsum is simply text of the printing... 
+                                  .news-update
+                                    h6 50% off For COVID Couslations Types.
+                                    span Lorem Ipsum is simply dummy...
+                                .card-footer
+                                  .bottom-btn
+                                    a(href="#") More...
+                          .col-xl-4.xl-50.appointment-sec.box-col-6
+                              .row 
+                                .col-xl-12.appointment
+                                  .card
+                                    .card-header.card-no-border
+                                      .header-top
+                                        h5.m-0 appointment
+                                        .card-header-right-icon
+                                          select.button.btn.btn-primary
+                                            option Today
+                                              //- i.fa.fa-angle-down  
+                                            option Tomorrow
+                                              //- i.fa.fa-angle-down 
+                                            option Yesterday
+                                              //- i.fa.fa-angle-down  
+                                    .card-body.pt-0
+                                      .appointment-table.table-responsive
+                                        table.table.table-bordernone
+                                          tbody
+                                            tr
+                                              td
+                                                img.img-fluid.img-40.rounded-circle.mb-3(src='../assets/images/appointment/app-ent.jpg',alt='Image description')
+                                                .status-circle.bg-primary
+                                              td.img-content-box
+                                                span.d-block Venter Loren
+                                                span.font-roboto Now
+                                              td
+                                                p.m-0.font-primary 28 Sept
+                                              td.text-right
+                                                .button.btn.btn-primary Done
+                                                  i.fa.fa-check-circle.ml-2
+                                            tr
+                                              td
+                                                img.img-fluid.img-40.rounded-circle(src='../assets/images/appointment/app-ent.jpg',alt='Image description')
+                                                .status-circle.bg-primary
+                                              td.img-content-box
+                                                span.d-block John Loren
+                                                span.font-roboto 11:00
+                                              td
+                                                p.m-0.font-primary 22 Sept
+                                              td.text-right
+                                                .button.btn.btn-danger Pending
+                                                  i.fa.fa-check-circle.ml-2
+                                .col-xl-12.alert-sec
+                                  .card.bg-img
+                                    .card-header
+                                      .header-top
+                                        h5.m-0 Alert  
+                                        .dot-right-icon
+                                          i.fa.fa-ellipsis-h
+                                    .card-body
+                                      .body-bottom
+                                        h6   10% off For drama lights Couslations...
+                                        span.font-roboto Lorem Ipsum is simply dummy...It is a long established fact that a reader will be distracted by  
+                          .col-xl-4.xl-50.notification.box-col-6
+                                  .card
+                                    .card-header.card-no-border
+                                      .header-top
+                                        h5.m-0 notification
+                                        .card-header-right-icon
+                                          select.button.btn.btn-primary
+                                            option Today
+                                              //- i.fa.fa-angle-down 
+                                            option Tomorrow
+                                              //- i.fa.fa-angle-down 
+                                            option Yesterday
+                                              //- i.fa.fa-angle-down  
+                                    .card-body.pt-0
+                                      .media
+                                        .media-body
+                                          p 20-04-2020 
+                                            span 10:10
+                                          h6 Updated Product
+                                            span.dot-notification
+                                          span Quisque a consequat ante sit amet magna...
+                                      .media
+                                        .media-body
+                                          p 20-04-2020
+                                            span.pl-1 Today
+                                            span.badge.badge-secondary New
+                                          h6 Tello just like your product
+                                            span.dot-notification
+                                          span Quisque a consequat ante sit amet magna... 
+                                      .media
+                                        .media-body
+                                          .d-flex.mb-3
+                                            .inner-img
+                                              img.img-fluid(src='../assets/images/notification/1.jpg',alt='Product-1')
+                                            .inner-img
+                                              img.img-fluid(src='../assets/images/notification/2.jpg',alt='Product-2')
+                                          span.mt-3 Quisque a consequat ante sit amet magna...
+                          .col-xl-4.xl-50.appointment.box-col-6
+                              .card
+                                .card-header
+                                  .header-top
+                                    h5.m-0 Market Value
+                                    .card-header-right-icon
+                                      select.button.btn.btn-primary
+                                        option Year
+                                          //- i.fa.fa-angle-down.mr-3
+                                        option Month
+                                          //- i.fa.fa-angle-down 
+                                        option Day
+                                          //- i.fa.fa-angle-down   
+                                .card-Body
+                                  .radar-chart
+                                    #marketchart        
+                          .col-xl-4.xl-100.chat-sec.box-col-6
+                              .card.chat-default
+                                .card-header.card-no-border
+                                  .media.media-dashboard
+                                    .media-body 
+                                      h5.mb-0 Live Chat
+                                    .icon-box
+                                      i.fa.fa-ellipsis-h
+                                .card-body.chat-box
+                                  .chat
+                                    .media.left-side-chat
+                                      .media-body.d-flex
+                                        .img-profile  
+                                          img.img-fluid(src="../assets/images/user.jpg",alt="Profile")
+                                        .main-chat
+                                          .message-main
+                                            span.mb-0 Hi deo, Please send me link.
+                                          .sub-message.message-main
+                                            span.mb-0 Right Now
+                                      p.f-w-400 7:28 PM
+                                    .media.right-side-chat
+                                      p.f-w-400 7:28 PM
+                                      .media-body.text-right
+                                        .message-main.pull-right
+                                          span.mb-0.text-left How can do for you
+                                          .clearfix
+                                    .media.left-side-chat
+                                      .media-body.d-flex
+                                        .img-profile  
+                                          img.img-fluid(src="../assets/images/user.jpg",alt="Profile")
+                                        .main-chat
+                                          .sub-message.message-main.mt-0
+                                            span It's argenty
+                                      p.f-w-400 7:28 PM
+                                    .media.right-side-chat
+                                      .media-body.text-right
+                                        .message-main.pull-right
+                                          span.loader-span.mb-0.text-left#wave
+                                              span.dot
+                                              span.dot
+                                              span.dot
+                                    .input-group
+                                      input#mail.form-control(type='text' placeholder='Type Your Message...' name='text')
+                                      .send-msg
+                                        i(data-feather='send')
+                          .col-xl-4.col-lg-12.xl-50.calendar-sec.box-col-6
+                              .card.gradient-primary.o-hidden
+                                .card-body
+                                  .setting-dot
+                                    .setting-bg-primary.date-picker-setting.position-set.pull-right
+                                      i.fa.fa-spin.fa-cog
+                                  .default-datepicker
+                                    .datepicker-here(data-language='en')
+                                  span.default-dots-stay.overview-dots.full-width-dots
+                                    span.dots-group
+                                      span.dots.dots1
+                                      span.dots.dots2.dot-small
+                                      span.dots.dots3.dot-small
+                                      span.dots.dots4.dot-medium
+                                      span.dots.dots5.dot-small
+                                      span.dots.dots6.dot-small
+                                      span.dots.dots7.dot-small-semi
+                                      span.dots.dots8.dot-small-semi
+                                      span.dots.dots9.dot-small                 
+                    // Container-fluid Ends
+                include ../../components/footer        
+        include ../../components/footer-files

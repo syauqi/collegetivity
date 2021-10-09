@@ -1,0 +1,103 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var date_time_picker      = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Date Time Picker
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item  Form Widgets
+                                      li.breadcrumb-item.active  Date Time Picker
+                    // Container-fluid starts
+                    .container-fluid
+                      .card
+                        .card-header
+                          h5 Date  Time Picker
+                        .card-body
+                          .row
+                            .col-md-12
+                              .datetime-picker
+                                form.theme-form
+                                  .form-group.row
+                                    label.col-sm-3.col-form-label.text-right Minimum Setup
+                                    .col-xl-5.col-sm-7.col-lg-8
+                                      #dt-minimum.input-group.date(data-target-input='nearest')
+                                        input.form-control.datetimepicker-input(type='text', data-target='#dt-minimum')
+                                        .input-group-append(data-target='#dt-minimum', data-toggle='datetimepicker')
+                                          .input-group-text
+                                            i.fa.fa-calendar
+                                  .form-group.row
+                                    label.col-sm-3.col-form-label.text-right Using Locales
+                                    .col-xl-5.col-sm-7.col-lg-8
+                                      #dt-local.input-group.date(data-target-input='nearest')
+                                        input.form-control.datetimepicker-input(type='text', data-target='#dt-local')
+                                        .input-group-append(data-target='#dt-local', data-toggle='datetimepicker')
+                                          .input-group-text
+                                            i.fa.fa-calendar
+                                  .form-group.row
+                                    label.col-sm-3.col-form-label.text-right Time Only
+                                    .col-xl-5.col-sm-7.col-lg-8
+                                      #dt-time.input-group.date(data-target-input='nearest')
+                                        input.form-control.datetimepicker-input(type='text', data-target='#dt-time')
+                                        .input-group-append(data-target='#dt-time', data-toggle='datetimepicker')
+                                          .input-group-text
+                                            i.fa.fa-clock-o
+                                  .form-group.row
+                                    label.col-sm-3.col-form-label.text-right Date Only
+                                    .col-xl-5.col-sm-7.col-lg-8
+                                      #dt-date.input-group.date(data-target-input='nearest')
+                                        input.form-control.datetimepicker-input(type='text', data-target='#dt-date')
+                                        .input-group-append(data-target='#dt-date', data-toggle='datetimepicker')
+                                          .input-group-text
+                                            i.fa.fa-calendar
+                                  .form-group.row
+                                    label.col-sm-3.col-form-label.text-right No Icon (input field only)
+                                    .col-xl-5.col-sm-7.col-lg-8
+                                      input#dt-noicon.form-control.datetimepicker-input(type='text', data-toggle='datetimepicker', data-target='#dt-noicon')
+                                  .form-group.row
+                                    label.col-sm-3.col-form-label.text-right Enabled/Disabled Dates
+                                    .col-xl-5.col-sm-7.col-lg-8
+                                      #dt-enab-disab-date.input-group.date(data-target-input='nearest')
+                                        input.form-control.datetimepicker-input(type='text', data-target='#dt-enab-disab-date')
+                                        .input-group-append(data-target='#dt-enab-disab-date', data-toggle='datetimepicker')
+                                          .input-group-text
+                                            i.fa.fa-calendar
+                                  .form-group.row
+                                    label.col-sm-3.col-form-label.text-right View Mode
+                                    .col-xl-5.col-sm-7.col-lg-8
+                                      #dt-view.input-group.date(data-target-input='nearest')
+                                        input.form-control.datetimepicker-input(type='text', data-target='#dt-view')
+                                        .input-group-append(data-target='#dt-view', data-toggle='datetimepicker')
+                                          .input-group-text
+                                            i.fa.fa-calendar
+                                  .form-group.row.mb-0
+                                    label.col-sm-3.col-form-label.text-right Disabled Days of the Week
+                                    .col-xl-5.col-sm-7.col-lg-8
+                                      #dt-disab-days.input-group.date(data-target-input='nearest')
+                                        input.form-control.datetimepicker-input(type='text', data-target='#dt-disab-days')
+                                        .input-group-append(data-target='#dt-disab-days', data-toggle='datetimepicker')
+                                          .input-group-text
+                                            i.fa.fa-calendar
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

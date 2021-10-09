@@ -1,0 +1,230 @@
+- var chat_menu             = true;
+- var theme_customizer      = true;
+- var typeahead             = true;
+- var typeahead_search      = true;
+- var tooltip               = true;
+- var animate               = true;
+- var chartist              = true;
+- var projectdetails        = true;
+- var sidebar               = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.default-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.default-menu.default-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                  .page-header-left
+                                    h3 Project Details
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Apps
+                                      li.breadcrumb-item.active Project Details
+                    // Container-fluid starts
+                    .container-fluid
+                      .row.projectdetails
+                        .col-xl-3.col-sm-6
+                          .card
+                            .card-body
+                              .media
+                                .select-options
+                                  select.form-control.form-control-primary(name='select')
+                                    option(value='opt1') Today
+                                    option(value='opt2') Yesterday
+                                    option(value='opt3') Tomorrow
+                                    option(value='opt4') Monthly
+                                    option(value='opt5') Weekly
+                              .project-widgets.text-center
+                                h1.font-primary.counter 48
+                                h6.mb-0 Due Tasks
+                            .card-footer.project-footer
+                              h6.mb-0
+                                | Completed: 
+                                span.counter 14          
+                        .col-xl-3.col-sm-6
+                          .card
+                            .card-body
+                              .media
+                                h5.mb-0 Features
+                              .project-widgets.text-center
+                                h1.font-primary.counter 80
+                                h6.mb-0 Proposals
+                            .card-footer.project-footer
+                              h6.mb-0
+                                | Implemented: 
+                                span.counter 14
+                        .col-xl-3.col-sm-6
+                          .card
+                            .card-body
+                              .media
+                                h5.mb-0 Issues
+                              .project-widgets.text-center
+                                h1.font-primary.counter 34
+                                h6.mb-0 Open
+                            .card-footer.project-footer
+                              h6.mb-0
+                                | Closed today: 
+                                span.counter 10
+                        .col-xl-3.col-sm-6
+                          .card
+                            .card-body
+                              .media
+                                h5.mb-0 Overdue
+                              .project-widgets.text-center
+                                h1.font-primary.counter 7
+                                h6.mb-0 Tasks
+                            .card-footer.project-footer
+                              h6.mb-0
+                                | Task Solved: 
+                                span.counter 4
+                      .row.projectmore
+                        .col-xl-7.xl-100
+                          .card
+                            .card-body
+                              .media.mb-4
+                                img.img-50.mr-4.rounded-circle(src='../assets/images/user/3.jpg' alt='' data-original-title='' title='')
+                                .media-body
+                                  h5 Endless admin Design
+                                  p scretch to working project(Build project)
+                              h6 Project explaination
+                              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                              h6 Task list
+                              .task-list.mb-3
+                                ul
+                                  li 
+                                    i.fa.fa-angle-double-right.mr-1
+                                    | Understend requirement 
+                                  li 
+                                    i.fa.fa-angle-double-right.mr-1 
+                                    | Identify & Meet with Stakeholders
+                                  li 
+                                    i.fa.fa-angle-double-right.mr-1 
+                                    |  Set & Prioritize Goals
+                                  li 
+                                    i.fa.fa-angle-double-right.mr-1 
+                                    |  Define Deliverables
+                                ul    
+                                  li 
+                                    i.fa.fa-angle-double-right.mr-1 
+                                    |  Create the Project Schedule
+                                  li 
+                                    i.fa.fa-angle-double-right.mr-1 
+                                    |  Identify Issues
+                                  li 
+                                    i.fa.fa-angle-double-right.mr-1
+                                    |  Present the Project Plan
+
+                              h6 Other details
+                              .details
+                                .row
+                                  .col-4
+                                    span  Client name
+                                  .col-4
+                                    | Johan deo
+                                .row    
+                                  .col-4
+                                    span  Starting date
+                                  .col-4
+                                    | 8/5/2020
+                                .row
+                                  .col-4
+                                    span  Ending date
+                                  .col-4
+                                    | 9/6/2020                                    
+                              
+                        .col-xl-5.xl-100
+                          .card
+                            .card-body
+                              .show-value-top.d-flex
+                                .value-left.d-inline-block
+                                  .square.bg-primary.d-inline-block
+                                  span Design work
+                                .value-right.d-inline-block
+                                  .square.d-inline-block.bg-secondary
+                                  span Devloping work
+                              .smooth-chart.flot-chart-container
+                        .col-xl-6
+                          .card
+                            .card-header.card-header-border
+                                  h5 Project Files
+                            .card-body
+                              .new-users.activity
+                                .media
+                                  .gradient-round.m-r-30.gradient-line-1
+                                      i.fa.fa-file-zip-o
+                                  .media-body
+                                    h6.mb-1.f-w-700 Old_project.zip
+                                    p Visual Designer, Github Inc
+                                  span.pull-right
+                                    button.btn.btn-pill.btn-outline-light Download
+                                .media
+                                  .gradient-round.m-r-30.gradient-line-1
+                                      i.fa.fa-file-picture-o
+                                  .media-body
+                                    h6.mb-1.f-w-700 Logo.PSD
+                                    p Visual Designer, Github Inc
+                                  span.pull-right
+                                    button.btn.btn-pill.btn-outline-light Download
+                                .media
+                                  .gradient-round.m-r-30.gradient-line-1
+                                      i.fa.fa-file-powerpoint-o
+                                  .media-body
+                                    h6.mb-1.f-w-700 Requirement doc
+                                    p Visual Designer, Github Inc
+                                  span.pull-right
+                                    button.btn.btn-pill.btn-outline-light Download
+                                .media
+                                  .gradient-round.m-r-30.gradient-line-1
+                                      i.fa.fa-file-pdf-o
+                                  .media-body
+                                    h6.mb-1.f-w-700 Color details
+                                    p Visual Designer, Github Inc
+                                  span.pull-right
+                                    button.btn.btn-pill.btn-outline-light Download
+                        .col-xl-6
+                          .card
+                            .card-header.card-header-border
+                                  h5 Activity                                
+                            .card-body.recent-notification
+                              .media
+                                h6 09:00
+                                .media-body
+                                  span chanage Logo colors
+                                  p.f-12 By Kan
+                              .media
+                                h6 10:50
+                                .media-body
+                                  span Check requirement of doc
+                                  p.f-12 By Tailer
+                              .media
+                                h6 01:00
+                                .media-body
+                                  span Starting working on psd
+                                  p.f-12 By Kaint
+                              .media
+                                h6 05:00
+                                .media-body
+                                  span Starting working on psd to HTML
+                                  p.f-12 By call
+                              .media
+                                h6 12:00
+                                .media-body
+                                  span Testing
+                                  p.f-12 By Waiter
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

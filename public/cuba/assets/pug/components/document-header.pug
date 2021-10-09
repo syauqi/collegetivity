@@ -1,0 +1,31 @@
+// Page Header Start
+- var status = (sidebar_open ? 'open' : '');
+- var header_status = (vertical_menu ? 'd-none' : '');
+
+.page-header.document-header(class=status)
+                    .nav-right.col.document-right-nav
+                        nav.navbar.navbar-expand-md
+                            .row
+                                .header-logo-wrapper.d-lg-none
+                                    .logo-wrapper
+                                        a.navbar-brand(href='index.html')                                          
+                                            img(src='../assets/images/logo/logo.png', alt='')
+                                .mobile-sidebar(class=header_status)
+                                    .media-body.text-right.switch-sm
+                                        label.switch
+                                            a(href='#')
+                                                i.sidebar-toggle(data-feather='align-left')
+                            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#collapsibleNavbar')
+                                span
+                                    i(data-feather='align-justify')
+                            #collapsibleNavbar.collapse.navbar-collapse
+                                ul.navbar-nav
+                                  li.nav-item
+                                    a.nav-link(href='../theme/index.html', data-original-title='', title='') Preview
+                                  li.nav-item
+                                    a.nav-link(href='index.html', data-original-title='', title='') Docs
+                                  li.nav-item
+                                    a.nav-link(href='review.html', data-original-title='', title='') Reviews
+                                  li.nav-item
+                                    a.nav-link(href='change-log.html', data-original-title='', title='') Changelog            
+// Page Header Ends                              

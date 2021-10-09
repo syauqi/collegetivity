@@ -1,0 +1,481 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Bootstrap Border Table
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Bootstrap Tables
+                                      li.breadcrumb-item.active Bootstrap Border Table
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Horizontal Borders
+                              span
+                                | Example of 
+                                code horizontal
+                                |  table borders. This is a default table border style attached to 
+                                code  .table
+                                |  class.All borders have the same grey color and style, table itself doesn't have a border, but you can add this border using
+                                code  .table-border-horizontal
+                                | class added to the table with 
+                                code .table
+                                | class.
+                            .table-responsive
+                              table.table.table-border-horizontal
+                                thead
+                                  tr
+                                    th(scope='col') #
+                                    th(scope='col') First Name
+                                    th(scope='col') Last Name
+                                    th(scope='col') Username
+                                    th(scope='col') Role
+                                    th(scope='col') Country
+                                tbody
+                                  tr
+                                    th(scope='row') 1
+                                    td Alexander
+                                    td Orton
+                                    td @mdorton
+                                    td Admin
+                                    td USA
+                                  tr
+                                    th(scope='row') 2
+                                    td John Deo
+                                    td Deo
+                                    td @johndeo
+                                    td User
+                                    td USA
+                                  tr
+                                    th(scope='row') 3
+                                    td Randy Orton
+                                    td the Bird
+                                    td @twitter
+                                    td admin
+                                    td UK
+                                  tr
+                                    th(scope='row') 4
+                                    td Randy Mark
+                                    td Ottandy
+                                    td @mdothe
+                                    td user
+                                    td AUS
+                                  tr
+                                    th(scope='row') 5
+                                    td Ram Jacob
+                                    td Thornton
+                                    td @twitter
+                                    td admin
+                                    td IND
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Vertical Borders
+                              span
+                                | Example of 
+                                code Vertical 
+                                |  table borders. This is a default table border style attached to 
+                                code  .table
+                                |  class.All borders have the same grey color and style, table itself doesn't have a border, but you can add this border using
+                                code  .table-border-vertical
+                                | class added to the table with 
+                                code .table
+                                | class.
+                            .table-responsive
+                              table.table.table-border-vertical
+                                thead
+                                  tr
+                                    th(scope='col') #
+                                    th(scope='col') First Name
+                                    th(scope='col') Last Name
+                                    th(scope='col') Username
+                                    th(scope='col') Role
+                                    th(scope='col') Country
+                                tbody
+                                  tr
+                                    th(scope='row') 1
+                                    td Alexander
+                                    td Orton
+                                    td @mdorton
+                                    td Admin
+                                    td USA
+                                  tr
+                                    th(scope='row') 2
+                                    td John Deo
+                                    td Deo
+                                    td @johndeo
+                                    td User
+                                    td USA
+                                  tr
+                                    th(scope='row') 3
+                                    td Randy Orton
+                                    td the Bird
+                                    td @twitter
+                                    td admin
+                                    td UK
+                                  tr
+                                    th(scope='row') 4
+                                    td Randy Mark
+                                    td Ottandy
+                                    td @mdothe
+                                    td user
+                                    td AUS
+                                  tr
+                                    th(scope='row') 5
+                                    td Ram Jacob
+                                    td Thornton
+                                    td @twitter
+                                    td admin
+                                    td IND
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Both Bordeds
+                              span
+                                | Example of 
+                                code horizontal
+                                |  table borders. This is a default table border style attached to 
+                                code  .table
+                                |  class.All borders have the same grey color and style, table itself doesn't have a border, but you can add this border using
+                                code  .table-bordered
+                                | class added to the table with 
+                                code .table
+                                | class.
+                            .table-responsive
+                              table.table.table-bordered
+                                thead
+                                  tr
+                                    th(scope='col') #
+                                    th(scope='col') First Name
+                                    th(scope='col') Last Name
+                                    th(scope='col') Username
+                                tbody
+                                  tr
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                  tr
+                                    th(scope='row') 2
+                                    td Mark
+                                    td Otto
+                                    td @TwBootstrap
+                                  tr
+                                    th(scope='row') 3
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Borderless Table
+                              span
+                                | Example of 
+                                code horizontal
+                                |  table borders. This is a default table border style attached to 
+                                code  .table
+                                |  class.All borders have the same grey color and style, table itself doesn't have a border, but you can add this border using
+                                code  .table-bordernone
+                                | class added to the table with 
+                                code .table
+                                | class.
+                            .table-responsive
+                              table.table.table-bordernone
+                                thead
+                                  tr
+                                    th(scope='col') #
+                                    th(scope='col') First Name
+                                    th(scope='col') Last Name
+                                    th(scope='col') Username
+                                tbody
+                                  tr
+                                    th.bd-t-none(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                  tr
+                                    th.bd-t-none(scope='row') 2
+                                    td Mark
+                                    td Otto
+                                    td @TwBootstrap
+                                  tr
+                                    th.bd-t-none(scope='row') 3
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Default Table Border
+                              span
+                                | Example of 
+                                code Default Table Border
+                                | .This is a default table border style attached to 
+                                code .table
+                                |  class.All borders have the same grey color and style, table itself doesn't have a border, but you can add this border using
+                                code  .table
+                                | class added to the table with 
+                                code .table
+                                | class.
+                            .table-responsive
+                              table.table
+                                thead
+                                  tr
+                                    th(scope='col') #
+                                    th(scope='col') First Name
+                                    th(scope='col') Last Name
+                                    th(scope='col') Username
+                                tbody
+                                  tr
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                  tr
+                                    th(scope='row') 2
+                                    td Mark
+                                    td Otto
+                                    td @TwBootstrap
+                                  tr
+                                    th(scope='row') 3
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Solid Border
+                              span
+                                | Example of a 
+                                code solid
+                                |  border inside table 
+                                code thead
+                                | . This border inherits all styling options from the default border style, the only difference is it has 
+                                code 2px
+                                |  width. Sometimes it could be useful for visual separation and addition highlight. To use this border add 
+                                code .border-solid
+                                |  to the table head row. This border style works only with row borders.
+                            .table-responsive
+                              table.table
+                                thead
+                                  tr.border-solid
+                                    th(scope='col') #
+                                    th(scope='col') First Name
+                                    th(scope='col') Last Name
+                                    th(scope='col') Username
+                                tbody
+                                  tr
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                  tr
+                                    th(scope='row') 2
+                                    td Mark
+                                    td Otto
+                                    td @TwBootstrap
+                                  tr
+                                    th(scope='row') 3
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Double Border
+                              span
+                                | Example of a 
+                                code double
+                                |  border inside table head. This border has 
+                                code 3px
+                                |  width, 
+                                code double
+                                |  style and inherits all styling options from the default border style. Visually it displays table 
+                                code head
+                                |  and 
+                                code body
+                                |  as 2 separated table areas. To use this border add 
+                                code .border-double
+                                |  to the table head row.
+                            .table-responsive
+                              table.table
+                                thead
+                                  tr.double
+                                    th(scope='col') #
+                                    th(scope='col') First Name
+                                    th(scope='col') Last Name
+                                    th(scope='col') Username
+                                tbody
+                                  tr.double
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                  tr.double
+                                    th(scope='row') 2
+                                    td Mark
+                                    td Otto
+                                    td @TwBootstrap
+                                  tr.double
+                                    th(scope='row') 3
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Dotted Border
+                              span
+                                | Example of a 
+                                code dotted
+                                |  border inside table head. This border has 
+                                code 3px
+                                |  width, 
+                                code dotted
+                                |  style and inherits all styling options from the default border style. Visually it displays table 
+                                code head
+                                |  and 
+                                code body
+                                |  as 2 separated table areas. To use this border add 
+                                code .border-dotted
+                                |  to the table head row.
+                            .table-responsive
+                              table.table
+                                thead
+                                  tr.dotted
+                                    th(scope='col') #
+                                    th(scope='col') First Name
+                                    th(scope='col') Last Name
+                                    th(scope='col') Username
+                                tbody
+                                  tr.dotted
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                  tr.dotted
+                                    th(scope='row') 2
+                                    td Mark
+                                    td Otto
+                                    td @TwBootstrap
+                                  tr.dotted
+                                    th(scope='row') 3
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Dashed Border
+                              span
+                                | Example of a 
+                                code dashed
+                                |  border inside table head. This border has 
+                                code 3px
+                                |  width, 
+                                code dashed
+                                |  style and inherits all styling options from the default border style. Visually it displays table 
+                                code head
+                                |  and 
+                                code body
+                                |  as 2 separated table areas. To use this border add 
+                                code .border-dashed
+                                |  to the table head row.
+                            .table-responsive
+                              table.table
+                                thead
+                                  tr.dashed
+                                    th(scope='col') #
+                                    th(scope='col') First Name
+                                    th(scope='col') Last Name
+                                    th(scope='col') Username
+                                tbody
+                                  tr.dashed
+                                    th(scope='row') 1
+                                    td Mark
+                                    td Otto
+                                    td @mdo
+                                  tr.dashed
+                                    th(scope='row') 2
+                                    td Mark
+                                    td Otto
+                                    td @TwBootstrap
+                                  tr.dashed
+                                    th(scope='row') 3
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Border Bottom Color 
+                              span
+                                | EExample of a table head border with
+                                code custom 
+                                |   color. According to the custom color system options, you can set any of predefined colors by adding  
+                                code .border-bottom-*
+                                |  class to the table head row. This technique works with all border styles demonstrated above.
+                            .table-responsive
+                              table.table
+                                thead
+                                  tr.border-bottom-primary
+                                    th(scope='col') #
+                                    th(scope='col') First Name
+                                    th(scope='col') Last Name
+                                    th(scope='col') Username
+                                tbody
+                                  tr.border-bottom-secondary
+                                    th(scope='row') 3
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                  tr.border-bottom-success
+                                    th(scope='row') 3
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                  tr.border-bottom-info
+                                    th(scope='row') 3
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                  tr.border-bottom-warning
+                                    th(scope='row') 3
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                  tr.border-bottom-danger
+                                    th(scope='row') 3
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                                  tr
+                                    th(scope='row') 3
+                                    td Jacob
+                                    td Thornton
+                                    td @fat
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files      

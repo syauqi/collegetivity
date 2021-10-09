@@ -1,0 +1,129 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var counter               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Pricing
+ 
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Ecommerce
+                                      li.breadcrumb-item.active Pricing
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header 
+                                h5 Become member
+                            .card-body.row
+                              .col-md-4.col-sm-6
+                                .pricingtable
+                                  .pricingtable-header
+                                    h3.title Standard
+                                  .price-value
+                                    span.currency $
+                                    span.amount 10
+                                    span.duration /mo
+                                  ul.pricing-content
+                                    li 50GB Disk Space
+                                    li 50 Email Accounts
+                                    li Maintenance
+                                    li 15 Subdomains
+                                  .pricingtable-signup
+                                    a.btn.btn-primary.btn-lg(href='#') Sign Up
+
+
+                              .col-md-4.col-sm-6
+                                .pricingtable
+                                  .pricingtable-header
+                                    h3.title Premium
+                                  .price-value
+                                    span.currency $
+                                    span.amount 20
+                                    span.duration /mo
+                                  ul.pricing-content
+                                    li 10% on all product
+                                    li 50 Email Accounts
+                                    li Maintenance
+                                    li 15 Subdomains
+                                  .pricingtable-signup
+                                    a.btn.btn-primary.btn-lg(href='#') Sign Up
+
+                              .col-md-4.col-sm-6
+                                .pricingtable
+                                  .pricingtable-header
+                                    h3.title Auther pack
+                                  .price-value
+                                    span.currency $
+                                    span.amount 50
+                                    span.duration /mo
+                                  ul.pricing-content
+                                    li Upload 50 product
+                                    li 50 Email Accounts
+                                    li Maintenance
+                                    li 15 Subdomains
+                                  .pricingtable-signup
+                                    a.btn.btn-primary.btn-lg(href='#') Sign Up
+
+
+
+                          .card
+                            .card-header 
+                                h5 Simple Pricing Card
+                            .card-body.row.pricing-content
+                              .col-xl-3.col-sm-6.xl-50.box-col-6
+                                .card.text-center.pricing-simple
+                                  .card-body
+                                    h3 Standard
+                                    h1 $15
+                                    h6.mb-0 Lorum Ipsum
+                                  a.btn.btn-lg.btn-primary.btn-block(href='#')
+                                    h5.mb-0 Purchase
+                              .col-xl-3.col-sm-6.xl-50.box-col-6
+                                .card.text-center.pricing-simple
+                                  .card-body
+                                    h3 Business
+                                    h1 $25
+                                    h6.mb-0 Lorum Ipsum
+                                  a.btn.btn-lg.btn-primary.btn-block(href='#')
+                                    h5.mb-0 Purchase
+                              .col-xl-3.col-sm-6.xl-50.box-col-6
+                                .card.text-center.pricing-simple
+                                  .card-body
+                                    h3 Premium
+                                    h1 $35
+                                    h6.mb-0 Lorum Ipsum
+                                  a.btn.btn-lg.btn-primary.btn-block(href='#')
+                                    h5.mb-0 Purchase
+                              .col-xl-3.col-sm-6.xl-50.box-col-6
+                                .card.text-center.pricing-simple
+                                  .card-body
+                                    h3 Extra
+                                    h1 $45
+                                    h6.mb-0 Lorum Ipsum
+                                  a.btn.btn-lg.btn-primary.btn-block(href='#')
+                                    h5.mb-0 Purchase
+
+                                
+                include ../../components/footer
+        include ../../components/footer-files

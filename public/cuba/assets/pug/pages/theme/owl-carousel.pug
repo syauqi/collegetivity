@@ -1,0 +1,423 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var owlcarousel           = true;
+- var page_owlcarousel      = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Owl Carousel
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Bonus Ui
+                                      li.breadcrumb-item.active Owl Carousel
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Basic Example
+                            .card-body
+                              #owl-carousel-1.owl-carousel.owl-theme
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/2.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/3.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/4.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/5.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/6.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/7.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/8.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/9.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/10.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/11.jpg', alt='')
+                          .card
+                            .card-header
+                              h5 Responsive Example
+                            .card-body
+                              #owl-carousel-2.owl-carousel.owl-theme
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/2.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/3.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/4.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/5.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/6.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/7.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/8.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/9.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/10.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/11.jpg', alt='')
+                          .card
+                            .card-header
+                              h5 Center Example
+                            .card-body
+                              #owl-carousel-3.owl-carousel.owl-theme
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/2.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/3.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/4.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/5.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/6.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/7.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/8.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/9.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/10.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/11.jpg', alt='')
+                          .card
+                            .card-header
+                              h5 Merge Example
+                            .card-body
+                              #owl-carousel-4.owl-carousel.owl-theme
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/2.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/3.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/4.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/5.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/6.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/7.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/8.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/9.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/10.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/11.jpg', alt='')
+                          .card
+                            .card-header
+                              h5 Auto Width Example
+                            .card-body
+                              #owl-carousel-5.owl-carousel.owl-theme
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider-auto-width/11.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider-auto-width/12.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider-auto-width/13.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider-auto-width/14.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider-auto-width/15.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider-auto-width/11.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider-auto-width/12.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider-auto-width/13.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider-auto-width/14.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider-auto-width/15.jpg', alt='')
+                          .card
+                            .card-header
+                              h5 URL Hash Navigations
+                            .card-body
+                              #owl-carousel-6.owl-carousel.owl-theme
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/2.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/3.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/4.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/5.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/6.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/7.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/8.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/9.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/10.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/11.jpg', alt='')
+                          .card
+                            .card-header
+                              h5 Events
+                            .card-body
+                              #owl-carousel-7.owl-carousel.owl-theme
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/2.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/3.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/4.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/5.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/6.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/7.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/8.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/9.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/10.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/11.jpg', alt='')
+                          .card
+                            .card-header
+                              h5 Stage Padding Example
+                            .card-body
+                              #owl-carousel-8.owl-carousel.owl-theme
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/2.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/3.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/4.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/5.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/6.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/7.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/8.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/9.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/10.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/11.jpg', alt='')
+                          .card
+                            .card-header
+                              h5 Right to Left Example
+                            .card-body
+                              #owl-carousel-9.owl-carousel.owl-theme
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/2.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/3.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/4.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/5.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/6.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/7.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/8.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/9.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/10.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/11.jpg', alt='')
+                          .card
+                            .card-header
+                              h5 Lazy load Example
+                            .card-body
+                              #owl-carousel-10.owl-carousel.owl-theme
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/2.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/3.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/4.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/5.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/6.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/7.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/8.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/9.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/10.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/11.jpg', alt='')
+                          .card
+                            .card-header
+                              h5 Animate Example
+                            .card-body
+                              #owl-carousel-12.owl-carousel.owl-theme
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/2.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/3.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/4.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/5.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/6.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/7.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/8.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/9.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/10.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/11.jpg', alt='')
+                          .card
+                            .card-header
+                              h5 Auto Play Example
+                            .card-body
+                              #owl-carousel-13.owl-carousel.owl-theme
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/2.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/3.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/4.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/5.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/6.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/7.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/8.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/9.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/10.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/11.jpg', alt='')
+                          .card
+                            .card-header
+                              h5 Auto Height Example
+                            .card-body
+                              #owl-carousel-14.owl-carousel.owl-theme
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/2.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/3.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/4.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/5.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/6.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/7.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/8.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/9.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/10.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/11.jpg', alt='')
+                          .card
+                            .card-header
+                              h5 Mouse Wheel Example
+                            .card-body
+                              #owl-carousel-15.owl-carousel.owl-theme
+                                .item
+                                  img(src='../assets/images/slider/1.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/2.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/3.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/4.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/5.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/6.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/7.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/8.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/9.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/10.jpg', alt='')
+                                .item
+                                  img(src='../assets/images/slider/11.jpg', alt='')
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

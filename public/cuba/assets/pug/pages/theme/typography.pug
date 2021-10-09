@@ -1,0 +1,394 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Typography
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Ui Kits
+                                      li.breadcrumb-item.active Typography
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Headings
+                              span
+                                | All HTML headings, 
+                                code &lt;h1&gt;
+                                |  through 
+                                code &lt;h6&gt;
+                                | , are available.
+                            .card-body.typography
+                              .row
+                                .col-sm-12.col-xl-6
+                                  h1 This is a Heading 1
+                                  h2 This is a Heading 2
+                                  h3 This is a Heading 3
+                                  h4 This is a Heading 4
+                                  h5 This is a Heading 5
+                                  h6 This is a Heading 6
+                                .col-sm-12.col-xl-6
+                                  p.h1.txt-primary
+                                    | Heading 1
+                                    small Sub Heading
+                                  p.h2.txt-secondary
+                                    | Heading 2
+                                    small Sub Heading
+                                  p.h3.txt-success
+                                    | Heading 3
+                                    small Sub Heading
+                                  p.h4.txt-info
+                                    | Heading 4
+                                    small Sub Heading
+                                  p.h5.txt-warning
+                                    | Heading 5
+                                    small Sub Heading
+                                  p.h6.txt-danger
+                                    | Heading 6
+                                    small Sub Heading
+                        .col-sm-12.col-xl-4
+                          .card
+                            .card-header
+                              h5 Very Thin (100)
+                            .card-body.typography
+                              h1.f-w-100 Heading 1
+                              h2.f-w-100 Heading 2
+                              h3.f-w-100 Heading 3
+                              h4.f-w-100 Heading 4
+                              h5.f-w-100 Heading 5
+                              h6.f-w-100 Heading 6
+                        .col-sm-12.col-xl-4
+                          .card
+                            .card-header
+                              h5 Thin (300)
+                            .card-body.typography
+                              h1.f-w-300 Heading 1
+                              h2.f-w-300 Heading 2
+                              h3.f-w-300 Heading 3
+                              h4.f-w-300 Heading 4
+                              h5.f-w-300 Heading 5
+                              h6.f-w-300 Heading 6
+                        .col-sm-12.col-xl-4
+                          .card
+                            .card-header
+                              h5 Normal (400)
+                            .card-body.typography
+                              h1.f-w-400 Heading 1
+                              h2.f-w-400 Heading 2
+                              h3.f-w-400 Heading 3
+                              h4.f-w-400 Heading 4
+                              h5.f-w-400 Heading 5
+                              h6.f-w-400 Heading 6
+                        .col-sm-12.col-xl-4
+                          .card
+                            .card-header
+                              h5 light Normal (600)
+                            .card-body.typography
+                              h1.f-w-600 Heading 1
+                              h2.f-w-600 Heading 2
+                              h3.f-w-600 Heading 3
+                              h4.f-w-600 Heading 4
+                              h5.f-w-600 Heading 5
+                              h6.f-w-600 Heading 6
+                        .col-sm-12.col-xl-4
+                          .card
+                            .card-header
+                              h5 Bold (700)
+                            .card-body.typography
+                              h1.f-w-700 Heading 1
+                              h2.f-w-700 Heading 2
+                              h3.f-w-700 Heading 3
+                              h4.f-w-700 Heading 4
+                              h5.f-w-700 Heading 5
+                              h6.f-w-700 Heading 6
+                        .col-sm-12.col-xl-4
+                          .card
+                            .card-header
+                              h5 Extra Bold (900)
+                            .card-body.typography
+                              h1.f-w-900 Heading 1
+                              h2.f-w-900 Heading 2
+                              h3.f-w-900 Heading 3
+                              h4.f-w-900 Heading 4
+                              h5.f-w-900 Heading 5
+                              h6.f-w-900 Heading 6
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Headings
+                              span Use the included utility classes to recreate the small secondary heading text.  
+                            .card-body.typography
+                              h3
+                                | Fancy display heading
+                                small.text-muted With faded secondary text
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Display headings
+                              span
+                                | Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a 
+                                strong display heading
+                                | —a larger, slightly more opinionated heading style.
+                            .card-body.typography
+                              h1.display-1 Display 1
+                              h1.display-2 Display 2
+                              h1.display-3 Display 3
+                              h1.display-4 Display 4
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Lead
+                              span
+                                | Make a paragraph stand out by adding 
+                                code .lead
+                                | .
+                            .card-body
+                              p.lead
+                                | Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Inline text elements
+                              span Styling for common inline HTML5 elements.
+                            .card-body
+                              p
+                                | You can use the mark tag to 
+                                mark highlight
+                                |  text.
+                              p
+                                del This line of text is meant to be treated as deleted text.
+                              p
+                                s This line of text is meant to be treated as no longer accurate.
+                              p
+                                ins This line of text is meant to be treated as an addition to the document.
+                              p
+                                u This line of text will render as underlined
+                              p
+                                small This line of text is meant to be treated as fine print.
+                              p
+                                strong This line rendered as bold text.
+                              p
+                                em This line rendered as italicized text.
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Text Color
+                              span You can Give text color by using txt-* class
+                            .card-body
+                              p.txt-primary
+                                | This is Primary text You can archive this adding 
+                                code .txt-primary
+                                |  class
+                              p.txt-secondary
+                                | This is Secondary text You can archive this adding 
+                                code .txt-secondary
+                                |  class
+                              p.txt-success
+                                | This is Success text You can archive this adding 
+                                code .txt-success
+                                |  class
+                              p.txt-info
+                                | This is Info text You can archive this adding 
+                                code .txt-info
+                                |  class
+                              p.txt-warning
+                                | This is Warning text You can archive this adding 
+                                code .txt-warning
+                                |  class
+                              p.txt-danger
+                                | This is Danger text You can archive this adding 
+                                code .txt-danger
+                                |  class
+                              p.txt-dark
+                                | This is Dark text You can archive this adding 
+                                code .txt-dark
+                                |  class
+                              p.txt-primary
+                                | This is Primary text You can archive this adding 
+                                code .txt-primary
+                                |  class
+                        .col-sm-12.listing
+                          .card
+                            .card-header
+                              h5 Listing Typography
+                            .card-body
+                              .row
+                                .col-sm-12.col-xl-4
+                                  h6.sub-title Unorder list
+                                  ul
+                                    li Lorem ipsum dolor sit amet
+                                    li Lorem ipsum dolor sit amet
+                                    li Lorem ipsum dolor sit amet
+                                    li Lorem ipsum dolor sit amet
+                                    li Lorem ipsum dolor sit amet
+                                    li Lorem ipsum dolor sit amet
+                                    li Lorem ipsum dolor sit amet
+                                    li Lorem ipsum dolor sit amet
+                                    li Lorem ipsum dolor sit amet
+                                    li Lorem ipsum dolor sit amet
+                                .col-sm-12.col-xl-4
+                                  h6.sub-title Order list
+                                  ol
+                                    li Lorem ipsum dolor sit amet
+                                    li Lorem ipsum dolor sit amet
+                                    li Lorem ipsum dolor sit amet
+                                    li
+                                      ol
+                                        li Lorem ipsum dolor sit amet
+                                        li Lorem ipsum dolor sit amet
+                                        li Lorem ipsum dolor sit amet
+                                        li Lorem ipsum dolor sit amet
+                                        li Lorem ipsum dolor sit amet
+                                    li Lorem ipsum dolor sit amet
+                                    li Lorem ipsum dolor sit amet
+                                .col-sm-12.col-xl-4
+                                  h6.sub-title Order list
+                                  dl
+                                    dt Lorem ipsum dolor sit amet
+                                    dd - ipsum dolor sit amet
+                                    dt Lorem ipsum dolor sit amet
+                                    dd - ipsum dolor sit amet
+                                    dt Lorem ipsum dolor sit amet
+                                    dd - ipsum dolor sit amet
+                                    dt Lorem ipsum dolor sit amet
+                                    dd - ipsum dolor sit amet
+                                    dt Lorem ipsum dolor sit amet
+                                    dd - ipsum dolor sit amet
+                                .col-sm-12.col-xl-4
+                                  h6.sub-title Fontawesome list
+                                  ul
+                                    li
+                                      i.fa.fa-angle-double-right.txt-primary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.fa.fa-angle-double-right.txt-primary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.fa.fa-angle-double-right.txt-primary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.fa.fa-angle-double-right.txt-primary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.fa.fa-angle-double-right.txt-primary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.fa.fa-angle-double-right.txt-primary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.fa.fa-angle-double-right.txt-primary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.fa.fa-angle-double-right.txt-primary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                .col-sm-12.col-xl-4
+                                  h6.sub-title ICO Icon list
+                                  ul
+                                    li
+                                      i.fa.fa-caret-right.txt-secondary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.fa.fa-caret-right.txt-secondary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.fa.fa-caret-right.txt-secondary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.fa.fa-caret-right.txt-secondary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.fa.fa-caret-right.txt-secondary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.fa.fa-caret-right.txt-secondary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.fa.fa-caret-right.txt-secondary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.fa.fa-caret-right.txt-secondary.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                .col-sm-12.col-xl-4
+                                  h6.sub-title Themfy list
+                                  ul
+                                    li
+                                      i.icofont.icofont-ui-rate-add.txt-success.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.icofont.icofont-ui-rate-add.txt-success.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.icofont.icofont-ui-rate-add.txt-success.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.icofont.icofont-ui-rate-add.txt-success.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.icofont.icofont-ui-rate-add.txt-success.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.icofont.icofont-ui-rate-add.txt-success.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.icofont.icofont-ui-rate-add.txt-success.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                                    li
+                                      i.icofont.icofont-ui-rate-add.txt-success.m-r-10
+                                      | Lorem ipsum dolor sit amet
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Blockquotes
+                              span
+                                | Add a 
+                                code &lt;footer class="blockquote-footer"&gt;
+                                |  for identifying the source. Wrap the name of the source work in 
+                                code &lt;cite&gt;
+                                | .
+                            .card-body
+                              p.sub-title Naming a source
+                              blockquote.blockquote
+                                p.mb-0
+                                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                                footer.blockquote-footer
+                                  | Someone famous in 
+                                  cite(title='Source Title') Source Title
+                              p.sub-title Alignment Center
+                              blockquote.blockquote.text-center
+                                p.mb-0
+                                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                                footer.blockquote-footer
+                                  | Someone famous in 
+                                  cite(title='Source Title') Source Title
+                              p.sub-title Alignment Right
+                              blockquote.blockquote.text-right.mb-0
+                                p.mb-0
+                                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                                footer.blockquote-footer
+                                  | Someone famous in 
+                                  cite(title='Source Title') Source Title
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

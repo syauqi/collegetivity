@@ -1,0 +1,281 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var photo_swipe           = true;
+- var counter               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | User Profile
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Users
+                                      li.breadcrumb-item.active User Profile
+                    // Container-fluid starts
+                    .container-fluid
+                      .user-profile
+                        .row
+                          // user profile first-style start
+                          .col-sm-12
+                            .card.hovercard.text-center
+                              .cardheader
+                              .user-image
+                                .avatar
+                                  img(alt='', src='../assets/images/user/7.jpg')
+                                .icon-wrapper
+                                  i.icofont.icofont-pencil-alt-5
+                              .info
+                                .row
+                                  .col-sm-6.col-lg-4.order-sm-1.order-xl-0
+                                    .row
+                                      .col-md-6
+                                        .ttl-info.text-left
+                                          h6
+                                            i.fa.fa-envelope
+                                            |    Email
+                                          span Marekjecno@yahoo.com
+                                      .col-md-6
+                                        .ttl-info.text-left
+                                          h6
+                                            i.fa.fa-calendar
+                                            |    BOD
+                                          span 02 January 1988
+                                  .col-sm-12.col-lg-4.order-sm-0.order-xl-1
+                                    .user-designation
+                                      .title
+                                        a(target='_blank', href='') Mark jecno
+                                      .desc.mt-2 designer
+                                  .col-sm-6.col-lg-4.order-sm-2.order-xl-2
+                                    .row
+                                      .col-md-6
+                                        .ttl-info.text-left
+                                          h6
+                                            i.fa.fa-phone
+                                            |    Contact Us
+                                          span India +91 123-456-7890
+                                      .col-md-6
+                                        .ttl-info.text-left
+                                          h6
+                                            i.fa.fa-location-arrow
+                                            |    Location
+                                          span B69 Near Schoool Demo Home
+                                hr
+                                .social-media
+                                  ul.list-inline
+                                    li.list-inline-item
+                                      a(href='#')
+                                        i.fa.fa-facebook
+                                    li.list-inline-item
+                                      a(href='#')
+                                        i.fa.fa-google-plus
+                                    li.list-inline-item
+                                      a(href='#')
+                                        i.fa.fa-twitter
+                                    li.list-inline-item
+                                      a(href='#')
+                                        i.fa.fa-instagram
+                                    li.list-inline-item
+                                      a(href='#')
+                                        i.fa.fa-rss
+                                .follow
+                                  .row
+                                    .col-6.text-md-right.border-right
+                                      .follow-num.counter 25869
+                                      span Follower
+                                    .col-6.text-md-left
+                                      .follow-num.counter 659887
+                                      span Following
+                          // user profile first-style end
+                          // user profile second-style start
+                          .col-sm-12
+                            .card
+                              .profile-img-style
+                                .row
+                                  .col-sm-8
+                                    .media
+                                      img.img-thumbnail.rounded-circle.mr-3(src='../assets/images/user/7.jpg', alt='Generic placeholder image')
+                                      .media-body.align-self-center
+                                        h5.mt-0.user-name JOHAN DIO
+                                  .col-sm-4.align-self-center
+                                    .float-sm-right
+                                      small 10 Hours ago
+                                hr
+                                p
+                                  | you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                .img-container
+                                  #aniimated-thumbnials.my-gallery(itemscope='')
+                                    figure(itemprop='associatedMedia', itemscope='')
+                                      a(href='../assets/images/other-images/profile-style-img3.png', itemprop='contentUrl', data-size='1600x950')
+                                        img.img-fluid.rounded(src='../assets/images/other-images/profile-style-img3.png', itemprop='thumbnail', alt='gallery')
+                                      figcaption(itemprop='caption description') Image caption  1
+                                .like-comment
+                                  ul.list-inline
+                                    li.list-inline-item.border-right.pr-3
+                                      label.m-0
+                                        a(href='#')
+                                          i.fa.fa-heart
+                                        |   Like
+                                      span.ml-2.counter 2659
+                                    li.list-inline-item.ml-2
+                                      label.m-0
+                                        a(href='#')
+                                          i.fa.fa-comment
+                                        |   Comment
+                                      span.ml-2.counter 569
+                          // user profile second-style end
+                          // user profile third-style start
+                          .col-sm-12
+                            .card
+                              .profile-img-style
+                                .row
+                                  .col-sm-8
+                                    .media
+                                      img.img-thumbnail.rounded-circle.mr-3(src='../assets/images/user/7.jpg', alt='Generic placeholder image')
+                                      .media-body.align-self-center
+                                        h5.mt-0.user-name JOHAN DIO
+                                  .col-sm-4.align-self-center
+                                    .float-sm-right
+                                      small 10 Hours ago
+                                hr
+                                p
+                                  | you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                                #aniimated-thumbnials-2.row.mt-4.pictures.my-gallery(itemscope='')
+                                  figure.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                    a(href='../assets/images/other-images/profile-style-img3.png', itemprop='contentUrl', data-size='1600x950')
+                                      img.img-fluid.rounded(src='../assets/images/other-images/profile-style-img.png', itemprop='thumbnail', alt='gallery')
+                                    figcaption(itemprop='caption description') Image caption  1
+                                  figure.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                    a(href='../assets/images/other-images/profile-style-img3.png', itemprop='contentUrl', data-size='1600x950')
+                                      img.img-fluid.rounded(src='../assets/images/other-images/profile-style-img.png', itemprop='thumbnail', alt='gallery')
+                                    figcaption(itemprop='caption description') Image caption  2
+                                .like-comment
+                                  ul.list-inline
+                                    li.list-inline-item.border-right.pr-3
+                                      label.m-0
+                                        a(href='#')
+                                          i.fa.fa-heart
+                                        |   Like
+                                      span.ml-2.counter 2659
+                                    li.list-inline-item.ml-2
+                                      label.m-0
+                                        a(href='#')
+                                          i.fa.fa-comment
+                                        |   Comment
+                                      span.ml-2.counter 569
+                          // user profile third-style end
+                          // user profile fourth-style start
+                          .col-sm-12
+                            .card
+                              .profile-img-style
+                                .row
+                                  .col-sm-8
+                                    .media
+                                      img.img-thumbnail.rounded-circle.mr-3(src='../assets/images/user/7.jpg', alt='Generic placeholder image')
+                                      .media-body.align-self-center
+                                        h5.mt-0.user-name JOHAN DIO
+                                  .col-sm-4.align-self-center
+                                    .float-sm-right
+                                      small 10 Hours ago
+                                hr
+                                p
+                                  | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source .Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source
+                                .like-comment.mt-4
+                                  ul.list-inline
+                                    li.list-inline-item.border-right.pr-3
+                                      label.m-0
+                                        a(href='#')
+                                          i.fa.fa-heart
+                                        |   Like
+                                      span.ml-2.counter 2659
+                                    li.list-inline-item.ml-2
+                                      label.m-0
+                                        a(href='#')
+                                          i.fa.fa-comment
+                                        |   Comment
+                                      span.ml-2.counter 569
+                          // user profile fourth-style end
+                          // user profile fifth-style start
+                          .col-sm-12
+                            .card
+                              .profile-img-style
+                                .row
+                                  .col-sm-8
+                                    .media
+                                      img.img-thumbnail.rounded-circle.mr-3(src='../assets/images/user/7.jpg', alt='Generic placeholder image')
+                                      .media-body.align-self-center
+                                        h5.mt-0.user-name JOHAN DIO
+                                  .col-sm-4.align-self-center
+                                    .float-sm-right
+                                      small 10 Hours ago
+                                hr
+                                .row
+                                  .col-lg-12.col-xl-4
+                                    #aniimated-thumbnials-3.my-gallery(itemscope='')
+                                      figure(itemprop='associatedMedia', itemscope='')
+                                        a(href='../assets/images/blog/img.png', itemprop='contentUrl', data-size='1600x950')
+                                          img.img-fluid.rounded(src='../assets/images/blog/img.png', itemprop='thumbnail', alt='gallery')
+                                        figcaption(itemprop='caption description') Image caption  1
+                                    .like-comment.mt-4.like-comment-sm-mb
+                                      ul.list-inline
+                                        li.list-inline-item.border-right.pr-3
+                                          label.m-0
+                                            a(href='#')
+                                              i.fa.fa-heart
+                                            |   Like
+                                          span.ml-2.counter 2659
+                                        li.list-inline-item.ml-2
+                                          label.m-0
+                                            a(href='#')
+                                              i.fa.fa-comment
+                                            |   Comment
+                                          span.ml-2.counter 569
+                                  .col-xl-6
+                                    p
+                                      | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consecteturContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur
+                          // user profile fifth-style end
+                          .pswp(tabindex='-1', role='dialog', aria-hidden='true')
+                            .pswp__bg
+                            .pswp__scroll-wrap
+                              .pswp__container
+                                .pswp__item
+                                .pswp__item
+                                .pswp__item
+                              .pswp__ui.pswp__ui--hidden
+                                .pswp__top-bar
+                                  .pswp__counter
+                                  button.pswp__button.pswp__button--close(title='Close (Esc)')
+                                  button.pswp__button.pswp__button--share(title='Share')
+                                  button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
+                                  button.pswp__button.pswp__button--zoom(title='Zoom in/out')
+                                  .pswp__preloader
+                                    .pswp__preloader__icn
+                                      .pswp__preloader__cut
+                                        .pswp__preloader__donut
+                                .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+                                  .pswp__share-tooltip
+                                button.pswp__button.pswp__button--arrow--left(title='Previous (arrow left)')
+                                button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
+                                .pswp__caption
+                                  .pswp__caption__center
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

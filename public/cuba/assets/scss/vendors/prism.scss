@@ -1,0 +1,80 @@
+@import "prism/prism";
+
+.code-box-copy {
+  position: relative;
+  font-size: 16px;
+  display: none;
+  pre[class*="language-"] {
+    border: 1px solid #dee3f9;
+    border-radius: 2px;
+  }
+}
+
+.code-box-copy__btn {
+  opacity: 0;
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  width: 36px;
+  height: 36px;
+  background-color: #e5eaff;
+  border: 1px solid #dee3f9;
+  color: #333;
+  border-radius: 4px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.code-box-copy:hover .code-box-copy__btn {
+  opacity: 1;
+}
+
+.code-box-copy__btn {
+  &:disabled {
+    background-color: #eee;
+    border-color: #ccc;
+    color: #333;
+    pointer-events: none;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+  }
+  &:focus, &:active {
+    outline: 0;
+  }
+}
+
+.code-box-copy__tooltip {
+  display: none;
+  position: absolute;
+  bottom: -webkit-calc(100% + 11px);
+  bottom: calc(100% + 11px);
+  right: 0;
+  width: 80px;
+  padding: 6px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 13px;
+  &::after {
+    display: block;
+    position: absolute;
+    right: 13px;
+    bottom: -5px;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #333 transparent transparent transparent;
+  }
+}
+.card-body.show-source{
+	.code-box-copy{
+    	display: block;
+    }
+}

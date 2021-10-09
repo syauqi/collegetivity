@@ -1,0 +1,40 @@
+/**=====================
+     32. pagination CSS Start
+==========================**/
+/*test Nav bar color */
+$page-name:theme,
+primary,
+secondary,
+success,
+danger,
+info,
+dark,
+warning;
+$page-color:var(--theme-deafult),
+var(--theme-deafult),
+$secondary-color,
+$success-color,
+$danger-color,
+$info-color,
+$dark-color,
+$warning-color;
+@each $var in $page-name {
+  $i: index($page-name, $var);
+  .pagination-#{$var}{
+    .page-item{
+      .page-link{
+        color: nth($page-color, $i) !important;
+      }
+      &.active{
+        .page-link{
+          color: $white !important;
+          background-color:  nth($page-color, $i) !important;
+          border-color:  nth($page-color, $i);
+        }
+      }
+    }
+  }
+}
+/**=====================
+     32. pagination CSS Ends
+==========================**/

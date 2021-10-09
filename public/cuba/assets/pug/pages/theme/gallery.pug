@@ -1,0 +1,114 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var photo_swipe           = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Gallery
+
+                                .col-6
+                                      ol.breadcrumb
+                                        li.breadcrumb-item
+                                          a(href='index.html')                                        
+                                            i(data-feather="home")
+                                        li.breadcrumb-item Gallery
+                                        li.breadcrumb-item.active Gallery
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 IMAGE GALLERY
+                            .gallery.my-gallery.card-body.row(itemscope='')
+                              figure.col-xl-3.col-md-4.col-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/01.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img.img-thumbnail(src='../assets/images/lightgallry/01.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption  1
+                              figure.col-xl-3.col-md-4.col-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/02.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img.img-thumbnail(src='../assets/images/lightgallry/02.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption  2
+                              figure.col-xl-3.col-md-4.col-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/03.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img.img-thumbnail(src='../assets/images/lightgallry/03.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption  3
+                              figure.col-xl-3.col-md-4.col-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/04.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img.img-thumbnail(src='../assets/images/lightgallry/04.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption  4
+                              figure.col-xl-3.col-md-4.col-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/05.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img.img-thumbnail(src='../assets/images/lightgallry/05.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption  5
+                              figure.col-xl-3.col-md-4.col-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/06.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img.img-thumbnail(src='../assets/images/lightgallry/06.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption  8
+                              figure.col-xl-3.col-md-4.col-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/07.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img.img-thumbnail(src='../assets/images/lightgallry/07.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption  9
+                              figure.col-xl-3.col-md-4.col-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/08.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img.img-thumbnail(src='../assets/images/lightgallry/08.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption  10
+                              figure.col-xl-3.col-md-4.col-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/09.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img.img-thumbnail(src='../assets/images/lightgallry/09.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption  11
+                              figure.col-xl-3.col-md-4.col-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/010.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img.img-thumbnail(src='../assets/images/lightgallry/010.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption  12
+                              figure.col-xl-3.col-md-4.col-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/011.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img.img-thumbnail(src='../assets/images/lightgallry/011.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption  11
+                              figure.col-xl-3.col-md-4.col-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/012.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img.img-thumbnail(src='../assets/images/lightgallry/012.jpg', itemprop='thumbnail', alt='Image description')
+                                figcaption(itemprop='caption description') Image caption  12
+                            // Root element of PhotoSwipe. Must have class pswp.
+                            .pswp(tabindex='-1', role='dialog', aria-hidden='true')
+                              .pswp__bg
+                              .pswp__scroll-wrap
+                                .pswp__container
+                                  .pswp__item
+                                  .pswp__item
+                                  .pswp__item
+                                .pswp__ui.pswp__ui--hidden
+                                  .pswp__top-bar
+                                    .pswp__counter
+                                    button.pswp__button.pswp__button--close(title='Close (Esc)')
+                                    button.pswp__button.pswp__button--share(title='Share')
+                                    button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
+                                    button.pswp__button.pswp__button--zoom(title='Zoom in/out')
+                                    .pswp__preloader
+                                      .pswp__preloader__icn
+                                        .pswp__preloader__cut
+                                          .pswp__preloader__donut
+                                  .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+                                    .pswp__share-tooltip
+                                  button.pswp__button.pswp__button--arrow--left(title='Previous (arrow left)')
+                                  button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
+                                  .pswp__caption
+                                    .pswp__caption__center
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

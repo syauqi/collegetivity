@@ -1,0 +1,157 @@
+.jsgrid {
+	position: relative;
+	overflow: hidden;
+	font-size: 1em;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	* {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+	}
+	:after {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+	}
+	:before {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+	}
+	input {
+		font-size: 1em;
+	}
+	select {
+		font-size: 1em;
+	}
+	textarea {
+		font-size: 1em;
+	}
+}
+.jsgrid-grid-header {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	//Instead of the line below you could use @include user-select($select)
+	user-select: none;
+}
+.jsgrid-grid-body {
+	overflow-x: auto;
+	overflow-y: scroll;
+}
+.jsgrid-table {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.jsgrid-cell {
+	padding: .5em;
+}
+.jsgrid-header-cell {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	padding: .5em;
+}
+.jsgrid-сell {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+}
+.jsgrid-align-left {
+	text-align: left;
+}
+.jsgrid-align-center {
+	text-align: center;
+	input {
+		text-align: center;
+	}
+	select {
+		text-align: center;
+	}
+	textarea {
+		text-align: center;
+	}
+}
+.jsgrid-align-right {
+	text-align: right;
+	input {
+		text-align: right;
+	}
+	select {
+		text-align: right;
+	}
+	textarea {
+		text-align: right;
+	}
+}
+.jsgrid-edit-row {
+	input {
+		width: 100%;
+		padding: .3em .5em;
+	}
+	select {
+		width: 100%;
+		padding: .3em .5em;
+	}
+	textarea {
+		width: 100%;
+		padding: .3em .5em;
+	}
+	input[type=checkbox] {
+		width: auto;
+	}
+}
+.jsgrid-filter-row {
+	input {
+		width: 100%;
+		padding: .3em .5em;
+	}
+	select {
+		width: 100%;
+		padding: .3em .5em;
+	}
+	textarea {
+		width: 100%;
+		padding: .3em .5em;
+	}
+	input[type=checkbox] {
+		width: auto;
+	}
+}
+.jsgrid-insert-row {
+	input {
+		width: 100%;
+		padding: .3em .5em;
+	}
+	select {
+		width: 100%;
+		padding: .3em .5em;
+	}
+	textarea {
+		width: 100%;
+		padding: .3em .5em;
+	}
+	input[type=checkbox] {
+		width: auto;
+	}
+}
+.jsgrid-header-sort {
+	cursor: pointer;
+}
+.jsgrid-pager {
+	padding: .5em 0;
+}
+.jsgrid-pager-nav-button {
+	padding: .2em .6em;
+}
+.jsgrid-pager-nav-inactive-button {
+	display: none;
+	pointer-events: none;
+}
+.jsgrid-pager-page {
+	padding: .2em .6em;
+}
+.jsgrid-selected-row .jsgrid-cell {
+	cursor: pointer;
+}
+.jsgrid-nodata-row .jsgrid-cell {
+	padding: .5em 0;
+	text-align: center;
+}

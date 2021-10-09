@@ -1,0 +1,187 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Default Forms
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item  Form Layout
+                                      li.breadcrumb-item.active  Default Forms
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12.col-xl-6
+                          .row
+                            .col-sm-12
+                              .card
+                                .card-header
+                                  h5 Default Form Layout
+                                  span
+                                    | Using the 
+                                    a(href='#') card
+                                    |  component, you can extend the default collapse behavior to create an accordion.
+                                .card-body
+                                  form.theme-form
+                                    .form-group
+                                      label.col-form-label.pt-0(for='exampleInputEmail1') Email address
+                                      input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+                                      small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+                                    .form-group
+                                      label(for='exampleInputPassword1') Password
+                                      input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+                                    .checkbox.p-0
+                                      input#dafault-checkbox(type='checkbox')
+                                      label.mb-0(for='dafault-checkbox') Remember my preference
+                                .card-footer
+                                  button.btn.btn-primary Submit
+                                  button.btn.btn-secondary Cancel
+                            .col-sm-12
+                              .card
+                                .card-header
+                                  h5 Horizontal Form Layout
+                                  span
+                                    | Using the 
+                                    a(href='#') card
+                                    |  component, you can extend the default collapse behavior to create an accordion.
+                                .card-body
+                                  form.theme-form
+                                    .form-group.row
+                                      label.col-sm-3.col-form-label(for='inputEmail3') Email
+                                      .col-sm-9
+                                        input#inputEmail3.form-control(type='email', placeholder='Email')
+                                    .form-group.row
+                                      label.col-sm-3.col-form-label(for='inputPassword3') Password
+                                      .col-sm-9
+                                        input#inputPassword3.form-control(type='password', placeholder='Password')
+                                    .form-group.row
+                                      label.col-sm-3.col-form-label(for='inputPassword3') Contact Number
+                                      .col-sm-9
+                                        input#inputnumber.form-control(type='number', placeholder='Contact')
+                                    .form-group.row
+                                      label.col-sm-3.col-form-label(for='inputPassword3') Company name
+                                      .col-sm-9
+                                        input#url.form-control(type='text', placeholder='Company name')
+                                    .form-group.row
+                                      label.col-sm-3.col-form-label(for='inputPassword3') Website
+                                      .col-sm-9
+                                        input#Website.form-control(type='url', placeholder='Website')
+                                    fieldset.form-group
+                                      .row
+                                        label.col-form-label.col-sm-3.pt-0 Radios
+                                        .col-sm-9
+                                          .radio.radio-primary
+                                            input#radio11(type='radio', name='radio1', value='option1')
+                                            label(for='radio11') Option 1
+                                          .radio.radio-primary
+                                            input#radio22(type='radio', name='radio1', value='option1')
+                                            label(for='radio22') Option 2
+                                          .radio.radio-primary
+                                            input#radio33(type='radio', name='radio1', value='option1', disabled='')
+                                            label(for='radio33') Disabled
+                                          .radio.radio-primary
+                                            input#radio44(type='radio', name='radio1', value='option1', checked='')
+                                            label(for='radio44') Option 3
+                                          .radio.radio-primary
+                                            input#radio55(type='radio', name='radio1', value='option1', checked='')
+                                            label(for='radio44') Option 4
+                                    .form-group.row.mb-0
+                                      label.col-sm-3.col-form-label.pb-0 Checkboxes
+                                      .col-sm-9
+                                        .form-group.m-checkbox-inline.mb-0
+                                          .checkbox.checkbox-primary
+                                            input#inline-form-1(type='checkbox')
+                                            label.mb-0(for='inline-form-1') Option 1
+                                          .checkbox.checkbox-primary
+                                            input#inline-form-2(type='checkbox')
+                                            label.mb-0(for='inline-form-2') Option 1
+                                .card-footer
+                                  button.btn.btn-primary Submit
+                                  button.btn.btn-secondary Cancel
+                        .col-sm-12.col-xl-6
+                          .row
+                            .col-sm-12
+                              .card
+                                .card-header
+                                  h5 Mega form
+                                .card-body
+                                  form.theme-form.mega-form
+                                    h6 Account Information
+                                    .form-group
+                                      label.col-form-label Your Name
+                                      input.form-control(type='text', placeholder='your Name')
+                                    .form-group
+                                      label.col-form-label Email Address
+                                      input.form-control(type='email', placeholder='Enter email')
+                                    .form-group
+                                      label.col-form-label Contact Number
+                                      input.form-control(type='Number', placeholder='Enter contact number')
+                                    hr.mt-4.mb-4
+                                    h6 Company Information
+                                    .form-group
+                                      label.col-form-label Company Name
+                                      input.form-control(type='text', placeholder='Company Name')
+                                    .form-group
+                                      label.col-form-label Website
+                                      input.form-control(type='text', placeholder='Website')
+                                  hr.mt-4.mb-4
+                                  h6.pb-4 Billing Information
+                                  form.form-inline.theme-form
+                                    .form-group
+                                      input.form-control(type='text', placeholder='Name On Card')
+                                    .form-group
+                                      input.form-control(type='text', name='inputPassword', placeholder='Card Number')
+                                    .form-group
+                                      input.form-control(type='text', name='inputPassword', placeholder='Zip Code')
+                                .card-footer
+                                  button.btn.btn-primary Submit
+                                  button.btn.btn-secondary Cancel
+                            .col-xl-12
+                              .card
+                                .card-header
+                                  h5 Inline Form
+                                  span
+                                    | Use
+                                    code .form-inline
+                                    | class in the form to style with inline fields.
+                                .card-body
+                                  h6 Inline Form with Label
+                                  form.form-inline.theme-form.mt-3
+                                    .form-group
+                                      label.col-form-label(for='inputInlineUsername') Username
+                                      input#inputInlineUsername.form-control(type='text', name='inputUsername', placeholder='Username', autocomplete='off')
+                                    .form-group
+                                      label.col-form-label(for='inputInlinePassword') Password
+                                      input#inputInlinePassword.form-control(type='password', name='inputPassword', placeholder='Password', autocomplete='off')
+                                    .form-group
+                                      button.btn.btn-primary Login
+                                  h6.mt-4 Inline Form without Label
+                                  form.form-inline.theme-form.mt-2
+                                    .form-group
+                                      input.form-control(type='text', name='inputUnlabelUsername', placeholder='Username', autocomplete='off')
+                                    .form-group
+                                      input#inputUnlabelPassword.form-control(type='password', name='inputPassword', placeholder='Password', autocomplete='off')
+                                    .form-group
+                                      button.btn.btn-primary Login
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

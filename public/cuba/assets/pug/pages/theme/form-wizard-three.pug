@@ -1,0 +1,92 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var form_wizard_three     = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Form Wizard With Icon
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Form Layout
+                                      li.breadcrumb-item.active  Form Wizard With Icon
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Form Wizard with icon
+                            .card-body
+                              form.f1(method='post')
+                                .f1-steps
+                                  .f1-progress
+                                    .f1-progress-line(data-now-value='16.66', data-number-of-steps='3')
+                                  .f1-step.active
+                                    .f1-step-icon
+                                      i.fa.fa-user
+                                    p Registration
+                                  .f1-step
+                                    .f1-step-icon
+                                      i.fa.fa-key
+                                    p Email
+                                  .f1-step
+                                    .f1-step-icon
+                                      i.fa.fa-twitter
+                                    p Birth Date
+                                fieldset
+                                  .form-group.mb-2
+                                    label(for='f1-first-name') First Name
+                                    input#f1-first-name.form-control(type='text', name='f1-first-name', placeholder='name@example.com', required='')
+                                  .form-group.mb-2
+                                    label(for='f1-last-name') Last name
+                                    input#f1-last-name.f1-last-name.form-control(type='text', name='f1-last-name', placeholder='Last name...', required='')
+                                  .f1-buttons
+                                    button.btn.btn-primary.btn-next(type='button') Next
+                                fieldset
+                                  .form-group.mb-2
+                                    label.sr-only(for='f1-email') Email
+                                    input#f1-email.f1-email.form-control(type='text', name='f1-email', placeholder='Email...', required='')
+                                  .form-group.mb-2
+                                    label.sr-only(for='f1-password') Password
+                                    input#f1-password.f1-password.form-control(type='password', name='f1-password', placeholder='Password...', required='')
+                                  .form-group.mb-2
+                                    label.sr-only(for='f1-repeat-password') Repeat password
+                                    input#f1-repeat-password.f1-repeat-password.form-control(type='password', name='f1-repeat-password', placeholder='Repeat password...', required='')
+                                  .f1-buttons
+                                    button.btn.btn-primary.btn-previous(type='button') Previous
+                                    button.btn.btn-primary.btn-next(type='button') Next
+                                fieldset
+                                  .form-group.mb-2
+                                    label.sr-only DD
+                                    input#dd.form-control(type='number', placeholder='dd', required='')
+                                  .form-group.mb-2
+                                    label.sr-only MM
+                                    input#mm.form-control(type='number', placeholder='mm', required='')
+                                  .form-group.mb-2
+                                    label.sr-only YYYY
+                                    input#yyyy.form-control(type='number', placeholder='yyyy', required='')
+                                  .f1-buttons
+                                    button.btn.btn-primary.btn-previous(type='button') Previous
+                                    button.btn.btn-primary.btn-submit(type='submit') Submit
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

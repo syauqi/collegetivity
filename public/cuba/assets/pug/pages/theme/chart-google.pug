@@ -1,0 +1,135 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var googlechart           = true;
+- var page_googlechart      = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Google Chart
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Charts
+                                      li.breadcrumb-item.active Google Chart
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5
+                                | Area Chart 
+                                span 1
+                            .card-body.p-0.chart-block
+                              #area-chart1.chart-overflow
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5
+                                | Area Chart 
+                                span 2
+                            .card-body.p-0.chart-block
+                              #area-chart2.chart-overflow
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5
+                                | Column Chart 
+                                span 1 
+                            .card-body.chart-block
+                              #column-chart1.chart-overflow
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5
+                                | Column Chart 
+                                span 2
+                            .card-body.chart-block
+                              #column-chart2.chart-overflow
+                        .col-sm-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Gantt Chart
+                            .card-body.chart-block
+                              #gantt_chart.chart-overflow
+                        .col-sm-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Line Chart
+                            .card-body.chart-block
+                              #line-chart.chart-overflow
+                        .col-sm-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Combo Chart
+                            .card-body.chart-block
+                              #combo-chart.chart-overflow
+                        .col-sm-12.col-xl-6.box-col-12
+                          .card
+                            .card-header
+                              h5 bar-chart2
+                            .card-body.chart-block
+                              #bar-chart2
+                        .col-sm-12.col-xl-6.box-col-12
+                          .card
+                            .card-header
+                              h5 word tree
+                            .card-body.chart-block
+                              #wordtree_basic.word-tree
+                        
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5
+                                | Pie Chart 
+                                span 1
+                            .card-body.p-0.chart-block
+                              #pie-chart1.chart-overflow
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5
+                                | Pie Chart 
+                                span 2
+                            .card-body.p-0.chart-block
+                              #pie-chart3.chart-overflow
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5
+                                | Pie Chart 
+                                span 3
+                            .card-body.p-0.chart-block
+                              #pie-chart4.chart-overflow
+                        
+                        .col-sm-12.col-xl-6.box-col-6
+                          .card
+                            .card-header
+                              h5
+                                | Pie Chart 
+                                span 4
+                            .card-body.p-0.chart-block
+                              #pie-chart2.chart-overflow
+                        
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

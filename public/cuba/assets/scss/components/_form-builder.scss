@@ -1,0 +1,169 @@
+/**=====================
+     11. Form Builder 1 CSS Start
+==========================**/
+.form-builder {
+  .drag-box {
+    user-select: none;
+    fieldset {
+      border: 1px dotted $light-gray;
+      min-height: 655px;
+      padding: 30px;
+      width: 100%;
+      overflow: hidden;
+      margin-top: 30px;
+      border-radius: 4px;
+    }
+  }
+  .component {
+    cursor: pointer;
+    label{
+      padding-top: 8px;
+    }
+    .form-group{
+      input,textarea,select{
+        border-radius: 4px;
+      }
+      .input-group{
+        #prependedcheckbox, #prependedtext{
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+        #appendedcheckbox{
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          border-right-color: transparent;
+        }
+        #appendedtext, #buttondropdown{
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+      }
+        #buttondropdown{
+          margin-right: -1px;
+        }
+        .input-group-btn{
+          button{
+            border-radius: 4px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+        }
+        .input-group-prepend{
+          .btn-right,.checkbox-radius{
+            border-radius: 4px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+        }
+      }
+      .pl-md-radios{
+        padding-left: 37px;
+      }
+    }
+  }
+  input {
+    cursor: pointer;
+  }
+  textarea {
+    resize: vertical;
+  }
+  .popover {
+    z-index: 8;
+    opacity: 1;
+    left: -290px !important;
+    top: 95px !important;
+    .control-group {
+      cursor: default;
+    }
+    input {
+      cursor: pointer;
+    }
+  }
+  .render {
+    min-height: 500px;
+    width: 100%;
+    border-radius: 4px;
+  }
+  .popover {
+    .controls {
+      margin-left: 0;
+    }
+    .control-label {
+      text-align: left;
+    }
+    form {
+      width: 100%;
+    }
+    .fade.left.in
+    {
+      left: -215px;
+    }
+  }
+  .target{
+    &:after{
+      float: left;
+      content: " ";
+      height: 77px;
+      margin-top: 3px;
+      background: $light-color;
+      width: 100%;
+      border: 1px dashed $light-gray;
+    }
+  }
+}
+.drag {
+  form {
+    padding: 10px 5px;
+    border: 1px dotted $light-gray;
+    position: absolute;
+    background: $white;
+    box-shadow: 0 0 30px $light-gray;
+    overflow: hidden;
+    input{
+      border-radius: 5px;
+    }
+  }
+}
+.form-builder-header-1{
+  background-color: $light-color;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 67px;
+  h6{
+    margin-bottom: 0;
+    margin-top: 10px;    
+  }
+}
+.form-builder{
+  .help-block{
+    font-size: 12px;
+  }
+  input{
+    border-radius: 4px !important;
+  }
+  .form-group{
+    .col-md-12{
+      padding: 0;
+    }
+  }
+  .popover{
+    width: 300px;
+  }
+  .popover-header{
+    background-color: var(--theme-deafult);
+    padding: 15px;
+  }
+  .popover-body{
+    padding: 15px;
+    .form-group{
+      &.row{
+        padding: 0 15px;
+        .col-lg-12{
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+/**=====================
+    11. Form Builder 1 CSS Ends
+==========================**/

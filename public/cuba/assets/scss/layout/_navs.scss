@@ -1,0 +1,61 @@
+/**=====================
+     36. NAV CSS Start
+==========================**/
+#accordionoc{
+	#collapseicon, #collapseicon1{
+		padding-top: 0px;
+	}
+	li{
+		button{
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+.navs-icon.default-according.style-1 {
+	li{
+		button{
+			position: relative;
+			&:hover
+			{
+				color: var(--theme-deafult)!important;
+			}
+		}
+		button[aria-expanded="true"]{
+			&:before {
+				right: 2px;
+				top:6px;
+			}
+		}
+		button[aria-expanded="false"]:before {
+			right: 2px;
+			top:6px;
+		}
+	}
+}
+.onhover-dropdown{
+	&.navs-dropdown{
+		&:hover{
+			.onhover-show-div{
+				&:before,&:after{
+					right: 77px;
+					left: unset;
+				}
+			}
+		}
+	}
+}
+.icon-lists{
+	font-family: $font-rubik, $font-serif;
+}
+.pl-navs-inline{
+	padding-left: 30px!important;
+}
+.inline-nav{
+	li{
+		line-height: 1.3;
+	}
+}
+/**=====================
+     36. NAV CSS Ends
+==========================**/

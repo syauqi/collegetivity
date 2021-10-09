@@ -1,0 +1,125 @@
+/**=====================
+     73. knowledgebase CSS start
+==========================**/
+.browse{
+  .browse-articles{
+    &.browse-bottom{
+      margin-top: 30px;
+    }
+    span{
+      vertical-align: middle;
+      position: relative;
+      &:nth-child(2){
+        padding-left: 20px;
+      }
+      svg{
+        width: 14px;
+        height: 14px;
+        margin-right: 10px;
+        vertical-align: text-top;
+        position: absolute;
+        left: 0;
+        top: 3px;
+      }
+    }
+    h6{
+      padding-bottom: 10px;
+      margin-bottom: 0px;
+      border-bottom: 1px solid $light;
+      padding-left: 25px;
+      span{
+        svg{
+          width: 16px;
+          height: 16px;
+          vertical-align: text-top;
+          top: 0;          
+          left: -30px;
+        }
+      }
+    }
+    ul{
+      li{
+        padding: 8px;
+        border-radius: 8px;
+        a{
+          color: $theme-body-font-color;
+        }
+        &:hover{
+          background-color: $light;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1366px){
+  .browse{
+    div[class^="col-"]{
+      &:nth-child(3){
+        margin-top: 30px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px){
+  .browse{
+    div[class^="col-"]{
+      &:nth-child(3) {
+        margin-top: 20px;
+      }
+    }
+    .browse-articles{
+      &.browse-bottom {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px){
+  .browse{
+    div[class^="col-"]{
+      &:nth-child(2) {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px){
+  .browse{
+    div[class^="col-"]{
+      &:nth-child(2),
+      &:nth-child(3){
+        margin-top: 15px;
+      }
+    }
+    .browse-articles{
+      &.browse-bottom {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 360px){
+  .browse{
+    .browse-articles{
+      ul{
+        li{
+          a{
+            span{
+              &:nth-child(2){
+                width: 158px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/**=====================
+     73. knowledgebase CSS end
+==========================**/

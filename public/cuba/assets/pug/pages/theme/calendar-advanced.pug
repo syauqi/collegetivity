@@ -1,0 +1,67 @@
+- var dragable_ui           = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var calendar              = true;
+- var page_calendar         = true;
+- var locales_calendar      = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Calendar Advance
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Calendar
+                                      li.breadcrumb-item.active Calendar Advance
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                          .col-sm-12
+                            .card
+                              .card-header
+                                h5 Dragging Event
+                              .card-body
+                                .row
+                                  .col-xl-4
+                                    #wrap
+                                      #external-events
+                                        h4 Draggable Events
+                                        #external-events-list
+                                          .fc-event My Event 1
+                                          .fc-event My Event 2
+                                          .fc-event My Event 3
+                                          .fc-event My Event 4
+                                          .fc-event My Event 5
+                                        p
+                                          input#drop-remove(type='checkbox')
+                                          label(for='drop-remove') remove after drop
+                                  .col-xl-8
+                                      #calendar1
+                                      div(style='clear:both')
+                            .card
+                              .card-body
+                                h4 Language Calendar (Locales)
+                                #top
+                                  | Locales:
+                                  select#locale-selector
+                                #calendar2  
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

@@ -1,0 +1,198 @@
+/*======= Template Button =======*/
+.template-btn {
+    display: inline-block;
+    color: $color-white;
+    padding: 15px 40px;
+    font: {
+        size: 15px;
+        family: $font-cs-bold;
+        weight: 700;
+    }
+    line-height: 1.4;
+    transition: all 0.4s;
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    border-radius: 50px;
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
+    box-shadow: 0px 10px 30px 0px rgba(71, 59, 240, 0.36);
+    overflow: hidden;
+
+    i {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        color: $color-white;
+        box-shadow: 0 0 30px 0px rgb(0 0 0 / 30%);
+        background-color: $color-heading;
+        border-color: $color-heading;
+    }
+
+    &.template-btn-2 {
+        border-radius: 7px;
+    }
+
+    &.bordered-btn {
+        background-color: transparent;
+        box-shadow: none;
+        color: $color-heading;
+        border-color: rgba(71, 59, 240, 0.1);
+
+        &:hover {
+            border-color: $color-heading;
+            color: $color-white;
+            background-color: $color-heading;
+        }
+    }
+
+    &.bordered-body-4 {
+        background-color: transparent;
+        box-shadow: none;
+        color: $color-body-4;
+        border-color: rgb(40, 42, 51);
+
+        &:hover {
+            background-color: $color-primary-6;
+            color: $color-white;
+            border-color: $color-primary-6;
+        }
+    }
+
+    &.primary-bg-2 {
+        &:not(:hover) {
+            background-color: $color-primary-2;
+            border-color: $color-primary-2;
+            box-shadow: 0px 10px 30px 0px rgba(0, 64, 229, 0.36);
+        }
+
+        &:hover {
+            background-color: $color-heading-2;
+            border-color: $color-heading-2;
+        }
+    }
+
+    &.primary-bg-3 {
+        &:not(:hover) {
+            background-color: $color-primary-3;
+            border-color: $color-primary-3;
+            box-shadow: 0px 10px 30px 0px rgba(226, 92, 106, 0.36);
+        }
+    }
+
+    &.primary-bg-4 {
+        background-color: $color-primary-4;
+        border-color: $color-primary-4;
+        box-shadow: 0px 10px 30px 0px rgba(51, 119, 255, 0.36);
+
+        &.bordered-btn {
+            background-color: transparent;
+            border-color: rgba(71, 59, 240, 0.1);
+            box-shadow: none;
+
+            &:hover {
+                background-color: $color-primary-4;
+                color: $color-white;
+                border-color: $color-primary-4;
+            }
+        }
+    }
+
+    &.primary-bg-5 {
+        &:not(:hover) {
+            background-color: $color-primary-5;
+            border-color: $color-primary-5;
+            box-shadow: 0px 10px 30px 0px rgba(85, 128, 255, 0.36);
+        }
+
+        &:hover {
+            background-color: $color-heading-4;
+        }
+    }
+
+    &.primary-bg-6 {
+        &:not(:hover) {
+            background-color: $color-primary-6;
+            border-color: $color-primary-6;
+            box-shadow: 0px 3px 30px 0px rgba(66, 166, 108, 0.36);
+        }
+
+        &:hover {
+            background-color: $color-white;
+            border-color: $color-white;
+            color: $color-heading;
+            box-shadow: none;
+        }
+    }
+
+    &.secondary-bg {
+        &:not(:hover) {
+            background-color: $color-secondary;
+            border-color: $color-secondary;
+            box-shadow: 0px 10px 30px 0px rgba(244, 115, 42, 0.36);
+        }
+
+        &:hover {
+            background-color: $color-heading-2;
+            border-color: $color-heading-2;
+        }
+    }
+
+    &.secondary-2-bg {
+        &:not(:hover) {
+            background-color: $color-secondary-2;
+            border-color: $color-secondary-2;
+            box-shadow: 0px 10px 30px 0px rgba(246, 185, 167, 0.61);
+            color: $color-heading-3;
+        }
+    }
+
+    &.secondary-3-bg {
+        &:not(:hover) {
+            background-color: $color-secondary-3;
+            border-color: $color-secondary-3;
+            box-shadow: 0px 10px 30px 0px rgba(130, 8, 254, 0.36);
+        }
+    }
+
+    &.heading-3-bg {
+        &:not(:hover) {
+            background-color: $color-heading-3;
+            border-color: $color-heading-3;
+            box-shadow: 0px 10px 30px 0px rgba(54, 35, 75, 0.36);
+        }
+    }
+
+    &.bg-soft-grey-color {
+        background-color: $color-soft-grey;
+        border-color: $color-soft-grey;
+        box-shadow: none;
+        color: $color-heading;
+    }
+
+    &.white-bg {
+        background-color: $color-white;
+        border-color: $color-white;
+        box-shadow: none;
+        color: $color-heading-2;
+
+        &:hover {
+            background-color: $color-heading;
+            border-color: $color-heading;
+            color: $color-white;
+        }
+
+        &.bordered-btn {
+            background-color: transparent;
+            color: $color-white;
+            border-color: rgba(#fff, 0.15);
+
+            &:hover {
+                background-color: $color-white;
+                color: $color-heading-2;
+                border-color: $color-white;
+            }
+        }
+    }
+}

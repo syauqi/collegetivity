@@ -1,0 +1,61 @@
+@import "variables.scss";
+
+.br-theme-css-stars {
+
+  .br-widget {
+    height: 28px;
+    white-space: nowrap;
+
+    a {
+      text-decoration: none;
+      height: 18px;
+      width: 18px;
+      float: left;
+      font-size: 23px;
+      margin-right: 5px;
+    }
+
+    a:after {
+      content: "\2605";
+      color: $star-default;
+    }
+
+    a.br-active:after {
+      color: $star-active;
+    }
+
+    a.br-selected:after {
+      color: $star-selected;
+    }
+
+    .br-current-rating {
+      display: none;
+    }
+  }
+
+  .br-readonly {
+    a {
+      cursor: default;
+    }
+  }
+
+}
+
+@media print {
+  .br-theme-css-stars {
+
+    .br-widget {
+      a:after {
+        content: "\2606";
+        color: black;
+      }
+
+      a.br-active:after,
+      a.br-selected:after {
+        content: "\2605";
+        color: black;
+      }
+    }
+
+  }
+}

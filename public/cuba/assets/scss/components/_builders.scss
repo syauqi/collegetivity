@@ -1,0 +1,31 @@
+/**=====================
+     35. Form builder css start
+==========================**/
+.form-builder{
+  .help-block {
+    margin-bottom: 0;
+    color: $gray-60;
+    text-transform: capitalize;
+  }
+  .btn-light {
+    color: $gray-60;
+  }
+  .copy-btn{
+    padding: 8px;
+  }
+  .nav-primary {
+    .nav-link.active, .nav-primary .show > .nav-link, .nav-pills.nav-primary .nav-link.active, .nav-pills.nav-primary .show > .nav-link{
+      border-radius: 5px;
+    }
+    .nav-link, .nav-pills.nav-primary .nav-link {
+      color: $black;
+      font-weight: 500;
+    }
+  }
+  .theme-form{
+    margin-top: 30px;  
+  }
+}
+/**=====================
+    35. Form builder css Ends
+==========================**/

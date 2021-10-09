@@ -1,0 +1,125 @@
+- var dragable_ui           = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var calendar              = true;
+- var page_calendar         = true;
+- var google_calendar       = true;
+- var rrule_calendar        = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Calendar Basic
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item DasCalendar Basichboard
+                                      li.breadcrumb-item.active Calendar
+                    // Container-fluid starts
+                    .container-fluid
+                      .calendar-wrapper
+                        .row
+                          .col-sm-12
+                            .card
+                              .card-header
+                                h5 Basic(daygrid)
+                                span
+                                  | This is the basic example having navigation button to navigate next and previous months and today button. This basic example lists all the events on the calendar.
+                              .card-body
+                                .row
+                                  .col-md-12
+                                      #cal-basic-new1
+                            .card
+                              .card-header
+                                h5 External Dragging Views
+                                span
+                                  | This is the exeternal dragging 2 cals view example having  draging events in source to destination . In this example the option to change your view to a basicWeek or basicDay view. 
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #source-calendar
+                                    #destination-calendar
+                            .card
+                              .card-header
+                                h5 Full height
+                                span
+                                  | This is the basic example having navigation button to navigate next and previous months and today button. This basic example lists all the eventsMonth,week,day and list on the calendar.
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #cal-basic-new2
+                            .card
+                              .card-header
+                                h5 Google Calender
+                                span
+                                  | The following example demonstrates google calender  views google events on view and display month.
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #loading
+                                      | loading....
+                                    #cal-basic-new3
+                            .card
+                              .card-header
+                                h5 Month View Calendar
+                                span
+                                  | The following example demonstrates month viewcalender  views and the defaultView option is set to month view calender.and google click also available.
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #cal-basic-new4
+                            .card
+                              .card-header
+                                h5 rrule Calendar
+                                span
+                                  | The following example demonstrates month viewcalender rrule calendar  views and the month view day and list  option is set to month view calender.
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #cal-basic-new5
+                            .card
+                              .card-header
+                                h5 selectable Calendar
+                                span
+                                  | The following example demonstrates selectable view calender  views and add events in date and month wise as well as display month week and day wise events calendar.
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #cal-basic-new6
+                            .card
+                              .card-header
+                                h5 Time Grid Views Calendar
+                                span
+                                  | The following example demonstrates time grid view calender  views month,week,day ,and list wise events set to time grid view calender.
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #cal-basic-new7
+                            .card
+                              .card-header
+                                h5 Week Numbers Views Calendar
+                                span
+                                  | The following example demonstrates week numbers view calender  views and the defaultView option is set to week numbers view calender.
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #cal-basic-new8
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

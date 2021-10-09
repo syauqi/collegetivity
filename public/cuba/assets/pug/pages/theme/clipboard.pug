@@ -1,0 +1,98 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var clipboard             = true;
+- var page_clipboard        = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Clipboard
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Form Widgets
+                                      li.breadcrumb-item.active Clipboard
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Clipboard On Text Input
+                            .card-body
+                              .clipboaard-container
+                                p.card-description Cut/copy from text input
+                                input#clipboardExample1.form-control(type='text', placeholder='type some text to copy / cut')
+                                .mt-3
+                                  button.btn.btn-primary.btn-clipboard(type='button', data-clipboard-action='copy', data-clipboard-target='#clipboardExample1')
+                                    i.fa.fa-copy
+                                    |  Copy
+                                  button.btn.btn-secondary.btn-clipboard-cut(type='button', data-clipboard-action='cut', data-clipboard-target='#clipboardExample1')
+                                    i.fa.fa-cut
+                                    |  Cut
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Clipboard On Textarea
+                            .card-body
+                              .clipboaard-container
+                                p.card-description Cut/copy from textarea
+                                textarea#clipboardExample2.form-control(rows='1', spellcheck='false')
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                .mt-3
+                                  button.btn.btn-primary.btn-clipboard(type='button', data-clipboard-action='copy', data-clipboard-target='#clipboardExample2')
+                                    i.fa.fa-copy
+                                    |  Copy
+                                  button.btn.btn-secondary.btn-clipboard-cut(type='button', data-clipboard-action='cut', data-clipboard-target='#clipboardExample2')
+                                    i.fa.fa-cut
+                                    |  Cut
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Clipboard On Paragraph
+                            .card-body
+                              .clipboaard-container
+                                p.card-description Copy from Paragraph
+                                h6#clipboardExample3.border.rounded.card-body.f-w-300
+                                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                  | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                .mt-3
+                                  button.btn.btn-primary.btn-clipboard(type='button', data-clipboard-action='copy', data-clipboard-target='#clipboardExample3')
+                                    i.fa.fa-copy
+                                    |  Copy
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Copy Portion From Paragraph
+                            .card-body
+                              .clipboaard-container
+                                p.card-description Copy Portion From Paragraph
+                                h6.border.rounded.card-body.f-w-300
+                                  | Lorem ipsum 
+                                  span#clipboardExample4.bg-primary.text-white.p-1 dolor sit amet
+                                  | , consectetur adipiscing elit,
+                                  |                                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                .mt-3
+                                  button.btn.btn-primary.btn-clipboard(type='button', data-clipboard-action='copy', data-clipboard-target='#clipboardExample4')
+                                    i.fa.fa-copy
+                                    |  Copy highlighted text
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

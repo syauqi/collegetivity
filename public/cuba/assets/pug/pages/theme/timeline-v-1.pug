@@ -1,0 +1,113 @@
+- var timeline_1            = true;
+- var animate               = true;
+- var modernizr             = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Timeline 1
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Timeline
+                                      li.breadcrumb-item.active Timeline 1
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Example
+                            .card-body
+                              // cd-timeline Start
+                              section#cd-timeline.cd-container
+                                .cd-timeline-block
+                                  .cd-timeline-img.cd-picture.bg-primary
+                                    i.icon-pencil-alt
+                                  .cd-timeline-content
+                                    h4
+                                      | Title of section
+                                      span  1
+                                    p.m-0
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.
+                                    span.cd-date
+                                      | Jan 
+                                      span.counter  14
+                                .cd-timeline-block
+                                  .cd-timeline-img.cd-movie.bg-secondary
+                                    i.icon-video-camera
+                                  .cd-timeline-content
+                                    h4
+                                      | Title of section
+                                      span  2
+                                    .embed-responsive.embed-responsive-21by9.m-t-20
+                                      iframe(src='https://www.youtube.com/embed/wpmHZspl4EM', allowfullscreen='')
+                                    span.cd-date
+                                      | Jan 
+                                      span.counter 18
+                                .cd-timeline-block
+                                  .cd-timeline-img.cd-picture.bg-success
+                                    i.icon-image
+                                  .cd-timeline-content
+                                    h4
+                                      | Title of section
+                                      span  3
+                                    img.img-fluid.p-t-20(src='../assets/images/banner/1.jpg', alt='')
+                                    span.cd-date
+                                      | Jan 
+                                      span.counter 24
+                                .cd-timeline-block
+                                  .cd-timeline-img.cd-location.bg-info
+                                    i.icon-pulse
+                                  .cd-timeline-content
+                                    h4
+                                      | Title of section
+                                      span  4
+                                    audio.m-t-20(controls='')
+                                      source(src='../assets/audio/horse.ogg', type='audio/ogg')
+                                      |                                                 Your browser does not support the audio element.
+                                    span.cd-date
+                                      | Feb 
+                                      span.counter 14
+                                .cd-timeline-block
+                                  .cd-timeline-img.cd-location.bg-warning
+                                    i.icon-image
+                                  .cd-timeline-content
+                                    h4
+                                      | Title of section
+                                      span  5
+                                    img.img-fluid.p-t-20(src='../assets/images/banner/3.jpg', alt='')
+                                    span.cd-date
+                                      | Feb 
+                                      span.counter 18
+                                .cd-timeline-block
+                                  .cd-timeline-img.cd-movie.bg-danger
+                                    i.icon-pencil-alt
+                                  .cd-timeline-content
+                                    h4 Final Section
+                                    p.m-0 This is the content of the last section
+                                    span.cd-date
+                                      | Feb 
+                                      span.counter 26
+                              // cd-timeline Ends
+                    // Container-fluid ends                    
+                include ../../components/footer
+        include ../../components/footer-files

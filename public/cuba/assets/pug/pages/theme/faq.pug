@@ -1,0 +1,493 @@
+- var height_equal          = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | FAQ
+
+                                .col-6
+                                      ol.breadcrumb
+                                        li.breadcrumb-item
+                                          a(href='index.html')                                        
+                                            i(data-feather="home")
+                                        li.breadcrumb-item FAQ
+                                        li.breadcrumb-item.active FAQ
+                    // Container-fluid starts
+                    .container-fluid
+                      .faq-wrap
+                        .row
+                          .col-xl-4.xl-100
+                            .card.bg-primary
+                              .card-body
+                                .media.faq-widgets
+                                  .media-body
+                                    h5 Articles
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                  i(data-feather='file-text')
+                          .col-xl-4.xl-50.col-sm-6
+                            .card.bg-primary
+                              .card-body
+                                .media.faq-widgets
+                                  .media-body
+                                    h5 Knowledgebase
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                  i(data-feather='book-open')
+                          .col-xl-4.xl-50.col-sm-6
+                            .card.bg-primary
+                              .card-body
+                                .media.faq-widgets
+                                  .media-body
+                                    h5 Support
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                  i(data-feather='aperture')
+                          .col-lg-12
+                            .header-faq
+                              h5.mb-0 Quick Questions are answered
+                            #accordionoc.row.default-according.style-1.faq-accordion
+                              .col-xl-8.xl-60.col-lg-6.col-md-7
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon', aria-expanded='false', aria-controls='collapseicon')
+                                        i(data-feather='help-circle')
+                                        |  Integrating WordPress with Your Website?
+                                  #collapseicon.collapse(aria-labelledby='collapseicon', data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon2', aria-expanded='false', aria-controls='collapseicon2')
+                                        i(data-feather='help-circle')
+                                        |  WordPress Site Maintenance ?
+                                  #collapseicon2.collapse(data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon3', aria-expanded='false', aria-controls='collapseicon2')
+                                        i(data-feather='help-circle')
+                                        | Meta Tags in WordPress ?
+                                  #collapseicon3.collapse(data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon4', aria-expanded='false', aria-controls='collapseicon2')
+                                        i(data-feather='help-circle')
+                                        |    WordPress in Your Language ?
+                                  #collapseicon4.collapse(data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .faq-title
+                                  h6 Intellectual Property
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon5', aria-expanded='false')
+                                        i(data-feather='help-circle')
+                                        |  WordPress Site Maintenance ?
+                                  #collapseicon5.collapse(aria-labelledby='collapseicon5', data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon7', aria-expanded='false', aria-controls='collapseicon2')
+                                        i(data-feather='help-circle')
+                                        |    WordPress in Your Language ?
+                                  #collapseicon7.collapse(data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon8', aria-expanded='false', aria-controls='collapseicon2')
+                                        i(data-feather='help-circle')
+                                        | Integrating WordPress with Your Website ?
+                                  #collapseicon8.collapse(data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .faq-title
+                                  h6 Selling And Buying
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon9', aria-expanded='false')
+                                        i(data-feather='help-circle')
+                                        |  WordPress Site Maintenance ?
+                                  #collapseicon9.collapse(aria-labelledby='collapseicon9', data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon10', aria-expanded='false', aria-controls='collapseicon2')
+                                        i(data-feather='help-circle')
+                                        | Meta Tags in WordPress ?
+                                  #collapseicon10.collapse(data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon11', aria-expanded='false', aria-controls='collapseicon2')
+                                        i(data-feather='help-circle')
+                                        | Validating a Website ?
+                                  #collapseicon11.collapse(data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon12', aria-expanded='false', aria-controls='collapseicon2')
+                                        i(data-feather='help-circle')
+                                        | Know Your Sources ?
+                                  #collapseicon12.collapse(data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .faq-title
+                                  h6 User Accounts
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon13', aria-expanded='false')
+                                        i(data-feather='help-circle')
+                                        | Integrating WordPress with Your Website ?
+                                  #collapseicon13.collapse(aria-labelledby='collapseicon13', data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon14', aria-expanded='false', aria-controls='collapseicon2')
+                                        i(data-feather='help-circle')
+                                        | WordPress Site Maintenance ?
+                                  #collapseicon14.collapse(data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon16', aria-expanded='false', aria-controls='collapseicon2')
+                                        i(data-feather='help-circle')
+                                        |  WordPress in Your Language ?
+                                  #collapseicon16.collapse(data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon17', aria-expanded='false', aria-controls='collapseicon2')
+                                        i(data-feather='help-circle')
+                                        |   Validating a Website ?
+                                  #collapseicon17.collapse(data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                .card
+                                  .card-header
+                                    h5.mb-0
+                                      button.btn.btn-link.collapsed.pl-0(data-toggle='collapse', data-target='#collapseicon18', aria-expanded='false', aria-controls='collapseicon2')
+                                        i(data-feather='help-circle')
+                                        | Meta Tags in WordPress ?
+                                  #collapseicon18.collapse(data-parent='#accordionoc')
+                                    .card-body
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                              .col-xl-4.xl-40.col-lg-6.col-md-5
+                                .row
+                                  .col-lg-12
+                                    .card.card-mb-faq.xs-mt-search
+                                      .card-header.faq-header
+                                        h5 Search articles
+                                        i(data-feather='help-circle')
+                                      .card-body.faq-body
+                                        .faq-form
+                                          input.form-control(type='text', placeholder='Search..')
+                                          i.search-icon(data-feather='search')
+                                  .col-lg-12
+                                    .card.card-mb-faq
+                                      .card-header.faq-header
+                                        h5 Navigation
+                                        i(data-feather='settings')
+                                      .card-body.faq-body
+                                        .navigation-btn
+                                          a.btn.btn-primary(href='#')
+                                            i.m-r-10(data-feather='message-square')
+                                            | Ask Question
+                                        .navigation-option
+                                          ul
+                                            li
+                                              a(href='#')
+                                                i(data-feather='edit')
+                                                | Tutorials
+                                            li
+                                              a(href='#')
+                                                i(data-feather='globe')
+                                                | Help center
+                                            li
+                                              a(href='#')
+                                                i(data-feather='book-open')
+                                                | Knowledgebase
+                                            li
+                                              a(href='#')
+                                                i(data-feather='file-text')
+                                                | Articles
+                                              span.badge.badge-primary.badge-pill.pull-right 42
+                                            li
+                                              a(href='#')
+                                                i(data-feather='youtube')
+                                                | Video Tutorials
+                                              span.badge.badge-primary.badge-pill.pull-right 648
+                                            li
+                                              a(href='#')
+                                                i(data-feather='message-circle')
+                                                | Ask our community
+                                            li
+                                              a(href='#')
+                                                i(data-feather='mail')
+                                                | Contact us
+                                          hr
+                                          ul
+                                            li
+                                              a(href='#')
+                                                i(data-feather='message-circle')
+                                                | Ask our community
+                                            li
+                                              a(href='#')
+                                                i(data-feather='mail')
+                                                | Contact us
+                                  .col-lg-12
+                                    .card
+                                      .card-header.faq-header
+                                        h5.d-inline-block Latest Updates
+                                        span.pull-right.d-inline-block See All
+                                      .card-body.faq-body
+                                        .media.updates-faq-main
+                                          .updates-faq
+                                            i.font-primary(data-feather='rotate-cw')
+                                          .media-body.updates-bottom-time
+                                            p
+                                              a(href='#') David Linner 
+                                              | requested money back for a double debit card charge
+                                            p 10 minutes ago
+                                        .media.updates-faq-main
+                                          .updates-faq
+                                            i.font-primary(data-feather='dollar-sign')
+                                          .media-body.updates-bottom-time
+                                            p All sellers have received monthly payouts
+                                            p 2 hours ago
+                                        .media.updates-faq-main
+                                          .updates-faq
+                                            i.font-primary(data-feather='link')
+                                          .media-body.updates-bottom-time
+                                            p
+                                              | User Christopher 
+                                              a(href='#') Wallace
+                                              |  is on hold and awaiting for staff reply
+                                            p 45 minutes ago
+                                        .media.updates-faq-main
+                                          .updates-faq
+                                            i.font-primary(data-feather='check')
+                                          .media-body.updates-bottom-time
+                                            p
+                                              | Ticket #43683 has been closed by 
+                                              a(href='#') Victoria Wilson
+                                            p Dec 7, 11:48
+                          .col-lg-12
+                            .header-faq
+                              h5.mb-0 Featured Tutorials
+                            .row
+                              .col-xl-3.xl-50.col-md-6
+                                .card.features-faq.product-box
+                                  .faq-image.product-img
+                                    img.img-fluid(src='../assets/images/faq/1.jpg', alt='')
+                                    .product-hover
+                                      ul
+                                        li
+                                          i.icon-link
+                                        li
+                                          i.icon-import
+                                  .card-body
+                                    h6 Web Design
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                  .card-footer
+                                    span Dec 15, 2019
+                                    span.pull-right
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star.font-primary
+                              .col-xl-3.xl-50.col-md-6
+                                .card.features-faq.product-box
+                                  .faq-image.product-img
+                                    img.img-fluid(src='../assets/images/faq/2.jpg', alt='')
+                                    .product-hover
+                                      ul
+                                        li
+                                          i.icon-link
+                                        li
+                                          i.icon-import
+                                  .card-body
+                                    h6 Web Development
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                  .card-footer
+                                    span Dec 15, 2019
+                                    span.pull-right
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star-o.font-primary
+                              .col-xl-3.xl-50.col-md-6
+                                .card.features-faq.product-box
+                                  .faq-image.product-img
+                                    img.img-fluid(src='../assets/images/faq/3.jpg', alt='')
+                                    .product-hover
+                                      ul
+                                        li
+                                          i.icon-link
+                                        li
+                                          i.icon-import
+                                  .card-body
+                                    h6 UI Design
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                  .card-footer
+                                    span Dec 15, 2019
+                                    span.pull-right
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star.font-primary
+                              .col-xl-3.xl-50.col-md-6
+                                .card.features-faq.product-box
+                                  .faq-image.product-img
+                                    img.img-fluid(src='../assets/images/faq/4.jpg', alt='')
+                                    .product-hover
+                                      ul
+                                        li
+                                          i.icon-link
+                                        li
+                                          i.icon-import
+                                  .card-body
+                                    h6 UX Design
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                  .card-footer
+                                    span Dec 15, 2019
+                                    span.pull-right
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star.font-primary
+                                      i.fa.fa-star-half-o.font-primary
+                          .col-lg-12
+                            .header-faq
+                              h5.mb-0 Latest articles and videos
+                            .row
+                              .col-xl-4.col-md-6
+                                .row
+                                  .col-sm-12
+                                    .card
+                                      .card-body
+                                        .media
+                                          i.m-r-30(data-feather='codepen')
+                                          .media-body
+                                            h6.f-w-500 Using Video
+                                            p Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                                  .col-sm-12
+                                    .card
+                                      .card-body
+                                        .media
+                                          i.m-r-30(data-feather='codepen')
+                                          .media-body
+                                            h6.f-w-500 Vel illum qu
+                                            p Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                                  .col-sm-12
+                                    .card
+                                      .card-body
+                                        .media
+                                          i.m-r-30(data-feather='codepen')
+                                          .media-body
+                                            h6.f-w-500  Cum sociis natoqu
+                                            p Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
+                              .col-xl-4.col-md-6
+                                .row
+                                  .col-sm-12
+                                    .card
+                                      .card-body
+                                        .media
+                                          i.m-r-30(data-feather='file-text')
+                                          .media-body
+                                            h6.f-w-500  Donec pede justo
+                                            p  Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
+                                  .col-sm-12
+                                    .card
+                                      .card-body
+                                        .media
+                                          i.m-r-30(data-feather='file-text')
+                                          .media-body
+                                            h6.f-w-500  Nam quam nunc
+                                            p  Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                                  .col-sm-12
+                                    .card
+                                      .card-body
+                                        .media
+                                          i.m-r-30(data-feather='file-text')
+                                          .media-body
+                                            h6.f-w-500 Using Video 
+                                            p Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                              .col-xl-4
+                                .row
+                                  .col-xl-12.col-md-6
+                                    .card
+                                      .card-body
+                                        .media
+                                          i.m-r-30(data-feather='youtube')
+                                          .media-body
+                                            h6.f-w-500  Vel illum qu
+                                            p Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                                  .col-xl-12.col-md-6
+                                    .card
+                                      .card-body
+                                        .media
+                                          i.m-r-30(data-feather='youtube')
+                                          .media-body
+                                            h6.f-w-500  Cum sociis natoqu
+                                            p Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                                  .col-xl-12
+                                    .card
+                                      .card-body
+                                        .media
+                                          i.m-r-30(data-feather='youtube')
+                                          .media-body
+                                            h6.f-w-500 Donec pede justo
+                                            p Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

@@ -1,0 +1,1228 @@
+//colors
+$white:  white;
+$white_70: rgba(255, 255, 255, 0.7);
+$color_cape_cod_20_approx: rgba(64, 64, 64, 0.2);
+$color_cararra_approx: #ebebeb;
+$color_polar_approx: #e7f4f9;
+$color_french_pass_approx: #beebff;
+$color_storm_dust_approx: #666666;
+$black: black;
+$color_wild_sand_approx: #f5f5f5;
+$color_mountain_mist_approx: #979797;
+$color_athens_gray_approx: #e8eff7;
+$color_allports_approx: #0a6aa1;
+$color_mercury_approx: #e2e3e3;
+$color_bon_jour_approx: #e0e0e0;
+$silver: silver;
+$color_japanese_laurel_approx: green;
+$red: red;
+$color_mine_shaft_approx: #333;
+$color_celeste_approx: #cccccc;
+$color_iron_approx: #d8d8d8;
+$gallery: #efefef;
+$gray: gray;
+$color_red_berry_approx: #8b0000;
+$color_anakiwa_approx: #a8e4ff;
+$color_tapa_approx: #777;
+
+//data-uris
+$data_uri_0: "data:image/gif";
+$data_uri_1: "data:image/gif";
+$data_uri_2: "data:image/svg";
+$data_uri_3: "data:image/png";
+$data_uri_4: "data:image/png";
+$data_uri_5: "data:image/png";
+$data_uri_6: "data:image/png";
+
+//urls
+$url_0: url(../images/tree/32px.png);
+$url_1: url(../images/tree/throbber.gif);
+$url_2: url(../images/tree/40px.png);
+
+//@extend-elements
+//original selectors
+//.jstree-node, .jstree-children, .jstree-container-ul
+%extend_1 {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+//original selectors
+//.vakata-context, .vakata-context ul
+%extend_2 {
+	margin: 0;
+	padding: 2px;
+	position: absolute;
+	background: $color_wild_sand_approx;
+	border: 1px solid $color_mountain_mist_approx;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 2px 2px 2px $color_mountain_mist_approx;
+}
+
+//original selectors
+//.vakata-context .vakata-context-separator >a, .vakata-context .vakata-context-separator >a:hover
+%extend_3 {
+	background: $white;
+	border: 0;
+	border-top: 1px solid $color_mercury_approx;
+	height: 1px;
+	min-height: 1px;
+	max-height: 1px;
+	padding: 0;
+	margin: 0 0 0 2.4em;
+	border-left: 1px solid $color_bon_jour_approx;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: 0 0 0 transparent;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 0 transparent;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+}
+
+//original selectors
+//.vakata-context .vakata-contextmenu-disabled a, .vakata-context .vakata-contextmenu-disabled a:hover
+%extend_4 {
+	color: $silver;
+	background-color: transparent;
+	border: 0;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 0;
+}
+
+//original selectors
+//#jstree-dnd .jstree-icon, #jstree-dnd .jstree-copy
+%extend_5 {
+	display: inline-block;
+	text-decoration: none;
+	margin: 0 2px 0 0;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+}
+
+//original selectors
+//.jstree-default .jstree-node, .jstree-default .jstree-icon
+%extend_6 {
+	background-repeat: no-repeat;
+	background-color: transparent;
+	color: $color_mine_shaft_approx;
+	background-image: $url_0;
+	color: $color_tapa_approx;
+}
+
+//original selectors
+//.jstree-default >.jstree-wholerow-ul .jstree-hovered, .jstree-default >.jstree-wholerow-ul .jstree-clicked
+%extend_7 {
+	background: transparent;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+}
+
+//original selectors
+//#jstree-dnd.jstree-default .jstree-ok, #jstree-dnd.jstree-default .jstree-er
+%extend_8 {
+	background-image: $url_0;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+//original selectors
+//#jstree-dnd.jstree-default-small .jstree-ok, #jstree-dnd.jstree-default-small .jstree-er
+%extend_9 {
+	background-image: $url_0;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+//original selectors
+//#jstree-dnd.jstree-default-large .jstree-ok, #jstree-dnd.jstree-default-large .jstree-er
+%extend_10 {
+	background-image: $url_0;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+
+.jstree-node {
+	@extend %extend_1;
+	white-space: nowrap;
+	&.jstree-hidden {
+		display: none;
+	}
+}
+.jstree-children {
+	@extend %extend_1;
+}
+.jstree-container-ul {
+	@extend %extend_1;
+}
+.jstree-anchor {
+	display: inline-block;
+	color: $black;
+	white-space: nowrap;
+	padding: 0 10px 0 1px;
+	margin: 0;
+	vertical-align: top;
+	text-decoration: none;
+	color: inherit;
+	&:focus {
+		outline: 0;
+	}
+	&:link {
+		text-decoration: none;
+		color: inherit;
+	}
+	&:visited {
+		text-decoration: none;
+		color: inherit;
+	}
+	&:hover {
+		text-decoration: none;
+		color: inherit;
+	}
+	&:active {
+		text-decoration: none;
+		color: inherit;
+	}
+	> {
+		.jstree-themeicon {
+			margin-right: 2px;
+		}
+		.jstree-themeicon-hidden {
+			display: none;
+		}
+	}
+}
+.jstree-icon {
+	display: inline-block;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	text-align: center;
+	&:empty {
+		display: inline-block;
+		text-decoration: none;
+		margin: 0;
+		padding: 0;
+		vertical-align: top;
+		text-align: center;
+	}
+}
+.jstree-ocl {
+	cursor: pointer;
+}
+.jstree {
+	.jstree-open > .jstree-children {
+		display: block;
+	}
+	.jstree-closed > .jstree-children {
+		display: none;
+	}
+	.jstree-leaf > .jstree-children {
+		display: none;
+	}
+}
+.jstree-hidden {
+	display: none;
+}
+.jstree-rtl {
+	.jstree-anchor {
+		padding: 0 1px 0 4px;
+		> .jstree-themeicon {
+			margin-left: 2px;
+			margin-right: 0;
+		}
+	}
+	.jstree-node {
+		margin-left: 0;
+	}
+	.jstree-container-ul > .jstree-node {
+		margin-right: 0;
+	}
+}
+.jstree-wholerow-ul {
+	position: relative;
+	display: inline-block;
+	min-width: 100%;
+	.jstree-anchor {
+		position: relative;
+	}
+	.jstree-icon {
+		position: relative;
+	}
+	.jstree-wholerow {
+		width: 100%;
+		cursor: pointer;
+		position: absolute;
+		left: 0;
+		//Instead of the line below you could use @include user-select($select)
+		user-select: none;
+	}
+	.jstree-leaf > .jstree-ocl {
+		cursor: pointer;
+	}
+}
+.vakata-context {
+	display: none;
+	@extend %extend_2;
+	ul {
+		@extend %extend_2;
+		list-style: none;
+		left: 100%;
+		margin-top: -2.7em;
+		margin-left: -4px;
+	}
+	li {
+		list-style: none;
+		> a {
+			display: block;
+			padding: 0 2em;
+			text-decoration: none;
+			width: auto;
+			color: $black;
+			white-space: nowrap;
+			line-height: 2.4em;
+			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			text-shadow: 1px 1px 0 $white;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 1px;
+			&:hover {
+				position: relative;
+				background-color: $color_athens_gray_approx;
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 2px $color_allports_approx;
+			}
+			&.vakata-context-parent {
+				background-image: url($data_uri_0);
+				background-position: right center;
+				background-repeat: no-repeat;
+			}
+			&:focus {
+				outline: 0;
+			}
+			> i {
+				text-decoration: none;
+				display: inline-block;
+				width: 2.4em;
+				height: 2.4em;
+				background: transparent;
+				margin: 0 0 0 -2em;
+				vertical-align: top;
+				text-align: center;
+				line-height: 2.4em;
+				&:empty {
+					width: 2.4em;
+					line-height: 2.4em;
+				}
+			}
+			.vakata-contextmenu-sep {
+				display: inline-block;
+				width: 1px;
+				height: 2.4em;
+				background: $white;
+				margin: 0 0.5em 0 0;
+				border-left: 1px solid $color_mercury_approx;
+			}
+		}
+	}
+	.vakata-contextmenu-shortcut {
+		font-size: 0.8em;
+		color: $silver;
+		opacity: 0.5;
+		display: none;
+	}
+	.vakata-context-right ul {
+		left: auto;
+		right: 100%;
+		margin-left: auto;
+		margin-right: -4px;
+	}
+	.vakata-context-hover > a {
+		position: relative;
+		background-color: $color_athens_gray_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 2px $color_allports_approx;
+	}
+	.vakata-context-separator > a {
+		@extend %extend_3;
+		&:hover {
+			@extend %extend_3;
+		}
+	}
+	.vakata-contextmenu-disabled a {
+		@extend %extend_4;
+		&:hover {
+			@extend %extend_4;
+		}
+	}
+}
+.vakata-context-rtl {
+	ul {
+		left: auto;
+		right: 100%;
+		margin-left: auto;
+		margin-right: -4px;
+	}
+	li > a {
+		&.vakata-context-parent {
+			background-image: url($data_uri_1);
+			background-position: left center;
+			background-repeat: no-repeat;
+		}
+		> i {
+			margin: 0 -2em 0 0;
+		}
+		.vakata-contextmenu-sep {
+			margin: 0 0 0 0.5em;
+			border-left-color: $white;
+			background: $color_mercury_approx;
+		}
+	}
+	.vakata-context-separator > a {
+		margin: 0 2.4em 0 0;
+		border-left: 0;
+		border-right: 1px solid $color_mercury_approx;
+	}
+	.vakata-context-left ul {
+		right: auto;
+		left: 100%;
+		margin-left: -4px;
+		margin-right: auto;
+	}
+}
+#jstree-marker {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: -5px 0 0;
+	padding: 0;
+	border-right: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+#jstree-dnd {
+	line-height: 16px;
+	margin: 0;
+	padding: 4px;
+	.jstree-icon {
+		@extend %extend_5;
+	}
+	.jstree-copy {
+		@extend %extend_5;
+		margin: 0 2px;
+	}
+	.jstree-ok {
+		background: $color_japanese_laurel_approx;
+	}
+	.jstree-er {
+		background: $red;
+	}
+	&.jstree-default {
+		line-height: 24px;
+		padding: 0 4px;
+		.jstree-ok {
+			@extend %extend_8;
+			background-position: -4px -68px;
+		}
+		.jstree-er {
+			@extend %extend_8;
+			background-position: -36px -68px;
+		}
+		i {
+			background: transparent;
+			width: 24px;
+			height: 24px;
+			line-height: 24px;
+		}
+	}
+	&.jstree-default-small {
+		line-height: 18px;
+		padding: 0 4px;
+		.jstree-ok {
+			@extend %extend_9;
+			background-position: -7px -71px;
+		}
+		.jstree-er {
+			@extend %extend_9;
+			background-position: -39px -71px;
+		}
+		i {
+			background: transparent;
+			width: 18px;
+			height: 18px;
+			line-height: 18px;
+		}
+	}
+	&.jstree-default-large {
+		line-height: 32px;
+		padding: 0 4px;
+		.jstree-ok {
+			@extend %extend_10;
+			background-position: 0 -64px;
+		}
+		.jstree-er {
+			@extend %extend_10;
+			background-position: -32px -64px;
+		}
+		i {
+			background: transparent;
+			width: 32px;
+			height: 32px;
+			line-height: 32px;
+		}
+	}
+}
+.jstree-default {
+	.jstree-node {
+		@extend %extend_6;
+		min-height: 24px;
+		line-height: 24px;
+		margin-left: 24px;
+		min-width: 24px;
+		background-position: -292px -4px;
+		background-repeat: repeat-y;
+	}
+	.jstree-icon {
+		@extend %extend_6;
+		width: 24px;
+		height: 24px;
+		line-height: 24px;
+		&:empty {
+			width: 24px;
+			height: 24px;
+			line-height: 24px;
+		}
+	}
+	.jstree-anchor {
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: background-color 0.15s, box-shadow 0.15s;
+		line-height: 24px;
+		height: 24px;
+		> .jstree-undetermined {
+			background-position: -196px -4px;
+			&:hover {
+				background-position: -196px -36px;
+			}
+		}
+	}
+	.jstree-wholerow {
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: background-color 0.15s, box-shadow 0.15s;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		height: 24px;
+	}
+	.jstree-hovered {
+		background: $color_polar_approx;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 2px;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: inset 0 0 1px $color_celeste_approx;
+	}
+	.jstree-context {
+		background: $color_polar_approx;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 2px;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: inset 0 0 1px $color_celeste_approx;
+	}
+	.jstree-clicked {
+		background: $color_iron_approx;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 2px;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: inset 0 0 1px $color_mountain_mist_approx;
+		color: $black;
+	}
+	.jstree-disabled {
+		color: $color_storm_dust_approx;
+		background: transparent;
+		&.jstree-hovered {
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: none;
+			background: transparent;
+		}
+		&.jstree-clicked {
+			background: $gallery;
+		}
+		> .jstree-icon {
+			opacity: 0.8;
+			filter: url($data_uri_2);
+			filter: $gray;
+		}
+	}
+	.jstree-search {
+		font-style: italic;
+		color: $color_red_berry_approx;
+		font-weight: bold;
+	}
+	&.jstree-checkbox-no-clicked {
+		.jstree-clicked {
+			background: transparent;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: none;
+			&.jstree-hovered {
+				background: $color_polar_approx;
+			}
+		}
+		> .jstree-wholerow-ul .jstree-wholerow-clicked {
+			background: transparent;
+			&.jstree-wholerow-hovered {
+				background: $color_polar_approx;
+			}
+		}
+	}
+	> {
+		.jstree-striped {
+			min-width: 100%;
+			display: inline-block;
+			background: url($data_uri_3) left top repeat;
+			background-size: auto 48px;
+		}
+		.jstree-wholerow-ul {
+			.jstree-hovered {
+				@extend %extend_7;
+			}
+			.jstree-clicked {
+				@extend %extend_7;
+			}
+		}
+		.jstree-no-dots {
+			.jstree-node {
+				background: transparent;
+			}
+			.jstree-leaf > .jstree-ocl {
+				background: transparent;
+			}
+			.jstree-open > .jstree-ocl {
+				background-position: -36px -4px;
+			}
+			.jstree-closed > .jstree-ocl {
+				background-position: -4px -4px;
+			}
+		}
+		.jstree-container-ul {
+			.jstree-loading > .jstree-ocl {
+				background: $url_1 center center no-repeat;
+			}
+			> .jstree-node {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+	.jstree-wholerow-hovered {
+		background: $color_polar_approx;
+	}
+	.jstree-wholerow-clicked {
+		background: $color_french_pass_approx;
+		background: linear-gradient(to bottom, $color_french_pass_approx 0, $color_anakiwa_approx 100%);
+	}
+	&.jstree-rtl {
+		.jstree-node {
+			margin-right: 24px;
+			background-position: 100% 1px;
+			background-repeat: repeat-y;
+			background-image: url($data_uri_4);
+		}
+		.jstree-last {
+			background: transparent;
+		}
+		.jstree-open > .jstree-ocl {
+			background-position: -132px -36px;
+		}
+		.jstree-closed > .jstree-ocl {
+			background-position: -100px -36px;
+		}
+		.jstree-leaf > .jstree-ocl {
+			background-position: -68px -36px;
+		}
+		> .jstree-no-dots {
+			.jstree-node {
+				background: transparent;
+			}
+			.jstree-leaf > .jstree-ocl {
+				background: transparent;
+			}
+			.jstree-open > .jstree-ocl {
+				background-position: -36px -36px;
+			}
+			.jstree-closed > .jstree-ocl {
+				background-position: -4px -36px;
+			}
+		}
+	}
+	.jstree-last {
+		background: transparent;
+	}
+	.jstree-themeicon {
+		background-position: -260px -4px;
+	}
+	.jstree-checkbox {
+		background-position: -164px -4px;
+		&:hover {
+			background-position: -164px -36px;
+		}
+	}
+	.jstree-checkbox-disabled {
+		opacity: 0.8;
+		filter: url($data_uri_2);
+		filter: $gray;
+	}
+	.jstree-themeicon-custom {
+		background-color: transparent;
+		background-image: none;
+		background-position: 0 0;
+	}
+	.jstree-file {
+		background: $url_0 -100px -68px no-repeat;
+	}
+	.jstree-folder {
+		background: $url_0 -260px -4px no-repeat;
+	}
+	.jstree-no-icons .jstree-anchor > .jstree-themeicon {
+		display: none;
+	}
+	.jstree-no-checkboxes .jstree-checkbox {
+		display: none !important;
+	}
+	.jstree-open > .jstree-ocl {
+		background-position: -132px -4px;
+	}
+	.jstree-closed > .jstree-ocl {
+		background-position: -100px -4px;
+	}
+	.jstree-leaf > .jstree-ocl {
+		background-position: -68px -4px;
+	}
+	&.jstree-checkbox-selection .jstree-clicked > .jstree-checkbox {
+		background-position: -228px -4px;
+		&:hover {
+			background-position: -228px -36px;
+		}
+	}
+	.jstree-checked > .jstree-checkbox {
+		background-position: -228px -4px;
+		&:hover {
+			background-position: -228px -36px;
+		}
+	}
+}
+.jstree-default-small {
+	.jstree-node {
+		min-height: 18px;
+		line-height: 18px;
+		margin-left: 18px;
+		min-width: 18px;
+		background-position: -295px -7px;
+		background-repeat: repeat-y;
+		background-image: $url_0;
+	}
+	.jstree-anchor {
+		line-height: 18px;
+		height: 18px;
+		> .jstree-undetermined {
+			background-position: -199px -7px;
+			&:hover {
+				background-position: -199px -39px;
+			}
+		}
+	}
+	.jstree-icon {
+		width: 18px;
+		height: 18px;
+		line-height: 18px;
+		background-image: $url_0;
+		&:empty {
+			width: 18px;
+			height: 18px;
+			line-height: 18px;
+		}
+	}
+	&.jstree-rtl {
+		.jstree-node {
+			margin-right: 18px;
+			background-image: url($data_uri_4);
+			background-position: 100% 1px;
+			background-repeat: repeat-y;
+			background-image: url($data_uri_5);
+		}
+		.jstree-last {
+			background: transparent;
+		}
+		.jstree-open > .jstree-ocl {
+			background-position: -135px -39px;
+		}
+		.jstree-closed > .jstree-ocl {
+			background-position: -103px -39px;
+		}
+		.jstree-leaf > .jstree-ocl {
+			background-position: -71px -39px;
+		}
+		> .jstree-no-dots {
+			.jstree-node {
+				background: transparent;
+			}
+			.jstree-leaf > .jstree-ocl {
+				background: transparent;
+			}
+			.jstree-open > .jstree-ocl {
+				background-position: -39px -39px;
+			}
+			.jstree-closed > .jstree-ocl {
+				background-position: -7px -39px;
+			}
+		}
+	}
+	.jstree-wholerow {
+		height: 18px;
+	}
+	.jstree-last {
+		background: transparent;
+	}
+	.jstree-themeicon {
+		background-position: -263px -7px;
+	}
+	> {
+		.jstree-no-dots {
+			.jstree-node {
+				background: transparent;
+			}
+			.jstree-leaf > .jstree-ocl {
+				background: transparent;
+			}
+			.jstree-open > .jstree-ocl {
+				background-position: -39px -7px;
+			}
+			.jstree-closed > .jstree-ocl {
+				background-position: -7px -7px;
+			}
+		}
+		.jstree-striped {
+			background-size: auto 36px;
+		}
+		.jstree-container-ul {
+			.jstree-loading > .jstree-ocl {
+				background: $url_1 center center no-repeat;
+			}
+			> .jstree-node {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+	.jstree-disabled {
+		background: transparent;
+		&.jstree-hovered {
+			background: transparent;
+		}
+		&.jstree-clicked {
+			background: $gallery;
+		}
+	}
+	.jstree-checkbox {
+		background-position: -167px -7px;
+		&:hover {
+			background-position: -167px -39px;
+		}
+	}
+	.jstree-checkbox-disabled {
+		opacity: 0.8;
+		filter: url($data_uri_2);
+		filter: $gray;
+	}
+	.jstree-themeicon-custom {
+		background-color: transparent;
+		background-image: none;
+		background-position: 0 0;
+	}
+	.jstree-file {
+		background: $url_0 -103px -71px no-repeat;
+	}
+	.jstree-folder {
+		background: $url_0 -263px -7px no-repeat;
+	}
+	.jstree-open > .jstree-ocl {
+		background-position: -135px -7px;
+	}
+	.jstree-closed > .jstree-ocl {
+		background-position: -103px -7px;
+	}
+	.jstree-leaf > .jstree-ocl {
+		background-position: -71px -7px;
+	}
+	&.jstree-checkbox-selection .jstree-clicked > .jstree-checkbox {
+		background-position: -231px -7px;
+		&:hover {
+			background-position: -231px -39px;
+		}
+	}
+	.jstree-checked > .jstree-checkbox {
+		background-position: -231px -7px;
+		&:hover {
+			background-position: -231px -39px;
+		}
+	}
+}
+.jstree-default-large {
+	.jstree-node {
+		min-height: 32px;
+		line-height: 32px;
+		margin-left: 32px;
+		min-width: 32px;
+		background-position: -288px 0;
+		background-repeat: repeat-y;
+		background-image: $url_0;
+	}
+	.jstree-anchor {
+		line-height: 32px;
+		height: 32px;
+		> .jstree-undetermined {
+			background-position: -192px 0;
+			&:hover {
+				background-position: -192px -32px;
+			}
+		}
+	}
+	.jstree-icon {
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		background-image: $url_0;
+		&:empty {
+			width: 32px;
+			height: 32px;
+			line-height: 32px;
+		}
+	}
+	&.jstree-rtl {
+		.jstree-node {
+			margin-right: 32px;
+			background-image: url($data_uri_4);
+			background-position: 100% 1px;
+			background-repeat: repeat-y;
+			background-image: url($data_uri_6);
+		}
+		.jstree-last {
+			background: transparent;
+		}
+		.jstree-open > .jstree-ocl {
+			background-position: -128px -32px;
+		}
+		.jstree-closed > .jstree-ocl {
+			background-position: -96px -32px;
+		}
+		.jstree-leaf > .jstree-ocl {
+			background-position: -64px -32px;
+		}
+		> .jstree-no-dots {
+			.jstree-node {
+				background: transparent;
+			}
+			.jstree-leaf > .jstree-ocl {
+				background: transparent;
+			}
+			.jstree-open > .jstree-ocl {
+				background-position: -32px -32px;
+			}
+			.jstree-closed > .jstree-ocl {
+				background-position: 0 -32px;
+			}
+		}
+	}
+	.jstree-wholerow {
+		height: 32px;
+	}
+	.jstree-last {
+		background: transparent;
+	}
+	.jstree-themeicon {
+		background-position: -256px 0;
+	}
+	> {
+		.jstree-no-dots {
+			.jstree-node {
+				background: transparent;
+			}
+			.jstree-leaf > .jstree-ocl {
+				background: transparent;
+			}
+			.jstree-open > .jstree-ocl {
+				background-position: -32px 0;
+			}
+			.jstree-closed > .jstree-ocl {
+				background-position: 0 0;
+			}
+		}
+		.jstree-striped {
+			background-size: auto 64px;
+		}
+		.jstree-container-ul {
+			.jstree-loading > .jstree-ocl {
+				background: $url_1 center center no-repeat;
+			}
+			> .jstree-node {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+	.jstree-disabled {
+		background: transparent;
+		&.jstree-hovered {
+			background: transparent;
+		}
+		&.jstree-clicked {
+			background: $gallery;
+		}
+	}
+	.jstree-checkbox {
+		background-position: -160px 0;
+		&:hover {
+			background-position: -160px -32px;
+		}
+	}
+	.jstree-checkbox-disabled {
+		opacity: 0.8;
+		filter: url($data_uri_2);
+		filter: $gray;
+	}
+	.jstree-themeicon-custom {
+		background-color: transparent;
+		background-image: none;
+		background-position: 0 0;
+	}
+	.jstree-file {
+		background: $url_0 -96px -64px no-repeat;
+	}
+	.jstree-folder {
+		background: $url_0 -256px 0 no-repeat;
+	}
+	.jstree-open > .jstree-ocl {
+		background-position: -128px 0;
+	}
+	.jstree-closed > .jstree-ocl {
+		background-position: -96px 0;
+	}
+	.jstree-leaf > .jstree-ocl {
+		background-position: -64px 0;
+	}
+	&.jstree-checkbox-selection .jstree-clicked > .jstree-checkbox {
+		background-position: -224px 0;
+		&:hover {
+			background-position: -224px -32px;
+		}
+	}
+	.jstree-checked > .jstree-checkbox {
+		background-position: -224px 0;
+		&:hover {
+			background-position: -224px -32px;
+		}
+	}
+}
+@media(max-width: 768px) {
+	.jstree-default-responsive {
+		.jstree-icon {
+			background-image: $url_2;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			background-image: $url_2;
+			background-size: 120px 240px;
+			&:empty {
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+			}
+		}
+		.jstree-node {
+			background: transparent;
+			min-height: 40px;
+			line-height: 40px;
+			margin-left: 40px;
+			min-width: 40px;
+			white-space: nowrap;
+			background-position: -80px 0;
+			background-repeat: repeat-y;
+			background-image: $url_2;
+			background-size: 120px 240px;
+			> .jstree-ocl {
+				background-image: $url_2;
+				background-size: 120px 240px;
+			}
+		}
+		.jstree-anchor {
+			line-height: 40px;
+			height: 40px;
+			font-weight: bold;
+			font-size: 1.1em;
+			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			text-shadow: 1px 1px $white;
+			> .jstree-undetermined {
+				background-position: 0 -120px;
+				&:hover {
+					background-position: 0 -120px;
+				}
+			}
+		}
+		> {
+			.jstree-striped {
+				background: transparent;
+			}
+			.jstree-container-ul > .jstree-node {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+		&.jstree-rtl {
+			.jstree-node {
+				margin-left: 0;
+				margin-right: 40px;
+			}
+			.jstree-container-ul > .jstree-node {
+				margin-right: 0;
+			}
+			.jstree-closed > .jstree-ocl {
+				background-position: -40px 0 !important;
+			}
+		}
+		.jstree-ocl {
+			background-size: 120px 240px;
+		}
+		.jstree-themeicon {
+			background-size: 120px 240px;
+			background-position: -40px -40px;
+			background-image: $url_2;
+			background-size: 120px 240px;
+		}
+		.jstree-checkbox {
+			background-size: 120px 240px;
+			background-position: -40px -80px;
+			background-image: $url_2;
+			background-size: 120px 240px;
+			&:hover {
+				background-position: -40px -80px;
+			}
+		}
+		.jstree-wholerow {
+			border-top: 1px solid $white_70;
+			border-bottom: 1px solid $color_cape_cod_20_approx;
+			background: $color_cararra_approx;
+			height: 40px;
+		}
+		.jstree-wholerow-hovered {
+			background: $color_polar_approx;
+		}
+		.jstree-wholerow-clicked {
+			background: $color_french_pass_approx;
+		}
+		.jstree-children {
+			.jstree-open {
+				> .jstree-wholerow {
+					//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+					box-shadow: inset 0 6px 3px -5px $color_storm_dust_approx;
+					border-top: 0;
+				}
+				+ .jstree-open {
+					//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+					box-shadow: none;
+				}
+			}
+			.jstree-last > .jstree-wholerow {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: inset 0 -6px 3px -5px $color_storm_dust_approx;
+			}
+		}
+		.jstree-last {
+			background: transparent;
+			> .jstree-ocl {
+				background-position: -40px -160px;
+			}
+		}
+		.jstree-themeicon-custom {
+			background-color: transparent;
+			background-image: none;
+			background-position: 0 0;
+		}
+		.jstree-file {
+			background: $url_2 0 -160px no-repeat;
+			background-size: 120px 240px;
+		}
+		.jstree-folder {
+			background: $url_2 -40px -40px no-repeat;
+			background-size: 120px 240px;
+		}
+		.jstree-leaf > .jstree-ocl {
+			background: transparent;
+			background: transparent;
+			background-position: -40px -120px;
+		}
+		.jstree-open > .jstree-ocl {
+			background-position: 0 0 !important;
+		}
+		.jstree-closed > .jstree-ocl {
+			background-position: 0 -40px !important;
+		}
+		&.jstree-checkbox-selection .jstree-clicked > .jstree-checkbox {
+			background-position: 0 -80px;
+			&:hover {
+				background-position: 0 -80px;
+			}
+		}
+		.jstree-checked > .jstree-checkbox {
+			background-position: 0 -80px;
+			&:hover {
+				background-position: 0 -80px;
+			}
+		}
+	}
+	#jstree-dnd.jstree-dnd-responsive {
+		line-height: 40px;
+		font-weight: bold;
+		font-size: 1.1em;
+		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: 1px 1px $white;
+		> i {
+			background: transparent;
+			width: 40px;
+			height: 40px;
+		}
+		> {
+			.jstree-ok {
+				background-image: $url_2;
+				background-position: 0 -200px;
+				background-size: 120px 240px;
+			}
+			.jstree-er {
+				background-image: $url_2;
+				background-position: -40px -200px;
+				background-size: 120px 240px;
+			}
+		}
+	}
+	#jstree-marker.jstree-dnd-responsive {
+		border-left-width: 10px;
+		border-top-width: 10px;
+		border-bottom-width: 10px;
+		margin-top: -10px;
+	}
+}
+.jstree-leaf > .jstree-ocl {
+	cursor: default;
+}
+.jstree-no-icons .jstree-themeicon {
+	display: none;
+}
+
+

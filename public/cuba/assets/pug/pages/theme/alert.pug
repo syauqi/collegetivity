@@ -1,0 +1,604 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var height_equal          = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Alert
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Ui Kits
+                                      li.breadcrumb-item.active Alert
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Theme Color Alerts
+                              span
+                                | Theme color Archive just adding class 
+                                code .dark
+                            .card-body
+                              .alert.alert-primary.dark(role='alert')
+                                p This is a info alert—check it out!
+                              .alert.alert-secondary.dark(role='alert')
+                                p This is a light alert—check it out!
+                              .alert.alert-success.dark(role='alert')
+                                p This is a success alert—check it out!
+                              .alert.alert-info.dark(role='alert')
+                                p This is a info alert—check it out!
+                              .alert.alert-warning.dark(role='alert')
+                                p This is a warning alert—check it out!
+                              .alert.alert-danger.dark(role='alert')
+                                p This is a danger alert—check it out!
+                              .alert.alert-light.dark(role='alert')
+                                p This is a light alert—check it out!
+                              .alert.alert-dark.dark(role='alert')
+                                p This is a dark alert—check it out!
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Link color in theme-color
+                              span
+                                | Use the 
+                                code .alert-link
+                                |  utility class to quickly provide matching colored links within any alert
+                            .card-body
+                              .alert.alert-primary.dark(role='alert')
+                                p
+                                  | This is a primary alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                              .alert.alert-secondary.dark(role='alert')
+                                p
+                                  | This is a secondary alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                              .alert.alert-success.dark(role='alert')
+                                p
+                                  | This is a success alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                              .alert.alert-info.dark(role='alert')
+                                p
+                                  | This is a info alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                              .alert.alert-warning.dark(role='alert')
+                                p
+                                  | This is a warning alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                              .alert.alert-danger.dark(role='alert')
+                                p
+                                  | This is a danger alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                              .alert.alert-light.dark(role='alert')
+                                p
+                                  | This is a light alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                              .alert.alert-dark.dark(role='alert')
+                                p
+                                  | This is a light alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                        .col-sm-12.col-xl-6
+                          .card.height-equal
+                            .card-header
+                              h5 Dismissing
+                              span
+                                | To animate alerts when dismissing them, be sure to add the .fade and .show classes.
+                            .card-body
+                              .alert.alert-primary.dark.alert-dismissible.fade.show(role='alert')
+                                strong Holy ! 
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-secondary.dark.alert-dismissible.fade.show(role='alert')
+                                strong Holy ! 
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-success.dark.alert-dismissible.fade.show(role='alert')
+                                strong Holy ! 
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-info.dark.alert-dismissible.fade.show(role='alert')
+                                strong Holy ! 
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-warning.dark.alert-dismissible.fade.show(role='alert')
+                                strong Holy ! 
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-danger.dark.alert-dismissible.fade.show(role='alert')
+                                strong Holy ! 
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-light.dark.alert-dismissible.fade.show(role='alert')
+                                strong Holy ! 
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-dark.dark.alert-dismissible.fade.show(role='alert')
+                                strong Holy ! 
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                        .col-sm-12.col-xl-6
+                          .card.height-equal
+                            .card-header
+                              h5 Alert With Icon
+                              span Just add Any icon before text
+                            .card-body
+                              .alert.alert-primary.dark.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='clock')
+                                p  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-secondary.dark.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='heart')
+                                p  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-success.dark.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='thumbs-up')
+                                p  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-info.dark.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='help-circle')
+                                p  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-warning.dark.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='bell')
+                                p can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-danger.dark.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='thumbs-down')
+                                p  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-light.dark.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='alert-triangle')
+                                p  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-dark.dark.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='alert-circle')
+                                p  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Light Alerts
+                              span
+                                | Alerts are available for any length of text, as well as an optional dismiss button.
+                            .card-body
+                              .alert.alert-primary(role='alert')
+                                p This is a primary alert—check it out!
+                              .alert.alert-secondary(role='alert')
+                                p This is a secondary alert—check it out!
+                              .alert.alert-success(role='alert')
+                                p This is a success alert—check it out!
+                              .alert.alert-info(role='alert')
+                                p This is a info alert—check it out!
+                              .alert.alert-warning(role='alert')
+                                p This is a warning alert—check it out!
+                              .alert.alert-danger(role='alert')
+                                p This is a danger alert—check it out!
+                              .alert.alert-light(role='alert')
+                                p This is a light alert—check it out!
+                              .alert.alert-dark(role='alert')
+                                p This is a light alert—check it out!
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Link color
+                              span
+                                | Use the 
+                                code .alert-link
+                                |  utility class to quickly provide matching colored links within any alert
+                            .card-body
+                              .alert.alert-primary(role='alert')
+                                p
+                                  | This is a primary alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                              .alert.alert-secondary(role='alert')
+                                p
+                                  | This is a secondary alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                              .alert.alert-success(role='alert')
+                                p
+                                  | This is a success alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                              .alert.alert-info(role='alert')
+                                p
+                                  | This is a info alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                              .alert.alert-warning(role='alert')
+                                p
+                                  | This is a warning alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                              .alert.alert-danger(role='alert')
+                                p
+                                  | This is a danger alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                              .alert.alert-light(role='alert')
+                                p
+                                  | This is a light alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                              .alert.alert-dark(role='alert')
+                                p
+                                  | This is a light alert with 
+                                  a.alert-link(href='#') an example link
+                                  | .Click It
+                        .col-sm-12.col-xl-6
+                          .card.height-equal
+                            .card-header
+                              h5 Dismissing
+                              span
+                                | To animate alerts when dismissing them, be sure to add the .fade and .show classes.
+                            .card-body
+                              .alert.alert-primary.alert-dismissible.fade.show(role='alert')
+                                strong Holy ! 
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-secondary.alert-dismissible.fade.show(role='alert')
+                                strong Holy !
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-success.alert-dismissible.fade.show(role='alert')
+                                strong Holy !
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-info.alert-dismissible.fade.show(role='alert')
+                                strong Holy !
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-warning.alert-dismissible.fade.show(role='alert')
+                                strong Holy !
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-danger.alert-dismissible.fade.show(role='alert')
+                                strong Holy !
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-light.alert-dismissible.fade.show(role='alert')
+                                strong Holy !
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-dark.alert-dismissible.fade.show(role='alert')
+                                strong Holy !
+                                |  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                        .col-sm-12.col-xl-6
+                          .card.height-equal
+                            .card-header
+                              h5 Outline Alerts
+                              span
+                                | Outline Archive just adding class 
+                                code .outline
+                            .card-body
+                              .alert.alert-primary.outline(role='alert')
+                                p This is a primary alert—check it out!
+                              .alert.alert-secondary.outline(role='alert')
+                                p This is a secondary alert—check it out!
+                              .alert.alert-success.outline(role='alert')
+                                p This is a success alert—check it out!
+                              .alert.alert-info.outline(role='alert')
+                                p This is a info alert—check it out!
+                              .alert.alert-warning.outline(role='alert')
+                                p This is a warning alert—check it out!
+                              .alert.alert-danger.outline(role='alert')
+                                p This is a danger alert—check it out!
+                              .alert.alert-light.outline(role='alert')
+                                p This is a light alert—check it out!
+                              .alert.alert-dark.outline(role='alert')
+                                p This is a light alert—check it out!
+                        .col-sm-12.col-xl-6
+                          .card.height-equal
+                            .card-header
+                              h5 Outline Dark Alerts
+                              span
+                                | Outline Archive just adding class 
+                                code .outline-2x
+                            .card-body
+                              .alert.alert-primary.outline-2x(role='alert')
+                                p This is a primary alert—check it out!
+                              .alert.alert-secondary.outline-2x(role='alert')
+                                p This is a secondary alert—check it out!
+                              .alert.alert-success.outline-2x(role='alert')
+                                p This is a success alert—check it out!
+                              .alert.alert-info.outline-2x(role='alert')
+                                p This is a info alert—check it out!
+                              .alert.alert-warning.outline-2x(role='alert')
+                                p This is a warning alert—check it out!
+                              .alert.alert-danger.outline-2x(role='alert')
+                                p This is a danger alert—check it out!
+                              .alert.alert-light.outline-2x(role='alert')
+                                p This is a light alert—check it out!
+                              .alert.alert-dark.outline-2x(role='alert')
+                                p This is a light alert—check it out!
+                        .col-sm-12.col-xl-6
+                          .card.height-equal
+                            .card-header
+                              h5 Alert With Icon outline
+                              span Just add Any icon before text
+                            .card-body
+                              .alert.alert-primary.outline.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='clock')
+                                p
+                                  | Your time Over after 
+                                  b 5
+                                  |  miniute
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-secondary.outline.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='heart')
+                                p  Oh snap! Change a few things up and submit again.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-success.outline.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='thumbs-up')
+                                p
+                                  b  Well done! 
+                                  | You successfully read this important alert message.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-info.outline.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='help-circle')
+                                p
+                                  b welcome!
+                                  |  Start your day with some alerts.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-warning.outline.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='bell')
+                                p
+                                  b  Congratulation! 
+                                  | Your Product Added in Like List
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-danger.outline.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='thumbs-down')
+                                p
+                                  | Your  
+                                  b  Perfomance 
+                                  |  is down on this week
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-light.outline.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='alert-triangle')
+                                p  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-dark.outline.alert-dismissible.fade.show(role='alert')
+                                i(data-feather='alert-circle')
+                                p  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Alert With Icon inverse
+                              span
+                                | Use the 
+                                code .inverse
+                                |  class to quickly provide matching colored links within any alert
+                            .card-body
+                              .alert.alert-primary.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-timer
+                                p
+                                  | Your time Over after 
+                                  b 5
+                                  |  miniute
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-secondary.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-heart
+                                p Oh snap! Change a few things up and submit again.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-success.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-thumb-up.alert-center
+                                p
+                                  b  Well done! 
+                                  | You successfully read this important alert message.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-info.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-help-alt
+                                p
+                                  b welcome!
+                                  |  Start your day with some alerts.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-warning.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-bell
+                                p
+                                  b  Congratulation! 
+                                  | Your Product Added in Like List
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-danger.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-thumb-down
+                                p
+                                  | Your  
+                                  b  Perfomance 
+                                  |  is down on this week
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-light.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-alert.txt-dark
+                                p You can check in on some of those fields below.
+                                button.close.txt-light(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                              .alert.alert-dark.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-info-alt
+                                p  You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span(aria-hidden='true') ×
+                        .col-sm-12.col-xl-6
+                          .card
+                            .card-header
+                              h5 Text as action
+                              span
+                                | Use the 
+                                code .action-text
+                                |  class to add dismiss text instead of icon
+                            .card-body
+                              .alert.alert-primary.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-timer
+                                p
+                                  | Your time Over after 
+                                  b 5
+                                  |  miniute
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span.bg-primary(aria-hidden='true') dismiss
+                              .alert.alert-secondary.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-heart
+                                p Oh snap! Change a few things up and submit again.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span.bg-secondary(aria-hidden='true') dismiss
+                              .alert.alert-success.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-thumb-up.alert-center
+                                p
+                                  b  Well done! 
+                                  | You successfully read this important alert message.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span.bg-success(aria-hidden='true') dismiss
+                              .alert.alert-info.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-help-alt
+                                p
+                                  b welcome!
+                                  |  Start your day with some alerts.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span.bg-info(aria-hidden='true') dismiss
+                              .alert.alert-warning.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-bell
+                                p
+                                  b  Congratulation! 
+                                  | Your Product Added in Like List
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span.bg-warning(aria-hidden='true') dismiss
+                              .alert.alert-danger.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-thumb-down
+                                p
+                                  | Your  
+                                  b  Perfomance 
+                                  |  is down on this week
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span.bg-danger(aria-hidden='true') dismiss
+                              .alert.alert-light.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-alert.txt-dark
+                                p You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span.bg-light.txt-dark(aria-hidden='true') dismiss
+                              .alert.alert-dark.inverse.alert-dismissible.fade.show(role='alert')
+                                i.icon-info-alt
+                                p You can check in on some of those fields below.
+                                button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                  span.bg-light.txt-dark(aria-hidden='true') dismiss
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Additional content
+                              span
+                                | Alerts can also contain additional HTML elements like headings, paragraphs and dividers.
+                            .card-body
+                              .alert.alert-primary(role='alert')
+                                h4.alert-heading Well done!
+                                p
+                                  | Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+                                hr
+                                p.mb-0
+                                  | Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+                              .alert.alert-secondary(role='alert')
+                                h4.alert-heading Well done!
+                                p
+                                  | Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+                                hr
+                                p.mb-0
+                                  | Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+                              .alert.alert-success(role='alert')
+                                h4.alert-heading Well done!
+                                p
+                                  | Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+                                hr
+                                p.mb-0
+                                  | Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+                              .alert.alert-danger(role='alert')
+                                h4.alert-heading Well done!
+                                p
+                                  | Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+                                hr
+                                p.mb-0
+                                  | Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+                              .alert.alert-info(role='alert')
+                                h4.alert-heading Well done!
+                                p
+                                  | Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+                                hr
+                                p.mb-0
+                                  | Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+                              .alert.alert-light(role='alert')
+                                h4.alert-heading Well done!
+                                p
+                                  | Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+                                hr
+                                p.mb-0
+                                  | Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+                              .alert.alert-dark(role='alert')
+                                h4.alert-heading Well done!
+                                p
+                                  | Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+                                hr
+                                p.mb-0
+                                  | Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files      

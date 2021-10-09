@@ -1,0 +1,252 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var photo_swipe           = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Gallery Grid With Description
+
+                                .col-6
+                                      ol.breadcrumb
+                                        li.breadcrumb-item
+                                          a(href='index.html')                                        
+                                            i(data-feather="home")
+                                        li.breadcrumb-item Gallery
+                                        li.breadcrumb-item.active  Gallery Grid With Description
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 IMAGE GALLERY WITH DESCRIPTION
+                            .my-gallery.card-body.row.gallery-with-description(itemscope='')
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/01.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/01.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/02.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/02.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/03.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/03.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/04.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/04.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/01.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/01.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/02.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/02.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/03.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/03.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/04.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/04.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.                            // Root element of PhotoSwipe. Must have class pswp.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/01.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/01.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/02.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/02.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/03.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/03.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/04.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/04.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/01.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/01.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/02.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/02.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/03.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/03.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                              figure.col-xl-3.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                a(href='../assets/images/big-lightgallry/04.jpg', itemprop='contentUrl', data-size='1600x950')
+                                  img(src='../assets/images/lightgallry/04.jpg', itemprop='thumbnail', alt='Image description')
+                                  .caption
+                                    h4 Portfolio Title
+                                    p
+                                      | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                                figcaption(itemprop='caption description')
+                                  h4 Portfolio Title
+                                  p
+                                    | is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+
+                            .pswp(tabindex='-1', role='dialog', aria-hidden='true')
+                              //
+                                Background of PhotoSwipe.
+                                It's a separate element, as animating opacity is faster than rgba().
+                              .pswp__bg
+                              // Slides wrapper with overflow:hidden.
+                              .pswp__scroll-wrap
+                                // Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory.
+                                // don't modify these 3 pswp__item elements, data is added later on.
+                                .pswp__container
+                                  .pswp__item
+                                  .pswp__item
+                                  .pswp__item
+                                // Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.
+                                .pswp__ui.pswp__ui--hidden
+                                  .pswp__top-bar
+                                    // Controls are self-explanatory. Order can be changed.
+                                    .pswp__counter
+                                    button.pswp__button.pswp__button--close(title='Close (Esc)')
+                                    button.pswp__button.pswp__button--share(title='Share')
+                                    button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
+                                    button.pswp__button.pswp__button--zoom(title='Zoom in/out')
+                                    // Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR
+                                    // element will get class pswp__preloader--active when preloader is running
+                                    .pswp__preloader
+                                      .pswp__preloader__icn
+                                        .pswp__preloader__cut
+                                          .pswp__preloader__donut
+                                  .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+                                    .pswp__share-tooltip
+                                  button.pswp__button.pswp__button--arrow--left(title='Previous (arrow left)')
+                                  button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
+                                  .pswp__caption
+                                    .pswp__caption__center
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

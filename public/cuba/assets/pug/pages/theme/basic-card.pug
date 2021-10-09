@@ -1,0 +1,186 @@
+- var prism                 = true;
+- var clipboard             = true;
+- var customcard            = true;
+- var height_equal          = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Basic Card
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Bonus Ui
+                                      li.breadcrumb-item.active Basic Card
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5 Basic Card
+                                .card-header-right
+                                  ul.list-unstyled.card-option
+                                      li
+                                        i.fa.fa-spin.fa-cog
+                                      li
+                                        i.view-html.fa.fa-code
+                                      li
+                                        i.icofont.icofont-maximize.full-card
+                                      li
+                                        i.icofont.icofont-minus.minimize-card
+                                      li
+                                        i.icofont.icofont-refresh.reload-card
+                                      li
+                                        i.icofont.icofont-error.close-card
+                              .card-body
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                                .code-box-copy
+                                      button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head', title='Copy')
+                                        i.icofont.icofont-copy-alt
+                                      pre
+                                        code.language-html#example-head
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;p class="mb-0"&gt; Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. &lt;/p&gt;
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          .col-sm-12.col-xl-6
+                            .card.b-r-0
+                              .card-header
+                                h5 Flat Card
+                                .card-header-right
+                                  ul.list-unstyled.card-option
+                                      li
+                                        i.fa.fa-spin.fa-cog
+                                      li
+                                        i.view-html.fa.fa-code
+                                      li
+                                        i.icofont.icofont-maximize.full-card
+                                      li
+                                        i.icofont.icofont-minus.minimize-card
+                                      li
+                                        i.icofont.icofont-refresh.reload-card
+                                      li
+                                        i.icofont.icofont-error.close-card
+                              .card-body
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                                .code-box-copy
+                                      button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head1', title='Copy')
+                                        i.icofont.icofont-copy-alt
+                                      pre
+                                        code.language-html#example-head1
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;p class="mb-0"&gt; Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. &lt;/p&gt;
+                                            | &lt;!-- Cod Box Copy end --&gt;
+                          .col-sm-12.col-xl-6
+                            .card.shadow-none.border
+                              .card-header
+                                h5 Without shadow Card
+                              .card-body
+                                p
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5
+                                  i.icofont.icofont-truck.mr-2
+                                  |  Icon in Heading
+                              .card-body
+                                p
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                          .col-sm-12.col-xl-6
+                            .card.height-equal
+                              .card-header
+                                h5 Card sub Title
+                                span
+                                  | Using the 
+                                  a(href='#') card
+                                  |  component, you can extend the default collapse behavior to create an accordion.
+                              .card-body
+                                p
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                          .col-sm-12.col-xl-6
+                            .card.height-equal
+                              .card-header
+                                h5 Card With Footer
+                              .card-body
+                                p
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the the industry's standard dummy text ever.
+                              .card-footer
+                                h6.mb-0 Card Footer
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header.bg-primary
+                                h5.text-white Primary Color Card
+                              .card-body.bg-primary
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                              .card-footer.bg-primary
+                                h6.mb-0 Card Footer
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header.bg-secondary
+                                h5.text-white Secondary Color Card
+                              .card-body.bg-secondary
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                              .card-footer.bg-secondary
+                                h6.mb-0.text-white Card Footer
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header.bg-success
+                                h5.text-white Success color Card
+                              .card-body.bg-success
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                              .card-footer.bg-success
+                                h6.mb-0 Card Footer
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header.bg-primary
+                                h5.text-white Primary Color Header
+                              .card-body
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                              .card-footer
+                                h6.mb-0 Card Footer
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5 Primary Color Body
+                              .card-body.bg-primary
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                              .card-footer
+                                h6.mb-0 Card Footer
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5 Primary Color Footer
+                              .card-body
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                              .card-footer.bg-primary
+                                h6.mb-0 Card Footer
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files      

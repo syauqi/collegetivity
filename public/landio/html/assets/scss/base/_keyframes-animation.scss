@@ -1,0 +1,224 @@
+/*======= keyframes & Animation =======*/
+@keyframes sticky {
+    0% {
+        top: -200px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+
+@keyframes zoomInOut {
+    0% {
+        -webkit-transform: rotate(0deg) scale(0.7);
+        transform: rotate(0deg) scale(0.7);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: rotate(180deg) scale(1);
+        transform: rotate(180deg) scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(360deg) scale(0.7);
+        transform: rotate(360deg) scale(0.7);
+        opacity: 0;
+    }
+}
+
+@keyframes zoom-fade {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes float-bob {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+
+    50% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes float-bob-x {
+    0% {
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+
+    50% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes float-bob-y {
+    0% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes rotateme {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+.animate-zoominout {
+    animation-name: zoomInOut;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.animate-zoom-fade {
+    animation-name: zoom-fade;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.animate-float-bob {
+    animation-name: float-bob;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.animate-float-bob-x {
+    animation-name: float-bob-x;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.animate-float-bob-y {
+    animation-name: float-bob-y;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.animate-rotate-me {
+    animation-name: rotateme;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hover-overly-left-to-right {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        display: block;
+        content: "";
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.7) 0%,
+            rgba(255, 255, 255, 0.3) 100%
+        );
+        transform: skewX(25deg);
+        z-index: 2;
+    }
+
+    &:hover:before {
+        animation: shine 1.5s;
+    }
+}
+
+.hover-overly-zoom {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        display: block;
+        content: "";
+        width: 0px;
+        height: 0px;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 7px;
+    }
+
+    &:hover:before {
+        animation-duration: 0.95s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: circle;
+    }
+
+}

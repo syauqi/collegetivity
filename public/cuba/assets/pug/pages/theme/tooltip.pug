@@ -1,0 +1,77 @@
+- var tooltip               = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Tooltip
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Ui Kits
+                                      li.breadcrumb-item.active Tooltip
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Basic Tooltip
+                            .card-body.btn-showcase
+                              button.example-popover.btn.btn-primary(type='button', data-container='body', data-toggle='popover', data-placement='top', title='Popover title')
+                                | Hover Me
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Directions
+                            .card-body.btn-showcase
+                              button.btn.btn-primary(type='button', data-toggle='tooltip', data-placement='top', title='Tooltip on top')
+                                | Tooltip on top
+                              button.btn.btn-primary(type='button', data-toggle='tooltip', data-placement='right', title='Tooltip on right')
+                                | Tooltip on right
+                              button.btn.btn-primary(type='button', data-toggle='tooltip', data-placement='bottom', title='Tooltip on bottom')
+                                | Tooltip on bottom
+                              button.btn.btn-primary(type='button', data-toggle='tooltip', data-placement='left', title='Tooltip on left')
+                                | Tooltip on left
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 HTML elements
+                            .card-body.btn-showcase
+                              button.btn.btn-primary(type='button', data-toggle='m-tooltip', data-placement='top', title='', data-html='true', data-content="And here's some amazing <b>HTML</b> content. It's very <code>engaging</code>. Right?", data-original-title='Tooltip <b>with</b> <code>HTML</code>') Click me
+                              button.btn.btn-primary(type='button', data-toggle='m-tooltip', data-placement='right', title='', data-html='true', data-content="And here's some amazing <b>HTML</b> content. It's very <code>engaging</code>. Right?", data-original-title='Tooltip <b>with</b> <code>HTML</code>') Click me
+                              button.btn.btn-primary(type='button', data-toggle='m-tooltip', data-placement='bottom', title='', data-html='true', data-content="And here's some amazing <b>HTML</b> content. It's very <code>engaging</code>. Right?", data-original-title='Tooltip <b>with</b> <code>HTML</code>') Click me
+                              button.btn.btn-primary(type='button', data-toggle='m-tooltip', data-placement='left', title='', data-html='true', data-content="And here's some amazing <b>HTML</b> content. It's very <code>engaging</code>. Right?", data-original-title='Tooltip <b>with</b> <code>HTML</code>') Click me
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Offset
+                            .card-body.btn-showcase
+                              button.btn.btn-primary(type='button', data-offset='20px 20px', data-toggle='m-tooltip', data-placement='top', title='', data-original-title='Tooltip title')
+                                | 20px 20px
+                              button.btn.btn-primary(type='button', data-offset='0px -20px', data-toggle='m-tooltip', data-placement='top', title='', data-original-title='Tooltip title')
+                                | 0px -20px
+                              button.btn.btn-primary(type='button', data-offset='20px 0px', data-toggle='m-tooltip', data-placement='top', title='', data-original-title='Tooltip title')
+                                | 20px 0px
+                              button.btn.btn-primary(type='button', data-offset='-30px 0px', data-toggle='m-tooltip', data-placement='top', title='', data-original-title='Tooltip title')
+                                | -30px -30px
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

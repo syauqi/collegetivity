@@ -1,0 +1,17 @@
+/*fixed haeder datatable css*/
+
+table.fixedHeader-floating {
+  position: fixed !important;
+  background-color: white;
+}
+
+table.fixedHeader-floating.no-footer {
+  border-bottom-width: 0;
+}
+
+table.fixedHeader-locked {
+  position: absolute !important;
+  background-color: white;
+}
+
+/*fixed haeder datatable css*/

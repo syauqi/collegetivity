@@ -1,0 +1,208 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var jquery_ui             = true;
+- var form_builder_2        = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Form Builder 2
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Builders
+                                      li.breadcrumb-item.active Form Builder 2
+                    // Container-fluid starts
+                    .form-builder
+                      .container-fluid
+                        .row
+                          .col-sm-12
+                            .card
+                              .card-header
+                                h5 Form Builder
+                              .card-body.form-builder
+                                .form-builder-column
+                                  .row
+                                    .col-sm-12
+                                      .form-builder-2-header
+                                        div
+                                          ul#pills-tab.nav.nav-primary(role='tablist')
+                                            li.nav-item
+                                              a#pills-input-tab.nav-link.active(data-toggle='pill', href='#pills-input', role='tab', aria-controls='pills-input', aria-selected='true') Input
+                                            li.nav-item
+                                              a#pills-radcheck-tab.nav-link(data-toggle='pill', href='#pills-radcheck', role='tab', aria-controls='pills-radcheck', aria-selected='false') Radio/Checkbox
+                                            li.nav-item
+                                              a#pills-select-tab.nav-link(data-toggle='pill', href='#pills-select', role='tab', aria-controls='pills-select', aria-selected='false') Select
+                                            li.nav-item
+                                              a#pills-button-tab.nav-link(data-toggle='pill', href='#pills-button', role='tab', aria-controls='pills-button', aria-selected='false') Buttons
+                                        div
+                                          nav.navbar.navbar-expand-md.p-0
+                                            form.form-inline
+                                              .form-group
+                                                select#n-columns.btn.form-control.b-light
+                                                  option(value='1') 1 Column
+                                                  option(value='2') 2 Columns
+                                              button#copy-to-clipboard.btn.btn-primary.copy-btn(type='submit', data-clipboard-text='testing') Copy HTML
+                                    .col-lg-6.col-xl-6
+                                      #pills-tabContent.tab-content
+                                        #pills-input.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-input-tab')
+                                          form.theme-form
+                                            .form-group.draggable
+                                              label(for='input-text-1') Text Input
+                                              input#input-text-1.form-control.btn-square(type='email', placeholder='Enter email')
+                                              p.help-block Example block-level help text here.
+                                            hr
+                                            .form-group.draggable
+                                              label(for='input-password-1') Password
+                                              input#input-password-1.form-control.btn-square(type='password', placeholder='Password')
+                                              p.help-block Example block-level help text here.
+                                            hr
+                                            .form-group.draggable
+                                              label(for='select-1') Select
+                                              select#select-1.form-control.btn-square
+                                                option(value='Option 1') Option 1
+                                                option(value='Option 2') Option 2
+                                                option(value='Option 3') Option 3
+                                              p.help-block Example block-level help text here.
+                                            hr
+                                            .form-group.draggable
+                                              label(for='input-file-1') File input
+                                              input#input-file-1(type='file')
+                                              p.help-block Example block-level help text here.
+                                            hr
+                                            .form-group.draggable
+                                              label(for='prependedcheckbox') Appended Checkbox
+                                              .input-group
+                                                .input-group-prepend
+                                                  span.input-group-text
+                                                    input(type='checkbox')
+                                                input#prependedcheckbox.form-control.btn-square(name='prependedcheckbox', type='text', placeholder='Placeholder')
+                                              p.help-block Example block-level help text here.
+                                            hr
+                                            .form-group.draggable
+                                              label(for='prependedcheckbox') Button DropDown
+                                              .input-group
+                                                input#buttondropdown.form-control.btn-square(name='buttondropdown', placeholder='Placeholder', type='text')
+                                                .input-group-btn.btn.btn-square.p-0
+                                                  button.btn.btn-primary.dropdown-toggle.btn-square(type='button', data-toggle='dropdown')
+                                                    | Action
+                                                    span.caret
+                                                  ul.dropdown-menu.pull-right
+                                                    li
+                                                      a.dropdown-item(href='#') Option one
+                                                    li
+                                                      a.dropdown-item(href='#') Option two
+                                                    li
+                                                      a.dropdown-item(href='#') Option three
+                                              p.help-block Example block-level help text here.
+                                        #pills-radcheck.tab-pane.fade(role='tabpanel', aria-labelledby='pills-radcheck-tab')
+                                          form.theme-form
+                                            .form-group.draggable
+                                              label Inline checkbox
+                                              .col
+                                                .m-checkbox-inline
+                                                  .checkbox
+                                                    input#checkbox1(type='checkbox')
+                                                    label(for='checkbox1') Default 1
+                                                  .checkbox
+                                                    input#checkbox2(type='checkbox')
+                                                    label(for='checkbox2') Default 2
+                                                  .checkbox
+                                                    input#checkbox3(type='checkbox')
+                                                    label(for='checkbox3') Default 3
+                                              p.help-block.m-t-help-block Example block-level help text here.
+                                            hr
+                                            .form-group.draggable
+                                              label Inline Radiobox
+                                              .col
+                                                .m-checkbox-inline
+                                                  .radio.radio-theme
+                                                    input#radioinline1(type='radio', name='radio1', value='option1')
+                                                    label(for='radioinline1') Option 1
+                                                  .radio.radio-theme
+                                                    input#radioinline2(type='radio', name='radio1', value='option2')
+                                                    label(for='radioinline2') Option 2
+                                                  .radio.radio-theme
+                                                    input#radioinline3(type='radio', name='radio1', value='option3')
+                                                    label(for='radioinline3') Option 3
+                                              p.help-block.m-t-help-block Example block-level help text here.
+                                            hr
+                                            .form-group.draggable
+                                              label Custom checkbox
+                                              .col
+                                                .form-group
+                                                  .checkbox
+                                                    input#checkbox-def(type='checkbox')
+                                                    label(for='checkbox-def') Default
+                                                  .checkbox
+                                                    input#checkbox-dis(type='checkbox', disabled='')
+                                                    label(for='checkbox-dis') Disabled
+                                                  .checkbox
+                                                    input#checkbox-chk(type='checkbox', checked='')
+                                                    label(for='checkbox-chk') Checked
+                                              p.help-block Example block-level help text here.
+                                        #pills-select.tab-pane.fade(role='tabpanel', aria-labelledby='pills-select-tab')
+                                          form.theme-form
+                                            .form-group.draggable
+                                              label(for='formcontrol-select1') Example select
+                                              select#formcontrol-select1.form-control.btn-square
+                                                option 1
+                                                option 2
+                                                option 3
+                                                option 4
+                                                option 5
+                                              p.help-block Example block-level help text here.
+                                            hr
+                                            .form-group.draggable
+                                              label(for='formcontrol-select2') Example multiple select
+                                              select#formcontrol-select2.form-control.btn-square(multiple='')
+                                                option 1
+                                                option 2
+                                                option 3
+                                                option 4
+                                                option 5
+                                              p.help-block Example block-level help text here.
+                                        #pills-button.tab-pane.fade(role='tabpanel', aria-labelledby='pills-button-tab')
+                                          form.theme-form
+                                            .form-group.draggable
+                                              label.m-r-10 Single Button
+                                              br
+                                              button.btn.btn-primary.active(type='button', data-original-title='btn btn-dark active', title='') Button
+                                              p.help-block Example block-level help text here.
+                                            hr
+                                            .form-group.draggable
+                                              label.m-r-10 Double Button
+                                              br
+                                              button.btn.btn-primary(type='button', data-original-title='btn btn-primary-gradien', title='') Primary
+                                              button.btn.btn-secondary(type='button', data-original-title='btn btn-primary-gradien', title='') Secondary
+                                              p.help-block Example block-level help text here.
+                                    .col-lg-6.col-xl-6.lg-mt
+                                      // Form builder column wise start
+                                      .drag-bx.card-body
+                                        .text-muted.empty-form.text-center
+                                          h6 Drag & Drop elements to build form.
+                                        .form-body.row.form-builder-2
+                                          .col-md-12.droppable.sortable
+                                          .col-md-6.droppable.sortable(style='display: none;')
+                                          .col-md-6.droppable.sortable(style='display: none;')
+                                // Form builder column wise ends
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

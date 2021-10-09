@@ -1,0 +1,94 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var vector_map            = true;
+- var page_vector_map       = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Vector Maps
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Maps
+                                      li.breadcrumb-item.active Vector Maps
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-6
+                          .card
+                            .card-header
+                              h5 VECTOR WORLD MAP
+                              span Below Map is displaying the world map.
+                            .card-body
+                              #world-map.jvector-map-height
+                        .col-sm-6
+                          .card
+                            .card-header
+                              h5 VECTOR USA MAP
+                              span Below Map is displaying the usa map.
+                            .card-body
+                              #usa.jvector-map-height
+                        .col-sm-6
+                          .card
+                            .card-header
+                              h5 VECTOR CANADA MAP
+                              span Below Map is displaying the canada map.
+                            .card-body
+                              #canada.jvector-map-height
+                        .col-sm-6
+                          .card
+                            .card-header
+                              h5 VECTOR INDIA MAP
+                              span Below Map is displaying the india map.
+                            .card-body
+                              #india.jvector-map-height
+                        .col-sm-6
+                          .card
+                            .card-header
+                              h5 VECTOR ASIA MAP
+                              span Below Map is displaying the asia map.
+                            .card-body
+                              #asia.jvector-map-height
+                        .col-sm-6
+                          .card
+                            .card-header
+                              h5 VECTOR CANADA MAP
+                              span Below Map is displaying the uk map.
+                            .card-body
+                              #uk.jvector-map-height
+                        .col-sm-6
+                          .card
+                            .card-header
+                              h5 VECTOR CHICAGO MAP
+                              span Below Map is displaying the chicago map.
+                            .card-body
+                              #chicago.jvector-map-height
+                        .col-sm-6
+                          .card
+                            .card-header
+                              h5 VECTOR AUSTRALIA MAP
+                              span Below Map is displaying the australia map.
+                            .card-body
+                              #australia.jvector-map-height
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

@@ -1,0 +1,100 @@
+
+/**=====================
+     76. Language CSS start
+==========================**/
+.current_lang {
+	cursor: pointer;
+	text-transform: uppercase;
+	overflow: hidden;	
+}
+.lang {  
+	&.selected {
+		display: none;
+	}
+	span.lang-txt {
+		display: inline-flex;
+		margin-left: 8px;
+		font-weight: 500;
+	} 
+
+	span {
+		span {
+			color: #999;
+			font-weight: 400;
+			margin-left: 5px;
+		}
+	}
+}
+
+/*more lang*/
+
+.more_lang {
+	transform: translateY(-20px);
+	opacity: 0;
+	cursor: pointer;
+	display: none;
+	transition: all 0.3s cubic-bezier(0.25, 1.15, 0.35, 1.15);
+}
+.translate_wrapper.active .more_lang {
+	display: block;
+	position: absolute;
+	background-color: $white;
+	top: 47px;
+	right: 0;
+	box-shadow: 0 0 20px rgba(89,102,122,0.1);
+	&:before{
+		width: 0;
+		height: 0;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 7px solid #fff;
+		content: "";
+		top: -7px;
+		position: absolute;
+		right: 20px;
+		z-index: 2;
+	}
+	&:after{
+		width: 0;
+		height: 0;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 7px solid #bdc2c5;
+		content: "";
+		top: -7px;
+		position: absolute;
+		right: 20px;
+		z-index: 1;
+	}
+}
+
+.more_lang {
+	&.active {
+		opacity: 1;
+		transform: translateY(-0px);
+	}
+	.lang{
+		padding: 10px 15px;
+		display: flex;
+		&:hover {
+			background: var(--theme-deafult);
+			color: $white;
+			span {
+				color: $white;
+			}
+		}
+	}
+}
+
+.translate_wrapper {
+	&.active {
+		.more_lang{
+			.lang {
+				border-bottom: 1px solid #eaeaea;
+			}	
+		}		
+	}
+}
+/**=====================
+     76. Language CSS end
+==========================**/

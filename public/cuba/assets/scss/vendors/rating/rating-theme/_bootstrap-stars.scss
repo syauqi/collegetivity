@@ -1,0 +1,60 @@
+@import "variables";
+
+.br-theme-bootstrap-stars {
+
+  .br-widget {
+    height: 28px;
+    white-space: nowrap;
+  
+    a {
+      font: normal normal normal 18px/1 'Glyphicons Halflings';
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      text-decoration: none;
+      margin-right: 2px;
+    }
+
+    a:after {
+      content: '\e006';
+      color: $star-default;
+    }
+
+    a.br-active:after {
+      color: $star-active;
+    }
+
+    a.br-selected:after {
+      color: $star-selected;
+    }
+
+    .br-current-rating {
+      display: none;
+    }
+  }
+
+  .br-readonly {
+    a {
+      cursor: default;
+    }
+  }
+
+}
+
+@media print {
+  .br-theme-bootstrap-stars {
+
+    .br-widget {
+      a:after {
+        content: '\e007';
+        color: black;
+      }
+
+      a.br-active:after,
+      a.br-selected:after {
+        content: '\e006';
+        color: black;
+      }
+    }
+
+  }
+}

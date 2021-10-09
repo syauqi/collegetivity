@@ -1,0 +1,49 @@
+- var timeline_2            = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                        | Timeline 2
+                                .col-6
+                                      ol.breadcrumb
+                                        li.breadcrumb-item
+                                          a(href='index.html')                                        
+                                            i(data-feather="home")
+                                        li.breadcrumb-item Timeline
+                                        li.breadcrumb-item.active Timeline 2
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Example
+                            .card-body
+                              #timeline-2
+                                div(data-year='2010') Start
+                                .active(data-year='2011')
+                                  | Lorem is simply dummy text of the printing and typesetting industry. the printing and typesetting industry.
+                                div(data-year='2013') Lorem is simply dummy text of the printing and typesetting industry. 
+                                div(data-year='2014') Lorem is simply dummy text of the printing and typesetting industry.
+                                div(data-year='2015') Lorem is simply dummy text of the printing and typesetting industry.
+                                div(data-year='2017') Lorem is simply dummy text of the printing and typesetting industry.
+                                div(data-year='2018') End.
+                    // Container-fluid ends                    
+                include ../../components/footer
+        include ../../components/footer-files

@@ -1,0 +1,191 @@
+.project-list {
+	.row {
+		margin: 15px;
+	}
+
+	button:focus {
+		outline: none !important;
+	}
+
+	.theme-form .form-group {
+		margin-bottom: 15px;
+	}
+
+	.border-tab.nav-tabs {
+		.nav-item .nav-link {
+			border: 1px solid transparent;
+			padding: 5px 30px 5px 0;
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	.btn {
+		margin-right: 5px;
+		vertical-align: -12px;
+
+		svg {
+			vertical-align: middle;
+			height: 16px;
+		}
+	}
+
+	ul {
+		margin-bottom: 0 !important;
+		border-bottom: 0;
+
+		li {
+			svg {
+				height: 18px;
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+.tab-content {
+	.row {
+		>div.col-xl-4 {
+
+			$show-numbers: true;
+
+			@if $show-numbers {
+				@for $i from 1 through 15 {
+					&:nth-child(#{$i}) {
+						animation-fill-mode: both;
+						animation: fadeIncustom .5s linear #{$i}00000ms;
+					}
+				}
+			}
+		}
+	}
+}
+
+.project-box {
+	border: 1px solid $light-semi-gray;
+	border-radius: 5px;
+	padding: 30px;
+	background-color: lighten($light, 2%);
+
+	h6 {
+		font-weight: 500 !important;
+	}
+
+	.badge {
+		position: absolute;
+		right: 30px;
+		top: 15px;
+	}
+
+	.project-status {
+		p {
+			margin-bottom: 5px;
+			font-weight: 800;
+		}
+	}
+
+	.media {
+		margin-bottom: 15px;
+
+		.media-body {
+			opacity: 0.5;
+		}
+	}
+
+	.details {
+		div {
+			margin-bottom: 5px;
+			opacity: 0.7;
+		}
+	}
+}
+
+.projectdetails {
+	.card {
+		.card-body {
+			padding: 20px;
+		}
+
+		.card-footer {
+			padding: 20px;
+		}
+
+		select {
+			width: 90px;
+			height: 28px;
+			font-size: 11px;
+			right: 20px;
+			top: 20px;
+		}
+	}
+}
+
+.projectmore {
+	.details {
+		.col-4 {
+			margin-bottom: 5px;
+
+			&:nth-child(even) {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	h5 {
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	.task-list {
+		position: relative;
+
+		ul {
+			li {
+				margin-bottom: 5px
+			}
+
+			&+ul {
+				position: absolute;
+				left: 50%;
+				top: 0;
+			}
+		}
+	}
+}
+
+.new-users {
+	&.activity {
+		.gradient-round {
+			padding: 13px;
+			font-size: 20px;
+			line-height: 1.4;
+			text-align: center;
+			top: unset !important;
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1199px) {
+	.tab-content {
+		.row {
+			.col-xl-4 {
+				&+.col-xl-4 {
+					&+.col-xl-4 {
+						margin-top: 0 !important;
+
+						.project-box {
+							margin-top: 1.5rem !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

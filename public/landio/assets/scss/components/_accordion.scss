@@ -1,0 +1,85 @@
+/*======= Accordion v1 =======*/
+.landio-accordion-v1 {
+    .accordion-item {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        .accordion-header .accordion-button {
+            padding: 20px 30px;
+            width: 100%;
+            text-align: left;
+            background-color: $color-white;
+            font-family: $font-cs-bold;
+            font-size: 18px;
+            line-height: 1.2;
+            border-radius: 30px;
+            transition: 0.3s;
+            border: none;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $color-heading-2;
+
+            &::after {
+                font-family: "Font Awesome 5 Pro";
+                background-image: none;
+                transform: rotate(0);
+                content: "\f105";
+                margin-left: auto;
+                transition: 0.3s;
+                font-size: 16px;
+                margin-top: 2px;
+                color: $color-heading-2;
+                font-weight: 600;
+            }
+        }
+
+        .accordion-body {
+            background-color: $color-white;
+            padding: 0 30px 25px;
+            border-radius: 0 0 30px 30px;
+        }
+
+        .accordion-button[aria-expanded="true"] {
+            border-radius: 30px 30px 0 0;
+
+            &::after {
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
+
+/*======= Accordion v1 Bordered =======*/
+.landio-accordion-v1.accordion-bordered {
+    .accordion-item {
+        border: 2px solid #edf2fd;
+        border-radius: 7px;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        .accordion-header .accordion-button {
+            padding: 16px 30px;
+            border-radius: 0;
+            line-height: 1.4;
+            &::after {
+                content: "\f0a9";
+                font-weight: 400;
+            }
+        }
+
+        .accordion-body {
+            border-radius: 0;
+        }
+
+        .accordion-button[aria-expanded="true"] {
+            &::after {
+                transform: rotate(90deg);
+            }
+        }
+    }
+}

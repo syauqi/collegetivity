@@ -1,0 +1,119 @@
+- var chat_menu             = true;
+- var theme_customizer      = true;
+- var typeahead             = true;
+- var typeahead_search      = true;
+- var tooltip               = true;
+- var animate               = true;
+- var dropzone              = true;
+- var date_picker           = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.default-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.default-menu.default-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3 
+                                      | Project Create
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Apps
+                                      li.breadcrumb-item.active Project Create                           
+
+
+                    // Container-fluid starts
+
+                    .container-fluid
+                        .row
+                          .col-sm-12
+                            .card
+                              .card-body
+                                .form.theme-form
+                                    .row
+                                      .col
+                                        .form-group
+                                          label Project Title
+                                          input.form-control(type='text', placeholder='Project name *')
+                                    .row
+                                      .col
+                                        .form-group
+                                          label Client name
+                                          input.form-control(type='text', placeholder='Name client or company name')
+                                    .row
+                                      .col-sm-4
+                                        .form-group
+                                          label Project Rate
+                                          input.form-control(type='text', placeholder='Enter project Rate')
+                                      .col-sm-4
+                                        .form-group
+                                          label Project Type
+                                          select.form-control
+                                            option Hourly
+                                            option Fix price
+                                      .col-sm-4
+                                        .form-group
+                                          label Priority
+                                          select.form-control
+                                            option Low
+                                            option Medium
+                                            option High
+                                            option Urgent
+                                    .row
+                                      .col-sm-4
+                                        .form-group
+                                          label Project Size
+                                          select.form-control
+                                            option Small
+                                            option Medium
+                                            option Big
+                                      .col-sm-4
+                                        .form-group
+                                          label Starting date
+                                          input.datepicker-here.form-control(type='text', data-language='en')
+                                      .col-sm-4
+                                        .form-group
+                                          label Ending date
+                                          input.datepicker-here.form-control(type='text', data-language='en')
+                                    .row
+                                      .col
+                                        .form-group
+                                          label Enter some Details
+                                          textarea#exampleFormControlTextarea4.form-control(rows='3')
+                                    .row
+                                      .col
+                                        .form-group
+                                          label Upload project file
+                                          form#singleFileUpload.dropzone(action='/upload.php')
+                                            .dz-message.needsclick
+                                              i.icon-cloud-up
+                                              h6 Drop files here or click to upload.
+                                              span.note.needsclick
+                                                | (This is just a demo dropzone. Selected files are 
+                                                strong not
+                                                |  actually uploaded.)
+                                                
+                                    .row
+                                      .col
+                                        .form-group.mb-0
+                                          a.btn.btn-success.mr-3(href="#") Add
+                                          a.btn.btn-danger(href="#") Cancel
+                                                
+
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

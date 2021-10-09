@@ -1,0 +1,219 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var counter               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Lists
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Ui Kits
+                                      li.breadcrumb-item.active Lists
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12.col-xl-12
+                          .card
+                            .card-header
+                              h5 Default list
+                            .card-body
+                              ul.list-group
+                                li.list-group-item Cras justo odio
+                                li.list-group-item Dapibus ac facilisis in
+                                li.list-group-item Morbi leo risus
+                                li.list-group-item Porta ac consectetur ac
+                                li.list-group-item Vestibulum at eros
+                        .col-sm-12.col-xl-12
+                          .card
+                            .card-header
+                              h5 Links and buttons
+                            .card-body
+                              .list-group
+                                a.list-group-item.list-group-item-action.active(href='#')
+                                  | Cras justo odio
+                                a.list-group-item.list-group-item-action(href='#') Dapibus ac facilisis in
+                                a.list-group-item.list-group-item-action(href='#') Morbi leo risus
+                                a.list-group-item.list-group-item-action(href='#') Porta ac consectetur ac
+                                a.list-group-item.list-group-item-action.disabled(href='#') Vestibulum at eros
+                        .col-sm-12.col-xl-12
+                          .card
+                            .card-header
+                              h5 Flush Style
+                            .card-body
+                              ul.list-group.list-group-flush
+                                li.list-group-item Cras justo odio
+                                li.list-group-item Dapibus ac facilisis in
+                                li.list-group-item Morbi leo risus
+                                li.list-group-item Porta ac consectetur ac
+                                li.list-group-item Vestibulum at eros
+                                li.list-group-item Cras justo odio
+                                li.list-group-item Dapibus ac facilisis in
+                                li.list-group-item Dapibus ac facilisis in
+                                li.list-group-item Dapibus ac facilisis in
+                        .col-sm-12.col-xl-12
+                          .card
+                            .card-header
+                              h5 Contextual classes
+                            .card-body
+                              ul.list-group
+                                li.list-group-item Dapibus ac facilisis in
+                                li.list-group-item.list-group-item-primary This is a primary list group item
+                                li.list-group-item.list-group-item-secondary This is a secondary list group item
+                                li.list-group-item.list-group-item-success This is a success list group item
+                                li.list-group-item.list-group-item-danger This is a danger list group item
+                                li.list-group-item.list-group-item-warning This is a warning list group item
+                                li.list-group-item.list-group-item-info This is a info list group item
+                                li.list-group-item.list-group-item-light This is a light list group item
+                                li.list-group-item.list-group-item-dark This is a dark list group item
+                        .col-sm-12.col-xl-12
+                          .card
+                            .card-header
+                              h5 With badges
+                            .card-body
+                              ul.list-group
+                                li.list-group-item.d-flex.justify-content-between.align-items-center
+                                  | Cras justo odio
+                                  span.badge.badge-primary.counter 14
+                                li.list-group-item.d-flex.justify-content-between.align-items-center
+                                  | Dapibus ac facilisis in
+                                  span.badge.badge-secondary.counter 2
+                                li.list-group-item.d-flex.justify-content-between.align-items-center
+                                  | Morbi leo risus
+                                  span.badge.badge-success.badge-pill.counter 1
+                                li.list-group-item.d-flex.justify-content-between.align-items-center
+                                  | Dapibus ac facilisis in
+                                  span.badge.badge-info.badge-pill 100%
+                                li.list-group-item.d-flex.justify-content-between.align-items-center
+                                  | Dapibus ac facilisis in
+                                  span.badge.badge-warning.counter 2
+                                li.list-group-item.d-flex.justify-content-between.align-items-center
+                                  | Morbi leo risus
+                                  span.badge.badge-danger.badge-pill sale
+                                li.list-group-item.d-flex.justify-content-between.align-items-center
+                                  | Cras justo odio
+                                  span.badge.badge-light.counter 14
+                        .col-sm-12.col-xl-12
+                          .card
+                            .card-header
+                              h5 Custom content
+                            .card-body
+                              .list-group
+                                a.list-group-item.list-group-item-action.flex-column.align-items-start.active(href='#')
+                                  .d-flex.w-100.justify-content-between
+                                    h5.mb-1 List group item heading
+                                    small 3 days ago
+                                  p.mb-1
+                                    | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+                                  small Donec id elit non mi porta.
+                                a.list-group-item.list-group-item-action.flex-column.align-items-start(href='#')
+                                  .d-flex.w-100.justify-content-between
+                                    h5.mb-1 List group item heading
+                                    small.text-muted 3 days ago
+                                  p.mb-1
+                                    | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+                                  small.text-muted Donec id elit non mi porta.
+                                a.list-group-item.list-group-item-action.flex-column.align-items-start(href='#')
+                                  .d-flex.w-100.justify-content-between
+                                    h5.mb-1 List group item heading
+                                    small.text-muted 3 days ago
+                                  p.mb-1
+                                    | Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+                                  small.text-muted Donec id elit non mi porta.
+                        .col-sm-12.col-xl-12
+                          .card
+                            .card-header
+                              h5 JavaScript behavior
+                            .card-body
+                              .row
+                                .col-sm-4
+                                  #list-tab.list-group(role='tablist')
+                                    a#list-home-list.list-group-item.list-group-item-action.active(data-toggle='list', href='#list-home', role='tab', aria-controls='list-home') Home
+                                    a#list-profile-list.list-group-item.list-group-item-action(data-toggle='list', href='#list-profile', role='tab', aria-controls='list-profile') Profile
+                                    a#list-messages-list.list-group-item.list-group-item-action(data-toggle='list', href='#list-messages', role='tab', aria-controls='list-messages') Messages
+                                    a#list-settings-list.list-group-item.list-group-item-action(data-toggle='list', href='#list-settings', role='tab', aria-controls='list-settings') Settings
+                                .col-sm-8
+                                  #nav-tabContent.tab-content
+                                    #list-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='list-home-list')
+                                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    #list-profile.tab-pane.fade(role='tabpanel', aria-labelledby='list-profile-list')
+                                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    #list-messages.tab-pane.fade(role='tabpanel', aria-labelledby='list-messages-list')
+                                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    #list-settings.tab-pane.fade(role='tabpanel', aria-labelledby='list-settings-list')
+                                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        .col-sm-12.col-xl-12
+                          .card
+                            .card-header
+                              h5 With Icon
+                            .card-body
+                              .list-group
+                                a.list-group-item.list-group-item-action(href='#')
+                                  i.icon-save-alt
+                                  | Cras justo odio
+                                a.list-group-item.list-group-item-action(href='#')
+                                  i.icon-target
+                                  | Dapibus ac facilisis in
+                                a.list-group-item.list-group-item-action(href='#')
+                                  i.icon-mobile
+                                  | Morbi leo risus
+                                a.list-group-item.list-group-item-action.disabled(href='#')
+                                  i.icon-shopping-cart-full
+                                  | Vestibulum at eros
+                        .col-sm-12.col-xl-12
+                          .card
+                            .card-header
+                              h5 With Images
+                            .card-body
+                              .list-group
+                                a.list-group-item.list-group-item-action(href='#')
+                                  img(src='../assets/images/user/1.jpg', alt='')
+                                  | Cras justo odio
+                                a.list-group-item.list-group-item-action(href='#')
+                                  img(src='../assets/images/user/1.jpg', alt='')
+                                  | Dapibus ac facilisis in
+                                a.list-group-item.list-group-item-action(href='#')
+                                  img(src='../assets/images/user/1.jpg', alt='')
+                                  | Morbi leo risus
+                                a.list-group-item.list-group-item-action.disabled(href='#')
+                                  img(src='../assets/images/user/1.jpg', alt='')
+                                  | Vestibulum at eros
+                        .col-sm-12.col-xl-12
+                          .card
+                            .card-header
+                              h5 With Image Rounded
+                            .card-body
+                              .list-group
+                                a.list-group-item.list-group-item-action(href='#')
+                                  img.rounded-circle(src='../assets/images/user/1.jpg', alt='')
+                                  | Cras justo odio
+                                a.list-group-item.list-group-item-action(href='#')
+                                  img.rounded-circle(src='../assets/images/user/1.jpg', alt='')
+                                  | Dapibus ac facilisis in
+                                a.list-group-item.list-group-item-action(href='#')
+                                  img.rounded-circle(src='../assets/images/user/1.jpg', alt='')
+                                  | Morbi leo risus
+                                a.list-group-item.list-group-item-action.disabled(href='#')
+                                  img.rounded-circle(src='../assets/images/user/1.jpg', alt='')
+                                  | Vestibulum at eros
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

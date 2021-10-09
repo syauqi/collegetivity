@@ -1,0 +1,419 @@
+/**=====================
+   59. Customizer  CSS Start
+==========================**/
+.customizer-links {
+  position: fixed;
+  right: 00px;
+  top: 50%;
+  z-index: 3;
+  transform: translate(0, -50%);
+  box-shadow: 0 0 37px rgba(8, 21, 66, 0.1);
+
+  >.nav {
+    border-radius: 8px;
+    padding: 10px;
+    background-color: $white;
+  }
+
+  &.open {
+    right: 330px;
+    border-radius: 8px 0 0 8px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-link {
+    padding: 0;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(115, 102, 255, 0.1);
+      border-radius: 5px;
+      transform: scale(0);
+      transition: all 0.3s ease;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-style: solid;
+      top: 12px;
+      border-width: 5px 0 5px 5px;
+      border-left-color: lighten($primary-color, 25%);
+      opacity: 0;
+      transform: scale(0);
+      color: #fff;
+      left: -10px;
+      z-index: 2;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      i {
+        color: var(--theme-deafult);
+      }
+
+      &:before,
+      &:after {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.3s ease;
+      }
+
+      span {
+        opacity: 1;
+        right: 48px;
+        transform: scale(1);
+        transition: all 0.3s ease;
+      }
+    }
+
+    &+.nav-link {
+      margin-bottom: 5px;
+    }
+
+    span {
+      position: absolute;
+      right: -60px;
+      width: max-content;
+      text-align: right;
+      padding: 7px 10px;
+      display: block;
+      top: 0;
+      border-radius: 5px;
+      transform: scale(0);
+      transition: all 0.3s ease;
+      opacity: 0;
+      color: var(--theme-deafult);
+      background-color: lighten($primary-color, 25%);
+      box-shadow: 0 0 37px rgba(8, 21, 66, 0.1);
+    }
+
+    i {
+      font-size: 17px;
+      padding: 8px 10px;
+      display: inline-block;
+      cursor: pointer;
+      margin: 0;
+      color: gray;
+      border-radius: 5px;
+    }
+  }
+}
+
+.customizer-contain {
+  direction: ltr;
+  position: fixed;
+  height: calc(100vh);
+  top: 82px;
+  width: 333px;
+  right: -335px;
+  background-color: $white;
+  z-index: 7;
+  transition: all 0.3s ease;
+
+  &.open {
+    right: 0px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px 1px rgba(68, 102, 242, 0.05);
+  }
+
+  li {
+    position: relative;
+
+    &.active {
+      box-shadow: 0 0 11px 5px rgba(226, 226, 226, 0.5);
+    }
+  }
+
+  h6 {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .customizer-header {
+    padding: 15px 25px;
+    border-bottom: 1px solid $light-color;
+
+    .icon-close {
+      position: absolute;
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: 900;
+      right: 30px;
+      color: var(--theme-deafult);
+    }
+
+    h5 {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  .customizer-body {
+    padding: 15px 25px;
+    max-height: calc(100vh - 170px);
+    overflow-y: scroll;
+
+    .unlimited-color-layout {
+      display: flex;
+      align-items: center;
+
+      .btn {
+        font-size: 15px;
+        padding: 4px 20px;
+      }
+
+      input {
+        border: 1px solid $gray-60;
+        height: 35px;
+        width: 35px;
+        border-radius: 5px;
+        background-color: $white;
+        margin-right: 5px;
+      }
+    }
+
+    .layout-grid {
+      &.customizer-mix {
+        .color-layout {
+          height: 70px;
+          width: 80px;
+          border: 1px solid #f6f7fb;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .tab-pane {
+      >h6 {
+        &:first-child {
+          padding-top: 0;
+          margin-top: 0;
+        }
+      }
+    }
+
+    li {
+      cursor: pointer;
+      opacity: 0.9;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    .color-layout {
+      height: 35px;
+      width: 35px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-right: 3px;
+      border: 1px solid #b8b8b8;
+      padding: 3px;
+
+      >div {
+        background-color: #7366ff;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      &[data-attr="color-2"] {
+        div {
+          background-color: #4831D4;
+        }
+      }
+
+      &[data-attr="color-3"] {
+        div {
+          background-color: #d64dcf;
+        }
+      }
+
+      &[data-attr="color-4"] {
+        div {
+          background-color: #4c2fbf;
+        }
+      }
+
+      &[data-attr="color-5"] {
+        div {
+          background-color: #7c4dff;
+        }
+      }
+
+      &[data-attr="color-6"] {
+        div {
+          background-color: #3949ab;
+        }
+      }
+    }
+
+    .dark {
+      >li {
+        background-color: #2f3c4e;
+      }
+    }
+
+    .main-layout {
+      >li {
+        height: 65px;
+        width: 85px;
+        border: 1px solid $light-color;
+        border-radius: 10px;
+        display: inline-block;
+
+        &+li {
+          margin-left: 7px;
+        }
+      }
+
+      .box-layout {
+        .body {
+          .badge {
+            left: -14px;
+          }
+        }
+      }
+    }
+
+    .sidebar-type,
+    .sidebar-setting {
+      >li {
+        height: 70px;
+        width: 85px;
+        border: 1px solid $light-color;
+        border-radius: 5px;
+        display: inline-block;
+
+        &+li {
+          margin-left: 7px;
+        }
+      }
+    }
+
+    .sidebar-type {
+      li {
+        &:first-child {
+          .body {
+            ul {
+              li {
+
+                &.bg-dark,
+                &.sidebar {
+                  width: 100%;
+                  height: 10px;
+                  display: block;
+                }
+
+                &.bg-light,
+                &.body {
+                  height: calc(100% - 10px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.layout-grid:not(.customizer-color) {
+  li {
+    padding: 5px;
+
+    >.header {
+      height: 9px;
+      border-radius: 3px;
+      position: relative;
+
+      ul {
+        position: absolute;
+        top: -8px;
+        left: 5px;
+
+        >li {
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          border-radius: 5px;
+          top: calc(50% - 3px);
+          background-color: var(--theme-deafult);
+          margin-right: 2px;
+          padding: 0;
+
+          &:nth-child(2) {
+            background-color: var(--theme-secondary);
+          }
+
+          &:nth-child(3) {
+            background-color: $success-color;
+          }
+        }
+      }
+    }
+
+    >.body {
+      background-color: $light-color;
+      height: calc(100% - 16px);
+      border-radius: 3px;
+      position: relative;
+      margin-top: 5px;
+      text-align: center;
+      line-height: 3.1;
+
+      ul {
+        height: 100%;
+        background-color: $white;
+
+        .sidebar {
+          width: 18px;
+          height: 100%;
+          border-radius: 3px;
+          display: inline-block;
+          margin-right: 3px;
+          padding: 0;
+
+          &.compact {
+            width: 12px;
+
+            &~.body {
+              width: calc(100% - 19px);
+            }
+          }
+        }
+
+        .body {
+          width: calc(100% - 25px);
+          padding: 0;
+          margin: 0;
+          height: 100%;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 3px;
+
+          .badge {
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**=====================
+     59.Customizer CSS Ends
+==========================**/

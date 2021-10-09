@@ -1,0 +1,198 @@
+/**=====================
+    26. Form CSS Start
+==========================**/
+.theme-form {
+  .form-control {
+    :focus {
+      box-shadow: 0 0 0 0.2rem rgba(171, 140, 228, 0.05);
+    }
+  }
+
+  &.sm-form {
+    .form-group {
+      margin-bottom: $sm-form-margin-bottom;
+    }
+  }
+
+  .form-group {
+    margin-bottom: $form-group-margin-bottom;
+
+    textarea {
+      border-color: $form-input-border-color;
+
+      &::-webkit-input-placeholder {
+        color: $form-placeholder-color;
+        font-size: $form-placeholder-font-size;
+        letter-spacing: $form-placeholder-letter-spacing;
+        font-weight: $form-placeholder-font-weight;
+      }
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=search],
+    input[type=password],
+    input[type=number],
+    input[type=tel],
+    input[type=date],
+    input[type=datetime-local],
+    input[type=time],
+    input[type=datetime-local],
+    input[type=month],
+    input[type=week],
+    input[type=url],
+    input[type=file],
+    select {
+      border-color: $form-input-border-color;
+      background-color: $form-input-bg-color;
+      font-size: $form-placeholder-font-size;
+      color: $form-placeholder-color;
+
+      &::-webkit-input-placeholder {
+        color: $form-placeholder-color;
+        font-size: $form-placeholder-font-size;
+        letter-spacing: $form-placeholder-letter-spacing;
+        font-weight: $form-placeholder-font-weight;
+      }
+    }
+
+    input[type=file] {
+      height: auto;
+    }
+
+    select.form-control:not([size]):not([multiple]) {
+      border-color: $form-input-border-color;
+      font-size: $form-placeholder-font-size;
+    }
+  }
+
+  .checkbox {
+    label {
+      padding-left: 10px;
+    }
+  }
+
+  .form-divider {
+    position: relative;
+    clear: both;
+    height: 0;
+    margin: 30px 0;
+    border-top: 1px solid $light-semi-gray;
+
+    &:before {
+      position: absolute;
+      top: -11px;
+      left: 40%;
+      margin-left: -10px;
+      padding: 0 5px;
+      content: "Or Signup With";
+      color: $theme-font-color;
+      background: $white;
+    }
+  }
+
+  .login-divider {
+    position: relative;
+    clear: both;
+    height: 0;
+    margin: 30px 0;
+    border-top: 1px solid $light-semi-gray;
+
+    &:before {
+      position: absolute;
+      top: -11px;
+      left: 40%;
+      margin-left: -10px;
+      padding: 0 5px;
+      color: $theme-font-color;
+      background: $white;
+      content: "Or Login With";
+    }
+  }
+
+  .btn-fb,
+  .btn-twitter,
+  .btn-google,
+  .btn-linkedin {
+    color: $white;
+    width: 100%;
+  }
+
+  .btn-fb {
+    background-color: $fb;
+  }
+
+  .btn-twitter {
+    background-color: $twitter;
+  }
+
+  .btn-google {
+    background-color: $google-plus;
+  }
+
+  .btn-linkedin {
+    background-color: $linkedin;
+  }
+}
+
+.form-inline {
+  display: -webkit-inline-box;
+
+  &.theme-form {
+    margin-bottom: -20px;
+  }
+
+  .form-group {
+    margin-right: 15px;
+
+    .col-form-label {
+      margin-right: 5px;
+    }
+  }
+}
+
+.search-form {
+  .form-group {
+    &:before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 25px;
+      background: #e8ebf2;
+      left: 82px;
+      top: 50px;
+    }
+
+    &:after {
+      position: absolute;
+      content: "\f002";
+      font-family: "FontAwesome";
+      top: 53px;
+      left: 53px;
+      color: #8e8e8e;
+    }
+  }
+
+  input {
+    border: 1px solid $light-semi-gray;
+    padding: 10px 10px 10px 70px;
+    border-radius: 10px;
+    background-color: rgba($light-color, 0.3);
+
+    &:focus {
+      outline: none !important;
+    }
+  }
+}
+
+.form-label-align-right {
+  label {
+    text-align: right;
+    padding-top: 17px;
+    font-weight: 500;
+  }
+}
+
+/**=====================
+    26. Form CSS Ends
+==========================**/

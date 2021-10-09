@@ -1,0 +1,607 @@
+.#{$font-prefix}-album:before {
+  content: $font-var-album;
+}
+
+.#{$font-prefix}-arc:before {
+  content: $font-var-arc;
+}
+.#{$font-prefix}-back-2:before {
+  content: $font-var-back-2;
+}
+.#{$font-prefix}-bandaid:before {
+  content: $font-var-bandaid;
+}
+.#{$font-prefix}-car:before {
+  content: $font-var-car;
+}
+.#{$font-prefix}-diamond:before {
+  content: $font-var-diamond;
+}
+.#{$font-prefix}-door-lock:before {
+  content: $font-var-door-lock;
+}
+.#{$font-prefix}-eyedropper:before {
+  content: $font-var-eyedropper;
+}
+.#{$font-prefix}-female:before {
+  content: $font-var-female;
+}
+.#{$font-prefix}-gym:before {
+  content: $font-var-gym;
+}
+.#{$font-prefix}-hammer:before {
+  content: $font-var-hammer;
+}
+.#{$font-prefix}-headphones:before {
+  content: $font-var-headphones;
+}
+.#{$font-prefix}-helm:before {
+  content: $font-var-helm;
+}
+.#{$font-prefix}-hourglass:before {
+  content: $font-var-hourglass;
+}
+.#{$font-prefix}-leaf:before {
+  content: $font-var-leaf;
+}
+.#{$font-prefix}-magic-wand:before {
+  content: $font-var-magic-wand;
+}
+.#{$font-prefix}-male:before {
+  content: $font-var-male;
+}
+.#{$font-prefix}-map-2:before {
+  content: $font-var-map-2;
+}
+.#{$font-prefix}-next-2:before {
+  content: $font-var-next-2;
+}
+.#{$font-prefix}-paint-bucket:before {
+  content: $font-var-paint-bucket;
+}
+.#{$font-prefix}-pendrive:before {
+  content: $font-var-pendrive;
+}
+.#{$font-prefix}-photo:before {
+  content: $font-var-photo;
+}
+.#{$font-prefix}-piggy:before {
+  content: $font-var-piggy;
+}
+.#{$font-prefix}-plugin:before {
+  content: $font-var-plugin;
+}
+.#{$font-prefix}-refresh-2:before {
+  content: $font-var-refresh-2;
+}
+.#{$font-prefix}-rocket:before {
+  content: $font-var-rocket;
+}
+.#{$font-prefix}-settings:before {
+  content: $font-var-settings;
+}
+.#{$font-prefix}-shield:before {
+  content: $font-var-shield;
+}
+.#{$font-prefix}-smile:before {
+  content: $font-var-smile;
+}
+.#{$font-prefix}-usb:before {
+  content: $font-var-usb;
+}
+.#{$font-prefix}-vector:before {
+  content: $font-var-vector;
+}
+.#{$font-prefix}-wine:before {
+  content: $font-var-wine;
+}
+.#{$font-prefix}-cloud-upload:before {
+  content: $font-var-cloud-upload;
+}
+.#{$font-prefix}-cash:before {
+  content: $font-var-cash;
+}
+.#{$font-prefix}-close:before {
+  content: $font-var-close;
+}
+.#{$font-prefix}-bluetooth:before {
+  content: $font-var-bluetooth;
+}
+.#{$font-prefix}-cloud-download:before {
+  content: $font-var-cloud-download;
+}
+.#{$font-prefix}-way:before {
+  content: $font-var-way;
+}
+.#{$font-prefix}-close-circle:before {
+  content: $font-var-close-circle;
+}
+.#{$font-prefix}-id:before {
+  content: $font-var-id;
+}
+.#{$font-prefix}-angle-up:before {
+  content: $font-var-angle-up;
+}
+.#{$font-prefix}-wristwatch:before {
+  content: $font-var-wristwatch;
+}
+.#{$font-prefix}-angle-up-circle:before {
+  content: $font-var-angle-up-circle;
+}
+.#{$font-prefix}-world:before {
+  content: $font-var-world;
+}
+.#{$font-prefix}-angle-right:before {
+  content: $font-var-angle-right;
+}
+.#{$font-prefix}-volume:before {
+  content: $font-var-volume;
+}
+.#{$font-prefix}-angle-right-circle:before {
+  content: $font-var-angle-right-circle;
+}
+.#{$font-prefix}-users:before {
+  content: $font-var-users;
+}
+.#{$font-prefix}-angle-left:before {
+  content: $font-var-angle-left;
+}
+.#{$font-prefix}-user-female:before {
+  content: $font-var-user-female;
+}
+.#{$font-prefix}-angle-left-circle:before {
+  content: $font-var-angle-left-circle;
+}
+.#{$font-prefix}-up-arrow:before {
+  content: $font-var-up-arrow;
+}
+.#{$font-prefix}-angle-down:before {
+  content: $font-var-angle-down;
+}
+.#{$font-prefix}-switch:before {
+  content: $font-var-switch;
+}
+.#{$font-prefix}-angle-down-circle:before {
+  content: $font-var-angle-down-circle;
+}
+.#{$font-prefix}-scissors:before {
+  content: $font-var-scissors;
+}
+.#{$font-prefix}-wallet:before {
+  content: $font-var-wallet;
+}
+.#{$font-prefix}-safe:before {
+  content: $font-var-safe;
+}
+.#{$font-prefix}-volume2:before {
+  content: $font-var-volume2;
+}
+.#{$font-prefix}-volume1:before {
+  content: $font-var-volume1;
+}
+.#{$font-prefix}-voicemail:before {
+  content: $font-var-voicemail;
+}
+.#{$font-prefix}-video:before {
+  content: $font-var-video;
+}
+.#{$font-prefix}-user:before {
+  content: $font-var-user;
+}
+.#{$font-prefix}-upload:before {
+  content: $font-var-upload;
+}
+.#{$font-prefix}-unlock:before {
+  content: $font-var-unlock;
+}
+.#{$font-prefix}-umbrella:before {
+  content: $font-var-umbrella;
+}
+.#{$font-prefix}-trash:before {
+  content: $font-var-trash;
+}
+.#{$font-prefix}-tools:before {
+  content: $font-var-tools;
+}
+.#{$font-prefix}-timer:before {
+  content: $font-var-timer;
+}
+.#{$font-prefix}-ticket:before {
+  content: $font-var-ticket;
+}
+.#{$font-prefix}-target:before {
+  content: $font-var-target;
+}
+.#{$font-prefix}-sun:before {
+  content: $font-var-sun;
+}
+.#{$font-prefix}-study:before {
+  content: $font-var-study;
+}
+.#{$font-prefix}-stopwatch:before {
+  content: $font-var-stopwatch;
+}
+.#{$font-prefix}-star:before {
+  content: $font-var-star;
+}
+.#{$font-prefix}-speaker:before {
+  content: $font-var-speaker;
+}
+.#{$font-prefix}-signal:before {
+  content: $font-var-signal;
+}
+.#{$font-prefix}-shuffle:before {
+  content: $font-var-shuffle;
+}
+.#{$font-prefix}-shopbag:before {
+  content: $font-var-shopbag;
+}
+.#{$font-prefix}-share:before {
+  content: $font-var-share;
+}
+.#{$font-prefix}-server:before {
+  content: $font-var-server;
+}
+.#{$font-prefix}-search:before {
+  content: $font-var-search;
+}
+.#{$font-prefix}-film:before {
+  content: $font-var-film;
+}
+.#{$font-prefix}-science:before {
+  content: $font-var-science;
+}
+.#{$font-prefix}-disk:before {
+  content: $font-var-disk;
+}
+.#{$font-prefix}-ribbon:before {
+  content: $font-var-ribbon;
+}
+.#{$font-prefix}-repeat:before {
+  content: $font-var-repeat;
+}
+.#{$font-prefix}-refresh:before {
+  content: $font-var-refresh;
+}
+.#{$font-prefix}-add-user:before {
+  content: $font-var-add-user;
+}
+.#{$font-prefix}-refresh-cloud:before {
+  content: $font-var-refresh-cloud;
+}
+.#{$font-prefix}-paperclip:before {
+  content: $font-var-paperclip;
+}
+.#{$font-prefix}-radio:before {
+  content: $font-var-radio;
+}
+.#{$font-prefix}-note2:before {
+  content: $font-var-note2;
+}
+.#{$font-prefix}-print:before {
+  content: $font-var-print;
+}
+.#{$font-prefix}-network:before {
+  content: $font-var-network;
+}
+.#{$font-prefix}-prev:before {
+  content: $font-var-prev;
+}
+.#{$font-prefix}-mute:before {
+  content: $font-var-mute;
+}
+.#{$font-prefix}-power:before {
+  content: $font-var-power;
+}
+.#{$font-prefix}-medal:before {
+  content: $font-var-medal;
+}
+.#{$font-prefix}-portfolio:before {
+  content: $font-var-portfolio;
+}
+.#{$font-prefix}-like2:before {
+  content: $font-var-like2;
+}
+.#{$font-prefix}-plus:before {
+  content: $font-var-plus;
+}
+.#{$font-prefix}-left-arrow:before {
+  content: $font-var-left-arrow;
+}
+.#{$font-prefix}-play:before {
+  content: $font-var-play;
+}
+.#{$font-prefix}-key:before {
+  content: $font-var-key;
+}
+.#{$font-prefix}-plane:before {
+  content: $font-var-plane;
+}
+.#{$font-prefix}-joy:before {
+  content: $font-var-joy;
+}
+.#{$font-prefix}-photo-gallery:before {
+  content: $font-var-photo-gallery;
+}
+.#{$font-prefix}-pin:before {
+  content: $font-var-pin;
+}
+.#{$font-prefix}-phone:before {
+  content: $font-var-phone;
+}
+.#{$font-prefix}-plug:before {
+  content: $font-var-plug;
+}
+.#{$font-prefix}-pen:before {
+  content: $font-var-pen;
+}
+.#{$font-prefix}-right-arrow:before {
+  content: $font-var-right-arrow;
+}
+.#{$font-prefix}-paper-plane:before {
+  content: $font-var-paper-plane;
+}
+.#{$font-prefix}-delete-user:before {
+  content: $font-var-delete-user;
+}
+.#{$font-prefix}-paint:before {
+  content: $font-var-paint;
+}
+.#{$font-prefix}-bottom-arrow:before {
+  content: $font-var-bottom-arrow;
+}
+.#{$font-prefix}-notebook:before {
+  content: $font-var-notebook;
+}
+.#{$font-prefix}-note:before {
+  content: $font-var-note;
+}
+.#{$font-prefix}-next:before {
+  content: $font-var-next;
+}
+.#{$font-prefix}-news-paper:before {
+  content: $font-var-news-paper;
+}
+.#{$font-prefix}-musiclist:before {
+  content: $font-var-musiclist;
+}
+.#{$font-prefix}-music:before {
+  content: $font-var-music;
+}
+.#{$font-prefix}-mouse:before {
+  content: $font-var-mouse;
+}
+.#{$font-prefix}-more:before {
+  content: $font-var-more;
+}
+.#{$font-prefix}-moon:before {
+  content: $font-var-moon;
+}
+.#{$font-prefix}-monitor:before {
+  content: $font-var-monitor;
+}
+.#{$font-prefix}-micro:before {
+  content: $font-var-micro;
+}
+.#{$font-prefix}-menu:before {
+  content: $font-var-menu;
+}
+.#{$font-prefix}-map:before {
+  content: $font-var-map;
+}
+.#{$font-prefix}-map-marker:before {
+  content: $font-var-map-marker;
+}
+.#{$font-prefix}-mail:before {
+  content: $font-var-mail;
+}
+.#{$font-prefix}-mail-open:before {
+  content: $font-var-mail-open;
+}
+.#{$font-prefix}-mail-open-file:before {
+  content: $font-var-mail-open-file;
+}
+.#{$font-prefix}-magnet:before {
+  content: $font-var-magnet;
+}
+.#{$font-prefix}-loop:before {
+  content: $font-var-loop;
+}
+.#{$font-prefix}-look:before {
+  content: $font-var-look;
+}
+.#{$font-prefix}-lock:before {
+  content: $font-var-lock;
+}
+.#{$font-prefix}-lintern:before {
+  content: $font-var-lintern;
+}
+.#{$font-prefix}-link:before {
+  content: $font-var-link;
+}
+.#{$font-prefix}-like:before {
+  content: $font-var-like;
+}
+.#{$font-prefix}-light:before {
+  content: $font-var-light;
+}
+.#{$font-prefix}-less:before {
+  content: $font-var-less;
+}
+.#{$font-prefix}-keypad:before {
+  content: $font-var-keypad;
+}
+.#{$font-prefix}-junk:before {
+  content: $font-var-junk;
+}
+.#{$font-prefix}-info:before {
+  content: $font-var-info;
+}
+.#{$font-prefix}-home:before {
+  content: $font-var-home;
+}
+.#{$font-prefix}-help2:before {
+  content: $font-var-help2;
+}
+.#{$font-prefix}-help1:before {
+  content: $font-var-help1;
+}
+.#{$font-prefix}-graph3:before {
+  content: $font-var-graph3;
+}
+.#{$font-prefix}-graph2:before {
+  content: $font-var-graph2;
+}
+.#{$font-prefix}-graph1:before {
+  content: $font-var-graph1;
+}
+.#{$font-prefix}-graph:before {
+  content: $font-var-graph;
+}
+.#{$font-prefix}-global:before {
+  content: $font-var-global;
+}
+.#{$font-prefix}-gleam:before {
+  content: $font-var-gleam;
+}
+.#{$font-prefix}-glasses:before {
+  content: $font-var-glasses;
+}
+.#{$font-prefix}-gift:before {
+  content: $font-var-gift;
+}
+.#{$font-prefix}-folder:before {
+  content: $font-var-folder;
+}
+.#{$font-prefix}-flag:before {
+  content: $font-var-flag;
+}
+.#{$font-prefix}-filter:before {
+  content: $font-var-filter;
+}
+.#{$font-prefix}-file:before {
+  content: $font-var-file;
+}
+.#{$font-prefix}-expand1:before {
+  content: $font-var-expand1;
+}
+.#{$font-prefix}-exapnd2:before {
+  content: $font-var-exapnd2;
+}
+.#{$font-prefix}-edit:before {
+  content: $font-var-edit;
+}
+.#{$font-prefix}-drop:before {
+  content: $font-var-drop;
+}
+.#{$font-prefix}-drawer:before {
+  content: $font-var-drawer;
+}
+.#{$font-prefix}-download:before {
+  content: $font-var-download;
+}
+.#{$font-prefix}-display2:before {
+  content: $font-var-display2;
+}
+.#{$font-prefix}-display1:before {
+  content: $font-var-display1;
+}
+.#{$font-prefix}-diskette:before {
+  content: $font-var-diskette;
+}
+.#{$font-prefix}-date:before {
+  content: $font-var-date;
+}
+.#{$font-prefix}-cup:before {
+  content: $font-var-cup;
+}
+.#{$font-prefix}-culture:before {
+  content: $font-var-culture;
+}
+.#{$font-prefix}-crop:before {
+  content: $font-var-crop;
+}
+.#{$font-prefix}-credit:before {
+  content: $font-var-credit;
+}
+.#{$font-prefix}-copy-file:before {
+  content: $font-var-copy-file;
+}
+.#{$font-prefix}-config:before {
+  content: $font-var-config;
+}
+.#{$font-prefix}-compass:before {
+  content: $font-var-compass;
+}
+.#{$font-prefix}-comment:before {
+  content: $font-var-comment;
+}
+.#{$font-prefix}-coffee:before {
+  content: $font-var-coffee;
+}
+.#{$font-prefix}-cloud:before {
+  content: $font-var-cloud;
+}
+.#{$font-prefix}-clock:before {
+  content: $font-var-clock;
+}
+.#{$font-prefix}-check:before {
+  content: $font-var-check;
+}
+.#{$font-prefix}-chat:before {
+  content: $font-var-chat;
+}
+.#{$font-prefix}-cart:before {
+  content: $font-var-cart;
+}
+.#{$font-prefix}-camera:before {
+  content: $font-var-camera;
+}
+.#{$font-prefix}-call:before {
+  content: $font-var-call;
+}
+.#{$font-prefix}-calculator:before {
+  content: $font-var-calculator;
+}
+.#{$font-prefix}-browser:before {
+  content: $font-var-browser;
+}
+.#{$font-prefix}-box2:before {
+  content: $font-var-box2;
+}
+.#{$font-prefix}-box1:before {
+  content: $font-var-box1;
+}
+.#{$font-prefix}-bookmarks:before {
+  content: $font-var-bookmarks;
+}
+.#{$font-prefix}-bicycle:before {
+  content: $font-var-bicycle;
+}
+.#{$font-prefix}-bell:before {
+  content: $font-var-bell;
+}
+.#{$font-prefix}-battery:before {
+  content: $font-var-battery;
+}
+.#{$font-prefix}-ball:before {
+  content: $font-var-ball;
+}
+.#{$font-prefix}-back:before {
+  content: $font-var-back;
+}
+.#{$font-prefix}-attention:before {
+  content: $font-var-attention;
+}
+.#{$font-prefix}-anchor:before {
+  content: $font-var-anchor;
+}
+.#{$font-prefix}-albums:before {
+  content: $font-var-albums;
+}
+.#{$font-prefix}-alarm:before {
+  content: $font-var-alarm;
+}
+.#{$font-prefix}-airplay:before {
+  content: $font-var-airplay;
+}

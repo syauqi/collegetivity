@@ -1,0 +1,144 @@
+/**=====================
+     51. Search CSS Start
+==========================**/
+.search-page {
+  .theme-form {
+    input {
+      border: 1px solid var(--theme-deafult);
+      padding-left: 20px;
+      border-radius: 10px 0 0 10px;
+
+      &:focus {
+        outline: none;
+      }
+
+    }
+  }
+
+  h6 {
+    line-height: 1.4;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .border-tab {
+    &.nav-tabs {
+      .material-border {
+        border-bottom-width: 1px;
+      }
+
+      .nav-item {
+        .nav-link {
+          font-size: 15px;
+          padding: 10px 18px;
+        }
+      }
+    }
+  }
+
+
+
+  .info-block {
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid $light-color;
+
+    a {
+      color: #656565;
+      margin-bottom: 3px;
+      display: block;
+    }
+
+    h6 {
+      color: $primary-color;
+    }
+
+    +.info-block {
+      margin-top: 20px;
+    }
+  }
+
+  .border-tab.nav-tabs {
+    align-items: left;
+    justify-content: end;
+
+    .nav-item {
+      width: auto;
+    }
+  }
+
+  .search-links {
+    h6 {
+      margin-bottom: 5px;
+    }
+  }
+
+  p {
+    text-transform: lowercase;
+    margin-bottom: 0;
+    color: #a5a2a2;
+  }
+
+  ul.search-info {
+    li {
+      display: inline-block;
+      font-size: 12px;
+      line-height: 1;
+      color: #586082;
+
+      +li {
+        border-left: 1px solid lighten($dark-color, 50%);
+        padding-left: 8px;
+        margin-left: 8px;
+      }
+
+      i {
+        color: $warning-color;
+      }
+    }
+  }
+
+  #video-links {
+    .embed-responsive+.embed-responsive {
+      margin-top: 30px;
+    }
+  }
+}
+
+.search-list {
+  margin-bottom: 30px;
+  width: auto;
+  display: inline-flex;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid $primary-color;
+  border: none;
+
+  .nav-item {
+    background-color: rgba($primary-color, 0.1);
+
+    .nav-link {
+      border: none;
+      padding: 0.7rem 1.5rem;
+      opacity: 0.5;
+
+      &.active {
+        background-color: rgba($primary-color, 0.1);
+        color: var(--theme-deafult);
+        opacity: 1;
+      }
+    }
+
+    &.show,
+    &.active {
+      background-color: rgba($primary-color, 0.1);
+    }
+  }
+}
+
+/**=====================
+    51. Search CSS Ends
+==========================**/

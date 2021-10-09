@@ -1,0 +1,98 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var knobchart             = true;
+- var page_knobchart        = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Knob Chart
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Charts
+                                      li.breadcrumb-item.active Knob Chart
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Clock
+                            .card-body
+                              .knob-block.text-center.knob-chart
+                                .chart-clock-main
+                                  .clock-large
+                                    input.knob.hour(data-min='0', data-max='24', data-bgcolor='#eeeeee', data-fgcolor='#7366ff', data-displayinput='false', data-width='300', data-height='300', data-thickness='.2')
+                                  .clock-medium
+                                    input.knob.minute(data-min='0', data-max='60', data-bgcolor='#eeeeee', data-fgcolor='#dc3545', data-displayinput='false', data-width='200', data-height='200', data-thickness='.20')
+                                  .clock-small
+                                    input.knob.second(data-min='0', data-max='60', data-bgcolor='#eeeeee', data-fgcolor='#51bb25', data-displayinput='false', data-width='100', data-height='100', data-thickness='.2')
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Tron
+                            .card-body
+                              .knob-block.text-center
+                                input.knob(data-width='295', data-height='295', data-angleoffset='180', data-fgcolor='#7366ff', data-skin='tron', data-thickness='.1', value='35')
+                        .col-xl-4.xl-50.col-md-6
+                          .card
+                            .card-header
+                              h5 Angle Offset
+                            .card-body
+                              .knob-block.text-center
+                                input.knob(data-width='200', data-thickness='.1', data-angleoffset='90', data-fgcolor='#7366ff', data-linecap='round', value='35')
+                        .col-xl-4.xl-50.col-md-6
+                          .card
+                            .card-header
+                              h5 Disable Display Input
+                            .card-body
+                              .knob-block.text-center
+                                input.knob(data-width='200', data-thickness='.1', data-fgcolor='#7366ff', data-displayinput='false', value='35')
+                        .col-xl-4.xl-50.col-md-6
+                          .card
+                            .card-header
+                              h5 Cursor Mode
+                            .card-body
+                              .knob-block.text-center
+                                input.knob(data-width='200', data-cursor='true', data-fgcolor='#7366ff', data-thickness='.1', value='29')
+                        .col-xl-4.xl-50.col-md-6
+                          .card
+                            .card-header
+                              h5 Display Previous Value
+                            .card-body
+                              .knob-block.text-center
+                                input.knob(data-width='200', data-thickness='.1', data-fgcolor='#7366ff', data-min='-100', data-displayprevious='true', value='44')
+                        .col-xl-4.xl-50.col-md-6
+                          .card
+                            .card-header
+                              h5 Angle Offset & Arc
+                            .card-body
+                              .knob-block.text-center
+                                input.knob(data-angleoffset='-125', data-anglearc='250', data-fgcolor='#7366ff', data-thickness='.1', data-rotation='anticlockwise', value='35')
+                        .col-xl-4.xl-50.col-md-6
+                          .card
+                            .card-header
+                              h5 4-digit, step 0.1
+                            .card-body
+                              .knob-block.text-center
+                                input.knob(data-min='-10000', data-thickness='.1', data-fgcolor='#7366ff', data-displayprevious='true', data-max='10000', data-step='.1', value='0')
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

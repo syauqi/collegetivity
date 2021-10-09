@@ -1,0 +1,145 @@
+/**=====================
+    10. ICON CSS Start
+==========================**/
+.icon-lists{
+	div{
+		cursor: pointer;
+		line-height: 60px;
+		white-space: nowrap;
+		border-radius:4px;
+		display: flex;
+		align-items: center;
+
+		&:hover{
+			background-color: $auth-bg-color;
+		}
+		i{
+			margin: 0 15px 0 10px;
+			font-size: 24px;
+		}
+	}
+	&.whether-icon{
+		svg{
+			height: 50px;
+			width: 50px;
+		}
+	}
+	&.feather-icons{
+		.media{
+			svg{
+				margin: 0 15px 0 10px;
+			}
+		}
+	}
+	.feather-icon{
+		.icon-first{
+			h6{
+				display: none;
+			}
+		}
+	}
+}
+.flag-icons, .feather-icons{
+	margin-bottom: -15px;
+	margin-top: -15px;
+	div{
+		line-height: 1;
+		word-wrap: break-word;
+		overflow: auto;
+		.flag-icon{
+			height: 50px;
+			width: 50px;
+		}
+		.media{
+			padding-top: 15px;
+			padding-bottom: 15px;
+			width: 100%;
+		}
+		.media-body{
+			h6{
+				margin-bottom: 0;
+				font-size:14px;
+				font-weight: 400;
+				max-width: 100%;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			h5{
+				background-color: var(--theme-deafult);
+				display: inline-block;
+				padding: 3px 5px;
+				font-size: 11px;
+				border-radius: 3px;
+				margin-bottom: 5px;
+				margin-right: 5px;
+				color:$white;
+			}
+		}
+	}
+}
+.icon-hover-bottom{
+	background-color: $light;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	box-shadow: 0px 0px 1px 1px $light-color;
+	z-index: 999;
+	.icon-popup{
+		display: flex;
+		align-items: center;
+		justify-content:center;
+		width:100%;
+		.close-icon{
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			font-size: 20px;
+			color: $gray-60;
+			cursor:pointer;
+		}
+		padding: 20px;
+		>
+		div{
+			display: inline-block;
+			.flag-icon{
+				width: 60px;
+				height: 60px;
+			}
+		}
+		.icon-class{
+			margin: 0 20px;
+			cursor: pointer;
+		}
+	}
+	.icon-title{
+		display: block;
+		color: $dark-color;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	span, label , .btn {
+		font-family: $font-roboto, $font-serif;
+	}
+	.form-group{
+		input{
+			min-width: 300px;
+			background-color: $white;
+			font-family: $font-roboto, $font-serif;
+		}
+	}
+}
+.fa-fa-icon-show-div,.icons-show-div{
+	display:none;
+}
+.icon-first{
+	i{
+		color: $dark-gray;
+	}
+	h6{
+		display: none;
+	}
+}
+/**=====================
+     10. ICON CSS Ends
+==========================**/

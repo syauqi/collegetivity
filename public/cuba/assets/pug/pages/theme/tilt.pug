@@ -1,0 +1,162 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var tilt                  = true;
+- var page_tilt             = true;
+- var height_equal          = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Tilt Animation
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Animation
+                                      li.breadcrumb-item.active Tilt Animation
+                    // Container-fluid starts
+                    .container-fluid
+                      .row.tilt-showcase
+                        .col-sm-12
+                          .card.text-center
+                            .card-header
+                              h5 Parallax hover tilt effect 
+                            .card-body
+                              .row
+                                .col-md-6.offset-md-3
+                                  div
+                                    img.img-fluid.img-thumbnail.js-tilt(src='../assets/images/lightgallry/02.jpg', data-tilt-perspective='300', data-tilt-speed='400', data-tilt-max='5', alt='')
+                                  div
+                                    h6.sub-title.mt-4.mb-0 The most basic usage:
+                                    ul
+                                      li
+                                        .line
+                                          code
+                                            span  &lt;script src="tilt.jquery.js"&gt;&lt;/script&gt;
+                                      li
+                                        .line
+                                          | Mark your elements with
+                                          code
+                                            span  &lt;span data-tilt"&gt;&lt;/span&gt;
+                        .col-xl-4.col-lg-6
+                          .card.height-equal
+                            .card-header
+                              h5 Parallax hover tilt effect 
+                            .card-body
+                              .tilt-image
+                                img.img-fluid.img-thumbnail.js-tilt(src='../assets/images/lightgallry/03.jpg', data-tilt-perspective='300', data-tilt-speed='400', data-tilt-max='5', alt='')
+                              div
+                                h6.sub-title.mt-4 How to Use:
+                                ol.mb-0
+                                  li.m-b-20
+                                    | A tiny requestAnimationFrame powered 60+fps
+                                    | lightweight parallax hover tilt effect for jQuery.
+                                  li.m-b-20
+                                    .line
+                                      | Add 
+                                      code transform-style: preserve-3d 
+                                      | to your tilt element.
+                                  li
+                                    .line
+                                      | Add 
+                                      code transform: translateZ(20px)
+                                      |  to your inner elements that have to pop out.
+                        .col-xl-4.col-lg-6
+                          .card.height-equal
+                            .card-header
+                              h5 Glare effect:
+                            .card-body
+                              .tilt-image
+                                img.img-fluid.img-thumbnail.js-tilt(src='../assets/images/lightgallry/04.jpg', data-tilt-glare='true', data-tilt-maxglare='.5', data-tilt-perspective='200', data-tilt-speed='300', data-tilt-max='10', alt='')
+                              div
+                                h6.sub-title.mt-4 How to Use:
+                                .line
+                                  span
+                                    | Setting this option will enable a glare effect. You can tweak the glare value with 
+                                    code {'maxGlare': .5}
+                                  pre.mb-0.pre-mt
+                                    code.language-javascript
+                                      | $('.js-tilt').tilt({
+                                      |     &nbsp; glare: true,maxGlare: .5
+                                      | })
+                        .col-xl-4.col-lg-6
+                          .card
+                            .card-header
+                              h5 Keep floating:
+                            .card-body
+                              .tilt-image
+                                img.img-fluid.img-thumbnail.js-tilt(src='../assets/images/lightgallry/05.jpg', data-tilt-reset='false', data-tilt-speed='200', data-tilt-max='5', data-tilt-perspective='150', alt='')
+                              div
+                                h6.sub-title.mt-4 How to Use:
+                                .line
+                                  span
+                                    | Setting this option will not reset the tilt element when the user mouse leaves the element.
+                                  pre.mb-0
+                                    code.language-javascript
+                                      | $('.js-tilt').tilt({
+                                      |     &nbsp;  reset: false
+                                      | })
+                        .col-xl-4.col-lg-6
+                          .card
+                            .card-header
+                              h5 Scale on hover
+                            .card-body.o-hidden
+                              .tilt-image
+                                img.img-fluid.img-thumbnail.js-tilt(src='../assets/images/lightgallry/06.jpg', data-tilt-speed='1000', data-tilt-max='20', data-tilt-scale='1.01', data-tilt-perspective='250', alt='')
+                              div
+                                h6.sub-title.mt-4 How to Use:
+                                span Setting this option will scale tilt element on hover.
+                                pre.mb-0
+                                  code.language-javascript
+                                      | $('.js-tilt').tilt({
+                                      |     &nbsp;  scale: 1.2
+                                      | })
+                        .col-xl-4.col-lg-6
+                          .card
+                            .card-header
+                              h5 Disable Y axis
+                            .card-body
+                              .tilt-image
+                                img.img-fluid.img-thumbnail.js-tilt(src='../assets/images/lightgallry/07.jpg', data-tilt-speed='100', data-tilt-max='10', data-tilt-axis='x', data-tilt-perspective='250', alt='')
+                              div
+                                h6.sub-title.mt-4 The most basic usage:
+                                span Setting this option will disable the Y-Axis on the tilt element.
+                                pre.mb-0
+                                  code.language-javascript
+                                      | $('.js-tilt').tilt({
+                                      |     &nbsp;  axis: x
+                                      | })
+                        .col-xl-4.col-lg-6
+                          .card
+                            .card-header
+                              h5 Disable X axis
+                            .card-body
+                              .tilt-image
+                                img.img-fluid.img-thumbnail.js-tilt(src='../assets/images/lightgallry/08.jpg', data-tilt-speed='250', data-tilt-max='10', data-tilt-axis='y', data-tilt-perspective='250', alt='')
+                              div
+                                h6.sub-title.mt-4 The most basic usage:
+                                span Setting this option will disable the X-Axis on the tilt element.
+                                pre.mb-0
+                                  code.language-javascript
+                                      | $('.js-tilt').tilt({
+                                      |     &nbsp;   axis: Y
+                                      | })
+
+                    // Container-fluid ends                    
+                include ../../components/footer
+        include ../../components/footer-files

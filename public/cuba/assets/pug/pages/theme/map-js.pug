@@ -1,0 +1,150 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var footer_f              = true;
+- var map_js                = true;
+- var sidebar               = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Map JS
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Maps
+                                      li.breadcrumb-item.active  Map JS
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Map at a specified location
+                              span Display a map at a specified location and zoom level.
+                            .card-body
+                              #map1.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Map using View Bounds
+                              span Display a map of a given area.
+                            .card-body
+                              #map2.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Multi-language support
+                              span Display a map with labels in a foreign language
+                            .card-body
+                              #map3.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Terrain Map
+                              span Display a topographical map
+                            .card-body
+                              #map4.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Changing from the Metric System
+                              span Display a map including a scale bar in miles or yards
+                            .card-body
+                              #map5.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Panning the Map
+                              span Programmatically pan the map so that it is continually in motion
+                            .card-body
+                              #map6.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Traffic Information
+                              span Display traffic information on the map
+                            .card-body
+                              #map7.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Adding Venues layer to the Map
+                              span Display venue objects (e.g. shops, airports etc) on the map
+                            .card-body
+                              #map8.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Zoom into Bounds
+                              span Zoom into bounds limiting maximum level
+                            .card-body
+                              #map9.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Restrict Map Movement
+                              span Restrict a moveable map to a given rectangular area
+                            .card-body
+                              #map10.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Screen Layer
+                              span Display animated screen layer
+                            .card-body
+                              #map11.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Marker on the Map
+                              span Display a map highlighting points of interest
+                            .card-body
+                              #map12.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Draggable Marker
+                              span Display a map highlighting points of interest
+                            .card-body
+                              #map13.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Polyline on the Map
+                              span Display a map with a line showing a known route
+                            .card-body
+                              #map14.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Polygon on the Map
+                              span Display a map highlighting a region or area
+                            .card-body
+                              #map15.map-js-height
+                        .col-xl-6
+                          .card
+                            .card-header
+                              h5 Polygon on the Map
+                              span Display a map highlighting a region or area
+                            .card-body
+                              #map16.map-js-height
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

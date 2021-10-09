@@ -1,0 +1,130 @@
+- var typeahead             = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Typeahead
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Form Widgets
+                                      li.breadcrumb-item.active Typeahead
+                    // Container-fluid starts
+                    .container-fluid
+                      .typeahead
+                        .row
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5 Basic Demo
+                                span This is the simple demo for Typeahead.
+                              .card-body
+                                #the-basics
+                                  form.theme-form
+                                    .form-group
+                                      input.typeahead.form-control(type='text', placeholder='States of USA')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5 Prefetch
+                                span Prefetched data is fetched and processed on initialization
+                              .card-body
+                                #prefetch
+                                  form.theme-form
+                                    .form-group
+                                      input.typeahead.form-control(type='text', placeholder='Countries')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5 Bloodhound (Suggestion Engine)
+                                span
+                                  | Bloodhound offers advanced functionalities such as prefetching and backfilling with remote data.
+                              .card-body
+                                #bloodhound
+                                  form.theme-form
+                                    .form-group
+                                      input.typeahead.form-control(type='text', placeholder='States of USA')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5 Remote
+                                span
+                                  | Remote data is only used when the data provided by local and prefetch is insufficient
+                              .card-body
+                                #remote
+                                  form.theme-form
+                                    .form-group
+                                      input.typeahead.form-control(type='text', placeholder='Choose Option')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5 Custom Templates
+                                span Custom templates give you full control over how suggestions get rendered
+                              .card-body
+                                #custom-templates
+                                  form.theme-form
+                                    .form-group
+                                      input.typeahead.form-control(type='text', placeholder='Oscar winners')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5 Multiple Sections with Headers
+                                span
+                                  | Two datasets that are prefetched, stored, and searched on the client. Highlighting is enabled.
+                              .card-body
+                                #multiple-datasets
+                                  form.theme-form
+                                    .form-group
+                                      input.typeahead.form-control(type='text', placeholder='NBA and NHL teams')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5 Default Suggestions
+                                span Default suggestions can be shown for empty queries.
+                              .card-body
+                                #default-suggestions
+                                  form.theme-form
+                                    .form-group
+                                      input.typeahead.form-control(type='text', placeholder='NFL Teams')
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header
+                                h5 Scrollable Dropdown Menu
+                                span Dataset shows in scrollable dropdown menu.
+                              .card-body
+                                #scrollable-dropdown-menu
+                                  form.theme-form
+                                    .form-group
+                                      input.typeahead.form-control(type='text', placeholder='Countries')
+                          .col-sm-12
+                            .card
+                              .card-header
+                                h5 RTL Support
+                                span Dataset shows in Right Side.
+                              .card-body
+                                #rtl-support
+                                  form.theme-form
+                                    .form-group
+                                      input.typeahead.form-control(type='text', dir='rtl', placeholder='Countries')
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

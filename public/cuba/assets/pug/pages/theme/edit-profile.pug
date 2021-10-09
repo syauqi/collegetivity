@@ -1,0 +1,249 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Edit Profile
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Users
+                                      li.breadcrumb-item.active  Edit Profile
+                    // Container-fluid starts
+                    .container-fluid
+                      .edit-profile
+                        .row
+                          .col-xl-4
+                            .card
+                              .card-header
+                                h4.card-title.mb-0 My Profile
+                                .card-options
+                                  a.card-options-collapse(href='#', data-toggle='card-collapse')
+                                    i.fe.fe-chevron-up
+                                  a.card-options-remove(href='#', data-toggle='card-remove')
+                                    i.fe.fe-x
+                              .card-body
+                                form
+                                  .row.mb-2
+                                    .col-auto
+                                      img.img-70.rounded-circle(alt='', src='../assets/images/user/7.jpg')
+                                    .col
+                                      h3.mb-1 MARK JECNO
+                                      p.mb-4 DESIGNER
+                                  .form-group.mb-3
+                                    h6.form-label Bio
+                                    textarea.form-control(rows='5') On the other hand, we denounce with righteous indignation
+                                  .form-group.mb-3
+                                    label.form-label Email-Address
+                                    input.form-control(placeholder='your-email@domain.com')
+                                  .form-group.mb-3
+                                    label.form-label Password
+                                    input.form-control(type='password', value='password')
+                                  .form-group.mb-3
+                                    label.form-label Website
+                                    input.form-control(placeholder='http://Uplor .com')
+                                  .form-footer
+                                    button.btn.btn-primary.btn-block Save
+                          .col-xl-8
+                            form.card
+                              .card-header
+                                h4.card-title.mb-0 Edit Profile
+                                .card-options
+                                  a.card-options-collapse(href='#', data-toggle='card-collapse')
+                                    i.fe.fe-chevron-up
+                                  a.card-options-remove(href='#', data-toggle='card-remove')
+                                    i.fe.fe-x
+                              .card-body
+                                .row
+                                  .col-md-5
+                                    .form-group.mb-3
+                                      label.form-label Company
+                                      input.form-control(type='text', placeholder='Company')
+                                  .col-sm-6.col-md-3
+                                    .form-group.mb-3
+                                      label.form-label Username
+                                      input.form-control(type='text', placeholder='Username')
+                                  .col-sm-6.col-md-4
+                                    .form-group.mb-3
+                                      label.form-label Email address
+                                      input.form-control(type='email', placeholder='Email')
+                                  .col-sm-6.col-md-6
+                                    .form-group.mb-3
+                                      label.form-label First Name
+                                      input.form-control(type='text', placeholder='Company')
+                                  .col-sm-6.col-md-6
+                                    .form-group.mb-3
+                                      label.form-label Last Name
+                                      input.form-control(type='text', placeholder='Last Name')
+                                  .col-md-12
+                                    .form-group.mb-3
+                                      label.form-label Address
+                                      input.form-control(type='text', placeholder='Home Address')
+                                  .col-sm-6.col-md-4
+                                    .form-group.mb-3
+                                      label.form-label City
+                                      input.form-control(type='text', placeholder='City')
+                                  .col-sm-6.col-md-3
+                                    .form-group.mb-3
+                                      label.form-label Postal Code
+                                      input.form-control(type='number', placeholder='ZIP Code')
+                                  .col-md-5
+                                    .form-group.mb-3
+                                      label.form-label Country
+                                      select.form-control.btn-square
+                                        option(value='0') --Select--
+                                        option(value='1') Germany
+                                        option(value='2') Canada
+                                        option(value='3') Usa
+                                        option(value='4') Aus
+                                  .col-md-12
+                                    .form-group.mb-3.mb-0
+                                      label.form-label About Me
+                                      textarea.form-control(rows='5', placeholder='Enter About your description')
+                              .card-footer.text-right
+                                button.btn.btn-primary(type='submit') Update Profile
+                          .col-md-12
+                            .card
+                              .card-header
+                                h4.card-title.mb-0 Add projects And Upload
+                                .card-options
+                                  a.card-options-collapse(href='#', data-toggle='card-collapse')
+                                    i.fe.fe-chevron-up
+                                  a.card-options-remove(href='#', data-toggle='card-remove')
+                                    i.fe.fe-x
+                              .table-responsive.add-project
+                                table.table.card-table.table-vcenter.text-nowrap
+                                  thead
+                                    tr
+                                      th Project Name
+                                      th Date
+                                      th Status
+                                      th Price
+                                      th
+                                  tbody
+                                    tr
+                                      td
+                                        a.text-inherit(href='#') Untrammelled prevents 
+                                      td 28 May 2018
+                                      td
+                                        span.status-icon.bg-success
+                                        |  Completed
+                                      td $56,908
+                                      td.text-right
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-primary.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-pencil
+                                          |  Edit
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-transparent.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-link
+                                          |  Update
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-danger.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-trash
+                                          |  Delete
+                                    tr
+                                      td
+                                        a.text-inherit(href='#') Untrammelled prevents
+                                      td 12 June 2018
+                                      td
+                                        span.status-icon.bg-danger
+                                        |  On going
+                                      td $45,087
+                                      td.text-right
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-primary.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-pencil
+                                          |  Edit
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-transparent.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-link
+                                          |  Update
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-danger.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-trash
+                                          |  Delete
+                                    tr
+                                      td
+                                        a.text-inherit(href='#') Untrammelled prevents
+                                      td 12 July 2018
+                                      td
+                                        span.status-icon.bg-warning
+                                        |  Pending
+                                      td $60,123
+                                      td.text-right
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-primary.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-pencil
+                                          |  Edit
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-transparent.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-link
+                                          |  Update
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-danger.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-trash
+                                          |  Delete
+                                    tr
+                                      td
+                                        a.text-inherit(href='#') Untrammelled prevents
+                                      td 14 June 2018
+                                      td
+                                        span.status-icon.bg-warning
+                                        |  Pending
+                                      td $70,435
+                                      td.text-right
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-primary.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-pencil
+                                          |  Edit
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-transparent.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-link
+                                          |  Update
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-danger.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-trash
+                                          |  Delete
+                                    tr
+                                      td
+                                        a.text-inherit(href='#') Untrammelled prevents
+                                      td 25 June 2018
+                                      td
+                                        span.status-icon.bg-success
+                                        |  Completed
+                                      td $15,987
+                                      td.text-right
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-primary.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-pencil
+                                          |  Edit
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-transparent.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-link
+                                          |  Update
+                                        a.icon(href='javascript:void(0)')
+                                        a.btn.btn-danger.btn-sm(href='javascript:void(0)')
+                                          i.fa.fa-trash
+                                          |  Delete
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

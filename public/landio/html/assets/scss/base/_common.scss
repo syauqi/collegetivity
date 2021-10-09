@@ -1,0 +1,419 @@
+/*======= Common =======*/
+:root {
+    @each $color, $value in $colors {
+        --#{$color}: #{$value};
+    }
+
+    @each $family, $value in $font-family {
+        --#{$family}: #{$value};
+    }
+}
+
+body {
+    color: $color-body;
+    font-family: $font-cs-book;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+
+.slick-slide img {
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-cs-bold;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $color-heading;
+    margin: 0px;
+
+    a {
+        color: $color-heading;
+    }
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+p {
+    margin: 0px;
+}
+
+a {
+    display: inline-block;
+    transition: all 0.3s ease-out 0s;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+a,
+span {
+    display: inline-block;
+}
+
+/*======= Common Classes =======*/
+.border-bottom-primary {
+    border-bottom: 1px solid rgba(#473bf0, 0.1);
+}
+
+.border-top-primary {
+    border-top: 1px solid rgba(#473bf0, 0.1);
+}
+
+.border-bottom-primary-3 {
+    border-bottom: 1px solid rgba(#e95e6c, 0.12);
+}
+
+.border-top-primary-3 {
+    border-top: 1px solid rgba(#e95e6c, 0.12);
+}
+
+.border-bottom-off-white {
+    border-bottom: 2px solid rgba(#ffffff, 0.10);
+}
+
+.border-top-off-white {
+    border-top: 2px solid rgba(#ffffff, 0.10);
+}
+
+.border-top-secondary {
+    border-top: 1px solid rgba(#161c2d, 0.1);
+}
+
+.border-bottom-secondary {
+    border-bottom: 1px solid rgba(#161c2d, 0.1);
+}
+
+.section-inner-line {
+    height: 1px;
+    width: 100%;
+    background-color: $color-heading-3;
+    opacity: 0.1;
+}
+
+.slick-dots {
+    text-align: center;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        position: relative;
+        display: inline-block;
+        line-height: 1;
+        height: 12px;
+        width: 12px;
+        background: #dad8fc;
+        border-radius: 50%;
+        margin: 0 10px;
+        cursor: pointer;
+
+        button {
+            width: 100%;
+            height: 100%;
+            font-size: 0;
+            background-color: transparent;
+            border: none;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            height: 30px;
+            width: 30px;
+            background: transparent;
+            z-index: -1;
+            border-radius: 50%;
+            left: -9px;
+            top: -9px;
+            border: 2px solid $color-primary;
+            transition: 0.3s;
+            transform: scale(0);
+            z-index: 1;
+        }
+
+        &.slick-active {
+            background-color: $color-primary;
+
+            &::after {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.text-pullquote {
+    position: relative;
+    padding-left: 30px;
+    font-family: $font-cs-medium;
+    color: $color-heading;
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 3px;
+        background-color: $color-primary-2;
+        height: 90%;
+        width: 4px;
+    }
+
+    &.pullquote-secondary-color {
+        color: $color-heading-2;
+
+        &::after {
+            background-color: $color-secondary;
+        }
+    }
+}
+
+/*======= Custom Container =======*/
+.container-1420 {
+    max-width: 1450px;
+}
+
+.container-1430 {
+    max-width: 1460px;
+}
+
+.container-1380 {
+    max-width: 1410px;
+}
+
+.container-1470 {
+    max-width: 1500px;
+}
+
+.container-1600 {
+    max-width: 1630px;
+}
+
+.container-fluid {
+    &.fluid-gap-70 {
+        @include respond-above(xxl) {
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+    }
+}
+
+.fluid-in-container-left {
+    padding-left: calc((100% - 1200px) / 2);
+}
+
+.fluid-in-container-right {
+    padding-right: calc((100% - 1200px) / 2);
+}
+
+.bg-cover-center {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bg-cover-left {
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+/*======= Specific Page Color =======*/
+.app-landing-page {
+    color: $color-body-2;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $color-heading-3;
+
+        a {
+            color: $color-heading-3;
+        }
+    }
+}
+
+.fintech-landing-page {
+    color: $color-body-3;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $color-heading-4;
+
+        a {
+            color: $color-heading-4;
+        }
+    }
+}
+
+.software-landing-page {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $color-heading-4;
+
+        a {
+            color: $color-heading-4;
+        }
+    }
+}
+
+.e-wallet-landing {
+    background-color: $color-dark-2;
+    color: $color-body-4;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $color-white;
+
+        a {
+            color: $color-white;
+        }
+    }
+}
+
+.e-wallet-boxed-container {
+    max-width: 1600px;
+    margin: auto;
+    background-color: $color-dark-3;
+    border-radius: 12px;
+
+    &.boxed-bordered {
+        border-right: 7px solid $color-primary-6;
+        border-bottom: 7px solid $color-primary-6;
+    }
+
+    &.boxed-shape {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url(../img/e-wallet-boxed-shape.png);
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-size: contain;
+        }
+    }
+}
+
+/*======= Background & Colors =======*/
+.bg-primary-color {
+    background-color: $color-primary;
+}
+
+.bg-primary-color-2 {
+    background-color: $color-primary-2;
+}
+
+.bg-primary-color-4 {
+    background-color: $color-primary-4;
+}
+
+.bg-secondary-color {
+    background-color: $color-secondary;
+}
+
+.bg-secondary-color-3 {
+    background-color: $color-secondary-2;
+}
+
+.bg-secondary-color-2 {
+    background-color: $color-secondary-3;
+}
+
+.bg-secondary-color-4 {
+    background-color: $color-secondary-4;
+}
+
+.bg-secondary-color-5 {
+    background-color: $color-secondary-5;
+}
+
+.bg-heading-color {
+    background-color: $color-heading;
+}
+
+.bg-heading-color-2 {
+    background-color: $color-heading-2;
+}
+
+.bg-heading-color-3 {
+    background-color: $color-heading-3;
+}
+
+.bg-grey-color {
+    background-color: $color-grey;
+}
+
+.bg-soft-grey-color {
+    background-color: $color-soft-grey;
+}
+
+
+.bg-soft-grey-color-2 {
+    background-color: $color-soft-grey-2
+}
+
+.bg-dark-color {
+    background-color: $color-dark;
+}
+
+.bg-dark-color-3 {
+    background-color: $color-dark-3;
+}
+
+.color-primary-4 {
+    color: $color-primary-4;
+}
+
+.color-primary-5 {
+    color: $color-primary-5;
+}
+
+.color-primary-6 {
+    color: $color-primary-6;
+}

@@ -1,0 +1,91 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Calender Basic
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Calender
+                                      li.breadcrumb-item.active Calender Basic
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card.box-shadow-title
+                            .card-header
+                              h5 Examples
+                              span
+                                | While shadows on components are disabled by default in Bootstrap and can be enabled via 
+                                code $enable-shadows
+                                | , you can also quickly add or remove a shadow with our 
+                                code box-shadow
+                                |  utility classes. Includes support for 
+                                code .shadow-none
+                                |  and three default sizes (which have associated variables to match).
+                            .d-flex
+                              .col-12
+                                h6.sub-title.mt-0 Larger shadow
+                              .col-sm-4
+                                .shadow-lg.p-25.shadow-showcase.text-center
+                                  h5.m-0.f-18 Larger shadow
+                              .col-sm-4
+                                .shadow-lg.p-25.shadow-showcase.text-center
+                                  h5.m-0.f-18 Larger shadow
+                              .col-sm-4
+                                .shadow-lg.p-25.shadow-showcase.text-center
+                                  h5.m-0.f-18 Larger shadow
+                              .col-12
+                                h6.sub-title Regular shadow
+                              .col-sm-4
+                                .shadow.shadow-showcase.p-25.text-center
+                                  h5.m-0.f-18 Regular shadow
+                              .col-sm-4
+                                .shadow.shadow-showcase.p-25.text-center
+                                  h5.m-0.f-18 Regular shadow
+                              .col-sm-4
+                                .shadow.shadow-showcase.p-25.text-center
+                                  h5.m-0.f-18 Regular shadow
+                              .col-12
+                                h6.sub-title Small shadow
+                              .col-sm-4
+                                .shadow-sm.shadow-showcase.p-25.text-center
+                                  h5.m-0.f-18 Small shadow
+                              .col-sm-4
+                                .shadow-sm.shadow-showcase.p-25.text-center
+                                  h5.m-0.f-18 Small shadow
+                              .col-sm-4
+                                .shadow-sm.shadow-showcase.p-25.text-center
+                                  h5.m-0.f-18 Small shadow
+                              .col-12
+                                h6.sub-title No shadow
+                              .col-sm-4
+                                .shadow-none.shadow-showcase.p-25.text-center
+                                  h5.m-0.f-18 No shadow
+                              .col-sm-4
+                                .shadow-none.shadow-showcase.p-25.text-center
+                                  h5.m-0.f-18 No shadow
+                              .col-sm-4
+                                .shadow-sm.shadow-showcase.shadow-none.p-25.text-center
+                                  h5.m-0.f-18 No shadow
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

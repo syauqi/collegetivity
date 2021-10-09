@@ -1,0 +1,118 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Breadcrumb
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Bonus Ui
+                                      li.breadcrumb-item.active Breadcrumb
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        // default breadcrumb start
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Default bootstrap breadcrumb
+                              span
+                                | use class 
+                                code .breadcrumb to ol
+                            .card-body
+                              ol.breadcrumb.m-b-0.bg-white.p-t-0.p-l-0
+                                li.breadcrumb-item.active Home
+                              ol.breadcrumb.m-b-0.bg-white.p-l-0
+                                li.breadcrumb-item
+                                  a(href='javascript:void(0)') Home
+                                li.breadcrumb-item.active Library
+                              ol.breadcrumb.bg-white.m-b-0.p-l-0
+                                li.breadcrumb-item
+                                  a(href='javascript:void(0)') Home
+                                li.breadcrumb-item
+                                  a(href='javascript:void(0)') Library
+                                li.breadcrumb-item.active Data
+                              ol.breadcrumb.bg-white.m-b-0.p-b-0.p-l-0
+                                li.breadcrumb-item
+                                  a(href='javascript:void(0)')
+                                    i.fa.fa-home
+                                li.breadcrumb-item Library
+                                li.breadcrumb-item.active Data
+                        // default breadcrumb ends
+                        // Nav breadcrumb start
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Nav breadcrumb
+                              span
+                                | use class 
+                                code .breadcrumb to nav
+                                |  similar to navigation
+                            .card-body
+                              nav.breadcrumb.m-b-0
+                                a.breadcrumb-item(href='javascript:void(0)') Home
+                                a.breadcrumb-item(href='javascript:void(0)') Library
+                                span.breadcrumb-item.active Bootstrap
+                        // Nav breadcrumb ends
+                        // colored navigation start
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Colored breadcrumb
+                              span
+                                | use class 
+                                code .breadcrumb-colored .bg-primary
+                            .card-body
+                              ol.breadcrumb.breadcrumb-colored.m-b-30.bg-primary
+                                li.breadcrumb-item
+                                  a(href='javascript:void(0)') Home
+                                li.breadcrumb-item.active Library
+                              ol.breadcrumb.breadcrumb-colored.m-b-30.bg-secondary
+                                li.breadcrumb-item
+                                  a(href='javascript:void(0)') Home
+                                li.breadcrumb-item.active Library
+                              ol.breadcrumb.breadcrumb-colored.m-b-30.bg-success
+                                li.breadcrumb-item
+                                  a(href='javascript:void(0)') Home
+                                li.breadcrumb-item.active Library
+                              ol.breadcrumb.breadcrumb-colored.m-b-30.bg-info
+                                li.breadcrumb-item
+                                  a(href='javascript:void(0)') Home
+                                li.breadcrumb-item.active Library
+                              ol.breadcrumb.breadcrumb-colored.m-b-30.bg-warning
+                                li.breadcrumb-item
+                                  a(href='javascript:void(0)') Home
+                                li.breadcrumb-item.active Library
+                              ol.breadcrumb.breadcrumb-colored.m-b-30.bg-danger
+                                li.breadcrumb-item
+                                  a(href='javascript:void(0)') Home
+                                li.breadcrumb-item.active Library
+                              ol.breadcrumb.breadcrumb-colored.m-b-30.bg-light
+                                li.breadcrumb-item
+                                  a.txt-dark(href='javascript:void(0)') Home
+                                li.breadcrumb-item.txt-dark.active Library
+                              ol.breadcrumb.breadcrumb-colored.m-b-0.bg-dark
+                                li.breadcrumb-item
+                                  a(href='javascript:void(0)') Home
+                                li.breadcrumb-item.active Library
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

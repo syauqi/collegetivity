@@ -1,0 +1,349 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var notify                = true;
+- var page_notify           = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Bootstrap Notify
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Bonus Ui
+                                      li.breadcrumb-item.active Bootstrap Notify
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header
+                              h5 Bootstrap Notify
+                              span lorem ipsum dolor sit amet, consectetur adipisicing elit
+                            .card-body
+                              .m-portlet__body
+                                .row
+                                  .col-xl-5
+                                form.theme-form.sm-form
+                                  .form-group
+                                    .row
+                                      label.col-xl-2.col-sm-12.col-md-12.col-form-label Placement
+                                      .col-xl-4.col-sm-12.col-md-12.mb-4
+                                        select#bootstrap-notify-placement-from.form-control
+                                          option(value='top') Top
+                                          option(value='bottom') Bottom
+                                      .col-xl-4.col-md-12.col-sm-12.mb-4
+                                        select#bootstrap-notify-placement-align.form-control
+                                          option(value='left') Left
+                                          option(value='right', selected='') Right
+                                          option(value='center') Center
+                                    .row
+                                      label.col-xl-2.col-sm-12.col-md-12.col-form-label Animation
+                                      .col-xl-4.col-md-12.col-sm-12.mb-4
+                                        select#bootstrap-notify-enter.form-control
+                                          optgroup(label='Attention Seekers')
+                                            option(value='bounce') bounce
+                                            option(value='flash') flash
+                                            option(value='pulse') pulse
+                                            option(value='rubberBand') rubberBand
+                                            option(value='shake') shake
+                                            option(value='swing') swing
+                                            option(value='tada') tada
+                                            option(value='wobble') wobble
+                                            option(value='jello') jello
+                                          optgroup(label='Bouncing Entrances')
+                                            option(value='bounceIn') bounceIn
+                                            option(value='bounceInDown') bounceInDown
+                                            option(value='bounceInLeft') bounceInLeft
+                                            option(value='bounceInRight') bounceInRight
+                                            option(value='bounceInUp') bounceInUp
+                                          optgroup(label='Bouncing Exits')
+                                            option(value='bounceOut') bounceOut
+                                            option(value='bounceOutDown') bounceOutDown
+                                            option(value='bounceOutLeft') bounceOutLeft
+                                            option(value='bounceOutRight') bounceOutRight
+                                            option(value='bounceOutUp') bounceOutUp
+                                          optgroup(label='Fading Entrances')
+                                            option(value='fadeIn') fadeIn
+                                            option(value='fadeInDown') fadeInDown
+                                            option(value='fadeInDownBig') fadeInDownBig
+                                            option(value='fadeInLeft') fadeInLeft
+                                            option(value='fadeInLeftBig') fadeInLeftBig
+                                            option(value='fadeInRight') fadeInRight
+                                            option(value='fadeInRightBig') fadeInRightBig
+                                            option(value='fadeInUp') fadeInUp
+                                            option(value='fadeInUpBig') fadeInUpBig
+                                          optgroup(label='Fading Exits')
+                                            option(value='fadeOut') fadeOut
+                                            option(value='fadeOutDown') fadeOutDown
+                                            option(value='fadeOutDownBig') fadeOutDownBig
+                                            option(value='fadeOutLeft') fadeOutLeft
+                                            option(value='fadeOutLeftBig') fadeOutLeftBig
+                                            option(value='fadeOutRight') fadeOutRight
+                                            option(value='fadeOutRightBig') fadeOutRightBig
+                                            option(value='fadeOutUp') fadeOutUp
+                                            option(value='fadeOutUpBig') fadeOutUpBig
+                                          optgroup(label='Flippers')
+                                            option(value='flip') flip
+                                            option(value='flipInX') flipInX
+                                            option(value='flipInY') flipInY
+                                            option(value='flipOutX') flipOutX
+                                            option(value='flipOutY') flipOutY
+                                          optgroup(label='Lightspeed')
+                                            option(value='lightSpeedIn') lightSpeedIn
+                                            option(value='lightSpeedOut') lightSpeedOut
+                                          optgroup(label='Rotating Entrances')
+                                            option(value='rotateIn') rotateIn
+                                            option(value='rotateInDownLeft') rotateInDownLeft
+                                            option(value='rotateInDownRight') rotateInDownRight
+                                            option(value='rotateInUpLeft') rotateInUpLeft
+                                            option(value='rotateInUpRight') rotateInUpRight
+                                          optgroup(label='Rotating Exits')
+                                            option(value='rotateOut') rotateOut
+                                            option(value='rotateOutDownLeft') rotateOutDownLeft
+                                            option(value='rotateOutDownRight') rotateOutDownRight
+                                            option(value='rotateOutUpLeft') rotateOutUpLeft
+                                            option(value='rotateOutUpRight') rotateOutUpRight
+                                          optgroup(label='Sliding Entrances')
+                                            option(value='slideInUp') slideInUp
+                                            option(value='slideInDown') slideInDown
+                                            option(value='slideInLeft') slideInLeft
+                                            option(value='slideInRight') slideInRight
+                                          optgroup(label='Sliding Exits')
+                                            option(value='slideOutUp') slideOutUp
+                                            option(value='slideOutDown') slideOutDown
+                                            option(value='slideOutLeft') slideOutLeft
+                                            option(value='slideOutRight') slideOutRight
+                                          optgroup(label='Zoom Entrances')
+                                            option(value='zoomIn') zoomIn
+                                            option(value='zoomInDown') zoomInDown
+                                            option(value='zoomInLeft') zoomInLeft
+                                            option(value='zoomInRight') zoomInRight
+                                            option(value='zoomInUp') zoomInUp
+                                          optgroup(label='Zoom Exits')
+                                            option(value='zoomOut') zoomOut
+                                            option(value='zoomOutDown') zoomOutDown
+                                            option(value='zoomOutLeft') zoomOutLeft
+                                            option(value='zoomOutRight') zoomOutRight
+                                            option(value='zoomOutUp') zoomOutUp
+                                          optgroup(label='Specials')
+                                            option(value='hinge') hinge
+                                            option(value='rollIn') rollIn
+                                            option(value='rollOut') rollOut
+                                      .col-xl-4.col-md-12.col-sm-12.mb-4
+                                        select#bootstrap-notify-exit.form-control
+                                          optgroup(label='Attention Seekers')
+                                            option(value='bounce') bounce
+                                            option(value='flash') flash
+                                            option(value='pulse') pulse
+                                            option(value='rubberBand') rubberBand
+                                            option(value='shake') shake
+                                            option(value='swing') swing
+                                            option(value='tada') tada
+                                            option(value='wobble') wobble
+                                            option(value='jello') jello
+                                          optgroup(label='Bouncing Entrances')
+                                            option(value='bounceIn') bounceIn
+                                            option(value='bounceInDown') bounceInDown
+                                            option(value='bounceInLeft') bounceInLeft
+                                            option(value='bounceInRight') bounceInRight
+                                            option(value='bounceInUp') bounceInUp
+                                          optgroup(label='Bouncing Exits')
+                                            option(value='bounceOut') bounceOut
+                                            option(value='bounceOutDown') bounceOutDown
+                                            option(value='bounceOutLeft') bounceOutLeft
+                                            option(value='bounceOutRight') bounceOutRight
+                                            option(value='bounceOutUp') bounceOutUp
+                                          optgroup(label='Fading Entrances')
+                                            option(value='fadeIn') fadeIn
+                                            option(value='fadeInDown') fadeInDown
+                                            option(value='fadeInDownBig') fadeInDownBig
+                                            option(value='fadeInLeft') fadeInLeft
+                                            option(value='fadeInLeftBig') fadeInLeftBig
+                                            option(value='fadeInRight') fadeInRight
+                                            option(value='fadeInRightBig') fadeInRightBig
+                                            option(value='fadeInUp') fadeInUp
+                                            option(value='fadeInUpBig') fadeInUpBig
+                                          optgroup(label='Fading Exits')
+                                            option(value='fadeOut') fadeOut
+                                            option(value='fadeOutDown') fadeOutDown
+                                            option(value='fadeOutDownBig') fadeOutDownBig
+                                            option(value='fadeOutLeft') fadeOutLeft
+                                            option(value='fadeOutLeftBig') fadeOutLeftBig
+                                            option(value='fadeOutRight') fadeOutRight
+                                            option(value='fadeOutRightBig') fadeOutRightBig
+                                            option(value='fadeOutUp') fadeOutUp
+                                            option(value='fadeOutUpBig') fadeOutUpBig
+                                          optgroup(label='Flippers')
+                                            option(value='flip') flip
+                                            option(value='flipInX') flipInX
+                                            option(value='flipInY') flipInY
+                                            option(value='flipOutX') flipOutX
+                                            option(value='flipOutY') flipOutY
+                                          optgroup(label='Lightspeed')
+                                            option(value='lightSpeedIn') lightSpeedIn
+                                            option(value='lightSpeedOut') lightSpeedOut
+                                          optgroup(label='Rotating Entrances')
+                                            option(value='rotateIn') rotateIn
+                                            option(value='rotateInDownLeft') rotateInDownLeft
+                                            option(value='rotateInDownRight') rotateInDownRight
+                                            option(value='rotateInUpLeft') rotateInUpLeft
+                                            option(value='rotateInUpRight') rotateInUpRight
+                                          optgroup(label='Rotating Exits')
+                                            option(value='rotateOut') rotateOut
+                                            option(value='rotateOutDownLeft') rotateOutDownLeft
+                                            option(value='rotateOutDownRight') rotateOutDownRight
+                                            option(value='rotateOutUpLeft') rotateOutUpLeft
+                                            option(value='rotateOutUpRight') rotateOutUpRight
+                                          optgroup(label='Sliding Entrances')
+                                            option(value='slideInUp') slideInUp
+                                            option(value='slideInDown') slideInDown
+                                            option(value='slideInLeft') slideInLeft
+                                            option(value='slideInRight') slideInRight
+                                          optgroup(label='Sliding Exits')
+                                            option(value='slideOutUp') slideOutUp
+                                            option(value='slideOutDown') slideOutDown
+                                            option(value='slideOutLeft') slideOutLeft
+                                            option(value='slideOutRight') slideOutRight
+                                          optgroup(label='Zoom Entrances')
+                                            option(value='zoomIn') zoomIn
+                                            option(value='zoomInDown') zoomInDown
+                                            option(value='zoomInLeft') zoomInLeft
+                                            option(value='zoomInRight') zoomInRight
+                                            option(value='zoomInUp') zoomInUp
+                                          optgroup(label='Zoom Exits')
+                                            option(value='zoomOut') zoomOut
+                                            option(value='zoomOutDown') zoomOutDown
+                                            option(value='zoomOutLeft') zoomOutLeft
+                                            option(value='zoomOutRight') zoomOutRight
+                                            option(value='zoomOutUp') zoomOutUp
+                                          optgroup(label='Specials')
+                                            option(value='hinge') hinge
+                                            option(value='rollIn') rollIn
+                                            option(value='rollOut') rollOut
+                                    .row
+                                      label.col-xl-2.col-sm-12.col-md-12.col-form-label Icon
+                                      .col-xl-4.col-md-12.col-sm-12.mb-4
+                                        select#bootstrap-notify-icon.form-control
+                                          option(value='') None
+                                          option(value='fa fa-check-square') fa fa-check-square
+                                          option(value='fa fa-warning') fa fa-warning
+                                          option(value='fa fa-cloud-download') fa fa-cloud-download
+                                          option(value='fa fa-unlock-alt') fa fa-unlock-alt
+                                          option(value='fa fa-spin fa-circle-o-notch') fa fa-spin fa-circle-o-notch
+                                          option(value='fa fa-spin fa-refresh') fa fa-spin fa-refresh
+                                    .row
+                                    .form-group.row
+                                .row
+                                  .col-xl-6
+                                    .form-group.row
+                                      label.col-sm-4.col-6.col-form-label URL Clickable
+                                      .col-sm-8.col-6
+                                        .media-body.text-left.icon-state
+                                          label.switch
+                                            input#bootstrap-notify-url(type='checkbox')
+                                            span.switch-state
+                                    .form-group.row
+                                      label.col-sm-4.col-6.col-form-label Allow dismiss
+                                      .col-sm-8.col-6
+                                        .media-body.text-left.icon-state
+                                          label.switch
+                                            input#bootstrap-notify-dismiss(type='checkbox')
+                                            span.switch-state
+                                    .form-group.row
+                                      label.col-sm-4.col-6.col-form-label Pause on hover
+                                      .col-sm-8.col-6
+                                        .media-body.text-left.icon-state
+                                          label.switch
+                                            input#bootstrap-notify-pause(type='checkbox')
+                                            span.switch-state
+                                    .form-group.row
+                                      label.col-sm-4.col-6.col-form-label Newest on top
+                                      .col-sm-8.col-6
+                                        .media-body.text-left.icon-state
+                                          label.switch
+                                            input#bootstrap-notify-top(type='checkbox')
+                                            span.switch-state
+                                    .form-group.row
+                                      label.col-sm-4.col-6.col-form-label Show Title
+                                      .col-sm-8.col-6
+                                        .media-body.text-left.icon-state
+                                          label.switch
+                                            input#bootstrap-notify-title(type='checkbox')
+                                            span.switch-state
+                                    .form-group.row
+                                      label.col-sm-4.col-6.col-form-label Show Progress
+                                      .col-sm-8.col-6
+                                        .media-body.text-left.icon-state
+                                          label.switch
+                                            input#bootstrap-notify-progress(type='checkbox')
+                                            span.switch-state
+                                  .col-xl-6.theme-form.sm-form
+                                    .form-group.row
+                                      label.col-form-label.col-lg-3.col-sm-12 Spacing
+                                      .col-lg-4.col-md-9.col-sm-12
+                                        input#bootstrap-notify-spacing.form-control(type='number', value='10')
+                                    .form-group.row
+                                      label.col-form-label.col-lg-3.col-sm-12 Offset X
+                                      .col-lg-4.col-md-9.col-sm-12
+                                        input#bootstrap-notify-offset-x.form-control(type='number', value='30')
+                                    .form-group.row
+                                      label.col-form-label.col-lg-3.col-sm-12 Offset Y
+                                      .col-lg-4.col-md-9.col-sm-12
+                                        input#bootstrap-notify-offset-y.form-control(type='number', value='30')
+                                    .form-group.row
+                                      label.col-form-label.col-lg-3.col-sm-12 Delay
+                                      .col-lg-4.col-md-9.col-sm-12
+                                        input#bootstrap-notify-delay.form-control(type='number', value='1000')
+                                    .form-group.row
+                                      label.col-form-label.col-lg-3.col-sm-12 Timer
+                                      .col-lg-4.col-md-9.col-sm-12
+                                        input#bootstrap-notify-timer.form-control(type='number', value='2000')
+                                    .form-group.row
+                                      label.col-form-label.col-lg-3.col-sm-12 Z-Index
+                                      .col-lg-4.col-md-9.col-sm-12
+                                        input#bootstrap-notify-z-index.form-control(type='number', value='10000')
+                                    .form-group.row
+                                      label.col-form-label.col-lg-3.col-sm-12 State
+                                      .col-lg-4.col-md-9.col-sm-12
+                                        select#bootstrap-notify-state.form-control
+                                          option(value='primary') Primary
+                                          option(value='secondary') Secondary
+                                          option(value='success') Success
+                                          option(value='info') Info
+                                          option(value='warning') Warning
+                                          option(value='danger') Danger
+                                          option(value='light') light
+                                          option(value='dark') dark
+                            .card-footer
+                              .col-sm-12
+                                button#bootstrap-notify-gen-btn.btn.btn-primary Display Notify
+                                button.btn.btn-light(type='reset') Reset
+                          .card
+                            .card-body
+                              .row
+                                .col-sm-12
+                                  h5 Example Of How To Use Bootstrap Notify
+                                  span
+                                    | Click Display Notify button to show different notify demo's & display script of different Notify demo below
+                                  pre.mb-0
+                                    code#notify-code-show
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files      

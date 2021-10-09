@@ -1,0 +1,107 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var morrischart           = true;
+- var page_morrischart      = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | Morris Chart
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Morris Chart
+                                      li.breadcrumb-item.active Charts
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-lg-6.col-sm-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Line Chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #morris-line-chart.flot-chart-placeholder
+                        .col-lg-6.col-sm-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Updating Data
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #updating-data-morris-chart.flot-chart-placeholder
+                        .col-lg-6.col-sm-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Decimal Data
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #decimal-morris-chart.flot-chart-placeholder.float-left
+                                p#choices.float-right
+                        .col-lg-6.col-sm-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Displaying X Labels Diagonally
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #x-Labels-Diagonally-morris-chart.flot-chart-placeholder
+                        .col-lg-6.col-sm-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Bar Line Chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #bar-line-chart-morris.flot-chart-placeholder
+                        .col-lg-6.col-sm-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Displaying X Labels Diagonally(Bar Chart)
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #x-lable-morris-chart.flot-chart-placeholder
+                        .col-lg-6.col-sm-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Stacked Bars Chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #stacked-bar-chart.flot-chart-placeholder
+                        .col-lg-6.col-sm-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Simple Bar Charts
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #morris-simple-bar-chart.flot-chart-placeholder
+                        .col-lg-6.col-sm-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Area charts behaving like line Charts
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #graph123.flot-chart-placeholder
+                        .col-lg-6.col-sm-12.box-col-12
+                          .card
+                            .card-header
+                              h5 Donut Color Chart
+                            .card-body.chart-block
+                              .flot-chart-container
+                                #donut-color-chart-morris.flot-chart-placeholder
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

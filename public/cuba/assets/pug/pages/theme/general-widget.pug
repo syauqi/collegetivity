@@ -1,0 +1,1052 @@
+- var prism                 = true;
+- var height_equal          = true;
+- var clipboard             = true;
+- var customcard            = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var date_picker           = true;
+- var whether_icon          = true;
+- var counter               = true;
+- var owlcarousel           = true;
+- var general_widget        = true;
+- var sidebar               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/taptop
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-title
+                            .row
+                                .col-6
+                                    h3
+                                      | General
+
+                                .col-6
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')                                        
+                                          i(data-feather="home")
+                                      li.breadcrumb-item Widgets
+                                      li.breadcrumb-item.active General
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-6.col-xl-3.col-lg-6
+                          .card.o-hidden
+                            .bg-primary.b-r-4.card-body
+                              .media.static-top-widget
+                                .align-self-center.text-center
+                                  <i data-feather="database"></i>
+                                .media-body
+                                  span.m-0 Earnings
+                                  h4.mb-0.counter 6659
+                                  i.icon-bg(data-feather='database')
+                        .col-sm-6.col-xl-3.col-lg-6
+                          .card.o-hidden
+                            .bg-secondary.b-r-4.card-body
+                              .media.static-top-widget
+                                .align-self-center.text-center
+                                  i(data-feather="shopping-bag")
+                                .media-body
+                                  span.m-0 Products
+                                  h4.mb-0.counter 9856
+                                  i.icon-bg(data-feather='shopping-bag')
+                        .col-sm-6.col-xl-3.col-lg-6
+                          .card.o-hidden
+                            .bg-primary.b-r-4.card-body
+                              .media.static-top-widget
+                                .align-self-center.text-center
+                                  i(data-feather='message-circle')
+                                .media-body
+                                  span.m-0 Messages
+                                  h4.mb-0.counter 893
+                                  i.icon-bg(data-feather='message-circle')
+                        .col-sm-6.col-xl-3.col-lg-6
+                          .card.o-hidden
+                            .bg-primary.b-r-4.card-body
+                              .media.static-top-widget
+                                .align-self-center.text-center
+                                  i(data-feather='user-plus')
+                                .media-body
+                                  span.m-0 New User
+                                  h4.mb-0.counter 45631
+                                  i.icon-bg(data-feather='user-plus')
+                        .col-xl-6.xl-100.box-col-12
+                          .widget-joins.card.widget-arrow
+                            .row
+                              .col-sm-6.pr-0
+                                .media.border-after-xs
+                                  .align-self-center.mr-3.text-left
+                                    h6.mb-1 Sale
+                                    h4.mb-0 Today
+                                  .media-body.align-self-center
+                                    i.font-primary(data-feather='arrow-down')
+                                  .media-body
+                                    h5.mb-0
+                                      | $
+                                      span.counter 25698
+                                    span.mb-1 -$2658(36%)
+                              .col-sm-6.pl-0
+                                .media
+                                  .align-self-center.mr-3.text-left
+                                    h6.mb-1 Sale
+                                    h4.mb-0 Month
+                                  .media-body.align-self-center
+                                    i.font-primary(data-feather='arrow-up')
+                                  .media-body.pl-2
+                                    h5.mb-0
+                                      | $
+                                      span.counter 6954
+                                    span.mb-1 +$369(15%)
+                              .col-sm-6.pr-0
+                                .media.border-after-xs
+                                  .align-self-center.mr-3.text-left
+                                    h6.mb-1 Sale
+                                    h4.mb-0 Week
+                                  .media-body.align-self-center
+                                    i.font-primary(data-feather='arrow-up')
+                                  .media-body
+                                    h5.mb-0
+                                      | $
+                                      span.counter 63147
+                                    span.mb-1 +$69(65%)
+                              .col-sm-6.pl-0
+                                .media
+                                  .align-self-center.mr-3.text-left
+                                    h6.mb-1 Sale
+                                    h4.mb-0 Year
+                                  .media-body.align-self-center.pl-3
+                                    i.font-primary(data-feather='arrow-up')
+                                  .media-body.pl-2
+                                    h5.mb-0
+                                      | $
+                                      span.counter 963198
+                                    span.mb-1 +$3654(90%)          
+                        .col-xl-6.xl-100.box-col-12
+                          .widget-joins.card
+                            .row
+                              .col-sm-6.pr-0
+                                .media.border-after-xs
+                                  .align-self-center.mr-3
+                                    | 68%
+                                    i.fa.fa-angle-up.ml-2
+                                  .media-body.details.pl-3
+                                    span.mb-1 New
+                                    h4.mb-0.counter 6982
+                                  .media-body.align-self-center
+                                    i.font-primary.float-left.ml-2(data-feather='shopping-bag')
+                              .col-sm-6.pl-0
+                                .media
+                                  .align-self-center.mr-3
+                                    | 12%
+                                    i.fa.fa-angle-down.ml-2
+                                  .media-body.details.pl-3
+                                    span.mb-1 Pending
+                                    h4.mb-0.counter 783
+                                  .media-body.align-self-center
+                                    i.font-primary.float-left.ml-3(data-feather='layers')
+                              .col-sm-6.pr-0
+                                .media.border-after-xs
+                                  .align-self-center.mr-3
+                                    | 68%
+                                    i.fa.fa-angle-up.ml-2
+                                  .media-body.details.pl-3.pt-0
+                                    span.mb-1 Done
+                                    h4.mb-0.counter 3674
+                                  .media-body.align-self-center
+                                    i.font-primary.float-left.ml-2(data-feather='shopping-cart')
+                              .col-sm-6.pl-0
+                                .media
+                                  .align-self-center.mr-3
+                                    | 68%
+                                    i.fa.fa-angle-up.ml-2
+                                  .media-body.details.pl-3.pt-0
+                                    span.mb-1 Cancel
+                                    h4.mb-0.counter 069
+                                  .media-body.align-self-center
+                                    i.font-primary.float-left.ml-2(data-feather='dollar-sign')
+                        .col-xl-6.xl-100.box-col-12
+                          .card
+                            .cal-date-widget.card-body
+                              .row
+                                .col-xl-6.col-xs-12.col-md-6.col-sm-6
+                                  .cal-info.text-center
+                                    h2 24
+                                    .d-inline-block.mt-2
+                                      span.b-r-dark.pr-3 March
+                                      span.pl-3 2018
+                                    p.mt-4.f-16.text-muted There is no minimum donation, any sum is appreciated
+                                .col-xl-6.col-xs-12.col-md-6.col-sm-6
+                                  .cal-datepicker
+                                    .datepicker-here.float-sm-right(data-language='en')            
+                        .col-xl-3.xl-50.col-sm-6.box-col-6
+                          .card
+                            .mobile-clock-widget
+                              .bg-svg
+                                svg#cloudLightningMoon.climacon.climacon_cloudLightningMoon(version='1.1', viewBox='15 15 70 70')
+                                  clippath#moonCloudFillClipfill11
+                                    path(d='M0,0v100h100V0H0z M60.943,46.641c-4.418,0-7.999-3.582-7.999-7.999c0-3.803,2.655-6.979,6.211-7.792c0.903,4.854,4.726,8.676,9.579,9.58C67.922,43.986,64.745,46.641,60.943,46.641z')
+                                  clippath#cloudFillClipfill19
+                                    path(d='M15,15v70h70V15H15z M59.943,61.639c-3.02,0-12.381,0-15.999,0c-6.626,0-11.998-5.371-11.998-11.998c0-6.627,5.372-11.999,11.998-11.999c5.691,0,10.434,3.974,11.665,9.29c1.252-0.81,2.733-1.291,4.334-1.291c4.418,0,8,3.582,8,8C67.943,58.057,64.361,61.639,59.943,61.639z')
+                                  g.climacon_iconWrap.climacon_iconWrap-cloudLightningMoon
+                                    g(clip-path='url(#cloudFillClip)')
+                                      g.climacon_wrapperComponent.climacon_wrapperComponent-moon.climacon_componentWrap-moon_cloud(clip-path='url(#moonCloudFillClip)')
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_sunBody(d='M61.023,50.641c-6.627,0-11.999-5.372-11.999-11.998c0-6.627,5.372-11.999,11.999-11.999c0.755,0,1.491,0.078,2.207,0.212c-0.132,0.576-0.208,1.173-0.208,1.788c0,4.418,3.582,7.999,8,7.999c0.614,0,1.212-0.076,1.788-0.208c0.133,0.717,0.211,1.452,0.211,2.208C73.021,45.269,67.649,50.641,61.023,50.641z')
+                                    g.climacon_wrapperComponent.climacon_wrapperComponent-lightning
+                                      polygon.climacon_component.climacon_component-stroke.climacon_component-stroke_lightning(points='48.001,51.641 57.999,51.641 52,61.641 58.999,61.641 46.001,77.639 49.601,65.641 43.001,65.641 ')
+                                    g.climacon_wrapperComponent.climacon_wrapperComponent-cloud
+                                      path.climacon_component.climacon_component-stroke.climacon_component-stroke_cloud(d='M59.999,65.641c-0.28,0-0.649,0-1.062,0l3.584-4.412c3.182-1.057,5.478-4.053,5.478-7.588c0-4.417-3.581-7.998-7.999-7.998c-1.602,0-3.083,0.48-4.333,1.29c-1.231-5.316-5.974-9.29-11.665-9.29c-6.626,0-11.998,5.372-11.998,12c0,5.446,3.632,10.039,8.604,11.503l-1.349,3.777c-6.52-2.021-11.255-8.098-11.255-15.282c0-8.835,7.163-15.999,15.998-15.999c6.004,0,11.229,3.312,13.965,8.204c0.664-0.114,1.338-0.205,2.033-0.205c6.627,0,11.999,5.371,11.999,11.999C71.999,60.268,66.626,65.641,59.999,65.641z')
+                              div
+                                ul#clock.clock
+                                  li#hour.hour
+                                  li#min.min
+                                  li#sec.sec
+                                #date.date.f-24.mb-2
+                                  span#monthDay
+                                  span#year , 
+                                div
+                                  p.m-0.f-14.text-light kolkata, India                                            
+                        .col-xl-3.xl-50.col-sm-6.box-col-6
+                          .card
+                            .weather-widget-two
+                              .card-body
+                                .media
+                                  svg#cloudDrizzleMoonAlt.climacon.climacon_cloudDrizzleMoonAlt(version='1.1', viewBox='15 15 70 70')
+                                    clippath#cloudFillClip
+                                      path(d='M15,15v70h70V15H15z M59.943,61.639c-3.02,0-12.381,0-15.999,0c-6.626,0-11.998-5.371-11.998-11.998c0-6.627,5.372-11.999,11.998-11.999c5.691,0,10.434,3.974,11.665,9.29c1.252-0.81,2.733-1.291,4.334-1.291c4.418,0,8,3.582,8,8C67.943,58.057,64.361,61.639,59.943,61.639z')
+                                    clippath#moonCloudFillClip
+                                      path(d='M0,0v100h100V0H0z M60.943,46.641c-4.418,0-7.999-3.582-7.999-7.999c0-3.803,2.655-6.979,6.211-7.792c0.903,4.854,4.726,8.676,9.579,9.58C67.922,43.986,64.745,46.641,60.943,46.641z')
+                                    g.climacon_iconWrap.climacon_iconWrap-cloudDrizzleMoonAlt
+                                      g(clip-path='url(#cloudFillClip)')
+                                        g.climacon_wrapperComponent.climacon_wrapperComponent-moon.climacon_componentWrap-moon_cloud(clip-path='url(#moonCloudFillClip)')
+                                          path.climacon_component.climacon_component-stroke.climacon_component-stroke_sunBody(d='M61.023,50.641c-6.627,0-11.999-5.372-11.999-11.998c0-6.627,5.372-11.999,11.999-11.999c0.755,0,1.491,0.078,2.207,0.212c-0.132,0.576-0.208,1.173-0.208,1.788c0,4.418,3.582,7.999,8,7.999c0.614,0,1.212-0.076,1.788-0.208c0.133,0.717,0.211,1.452,0.211,2.208C73.021,45.269,67.649,50.641,61.023,50.641z')
+                                      g.climacon_wrapperComponent.climacon_wrapperComponent-drizzle
+                                        path#Drizzle-Left_1_.climacon_component.climacon_component-stroke.climacon_component-stroke_drizzle.climacon_component-stroke_drizzle-left(d='M56.969,57.672l-2.121,2.121c-1.172,1.172-1.172,3.072,0,4.242c1.17,1.172,3.07,1.172,4.24,0c1.172-1.17,1.172-3.07,0-4.242L56.969,57.672z')
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_drizzle.climacon_component-stroke_drizzle-middle(d='M50.088,57.672l-2.119,2.121c-1.174,1.172-1.174,3.07,0,4.242c1.17,1.172,3.068,1.172,4.24,0s1.172-3.07,0-4.242L50.088,57.672z')
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_drizzle.climacon_component-stroke_drizzle-right(d='M43.033,57.672l-2.121,2.121c-1.172,1.172-1.172,3.07,0,4.242s3.07,1.172,4.244,0c1.172-1.172,1.172-3.07,0-4.242L43.033,57.672z')
+                                      g.climacon_wrapperComponent.climacon_wrapperComponent-cloud(clip-path='url(#cloudFillClip)')
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_cloud(d='M59.943,41.642c-0.696,0-1.369,0.092-2.033,0.205c-2.736-4.892-7.961-8.203-13.965-8.203c-8.835,0-15.998,7.162-15.998,15.997c0,5.992,3.3,11.207,8.177,13.947c0.276-1.262,0.892-2.465,1.873-3.445l0.057-0.057c-3.644-2.061-6.106-5.963-6.106-10.445c0-6.626,5.372-11.998,11.998-11.998c5.691,0,10.433,3.974,11.666,9.29c1.25-0.81,2.732-1.291,4.332-1.291c4.418,0,8,3.581,8,7.999c0,3.443-2.182,6.371-5.235,7.498c0.788,1.146,1.194,2.471,1.222,3.807c4.666-1.645,8.014-6.077,8.014-11.305C71.941,47.014,66.57,41.642,59.943,41.642z')
+                                  // cloudDrizzleMoonAlt
+                                  .media-body.align-self-center.text-white
+                                    h4.m-0.f-w-600.num 25°C
+                                    p.m-0.f-14 Newyork
+                                .media
+                                  svg#cloudRainMoon.climacon.climacon_cloudRainMoon(version='1.1', viewBox='15 15 70 70')
+                                    clippath#cloudFillClip1
+                                      path(d='M15,15v70h70V15H15z M59.943,61.639c-3.02,0-12.381,0-15.999,0c-6.626,0-11.998-5.371-11.998-11.998c0-6.627,5.372-11.999,11.998-11.999c5.691,0,10.434,3.974,11.665,9.29c1.252-0.81,2.733-1.291,4.334-1.291c4.418,0,8,3.582,8,8C67.943,58.057,64.361,61.639,59.943,61.639z')
+                                    clippath#moonCloudFillClip1
+                                      path(d='M0,0v100h100V0H0z M60.943,46.641c-4.418,0-7.999-3.582-7.999-7.999c0-3.803,2.655-6.979,6.211-7.792c0.903,4.854,4.726,8.676,9.579,9.58C67.922,43.986,64.745,46.641,60.943,46.641z')
+                                    g.climacon_iconWrap.climacon_iconWrap-cloudRainMoon
+                                      g(clip-path='url(#cloudFillClip1)')
+                                        g.climacon_wrapperComponent.climacon_wrapperComponent-moon.climacon_componentWrap-moon_cloud(clip-path='url(#moonCloudFillClip1)')
+                                          path.climacon_component.climacon_component-stroke.climacon_component-stroke_sunBody(d='M61.023,50.641c-6.627,0-11.999-5.372-11.999-11.998c0-6.627,5.372-11.999,11.999-11.999c0.755,0,1.491,0.078,2.207,0.212c-0.132,0.576-0.208,1.173-0.208,1.788c0,4.418,3.582,7.999,8,7.999c0.614,0,1.212-0.076,1.788-0.208c0.133,0.717,0.211,1.452,0.211,2.208C73.021,45.269,67.649,50.641,61.023,50.641z')
+                                      g.climacon_wrapperComponent.climacon_wrapperComponent-rain
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_rain.climacon_component-stroke_rain-.left(d='M41.946,53.641c1.104,0,1.999,0.896,1.999,2v15.998c0,1.105-0.895,2-1.999,2s-2-0.895-2-2V55.641C39.946,54.537,40.842,53.641,41.946,53.641z')
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_rain.climacon_component-stroke_rain-.middle(d='M49.945,57.641c1.104,0,2,0.896,2,2v15.998c0,1.104-0.896,2-2,2s-2-0.896-2-2V59.641C47.945,58.535,48.841,57.641,49.945,57.641z')
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_rain.climacon_component-stroke_rain-.right(d='M57.943,53.641c1.104,0,2,0.896,2,2v15.998c0,1.105-0.896,2-2,2c-1.104,0-2-0.895-2-2V55.641C55.943,54.537,56.84,53.641,57.943,53.641z')
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_rain.climacon_component-stroke_rain-.left(d='M41.946,53.641c1.104,0,1.999,0.896,1.999,2v15.998c0,1.105-0.895,2-1.999,2s-2-0.895-2-2V55.641C39.946,54.537,40.842,53.641,41.946,53.641z')
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_rain.climacon_component-stroke_rain-.middle(d='M49.945,57.641c1.104,0,2,0.896,2,2v15.998c0,1.104-0.896,2-2,2s-2-0.896-2-2V59.641C47.945,58.535,48.841,57.641,49.945,57.641z')
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_rain.climacon_component-stroke_rain-.right(d='M57.943,53.641c1.104,0,2,0.896,2,2v15.998c0,1.105-0.896,2-2,2c-1.104,0-2-0.895-2-2V55.641C55.943,54.537,56.84,53.641,57.943,53.641z')
+                                      g.climacon_wrapperComponent.climacon_wrapperComponent-cloud(clip-path='url(#cloudFillClip1)')
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_cloud(d='M59.943,41.642c-0.696,0-1.369,0.092-2.033,0.205c-2.736-4.892-7.961-8.203-13.965-8.203c-8.835,0-15.998,7.162-15.998,15.997c0,5.992,3.3,11.207,8.177,13.947c0.276-1.262,0.892-2.465,1.873-3.445l0.057-0.057c-3.644-2.061-6.106-5.963-6.106-10.445c0-6.626,5.372-11.998,11.998-11.998c5.691,0,10.433,3.974,11.666,9.29c1.25-0.81,2.732-1.291,4.332-1.291c4.418,0,8,3.581,8,7.999c0,3.443-2.182,6.371-5.235,7.498c0.788,1.146,1.194,2.471,1.222,3.807c4.666-1.645,8.014-6.077,8.014-11.305C71.941,47.014,66.57,41.642,59.943,41.642z')
+                                  // cloudRainMoon
+                                  .media-body.align-self-center.text-white
+                                    h4.m-0.f-w-600.num 95°F
+                                    p.m-0.f-14 Peris
+                                .media
+                                  svg#cloudDrizzle.climacon.climacon_cloudDrizzle(version='1.1', viewBox='15 15 70 70')
+                                    g.climacon_iconWrap.climacon_iconWrap-cloudDrizzle
+                                      g.climacon_wrapperComponent.climacon_wrapperComponent-drizzle
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_drizzle.climacon_component-stroke_drizzle-left(d='M42.001,53.644c1.104,0,2,0.896,2,2v3.998c0,1.105-0.896,2-2,2c-1.105,0-2.001-0.895-2.001-2v-3.998C40,54.538,40.896,53.644,42.001,53.644z')
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_drizzle.climacon_component-stroke_drizzle-middle(d='M49.999,53.644c1.104,0,2,0.896,2,2v4c0,1.104-0.896,2-2,2s-1.998-0.896-1.998-2v-4C48.001,54.54,48.896,53.644,49.999,53.644z')
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_drizzle.climacon_component-stroke_drizzle-right(d='M57.999,53.644c1.104,0,2,0.896,2,2v3.998c0,1.105-0.896,2-2,2c-1.105,0-2-0.895-2-2v-3.998C55.999,54.538,56.894,53.644,57.999,53.644z')
+                                      g.climacon_wrapperComponent.climacon_wrapperComponent-cloud
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_cloud(d='M63.999,64.944v-4.381c2.387-1.386,3.998-3.961,3.998-6.92c0-4.418-3.58-8-7.998-8c-1.603,0-3.084,0.481-4.334,1.291c-1.232-5.316-5.973-9.29-11.664-9.29c-6.628,0-11.999,5.372-11.999,12c0,3.549,1.55,6.729,3.998,8.926v4.914c-4.776-2.769-7.998-7.922-7.998-13.84c0-8.836,7.162-15.999,15.999-15.999c6.004,0,11.229,3.312,13.965,8.203c0.664-0.113,1.336-0.205,2.033-0.205c6.627,0,11.998,5.373,11.998,12C71.997,58.864,68.655,63.296,63.999,64.944z')
+                                  // cloudDrizzle
+                                  .media-body.align-self-center.text-white
+                                    h4.m-0.f-w-600.num 50°C
+                                    p.m-0.f-14 India
+                                .top-bg-whether
+                                  svg#cloudHailAltFill.climacon.climacon_cloudHailAltFill(version='1.1', viewBox='15 15 70 70')
+                                    g.climacon_iconWrap.climacon_iconWrap-cloudHailAltFill
+                                      g.climacon_wrapperComponent.climacon_wrapperComponent-hailAlt
+                                        g.climacon_component.climacon_component-stroke.climacon_component-stroke_hailAlt.climacon_component-stroke_hailAlt-left
+                                          circle(cx='42', cy='65.498', r='2')
+                                        g.climacon_component.climacon_component-stroke.climacon_component-stroke_hailAlt.climacon_component-stroke_hailAlt-middle
+                                          circle(cx='49.999', cy='65.498', r='2')
+                                        g.climacon_component.climacon_component-stroke.climacon_component-stroke_hailAlt.climacon_component-stroke_hailAlt-right
+                                          circle(cx='57.998', cy='65.498', r='2')
+                                        g.climacon_component.climacon_component-stroke.climacon_component-stroke_hailAlt.climacon_component-stroke_hailAlt-left
+                                          circle(cx='42', cy='65.498', r='2')
+                                        g.climacon_component.climacon_component-stroke.climacon_component-stroke_hailAlt.climacon_component-stroke_hailAlt-middle
+                                          circle(cx='49.999', cy='65.498', r='2')
+                                        g.climacon_component.climacon_component-stroke.climacon_component-stroke_hailAlt.climacon_component-stroke_hailAlt-right
+                                          circle(cx='57.998', cy='65.498', r='2')
+                                      g.climacon_componentWrap.climacon_componentWrap_cloud
+                                        path.climacon_component.climacon_component-stroke.climacon_component-stroke_cloud(d='M43.945,65.639c-8.835,0-15.998-7.162-15.998-15.998c0-8.836,7.163-15.998,15.998-15.998c6.004,0,11.229,3.312,13.965,8.203c0.664-0.113,1.338-0.205,2.033-0.205c6.627,0,11.998,5.373,11.998,12c0,6.625-5.371,11.998-11.998,11.998C57.168,65.639,47.143,65.639,43.945,65.639z')
+                                        path.climacon_component.climacon_component-fill.climacon_component-fill_cloud(fill='#FFFFFF', d='M59.943,61.639c4.418,0,8-3.582,8-7.998c0-4.417-3.582-8-8-8c-1.601,0-3.082,0.481-4.334,1.291c-1.23-5.316-5.973-9.29-11.665-9.29c-6.626,0-11.998,5.372-11.998,11.999c0,6.626,5.372,11.998,11.998,11.998C47.562,61.639,56.924,61.639,59.943,61.639z')
+                                .bottom-whetherinfo
+                                  .row
+                                    .col-6
+                                      i(data-feather='cloud-drizzle')
+                                    .col-6
+                                      .whether-content
+                                        span India, Surat
+                                        h4.num.mb-0 36°F                                    
+                        
+                        .col-xl-4.col-lg-12.box-col-12
+                          div
+                            .card
+                              .card-header
+                                h5.text-uppercase Recent Activity
+                                .card-header-right
+                                  ul.list-unstyled.card-option
+                                    li
+                                      i.fa.fa-spin.fa-cog
+                                    li
+                                      i.view-html.fa.fa-code
+                                    li
+                                      i.icofont.icofont-maximize.full-card
+                                    li
+                                      i.icofont.icofont-minus.minimize-card
+                                    li
+                                      i.icofont.icofont-refresh.reload-card
+                                    li
+                                      i.icofont.icofont-error.close-card
+                              .card-body
+                                ul.crm-activity
+                                  li.media
+                                    span.mr-3.font-primary A
+                                    .align-self-center.media-body
+                                      h6.mt-0 Any desktop publishing packages and web page editors.
+                                      ul.dates
+                                        li 25 July 2017
+                                        li 20 hours ago
+                                  li.media
+                                    span.mr-3.font-secondary C
+                                    .align-self-center.media-body
+                                      h6.mt-0 Contrary to popular belief, Lorem Ipsum is not simply. 
+                                      ul.dates
+                                        li 25 July 2017
+                                        li 20 hours ago      
+                                  li.media
+                                    span.mr-3.font-primary E
+                                    .align-self-center.media-body
+                                      h6.mt-0 Established fact that a reader will be distracted 
+                                      ul.dates
+                                        li 25 July 2017
+                                        li 20 hours ago
+                                  li.media
+                                    span.mr-3.font-secondary H
+                                    .align-self-center.media-body
+                                      h6.mt-0 H-Code - A premium portfolio template from ThemeZaa 
+                                      ul.dates
+                                        li 25 July 2017
+                                        li 20 hours ago      
+                                  li.media
+                                    span.mr-3.font-primary T
+                                    .align-self-center.media-body
+                                      h6.mt-0 There isn't anything embarrassing hidden.
+                                      ul.dates
+                                        li 25 July 2017
+                                        li 20 hours ago
+                                  li.media
+                                    .align-self-center.media-body
+                                      ul.dates
+                                        li 25 July 2017
+                                        li 20 hours ago
+                                .code-box-copy
+                                  button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head', title='Copy')
+                                    i.icofont.icofont-copy-alt
+                                  pre
+                                    code.language-html#example-head
+                                        | &lt;!-- Cod Box Copy begin --&gt;
+                                        | &lt;ul class=&quot;crm-activity&quot;&gt;
+                                        |   &lt;li class=&quot;media&quot;&gt;
+                                        |     &lt;span class=&quot;mr-3 font-primary&quot;&gt;A&lt;/span&gt;
+                                        |     &lt;div class=&quot;align-self-center media-body&quot;&gt;
+                                        |       &lt;h6 class=&quot;mt-0&quot;&gt;Any desktop publishing packages and web page editors.&lt;/h6&gt;
+                                        |       &lt;ul class=&quot;dates&quot;&gt;
+                                        |         &lt;li class=&quot;digits&quot;&gt;25 July 2017&lt;/li&gt;
+                                        |         &lt;li class=&quot;digits&quot;&gt;20 hours ago&lt;/li&gt;
+                                        |       &lt;/ul&gt;
+                                        |     &lt;/div&gt;
+                                        |   &lt;/li&gt;
+                                        |   &lt;li class=&quot;media&quot;&gt;
+                                        |     &lt;span class=&quot;mr-3 font-secondary&quot;&gt;C&lt;/span&gt;
+                                        |     &lt;div class=&quot;align-self-center media-body&quot;&gt;
+                                        |       &lt;h6 class=&quot;mt-0&quot;&gt;Contrary to popular belief, Lorem Ipsum is not simply.&lt;/h6&gt;
+                                        |       &lt;ul class=&quot;dates&quot;&gt;
+                                        |         &lt;li class=&quot;digits&quot;&gt;25 July 2017&lt;/li&gt;
+                                        |         &lt;li class=&quot;digits&quot;&gt;20 hours ago&lt;/li&gt;
+                                        |       &lt;/ul&gt;
+                                        |     &lt;/div&gt;
+                                        |   &lt;/li&gt;
+                                        |   &lt;li class=&quot;media&quot;&gt;
+                                        |     &lt;span class=&quot;mr-3 font-primary&quot;&gt;E&lt;/span&gt;
+                                        |     &lt;div class=&quot;align-self-center media-body&quot;&gt;
+                                        |       &lt;h6 class=&quot;mt-0&quot;&gt;Established fact that a reader will be distracted&lt;/h6&gt;
+                                        |       &lt;ul class=&quot;dates&quot;&gt;
+                                        |         &lt;li class=&quot;digits&quot;&gt;25 July 2017&lt;/li&gt;
+                                        |         &lt;li class=&quot;digits&quot;&gt;20 hours ago&lt;/li&gt;
+                                        |       &lt;/ul&gt;
+                                        |     &lt;/div&gt;
+                                        |   &lt;/li&gt;
+                                        |   &lt;li class=&quot;media&quot;&gt;
+                                        |     &lt;span class=&quot;mr-3 font-secondary&quot;&gt;H&lt;/span&gt;
+                                        |     &lt;div class=&quot;align-self-center media-body&quot;&gt;
+                                        |       &lt;h6 class=&quot;mt-0&quot;&gt;H-Code - A premium portfolio template from ThemeZaa&lt;/h6&gt;
+                                        |       &lt;ul class=&quot;dates&quot;&gt;
+                                        |         &lt;li class=&quot;digits&quot;&gt;25 July 2017&lt;/li&gt;
+                                        |         &lt;li class=&quot;digits&quot;&gt;20 hours ago&lt;/li&gt;
+                                        |       &lt;/ul&gt;
+                                        |     &lt;/div&gt;
+                                        |   &lt;/li&gt;
+                                        |   &lt;li class=&quot;media&quot;&gt;
+                                        |     &lt;span class=&quot;mr-3 font-primary&quot;&gt;T&lt;/span&gt;
+                                        |     &lt;div class=&quot;align-self-center media-body&quot;&gt;
+                                        |       &lt;h6 class=&quot;mt-0&quot;&gt;There isn't anything embarrassing hidden.&lt;/h6&gt;
+                                        |       &lt;ul class=&quot;dates&quot;&gt;
+                                        |         &lt;li class=&quot;digits&quot;&gt;25 July 2017&lt;/li&gt;
+                                        |         &lt;li class=&quot;digits&quot;&gt;20 hours ago&lt;/li&gt;
+                                        |       &lt;/ul&gt;
+                                        |     &lt;/div&gt;
+                                        |   &lt;/li&gt;
+                                        |   &lt;li class=&quot;media&quot;&gt;
+                                        |     &lt;div class=&quot;align-self-center media-body&quot;&gt;
+                                        |       &lt;ul class=&quot;dates&quot;&gt;
+                                        |         &lt;li class=&quot;digits&quot;&gt;25 July 2017&lt;/li&gt;
+                                        |         &lt;li class=&quot;digits&quot;&gt;20 hours ago&lt;/li&gt;
+                                        |       &lt;/ul&gt;
+                                        |     &lt;/div&gt;
+                                        |   &lt;/li&gt;
+                                        | &lt;/ul&gt;
+                                        | &lt;!-- Cod Box Copy end --&gt;
+                        .col-xl-4.box-col-6
+                          .card.custom-card
+                            .card-header
+                              img.img-fluid(src='../assets/images/user-card/3.jpg', alt='')
+                            .card-profile
+                              img.rounded-circle(src='../assets/images/avtar/3.jpg', alt='')
+                            ul.card-social
+                              li
+                                a(href='#')
+                                  i.fa.fa-facebook
+                              li
+                                a(href='#')
+                                  i.fa.fa-google-plus
+                              li
+                                a(href='#')
+                                  i.fa.fa-twitter
+                              li
+                                a(href='#')
+                                  i.fa.fa-instagram
+                              li
+                                a(href='#')
+                                  i.fa.fa-rss
+                            .text-center.profile-details
+                              h4 Scarlett john
+                              h6 Manager
+                            .card-footer.row
+                              .col-4.col-sm-4
+                                h6 Follower
+                                h3.counter 9564
+                              .col-4.col-sm-4
+                                h6 Following
+                                h3
+                                  span.counter 49
+                                  | K
+                              .col-4.col-sm-4
+                                h6 Total Post
+                                h3
+                                  span.counter 96
+                                  | M
+                        .col-xl-4.box-col-6
+                          .card.testimonial.text-center
+                            .card-body
+                              #owl-carousel-testimonial.owl-carousel.owl-theme
+                                .item
+                                  i.icon-quote-left
+                                  p
+                                    | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+                                  img.img-80(src='../assets/images/dashboard/boy-2.png', alt='')
+                                  h5.font-primary Poio klot
+                                  span Developer
+                                .item
+                                  i.icon-quote-left
+                                  p
+                                    | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+                                  img.img-80(src='../assets/images/dashboard/boy-2.png', alt='')
+                                  h5.font-primary Poio klot
+                                  span Developer
+                          .card.xl-none
+                            .ecommerce-widget.card-body
+                              .row
+                                .col-6
+                                  span New Order
+                                  h3.total-num.counter 25639
+                                .col-6
+                                  .text-md-right
+                                    ul
+                                      li
+                                        | Profit
+                                        span.product-stts.font-primary.ml-2
+                                          | 8989
+                                          i.icon-angle-up.f-12.ml-1
+                                      li
+                                        | Loss
+                                        span.product-stts.font-primary.ml-2
+                                          | 2560
+                                          i.icon-angle-down.f-12.ml-1
+                              .progress-showcase
+                                .progress.lg-progress-bar
+                                  .progress-bar.bg-primary(role='progressbar', style='width: 70%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')                                                
+                        .col-sm-6.col-xl-3.xl-50.col-lg-6.box-col-6
+                          .card.social-widget-card
+                            .card-body
+                              .redial-social-widget.radial-bar-70(data-label='50%')
+                                i.fa.fa-facebook.font-primary
+                              h5.b-b-light Facebook
+                              .row
+                                .col.text-center.b-r-light
+                                  span Post
+                                  h4.counter.mb-0 6589
+                                .col.text-center
+                                  span Like
+                                  h4.counter.mb-0 75269
+                        .col-sm-6.col-xl-3.xl-50.col-lg-6.box-col-6
+                          .card.social-widget-card
+                            .card-body
+                              .redial-social-widget.radial-bar-70(data-label='50%')
+                                i.fa.fa-twitter.font-primary
+                              h5.b-b-light Twitter
+                              .row
+                                .col.text-center.b-r-light
+                                  span Post
+                                  h4.counter.mb-0 6589
+                                .col.text-center
+                                  span Follower
+                                  h4.counter.mb-0 75269
+                        .col-sm-6.col-xl-3.xl-50.col-lg-6.box-col-6
+                          .card.social-widget-card
+                            .card-body
+                              .redial-social-widget.radial-bar-70(data-label='50%')
+                                i.fa.fa-linkedin.font-primary
+                              h5.b-b-light linkedin
+                              .row
+                                .col.text-center.b-r-light
+                                  span Post
+                                  h4.counter.mb-0 1234
+                                .col.text-center
+                                  span linkedin
+                                  h4.counter.mb-0 4369
+                        .col-sm-6.col-xl-3.xl-50.col-lg-6.box-col-6
+                          .card.social-widget-card
+                            .card-body
+                              .redial-social-widget.radial-bar-70(data-label='50%')
+                                i.fa.fa-google-plus.font-primary
+                              h5.b-b-light Google +
+                              .row
+                                .col.text-center.b-r-light
+                                  span Post
+                                  h4.counter.mb-0 369
+                                .col.text-center
+                                  span Follower
+                                  h4.counter.mb-0 3458
+                        .col-md-4.col-sm-12
+                          .card.browser-widget
+                            .media.card-body
+                              .media-img
+                                img(src='../assets/images/dashboard/chrome.png', alt='')
+                              .media-body.align-self-center
+                                div
+                                  p Daily 
+                                  h4
+                                    span.counter 36
+                                    | %
+                                div
+                                  p Month 
+                                  h4
+                                    span.counter 96
+                                    | %
+                                div
+                                  p Week 
+                                  h4
+                                    span.counter 46
+                                    | %
+                        .col-md-4.col-sm-12
+                          .card.browser-widget
+                            .media.card-body
+                              .media-img
+                                img(src='../assets/images/dashboard/firefox.png', alt='')
+                              .media-body.align-self-center
+                                div
+                                  p Daily 
+                                  h4
+                                    span.counter 36
+                                    | %
+                                div
+                                  p Month 
+                                  h4
+                                    span.counter 96
+                                    | %
+                                div
+                                  p Week 
+                                  h4
+                                    span.counter 46
+                                    | %
+                        .col-md-4.col-sm-12
+                          .card.browser-widget
+                            .media.card-body
+                              .media-img
+                                img(src='../assets/images/dashboard/safari.png', alt='')
+                              .media-body.align-self-center
+                                div
+                                  p Daily 
+                                  h4
+                                    span.counter 36
+                                    | %
+                                div
+                                  p Month 
+                                  h4
+                                    span.counter 96
+                                    | %
+                                div
+                                  p Week 
+                                  h4
+                                    span.counter 46
+                                    | %
+                        .col-xl-6.xl-100.box-col-12
+                          .card
+                            .card-header
+                              h5 PRODUCTS CART
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                            .card-body
+                              .user-status.table-responsive
+                                table.table.table-bordernone
+                                  thead
+                                    tr
+                                      th(scope='col') Details
+                                      th(scope='col') Quantity
+                                      th(scope='col') Status
+                                      th(scope='col') Price
+                                  tbody
+                                    tr
+                                      td.f-w-600 Simply dummy text of the printing
+                                      td 1
+                                      td.font-primary Pending
+                                      td
+                                        .span.badge.badge-pill.pill-badge-secondary 6523
+                                    tr
+                                      td.f-w-600 Long established
+                                      td 5
+                                      td.font-secondary Cancle
+                                      td
+                                        .span.badge.badge-pill.pill-badge-success 6523
+                                    tr
+                                      td.f-w-600 sometimes by accident
+                                      td 10
+                                      td.font-secondary Cancle
+                                      td
+                                        .span.badge.badge-pill.pill-badge-warning 6523
+                                    tr
+                                      td.f-w-600 Classical Latin literature
+                                      td 9
+                                      td.font-primary Return
+                                      td
+                                        .span.badge.badge-pill.pill-badge-primary 6523
+                                    tr
+                                      td.f-w-600 keep the site on the Internet
+                                      td 8
+                                      td.font-primary Pending
+                                      td
+                                        .span.badge.badge-pill.pill-badge-danger 6523
+                                    tr
+                                      td.f-w-600 Molestiae consequatur
+                                      td 3
+                                      td.font-secondary Cancle
+                                      td
+                                        .span.badge.badge-pill.pill-badge-info 6523
+                                    tr
+                                      td.f-w-600 Pain can procure
+                                      td 8
+                                      td.font-primary Return
+                                      td
+                                        .span.badge.badge-pill.pill-badge-primary 6523
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head1', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head1
+                                      | &lt;!-- Cod Box Copy begin --&gt;
+                                      | &lt;div class=&quot;user-status table-responsive&quot;&gt;
+                                      |   &lt;table class=&quot;table table-bordernone&quot;&gt;
+                                      |     &lt;thead&gt;
+                                      |       &lt;tr&gt;
+                                      |         &lt;th scope=&quot;col&quot;&gt;Details&lt;/th&gt;
+                                      |         &lt;th scope=&quot;col&quot;&gt;Quantity&lt;/th&gt;
+                                      |         &lt;th scope=&quot;col&quot;&gt;Status&lt;/th&gt;
+                                      |         &lt;th scope=&quot;col&quot;&gt;Price&lt;/th&gt;
+                                      |       &lt;/tr&gt;
+                                      |     &lt;/thead&gt;
+                                      |     &lt;tbody&gt;
+                                      |       &lt;tr&gt;
+                                      |         &lt;td&gt;Simply dummy text of the printing&lt;/td&gt;
+                                      |         &lt;td class=&quot;digits&quot;&gt;1&lt;/td&gt;
+                                      |         &lt;td class=&quot;font-primary&quot;&gt;Pending&lt;/td&gt;
+                                      |         &lt;td class=&quot;span badge badge-pill pill-badge-secondary&quot;&gt;6523&lt;/td&gt;
+                                      |       &lt;/tr&gt;
+                                      |       &lt;tr&gt;
+                                      |         &lt;td&gt;Long established&lt;/td&gt;
+                                      |         &lt;td class=&quot;digits&quot;&gt;5&lt;/td&gt;
+                                      |         &lt;td class=&quot;font-secondary&quot;&gt;cancle&lt;/td&gt;
+                                      |         &lt;td class=&quot;span badge badge-pill pill-badge-success&quot;&gt;6523&lt;/td&gt;
+                                      |       &lt;/tr&gt;
+                                      |       &lt;tr&gt;
+                                      |         &lt;td&gt;sometimes by accident&lt;/td&gt;
+                                      |         &lt;td class=&quot;digits&quot;&gt;10&lt;/td&gt;
+                                      |         &lt;td class=&quot;font-secondary&quot;&gt;cancle&lt;/td&gt;
+                                      |         &lt;td class=&quot;span badge badge-pill pill-badge-warning&quot;&gt;6523&lt;/td&gt;
+                                      |       &lt;/tr&gt;
+                                      |       &lt;tr&gt;
+                                      |         &lt;td&gt;Classical Latin literature&lt;/td&gt;
+                                      |         &lt;td class=&quot;digits&quot;&gt;9&lt;/td&gt;
+                                      |         &lt;td class=&quot;font-primary&quot;&gt;Return&lt;/td&gt;
+                                      |         &lt;td class=&quot;span badge badge-pill pill-badge-primary&quot;&gt;6523&lt;/td&gt;
+                                      |       &lt;/tr&gt;
+                                      |       &lt;tr&gt;
+                                      |         &lt;td&gt;keep the site on the Internet&lt;/td&gt;
+                                      |         &lt;td class=&quot;digits&quot;&gt;8&lt;/td&gt;
+                                      |         &lt;td class=&quot;font-primary&quot;&gt;Pending&lt;/td&gt;
+                                      |         &lt;td class=&quot;span badge badge-pill pill-badge-danger&quot;&gt;6523&lt;/td&gt;
+                                      |       &lt;/tr&gt;
+                                      |       &lt;tr&gt;
+                                      |         &lt;td&gt;Molestiae consequatur&lt;/td&gt;
+                                      |         &lt;td class=&quot;digits&quot;&gt;3&lt;/td&gt;
+                                      |         &lt;td class=&quot;font-secondary&quot;&gt;cancle&lt;/td&gt;
+                                      |         &lt;td class=&quot;span badge badge-pill pill-badge-info&quot;&gt;6523&lt;/td&gt;
+                                      |       &lt;/tr&gt;
+                                      |       &lt;tr&gt;
+                                      |         &lt;td&gt;Pain can procure&lt;/td&gt;
+                                      |         &lt;td class=&quot;digits&quot;&gt;8&lt;/td&gt;
+                                      |         &lt;td class=&quot;font-primary&quot;&gt;Return&lt;/td&gt;
+                                      |         &lt;td class=&quot;span badge badge-pill pill-badge-primary&quot;&gt;6523&lt;/td&gt;
+                                      |       &lt;/tr&gt;
+                                      |     &lt;/tbody&gt;
+                                      |   &lt;/table&gt;
+                                      | &lt;/div&gt;
+                                      | &lt;!-- Cod Box Copy end --&gt;
+                        .col-xl-6.xl-100.box-col-12
+                          .card
+                            .card-header
+                              h5 EMPLOYEE STATUS
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                            .card-body
+                              .user-status.table-responsive
+                                table.table.table-bordernone
+                                  thead
+                                    tr
+                                      th(scope='col') Name
+                                      th(scope='col') Designation
+                                      th(scope='col') Skill Level
+                                      th(scope='col') Experience
+                                  tbody
+                                    tr
+                                      td.bd-t-none.u-s-tb
+                                        .align-middle.image-sm-size
+                                          img.img-radius.align-top.m-r-15.rounded-circle(src='../assets/images/user/4.jpg', alt='')
+                                          .d-inline-block
+                                            h6
+                                              | John Deo 
+                                              span.text-muted (14+ Online)
+                                      td Designer
+                                      td
+                                        .progress-showcase
+                                          .progress(style='height: 8px;')
+                                            .progress-bar.bg-primary(role='progressbar', style='width: 30%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 2 Year
+                                    tr
+                                      td.bd-t-none.u-s-tb
+                                        .align-middle.image-sm-size
+                                          img.img-radius.align-top.m-r-15.rounded-circle(src='../assets/images/user/1.jpg', alt='')
+                                          .d-inline-block
+                                            h6
+                                              | Holio Mako 
+                                              span.text-muted (250+ Online)
+                                      td Developer
+                                      td
+                                        .progress-showcase
+                                          .progress(style='height: 8px;')
+                                            .progress-bar.bg-secondary(role='progressbar', style='width: 70%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 3 Year
+                                    tr
+                                      td.bd-t-none.u-s-tb
+                                        .align-middle.image-sm-size
+                                          img.img-radius.align-top.m-r-15.rounded-circle(src='../assets/images/user/5.jpg', alt='')
+                                          .d-inline-block
+                                            h6
+                                              | Mohsib lara
+                                              span.text-muted (99+ Online)
+                                      td Tester
+                                      td
+                                        .progress-showcase
+                                          .progress(style='height: 8px;')
+                                            .progress-bar.bg-primary(role='progressbar', style='width: 60%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 5 Month
+                                    tr
+                                      td.bd-t-none.u-s-tb
+                                        .align-middle.image-sm-size
+                                          img.img-radius.align-top.m-r-15.rounded-circle(src='../assets/images/user/6.jpg', alt='')
+                                          .d-inline-block
+                                            h6
+                                              | Hileri Soli 
+                                              span.text-muted (150+ Online)
+                                      td Designer
+                                      td
+                                        .progress-showcase
+                                          .progress(style='height: 8px;')
+                                            .progress-bar.bg-secondary(role='progressbar', style='width: 30%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 3 Month
+                                    tr
+                                      td.bd-t-none.u-s-tb
+                                        .align-middle.image-sm-size
+                                          img.img-radius.align-top.m-r-15.rounded-circle(src='../assets/images/user/7.jpg', alt='')
+                                          .d-inline-block
+                                            h6
+                                              | Pusiz bia 
+                                              span.text-muted (14+ Online)
+                                      td Designer
+                                      td
+                                        .progress-showcase
+                                          .progress(style='height: 8px;')
+                                            .progress-bar.bg-primary(role='progressbar', style='width: 90%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                      td 5 Year
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head2', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head2
+                                      | &lt;!-- Cod Box Copy begin --&gt;
+                                      | &lt;div class=&quot;user-status table-responsive&quot;&gt;
+                                      |   &lt;table class=&quot;table table-bordernone&quot;&gt;
+                                      |     &lt;thead&gt;
+                                      |       &lt;tr&gt;
+                                      |         &lt;th scope=&quot;col&quot;&gt;Name&lt;/th&gt;
+                                      |         &lt;th scope=&quot;col&quot;&gt;Designation&lt;/th&gt;
+                                      |         &lt;th scope=&quot;col&quot;&gt;Skill Level&lt;/th&gt;
+                                      |         &lt;th scope=&quot;col&quot;&gt;Experience&lt;/th&gt;
+                                      |       &lt;/tr&gt;
+                                      |     &lt;/thead&gt;
+                                      |     &lt;tbody&gt;
+                                      |       &lt;tr&gt;
+                                      |         &lt;td class=&quot;bd-t-none u-s-tb&quot;&gt;
+                                      |           &lt;div class=&quot;align-middle image-sm-size&quot;&gt;
+                                      |             &lt;img src=&quot;../assets/images/user/4.jpg&quot; atl=&quot;user&quot; class=&quot;img-radius align-top m-r-15 rounded-circle&quot;&gt;
+                                      |             &lt;div class=&quot;d-inline-block&quot;&gt;&gt;
+                                      |               &lt;h6&gt;John Deo &lt;span class=&quot;text-muted digits&quot;&gt;(14+ Online)&lt;/span&gt;&lt;/h6&gt;
+                                      |             &lt;/div&gt;
+                                      |           &lt;/div&gt;
+                                      |         &lt;/td&gt;
+                                      |         &lt;td&gt;Designer&lt;/td&gt;
+                                      |         &lt;td&gt;
+                                      |           &lt;div class=&quot;progress-showcase&quot;&gt;
+                                      |             &lt;div class=&quot;progress&quot; style=&quot;height:8px;&quot;&gt;
+                                      |               &lt;div class=&quot;progress-bar bg-primary&quot; role=&quot;progressbar&quot; style=&quot;width: 30%&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+                                      |             &lt;/div&gt;
+                                      |           &lt;/div&gt;
+                                      |         &lt;/td&gt;
+                                      |         &lt;td&gt;class=&quot;digits&quot;&gt;2 Year&lt;/td&gt;
+                                      |       &lt;/tr&gt;
+                                      |       &lt;tr&gt;
+                                      |         &lt;td class=&quot;bd-t-none u-s-tb&quot;&gt;
+                                      |           &lt;div class=&quot;align-middle image-sm-size&quot;&gt;
+                                      |             &lt;img src=&quot;../assets/images/user/1.jpg&quot; atl=&quot;user&quot; class=&quot;img-radius align-top m-r-15 rounded-circle&quot;&gt;
+                                      |             &lt;div class=&quot;d-inline-block&quot;&gt;&gt;
+                                      |               &lt;h6&gt;Holio Mako &lt;span class=&quot;text-muted digits&quot;&gt;(250+ Online)&lt;/span&gt;&lt;/h6&gt;
+                                      |             &lt;/div&gt;
+                                      |           &lt;/div&gt;
+                                      |         &lt;/td&gt;
+                                      |         &lt;td&gt;Developer&lt;/td&gt;
+                                      |         &lt;td&gt;
+                                      |           &lt;div class=&quot;progress-showcase&quot;&gt;
+                                      |             &lt;div class=&quot;progress&quot; style=&quot;height:8px;&quot;&gt;
+                                      |               &lt;div class=&quot;progress-bar bg-secondary&quot; role=&quot;progressbar&quot; style=&quot;width: 70%&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+                                      |             &lt;/div&gt;
+                                      |           &lt;/div&gt;
+                                      |         &lt;/td&gt;
+                                      |         &lt;td&gt;class=&quot;digits&quot;&gt;3 Year&lt;td&gt;
+                                      |       &lt;/tr&gt;
+                                      |       &lt;tr&gt;
+                                      |         &lt;td class=&quot;bd-t-none u-s-tb&quot;&gt;
+                                      |           &lt;div class=&quot;align-middle image-sm-size&quot;&gt;
+                                      |             &lt;img src=&quot;../assets/images/user/5.jpg&quot; atl=&quot;user&quot; class=&quot;img-radius align-top m-r-15 rounded-circle&quot;&gt;
+                                      |             &lt;div class=&quot;d-inline-block&quot;&gt;&gt;
+                                      |               &lt;h6&gt;Mohsib lara&lt;span class=&quot;text-muted digits&quot;&gt;(99+ Online)&lt;/span&gt;&lt;/h6&gt;
+                                      |             &lt;/div&gt;
+                                      |           &lt;/div&gt;
+                                      |         &lt;/td&gt;
+                                      |         &lt;td&gt;Tester&lt;/td&gt;
+                                      |         &lt;td&gt;
+                                      |           &lt;div class=&quot;progress-showcase&quot;&gt;
+                                      |             &lt;div class=&quot;progress&quot; style=&quot;height:8px;&quot;&gt;
+                                      |               &lt;div class=&quot;progress-bar bg-primary&quot; role=&quot;progressbar&quot; style=&quot;width: 60%&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+                                      |             &lt;/div&gt;
+                                      |           &lt;/div&gt;
+                                      |         &lt;/td&gt;
+                                      |         &lt;td&gt;class=&quot;digits&quot;&gt;5 Month&lt;/td&gt;
+                                      |       &lt;/tr&gt;
+                                      |       &lt;tr&gt;
+                                      |         &lt;td class=&quot;bd-t-none u-s-tb&quot;&gt;
+                                      |           &lt;div class=&quot;align-middle image-sm-size&quot;&gt;
+                                      |             &lt;img src=&quot;../assets/images/user/6.jpg&quot; atl=&quot;user&quot; class=&quot;img-radius align-top m-r-15 rounded-circle&quot;&gt;
+                                      |             &lt;div class=&quot;d-inline-block&quot;&gt;&gt;
+                                      |               &lt;h6&gt;Hileri Soli &lt;span class=&quot;text-muted digits&quot;&gt;(150+ Online)&lt;/span&gt;&lt;/h6&gt;
+                                      |             &lt;/div&gt;
+                                      |           &lt;/div&gt;
+                                      |         &lt;/td&gt;
+                                      |         &lt;td&gt;Designer&lt;/td&gt;
+                                      |         &lt;td&gt;
+                                      |           &lt;div class=&quot;progress-showcase&quot;&gt;
+                                      |             &lt;div class=&quot;progress&quot; style=&quot;height:8px;&quot;&gt;
+                                      |               &lt;div class=&quot;progress-bar bg-secondary&quot; role=&quot;progressbar&quot; style=&quot;width: 30%&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+                                      |             &lt;/div&gt;
+                                      |           &lt;/div&gt;
+                                      |         &lt;/td&gt;
+                                      |         &lt;td&gt;class=&quot;digits&quot;&gt;3 Month&lt;/td&gt;
+                                      |       &lt;/tr&gt;
+                                      |       &lt;tr&gt;
+                                      |         &lt;td class=&quot;bd-t-none u-s-tb&quot;&gt;
+                                      |           &lt;div class=&quot;align-middle image-sm-size&quot;&gt;
+                                      |             &lt;img src=&quot;../assets/images/user/7.jpg&quot; atl=&quot;user&quot; class=&quot;img-radius align-top m-r-15 rounded-circle&quot;&gt;
+                                      |             &lt;div class=&quot;d-inline-block&quot;&gt;&gt;
+                                      |               &lt;h6&gt;Pusiz bia &lt;span class=&quot;text-muted digits&quot;&gt;(14+ Online)&lt;/span&gt;&lt;/h6&gt;
+                                      |             &lt;/div&gt;
+                                      |           &lt;/div&gt;
+                                      |         &lt;/td&gt;
+                                      |         &lt;td&gt;Designer&lt;/td&gt;
+                                      |         &lt;td&gt;
+                                      |           &lt;div class=&quot;progress-showcase&quot;&gt;
+                                      |             &lt;div class=&quot;progress&quot; style=&quot;height:8px;&quot;&gt;
+                                      |               &lt;div class=&quot;progress-bar bg-primary&quot; role=&quot;progressbar&quot; style=&quot;width: 90%&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+                                      |             &lt;/div&gt;
+                                      |           &lt;/div&gt;
+                                      |         &lt;/td&gt;
+                                      |         &lt;td&gt;class=&quot;digits&quot;&gt;5 Year&lt;/td&gt;
+                                      |       &lt;/tr&gt;
+                                      |     &lt;/tbody&gt;
+                                      |   &lt;/table&gt;
+                                      | &lt;/div&gt;
+                                      | &lt;!-- Cod Box Copy end --&gt;
+                        .col-sm-12.col-lg-6.col-xl-4.xl-50.col-md-12.box-col-6
+                          .card.height-equal
+                            .calender-widget
+                              .cal-img
+                              .cal-date
+                                h5
+                                  | 25
+                                  br
+                                  | APRIL
+                              .cal-desc.text-center.card-body
+                                h6.f-w-600 I must explain to you how all this mistaken idea truth
+                                p.text-muted.mt-3.mb-0
+                                  | Denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth,Letraset sheets containing Lorem Ipsum passages, and more recently with desktop Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        .col-sm-12.col-lg-6.col-xl-8.xl-50.col-md-12.box-col-6
+                          .card.height-equal
+                            .card-header
+                              h5 Contact Us
+                              .card-header-right
+                                ul.list-unstyled.card-option
+                                  li
+                                    i.fa.fa-spin.fa-cog
+                                  li
+                                    i.view-html.fa.fa-code
+                                  li
+                                    i.icofont.icofont-maximize.full-card
+                                  li
+                                    i.icofont.icofont-minus.minimize-card
+                                  li
+                                    i.icofont.icofont-refresh.reload-card
+                                  li
+                                    i.icofont.icofont-error.close-card
+                            .contact-form.card-body
+                              form.theme-form
+                                .form-icon
+                                  i.icofont.icofont-envelope-open
+                                .form-group
+                                  label(for='exampleInputName') Your Name
+                                  input#exampleInputName.form-control(type='text', placeholder='John Dio')
+                                .form-group
+                                  label.col-form-label(for='exampleInputEmail1') Email
+                                  input#exampleInputEmail1.form-control(type='email', placeholder='Demo@gmail.com')
+                                .form-group
+                                  label.col-form-label(for='exampleInputEmail1') Message
+                                  textarea.form-control.textarea(rows='3', cols='50', placeholder='Your Message')
+                                .text-sm-right
+                                  button.btn.btn-primary-gradien SEND IT
+                              .code-box-copy
+                                button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head3', title='Copy')
+                                  i.icofont.icofont-copy-alt
+                                pre
+                                  code.language-html#example-head3
+                                      | &lt;!-- Cod Box Copy begin --&gt;
+                                      | &lt;div class=&quot;contact-form card-body&quot;&gt;
+                                      |   &lt;form class=&quot;theme-form&quot;&gt;
+                                      |     &lt;div class=&quot;form-icon&quot;&gt;
+                                      |       &lt;i class=&quot;icofont icofont-envelope-open&quot;&gt;&lt;/i&gt;
+                                      |     &lt;/div&gt;
+                                      |     &lt;div class=&quot;form-group&quot;&gt;
+                                      |       &lt;label for=&quot;exampleInputName&quot;&gt;Your Name&lt;/label&gt;
+                                      |       &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInputName&quot; placeholder=&quot;John Dio&quot;&gt;
+                                      |     &lt;/div&gt;
+                                      |     &lt;div class=&quot;form-group&quot;&gt;
+                                      |       &lt;label for=&quot;exampleInputEmail1&quot; class=&quot;col-form-label&quot;&gt;Email&lt;/label&gt;
+                                      |       &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; placeholder=&quot;Demo@gmail.com&quot;&gt;
+                                      |     &lt;/div&gt;
+                                      |     &lt;div class=&quot;form-group&quot;&gt;
+                                      |       &lt;label for=&quot;exampleInputEmail1&quot; class=&quot;col-form-label&quot;&gt;Message&lt;/label&gt;
+                                      |       &lt;textarea row=&quot;3&quot; cols=&quot;50&quot; class=&quot;form-control textarea&quot; placeholder=&quot;Your Message&quot;&gt;&lt;/textarea&gt;
+                                      |     &lt;/div&gt;
+                                      |     &lt;div class=&quot;text-sm-right&quot;&gt;
+                                      |       &lt;button class=&quot;btn btn-primary-gradien&quot;&gt;SEND IT&lt;/button&gt;
+                                      |     &lt;/div&gt;
+                                      |   &lt;/form&gt;
+                                      | &lt;/div&gt;
+                                      | &lt;!-- Cod Box Copy end --&gt;
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

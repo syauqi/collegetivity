@@ -1,0 +1,300 @@
+/*====todo css start====*/
+.todo {
+  .action-box {
+    background: transparent;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms ease;
+    .icon {
+      vertical-align: 0;
+    }
+    &.completed {
+      background: $danger-color;
+      border: 1px solid $danger-color;
+      border-radius: 4px;
+      .icon {
+        color: $white;
+        font-size: 14px;
+      }
+    }
+    &.large {
+      height: 30px;
+      width: 30px;
+      .icon {
+        font-size: 20px;
+        vertical-align: -5px;
+        .icon-trash        {
+            color: var(--theme-deafult);
+        }
+        .icon-check{
+          color: var(--theme-deafult);
+        }
+      }
+    }
+  }
+  .todo-list-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    .mark-all-tasks {
+      position: absolute;
+      top: 40px;
+      right: 30px;
+      .mark-all-tasks-container {
+        overflow: hidden;
+        position: relative;
+      }
+      .mark-all-btn {
+        cursor: pointer;
+        display: inline-block;
+        transition: all 200ms ease;
+        &#mark-all-finished {
+          color: $danger-color;
+        }
+        &#mark-all-incomplete {
+          color: $success-color;
+          .action-box {
+            border: 2px solid $success-color;
+            border-radius: 4px;
+            .icon {
+              color: $success-color;
+            }
+          }
+        }
+        &.move-up {
+          transform: translateY(-30px);
+          position: absolute;
+          right: 0;
+        }
+        &.move-down {
+          transform: translateY(30px);
+          position: absolute;
+          right: 0;
+        }
+      }
+      .btn-label {
+        margin-right: 5px;
+        font-weight: 600;
+      }
+    }
+    .todo-list-footer {
+      position: relative;
+      h5 {
+        text-align: center;
+        color: $light-semi-gray;
+      }
+      .add-task-btn-wrapper {
+        padding-top: 30px;
+      }
+      .add-task-btn {
+        &.hide {
+          opacity: 0;
+          display: none;
+        }
+        &:hover {
+          background: var(--theme-deafult);
+          .icon {
+            color: $light-color;
+          }
+        }
+        .icon {
+          color: var(--theme-deafult);
+          font-size: 20px;
+        }
+      }
+      .new-task-wrapper {
+        transition: all 300ms ease;
+        max-height: 0;
+        overflow: hidden;
+        textarea {
+          box-sizing: border-box;
+          width: 100%;
+          border: 1px solid $light-color;
+          height: 90px;
+          padding: 10px 15px;
+          margin-bottom: 24px;
+          border-radius: 4px;
+          transition: all 300ms ease;
+          &:focus {
+            border: 1px solid $light-semi-gray;
+            outline: none;
+          }
+          &.error {
+            border: 1px solid $danger-color;
+            outline: none;
+          }
+        }
+        .error-message {
+          color: $danger-color;
+          font-style: italic;
+        }
+        &.visible {
+          max-height: 300px;
+          overflow: auto;
+        }
+      }
+      .new-task-wrapper::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+    .todo-list-body {
+      max-height: 500px;
+      overflow: auto;
+    }
+    #todo-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      .task{
+        &:first-child{
+            .task-container{
+              padding-top: 0;
+              h4{
+                padding-top: 0;
+              }
+            }
+        }
+      }
+      li {
+        margin: 0;
+        padding: 0;
+        .task-container {
+          display: table;
+          background: $white;
+          padding: 10px 0;
+          width: 100%;
+          border-bottom: 1px solid $light-color;
+          box-sizing: border-box;
+          position: relative;
+          transition: background 200ms ease;
+          .task-label {
+            display: block;
+            font-size: 17px;
+            vertical-align: middle;
+            color: $dark-gray;
+            word-break: break-all;
+            padding-top: 5px;
+                font-weight: 300;
+          }
+          .task-action-btn {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: right;
+            min-width: 65px;
+            .action-box {
+              margin-left: 5px;
+              margin-top: 2px;
+              border: 1px solid transparent;
+              margin-bottom: 2px;
+              .icon{
+                 font-size: 16px;
+              }
+              &:hover {
+                border: 1px solid $semi-dark;
+                background: $white;
+                border-radius: 4px;
+                .icon {
+                  color: $semi-dark;
+                }
+              }
+            }
+          }
+          &:hover {
+            h4{
+                color: $dark-color;
+              transition: all 0.3s ease;
+            }
+          }
+        }
+        &.completed .task-container {
+          .complete-btn {
+            border: 1px solid var(--theme-deafult);
+            border-radius: 4px;
+            .icon {
+              font-weight: bold;
+            }
+            &:hover {
+              background: $white;
+              border: 1px solid $success-color;
+              .icon {
+                color: $white;
+              }
+            }
+          }
+          .task-label {
+            text-decoration: line-through;
+            color: var(--theme-deafult);
+          }
+        }
+        &.new .task-container {
+          animation: taskHighlighter 2000ms linear 1;
+        }
+      }
+    }
+    .todo-list-header h5 {
+      text-align: center;
+      color: $light-semi-gray;
+    }
+  }
+  .notification-popup {
+    position: fixed;
+    top: 85px;
+    right: 10px;
+    width: 300px;
+    display: inline-block;
+    background: $success-color;
+    border: 1px solid $success-color;
+    color: $white;
+    padding: 20px;
+    opacity: 0.9;
+    border-radius: 2px;
+    box-sizing: border-box;
+    transition: all 300ms ease;
+    &.success {
+      background: $success-color;
+      border: 1px solid $success-color;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .task {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      display: inline-block;
+    }
+    .notification-text {
+      font-size: 14px;
+      display: inline-block;
+      overflow: hidden;
+    }
+    &.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes taskHighlighter {
+    0% {
+      background: rgba(68, 102, 242, 0.5);
+    }
+    100% {
+      background: $white;
+    }
+  }
+  @keyframes taskHighlighter {
+    0% {
+      background: rgba(68, 102, 242, 0.5);
+    }
+    100% {
+      background: $white;
+    }
+  }
+}
+/*====todo css end====*/
