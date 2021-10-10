@@ -30,6 +30,40 @@
 </section>
 <!--====== Page title area End ======-->
 
+<!--====== Start Skill Section ======-->
+<section class="skill-section p-t-130 p-b-130">
+    <div class="container">
+        <div class="row align-items-center justify-content-lg-between justify-content-center">
+            <div class="col-lg-6 col-md-10 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="preview-image-v4 m-b-md-60">
+                    <div class="image-one animate-float-bob-y">
+                        <img src="{{url('landio/assets/img/preview-gallery/team-skills-thumbnail-1.jpg')}}"
+                            alt="Thumbnail one">
+                    </div>
+                    <div class="image-two animate-float-bob-y">
+                        <img src="{{url('landio/assets/img/preview-gallery/team-skills-thumbnail-2.jpg')}}"
+                            alt="Thumbnail two">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8">
+                <div class="skill-text-block p-r-70 p-l-70 p-r-lg-30 p-l-lg-40 p-l-md-0 p-r-md-0">
+                    <div class="common-heading tagline-boxed m-b-30">
+                        <span class="tagline">Perkenalkan Team</span>
+                        <h2 class="title">Mahasiswa Baru Informatika yang Ingin Membantu Mahasiswa</h2>
+                    </div>
+
+                    <p>
+                        Kami harap dengan adanya collegetivity ini dapat membantu para mahasiswa dari universitas
+                        manapun maupun dari semester apapun agar tetap produktif di masa pandemi ini
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End Skill Section ======-->
+
 <!--====== Start Team Loop ======-->
 <section class="team-member-area section-half-dots-pattern-fixed p-t-130 p-b-100">
     <div class="container">
