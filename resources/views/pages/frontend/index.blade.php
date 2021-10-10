@@ -53,39 +53,40 @@
                 <div class="col-lg-3 col-md-6 col-sm-10 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="iconic-box box-version-white color-v1 m-t-50">
                         <div class="icon">
-                            <i class="far fa-code"></i>
+                            <i class="far fa-calendar"></i>
                         </div>
-                        <h4 class="title"><a href="#">Open Source Platform</a></h4>
+                        <h4 class="title"><a href="#">Buat Jadwalmu Terorganisir</a></h4>
                         <p>
-                            But I must explain to how mistaken denouncing pleasures praisinge pain was born and complete
+                            Collegetivity adalah tempat kamu mengatur semua data akademikmu, dilengkapi fitur jadwal
+                            pelajaran, catatan pelajaran dan lain lain yang membuatmu terorganisir
                         </p>
-                        <a href="#" class="box-btn">Learn More <i class="far fa-arrow-right"></i></a>
+                        <a href="#" class="box-btn">Selengkapnya <i class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-10 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="iconic-box box-version-white color-v2 m-t-50">
                         <div class="icon">
-                            <i class="far fa-cloud-upload"></i>
+                            <i class="fas fa-folder-open"></i>
                         </div>
-                        <h4 class="title"><a href="#">On-Demand Cloud</a></h4>
+                        <h4 class="title"><a href="#">Simpan File Kuliahmu</a></h4>
                         <p>
-                            To take a trivial example which of ever undertakes laborious physicals exercise except
-                            obtain some
+                            Jangan takut kalau file tugas atau file yang berkaitan dengan kuliahmu hilang, dengan
+                            collegetivity kamu bisa dengan aman menyimpan file file tersebut
                         </p>
-                        <a href="#" class="box-btn">Learn More <i class="far fa-arrow-right"></i></a>
+                        <a href="#" class="box-btn">Selengkapnya <i class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-10 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="iconic-box box-version-white color-v3 m-t-50">
                         <div class="icon">
-                            <i class="far fa-gamepad"></i>
+                            <i class="far fa-bookmark"></i>
                         </div>
-                        <h4 class="title"><a href="#">Real Time Dashboard</a></h4>
+                        <h4 class="title"><a href="#">Resources Yang Membantu</a></h4>
                         <p>
-                            Quis autem veleum reprehenderit quin voluptate velit esse quam nihile molestiae consequatur
-                            vel
+                            Disini juga kami menyediakan banyak resources mulai dari website atau thread yang bakal
+                            membantu kamu menjadi lebih produktif dari sebelumnya
                         </p>
-                        <a href="#" class="box-btn">Learn More <i class="far fa-arrow-right"></i></a>
+                        <a href="#" class="box-btn">Selengkapnya <i class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -99,60 +100,49 @@
             <div class="row align-items-center justify-content-center no-gutters">
                 <div class="col-lg-7">
                     <div class="software-preview m-b-md-80 animate-float-bob-y">
-                        <img src="assets/img/preview-gallery/design-layout.png" alt="Image">
+                        <img src="{{url('landio/assets/img/preview-gallery/design-layout.png')}}" alt="Image">
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-10">
                     <div class="software-text-block p-l-50 p-l-lg-30 p-l-md-0">
                         <div class="common-heading m-b-40">
-                            <span class="tagline color-primary-5">Design & Layouts</span>
-                            <h2 class="title">Keep Things Simple With Ability</h2>
+                            <span class="tagline color-primary-5">Tujuan & Manfaat</span>
+                            <h2 class="title">Atur semua dunia dan data perkuliahanmu</h2>
                         </div>
                         <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudane totam rem aperiam eaque ipsa quae abilloe
+                            Kamu ga usah ribet buat ganti tab dari berbagai aplikasi cuma buat jadwal, bikin catatan
+                            atau nyimpen file dan foto berharga karena kami udah nyediain semua fiturnya di satu
+                            website!
                         </p>
-                        <div class="icon-bordered-box icon-left m-t-30 wow fadeInLeft" data-wow-delay="0.3s">
-                            <div class="icon">
-                                <i class="far fa-gem"></i>
-                            </div>
-                            <div class="box-content">
-                                <h4 class="title">Build With Animations</h4>
-                                <p>
-                                    Quis autem vel eum iure reprehenderit quin voluptate velit esse quam
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
             <div class="row align-items-center justify-content-center p-t-130">
                 <div class="col-lg-7 col-md-10 order-lg-last order-first wow fadeInUp" data-wow-delay="0.3s">
                     <div class="preview-galley-v8 text-right m-b-md-80">
-                        <img src="assets/img/preview-gallery/sof-analysis-01.jpg" class="preview-one" alt="Image">
-                        <img src="assets/img/preview-gallery/sof-analysis-02.jpg"
+                        <img src="{{url('landio/assets/img/preview-gallery/sof-analysis-01.jpg')}}" class="preview-one"
+                            alt="Image">
+                        <img src="{{url('landio/assets/img/preview-gallery/sof-analysis-02.jpg')}}"
                             class="preview-two animate-float-bob-x" alt="Image">
-                        <img src="assets/img/preview-gallery/sof-analysis-03.jpg"
+                        <img src="{{url('landio/assets/img/preview-gallery/sof-analysis-03.jpg')}}"
                             class="preview-three animate-float-bob-y" alt="Image">
                     </div>
                 </div>
-
                 <div class="col-lg-5 col-md-10 order-lg-first">
                     <div class="software-text-block">
                         <div class="common-heading m-b-25">
-                            <span class="tagline color-primary-5">System Analysis</span>
-                            <h2 class="title">Track Goals All In One Place</h2>
+                            <span class="tagline color-primary-5">Kreatif & Produktif</span>
+                            <h2 class="title">Kami selalu ada buat kalian yang kreatif dan produktif</h2>
                         </div>
-
                         <p class="m-b-25">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudane totam rem aperiam eaque ipsa quae abilloe
+                            Cukup fokus ningkatin kreatifitas kalian dan selesaikan tugas kalian. Kami yang menangani
+                            semuanya.
                         </p>
                         <p>
-                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                            Biar lulus cepet dan biar cepet nikahin doi!
                         </p>
                         <a href="about.html" class="template-btn primary-bg-5 m-t-40">
-                            Learn More <i class="fas fa-arrow-right"></i>
+                            Daftar Sekarang <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -167,8 +157,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="common-heading text-center m-b-65">
-                        <span class="tagline color-primary-5">Service We Provide</span>
-                        <h2 class="title">Better Smart Solutions For Your Better Software</h2>
+                        <span class="tagline color-primary-5">Ada apa aja sih di Collegetivity?</span>
+                        <h2 class="title">Fitur buat jadi solusi dari semua masalah mahasiswa</h2>
                     </div>
                 </div>
             </div>
@@ -224,42 +214,42 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="tabItem1" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="assets/img/service-tab-img.jpg" alt="Image">
+                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem2" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="assets/img/service-tab-img.jpg" alt="Image">
+                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem3" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="assets/img/service-tab-img.jpg" alt="Image">
+                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem4" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="assets/img/service-tab-img.jpg" alt="Image">
+                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem5" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="assets/img/service-tab-img.jpg" alt="Image">
+                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem6" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="assets/img/service-tab-img.jpg" alt="Image">
+                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem7" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="assets/img/service-tab-img.jpg" alt="Image">
+                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem8" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="assets/img/service-tab-img.jpg" alt="Image">
+                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
                         </div>
                     </div>
                 </div>
@@ -275,14 +265,14 @@
                 <div class="col-lg-6 col-md-8 col-sm-9">
                     <div class="preview-image-v5 m-r-45 m-r-lg-0 m-b-md-80 wow fadeInLeft animate-float-bob-y"
                         data-wow-delay="0.3s">
-                        <img src="assets/img/preview-gallery/sof-testimonial.jpg" alt="Image">
+                        <img src="{{url('landio/assets/img/preview-gallery/sof-testimonial.jpg')}}" alt="Image">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-10">
                     <div class="testimonial-slider-wrapper p-l-40 p-l-lg-0">
                         <div class="common-heading m-b-65">
-                            <span class="tagline color-primary-5">Customer Reviews</span>
-                            <h2 class="title">What our clients say about solutions</h2>
+                            <span class="tagline color-primary-5">Review Mereka</span>
+                            <h2 class="title">Apa kata mereka tentang Collegetivity?</h2>
                         </div>
 
                         <div class="testimonial-slider-v1 quote-left-bordered" id="testimonialActiveFive">
@@ -294,7 +284,8 @@
                                     totam rem
                                     aperiam eaque quae</p>
                                 <div class="author-info">
-                                    <img src="assets/img/testimonial/author-1.png" alt="testimonial author">
+                                    <img src="{{url('landio/assets/img/testimonial/author-1.png')}}"
+                                        alt="testimonial author">
                                     <h6 class="name">Michael W. Kirwan <span class="title">CEO & Founder</span></h6>
                                 </div>
                             </div>
@@ -306,7 +297,8 @@
                                     totam rem
                                     aperiam eaque quae</p>
                                 <div class="author-info">
-                                    <img src="assets/img/testimonial/author-2.png" alt="testimonial author">
+                                    <img src="{{url('landio/assets/img/testimonial/author-2.png')}}"
+                                        alt="testimonial author">
                                     <h6 class="name">Michael W. Kirwan <span class="title">CEO & Founder</span></h6>
                                 </div>
                             </div>
@@ -318,7 +310,8 @@
                                     totam rem
                                     aperiam eaque quae</p>
                                 <div class="author-info">
-                                    <img src="assets/img/testimonial/author-3.png" alt="testimonial author">
+                                    <img src="{{('landio/assets/img/testimonial/author-3.png')}}"
+                                        alt="testimonial author">
                                     <h6 class="name">Michael W. Kirwan <span class="title">CEO & Founder</span></h6>
                                 </div>
                             </div>
@@ -332,24 +325,24 @@
 
     <!--====== Start Call To Action ======-->
     <section class="cta-section bg-cover-center p-t-90 p-b-90"
-        style="background-image: url(assets/img/cta/cta-bg-2.jpg);">
+        style="background-image: url(./../landio/assets/img/cta/cta-bg-2.jpg);">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-7 col-md-10">
                     <div class="cta-content text-center">
                         <div class="common-heading heading-white m-b-65">
-                            <span class="tagline">Download Free Trial</span>
-                            <h2 class="title">Get Our Software Very Easily Download Free Trial</h2>
+                            <span class="tagline">Tunggu Apa Lagi?</span>
+                            <h2 class="title">Segera Daftar dan Bergabung Bersama Collegetivity</h2>
                         </div>
 
-                        <a href="#" class="template-btn white-bg bordered-btn">Download Free Trial <i
+                        <a href="#" class="template-btn white-bg bordered-btn">Daftar Sekarang <i
                                 class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="cta-absolute-image d-none d-lg-block wow fadeInUp" data-wow-delay="0.3s">
-            <img src="assets/img/cta//cta-absolute-img.png" alt="">
+            <img src="{{url('landio/assets/img/cta/cta-absolute-img.png')}}" alt="">
         </div>
     </section>
     <!--====== End Call To Action ======-->

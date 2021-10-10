@@ -52,7 +52,7 @@
         <div class="panel-inner">
             <div class="mobile-logo">
                 <a href="index.html">
-                    <img src="assets/img/logo-1.png" alt="Landio">
+                    <img src="{{url('landio/assets/img/logo-new-2.svg')}}" width="32" alt="Logo">
                 </a>
             </div>
             <nav class="mobile-menu">
@@ -86,7 +86,7 @@
         <div class="canvas-overlay"></div>
         <div class="canvas-inner">
             <div class="canvas-logo">
-                <img src="assets/img/logo-1.png" alt="Canvas Logo">
+                <img src="{{url('landio/assets/img/logo-new-2.svg')}}" alt="Canvas Logo">
             </div>
             <div class="about-us">
                 <h5 class="canvas-widget-title">About Us</h5>
