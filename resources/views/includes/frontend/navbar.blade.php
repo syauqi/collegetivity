@@ -13,16 +13,16 @@
                             <a href="{{url('/')}}">Beranda</a>
                         </li>
                         <li>
-                            <a href="services.html">Fitur</a>
+                            <a href="{{url('fitur')}}">Fitur</a>
                         </li>
                         <li>
-                            <a href="services.html">Tentang</a>
+                            <a href="{{url('tentang')}}">Tentang</a>
                         </li>
                         <li>
-                            <a href="#">Team</a>
+                            <a href="{{url('team')}}">Team</a>
                         </li>
                         <li>
-                            <a href="contact.html">Kontak</a>
+                            <a href="{{url('kontak')}}">Kontak</a>
                         </li>
                     </ul>
                 </nav>

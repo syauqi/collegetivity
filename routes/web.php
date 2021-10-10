@@ -13,8 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* -------------------------------------------------------------------------- */
+/*                               Frontend Routes                              */
+/* -------------------------------------------------------------------------- */
+
 Route::get('/', function () {
     return view('pages.frontend.index');
+});
+
+Route::get('/fitur', function () {
+    return view('pages.frontend.feature');
+});
+
+Route::get('/tentang', function () {
+    return view('pages.frontend.about');
 });
 
 Route::get('/team', function () {
@@ -25,8 +37,9 @@ Route::get('/kontak', function () {
     return view('pages.frontend.contact');
 });
 
-
-
+/* -------------------------------------------------------------------------- */
+/*                               Backend Routes                               */
+/* -------------------------------------------------------------------------- */
 
 Route::get('/dashboard', function () {
     return view('pages.backend.index');

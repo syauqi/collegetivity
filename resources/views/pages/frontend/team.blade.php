@@ -11,7 +11,7 @@
 
             <ul class="breadcrumb-nav">
                 <li><a href="{{url('/')}}">Beranda</a></li>
-                <li class="active">Member Team</li>
+                <li class="active">Team</li>
             </ul>
         </div>
     </div>
