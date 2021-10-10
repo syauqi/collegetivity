@@ -17,6 +17,12 @@ Route::get('/', function () {
     return view('pages.frontend.index');
 });
 
+Route::get('/team', function () {
+    return view('pages.frontend.team');
+});
+
+
+
 Route::get('/dashboard', function () {
     return view('pages.backend.index');
 })->middleware(['auth'])->name('dashboard');

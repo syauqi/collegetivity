@@ -30,7 +30,7 @@
             <div class="header-right">
                 <ul class="header-extra">
                     <li class="d-none d-md-block">
-                        <a href="services.html" class="template-btn primary-bg-5">
+                        <a href="{{url('/register')}}" class="template-btn primary-bg-5">
                             Daftar Sekarang <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>

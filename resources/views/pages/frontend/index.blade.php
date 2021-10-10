@@ -21,7 +21,7 @@
                     🎓 • Collegetivity hadir untuk membantu kalian para mahasiswa agar lebih produktif, terorganisir dan
                     perkuliahanmu lebih mudah!
                 </p>
-                <a href="#" class="template-btn primary-bg-5 wow fadeInUp" data-wow-delay="0.4s">
+                <a href="{{url('/register')}}" class="template-btn primary-bg-5 wow fadeInUp" data-wow-delay="0.4s">
                     Daftar Sekarang <i class="fas fa-arrow-right"></i>
                 </a>
 
