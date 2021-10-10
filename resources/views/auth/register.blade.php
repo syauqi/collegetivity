@@ -28,10 +28,10 @@
                             <x-auth-validation-errors class="mb-4" :errors="$errors" />
                             <form method="POST" action={{route('register')}} class="theme-form">
                                 @csrf
-                                <h4>Daftarkan akun anda</h4>
+                                <h4>Daftarkan akun kamu</h4>
                                 <p>Masukan data yang diminta untuk membuat akun</p>
                                 <div class="form-group">
-                                    <label class="col-form-label pt-0">Nama anda</label>
+                                    <label class="col-form-label pt-0">Nama kamu</label>
                                     <div class="form-row">
                                         <div class="col-12">
                                             <input class="form-control" type="text" name="name" required autofocus>
@@ -55,7 +55,7 @@
                                 <div class="form-group">
                                     <button class="btn btn-primary btn-block mt-4" type="submit">Buat Akun</button>
                                 </div>
-                                <p class="mt-4 mb-0">Sudah mempunyai akun?<a class="ml-2" href="{{('/login')}}">Masuk
+                                <p class="mt-4 mb-0">Udah punya akun?<a class="ml-2" href="{{('/login')}}">Yuk Masuk
                                         sekarang</a></p>
                             </form>
                         </div>
