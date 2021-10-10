@@ -21,6 +21,11 @@ Route::get('/team', function () {
     return view('pages.frontend.team');
 });
 
+Route::get('/kontak', function () {
+    return view('pages.frontend.contact');
+});
+
+
 
 
 Route::get('/dashboard', function () {
