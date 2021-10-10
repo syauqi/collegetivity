@@ -5,6 +5,7 @@
 
 
 <div class="page-wrapper">
+
     <!--====== Start Hero Area ======-->
     <section class="hero-area-v7">
         <div class="container-fluid">
@@ -17,7 +18,7 @@
                 <h2 class="hero-title wow fadeInLeft" data-wow-delay="0.2s">Website yang membantu dunia perkuliahanmu!
                 </h2>
                 <p class="wow fadeInUp" data-wow-delay="0.3s">
-                    🎓 Collegetivity hadir untuk membantu kalian para mahasiswa agar lebih produktif, terorganisir dan
+                    🎓 • Collegetivity hadir untuk membantu kalian para mahasiswa agar lebih produktif, terorganisir dan
                     perkuliahanmu lebih mudah!
                 </p>
                 <a href="#" class="template-btn primary-bg-5 wow fadeInUp" data-wow-delay="0.4s">

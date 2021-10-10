@@ -1,59 +1,70 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
+<!DOCTYPE html>
+<html lang="id">
 
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Collegetivity adalah aplikasi yang membantu dunia perkuliahan mahasiswa mulai dari mengorganisasi pelajaran, tugas dan jadwal.">
+    <meta name="keywords" content="Collegetivity, Universitas Siliwangi, Aplikasi Perkuliahan">
+    <meta name="author" content="Syauqizaidan">
+    <link rel="icon" href="{{url('cuba/assets/images/favicon.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{url('cuba/assets/images/favicon.png')}}" type="image/x-icon">
+    <title>Daftar Akun Baru - Collegetivity</title>
+    @include('includes.backend.style')
+</head>
 
-        <form method="POST" action="{{ route('register') }}">
-            @csrf
-
-            <!-- Name -->
-            <div>
-                <x-label for="name" :value="__('Name')" />
-
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+<body>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-xl-7">
+                <img class="bg-img-cover bg-center" src="{{url('cuba/assets/images/login-bg-2.jpg')}}" alt="looginpage">
             </div>
-
-            <!-- Email Address -->
-            <div class="mt-4">
-                <x-label for="email" :value="__('Email')" />
-
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+            <div class="col-xl-5 p-0">
+                <div class="login-card">
+                    <div>
+                        <div class="login-main">
+                            <x-auth-validation-errors class="mb-4" :errors="$errors" />
+                            <form method="POST" action={{route('register')}} class="theme-form">
+                                @csrf
+                                <h4>Daftarkan akun anda</h4>
+                                <p>Masukan data yang diminta untuk membuat akun</p>
+                                <div class="form-group">
+                                    <label class="col-form-label pt-0">Nama anda</label>
+                                    <div class="form-row">
+                                        <div class="col-12">
+                                            <input class="form-control" type="text" name="name" required autofocus>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label">Alamat email</label>
+                                    <input class="form-control" type="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label">Password</label>
+                                    <input class="form-control" type="password" name="password" required
+                                        placeholder="*********">
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label">Konfirmasi Password</label>
+                                    <input class="form-control" type="password" name="password_confirmation" required
+                                        placeholder="*********">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary btn-block mt-4" type="submit">Buat Akun</button>
+                                </div>
+                                <p class="mt-4 mb-0">Sudah mempunyai akun?<a class="ml-2" href="{{('/login')}}">Masuk
+                                        sekarang</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        @include('includes.backend.script')
+    </div>
+</body>
 
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
-
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="new-password" />
-            </div>
-
-            <!-- Confirm Password -->
-            <div class="mt-4">
-                <x-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                <x-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-button class="ml-4">
-                    {{ __('Register') }}
-                </x-button>
-            </div>
-        </form>
-    </x-auth-card>
-</x-guest-layout>
+</html>
