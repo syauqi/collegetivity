@@ -27,7 +27,7 @@
             <!-- footer end-->
         </div>
     </div>
-    @include('includes.backend.scripts')
+    @include('includes.backend.script')
 </body>
 
 </html>
