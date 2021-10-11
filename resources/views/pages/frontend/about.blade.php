@@ -175,7 +175,7 @@
             <div class="col-xl-3 col-md-6 col-sm-10">
                 <div class="iconic-box m-t-30">
                     <div class="icon icon-gradient-3">
-                        <i class="far fa-user-chart"></i>
+                        <i class="far fa-calendar-alt"></i>
                     </div>
                     <h4 class="title">Atur Jadwalmu</h4>
                     <p>
@@ -186,7 +186,7 @@
             <div class="col-xl-3 col-md-6 col-sm-10">
                 <div class="iconic-box m-t-30">
                     <div class="icon icon-gradient-4">
-                        <i class="far fa-compass"></i>
+                        <i class="far fa-database"></i>
                     </div>
                     <h4 class="title">Kelola Datamu</h4>
                     <p>
@@ -197,7 +197,7 @@
             <div class="col-xl-3 col-md-6 col-sm-10">
                 <div class="iconic-box m-t-30">
                     <div class="icon icon-gradient-5">
-                        <i class="far fa-squirrel"></i>
+                        <i class="far fa-file-word"></i>
                     </div>
                     <h4 class="title">Simpan Tugasmu</h4>
                     <p>
@@ -208,7 +208,7 @@
             <div class="col-xl-3 col-md-6 col-sm-10">
                 <div class="iconic-box m-t-30">
                     <div class="icon icon-gradient-6">
-                        <i class="far fa-fingerprint"></i>
+                        <i class="far fa-bookmark"></i>
                     </div>
                     <h4 class="title">Resources Terbaik</h4>
                     <p>
