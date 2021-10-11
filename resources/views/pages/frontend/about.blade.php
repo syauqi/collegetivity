@@ -290,4 +290,41 @@
 </section>
 <!--====== End Team Loop ======-->
 
+<!--====== Newsletter Area Start ======-->
+<section class="newsletter-area bg-cover-center bg-soft-grey-color p-t-130 p-b-130"
+    style="background-image: url(./../landio/assets/img/particle/newsletter-bg.png);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="newsletter-text">
+                    <div class="common-heading-v1 text-center m-b-40 p-0 px-5">
+                        <span class="tagline">Subscribe layanan newsletter</span>
+                        <h2 class="title">Subscribe layanan newsletter kami untuk mendapatkan info terbaru</h2>
+                    </div>
+
+                    <form action="#" class="newsletter-form">
+                        <div class="input-field">
+                            <input type="email" placeholder="Masukkan alamat email anda">
+                            <button class="template-btn">Subscribe <i class="far fa-arrow-right"></i></button>
+                        </div>
+
+                        <p class="text-center m-t-25">Kami ga bakal kirim email spam kok</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter-particle-effect d-none d-md-block">
+        <img class="particle-1 animate-float-bob-y" src="{{url('landio/assets/img/particle/particle-2.png')}}"
+            alt="particle Two">
+        <img class="particle-2 animate-zoominout" src="{{url('landio/assets/img/particle/particle-3.png')}}"
+            alt="particle Three">
+        <img class="particle-3 animate-zoominout" src="{{url('landio/assets/img/particle/particle-4.png')}}"
+            alt="particle Four">
+        <img class="particle-4 animate-zoominout" src="{{url('landio/assets/img/particle/particle-5.png')}}"
+            alt="particle Five">
+    </div>
+</section>
+<!--====== Newsletter Area End ======-->
+
 @endsection
