@@ -20,7 +20,7 @@ class CreateSchedulesTable extends Migration
             $table->string('waktu_mulai', 48);
             $table->string('waktu_selesai', 48);
             $table->string('hari', 16);
-            $table->integer('sks', 16);
+            $table->integer('sks')->length(16)->unsigned();
             $table->string('kelas', 16);
             $table->timestamps();
         });
