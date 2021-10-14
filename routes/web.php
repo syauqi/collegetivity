@@ -49,8 +49,11 @@ Route::prefix('dashboard')
         })->name('dashboard');
         Route::get('/jadwal-pelajaran', 'App\Http\Controllers\ScheduleController@index');
         Route::get('/jadwal-pelajaran/atur-jadwal', 'App\Http\Controllers\ScheduleController@create');
-        Route::get('/jadwal-pelajaran/atur-jadwal/simpan', 'App\Http\Controllers\ScheduleController@store');
         Route::resource('schedules', 'App\Http\Controllers\ScheduleController');
+
+        Route::get('/catatan-pelajaran', 'App\Http\Controllers\NoteController@index');
+        Route::get('/catatan-pelajaran/tambah-catatan', 'App\Http\Controllers\NoteController@create');
+        Route::resource('notes', 'App\Http\Controllers\NoteController');
     });
 
 require __DIR__ . '/auth.php';

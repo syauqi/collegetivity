@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Notes;
 
 class NoteController extends Controller
 {
@@ -13,7 +14,11 @@ class NoteController extends Controller
      */
     public function index()
     {
-        //
+        $items = Notes::all();
+
+        return view('pages.backend.notes.index', [
+            'items' => $items
+        ]);
     }
 
     /**
@@ -23,7 +28,7 @@ class NoteController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.backend.notes.create');
     }
 
     /**
@@ -34,7 +39,36 @@ class NoteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'thumbnail' => 'file|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        if ($request->hasFile('thumbnail')) {
+            $resource = $request->file('thumbnail');
+            $name = $resource->getClientOriginalName();
+            $finalName = date('His')  . $name;
+            $request->file('thumbnail')->storeAs('images/', $finalName, 'public');
+            Notes::create([
+                'judul' => $request->judul,
+                'thumbnail' => $finalName,
+                'tanggal' => $request->tanggal,
+                'author' => $request->author,
+                'matkul' => $request->matkul,
+                'content' => $request->content,
+
+            ]);
+        } else {
+            Notes::create([
+                'judul' => $request->judul,
+                'thumbnail' => 'thumbnail-default.jpg',
+                'tanggal' => $request->tanggal,
+                'author' => $request->author,
+                'matkul' => $request->matkul,
+                'content' => $request->content,
+            ]);
+        }
+
+        return redirect('/dashboard/catatan-pelajaran');
     }
 
     /**
@@ -45,7 +79,11 @@ class NoteController extends Controller
      */
     public function show($id)
     {
-        //
+        $item = Notes::findOrFail($id);
+
+        return view('pages.backend.notes.detail', [
+            'item' => $item
+        ]);
     }
 
     /**
@@ -56,7 +94,11 @@ class NoteController extends Controller
      */
     public function edit($id)
     {
-        //
+        $item = Notes::findOrFail($id);
+
+        return view('pages.backend.notes.edit', [
+            'item' => $item
+        ]);
     }
 
     /**
@@ -79,6 +121,9 @@ class NoteController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $item = Notes::findOrFail($id);
+        $item->delete();
+
+        return redirect('/dashboard/catatan-pelajaran');
     }
 }
