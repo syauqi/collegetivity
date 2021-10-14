@@ -19,6 +19,8 @@
 @stack('galleries-styles')
 @stack('carousel-styles')
 @stack('timepicker-styles')
+@stack('todo-styles')
+@stack('calendar-styles')
 @stack('create-article-styles')
 <!-- Plugins css Ends-->
 <!-- Bootstrap css-->

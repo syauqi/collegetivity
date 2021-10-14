@@ -1,84 +1,17 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Dashboard — Ciradyka Pramuka SMAN 1 Ciamis')
+@section('title', 'Selamat datang di Collegetivity ' . Auth::user()->name . '!')
 @section('content')
+
+@push('datatable-styles')
+<link rel="stylesheet" type="text/css" href="{{url('cuba/assets/css/vendors/scrollable.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url('cuba/assets/css/vendors/datatables.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url('cuba/assets/css/vendors/datatable-extension.css')}}">
+@endpush
 
 <!-- file wrapper for better tabs start-->
 <div>
     <br>
-    {{-- <div class="container-fluid my-3">
-        <div class="page-title">
-            <div class="row">
-                <div class="col-6">
-                    <h3>💹 Dashboard</h3>
-                </div>
-                <div class="col-6">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html"> <i data-feather="home"></i></a></li>
-                        <li class="breadcrumb-item active">Dashboard</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-    <!-- pages title header start-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6 col-xl-3 col-lg-6">
-                <div class="card o-hidden">
-                    <div class="bg-primary b-r-4 card-body">
-                        <div class="media static-top-widget">
-                            <div class="align-self-center text-center"><i data-feather="user"></i></div>
-                            <div class="media-body"><span class="m-0">Anggota</span>
-                                <h4 class="mb-0 counter">4</h4><i class="icon-bg"
-                                    data-feather="user"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-xl-3 col-lg-6">
-                <div class="card o-hidden">
-                    <div class="bg-secondary b-r-4 card-body">
-                        <div class="media static-top-widget">
-                            <div class="align-self-center text-center"><i data-feather="edit"></i></div>
-                            <div class="media-body"><span class="m-0">Artikel</span>
-                                <h4 class="mb-0 counter">4</h4><i class="icon-bg"
-                                    data-feather="edit"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-xl-3 col-lg-6">
-                <div class="card o-hidden">
-                    <div class="bg-primary b-r-4 card-body">
-                        <div class="media static-top-widget">
-                            <div class="align-self-center text-center"><i data-feather="shopping-bag"></i></div>
-                            <div class="media-body"><span class="m-0">Merchandise</span>
-                                <h4 class="mb-0 counter">4</h4><i class="icon-bg"
-                                    data-feather="shopping-bag"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-xl-3 col-lg-6">
-                <div class="card o-hidden">
-                    <div class="bg-primary b-r-4 card-body">
-                        <div class="media static-top-widget">
-                            <div class="align-self-center text-center"><i data-feather="image"></i></div>
-                            <div class="media-body"><span class="m-0">Galeri</span>
-                                <h4 class="mb-0 counter">4</h4><i class="icon-bg"
-                                    data-feather="image"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- pages title header end-->
     <!-- main content start-->
     <div class="container-fluid">
         <div class="row second-chart-list third-news-update">
@@ -96,11 +29,16 @@
                             <div class="profile-vector"><img class="img-fluid"
                                     src="{{url("cuba/assets/images/dashboard/welcome.png")}}" alt=""></div>
                             <h4 class="f-w-600"><span id="greeting">Good Morning</span></h4>
-                            <p><span> Selamat datang di dashboard website Ciradyka, Anda dapat mengelola semua data
-                                    website disini</span></p>
-                            <div class="whatsnew-btn"><a href="#" class="btn btn-primary">Tambah
-                                    Anggota</a></div>
+                            <p>
+                                <span>
+                                    Selamat datang di Collegetivity, kamu dapat mengelola semua
+                                    data akademik dan menjelajahi semua resources disini
+                                </span>
+                            </p>
+                            <div class="whatsnew-btn"><a class="btn btn-primary">Mulai Sekarang!</a></div>
                             <div class="left-icon"><i class="fa fa-bell"> </i></div>
+                            <br>
+                            <br>
                         </div>
                     </div>
                 </div>
@@ -128,6 +66,99 @@
         </div>
     </div>
     <!-- main content end-->
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Jadwal Pelajaranmu</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="dt-ext table-responsive">
+                            <table class="display" id="auto-fill">
+                                <thead>
+                                    <tr>
+                                        <th>Nama Mata Kuliah</th>
+                                        <th>Hari</th>
+                                        <th>Waktu</th>
+                                        <th>Kelas</th>
+                                        <th>SKS</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @forelse ($items as $item)
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex py-1 align-items-center">
+                                                <div class="avatars mr-2">
+                                                    <div class="avatar ratio">
+                                                        <img style="object-fit: cover;
+                                                        width: 40px;
+                                                        height: 40px;" class="b-r-8"
+                                                            src="https://ui-avatars.com/api/?background=4466f2&color=fff&name={{$item->nama_dosen}}">
+                                                    </div>
+                                                </div>
+                                                <div class="flex-fill">
+                                                    <div class="font-weight-bold">{{$item->nama_matkul}}</div>
+                                                    <div class="text-muted">
+                                                        <a href="#" class="text-reset">{{$item->nama_dosen}}</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>{{$item->hari}}</td>
+                                        <td>({{$item->waktu_mulai}} — {{$item->waktu_selesai}})</td>
+                                        <td>{{$item->kelas}}</td>
+                                        <td>{{$item->sks}}</td>
+                                    </tr>
+                                    @empty
+                                    @endforelse
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Nama Mata Kuliah</th>
+                                        <th>Hari</th>
+                                        <th>Waktu</th>
+                                        <th>Kelas</th>
+                                        <th>SKS</th>
+                                        <th>Opsi</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+@push('datatable-scripts')
+<script src="{{url('cuba/assets/js/datatable/datatables/jquery.dataTables.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/dataTables.buttons.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/jszip.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/buttons.colVis.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/pdfmake.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/vfs_fonts.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/dataTables.autoFill.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/dataTables.select.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/buttons.bootstrap4.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/buttons.html5.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/buttons.print.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/dataTables.bootstrap4.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/dataTables.responsive.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/responsive.bootstrap4.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/dataTables.keyTable.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/dataTables.colReorder.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/dataTables.fixedHeader.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/dataTables.rowReorder.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/dataTables.scroller.min.js')}}"></script>
+<script src="{{url('cuba/assets/js/datatable/datatable-extension/custom.js')}}"></script>
+<script src="{{url('cuba/assets/js/tooltip-init.js')}}"></script>
+@endpush
+
 <!-- file wrapper for better tabs end-->
 @endsection

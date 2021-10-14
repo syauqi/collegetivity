@@ -31,6 +31,8 @@
 @stack('datatable-scripts')
 @stack('galleries-scripts')
 @stack('timepicker-scripts')
+@stack('calendar-scripts')
+@stack('todo-scripts')
 @stack('carousel-scripts')
 @stack('ckeditor-scripts')
 <!-- Plugins JS Ends-->

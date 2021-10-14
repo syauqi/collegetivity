@@ -21,7 +21,8 @@
                         <p>Dashboard & statistik</p>
                     </div>
                 </li>
-                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="#"><i data-feather="home">
+                <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="{{url('dashboard')}}"><i
+                            data-feather="home">
                         </i><span>Dashboard</span></a></li>
 
                 <li class="sidebar-main-title">
@@ -44,8 +45,9 @@
                     <a class="sidebar-link sidebar-title" href="#"><i data-feather="edit"></i><span>Catatan pelajaran
                         </span></a>
                     <ul class="sidebar-submenu">
-                        <li><a href="#">Catatan pelajaranmu</a></li>
-                        <li><a href="#">Tulis catatan pelajaran baru </a></li>
+                        <li><a href="{{url('/dashboard/catatan-pelajaran')}}">Catatan pelajaranmu</a></li>
+                        <li><a href="{{url('/dashboard/catatan-pelajaran/tambah-catatan')}}">Tulis catatan pelajaran
+                                baru </a></li>
                     </ul>
                 </li>
                 <li class="sidebar-list">
@@ -62,13 +64,14 @@
                     <a class="sidebar-link sidebar-title" href="#"><i data-feather="image"></i><span>Galeri
                             Foto</span></a>
                     <ul class="sidebar-submenu">
-                        <li><a href="#">Galeri fotomu</a></li>
-                        <li><a href="#">Upload galeri foto baru</a></li>
+                        <li><a href="{{url('/dashboard/galeri-foto')}}">Galeri fotomu</a></li>
+                        <li><a href="{{url('/dashboard/galeri-foto/tambah-foto')}}">Upload galeri foto baru</a></li>
                     </ul>
                 </li>
                 {{-- pengelolaan data merchandise --}}
                 <li class="sidebar-list">
-                    <a class="sidebar-link sidebar-title link-nav" href="#"><i data-feather="paperclip"></i><span>File
+                    <a class="sidebar-link sidebar-title link-nav" href="{{url('/dashboard/file-tugas')}}"><i
+                            data-feather="paperclip"></i><span>File
                             Tugas
                         </span></a>
                 </li>
