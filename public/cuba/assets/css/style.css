@@ -24290,7 +24290,7 @@ body[class*='dark-'] .for-light {
                 animation: fadeIn 0.5s ease-in-out; }
     .page-wrapper .page-body-wrapper .page-title {
       padding-top: 30px;
-      padding-bottom: 30px; }
+      padding-bottom: 12px; }
       .page-wrapper .page-body-wrapper .page-title > .row .col-6:first-child {
         display: -webkit-box;
         display: -ms-flexbox;

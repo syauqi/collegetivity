@@ -41,8 +41,16 @@ Route::get('/kontak', function () {
 /*                               Backend Routes                               */
 /* -------------------------------------------------------------------------- */
 
-Route::get('/dashboard', function () {
-    return view('pages.backend.index');
-})->middleware(['auth'])->name('dashboard');
+Route::prefix('dashboard')
+    ->middleware(['auth'])
+    ->group(function () {
+        Route::get('/', function () {
+            return view('pages.backend.index');
+        })->name('dashboard');
+        Route::get('/jadwal-pelajaran', 'App\Http\Controllers\ScheduleController@index');
+        Route::get('/jadwal-pelajaran/atur-jadwal', 'App\Http\Controllers\ScheduleController@create');
+        Route::get('/jadwal-pelajaran/atur-jadwal/simpan', 'App\Http\Controllers\ScheduleController@store');
+        Route::resource('schedules', 'App\Http\Controllers\ScheduleController');
+    });
 
 require __DIR__ . '/auth.php';

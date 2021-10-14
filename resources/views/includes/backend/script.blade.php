@@ -30,6 +30,7 @@
 <script src="{{url("cuba/assets/js/tooltip-init.js")}}"></script>
 @stack('datatable-scripts')
 @stack('galleries-scripts')
+@stack('timepicker-scripts')
 @stack('carousel-scripts')
 @stack('ckeditor-scripts')
 <!-- Plugins JS Ends-->
