@@ -17,10 +17,10 @@
                             <h5 class="widget-title">Link Cepat</h5>
                             <ul>
                                 <li><a href="{{url('/')}}">Beranda</a></li>
-                                <li><a href="about.html">Fitur</a></li>
-                                <li><a href="about.html">Tentang</a></li>
-                                <li><a href="about.html">Team</a></li>
-                                <li><a href="about.html">Kontak</a></li>
+                                <li><a href="{{url('/fitur')}}">Fitur</a></li>
+                                <li><a href="{{url('/tentang')}}">Tentang</a></li>
+                                <li><a href="{{url('/team')}}">Team</a></li>
+                                <li><a href="{{url('/kontak')}}">Kontak</a></li>
                             </ul>
                         </div>
                     </div>

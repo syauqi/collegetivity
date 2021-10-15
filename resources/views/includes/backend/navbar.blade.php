@@ -56,8 +56,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="level-menu outside"><a class="nav-link" href="#!"><i
-                            data-feather="inbox"></i><span>Artikel</span></a>
+                <li class="level-menu outside"><a class="nav-link" href="#!"><i data-feather="book"></i><span>Buat
+                            Catatan</span></a>
                 </li>
             </ul>
         </div>

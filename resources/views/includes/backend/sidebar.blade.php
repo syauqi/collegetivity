@@ -50,15 +50,6 @@
                                 baru </a></li>
                     </ul>
                 </li>
-                <li class="sidebar-list">
-                    <a class="sidebar-link sidebar-title" href="#"><i data-feather="bar-chart"></i><span>Perkembangan
-                            Nilai
-                        </span></a>
-                    <ul class="sidebar-submenu">
-                        <li><a href="#">Perkembangan nilaimu</a></li>
-                        <li><a href="#">Input data nilaimu </a></li>
-                    </ul>
-                </li>
                 {{-- pengelolaan data galeri --}}
                 <li class="sidebar-list">
                     <a class="sidebar-link sidebar-title" href="#"><i data-feather="image"></i><span>Galeri

@@ -169,42 +169,42 @@
                     <ul class="nav nav-tabs service-tab-nav" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <a class="nav-link active" data-toggle="tab" href="#tabItem1" role="tab">
-                                <i class="far fa-browser"></i> Apply To Template
+                                <i class="far fa-browser"></i> Halaman Dashboard
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" data-toggle="tab" href="#tabItem2" role="tab">
-                                <i class="far fa-bullseye-arrow"></i> Build Your Promotos
+                                <i class="far fa-books"></i> Jadwal Pelajaran
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" data-toggle="tab" href="#tabItem3" role="tab">
-                                <i class="far fa-coins"></i> Data Organizations
+                                <i class="far fa-edit"></i> Catatan Pelajaran
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" data-toggle="tab" href="#tabItem4" role="tab">
-                                <i class="far fa-coins"></i> Assing Action Data
+                                <i class="far fa-calendar"></i> Kalender
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" data-toggle="tab" href="#tabItem5" role="tab">
-                                <i class="far fa-book"></i> Rich Documentation
+                                <i class="far fa-check"></i> Todolist
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" data-toggle="tab" href="#tabItem6" role="tab">
-                                <i class="far fa-phone-plus"></i> 100% Responsive
+                                <i class="far fa-camera"></i> Galeri Foto
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" data-toggle="tab" href="#tabItem7" role="tab">
-                                <i class="far fa-calendar-check"></i> Useablity Easy
+                                <i class="far fa-clock"></i> Whiteboard, Pomodoro
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" data-toggle="tab" href="#tabItem8" role="tab">
-                                <i class="far fa-tools"></i> Easy Installations
+                                <i class="far fa-globe"></i> Kumpulan Resources
                             </a>
                         </li>
                     </ul>
@@ -219,7 +219,7 @@
                     </div>
                     <div class="tab-pane fade" id="tabItem2" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
+                            <img src="{{url('landio/assets/img/service-tab-img-2.jpg')}}" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem3" role="tabpanel">
@@ -258,73 +258,11 @@
     </section>
     <!--====== End Service Section ======-->
 
-    <!--====== Start Testimonial Area ======-->
-    <section class="testimonial-area-two p-t-130 p-b-130">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-6 col-md-8 col-sm-9">
-                    <div class="preview-image-v5 m-r-45 m-r-lg-0 m-b-md-80 wow fadeInLeft animate-float-bob-y"
-                        data-wow-delay="0.3s">
-                        <img src="{{url('landio/assets/img/preview-gallery/sof-testimonial.jpg')}}" alt="Image">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-10">
-                    <div class="testimonial-slider-wrapper p-l-40 p-l-lg-0">
-                        <div class="common-heading m-b-65">
-                            <span class="tagline color-primary-5">Review Mereka</span>
-                            <h2 class="title">Apa kata mereka tentang Collegetivity?</h2>
-                        </div>
-
-                        <div class="testimonial-slider-v1 quote-left-bordered" id="testimonialActiveFive">
-                            <div class="testimonial-item">
-                                <div class="quote-icon">
-                                    <i class="flaticon-right-quote"></i>
-                                </div>
-                                <p>Sed ut perspicia unde omnis natus error sit volupt accusantium doloremque laudantium
-                                    totam rem
-                                    aperiam eaque quae</p>
-                                <div class="author-info">
-                                    <img src="{{url('landio/assets/img/testimonial/author-1.png')}}"
-                                        alt="testimonial author">
-                                    <h6 class="name">Michael W. Kirwan <span class="title">CEO & Founder</span></h6>
-                                </div>
-                            </div>
-                            <div class="testimonial-item">
-                                <div class="quote-icon">
-                                    <i class="flaticon-right-quote"></i>
-                                </div>
-                                <p>Sed ut perspicia unde omnis natus error sit volupt accusantium doloremque laudantium
-                                    totam rem
-                                    aperiam eaque quae</p>
-                                <div class="author-info">
-                                    <img src="{{url('landio/assets/img/testimonial/author-2.png')}}"
-                                        alt="testimonial author">
-                                    <h6 class="name">Michael W. Kirwan <span class="title">CEO & Founder</span></h6>
-                                </div>
-                            </div>
-                            <div class="testimonial-item">
-                                <div class="quote-icon">
-                                    <i class="flaticon-right-quote"></i>
-                                </div>
-                                <p>Sed ut perspicia unde omnis natus error sit volupt accusantium doloremque laudantium
-                                    totam rem
-                                    aperiam eaque quae</p>
-                                <div class="author-info">
-                                    <img src="{{('landio/assets/img/testimonial/author-3.png')}}"
-                                        alt="testimonial author">
-                                    <h6 class="name">Michael W. Kirwan <span class="title">CEO & Founder</span></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--====== End Testimonial Area ======-->
+    <br>
+    <br>
 
     <!--====== Start Call To Action ======-->
-    <section class="cta-section bg-cover-center p-t-90 p-b-90"
+    <section class="cta-section bg-cover-center p-t-90 p-b-90 mt-5"
         style="background-image: url(./../landio/assets/img/cta/cta-bg-2.jpg);">
         <div class="container">
             <div class="row justify-content-center">
