@@ -5,7 +5,7 @@
     <meta name="description"
         content="Collegetivity adalah aplikasi yang membantu dunia perkuliahan mahasiswa mulai dari mengorganisasi pelajaran, tugas dan jadwal.">
     <meta name="keywords" content="Collegetivity, Universitas Siliwangi, Aplikasi Perkuliahan">
-    <meta name="author" content="Syauqizaidan">
+    <meta name="author" content="SYAUQIZAIDAN KHAIRAN KHALAF">
     <title>@yield('title', 'Collegetivity — Aplikasi yang membantu dunia perkuliahanmu!')</title>
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="{{url('landio/assets/img/favicon.png')}}" type="img/png" />

@@ -12,14 +12,15 @@
             <div class="hero-content">
                 <span class="title-tag wow fadeInUp mb-3" data-wow-delay="0.2s"
                     style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                    <span class="badge rounded-pill bg-primary py-2 px-3 text-white">Collegetivity hadir dalam versi
-                        beta!</span>
+                    <span class="badge rounded-pill bg-primary py-2 px-3 text-white">
+                        📢 • Collegetivity hadir dalam versi beta!
+                    </span>
                 </span>
                 <h2 class="hero-title wow fadeInLeft" data-wow-delay="0.2s">Website yang membantu dunia perkuliahanmu!
                 </h2>
                 <p class="wow fadeInUp" data-wow-delay="0.3s">
                     🎓 • Collegetivity hadir untuk membantu kalian para mahasiswa agar lebih produktif, terorganisir dan
-                    perkuliahanmu lebih mudah!
+                    pekerjaanmu lebih mudah!
                 </p>
                 <a href="{{url('/register')}}" class="template-btn primary-bg-5 wow fadeInUp" data-wow-delay="0.4s">
                     Daftar Sekarang <i class="fas fa-arrow-right"></i>
@@ -27,7 +28,7 @@
 
                 <span class="notice wow fadeInUp" data-wow-delay="0.5s">
                     <img src="{{url('landio/assets/img/hero/notice-icon.png')}}" alt="Image"> Collegetivity bisa kalian
-                    akses dan gunakan secara gratis
+                    akses dan gunakan secara gratis lho!
                 </span>
             </div>
             <div class="hero-img d-none d-lg-block wow fadeInUp" data-wow-delay="0.2s">
@@ -283,6 +284,8 @@
             <img src="{{url('landio/assets/img/cta/cta-absolute-img.png')}}" alt="">
         </div>
     </section>
+
+
     <!--====== End Call To Action ======-->
 </div>
 @endsection

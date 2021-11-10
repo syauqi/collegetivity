@@ -14,3 +14,14 @@
 <script src="{{url('landio/assets/js/wow.min.js')}}"></script>
 <!--====== Main JS ======-->
 <script src="{{url('landio/assets/js/main.js')}}"></script>
+<!--====== Blobity ======-->
+<script src="https://cdn.blobity.dev/by.js"></script>
+<script>
+    const blobity = new Blobity({
+        licenseKey: 'syauqi',
+        focusableElements: false,
+        zIndex: '1',
+        dotColor: '#007bff',
+        magnetic: false,
+    });
+</script>

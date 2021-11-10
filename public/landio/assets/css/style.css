@@ -2052,7 +2052,7 @@ textarea {
 /*======= Preloader =======*/
 #preloader {
 	position: fixed;
-	background-color: var(--color-heading);
+	background-color: #007bff;
 	background-position: center center;
 	background-repeat: no-repeat;
 	top: 0;
