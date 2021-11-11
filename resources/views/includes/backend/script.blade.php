@@ -16,9 +16,7 @@
 <script src="{{url("cuba/assets/js/sidebar-menu.js")}}"></script>
 <script src="{{url("cuba/assets/js/chart/apex-chart/apex-chart.js")}}"></script>
 <script src="{{url("cuba/assets/js/chart/apex-chart/stock-prices.js")}}"></script>
-<script src="{{url("cuba/assets/js/notify/bootstrap-notify.min.js")}}"></script>
 <script src="{{url("cuba/assets/js/dashboard/default.js")}}"></script>
-<script src="{{url("cuba/assets/js/notify/index.js")}}"></script>
 <script src="{{url("cuba/assets/js/datepicker/date-picker/datepicker.js")}}"></script>
 <script src="{{url("cuba/assets/js/datepicker/date-picker/datepicker.en.js")}}"></script>
 <script src="{{url("cuba/assets/js/datepicker/date-picker/datepicker.custom.js")}}"></script>

@@ -8,6 +8,6 @@
     <meta name="author" content="SYAUQIZAIDAN KHAIRAN KHALAF">
     <title>@yield('title', 'Collegetivity — Aplikasi yang membantu dunia perkuliahanmu!')</title>
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="{{url('landio/assets/img/favicon.png')}}" type="img/png" />
+    <link rel="shortcut icon" href="{{url('landio/assets/img/favicon.ico')}}" type="img/png" />
     @include('includes.frontend.style')
 </head>
