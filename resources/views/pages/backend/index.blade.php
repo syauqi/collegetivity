@@ -26,8 +26,7 @@
                             </div>
                         </div>
                         <div class="greeting-user text-center">
-                            <div class="profile-vector"><img class="img-fluid"
-                                    src="{{url("cuba/assets/images/dashboard/welcome.png")}}" alt=""></div>
+                            <div class="profile-vector"><img class="img-fluid" src="{{url("cuba/assets/images/dashboard/welcome.png")}}" alt=""></div>
                             <h4 class="f-w-600"><span id="greeting">Good Morning</span></h4>
                             <p>
                                 <span>
@@ -85,7 +84,6 @@
                                         <th>Waktu</th>
                                         <th>Kelas</th>
                                         <th>SKS</th>
-                                        
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -124,7 +122,6 @@
                                         <th>Waktu</th>
                                         <th>Kelas</th>
                                         <th>SKS</th>
-                                        <th>Opsi</th>
                                     </tr>
                                 </tfoot>
                             </table>

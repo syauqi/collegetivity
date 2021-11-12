@@ -9,13 +9,16 @@
         <div class="header-inner">
             <div class="header-left">
                 <div class="brand-logo">
-                    <a href="index.html">
-                        <img src="{{url('landio/assets/img/logo-3.png')}}" alt="logo">
+                    <a href="{{url('/')}}">
+                        <h1>🎓</h1>
                     </a>
                 </div>
                 <nav class="nav-menu d-none d-xl-block">
                     <ul>
-                        <li class="active">
+                        <li>
+                            <a href="#">|</a>
+                        </li>
+                        <li>
                             <a href="{{url('/')}}">Beranda</a>
                         </li>
                         <li>
@@ -27,8 +30,8 @@
                         <li>
                             <a href="{{url('tentang')}}">Tentang Kami</a>
                         </li>
-                        <li>
-                            <a href="{{url('kontak')}}">Kontak</a>
+                        <li class="active">
+                            <a href="{{url('kontak')}}">Kontak Kami</a>
                         </li>
                     </ul>
                 </nav>
@@ -37,7 +40,7 @@
                 <ul class="header-extra">
                     <li class="d-none d-sm-block">
                         <a href="{{url('/login')}}" class="user-login">
-                            <i class="far fa-user-circle"></i> Masuk
+                            <i class="far fa-user-circle"></i> Masuk Aplikasi
                         </a>
                     </li>
                     <li class="d-none d-md-block">
@@ -68,52 +71,28 @@
     <div class="mobile-slide-panel">
         <div class="panel-overlay"></div>
         <div class="panel-inner">
-            <div class="mobile-logo">
-                <a href="index.html">
-                    <img src="assets/img/logo-1.png" alt="Landio">
-                </a>
-            </div>
             <nav class="mobile-menu">
                 <ul>
-                    <li class="active">
-                        <a href="index.html">Demos</a>
-                        <ul class="sub-menu">
-                            <li><a href="index.html">Homepage Sass</a></li>
-                            <li><a href="index-2.html">Homepage SEO</a></li>
-                            <li><a href="index-3.html">Homepage App</a></li>
-                            <li><a href="index-4.html">Homepage Chatbot</a></li>
-                            <li><a href="index-5.html">Homepage Consultant</a></li>
-                            <li><a href="index-6.html">Homepage Fintech</a></li>
-                            <li><a href="index-7.html">Homepage Software</a></li>
-                            <li><a href="index-8.html">Homepage E-Wallet</a></li>
-                        </ul>
+                    <li>
+                        <a href="{{('/')}}">Beranda</a>
                     </li>
                     <li>
-                        <a href="services.html">Services</a>
-                        <ul class="sub-menu">
-                            <li><a href="services.html">Our Services</a></li>
-                            <li><a href="service-details.html">Service Details</a></li>
-                        </ul>
+                        <a href="{{('/fitur')}}">Fitur Aplikasi</a>
                     </li>
                     <li>
-                        <a href="#">Pages</a>
-                        <ul class="sub-menu">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="team.html">Our Team</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                            <li><a href="404.html">404</a></li>
-                        </ul>
+                        <a href="{{('/team')}}">Team Member</a>
                     </li>
                     <li>
-                        <a href="blog-standard.html">Blog</a>
-                        <ul class="sub-menu">
-                            <li><a href="blog-standard.html">Blog Standard</a></li>
-                            <li><a href="blog-details.html">Blog Details</a></li>
-                        </ul>
+                        <a href="{{('/tentang')}}">Tentang Kami</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="{{('/kontak')}}">Kontak Kami</a>
+                    </li>
+                    <li>
+                        <a href="{{('/login')}}">Masuk Aplikasi</a>
+                    </li>
+                    <li>
+                        <a href="{{('/register')}}">Daftar Akun</a>
                     </li>
                 </ul>
             </nav>
@@ -129,31 +108,31 @@
         <div class="canvas-overlay"></div>
         <div class="canvas-inner">
             <div class="canvas-logo">
-                <img src="assets/img/logo-1.png" alt="Canvas Logo">
+                <h1>🎓</h1>
             </div>
             <div class="about-us">
-                <h5 class="canvas-widget-title">About Us</h5>
+                <h5 class="canvas-widget-title">Tentang Kami</h5>
                 <p>
-                    Sed perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem
-                    aperams eaque ipsa quae abillo inventore veritatis
+                    Collegetivity adalah aplikasi yang membantu dunia perkuliahan mahasiswa mulai dari mengorganisasi
+                    pelajaran, tugas dan jadwal serta resources yang membantu para mahasiswa.
                 </p>
             </div>
             <div class="contact-us">
-                <h5 class="canvas-widget-title">Contact Us</h5>
+                <h5 class="canvas-widget-title">Kontak Kami</h5>
                 <ul>
                     <li>
                         <i class="far fa-map-marker-alt"></i>
-                        354 Oakridge, Camden NJ 08102 - USA
+                        Universitas Siliwangi, Tasikmalaya
                     </li>
                     <li>
                         <i class="far fa-envelope-open"></i>
-                        <a href="mailto:support@landio.com">support@landio.com</a>
-                        <a href="www.landio.net" target="_blank">www.landio.net</a>
+                        <a href="mailto:collegetivity@gmail.com">collegetivity@gmail.com</a>
+                        <a href="#" target="_blank">www.collegetivity.com</a>
                     </li>
                     <li>
                         <i class="far fa-phone"></i>
-                        <span><a href="tel:+01234567899">+012 (345) 678 99</a></span>
-                        <span><a href="tel:+8563214">+8563214</a></span>
+                        <span><a href="tel:+6285156162840">+62 851-5616-2840</a></span>
+                        <span><a href="tel:+6282127350768">+62 821-2735-0768</a></span>
                     </li>
                 </ul>
             </div>
@@ -168,8 +147,8 @@
 <!--====== Page title area Start ======-->
 <section class="page-title-area">
     <div class="container">
-        <div class="page-title-content text-center">
-            <h1 class="page-title">Hubungi Kami</h1>
+        <div class="page-title-content text-center mt-5">
+            <h1 class="page-title">Kontak Kami</h1>
 
             <ul class="breadcrumb-nav">
                 <li><a href="{{url('/')}}">Beranda</a></li>
@@ -204,7 +183,7 @@
                         </div>
                         <div class="info-body">
                             <h5 class="title">Lokasi Kami</h5>
-                            <p>Tasikmalaya <br> Universitas Siliwangi - Jawa Barat</p>
+                            <p>Universitas Siliwangi <br> Tasikmalaya</p>
                         </div>
                     </div>
                     <div class="contact-info-box m-b-30 wow fadeInUp" data-wow-delay="0.4s">
@@ -213,8 +192,8 @@
                         </div>
                         <div class="info-body">
                             <h5 class="title">Alamat Email</h5>
-                            <p><a href="mailto:supportinfobiz@gmail.com">apps.collegetivity@gmail.com</a></p>
-                            <p><a href="www.businesscon.net" target="_blank">www.collegetivity.herokuapp.com</a></p>
+                            <p><a href="mailto:apps.collegetivity@gmail.com">apps.collegetivity@gmail.com</a></p>
+                            <p><a href="www.collegetivity.com" target="_blank">www.collegetivity.com</a></p>
                         </div>
                     </div>
                     <div class="contact-info-box wow fadeInUp" data-wow-delay="0.5s">
@@ -222,9 +201,9 @@
                             <i class="fal fa-phone"></i>
                         </div>
                         <div class="info-body">
-                            <h5 class="title">Nomor Darurat</h5>
-                            <p><a href="tel:+01234578999">+012 (345) 678 99</a></p>
-                            <p><a href="tel:+8563214">+8563214</a></p>
+                            <h5 class="title">Nomor Telepon</h5>
+                            <p><a href="tel:+6285156162840">+62 851-5616-2840</a></p>
+                            <p><a href="tel:+6282127350768">+62 821-2735-0768</a></p>
                         </div>
                     </div>
                 </div>
@@ -232,19 +211,19 @@
             <div class="col-lg-6 offset-xl-1 col-md-10">
                 <div class="contact-form-area m-t-md-100">
                     <div class="common-heading tagline-boxed m-b-40">
-                        <span class="tagline">Kirim Kami Pesan</span>
-                        <h2 class="title">Ada pertanyaan ? <br> Kirim pesan dibawah</h2>
+                        <span class="tagline">Kirim kami sebuah pesan</span>
+                        <h2 class="title">Ada pertanyaan ? <br> Kirim pesan dibawah ini 👋🏻</h2>
                     </div>
                     <div class="contact-form-v2">
                         <form>
                             <div class="input-field m-b-30">
                                 <input type="text" id="fullName" placeholder="Nama Lengkap" name="name" required="">
-                                <label for="fullName">Name</label>
+                                <label for="fullName">Nama</label>
                             </div>
                             <div class="input-field m-b-30">
                                 <input type="text" id="phoneNumber" placeholder="Nomor Telepon" name="phone"
                                     required="">
-                                <label for="phoneNumber">Phone</label>
+                                <label for="phoneNumber">Telepon</label>
                             </div>
                             <div class="input-field m-b-30">
                                 <input type="email" id="emailAddress" placeholder="Alamat Email" name="email"
@@ -254,7 +233,7 @@
                             <div class="input-field m-b-30">
                                 <input type="text" id="subject" placeholder="Saya ingin bertanya tentang .. "
                                     name="subject" required="">
-                                <label for="subject">Subject</label>
+                                <label for="subject">Subjek</label>
                             </div>
                             <div class="input-field textarea-field m-b-30">
                                 <textarea id="message" placeholder="Pesan" name="message"></textarea>

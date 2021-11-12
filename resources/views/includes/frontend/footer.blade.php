@@ -17,10 +17,10 @@
                             <h5 class="widget-title">Link Cepat</h5>
                             <ul>
                                 <li><a href="{{url('/')}}">Beranda</a></li>
-                                <li><a href="{{url('/fitur')}}">Fitur</a></li>
-                                <li><a href="{{url('/tentang')}}">Tentang</a></li>
-                                <li><a href="{{url('/team')}}">Team</a></li>
-                                <li><a href="{{url('/kontak')}}">Kontak</a></li>
+                                <li><a href="{{url('/fitur')}}">Fitur Aplikasi</a></li>
+                                <li><a href="{{url('/team')}}">Team Member</a></li>
+                                <li><a href="{{url('/tentang')}}">Tentang Kami</a></li>
+                                <li><a href="{{url('/kontak')}}">Kontak Kami</a></li>
                             </ul>
                         </div>
                     </div>
@@ -31,8 +31,8 @@
                         <div class="widget nav-widget">
                             <h5 class="widget-title">Bergabung</h5>
                             <ul>
-                                <li><a href="{{('/login')}}">Masuk</a></li>
-                                <li><a href="{{('/register')}}">Daftar</a></li>
+                                <li><a href="{{('/login')}}">Masuk Aplikasi</a></li>
+                                <li><a href="{{('/register')}}">Daftar Sekarang</a></li>
                             </ul>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
     <div class="footer-copyright border-top-secondary">
         <div class="container">
             <p class="copyright-text text-center">
-                © 2021 <a href="#">Collegetivity</a>. All Rights Reserved
+                © 2021 <a href="#">Collegetivity</a> by Dosyafaw Team. All Rights Reserved
             </p>
         </div>
     </div>

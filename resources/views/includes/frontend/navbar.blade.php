@@ -26,7 +26,7 @@
                             <a href="{{url('tentang')}}">Tentang Kami</a>
                         </li>
                         <li>
-                            <a href="{{url('kontak')}}">Kontak</a>
+                            <a href="{{url('kontak')}}">Kontak Kami</a>
                         </li>
                     </ul>
                 </nav>
@@ -35,7 +35,7 @@
                 <ul class="header-extra">
                     <li class="d-none d-sm-block">
                         <a href="{{url('/login')}}" class="user-login">
-                            <i class="far fa-user-circle"></i> Masuk
+                            <i class="far fa-user-circle"></i> Masuk Aplikasi
                         </a>
                     </li>
                     <li class="d-none d-md-block">
@@ -66,14 +66,9 @@
     <div class="mobile-slide-panel">
         <div class="panel-overlay"></div>
         <div class="panel-inner">
-            <div class="mobile-logo">
-                <a href="{{url('/')}}">
-                    <h1>🎓</h1>
-                </a>
-            </div>
             <nav class="mobile-menu">
                 <ul>
-                    <li class="active">
+                    <li>
                         <a href="{{('/')}}">Beranda</a>
                     </li>
                     <li>
@@ -86,7 +81,13 @@
                         <a href="{{('/tentang')}}">Tentang Kami</a>
                     </li>
                     <li>
-                        <a href="{{('/kontak')}}">Kontak</a>
+                        <a href="{{('/kontak')}}">Kontak Kami</a>
+                    </li>
+                    <li>
+                        <a href="{{('/login')}}">Masuk Aplikasi</a>
+                    </li>
+                    <li>
+                        <a href="{{('/register')}}">Daftar Akun</a>
                     </li>
                 </ul>
             </nav>
@@ -105,28 +106,28 @@
                 <h1>🎓</h1>
             </div>
             <div class="about-us">
-                <h5 class="canvas-widget-title">About Us</h5>
+                <h5 class="canvas-widget-title">Tentang Kami</h5>
                 <p>
-                    Sed perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem
-                    aperams eaque ipsa quae abillo inventore veritatis
+                    Collegetivity adalah aplikasi yang membantu dunia perkuliahan mahasiswa mulai dari mengorganisasi
+                    pelajaran, tugas dan jadwal serta resources yang membantu para mahasiswa.
                 </p>
             </div>
             <div class="contact-us">
-                <h5 class="canvas-widget-title">Contact Us</h5>
+                <h5 class="canvas-widget-title">Kontak Kami</h5>
                 <ul>
                     <li>
                         <i class="far fa-map-marker-alt"></i>
-                        354 Oakridge, Camden NJ 08102 - USA
+                        Universitas Siliwangi, Tasikmalaya
                     </li>
                     <li>
                         <i class="far fa-envelope-open"></i>
-                        <a href="mailto:support@landio.com">support@landio.com</a>
-                        <a href="www.landio.net" target="_blank">www.landio.net</a>
+                        <a href="mailto:apps.collegetivity@gmail.com">apps.collegetivity@gmail.com</a>
+                        <a href="#" target="_blank">www.collegetivity.com</a>
                     </li>
                     <li>
                         <i class="far fa-phone"></i>
-                        <span><a href="tel:+01234567899">+012 (345) 678 99</a></span>
-                        <span><a href="tel:+8563214">+8563214</a></span>
+                        <span><a href="tel:+6285156162840">+62 851-5616-2840</a></span>
+                        <span><a href="tel:+6282127350768">+62 821-2735-0768</a></span>
                     </li>
                 </ul>
             </div>
