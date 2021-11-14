@@ -3,13 +3,13 @@ var today = new Date();
 var curHr = today.getHours();
 
 if (curHr >= 0 && curHr < 4) {
-    document.getElementById("greeting").innerHTML = "Selamat Beristirahat";
+    document.getElementById("greeting").innerHTML = "Selamat Beristirahat 💤";
 } else if (curHr >= 4 && curHr < 12) {
-    document.getElementById("greeting").innerHTML = "Selamat Pagi";
+    document.getElementById("greeting").innerHTML = "Selamat Pagi 🌄";
 } else if (curHr >= 12 && curHr < 16) {
-    document.getElementById("greeting").innerHTML = "Selamat Siang";
+    document.getElementById("greeting").innerHTML = "Selamat Siang ☀";
 } else {
-    document.getElementById("greeting").innerHTML = "Selamat Malam";
+    document.getElementById("greeting").innerHTML = "Selamat Malam 🌙";
 }
 // time
 function startTime() {

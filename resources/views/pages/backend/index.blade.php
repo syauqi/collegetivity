@@ -45,14 +45,14 @@
                         </div>
                         <div class="greeting-user text-center">
                             <div class="profile-vector"><img class="img-fluid" src="{{url("cuba/assets/images/dashboard/welcome.png")}}" alt=""></div>
-                            <h4 class="f-w-600"><span id="greeting">Good Morning</span></h4>
+                            <h4 class="f-w-600"><span id="greeting">Halo!</span></h4>
                             <p>
                                 <span>
                                     Selamat datang di Collegetivity, kamu dapat mengelola semua
                                     data akademik dan menjelajahi semua resources disini
                                 </span>
                             </p>
-                            <div class="whatsnew-btn"><a class="btn btn-primary">Mulai Sekarang!</a></div>
+                            <div class="whatsnew-btn"><a class="btn btn-primary px-4 py-2">Mulai Sekarang ⇾</a></div>
                             <div class="left-icon"><i class="fa fa-bell"> </i></div>
                             <br>
                             <br>
@@ -110,14 +110,14 @@
                 <div class="row">
                     <div class="col-xl-12 appointment">
                         <div class="card">
-                            <div class="card-header p-4">
+                            <div class="card-header">
                                 <div class="header-top">
                                     <h5 class="m-0">Catatanmu</h5>
                                 </div>
                             </div>
-                            <div class="card-body p-4">
+                            <div class="card-body py-3">
                                 <div class="appointment-table table-responsive">
-                                    <table class="table table-bordernone">
+                                    <table class="table">
                                         <tbody>
                                             @forelse ($catatan as $item)
                                             <tr>
@@ -131,11 +131,8 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td class="my-auto">
-                                                    <p class="my-auto font-primary">{{$item->tanggal}}</p>
-                                                </td>
-                                                <td class="text-right">
 
+                                                <td class="text-right">
                                                     <a href="{{route('notes.show', $item->id)}}">
                                                         <div class="button btn btn-primary">Lihat</div>
                                                     </a>
@@ -151,8 +148,8 @@
                                         </tbody>
                                         <tfoot>
                                             <tr>
-                                                <th class="ml-0 pl-0 py-1 text-left" style="border-top:none;">
-                                                    <a href="#"> Lihat semua .,, </a>
+                                                <th class="ml-0 pl-0 py-2 text-left" style="border-top:none;">
+                                                    <a href="#"> Lihat semua ... </a>
                                                 </th>
                                             </tr>
                                         </tfoot>
