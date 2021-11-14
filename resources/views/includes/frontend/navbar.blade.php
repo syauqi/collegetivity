@@ -14,7 +14,8 @@
                             <a href="#">|</a>
                         </li>
                         <li class="active">
-                            <a href="{{url('/')}}">Beranda</a>
+                            <a href="{{url('/')}}">
+                                Beranda</a>
                         </li>
                         <li>
                             <a href="{{url('fitur')}}">Fitur Aplikasi</a>

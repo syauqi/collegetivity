@@ -54,7 +54,8 @@
                                         <td>
                                             <div class="d-flex py-1 align-items-center">
                                                 <div class="avatars mr-2">
-                                                    <div class="avatar ratio"><img style="object-fit: cover;
+                                                    <div class="avatar ratio">
+                                                        <img style="object-fit: cover;
                                                         width: 40px;
                                                         height: 40px;" class="b-r-8"
                                                             src="https://ui-avatars.com/api/?background=4466f2&color=fff&name={{$item->author}}">

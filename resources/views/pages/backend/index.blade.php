@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="{{url('cuba/assets/css/vendors/scrollable.css')}}">
 <link rel="stylesheet" type="text/css" href="{{url('cuba/assets/css/vendors/datatables.css')}}">
 <link rel="stylesheet" type="text/css" href="{{url('cuba/assets/css/vendors/datatable-extension.css')}}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.3.1/dist/css/splide.min.css">
 @endpush
 
 <!-- file wrapper for better tabs start-->
@@ -14,6 +15,23 @@
     <br>
     <!-- main content start-->
     <div class="container-fluid">
+        <div class="row mb-4">
+            <div class="col-xl-12 col-12">
+                <div class="splide"
+                    style="box-shadow:rgba(0, 0, 0, 0.05) 0px 0px 4px 0px, rgba(0, 0, 0, 0.1) 0px 4px 24px 0px; border-radius:8px;">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img src="{{url('images/laporan-images-3.png')}}"
+                                    class="d-block w-100" style="border-radius:8px;"></li>
+                            <li class="splide__slide"><img src="{{url('images/laporan-images-2.png')}}"
+                                    class="d-block w-100" style="border-radius:8px;"></li>
+                            <li class="splide__slide"><img src="{{url('images/laporan-images-1.png')}}"
+                                    class="d-block w-100" style="border-radius:8px;"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row second-chart-list third-news-update">
             <div class="col-xl-4 col-lg-12 xl-50 morning-sec box-col-12">
                 <div class="card o-hidden profile-greeting">
@@ -62,9 +80,115 @@
                     </div>
                 </div>
             </div>
+            <div class="col-xl-4 xl-50 news box-col-6">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="header-top">
+                            <h5 class="m-0">To-Do List</h5>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="news-update">
+                            <h6>Mengerjakan tugas bahasa Indoneisa</h6>
+                            <span>Tidak mengatur deadline</span>
+                        </div>
+                        <div class="news-update">
+                            <h6>Mengerjakan tugas bahasa Indoneisa</h6>
+                            <span>27-11-2021</span>
+                        </div>
+                        <div class="news-update">
+                            <h6>Mengerjakan tugas bahasa Indoneisa</h6>
+                            <span>28-11-2022</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="bottom-btn"><a href="#">Lihat selengkapnya...</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 xl-50 appointment-sec box-col-6">
+                <div class="row">
+                    <div class="col-xl-12 appointment">
+                        <div class="card">
+                            <div class="card-header p-4">
+                                <div class="header-top">
+                                    <h5 class="m-0">Catatanmu</h5>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="appointment-table table-responsive">
+                                    <table class="table table-bordernone">
+                                        <tbody>
+                                            @forelse ($catatan as $item)
+                                            <tr>
+                                                <td class="font-weight-bold">
+                                                    <div class="d-flex py-1 align-items-center">
+                                                        <div class="flex-fill">
+                                                            <div class="font-weight-bold">{{$item->judul}}</div>
+                                                            <div class="text-muted"><a href="#"
+                                                                    class="text-reset">{{$item->matkul}}</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="my-auto">
+                                                    <p class="my-auto font-primary">{{$item->tanggal}}</p>
+                                                </td>
+                                                <td class="text-right">
+
+                                                    <a href="{{route('notes.show', $item->id)}}">
+                                                        <div class="button btn btn-primary">Lihat</div>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            @empty
+                                            <tr>
+                                                <td>
+                                                    <h6>Kamu belum buat catatan, <a href="#">buat sekarang ⇾</a></h6>
+                                                </td>
+                                            </tr>
+                                            @endforelse
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th class="ml-0 pl-0 py-1 text-left" style="border-top:none;">
+                                                    <a href="#"> Lihat semua .,, </a>
+                                                </th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 alert-sec">
+                        <div class="card bg-img">
+                            <div class="card-header">
+                                <div class="header-top">
+                                    <h5 class="m-0">Butuh Bantuanmu</h5>
+                                    <div class="dot-right-icon">
+                                        <i class="fa fa-share"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="body-bottom">
+                                    <h6>Jangan lupa untuk share dan ajak temanmu!</h6>
+                                    <span class="font-roboto">
+                                        Ajak temanmu menggunakan collegetivity dan share ke sosial media biar bisa bantu
+                                        teman teman mahasiswa yang lain juga, ya!
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- main content end-->
+
+
 
 
     <div class="container-fluid">
@@ -87,7 +211,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @forelse ($items as $item)
+                                    @forelse ($jadwal as $item)
                                     <tr>
                                         <td>
                                             <div class="d-flex py-1 align-items-center">
@@ -155,6 +279,16 @@
 <script src="{{url('cuba/assets/js/datatable/datatable-extension/dataTables.scroller.min.js')}}"></script>
 <script src="{{url('cuba/assets/js/datatable/datatable-extension/custom.js')}}"></script>
 <script src="{{url('cuba/assets/js/tooltip-init.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.3.1/dist/js/splide.min.js"></script>
+
+<script>
+    new Splide( '.splide',{
+        autoplay : 'playing',
+        rewind: true,
+        arrows: false,
+        interval:1600,
+    } ).mount();
+</script>
 @endpush
 
 <!-- file wrapper for better tabs end-->

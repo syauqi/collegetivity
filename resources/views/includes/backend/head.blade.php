@@ -5,9 +5,9 @@
     <meta name="description"
         content="Collegetivity adalah aplikasi yang membantu dunia perkuliahan mahasiswa mulai dari mengorganisasi pelajaran, tugas dan jadwal.">
     <meta name="keywords" content="Collegetivity, Universitas Siliwangi, Aplikasi Perkuliahan">
-    <meta name="author" content="Syauqizaidan">
-    <link rel="icon" href="{{url("cuba/assets/images/favicon.png")}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{url("cuba/assets/images/favicon.png")}}" type="image/x-icon">
+    <meta name="author" content="SYAUQIZAIDAN KHAIRAN KHALAF">
+    <link rel="icon" href="{{url('cuba/assets/images/favicon.ico')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{url('cuba/assets/images/icon-192.png')}}" type="image/x-icon">
     <title>@yield('title', 'Collegetivity — Dashboard')</title>
     @include('includes.backend.style')
 

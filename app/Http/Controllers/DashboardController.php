@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Schedules;
+use App\Models\Notes;
 
 class DashboardController extends Controller
 {
@@ -14,10 +15,12 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $items = Schedules::all();
+        $jadwal = Schedules::all();
+        $catatan = Notes::take(3)->get();
 
         return view('pages.backend.index', [
-            'items' => $items
+            'jadwal' => $jadwal,
+            'catatan' => $catatan
         ]);
     }
 

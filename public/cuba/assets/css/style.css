@@ -24717,7 +24717,7 @@ body[class*='dark-'] .for-light {
     .page-wrapper.compact-wrapper .page-body-wrapper.sidebar-icon div.sidebar-wrapper .sidebar-main .right-arrow {
       display: none; }
     .page-wrapper.compact-wrapper .page-body-wrapper.sidebar-icon div.sidebar-wrapper .sidebar-main .sidebar-links {
-      height: calc(100vh - 115px);
+      height: calc(100vh);
       left: -300px;
       z-index: 99;
       -webkit-transition: color 1s ease;

@@ -1,18 +1,4 @@
-<div class="sidebar-wrapper">
-    <div class="logo-wrapper my-0">
-        <a href="{{route('dashboard')}}">
-            <h2>🎓 CLGVT</h2>
-        </a>
-        <div class="back-btn"><i class="fa fa-angle-left"></i></div>
-        <div class="toggle-sidebar mt-2">
-            <i class="status_toggle middle sidebar-toggle" data-feather="grid"></i>
-        </div>
-    </div>
-    <div class="logo-icon-wrapper">
-        <a href="{{route('dashboard')}}">
-            <h3>🎓</h3>
-        </a>
-    </div>
+<div class="sidebar-wrapper h-100">
     <nav class="sidebar-main">
         <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
         <div id="sidebar-menu">
