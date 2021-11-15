@@ -41,7 +41,7 @@ class ScheduleController extends Controller
     {
         $input = $request->all();
 
-        $post = Schedules::create($input);
+        $schedules = Schedules::create($input);
 
         return redirect('/dashboard/jadwal-pelajaran');
     }
@@ -65,7 +65,11 @@ class ScheduleController extends Controller
      */
     public function edit($id)
     {
-        //
+        $item = Schedules::findOrFail($id);
+
+        return view('pages.backend.schedules.edit', [
+            'item' => $item
+        ]);
     }
 
     /**
@@ -77,7 +81,10 @@ class ScheduleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $schedules = Schedules::find($id)->update($request->all());
+
+        return redirect('/dashboard/jadwal-pelajaran');
     }
 
     /**

@@ -21,7 +21,7 @@
                 <div class="card-body">
                     <p>
                         Dibawah ini adalah jadwal pelajaran yang telah kamu tambahkan. <span class="d-none d-md-inline">
-                            Data dibawah juga bisa kamu edit
+                            Jadwal dibawah juga bisa kamu edit
                             dengan
                             menekan logo pencil berwarna ungu
                             dan hapus dengan menekan logo sampah berwarna merah. Ingin menambahkan jadwal? tambah
@@ -78,7 +78,7 @@
                                         <td>{{$item->kelas}}</td>
                                         <td>{{$item->sks}}</td>
                                         <td>
-                                            <a href="#" class="btn btn-info px-2">
+                                            <a href="{{route('schedules.edit', $item->id)}}" class="btn btn-info px-2">
                                                 <svg xmlns="http://www.w3.org/2000/svg"
                                                     class="icon icon-tabler icon-tabler-edit" width="16" height="16"
                                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"

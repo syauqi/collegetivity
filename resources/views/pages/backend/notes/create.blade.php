@@ -13,15 +13,16 @@
     <!-- pages title header start-->
     <div class="container-fluid">
         <div class="page-title">
-            <div class="card card-absolute">
+            <div class="card card-absolute mt-5 mt-md-4">
                 <div class="card-header bg-primary">
-                    <h5 class="text-white">📝 • Tulis Catatan Pembelajaran Baru</h5>
+                    <h5 class="text-white">📓📝 • Tulis Catatan Pelajaran Baru</h5>
                 </div>
                 <div class="card-body">
                     <p>
-                        Dihalaman ini anda dapat mengupload artikel yang nantinya akan muncul di menu artikel di halaman
-                        depan. Pastikan semua data telah terisi dan isi dengan data yang valid. Jika terjadi error atau
-                        bug anda dapat menghubungi developer [syauqi].
+                        Dibawah ini adalah halaman untuk tambah catatan pelajaranmu. <span class="d-none d-md-inline">
+                            Catatan yang telah kamu tulis nantinya bisa kamu akses kok dimana saja dan kapan saja.
+                            Selamat menulis dan berkreasi, ya!
+                        </span>
                     </p>
                 </div>
             </div>

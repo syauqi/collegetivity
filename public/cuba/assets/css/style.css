@@ -24026,7 +24026,6 @@ body[class*='dark-'] .for-light {
             color: #242934; }
         .page-wrapper .page-header .header-wrapper .nav-right.right-header ul li .mode {
           cursor: pointer;
-          width: 20px;
           text-align: center; }
           .page-wrapper .page-header .header-wrapper .nav-right.right-header ul li .mode i {
             font-size: 20px;

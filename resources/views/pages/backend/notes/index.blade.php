@@ -15,15 +15,23 @@
     <!-- pages title header start-->
     <div class="container-fluid">
         <div class="page-title">
-            <div class="card card-absolute">
+            <div class="card card-absolute mt-5 mt-md-4">
                 <div class="card-header bg-primary">
                     <h5 class="text-white">📝 • Catatan Pelajaranmu</h5>
                 </div>
                 <div class="card-body">
                     <p>
-                        Dibawah ini adalah catatan pelajaran yang telah kamu buat. Catatan dibawah juga bisa kamu
-                        lihat detailnya dengan menekan logo mata berwarna hijau, edit dengan menekan logo pencil
-                        berwarna ungu dan hapus dengan menekan logo sampah berwarna merah
+                        Dibawah ini adalah catatan pelajaran yang telah kamu buat dan tulis. <span
+                            class="d-none d-md-inline">
+                            Catatan dibawah juga bisa kamu
+                            kamu baca atau lihat dengan menekan logo mata berwarna hijau, edit dengan menekan logo
+                            pencil
+                            berwarna ungu dan hapus dengan menekan logo sampah berwarna merah. Ingin menambahkan
+                            catatan?
+                            tambah
+                            jadwalmu
+                            <a href="#">disini ⇾</a>
+                        </span>
                     </p>
                 </div>
             </div>

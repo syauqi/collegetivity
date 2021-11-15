@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Atur Jadwal Pelajaran — Collegetivity')
+@section('title', 'Edit Jadwal Pelajaran — Collegetivity')
 @section('content')
 
 @push('timepicker-styles')
@@ -15,14 +15,15 @@
             <div class="card card-absolute mt-5 mt-md-4">
                 <div class="card-header bg-primary">
                     <h5 class="text-white">
-                        📅📚 • Atur Jadwal Pelajaran
+                        📅📚 • Edit Jadwal Pelajaran <span class="d-none d-md-inline"> — {{$item->nama_matkul}}</span>
                     </h5>
                 </div>
                 <div class="card-body">
                     <p>
-                        Dibawah ini adalah form untuk tambah jadwal pelajaran mata kuliahmu. <span
+                        Dibawah ini adalah form untuk edit jadwal pelajaran mata kuliah {{$item->nama_matkul}}. <span
                             class="d-none d-md-inline">
-                            Data dibawah pastikan kamu isi dengan benar dan lengkap ya, nanti datanya akan kami simpan
+                            Data dibawah pastikan kamu isi dengan benar dan lengkap ya, nanti datanya akan kami update
+                            dan kami simpan
                             dan dapat kamu akses dimana saja dan kapan saja.
                         </span>
                     </p>
@@ -37,10 +38,11 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Atur Jadwal Pelajaran</h5>
+                        <h5>Edit Jadwal Pelajaran</h5>
                     </div>
-                    <form method="POST" action="{{route('schedules.store')}}" enctype="multipart/form-data"
+                    <form method="POST" action="{{route('schedules.update', $item->id)}}" enctype="multipart/form-data"
                         class="needs-validation" novalidate="">
+                        @method('PUT')
                         @csrf
                         <div class="card-body">
                             @if ($errors->any())
@@ -72,7 +74,7 @@
                                             </span>
                                         </div>
                                         <input id="nama_matkul" type="text" class="form-control"
-                                            value="{{old('nama_matkul')}}" name="nama_matkul" required>
+                                            value="{{$item->nama_matkul}}" name="nama_matkul" required>
                                     </div>
                                 </div>
 
@@ -95,7 +97,7 @@
                                             </span>
                                         </div>
                                         <input id="nama_dosen" type="text" class="form-control"
-                                            value="{{old('nama_dosen')}}" name="nama_dosen" required>
+                                            value="{{$item->nama_dosen}}" name="nama_dosen" required>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +122,7 @@
                                             </span>
                                         </div>
                                         <select class="custom-select" id="hari" name="hari">
-                                            <option value="" disabled selected>Pilih ...</option>
+                                            <option value="{{$item->hari}}" selected>{{$item->hari}}</option>
                                             <option value="Senin">Senin</option>
                                             <option value="Selasa">Selasa</option>
                                             <option value="Rabu">Rabu</option>
@@ -153,7 +155,7 @@
                                                 </svg>
                                             </span>
                                         </div>
-                                        <input required id="kelas" type="text" value="{{old('kelas')}}"
+                                        <input required id="kelas" type="text" value="{{$item->kelas}}"
                                             class="form-control" name="kelas">
                                     </div>
                                 </div>
@@ -177,7 +179,7 @@
                                                 </svg>
                                             </span>
                                         </div>
-                                        <input required id="sks" type="number" value="{{old('sks')}}"
+                                        <input required id="sks" type="number" value="{{$item->sks}}"
                                             class="form-control" name="sks">
                                     </div>
                                 </div>
@@ -201,7 +203,7 @@
                                             </span>
                                         </div>
                                         <input id="waktu_mulai" type="text" class="form-control"
-                                            value="{{old('waktu_mulai')}}" name="waktu_mulai" required>
+                                            value="{{$item->waktu_mulai}}" name="waktu_mulai" required>
                                     </div>
                                 </div>
 
@@ -223,14 +225,14 @@
                                             </span>
                                         </div>
                                         <input id="waktu_selesai" type="text" class="form-control"
-                                            value="{{old('waktu_selesai')}}" name="waktu_selesai" required>
+                                            value="{{$item->waktu_selesai}}" name="waktu_selesai" required>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary m-r-15" type="submit">Tambah</button>
+                            <button type="submit" class="btn btn-primary m-r-15" type="submit">Update</button>
                             <button class="btn btn-light" type="reset">Reset</button>
                         </div>
 
