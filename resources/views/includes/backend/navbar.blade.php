@@ -31,11 +31,11 @@
                 </li>
                 <li class="level-menu outside">
                     <a class="nav-link" href="#!"><i data-feather="plus-square"></i>
-                        <span class="d-none d-md-inline-block">
+                        <span class="d-none d-sm-none d-md-inline-block">
                             Catatan Pelajaran
                         </span>
-                        <span class="d-inline-block d-md-none">
-                            Catatan
+                        <span class="d-none d-sm-inline-block d-md-none">
+                            <small> Catatan </small>
                         </span>
                     </a>
                 </li>

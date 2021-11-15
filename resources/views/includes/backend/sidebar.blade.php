@@ -7,7 +7,7 @@
                     <div class="mobile-back text-right"><span>Back</span><i class="fa fa-angle-right pl-2"
                             aria-hidden="true"></i></div>
                 </li>
-                <li class="sidebar-main-title">
+                <li class="sidebar-main-title pt-0">
                     <div>
                         <h6>Halaman Utama</h6>
                         <p>Dashboard & statistik</p>

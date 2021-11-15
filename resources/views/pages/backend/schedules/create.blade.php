@@ -12,14 +12,20 @@
     <!-- pages title header start-->
     <div class="container-fluid">
         <div class="page-title">
-            <div class="card card-absolute">
+            <div class="card card-absolute mt-5 mt-md-4">
                 <div class="card-header bg-primary">
-                    <h5 class="text-white">📚⚙ • Atur Jadwal Pelajaran</h5>
+                    <h5 class="text-white">
+                        📅📚 • Atur Jadwal Pelajaran
+                    </h5>
                 </div>
                 <div class="card-body">
                     <p>
-                        Di halaman ini kalian bisa menambahkan jadwal pelajaran yang nantinya akan muncul di halaman
-                        awal dan halaman jadwal pelajaranmu, pastikan data yang telah kamu isi valid ya!
+                        Dibawah ini adalah form untuk tambah jadwal pelajaran mata kuliahmu. <span
+                            class="d-none d-md-inline">
+                            Data dibawah pastikan kamu isi dengan benar dan lengkap ya, nanti datanya akan kami simpan
+                            dan dapat kamu akses dimana saja dan kapan saja.
+                            <a href="#">disini ⇾</a>
+                        </span>
                     </p>
                 </div>
             </div>
@@ -54,16 +60,15 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text" id="basic-addon1">
                                                 <svg xmlns="http://www.w3.org/2000/svg"
-                                                    class="icon icon-tabler icon-tabler-box-multiple-1" width="20"
+                                                    class="icon icon-tabler icon-tabler-bookmarks" width="20"
                                                     height="20" viewBox="0 0 24 24" stroke-width="2"
                                                     stroke="currentColor" fill="none" stroke-linecap="round"
                                                     stroke-linejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                    <rect x="7" y="3" width="14" height="14" rx="2"></rect>
-                                                    <path
-                                                        d="M17 17v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2">
+                                                    <path d="M13 7a2 2 0 0 1 2 2v12l-5 -3l-5 3v-12a2 2 0 0 1 2 -2h6z">
                                                     </path>
-                                                    <path d="M14 14v-8l-2 2"></path>
+                                                    <path d="M9.265 4a2 2 0 0 1 1.735 -1h6a2 2 0 0 1 2 2v12l-1 -.6">
+                                                    </path>
                                                 </svg>
                                             </span>
                                         </div>
@@ -77,15 +82,18 @@
                                             class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text" id="basic-addon1"><svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    class="icon icon-tabler icon-tabler-user" width="20" height="20"
+                                            <span class="input-group-text" id="basic-addon1">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-users" width="20" height="20"
                                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                                     fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                    <circle cx="12" cy="7" r="4"></circle>
-                                                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
-                                                </svg></span>
+                                                    <circle cx="9" cy="7" r="4"></circle>
+                                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+                                                </svg>
+                                            </span>
                                         </div>
                                         <input id="nama_dosen" type="text" class="form-control"
                                             value="{{old('nama_dosen')}}" name="nama_dosen" required>
@@ -97,17 +105,20 @@
                                     <label for="hari">Hari <span class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                            <label class="input-group-text" for="hari"><svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    class="icon icon-tabler icon-tabler-man" width="20" height="20"
+                                            <span class="input-group-text" for="hari">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-calendar" width="20" height="20"
                                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                                     fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                    <circle cx="12" cy="5" r="2"></circle>
-                                                    <path
-                                                        d="M10 22v-5l-1 -1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5">
-                                                    </path>
-                                                </svg></label>
+                                                    <rect x="4" y="5" width="16" height="16" rx="2"></rect>
+                                                    <line x1="16" y1="3" x2="16" y2="7"></line>
+                                                    <line x1="8" y1="3" x2="8" y2="7"></line>
+                                                    <line x1="4" y1="11" x2="20" y2="11"></line>
+                                                    <line x1="11" y1="15" x2="12" y2="15"></line>
+                                                    <line x1="12" y1="15" x2="12" y2="18"></line>
+                                                </svg>
+                                            </span>
                                         </div>
                                         <select class="custom-select" id="hari" name="hari">
                                             <option value="" disabled selected>Pilih ...</option>
@@ -126,17 +137,22 @@
                                     <label for="angkatan">Kelas <span class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text" id="basic-addon1"><svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    class="icon icon-tabler icon-tabler-users" width="20" height="20"
-                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <span class="input-group-text" id="basic-addon1">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-building-community" width="20"
+                                                    height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                    <circle cx="9" cy="7" r="4"></circle>
-                                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
-                                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
-                                                </svg></span>
+                                                    <path
+                                                        d="M8 9l5 5v7h-5v-4m0 4h-5v-7l5 -5m1 1v-6a1 1 0 0 1 1 -1h10a1 1 0 0 1 1 1v17h-8">
+                                                    </path>
+                                                    <line x1="13" y1="7" x2="13" y2="7.01"></line>
+                                                    <line x1="17" y1="7" x2="17" y2="7.01"></line>
+                                                    <line x1="17" y1="11" x2="17" y2="11.01"></line>
+                                                    <line x1="17" y1="15" x2="17" y2="15.01"></line>
+                                                </svg>
+                                            </span>
                                         </div>
                                         <input required id="kelas" type="text" value="{{old('kelas')}}"
                                             class="form-control" name="kelas">
@@ -147,22 +163,20 @@
                                     <label for="sks">SKS <span class="text-danger">*</span></label>
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text" id="basic-addon1"><svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    class="icon icon-tabler icon-tabler-calendar-time" width="20"
+                                            <span class="input-group-text" id="basic-addon1">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-list-numbers" width="20"
                                                     height="20" viewBox="0 0 24 24" stroke-width="2"
                                                     stroke="currentColor" fill="none" stroke-linecap="round"
                                                     stroke-linejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path
-                                                        d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4">
-                                                    </path>
-                                                    <circle cx="18" cy="18" r="4"></circle>
-                                                    <path d="M15 3v4"></path>
-                                                    <path d="M7 3v4"></path>
-                                                    <path d="M3 11h16"></path>
-                                                    <path d="M18 16.496v1.504l1 1"></path>
-                                                </svg></span>
+                                                    <path d="M11 6h9"></path>
+                                                    <path d="M11 12h9"></path>
+                                                    <path d="M12 18h8"></path>
+                                                    <path d="M4 16a2 2 0 1 1 4 0c0 .591 -.5 1 -1 1.5l-3 2.5h4"></path>
+                                                    <path d="M6 10v-6l-2 2"></path>
+                                                </svg>
+                                            </span>
                                         </div>
                                         <input required id="sks" type="number" value="{{old('sks')}}"
                                             class="form-control" name="sks">
@@ -178,16 +192,12 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text" id="basic-addon1">
                                                 <svg xmlns="http://www.w3.org/2000/svg"
-                                                    class="icon icon-tabler icon-tabler-box-multiple-1" width="20"
-                                                    height="20" viewBox="0 0 24 24" stroke-width="2"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
+                                                    class="icon icon-tabler icon-tabler-clock" width="20" height="20"
+                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                    <rect x="7" y="3" width="14" height="14" rx="2"></rect>
-                                                    <path
-                                                        d="M17 17v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2">
-                                                    </path>
-                                                    <path d="M14 14v-8l-2 2"></path>
+                                                    <circle cx="12" cy="12" r="9"></circle>
+                                                    <polyline points="12 7 12 12 15 15"></polyline>
                                                 </svg>
                                             </span>
                                         </div>
@@ -201,15 +211,17 @@
                                     <div class="input-group clockpicker mb-3 pull-center" data-placement="top"
                                         data-align="top" data-autoclose="true">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text" id="basic-addon1"><svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    class="icon icon-tabler icon-tabler-user" width="20" height="20"
-                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <span class="input-group-text" id="basic-addon1">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-circle-check" width="20"
+                                                    height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                    <circle cx="12" cy="7" r="4"></circle>
-                                                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
-                                                </svg></span>
+                                                    <circle cx="12" cy="12" r="9"></circle>
+                                                    <path d="M9 12l2 2l4 -4"></path>
+                                                </svg>
+                                            </span>
                                         </div>
                                         <input id="waktu_selesai" type="text" class="form-control"
                                             value="{{old('waktu_selesai')}}" name="waktu_selesai" required>

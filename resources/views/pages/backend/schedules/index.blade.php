@@ -14,15 +14,20 @@
     <!-- pages title header start-->
     <div class="container-fluid">
         <div class="page-title">
-            <div class="card card-absolute">
+            <div class="card card-absolute mt-5 mt-md-4">
                 <div class="card-header bg-primary">
                     <h5 class="text-white">📚 • Jadwal Pelajaranmu</h5>
                 </div>
                 <div class="card-body">
                     <p>
-                        Dibawah ini adalah jadwal pelajaran yang telah kamu atur. Jadwal dibawah juga bisa kamu
-                        edit dengan menekan logo pencil berwarna ungu dan hapus dengan menekan logo sampah berwarna
-                        merah
+                        Dibawah ini adalah jadwal pelajaran yang telah kamu tambahkan. <span class="d-none d-md-inline">
+                            Data dibawah juga bisa kamu edit
+                            dengan
+                            menekan logo pencil berwarna ungu
+                            dan hapus dengan menekan logo sampah berwarna merah. Ingin menambahkan jadwal? tambah
+                            jadwalmu
+                            <a href="#">disini ⇾</a>
+                        </span>
                     </p>
                 </div>
             </div>
