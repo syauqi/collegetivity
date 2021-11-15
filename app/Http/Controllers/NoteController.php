@@ -110,7 +110,37 @@ class NoteController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'thumbnail' => 'file|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        if ($request->hasFile('thumbnail')) {
+            $resource = $request->file('thumbnail');
+            $name = $resource->getClientOriginalName();
+            $finalName = date('His')  . $name;
+            $request->file('thumbnail')->storeAs('images/', $finalName, 'public');
+            $item = Notes::findOrFail($id);
+            $item->update([
+                'judul' => $request->judul,
+                'thumbnail' => $finalName,
+                'tanggal' => $request->tanggal,
+                'author' => $request->author,
+                'matkul' => $request->matkul,
+                'content' => $request->content,
+            ]);
+        } else {
+            $item = Notes::findOrFail($id);
+            $item->update([
+                'judul' => $request->judul,
+                'thumbnail' => 'thumbnail-default.jpg',
+                'tanggal' => $request->tanggal,
+                'author' => $request->author,
+                'matkul' => $request->matkul,
+                'content' => $request->content,
+            ]);
+        }
+
+        return redirect('/dashboard/catatan-pelajaran');
     }
 
     /**

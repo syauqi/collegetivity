@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Tambah Data Galeri — Ciradyka Pramuka SMAN 1 Ciamis')
+@section('title', 'Tambah Data Galeri — Collegetivity')
 @section('content')
 
 <!-- file wrapper for better tabs start-->

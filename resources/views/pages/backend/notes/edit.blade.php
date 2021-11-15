@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Tulis Catatan Pembelajaran Baru — Collegetivity')
+@section('title', 'Edit Catatan Pelajaran — Collegetivity')
 @section('content')
 
 @push('create-article-styles')
@@ -15,11 +15,13 @@
         <div class="page-title">
             <div class="card card-absolute mt-5 mt-md-4">
                 <div class="card-header bg-primary">
-                    <h5 class="text-white">📓📝 • Tulis Catatan Pelajaran Baru</h5>
+                    <h5 class="text-white">📓📝 • Edit Catatan Pelajaran <span class="d-none d-md-inline"> —
+                            {{$item->judul}}</span></h5>
                 </div>
                 <div class="card-body">
                     <p>
-                        Dibawah ini adalah halaman untuk tambah catatan pelajaranmu. <span class="d-none d-md-inline">
+                        Dibawah ini adalah form untuk edit catatan pelajaran berjudul {{$item->judul}}. <span
+                            class="d-none d-md-inline">
                             Catatan yang telah kamu tulis nantinya bisa kamu akses kok dimana saja dan kapan saja.
                             Selamat menulis dan berkreasi, ya!
                         </span>
@@ -35,11 +37,12 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Tulis Catatan</h5>
+                        <h5>Edit Catatan Pelajaran</h5>
                     </div>
                     <div class="card-body add-post">
-                        <form class="row needs-validation" method="POST" action="{{route('notes.store')}}"
+                        <form class="row needs-validation" method="POST" action="{{route('notes.update', $item->id)}}"
                             enctype="multipart/form-data" novalidate="">
+                            @method('PUT')
                             @csrf
                             <div class="col-sm-12">
                                 <div class="form-row">
@@ -62,9 +65,8 @@
                                                     </svg>
                                                 </span>
                                             </div>
-                                            <input class="form-control" id="judul" name="judul" value="{{old('judul')}}"
+                                            <input class="form-control" id="judul" name="judul" value="{{$item->judul}}"
                                                 type="text" required="">
-                                            <div class="valid-feedback">Looks good!</div>
                                         </div>
                                     </div>
                                     <div class="form-group col-md-6 ">
@@ -86,7 +88,7 @@
                                                 </span>
                                             </div>
                                             <input class="form-control" id="matkul" name="matkul"
-                                                value="{{old('matkul')}}" type="text" required="">
+                                                value="{{$item->matkul}}" type="text" required="">
                                             <div class="valid-feedback">Looks good!</div>
                                         </div>
                                     </div>
@@ -109,7 +111,9 @@
                                     <div class="theme-form">
                                         <div class="form-group">
                                             <label>Catatan: <span class="text-danger">*</span></label>
-                                            <textarea id="text-box" name="content" cols="10" rows="2"></textarea>
+                                            <textarea id="text-box" name="content" cols="10" rows="2">
+                                                {!!htmlspecialchars_decode($item->content)!!}
+                                            </textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -118,7 +122,7 @@
                             </div>
                             <div class="col-sm-12">
                                 <div class="btn-showcase">
-                                    <button class="btn btn-primary" type="submit">Tambah</button>
+                                    <button class="btn btn-primary" type="submit">Update</button>
                                     <input class="btn btn-light" type="reset" value="Reset">
                                 </div>
                             </div>

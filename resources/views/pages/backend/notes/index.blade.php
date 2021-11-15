@@ -29,7 +29,7 @@
                             berwarna ungu dan hapus dengan menekan logo sampah berwarna merah. Ingin menambahkan
                             catatan?
                             tambah
-                            jadwalmu
+                            catatanmu
                             <a href="#">disini ⇾</a>
                         </span>
                     </p>
