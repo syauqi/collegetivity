@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', $item->judul . '— Catatanmu di Collegetivity')
+@section('title', $item->judul . ' — Catatanmu di Collegetivity')
 @section('content')
 
 <style>
@@ -19,7 +19,7 @@
         <div class="page-title">
             <div class="row">
                 <div class="col-6">
-                    <h3>Catatan Pelajaran</h3>
+                    <h3>{{$item->judul}}</h3>
                 </div>
                 <div class="col-6">
                     <ol class="breadcrumb">

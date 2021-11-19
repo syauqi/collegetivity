@@ -38,7 +38,7 @@
                         </span></a>
                     <ul class="sidebar-submenu">
                         <li><a href="{{url('/dashboard/catatan-pelajaran')}}">Catatan pelajaranmu</a></li>
-                        <li><a href="{{url('/dashboard/catatan-pelajaran/tambah-catatan')}}">Tulis catatan pelajaran
+                        <li><a href="{{url('/dashboard/catatan-pelajaran/tambah-catatan')}}">Tulis catatan
                                 baru </a></li>
                     </ul>
                 </li>
@@ -48,7 +48,7 @@
                             Foto</span></a>
                     <ul class="sidebar-submenu">
                         <li><a href="{{url('/dashboard/galeri-foto')}}">Galeri fotomu</a></li>
-                        <li><a href="{{url('/dashboard/galeri-foto/tambah-foto')}}">Upload galeri foto baru</a></li>
+                        <li><a href="{{url('/dashboard/galeri-foto/tambah-foto')}}">Upload foto baru</a></li>
                     </ul>
                 </li>
                 {{-- pengelolaan data merchandise --}}
