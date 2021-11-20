@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\Schedules;
 use App\Models\Notes;
@@ -15,8 +16,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $jadwal = Schedules::all();
-        $catatan = Notes::take(3)->get();
+        $jadwal = Schedules::where('user_id', Auth::user()->email)->get();
+        $catatan = Notes::where('user_id', Auth::user()->email)->take(3)->get();
 
         return view('pages.backend.index', [
             'jadwal' => $jadwal,

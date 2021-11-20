@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Tulis Catatan Pembelajaran Baru — Collegetivity')
+@section('title', 'Tambah Bookmarks Baru — Collegetivity')
 @section('content')
 
 @push('create-article-styles')
@@ -15,13 +15,14 @@
         <div class="page-title">
             <div class="card card-absolute mt-5 mt-md-4">
                 <div class="card-header bg-primary">
-                    <h5 class="text-white">📓📝 • Tulis Catatan Pelajaran Baru</h5>
+                    <h5 class="text-white">🔖🌏 • Tambah Bookmarks Baru</h5>
                 </div>
                 <div class="card-body">
                     <p>
-                        Dibawah ini adalah halaman untuk tambah catatan pelajaranmu. <span class="d-none d-md-inline">
-                            Catatan yang telah kamu tulis nantinya bisa kamu akses kok dimana saja dan kapan saja.
-                            Selamat menulis dan berkreasi, ya!
+                        Dibawah ini adalah halaman untuk tambah bookmarksmu. <span class="d-none d-md-inline">
+                            Bookmarks yang telah kamu tambahkan nantinya bisa kamu akses kok dimana saja dan kapan
+                            saja.
+                            Cocok buat simpen link penting, ya!
                         </span>
                     </p>
                 </div>
@@ -35,17 +36,18 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Tulis Catatan</h5>
+                        <h5>Tambah Bookmarks</h5>
                     </div>
                     <div class="card-body add-post">
-                        <form class="row needs-validation" method="POST" action="{{route('notes.store')}}"
+                        <form class="row needs-validation" method="POST" action="{{route('bookmarks.store')}}"
                             enctype="multipart/form-data" novalidate="">
                             @csrf
                             <div class="col-sm-12">
                                 <div class="form-row">
 
                                     <div class="form-group col-md-6">
-                                        <label for="judul">Judul Catatan: <span class="text-danger">*</span></label>
+                                        <label for="judul">Judul atau Nama Bookmarks: <span
+                                                class="text-danger">*</span></label>
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text" id="basic-addon1">
@@ -68,7 +70,8 @@
                                         </div>
                                     </div>
                                     <div class="form-group col-md-6 ">
-                                        <label for="matkul">Nama Mata Kuliah: (Optional)</label>
+                                        <label for="matkul">Link atau URL Halaman Website: <span
+                                                class="text-danger">*</span></label>
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text" id="basic-addon1">
@@ -85,8 +88,8 @@
                                                     </svg>
                                                 </span>
                                             </div>
-                                            <input class="form-control" id="matkul" name="matkul"
-                                                value="{{old('matkul')}}" type="text" required="">
+                                            <input class="form-control" id="url" name="url" value="{{old('url')}}"
+                                                type="text" required="">
                                             <div class="valid-feedback">Looks good!</div>
                                         </div>
                                     </div>
@@ -94,24 +97,12 @@
 
                                 <input type="hidden" name="user_id" value={{Auth::user()->email}}>
 
-                                <div class="form-group">
-                                    <label for="customFile">Thumbnail: (Optional)</label>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" name="thumbnail" id="customFile">
-                                        <label class="custom-file-label" for="customFile">Pilih file thumbnail</label>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" type="hidden" name="author"
-                                        value="{{Auth::user()->name}}">
-                                    <input class="form-control" type="hidden" name="tanggal"
-                                        value="{{{now()->toDateString()}}}">
-                                </div>
                                 <div class="email-wrapper">
                                     <div class="theme-form">
                                         <div class="form-group">
-                                            <label>Catatan: <span class="text-danger">*</span></label>
-                                            <textarea id="text-box" name="content" cols="10" rows="2"></textarea>
+                                            <label>Deskripsi Bookmarks atau Halaman Website: <span
+                                                    class="text-danger">*</span></label>
+                                            <textarea id="text-box" name="deskripsi" cols="10" rows="2"></textarea>
                                         </div>
                                     </div>
                                 </div>

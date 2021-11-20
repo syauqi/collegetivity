@@ -11,5 +11,5 @@ class Galleries extends Model
 
 
     protected $guarded = [];
-    protected $table = 'galleries';
+    protected $table = 'galeri';
 }

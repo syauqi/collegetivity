@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Dashboard — Ciradyka Pramuka SMAN 1 Ciamis')
+@section('title', 'Todolist — Collegetivity')
 @section('content')
 
 @push('todo-styles')
@@ -8,149 +8,101 @@
 @endpush
 
 <section>
-    <br>
-    <div class="row">
-        <div class="col-xl-12">
-            <div class="card">
-                <div class="card-header">
-                    <h5>To-Do</h5>
+
+    <div class="container-fluid">
+        <div class="page-title">
+            <div class="card card-absolute mt-5 mt-md-4">
+                <div class="card-header bg-primary">
+                    <h5 class="text-white">✅ • To-Do List</h5>
                 </div>
                 <div class="card-body">
-                    <div class="todo">
-                        <div class="todo-list-wrapper">
-                            <div class="todo-list-container">
-                                <div class="mark-all-tasks">
-                                    <div class="mark-all-tasks-container"><span class="mark-all-btn"
-                                            id="mark-all-finished" role="button"><span class="btn-label">Mark all as
-                                                finished</span><span class="action-box completed"><i class="icon"><i
-                                                        class="icon-check"></i></i></span></span><span
-                                            class="mark-all-btn move-down" id="mark-all-incomplete" role="button"><span
-                                                class="btn-label">Mark all as Incomplete</span><span
-                                                class="action-box"><i class="icon"><i
-                                                        class="icon-check"></i></i></span></span></div>
-                                </div>
-                                <div class="todo-list-body">
-                                    <ul id="todo-list">
-                                        <li class="task">
-                                            <div class="task-container">
-                                                <h4 class="task-label">Weekly Bigbazar Shopping </h4><span
-                                                    class="task-action-btn"><span class="action-box large delete-btn"
-                                                        title="Delete Task"><i class="icon"><i
-                                                                class="icon-trash"></i></i></span><span
-                                                        class="action-box large complete-btn" title="Mark Complete"><i
-                                                            class="icon"><i class="icon-check"></i></i></span></span>
-                                            </div>
-                                        </li>
-                                        <li class="task">
-                                            <div class="task-container">
-                                                <h4 class="task-label">Go Outside Picnic on Sunday</h4><span
-                                                    class="task-action-btn"><span class="action-box large delete-btn"
-                                                        title="Delete Task"><i class="icon"><i
-                                                                class="icon-trash"></i></i></span><span
-                                                        class="action-box large complete-btn" title="Mark Complete"><i
-                                                            class="icon"><i class="icon-check"></i></i></span></span>
-                                            </div>
-                                        </li>
-                                        <li class="completed task">
-                                            <div class="task-container">
-                                                <h4 class="task-label">Write a blog post </h4><span
-                                                    class="task-action-btn"><span class="action-box large delete-btn"
-                                                        title="Delete Task"><i class="icon"><i
-                                                                class="icon-trash"></i></i></span><span
-                                                        class="action-box large complete-btn" title="Mark Complete"><i
-                                                            class="icon"><i class="icon-check"></i></i></span></span>
-                                            </div>
-                                        </li>
-                                        <li class="task">
-                                            <div class="task-container">
-                                                <h4 class="task-label">Do the chicken dance</h4><span
-                                                    class="task-action-btn"><span class="action-box large delete-btn"
-                                                        title="Delete Task"><i class="icon"><i
-                                                                class="icon-trash"></i></i></span><span
-                                                        class="action-box large complete-btn" title="Mark Incomplete"><i
-                                                            class="icon"><i class="icon-check"></i></i></span></span>
-                                            </div>
-                                        </li>
-                                        <li class="task">
-                                            <div class="task-container">
-                                                <h4 class="task-label">Pay the electricity bills</h4><span
-                                                    class="task-action-btn"><span class="action-box large delete-btn"
-                                                        title="Delete Task"><i class="icon"><i
-                                                                class="icon-trash"></i></i></span><span
-                                                        class="action-box large complete-btn" title="Mark Complete"><i
-                                                            class="icon"><i class="icon-check"></i></i></span></span>
-                                            </div>
-                                        </li>
-                                        <li class="task completed">
-                                            <div class="task-container">
-                                                <h4 class="task-label">Make dinner reservation</h4><span
-                                                    class="task-action-btn"><span class="action-box large delete-btn"
-                                                        title="Delete Task"><i class="icon"><i
-                                                                class="icon-trash"></i></i></span><span
-                                                        class="action-box large complete-btn" title="Mark Complete"><i
-                                                            class="icon"><i class="icon-check"></i></i></span></span>
-                                            </div>
-                                        </li>
-                                        <li class="task">
-                                            <div class="task-container">
-                                                <h4 class="task-label">Meeting with photographer</h4><span
-                                                    class="task-action-btn"><span class="action-box large delete-btn"
-                                                        title="Delete Task"><i class="icon"><i
-                                                                class="icon-trash"></i></i></span><span
-                                                        class="action-box large complete-btn" title="Mark Complete"><i
-                                                            class="icon"><i class="icon-check"></i></i></span></span>
-                                            </div>
-                                        </li>
-                                        <li class="task">
-                                            <div class="task-container">
-                                                <h4 class="task-label">Birthday wish to best friend</h4><span
-                                                    class="task-action-btn"><span class="action-box large delete-btn"
-                                                        title="Delete Task"><i class="icon"><i
-                                                                class="icon-trash"></i></i></span><span
-                                                        class="action-box large complete-btn" title="Mark Complete"><i
-                                                            class="icon"><i class="icon-check"></i></i></span></span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="todo-list-footer">
-                                    <div class="add-task-btn-wrapper"><span class="add-task-btn">
-                                            <button class="btn btn-primary"><i class="icon-plus"></i> Add new
-                                                task</button></span></div>
-                                    <div class="new-task-wrapper">
-                                        <textarea id="new-task" placeholder="Enter new task here. . ."></textarea><span
-                                            class="btn btn-danger cancel-btn" id="close-task-panel">Close</span><span
-                                            class="btn btn-success ml-3 add-new-task-btn" id="add-task">Add
-                                            Task</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="notification-popup hide">
-                            <p><span class="task"></span><span class="notification-text"></span></p>
-                        </div>
-                    </div>
-                    <!-- HTML Template for tasks-->
-                    <script id="task-template" type="tect/template">
-                        <li class="task">
-                  <div class="task-container">
-                  <h4 class="task-label"></h4>
-                  <span class="task-action-btn">
-                  <span class="action-box large delete-btn" title="Delete Task">
-                  <i class="icon"><i class="icon-trash"></i></i>
-                  </span>
-                  <span class="action-box large complete-btn" title="Mark Complete">
-                  <i class="icon"><i class="icon-check"></i></i>
-                  </span>
-                  </span>
-                  </div>
-                  </li>
-                </script>
+                    <p>
+                        Dibawah ini adalah todolist yang telah kamu tambahkan. <span class="d-none d-md-inline">
+                            Jika kamu selesai mengerjakan tugas yang telah kamu kerjakan cukup klik tombol checklist di
+                            bagian kanan, Selamat Berproduktifitas!. Ingin tambah tugas?
+                            tambah
+                            tugasmu
+                            di tombol berwarna ungu dibawah
+                        </span>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>To-Do List</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="todo">
+                            <div class="todo-list-wrapper">
+                                <div class="todo-list-container">
+                                    <div class="todo-list-body">
+                                        <ul id="todo-list">
+                                            @forelse ($items as $item)
+                                            <li class="task">
+                                                <div class="task-container">
+                                                    <h4 class="task-label">{{$item->nama_tugas}}</h4>
+                                                    <span class="task-action-btn">
+                                                        <form action="{{route('todolist.destroy', $item->id)}}"
+                                                            method="POST" class="d-inline">
+                                                            @csrf
+                                                            @method('delete')
+                                                            <button class="btn btn-success py-1 px-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    class="icon icon-tabler icon-tabler-circle-check mt-1"
+                                                                    width="20" height="20" viewBox="0 0 24 24"
+                                                                    stroke-width="2" stroke="currentColor" fill="none"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none">
+                                                                    </path>
+                                                                    <circle cx="12" cy="12" r="9"></circle>
+                                                                    <path d="M9 12l2 2l4 -4"></path>
+                                                                </svg>
+                                                            </button>
+                                                        </form>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            @empty
+                                            @endforelse
+                                        </ul>
+                                    </div>
+                                    <div class="todo-list-footer">
+                                        <div class="add-task-btn-wrapper"><span class="add-task-btn">
+                                                <button class="btn btn-primary"><i class="icon-plus"></i> &nbsp; Tambah
+                                                    tugas
+                                                    baru</button></span></div>
+                                        <form method="POST" action="{{route('todolist.store')}}"
+                                            enctype="multipart/form-data" class="needs-validation" novalidate="">
+                                            @csrf
+                                            <div class="new-task-wrapper">
+                                                <input class="form-control mb-3" name="nama_tugas" type="text"
+                                                    placeholder="Masukkan tugas baru anda disini .."></input>
+                                                <input type="hidden" name="is_done" value="0">
+                                                <input type="hidden" name="user_id" value={{Auth::user()->email}}>
+                                                <span class="btn btn-danger cancel-btn"
+                                                    id="close-task-panel">Tutup</span>
+                                                <button type="submit" class="btn btn-success ml-3 add-new-task-btn">
+                                                    Tambah</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notification-popup hide">
+                                <p><span class="task"></span><span class="notification-text"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 @push('todo-scripts')

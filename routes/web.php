@@ -59,12 +59,15 @@ Route::prefix('dashboard')
         Route::get('/galeri-foto/tambah-foto', 'App\Http\Controllers\GalleryController@create');
         Route::resource('galleries', 'App\Http\Controllers\GalleryController');
 
+        Route::get('/bookmarks', 'App\Http\Controllers\BookmarkController@index');
+        Route::get('/bookmarks/tambah-bookmarks', 'App\Http\Controllers\BookmarkController@create');
+        Route::resource('bookmarks', 'App\Http\Controllers\BookmarkController');
+
+        Route::get('/todolist', 'App\Http\Controllers\TodolistController@index');
+        Route::resource('todolist', 'App\Http\Controllers\TodolistController');
+
         Route::get('/file-tugas', function () {
             return view('pages.backend.files.index');
-        });
-
-        Route::get('/todolist', function () {
-            return view('pages.backend.todolist.index');
         });
 
         Route::get('/calendar', function () {

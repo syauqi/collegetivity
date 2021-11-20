@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\Notes;
 
@@ -14,7 +15,7 @@ class NoteController extends Controller
      */
     public function index()
     {
-        $items = Notes::all();
+        $items = Notes::where('user_id', Auth::user()->email)->get();
 
         return view('pages.backend.notes.index', [
             'items' => $items
@@ -53,6 +54,7 @@ class NoteController extends Controller
                 'thumbnail' => $finalName,
                 'tanggal' => $request->tanggal,
                 'author' => $request->author,
+                'user_id' => $request->user_id,
                 'matkul' => $request->matkul,
                 'content' => $request->content,
 
@@ -63,6 +65,7 @@ class NoteController extends Controller
                 'thumbnail' => 'thumbnail-default.jpg',
                 'tanggal' => $request->tanggal,
                 'author' => $request->author,
+                'user_id' => $request->user_id,
                 'matkul' => $request->matkul,
                 'content' => $request->content,
             ]);
@@ -125,6 +128,7 @@ class NoteController extends Controller
                 'thumbnail' => $finalName,
                 'tanggal' => $request->tanggal,
                 'author' => $request->author,
+                'user_id' => $request->user_id,
                 'matkul' => $request->matkul,
                 'content' => $request->content,
             ]);
@@ -135,6 +139,7 @@ class NoteController extends Controller
                 'thumbnail' => 'thumbnail-default.jpg',
                 'tanggal' => $request->tanggal,
                 'author' => $request->author,
+                'user_id' => $request->user_id,
                 'matkul' => $request->matkul,
                 'content' => $request->content,
             ]);

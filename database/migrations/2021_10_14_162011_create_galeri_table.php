@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateNotesTable extends Migration
+class CreateGaleriTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,10 @@ class CreateNotesTable extends Migration
      */
     public function up()
     {
-        Schema::create('notes', function (Blueprint $table) {
+        Schema::create('galeri', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->string('thumbnail')->nullable();
-            $table->string('author');
-            $table->string('matkul')->nullable();
-            $table->mediumText('content');
-            $table->string('tanggal');
+            $table->string('foto');
+            $table->string('user_id');
             $table->timestamps();
         });
     }
@@ -32,6 +28,6 @@ class CreateNotesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('notes');
+        Schema::dropIfExists('galleries');
     }
 }

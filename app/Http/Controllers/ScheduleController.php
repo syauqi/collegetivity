@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\Schedules;
 
@@ -14,7 +15,7 @@ class ScheduleController extends Controller
      */
     public function index()
     {
-        $items = Schedules::all();
+        $items = Schedules::where('user_id', Auth::user()->email)->get();
 
         return view('pages.backend.schedules.index', [
             'items' => $items

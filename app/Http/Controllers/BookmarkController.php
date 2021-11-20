@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
-use App\Models\Galleries;
+use App\Models\Bookmarks;
 
-class GalleryController extends Controller
+class BookmarkController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class GalleryController extends Controller
      */
     public function index()
     {
-        $items = Galleries::where('user_id', Auth::user()->email)->get();
+        $items = Bookmarks::where('user_id', Auth::user()->email)->get();
 
-        return view('pages.backend.galleries.index', [
+        return view('pages.backend.bookmarks.index', [
             'items' => $items
         ]);
     }
@@ -29,7 +29,7 @@ class GalleryController extends Controller
      */
     public function create()
     {
-        return view('pages.backend.galleries.create');
+        return view('pages.backend.bookmarks.create');
     }
 
     /**
@@ -40,24 +40,11 @@ class GalleryController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'foto' => 'file|image|mimes:jpeg,png,jpg|max:5120',
-        ]);
+        $input = $request->all();
 
-        if ($request->hasFile('foto')) {
-            $resource = $request->file('foto');
-            $name = $resource->getClientOriginalName();
-            $finalName = date('His')  . $name;
-            $request->file('foto')->storeAs('images/', $finalName, 'public');
-            Galleries::create([
-                'foto' => $finalName,
-                'user_id' => $request->user_id,
-            ]);
-        } else {
-            echo "gagal";
-        }
+        $schedules = Bookmarks::create($input);
 
-        return redirect('/dashboard/galeri-foto');
+        return redirect('/dashboard/bookmarks');
     }
 
     /**
@@ -91,6 +78,7 @@ class GalleryController extends Controller
      */
     public function update(Request $request, $id)
     {
+
         //
     }
 
@@ -102,9 +90,9 @@ class GalleryController extends Controller
      */
     public function destroy($id)
     {
-        $item = Galleries::findOrFail($id);
+        $item = Bookmarks::findOrFail($id);
         $item->delete();
 
-        return redirect('/dashboard/galeri-foto');
+        return redirect('/dashboard/bookmarks');
     }
 }

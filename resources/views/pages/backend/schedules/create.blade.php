@@ -76,6 +76,8 @@
                                     </div>
                                 </div>
 
+                                <input type="hidden" name="user_id" value={{Auth::user()->email}}>
+
                                 <div class="form-group col-md-6 mb-2">
                                     <label for="nama_dosen">Nama Dosen Pengampu <span
                                             class="text-danger">*</span></label>

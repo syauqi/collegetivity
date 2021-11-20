@@ -10,5 +10,5 @@ class Schedules extends Model
     use HasFactory;
 
     protected $guarded = [];
-    protected $table = 'schedules';
+    protected $table = 'jadwal_pelajaran';
 }

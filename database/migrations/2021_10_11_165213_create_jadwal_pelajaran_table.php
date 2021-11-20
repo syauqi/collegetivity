@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSchedulesTable extends Migration
+class CreateJadwalPelajaranTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,16 @@ class CreateSchedulesTable extends Migration
      */
     public function up()
     {
-        Schema::create('schedules', function (Blueprint $table) {
+        Schema::create('jadwal_pelajaran', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_matkul', 96);
-            $table->string('nama_dosen', 48);
-            $table->string('waktu_mulai', 48);
-            $table->string('waktu_selesai', 48);
-            $table->string('hari', 16);
-            $table->integer('sks')->length(16)->unsigned();
-            $table->string('kelas', 16);
+            $table->string('nama_matkul');
+            $table->string('nama_dosen');
+            $table->string('waktu_mulai');
+            $table->string('waktu_selesai');
+            $table->string('hari');
+            $table->integer('sks');
+            $table->string('kelas');
+            $table->string('user_id');
             $table->timestamps();
         });
     }
