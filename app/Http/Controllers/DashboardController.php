@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\Schedules;
+use App\Models\Todolist;
 use App\Models\Notes;
 
 class DashboardController extends Controller
@@ -18,10 +19,12 @@ class DashboardController extends Controller
     {
         $jadwal = Schedules::where('user_id', Auth::user()->email)->get();
         $catatan = Notes::where('user_id', Auth::user()->email)->take(3)->get();
+        $todolist = Todolist::where('user_id', Auth::user()->email)->take(3)->get();
 
         return view('pages.backend.index', [
             'jadwal' => $jadwal,
-            'catatan' => $catatan
+            'catatan' => $catatan,
+            'todolist' => $todolist
         ]);
     }
 

@@ -95,4 +95,12 @@ class TodolistController extends Controller
 
         return redirect('/dashboard/todolist');
     }
+
+    public function doneviadashboard($id)
+    {
+        $item = Todolist::findOrFail($id);
+        $item->delete();
+
+        return redirect('/dashboard');
+    }
 }
