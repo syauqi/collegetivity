@@ -40,6 +40,17 @@ class ScheduleController extends Controller
      */
     public function store(Request $request)
     {
+        $validated = $request->validate([
+            'nama_matkul' => 'required|max:42',
+            'nama_dosen' => 'required|max:56',
+            'hari' => 'required|max:14',
+            'kelas' => 'required|max:24',
+            'sks' => 'required|max:12',
+            'waktu_mulai' => 'required|max:56',
+            'waktu_selesai' => 'required|max:56',
+
+        ]);
+
         $input = $request->all();
 
         $schedules = Schedules::create($input);
