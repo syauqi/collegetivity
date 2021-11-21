@@ -38,12 +38,23 @@
                         <h5>Tulis Catatan</h5>
                     </div>
                     <div class="card-body add-post">
+                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                <li>
+                                    <h4>Ada error nih 😓</h4>
+                                </li>
+                                @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
                         <form class="row needs-validation" method="POST" action="{{route('notes.store')}}"
-                            enctype="multipart/form-data" novalidate="">
+                            enctype="multipart/form-data">
                             @csrf
                             <div class="col-sm-12">
                                 <div class="form-row">
-
                                     <div class="form-group col-md-6">
                                         <label for="judul">Judul Catatan: <span class="text-danger">*</span></label>
                                         <div class="input-group mb-3">
@@ -63,8 +74,7 @@
                                                 </span>
                                             </div>
                                             <input class="form-control" id="judul" name="judul" value="{{old('judul')}}"
-                                                type="text" required="">
-                                            <div class="valid-feedback">Looks good!</div>
+                                                type="text" required>
                                         </div>
                                     </div>
                                     <div class="form-group col-md-6 ">
@@ -87,7 +97,6 @@
                                             </div>
                                             <input class="form-control" id="matkul" name="matkul"
                                                 value="{{old('matkul')}}" type="text" required="">
-                                            <div class="valid-feedback">Looks good!</div>
                                         </div>
                                     </div>
                                 </div>

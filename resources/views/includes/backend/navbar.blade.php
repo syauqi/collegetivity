@@ -92,7 +92,7 @@
                 <li class="profile-nav onhover-dropdown p-0 ml-2 mr-0">
                     <div class="media profile-media">
                         <img class="b-r-10"
-                            src="https://source.boringavatars.com/beam/120/{{Auth::user()->name}}?colors=FAD089,FF9C5B,F5634A,ED303C,3B8183"
+                            src="https://source.boringavatars.com/beam/120/{{Auth::user()->name}}?square&colors=FAD089,FF9C5B,F5634A,ED303C,3B8183"
                             width="37px">
                         <div class="media-body"><span>{{Auth::user()->name}}</span>
                             <p class="mb-0 font-roboto">👨🏻‍🎓 Mahasiswa

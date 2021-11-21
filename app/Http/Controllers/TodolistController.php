@@ -40,6 +40,11 @@ class TodolistController extends Controller
      */
     public function store(Request $request)
     {
+
+        $validated = $request->validate([
+            'nama_tugas' => 'required|max:42',
+        ]);
+
         $input = $request->all();
 
         $schedules = Todolist::create($input);

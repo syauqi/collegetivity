@@ -42,6 +42,18 @@
                             <div class="todo-list-wrapper">
                                 <div class="todo-list-container">
                                     <div class="todo-list-body">
+                                        @if ($errors->any())
+                                        <div class="alert alert-danger mb-5">
+                                            <ul>
+                                                <li>
+                                                    <h4>Ada error nih 😓</h4>
+                                                </li>
+                                                @foreach($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                        @endif
                                         <ul id="todo-list">
                                             @forelse ($items as $item)
                                             <li class="task">

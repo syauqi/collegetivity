@@ -57,7 +57,7 @@
                                 <div class="input-group mb-3">
                                     <div class="custom-file">
                                         <input type="file" name="foto" class="custom-file-input" id="foto"
-                                            aria-describedby="inputGroupFileAddon01">
+                                            aria-describedby="inputGroupFileAddon01" accept="image/*">>
                                         <label class="custom-file-label" for="inputGroupFile01">Pilih file gambar yang
                                             akan kamu upload ..</label>
                                     </div>
@@ -67,7 +67,6 @@
                         </div>
                         <div class="card-footer">
                             <button type="submit" class="btn btn-primary m-r-15" type="submit">Upload</button>
-                            <button class="btn btn-light" type="reset">Reset</button>
                         </div>
                     </form>
                 </div>

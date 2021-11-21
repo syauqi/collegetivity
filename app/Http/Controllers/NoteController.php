@@ -44,6 +44,12 @@ class NoteController extends Controller
             'thumbnail' => 'file|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
+        $validated = $request->validate([
+            'judul' => 'required|max:64',
+            'matkul' => 'max:64',
+            'content' => 'required'
+        ]);
+
         if ($request->hasFile('thumbnail')) {
             $resource = $request->file('thumbnail');
             $name = $resource->getClientOriginalName();
@@ -115,6 +121,12 @@ class NoteController extends Controller
     {
         $this->validate($request, [
             'thumbnail' => 'file|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        $validated = $request->validate([
+            'judul' => 'required|max:64',
+            'matkul' => 'max:64',
+            'content' => 'required'
         ]);
 
         if ($request->hasFile('thumbnail')) {

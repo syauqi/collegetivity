@@ -39,7 +39,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Galeri Fotomu</h5>
+                        <h5>Semua fotomu</h5>
                     </div>
                     <div class="gallery my-gallery card-body row" itemscope="">
                         @forelse ($items as $item)
@@ -93,6 +93,11 @@
                             </figcaption>
                         </figure>
                         @empty
+                        <div class="col-md-7 mx-auto">
+                            <a href="{{url('/dashboard/galeri-foto/tambah-foto')}}" target="_blank">
+                                <img src="{{url('images/illustrations/galeri.png')}}" class="img-fluid">
+                            </a>
+                        </div>
                         @endforelse
                     </div>
                 </div>
@@ -164,10 +169,6 @@
         </div>
     </div>
 </div>
-</div>
-<!-- file wrapper for better tabs start-->
-
-
 
 @push('galleries-scripts')
 <script src="{{url('cuba/assets/js/isotope.pkgd.js')}}"></script>
