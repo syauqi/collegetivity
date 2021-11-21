@@ -18,8 +18,8 @@ class DashboardController extends Controller
     public function index()
     {
         $jadwal = Schedules::where('user_id', Auth::user()->email)->get();
-        $catatan = Notes::where('user_id', Auth::user()->email)->take(3)->get();
-        $todolist = Todolist::where('user_id', Auth::user()->email)->take(3)->get();
+        $catatan = Notes::where('user_id', Auth::user()->email)->take(4)->get();
+        $todolist = Todolist::where('user_id', Auth::user()->email)->take(4)->get();
 
         return view('pages.backend.index', [
             'jadwal' => $jadwal,
