@@ -117,7 +117,7 @@
                     </div>
                     @empty
                     <div class="news-update">
-                        <img src="{{'images/illustrations/todo-list.png'}}" class="img-fluid">
+                        <img src="{{url('images/illustrations/todo-list.png')}}" class="img-fluid">
                     </div>
                     @endforelse
                 </div>

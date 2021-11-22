@@ -5,7 +5,7 @@
             <div class="header-left">
                 <div class="brand-logo">
                     <a href="{{url('/')}}">
-                        <h1>🎓</h1>
+                        <h1 class="font-weight-normal">🎓</h1>
                     </a>
                 </div>
                 <nav class="nav-menu d-none d-xl-block">
@@ -104,7 +104,7 @@
         <div class="canvas-overlay"></div>
         <div class="canvas-inner">
             <div class="canvas-logo">
-                <h1>🎓</h1>
+                <h1 class="font-weight-normal">🎓</h1>
             </div>
             <div class="about-us">
                 <h5 class="canvas-widget-title">Tentang Kami</h5>

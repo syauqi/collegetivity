@@ -116,12 +116,26 @@
                         <span>Kalender</span>
                     </a>
                 </li>
+
                 <li class="sidebar-list">
-                    <a class="sidebar-link sidebar-title link-nav" href="{{url('/dashboard/bookmark')}}">
+                    <a class="sidebar-link sidebar-title" href="#">
                         <i data-feather="bookmark"></i>
                         <span>Bookmark</span>
                     </a>
+                    <ul class="sidebar-submenu">
+                        <li>
+                            <a href="{{url('/dashboard/bookmarks')}}">
+                                Semua Bookmarks
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{url('/dashboard/bookmarks/tambah-bookmarks')}}">
+                                Tambah Bookmarks Baru
+                            </a>
+                        </li>
+                    </ul>
                 </li>
+
 
                 <li class="sidebar-main-title">
                     <div>

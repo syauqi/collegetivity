@@ -40,6 +40,12 @@ class BookmarkController extends Controller
      */
     public function store(Request $request)
     {
+        $validated = $request->validate([
+            'judul' => 'required|max:42',
+            'url' => 'required|max:42',
+            'deskripsi' => 'required',
+        ]);
+
         $input = $request->all();
 
         $schedules = Bookmarks::create($input);

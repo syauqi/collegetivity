@@ -39,12 +39,23 @@
                         <h5>Tambah Bookmarks</h5>
                     </div>
                     <div class="card-body add-post">
-                        <form class="row needs-validation" method="POST" action="{{route('bookmarks.store')}}"
-                            enctype="multipart/form-data" novalidate="">
+                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                <li>
+                                    <h4>Ada error nih 😓</h4>
+                                </li>
+                                @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
+                        <form class="row" method="POST" action="{{route('bookmarks.store')}}"
+                            enctype="multipart/form-data">
                             @csrf
                             <div class="col-sm-12">
                                 <div class="form-row">
-
                                     <div class="form-group col-md-6">
                                         <label for="judul">Judul atau Nama Bookmarks: <span
                                                 class="text-danger">*</span></label>
@@ -66,7 +77,6 @@
                                             </div>
                                             <input class="form-control" id="judul" name="judul" value="{{old('judul')}}"
                                                 type="text" required="">
-                                            <div class="valid-feedback">Looks good!</div>
                                         </div>
                                     </div>
                                     <div class="form-group col-md-6 ">
@@ -76,21 +86,21 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text" id="basic-addon1">
                                                     <svg xmlns="http://www.w3.org/2000/svg"
-                                                        class="icon icon-tabler icon-tabler-book" width="20" height="20"
-                                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        class="icon icon-tabler icon-tabler-world" width="20"
+                                                        height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round">
                                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
-                                                        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"></path>
-                                                        <line x1="3" y1="6" x2="3" y2="19"></line>
-                                                        <line x1="12" y1="6" x2="12" y2="19"></line>
-                                                        <line x1="21" y1="6" x2="21" y2="19"></line>
+                                                        <circle cx="12" cy="12" r="9"></circle>
+                                                        <line x1="3.6" y1="9" x2="20.4" y2="9"></line>
+                                                        <line x1="3.6" y1="15" x2="20.4" y2="15"></line>
+                                                        <path d="M11.5 3a17 17 0 0 0 0 18"></path>
+                                                        <path d="M12.5 3a17 17 0 0 1 0 18"></path>
                                                     </svg>
                                                 </span>
                                             </div>
                                             <input class="form-control" id="url" name="url" value="{{old('url')}}"
                                                 type="text" required="">
-                                            <div class="valid-feedback">Looks good!</div>
                                         </div>
                                     </div>
                                 </div>
@@ -102,7 +112,8 @@
                                         <div class="form-group">
                                             <label>Deskripsi Bookmarks atau Halaman Website: <span
                                                     class="text-danger">*</span></label>
-                                            <textarea id="text-box" name="deskripsi" cols="10" rows="2"></textarea>
+                                            <textarea class="form-control" name="deskripsi"
+                                                id="exampleFormControlTextarea1" rows="3"></textarea>
                                         </div>
                                     </div>
                                 </div>

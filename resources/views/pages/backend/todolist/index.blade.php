@@ -81,11 +81,15 @@
                                                 </div>
                                             </li>
                                             @empty
+                                            <div class="col-md-6 mx-auto">
+                                                <img src="{{url('images/illustrations/todo-list.png')}}"
+                                                    class="img-fluid">
+                                            </div>
                                             @endforelse
                                         </ul>
                                     </div>
                                     <div class="todo-list-footer">
-                                        <div class="add-task-btn-wrapper"><span class="add-task-btn">
+                                        <div class="add-task-btn-wrapper pull-right"><span class="add-task-btn">
                                                 <button class="btn btn-primary"><i class="icon-plus"></i> &nbsp; Tambah
                                                     tugas
                                                     baru</button></span></div>

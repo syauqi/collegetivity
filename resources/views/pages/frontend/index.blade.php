@@ -13,7 +13,7 @@
                 <span class="title-tag wow fadeInUp mb-3" data-wow-delay="0.2s"
                     style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
                     <span class="badge rounded-pill bg-primary py-2 px-3 text-white">
-                        📢 • Collegetivity hadir dalam versi beta!
+                        <span class="font-weight-normal">📢</span>• Collegetivity hadir dalam versi beta!
                     </span>
                 </span>
                 <h2 class="hero-title wow fadeInLeft" data-wow-delay="0.2s">Website yang membantu dunia perkuliahanmu!

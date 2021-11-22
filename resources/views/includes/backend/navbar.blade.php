@@ -14,7 +14,8 @@
             <ul class="horizontal-menu">
                 <li class="mega-menu outside d-block d-md-none">
                     <a class="nav-link" href="{{route('logout')}}" onclick=" event.preventDefault();
-                    document.getElementById('logout-form').submit();"><i data-feather="log-out"></i>
+                    document.getElementById('logout-form').submit();">
+                        <i data-feather="log-out"></i>
                         <span>
                             Log out
                         </span>
@@ -36,13 +37,13 @@
         <div class="nav-right col-8 pull-right right-header p-0">
             <ul class="nav-menus">
                 <li class="text-decoration-none">
-                    <a href="{{('dashboard/pomodoro/pomofocus')}}" data-toggle="tooltip" data-placement="bottom"
+                    <a href="{{url('dashboard/pomodoro/pomofocus')}}" data-toggle="tooltip" data-placement="bottom"
                         title="Pomodoro">
                         <i class="text-dark text-decoration-none" data-feather="clock"></i>
                     </a>
                 </li>
                 <li class="text-decoration-none">
-                    <a href="{{('dashboard/todolist')}}" data-toggle="tooltip" data-placement="bottom"
+                    <a href="{{url('dashboard/todolist')}}" data-toggle="tooltip" data-placement="bottom"
                         title="To-do List">
                         <i class="text-dark text-decoration-none" data-feather="check-square"></i>
                     </a>
@@ -70,7 +71,7 @@
                 </li>
                 <li class="text-decoration-none">
                     <a href="bookmark">
-                        <a href="{{('dashboard/bookmarks')}}" data-toggle="tooltip" data-placement="bottom"
+                        <a href="{{url('dashboard/bookmarks')}}" data-toggle="tooltip" data-placement="bottom"
                             title="Bookmark">
                             <i class="text-dark text-decoration-none" data-feather="star"></i>
                         </a>
@@ -93,8 +94,9 @@
                     <div class="media profile-media">
                         <img class="b-r-10"
                             src="https://source.boringavatars.com/beam/120/{{Auth::user()->name}}?square&colors=FAD089,FF9C5B,F5634A,ED303C,3B8183"
-                            width="37px">
-                        <div class="media-body"><span>{{Auth::user()->name}}</span>
+                            width="40px">
+                        <div class="media-body">
+                            <span>{{Auth::user()->name}}</span>
                             <p class="mb-0 font-roboto">👨🏻‍🎓 Mahasiswa
                                 <i class="middle fa fa-angle-down"></i>
                             </p>
