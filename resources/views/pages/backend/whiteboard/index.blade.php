@@ -23,7 +23,7 @@
     </div>
     <div class="row">
         <div class="col-md-12 mb-5">
-            <iframe class="rounded-lg" src="https://witeboard.com/" style="width: 100%; height: 600px; overflow: hidden; border: 
+            <iframe class="rounded-lg" src="https://witeboard.com/" style="width: 100%; height: 500px; overflow: hidden; border: 
                 none; box-shadow:rgba(8, 21, 66, 0.05) 0px 0px 20px 0px;">
             </iframe>
         </div>

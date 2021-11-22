@@ -18,13 +18,16 @@
                 style="box-shadow:rgba(0, 0, 0, 0.05) 0px 0px 4px 0px, rgba(0, 0, 0, 0.1) 0px 4px 24px 0px; border-radius:8px;">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide"><img src="{{url('images/laporan-images-3.png')}}"
+                        <li class="splide__slide">
+                            <img src="{{url('images/splide/announcement-dashboard-images-1.png')}}"
                                 class="d-block w-100" style="border-radius:8px;">
                         </li>
-                        <li class="splide__slide"><img src="{{url('images/laporan-images-2.png')}}"
+                        <li class="splide__slide">
+                            <img src="{{url('images/splide/announcement-dashboard-images-2.png')}}"
                                 class="d-block w-100" style="border-radius:8px;">
                         </li>
-                        <li class="splide__slide"><img src="{{url('images/laporan-images-1.png')}}"
+                        <li class="splide__slide">
+                            <img src="{{url('images/splide/announcement-dashboard-images-3.png')}}"
                                 class="d-block w-100" style="border-radius:8px;">
                         </li>
                     </ul>
