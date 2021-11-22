@@ -124,7 +124,7 @@
                     </a>
                     <ul class="sidebar-submenu">
                         <li>
-                            <a href="{{url(' /dashboard/bookmarks')}}">
+                            <a href="{{url('/dashboard/bookmarks')}}">
                                 Semua Bookmarks
                             </a>
                         </li>
@@ -201,42 +201,12 @@
                     </a>
                 </li>
 
-                <li class="sidebar-list">
-                    <a class="sidebar-link sidebar-title" href="#"><i data-feather="globe"></i><span>Translator
-                        </span></a>
-                    <ul class="sidebar-submenu">
-                        <li><a href="#">Pomofocus</a></li>
-                        <li><a href="#">Lifeat</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-list">
-                    <a class="sidebar-link sidebar-title" href="#"><i data-feather="share"></i><span>Grammar
-                        </span></a>
-                    <ul class="sidebar-submenu">
-                        <li><a href="#">Pomofocus</a></li>
-                        <li><a href="#">Lifeat</a></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-list">
-                    <a class="sidebar-link sidebar-title" href="#"><i data-feather="search"></i><span>Plagiarism Checker
-                        </span></a>
-                    <ul class="sidebar-submenu">
-                        <li><a href="#">Pomofocus</a></li>
-                        <li><a href="#">Lifeat</a></li>
-                    </ul>
-                </li>
-
                 <li class="sidebar-list invisible">
-                    <a class="sidebar-link sidebar-title" href="#"><i data-feather="search"></i><span>
-                        </span></a>
-                    <ul class="sidebar-submenu">
-                        <li><a href="#">Pomofocus</a></li>
-                        <li><a href="#">Lifeat</a></li>
-                    </ul>
+                    <a class="sidebar-link sidebar-title link-nav" href="{{url('/dashboard/e-book')}}">
+                        <i data-feather="book"></i>
+                        <span>E-Book</span>
+                    </a>
                 </li>
-
 
             </ul>
         </div>
