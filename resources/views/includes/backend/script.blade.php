@@ -33,6 +33,7 @@
 @stack('todo-scripts')
 @stack('carousel-scripts')
 @stack('ckeditor-scripts')
+@stack('journal-scripts')
 <!-- Plugins JS Ends-->
 <!-- Theme js-->
 <script src="{{url("cuba/assets/js/script.js")}}"></script>

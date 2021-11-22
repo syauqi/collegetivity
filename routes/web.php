@@ -95,6 +95,12 @@ Route::prefix('dashboard')
         Route::get('/virtual-meeting/skyoffice', function () {
             return view('pages.backend.virtual_meeting.skyoffice');
         });
+        Route::get('/journal', function () {
+            return view('pages.backend.journal.index');
+        });
+        Route::get('/e-book', function () {
+            return view('pages.backend.journal.e-book');
+        });
     });
 
 /* -------------------------------------------------------------------------- */
