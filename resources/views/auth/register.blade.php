@@ -25,12 +25,21 @@
             <div class="col-xl-5 p-0">
                 <div class="login-card">
                     <div class="login-main col-10 col-md-10">
-                        <x-auth-validation-errors class="mb-4" :errors="$errors" />
                         <form method="POST" action={{route('register')}} class="theme-form">
                             @csrf
                             <h1>🎓</h1>
                             <h4>Daftarkan akun kamu sekarang</h4>
                             <p class="mb-2">Masukan data yang diperlukan untuk membuat akun</p>
+
+                            @if ($errors->any())
+                            <div class="alert alert-danger py-1 mb-2">
+                                <ul>
+                                    @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            @endif
 
                             <label class="col-form-label pt-0">Nama kamu</label>
                             <div class="input-group mb-3">

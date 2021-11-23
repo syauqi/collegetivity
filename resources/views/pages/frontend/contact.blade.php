@@ -1,16 +1,15 @@
 @extends('layouts.frontend.minor')
 
-@section('title', 'Kontak — Collegetivity')
+@section('title', 'Kontak Kami — Collegetivity')
 @section('content')
 
-<!--====== Start Header ======-->
 <header class="template-header navbar-left absolute-header nav-primary-5 submenu-primary-5 sticky-header">
     <div class="container-fluid fluid-gap-70">
         <div class="header-inner">
             <div class="header-left">
                 <div class="brand-logo">
                     <a href="{{url('/')}}">
-                        <h1>🎓</h1>
+                        <h1 class="font-weight-normal">🎓</h1>
                     </a>
                 </div>
                 <nav class="nav-menu d-none d-xl-block">
@@ -108,7 +107,7 @@
         <div class="canvas-overlay"></div>
         <div class="canvas-inner">
             <div class="canvas-logo">
-                <h1>🎓</h1>
+                <h1 class="font-weight-normal">🎓</h1>
             </div>
             <div class="about-us">
                 <h5 class="canvas-widget-title">Tentang Kami</h5>
@@ -127,7 +126,7 @@
                     <li>
                         <i class="far fa-envelope-open"></i>
                         <a href="mailto:collegetivity@gmail.com">collegetivity@gmail.com</a>
-                        <a href="#" target="_blank">www.collegetivity.com</a>
+                        <a href="#" target="_blank">collegetivity.herokuapp.com</a>
                     </li>
                     <li>
                         <i class="far fa-phone"></i>
@@ -149,7 +148,6 @@
     <div class="container">
         <div class="page-title-content text-center mt-5">
             <h1 class="page-title">Kontak Kami</h1>
-
             <ul class="breadcrumb-nav">
                 <li><a href="{{url('/')}}">Beranda</a></li>
                 <li class="active">Kontak Kami</li>
@@ -193,7 +191,7 @@
                         <div class="info-body">
                             <h5 class="title">Alamat Email</h5>
                             <p><a href="mailto:apps.collegetivity@gmail.com">apps.collegetivity@gmail.com</a></p>
-                            <p><a href="www.collegetivity.com" target="_blank">www.collegetivity.com</a></p>
+                            <p><a href="collegetivity.herokuapp.com" target="_blank">collegetivity.herokuapp.com</a></p>
                         </div>
                     </div>
                     <div class="contact-info-box wow fadeInUp" data-wow-delay="0.5s">
@@ -212,7 +210,9 @@
                 <div class="contact-form-area m-t-md-100">
                     <div class="common-heading tagline-boxed m-b-40">
                         <span class="tagline">Kirim kami sebuah pesan</span>
-                        <h2 class="title">Ada pertanyaan ? <br> Kirim pesan dibawah ini 👋🏻</h2>
+                        <h2 class="title">Ada pertanyaan atau pesan? <br> Kirim pesan dibawah ini <span
+                                class="font-weight-normal">👋🏻</span>
+                        </h2>
                     </div>
                     <div class="contact-form-v2">
                         <form>

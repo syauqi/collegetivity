@@ -3,9 +3,7 @@
 @section('title', 'Collegetivity — Aplikasi yang Membantu Dunia Perkuliahanmu!')
 @section('content')
 
-
 <div class="page-wrapper">
-
     <!--====== Start Hero Area ======-->
     <section class="hero-area-v7">
         <div class="container-fluid">
@@ -16,8 +14,8 @@
                         <span class="font-weight-normal">📢</span>• Collegetivity hadir dalam versi beta!
                     </span>
                 </span>
-                <h2 class="hero-title wow fadeInLeft" data-wow-delay="0.2s">Website yang membantu dunia perkuliahanmu!
-                </h2>
+                <h3 class="hero-title wow fadeInLeft" data-wow-delay="0.2s">Website yang membantu dunia perkuliahanmu!
+                </h3>
                 <p class="wow fadeInUp" data-wow-delay="0.3s">
                     🎓 • Collegetivity hadir untuk membantu kalian para mahasiswa agar lebih produktif, terorganisir dan
                     pekerjaanmu lebih mudah!
@@ -32,7 +30,7 @@
                 </span>
             </div>
             <div class="hero-img d-none d-lg-block wow fadeInUp" data-wow-delay="0.2s">
-                <img src="{{url('landio/assets/img/hero/home-software.png')}}" alt="Image">
+                <img src="{{url('landio/assets/img/hero/home-software-2.png')}}" alt="Image">
             </div>
         </div>
     </section>
@@ -44,7 +42,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="common-heading text-center heading-white m-b-30">
-                        <h2 class="title">Pandemi membuat kita harus melakukan semuanya secara online, dengan kami anda
+                        <h2 class="title">Pandemi membuat kita harus melakukan semuanya secara online, dengan
+                            kami kamu
                             bisa lebih produktif</h2>
                     </div>
                 </div>
@@ -56,7 +55,7 @@
                         <div class="icon">
                             <i class="far fa-calendar"></i>
                         </div>
-                        <h4 class="title"><a href="#">Buat Jadwalmu Terorganisir</a></h4>
+                        <h4 class="title"><a href="#">Buat Tugas & Jadwalmu Terorganisir</a></h4>
                         <p>
                             Collegetivity adalah tempat kamu mengatur semua data akademikmu, dilengkapi fitur jadwal
                             pelajaran, catatan pelajaran dan lain lain yang membuatmu terorganisir
@@ -69,7 +68,7 @@
                         <div class="icon">
                             <i class="fas fa-folder-open"></i>
                         </div>
-                        <h4 class="title"><a href="#">Simpan File Kuliahmu</a></h4>
+                        <h4 class="title"><a href="#">Simpan File Tugas & Akademikmu</a></h4>
                         <p>
                             Jangan takut kalau file tugas atau file yang berkaitan dengan kuliahmu hilang, dengan
                             collegetivity kamu bisa dengan aman menyimpan file file tersebut
@@ -82,7 +81,7 @@
                         <div class="icon">
                             <i class="far fa-bookmark"></i>
                         </div>
-                        <h4 class="title"><a href="#">Resources Yang Membantu</a></h4>
+                        <h4 class="title"><a href="#">Banyak Resources yang Membantu</a></h4>
                         <p>
                             Disini juga kami menyediakan banyak resources mulai dari website atau thread yang bakal
                             membantu kamu menjadi lebih produktif dari sebelumnya

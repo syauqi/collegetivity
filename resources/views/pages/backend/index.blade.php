@@ -11,7 +11,6 @@
 @endpush
 
 <div class="container-fluid">
-
     <div class="row mb-4">
         <div class="col-xl-12 col-12 mt-4">
             <div class="splide"

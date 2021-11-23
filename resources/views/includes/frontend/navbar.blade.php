@@ -123,7 +123,7 @@
                     <li>
                         <i class="far fa-envelope-open"></i>
                         <a href="mailto:apps.collegetivity@gmail.com">apps.collegetivity@gmail.com</a>
-                        <a href="#" target="_blank">www.collegetivity.com</a>
+                        <a href="#" target="_blank">collegetivity.herokuapp.com</a>
                     </li>
                     <li>
                         <i class="far fa-phone"></i>

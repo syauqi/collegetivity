@@ -30,6 +30,17 @@
                             <h1>🎓</h1>
                             <h4>Masuk menggunakan akun kamu</h4>
                             <p class="mb-2">Masukkan email & password kamu buat login</p>
+
+                            @if ($errors->any())
+                            <div class="alert alert-danger py-1 mb-1">
+                                <ul>
+                                    @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            @endif
+
                             <label class="col-form-label">Alamat Email</label>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
