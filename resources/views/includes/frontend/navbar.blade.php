@@ -21,9 +21,6 @@
                             <a href="{{url('fitur')}}">Fitur Aplikasi</a>
                         </li>
                         <li>
-                            <a href="{{url('team')}}">Team Member</a>
-                        </li>
-                        <li>
                             <a href="{{url('tentang')}}">Tentang Kami</a>
                         </li>
                         <li>
@@ -74,9 +71,6 @@
                     </li>
                     <li>
                         <a href="{{('/fitur')}}">Fitur Aplikasi</a>
-                    </li>
-                    <li>
-                        <a href="{{('/team')}}">Team Member</a>
                     </li>
                     <li>
                         <a href="{{('/tentang')}}">Tentang Kami</a>

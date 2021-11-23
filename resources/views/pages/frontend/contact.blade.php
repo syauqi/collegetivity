@@ -24,9 +24,6 @@
                             <a href="{{url('fitur')}}">Fitur Aplikasi</a>
                         </li>
                         <li>
-                            <a href="{{url('team')}}">Team Member</a>
-                        </li>
-                        <li>
                             <a href="{{url('tentang')}}">Tentang Kami</a>
                         </li>
                         <li class="active">
@@ -77,9 +74,6 @@
                     </li>
                     <li>
                         <a href="{{('/fitur')}}">Fitur Aplikasi</a>
-                    </li>
-                    <li>
-                        <a href="{{('/team')}}">Team Member</a>
                     </li>
                     <li>
                         <a href="{{('/tentang')}}">Tentang Kami</a>
@@ -209,7 +203,7 @@
             <div class="col-lg-6 offset-xl-1 col-md-10">
                 <div class="contact-form-area m-t-md-100">
                     <div class="common-heading tagline-boxed m-b-40">
-                        <span class="tagline">Kirim kami sebuah pesan</span>
+                        <span class="tagline">💬 • Kirim kami sebuah pesan</span>
                         <h2 class="title">Ada pertanyaan atau pesan? <br> Kirim pesan dibawah ini <span
                                 class="font-weight-normal">👋🏻</span>
                         </h2>
@@ -251,41 +245,27 @@
 </section>
 <!--====== End Contact Area ======-->
 
-<!--====== Newsletter Area Start ======-->
-<section class="newsletter-area bg-cover-center bg-soft-grey-color p-t-130 p-b-130"
-    style="background-image: url(./../landio/assets/img/particle/newsletter-bg.png);">
+<!--====== Start Call To Action ======-->
+<section class="cta-section bg-cover-center p-t-90 p-b-90 "
+    style="background-image: url(./../landio/assets/img/cta/cta-bg-2.jpg);">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-7">
-                <div class="newsletter-text">
-                    <div class="common-heading-v1 text-center m-b-40 p-0 px-5">
-                        <span class="tagline">Subscribe layanan newsletter</span>
-                        <h2 class="title">Subscribe layanan newsletter kami untuk mendapatkan info terbaru</h2>
+            <div class="col-xl-6 col-lg-7 col-md-10">
+                <div class="cta-content text-center">
+                    <div class="common-heading heading-white m-b-65">
+                        <span class="tagline">Tunggu Apa Lagi?</span>
+                        <h2 class="title">Segera Daftar dan Bergabung Bersama Collegetivity</h2>
                     </div>
 
-                    <form action="#" class="newsletter-form">
-                        <div class="input-field">
-                            <input type="email" placeholder="Masukkan alamat email anda">
-                            <button class="template-btn">Subscribe <i class="far fa-arrow-right"></i></button>
-                        </div>
-
-                        <p class="text-center m-t-25">Kami ga bakal kirim email spam kok</p>
-                    </form>
+                    <a href="{{url('/register')}}" class="template-btn white-bg bordered-btn">Daftar Sekarang <i
+                            class="far fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="newsletter-particle-effect d-none d-md-block">
-        <img class="particle-1 animate-float-bob-y" src="{{url('landio/assets/img/particle/particle-2.png')}}"
-            alt="particle Two">
-        <img class="particle-2 animate-zoominout" src="{{url('landio/assets/img/particle/particle-3.png')}}"
-            alt="particle Three">
-        <img class="particle-3 animate-zoominout" src="{{url('landio/assets/img/particle/particle-4.png')}}"
-            alt="particle Four">
-        <img class="particle-4 animate-zoominout" src="{{url('landio/assets/img/particle/particle-5.png')}}"
-            alt="particle Five">
+    <div class="cta-absolute-image d-none d-lg-block wow fadeInUp" data-wow-delay="0.3s">
+        <img src="{{url('landio/assets/img/cta/cta-absolute-img.png')}}" alt="">
     </div>
 </section>
-<!--====== Newsletter Area End ======-->
 
 @endsection
