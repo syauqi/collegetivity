@@ -214,7 +214,7 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="tabItem1" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
+                            <img src=" {{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem2" role="tabpanel">

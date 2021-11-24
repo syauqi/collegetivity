@@ -1,6 +1,6 @@
 @extends('layouts.frontend.minor')
 
-@section('title', 'Tentang — Collegetivity')
+@section('title', 'Tentang Kami — Collegetivity')
 @section('content')
 
 <header class="template-header navbar-left absolute-header nav-primary-5 submenu-primary-5 sticky-header">

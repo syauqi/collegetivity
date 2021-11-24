@@ -1,34 +1,33 @@
 @extends('layouts.frontend.minor')
 
-@section('title', 'Fitur — Collegetivity')
+@section('title', 'Fitur Aplikasi — Collegetivity')
 @section('content')
 
-<!--====== Start Header ======-->
 <header class="template-header navbar-left absolute-header nav-primary-5 submenu-primary-5 sticky-header">
     <div class="container-fluid fluid-gap-70">
         <div class="header-inner">
             <div class="header-left">
                 <div class="brand-logo">
-                    <a href="index.html">
-                        <img src="{{url('landio/assets/img/logo-3.png')}}" alt="logo">
+                    <a href="{{url('/')}}">
+                        <h1 class="font-weight-normal">🎓</h1>
                     </a>
                 </div>
                 <nav class="nav-menu d-none d-xl-block">
                     <ul>
-                        <li class="active">
+                        <li>
+                            <a href="#">|</a>
+                        </li>
+                        <li>
                             <a href="{{url('/')}}">Beranda</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="{{url('fitur')}}">Fitur Aplikasi</a>
-                        </li>
-                        <li>
-                            <a href="{{url('team')}}">Team Member</a>
                         </li>
                         <li>
                             <a href="{{url('tentang')}}">Tentang Kami</a>
                         </li>
                         <li>
-                            <a href="{{url('kontak')}}">Kontak</a>
+                            <a href="{{url('kontak')}}">Kontak Kami</a>
                         </li>
                     </ul>
                 </nav>
@@ -37,7 +36,7 @@
                 <ul class="header-extra">
                     <li class="d-none d-sm-block">
                         <a href="{{url('/login')}}" class="user-login">
-                            <i class="far fa-user-circle"></i> Masuk
+                            <i class="far fa-user-circle"></i> Masuk Aplikasi
                         </a>
                     </li>
                     <li class="d-none d-md-block">
@@ -68,52 +67,25 @@
     <div class="mobile-slide-panel">
         <div class="panel-overlay"></div>
         <div class="panel-inner">
-            <div class="mobile-logo">
-                <a href="index.html">
-                    <img src="assets/img/logo-1.png" alt="Landio">
-                </a>
-            </div>
             <nav class="mobile-menu">
                 <ul>
-                    <li class="active">
-                        <a href="index.html">Demos</a>
-                        <ul class="sub-menu">
-                            <li><a href="index.html">Homepage Sass</a></li>
-                            <li><a href="index-2.html">Homepage SEO</a></li>
-                            <li><a href="index-3.html">Homepage App</a></li>
-                            <li><a href="index-4.html">Homepage Chatbot</a></li>
-                            <li><a href="index-5.html">Homepage Consultant</a></li>
-                            <li><a href="index-6.html">Homepage Fintech</a></li>
-                            <li><a href="index-7.html">Homepage Software</a></li>
-                            <li><a href="index-8.html">Homepage E-Wallet</a></li>
-                        </ul>
+                    <li>
+                        <a href="{{('/')}}">Beranda</a>
                     </li>
                     <li>
-                        <a href="services.html">Services</a>
-                        <ul class="sub-menu">
-                            <li><a href="services.html">Our Services</a></li>
-                            <li><a href="service-details.html">Service Details</a></li>
-                        </ul>
+                        <a href="{{('/fitur')}}">Fitur Aplikasi</a>
                     </li>
                     <li>
-                        <a href="#">Pages</a>
-                        <ul class="sub-menu">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="team.html">Our Team</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                            <li><a href="404.html">404</a></li>
-                        </ul>
+                        <a href="{{('/tentang')}}">Tentang Kami</a>
                     </li>
                     <li>
-                        <a href="blog-standard.html">Blog</a>
-                        <ul class="sub-menu">
-                            <li><a href="blog-standard.html">Blog Standard</a></li>
-                            <li><a href="blog-details.html">Blog Details</a></li>
-                        </ul>
+                        <a href="{{('/kontak')}}">Kontak Kami</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="{{('/login')}}">Masuk Aplikasi</a>
+                    </li>
+                    <li>
+                        <a href="{{('/register')}}">Daftar Akun</a>
                     </li>
                 </ul>
             </nav>
@@ -129,31 +101,31 @@
         <div class="canvas-overlay"></div>
         <div class="canvas-inner">
             <div class="canvas-logo">
-                <img src="assets/img/logo-1.png" alt="Canvas Logo">
+                <h1 class="font-weight-normal">🎓</h1>
             </div>
             <div class="about-us">
-                <h5 class="canvas-widget-title">About Us</h5>
+                <h5 class="canvas-widget-title">Tentang Kami</h5>
                 <p>
-                    Sed perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem
-                    aperams eaque ipsa quae abillo inventore veritatis
+                    Collegetivity adalah aplikasi yang membantu dunia perkuliahan mahasiswa mulai dari mengorganisasi
+                    pelajaran, tugas dan jadwal serta resources yang membantu para mahasiswa.
                 </p>
             </div>
             <div class="contact-us">
-                <h5 class="canvas-widget-title">Contact Us</h5>
+                <h5 class="canvas-widget-title">Kontak Kami</h5>
                 <ul>
                     <li>
                         <i class="far fa-map-marker-alt"></i>
-                        354 Oakridge, Camden NJ 08102 - USA
+                        Universitas Siliwangi, Tasikmalaya
                     </li>
                     <li>
                         <i class="far fa-envelope-open"></i>
-                        <a href="mailto:support@landio.com">support@landio.com</a>
-                        <a href="www.landio.net" target="_blank">www.landio.net</a>
+                        <a href="mailto:collegetivity@gmail.com">collegetivity@gmail.com</a>
+                        <a href="#" target="_blank">collegetivity.herokuapp.com</a>
                     </li>
                     <li>
                         <i class="far fa-phone"></i>
-                        <span><a href="tel:+01234567899">+012 (345) 678 99</a></span>
-                        <span><a href="tel:+8563214">+8563214</a></span>
+                        <span><a href="tel:+6285156162840">+62 851-5616-2840</a></span>
+                        <span><a href="tel:+6282127350768">+62 821-2735-0768</a></span>
                     </li>
                 </ul>
             </div>
@@ -168,12 +140,11 @@
 <!--====== Page title area Start ======-->
 <section class="page-title-area">
     <div class="container">
-        <div class="page-title-content text-center">
-            <h1 class="page-title">Fitur Collegetivity</h1>
-
+        <div class="page-title-content text-center mt-5">
+            <h1 class="page-title">Fitur Aplikasi</h1>
             <ul class="breadcrumb-nav">
                 <li><a href="{{url('/')}}">Beranda</a></li>
-                <li class="active">Fitur</li>
+                <li class="active">Fitur Aplikasi</li>
             </ul>
         </div>
     </div>
@@ -192,215 +163,189 @@
 </section>
 <!--====== Page title area End ======-->
 
-<!--====== Service Details Start ======-->
-<section class="service-details-area p-t-130 p-b-130">
+<!-- ===== About Area Start ===== -->
+<section class="about-us-area p-t-130 p-b-130 border-bottom-primary">
     <div class="container">
-        <div class="service-details-content">
-            <h2 class="service-title">Ada apa saja di Collegetivity?</h2>
-
-            <p class="m-b-30">Collegetivity menyediakan banyak sekali solusi dan banyak sekali fitur yang membuat kalian
-                semakin terorganisir dan produktif. Mulai dari jadwal pelajaran, catatan pelajaran, penyimpanan file
-                tugas, resources website yang membantu kalian dalam dunia perkuliahan dan lain lain!</p>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="m-b-30">
-                        <img src="{{url('landio/assets/img/services/service-details-thumbnail-1.jpg')}}"
-                            alt="Service One">
+        <div class="row justify-content-center">
+            <div class="col-xl-5 col-lg-6 col-md-9">
+                <div class="about-us-content">
+                    <div class="common-heading tagline-boxed m-b-30">
+                        <span class="tagline">⚡ • Fitur Aplikasi di Collegetivity</span>
+                        <h2 class="title">Fitur Buat Kamu yang Gak Suka Diatur Karena Kamu Sendiri yang Ngatur<span
+                                class="font-weight-normal small">🐱‍🏍</span></h2>
                     </div>
+                    <p>
+                        Fitur yang ada di Collegetivity disediakan All-in-one buat kamu yang gak mau ribet ganti tab,
+                        ganti layanan dan harus ganti akun cuma buat ngurusin data kuliah. Dengan kami, kamu bisa
+                        lakukan itu di satu tempat
+                    </p>
+                    <a href="{{url('/register')}}" class="template-btn bordered-btn m-t-40">Bergabung Sekarang <i
+                            class="far fa-arrow-right"></i></a>
                 </div>
-                <div class="col-md-6">
-                    <div class="m-b-30">
-                        <img src="{{url('landio/assets/img/services/service-details-thumbnail-2.jpg')}}"
-                            alt="Service Two">
+            </div>
+            <div class="col-xl-7 col-lg-6 col-md-10">
+                <div class="preview-image-showcase p-r-70 p-r-lg-40 p-r-md-0 p-b-md-40">
+                    <div class="images-left">
+                        <img src="{{url('landio/assets/img/preview-gallery/about-thumbnail-2.jpg')}}"
+                            alt="About thumbnail two">
+                        <img src="{{url('landio/assets/img/preview-gallery/about-thumbnail-4.jpg')}}"
+                            alt="About thumbnail four">
+                    </div>
+                    <div class="images-right">
+
+                        <div class="image-hover-zoom-overly">
+                            <img src="{{url('landio/assets/img/preview-gallery/about-thumbnail-1.jpg')}}"
+                                alt="About thumbnail one">
+                        </div>
+                        <img src="{{url('landio/assets/img/preview-gallery/about-thumbnail-3.jpg')}}"
+                            alt="About thumbnail three">
                     </div>
                 </div>
             </div>
-
-            <h3 class="service-subtitle">Collegetivity sebagai workspaces para mahasiswa</h3>
-
-            <p>Kalian tidak perlu mengunjungi banyak website untuk mencari fitur yang kalian ingin cari, di
-                Collegetivity kami menyatukan berbagai macam website dan tools yang membantu kalian menyelesaikan tugas
-                secara cepat dan tepat </p>
-
-            <div class="row justify-content-center iconic-boxes-v1">
-                <div class="col-xl-3 col-md-6 col-sm-10">
-                    <div class="iconic-box m-t-30">
-                        <div class="icon icon-gradient-3">
-                            <i class="far fa-calendar-alt"></i>
-                        </div>
-                        <h4 class="title">Atur Jadwalmu</h4>
-                        <p>
-                            Atur jadwal kuliahmu dengan mudah di Collegetivity
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-sm-10">
-                    <div class="iconic-box m-t-30">
-                        <div class="icon icon-gradient-4">
-                            <i class="far fa-database"></i>
-                        </div>
-                        <h4 class="title">Kelola Datamu</h4>
-                        <p>
-                            Kelola semua data akademikmu agar rapih di Collegetivity
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-sm-10">
-                    <div class="iconic-box m-t-30">
-                        <div class="icon icon-gradient-5">
-                            <i class="far fa-file-word"></i>
-                        </div>
-                        <h4 class="title">Simpan Tugasmu</h4>
-                        <p>
-                            Simpan semua tugasmu tanpa perlu takut hilang di Collegetivity
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-sm-10">
-                    <div class="iconic-box m-t-30">
-                        <div class="icon icon-gradient-6">
-                            <i class="far fa-bookmark"></i>
-                        </div>
-                        <h4 class="title">Resources Terbaik</h4>
-                        <p>
-                            Nikmati banyak website dan tools penunjang perkuliahanmu
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-faq p-t-70 p-b-70">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-6 col-md-10 order-lg-last">
-                        <div class="faq-content">
-                            <h3 class="service-subtitle">Pertanyaan yang sering ditanyakan</h3>
-
-                            <div class="landio-accordion-v1 accordion-bordered">
-                                <div class="accordion" id="accordionFAQ">
-                                    <div class="accordion-item">
-                                        <h5 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                                                aria-controls="collapseOne">
-                                                Apakah Collegetivity dapat digunakan secara gratis?
-                                            </button>
-                                        </h5>
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                            data-parent="#accordionFAQ">
-                                            <div class="accordion-body">
-                                                <p>Ya, Collegetivity bisa kalian gunakan secara gratis lho. Makanya,
-                                                    buruan deh cobain dan daftar sekarang!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h5 class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button" type="button" data-toggle="collapse"
-                                                data-target="#collapseTwo" aria-expanded="true"
-                                                aria-controls="collapseTwo">
-                                                Apa saja persyaratan daftar Collegetivity?
-                                            </button>
-                                        </h5>
-                                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
-                                            data-parent="#accordionFAQ">
-                                            <div class="accordion-body">
-                                                <p>Ga ada persyaratan khusus kok! kamu hanya cukup daftar menggunakan
-                                                    email dan password kamu agar dapat masuk ke aplikasi kami</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h5 class="accordion-header" id="headingThree">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-toggle="collapse" data-target="#collapseThree"
-                                                aria-expanded="false" aria-controls="collapseThree">
-                                                Saya mengalami error, pada siapa saya bisa lapor?
-                                            </button>
-                                        </h5>
-                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                            data-parent="#accordionFAQ">
-                                            <div class="accordion-body">
-                                                <p>Kebetulan Collegetivity sekarang ada pada versi BETA. Oleh karena itu
-                                                    kemungkinan aplikasi kami error pasti ada, kalian cukup lapor ke
-                                                    form kontak di atas ya!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h5 class="accordion-header" id="headingFour">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                                                aria-controls="collapseFour">
-                                                Gimana cara nya request fitur?
-                                            </button>
-                                        </h5>
-                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                            data-parent="#accordionFAQ">
-                                            <div class="accordion-body">
-                                                <p>Wah, jika kalian punya masukan atau fitur kalian bisa kontak kami
-                                                    dengan kirim pesan di halaman kontak di atas ya!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-9 order-lg-first">
-                        <div class="faq-image text-lg-left m-t-md-60">
-                            <img src="{{url('landio/assets/img/services/service-details-thumbnail-3.jpg')}}"
-                                alt="faq image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <p>
-                Collegetivity akan selalu berusaha membuat website dan mengupdate websitenya secara berkala untuk
-                membantu para mahasiswa menyelesaikan semua tugas dan masa studi nya di Universitas. Tetap dukung kami
-                dengan cara bagikan web ini ke teman teman mahasiswa lainnya ya!
-            </p>
         </div>
     </div>
+</section>
+<!-- ===== About Area End ===== -->
+
+<!--====== Service Details Start ======-->
+<section class="service-details-area p-t-130 p-b-130">
+    <div class="service-tab">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="common-heading text-center m-b-65">
+                        <span class="tagline color-primary-5">🤔 • Ada apa aja sih di Collegetivity?</span>
+                        <h2 class="title">Solusi Kece & Ampuh Bagi Para Mahasiswa Waktu Kuliah <span
+                                class="font-weight-normal small">🔥</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="service-tab-nav">
+                <ul class="nav nav-tabs service-tab-nav" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" data-toggle="tab" href="#tabItem1" role="tab">
+                            <i class="far fa-browser"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-toggle="tab" href="#tabItem2" role="tab">
+                            <i class="far fa-books"></i> Jadwal Pelajaran
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-toggle="tab" href="#tabItem3" role="tab">
+                            <i class="far fa-edit"></i> Catatan Pelajaran
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-toggle="tab" href="#tabItem4" role="tab">
+                            <i class="far fa-calendar"></i> Virtual Meeting
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-toggle="tab" href="#tabItem5" role="tab">
+                            <i class="far fa-check"></i> File Manager
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-toggle="tab" href="#tabItem6" role="tab">
+                            <i class="far fa-camera"></i> Todolist
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-toggle="tab" href="#tabItem7" role="tab">
+                            <i class="far fa-clock"></i> LifeAt
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" data-toggle="tab" href="#tabItem8" role="tab">
+                            <i class="far fa-globe"></i> Resources
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="service-tab-content container-fluid">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="tabItem1" role="tabpanel">
+                    <div class="service-tab-ime text-center">
+                        <img src="{{url('landio/assets/img/dashboard.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                            filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tabItem2" role="tabpanel">
+                    <div class="service-tab-ime text-center">
+                        <img src="{{url('landio/assets/img/jadwal.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                        filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tabItem3" role="tabpanel">
+                    <div class="service-tab-ime text-center">
+                        <img src="{{url('landio/assets/img/catatan.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                        filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tabItem4" role="tabpanel">
+                    <div class="service-tab-ime text-center">
+                        <img src="{{url('landio/assets/img/virtual.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                        filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tabItem5" role="tabpanel">
+                    <div class="service-tab-ime text-center">
+                        <img src="{{url('landio/assets/img/file.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                        filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tabItem6" role="tabpanel">
+                    <div class="service-tab-ime text-center">
+                        <img src="{{url('landio/assets/img/todo.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                        filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tabItem7" role="tabpanel">
+                    <div class="service-tab-ime text-center">
+                        <img src="{{url('landio/assets/img/lifeat.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                        filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tabItem8" role="tabpanel">
+                    <div class="service-tab-ime text-center">
+                        <img src="{{url('landio/assets/img/resources.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                        filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </section>
 <!--====== Service Details End ======-->
 
-<!--====== Newsletter Area Start ======-->
-<section class="newsletter-area bg-cover-center bg-soft-grey-color p-t-130 p-b-130"
-    style="background-image: url(./../landio/assets/img/particle/newsletter-bg.png);">
+<!--====== Start Call To Action ======-->
+<section class="cta-section bg-cover-center p-t-90 p-b-90"
+    style="background-image: url(./../landio/assets/img/cta/cta-bg-2.jpg);">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-7">
-                <div class="newsletter-text">
-                    <div class="common-heading-v1 text-center m-b-40 p-0 px-5">
-                        <span class="tagline">Subscribe layanan newsletter</span>
-                        <h2 class="title">Subscribe layanan newsletter kami untuk mendapatkan info terbaru</h2>
+            <div class="col-xl-6 col-lg-7 col-md-10">
+                <div class="cta-content text-center">
+                    <div class="common-heading heading-white m-b-65">
+                        <span class="tagline">Tunggu Apa Lagi?</span>
+                        <h2 class="title">Segera Daftar dan Bergabung Bersama Collegetivity</h2>
                     </div>
 
-                    <form action="#" class="newsletter-form">
-                        <div class="input-field">
-                            <input type="email" placeholder="Masukkan alamat email anda">
-                            <button class="template-btn">Subscribe <i class="far fa-arrow-right"></i></button>
-                        </div>
-
-                        <p class="text-center m-t-25">Kami ga bakal kirim email spam kok</p>
-                    </form>
+                    <a href="{{url('/register')}}" class="template-btn white-bg bordered-btn">Daftar Sekarang <i
+                            class="far fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="newsletter-particle-effect d-none d-md-block">
-        <img class="particle-1 animate-float-bob-y" src="{{url('landio/assets/img/particle/particle-2.png')}}"
-            alt="particle Two">
-        <img class="particle-2 animate-zoominout" src="{{url('landio/assets/img/particle/particle-3.png')}}"
-            alt="particle Three">
-        <img class="particle-3 animate-zoominout" src="{{url('landio/assets/img/particle/particle-4.png')}}"
-            alt="particle Four">
-        <img class="particle-4 animate-zoominout" src="{{url('landio/assets/img/particle/particle-5.png')}}"
-            alt="particle Five">
+    <div class="cta-absolute-image d-none d-lg-block wow fadeInUp" data-wow-delay="0.3s">
+        <img src="{{url('landio/assets/img/cta/cta-absolute-img.png')}}" alt="">
     </div>
 </section>
-<!--====== Newsletter Area End ======-->
 
 @endsection

@@ -18,7 +18,6 @@
                             <ul>
                                 <li><a href="{{url('/')}}">Beranda</a></li>
                                 <li><a href="{{url('/fitur')}}">Fitur Aplikasi</a></li>
-                                <li><a href="{{url('/team')}}">Team Member</a></li>
                                 <li><a href="{{url('/tentang')}}">Tentang Kami</a></li>
                                 <li><a href="{{url('/kontak')}}">Kontak Kami</a></li>
                             </ul>
