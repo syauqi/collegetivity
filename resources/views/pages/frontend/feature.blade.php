@@ -167,7 +167,7 @@
 <section class="about-us-area p-t-130 p-b-130 border-bottom-primary">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-5 col-lg-6 col-md-9">
+            <div class="col-xl-8">
                 <div class="about-us-content">
                     <div class="common-heading tagline-boxed m-b-30">
                         <span class="tagline">⚡ • Fitur Aplikasi di Collegetivity</span>
@@ -181,25 +181,6 @@
                     </p>
                     <a href="{{url('/register')}}" class="template-btn bordered-btn m-t-40">Bergabung Sekarang <i
                             class="far fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="col-xl-7 col-lg-6 col-md-10">
-                <div class="preview-image-showcase p-r-70 p-r-lg-40 p-r-md-0 p-b-md-40">
-                    <div class="images-left">
-                        <img src="{{url('landio/assets/img/preview-gallery/about-thumbnail-2.jpg')}}"
-                            alt="About thumbnail two">
-                        <img src="{{url('landio/assets/img/preview-gallery/about-thumbnail-4.jpg')}}"
-                            alt="About thumbnail four">
-                    </div>
-                    <div class="images-right">
-
-                        <div class="image-hover-zoom-overly">
-                            <img src="{{url('landio/assets/img/preview-gallery/about-thumbnail-1.jpg')}}"
-                                alt="About thumbnail one">
-                        </div>
-                        <img src="{{url('landio/assets/img/preview-gallery/about-thumbnail-3.jpg')}}"
-                            alt="About thumbnail three">
-                    </div>
                 </div>
             </div>
         </div>

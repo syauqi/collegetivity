@@ -6,8 +6,10 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="widget text-block-widget">
                         <h5 class="widget-title">Tentang Collegetivity</h5>
-                        <p>Collegetivity adalah aplikasi yang membantu dunia perkuliahan mahasiswa mulai dari
-                            mengorganisasi pelajaran, tugas dan jadwal.</p>
+                        <p>
+                            Collegetivity adalah aplikasi yang membantu dunia perkuliahan mahasiswa mulai dari
+                            mengorganisasi pelajaran, tugas dan jadwal serta resources yang membantu para mahasiswa.
+                        </p>
                     </div>
                 </div>
                 <!-- Single Footer Widget -->

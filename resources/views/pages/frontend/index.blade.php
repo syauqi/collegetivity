@@ -60,7 +60,7 @@
                             Collegetivity adalah tempat kamu mengatur semua data akademikmu, dilengkapi fitur jadwal
                             pelajaran, catatan pelajaran dan lain lain yang membuatmu terorganisir
                         </p>
-                        <a href="#" class="box-btn">Selengkapnya <i class="far fa-arrow-right"></i></a>
+                        <a href="{{url('/fitur')}}" class="box-btn">Selengkapnya <i class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-10 wow fadeInUp" data-wow-delay="0.3s">
@@ -73,7 +73,7 @@
                             Jangan takut kalau file tugas atau file yang berkaitan dengan kuliahmu hilang, dengan
                             collegetivity kamu bisa dengan aman menyimpan file file tersebut
                         </p>
-                        <a href="#" class="box-btn">Selengkapnya <i class="far fa-arrow-right"></i></a>
+                        <a href="{{url('/fitur')}}" class="box-btn">Selengkapnya <i class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-10 wow fadeInUp" data-wow-delay="0.4s">
@@ -81,7 +81,7 @@
                         <div class="icon">
                             <i class="far fa-bookmark"></i>
                         </div>
-                        <h4 class="title"><a href="#">Banyak Resources yang Membantu</a></h4>
+                        <h4 class="title"><a href="{{url('/fitur')}}">Banyak Resources yang Membantu</a></h4>
                         <p>
                             Disini juga kami menyediakan banyak resources mulai dari website atau thread yang bakal
                             membantu kamu menjadi lebih produktif dari sebelumnya
@@ -106,7 +106,7 @@
                 <div class="col-lg-5">
                     <div class="software-text-block p-l-50 p-l-lg-30 p-l-md-0">
                         <div class="common-heading m-b-40">
-                            <span class="tagline color-primary-5">Tujuan & Manfaat</span>
+                            <span class="tagline color-primary-5">✨ • Tujuan & Manfaat</span>
                             <h2 class="title">Atur semua dunia dan data perkuliahanmu</h2>
                         </div>
                         <p>
@@ -122,7 +122,7 @@
     <!--====== End Design & Layout Section ======-->
 
     <!--====== Service Details Start ======-->
-    <section class="service-details-area p-t-130 p-b-130">
+    <section class="service-details-area p-b-130">
         <div class="service-tab">
             <div class="container">
                 <div class="row justify-content-center">
@@ -252,7 +252,7 @@
                             <h2 class="title">Segera Daftar dan Bergabung Bersama Collegetivity</h2>
                         </div>
 
-                        <a href="#" class="template-btn white-bg bordered-btn">Daftar Sekarang <i
+                        <a href="{{url('/register')}}" class="template-btn white-bg bordered-btn">Daftar Sekarang <i
                                 class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
