@@ -113,7 +113,7 @@
                                             <label>Deskripsi Bookmarks atau Halaman Website: <span
                                                     class="text-danger">*</span></label>
                                             <textarea class="form-control" name="deskripsi"
-                                                id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                id="exampleFormControlTextarea1" maxlength="255" rows="3"></textarea>
                                         </div>
                                     </div>
                                 </div>

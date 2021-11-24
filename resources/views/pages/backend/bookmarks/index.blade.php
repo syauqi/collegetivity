@@ -45,7 +45,7 @@
                         <div class="card-body">
                             <div class="media">
                                 <div class="media-body">
-                                    <h6 class="f-w-600"><a href="#">{{$item->judul}}</a>
+                                    <h6 class="f-w-600"><a href="{{$item->url}}">{{$item->judul}}</a>
                                         <form action="{{route('bookmarks.destroy', $item->id)}}" method="POST"
                                             class="d-inline">
                                             @csrf
@@ -85,8 +85,8 @@
                     </div>
                 </div>
             </div>
+            @endforelse
         </div>
-        @endforelse
     </div>
 </div>
 
