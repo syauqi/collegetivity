@@ -103,7 +103,7 @@
                         <img src="{{url('landio/assets/img/preview-gallery/design-layout.png')}}" alt="Image">
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-10">
+                <div class="col-lg-5">
                     <div class="software-text-block p-l-50 p-l-lg-30 p-l-md-0">
                         <div class="common-heading m-b-40">
                             <span class="tagline color-primary-5">Tujuan & Manfaat</span>
@@ -117,59 +117,30 @@
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center justify-content-center p-t-130">
-                <div class="col-lg-7 col-md-10 order-lg-last order-first wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="preview-galley-v8 text-right m-b-md-80">
-                        <img src="{{url('landio/assets/img/preview-gallery/sof-analysis-01.jpg')}}" class="preview-one"
-                            alt="Image">
-                        <img src="{{url('landio/assets/img/preview-gallery/sof-analysis-02.jpg')}}"
-                            class="preview-two animate-float-bob-x" alt="Image">
-                        <img src="{{url('landio/assets/img/preview-gallery/sof-analysis-03.jpg')}}"
-                            class="preview-three animate-float-bob-y" alt="Image">
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-10 order-lg-first">
-                    <div class="software-text-block">
-                        <div class="common-heading m-b-25">
-                            <span class="tagline color-primary-5">Kreatif & Produktif</span>
-                            <h2 class="title">Kami selalu ada buat kalian yang kreatif dan produktif</h2>
-                        </div>
-                        <p class="m-b-25">
-                            Cukup fokus ningkatin kreatifitas kalian dan selesaikan tugas kalian. Kami yang menangani
-                            semuanya.
-                        </p>
-                        <p>
-                            Biar lulus cepet dan biar cepet nikahin doi!
-                        </p>
-                        <a href="about.html" class="template-btn primary-bg-5 m-t-40">
-                            Daftar Sekarang <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <!--====== End Design & Layout Section ======-->
 
-    <!--====== Start Service Section ======-->
-    <section class="service-tab-section p-t-130">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="common-heading text-center m-b-65">
-                        <span class="tagline color-primary-5">Ada apa aja sih di Collegetivity?</span>
-                        <h2 class="title">Fitur buat jadi solusi dari semua masalah mahasiswa</h2>
+    <!--====== Service Details Start ======-->
+    <section class="service-details-area p-t-130 p-b-130">
+        <div class="service-tab">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="common-heading text-center m-b-65">
+                            <span class="tagline color-primary-5">🤔 • Ada apa aja sih di Collegetivity?</span>
+                            <h2 class="title">Solusi Kece & Ampuh Bagi Para Mahasiswa Waktu Kuliah <span
+                                    class="font-weight-normal small">🔥</span></h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="service-tab">
             <div class="container">
                 <div class="service-tab-nav">
                     <ul class="nav nav-tabs service-tab-nav" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <a class="nav-link active" data-toggle="tab" href="#tabItem1" role="tab">
-                                <i class="far fa-browser"></i> Halaman Dashboard
+                                <i class="far fa-browser"></i> Dashboard
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -184,27 +155,27 @@
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" data-toggle="tab" href="#tabItem4" role="tab">
-                                <i class="far fa-calendar"></i> Kalender
+                                <i class="far fa-video"></i> Virtual Meeting
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" data-toggle="tab" href="#tabItem5" role="tab">
-                                <i class="far fa-check"></i> Todolist
+                                <i class="far fa-folder"></i> File Manager
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" data-toggle="tab" href="#tabItem6" role="tab">
-                                <i class="far fa-camera"></i> Galeri Foto
+                                <i class="far fa-check-square"></i> Todolist
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" data-toggle="tab" href="#tabItem7" role="tab">
-                                <i class="far fa-clock"></i> Whiteboard, Pomodoro
+                                <i class="far fa-chalkboard-teacher"></i> LifeAt
                             </a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" data-toggle="tab" href="#tabItem8" role="tab">
-                                <i class="far fa-globe"></i> Kumpulan Resources
+                                <i class="far fa-bookmark"></i> Resources
                             </a>
                         </li>
                     </ul>
@@ -214,49 +185,57 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="tabItem1" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src=" {{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
+                            <img src="{{url('landio/assets/img/dashboard.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                            filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem2" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="{{url('landio/assets/img/service-tab-img-2.jpg')}}" alt="Image">
+                            <img src="{{url('landio/assets/img/jadwal.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                        filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem3" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
+                            <img src="{{url('landio/assets/img/catatan.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                        filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem4" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
+                            <img src="{{url('landio/assets/img/virtual.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                        filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem5" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
+                            <img src="{{url('landio/assets/img/file.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                        filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem6" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
+                            <img src="{{url('landio/assets/img/todo.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                        filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem7" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
+                            <img src="{{url('landio/assets/img/lifeat.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                        filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tabItem8" role="tabpanel">
                         <div class="service-tab-ime text-center">
-                            <img src="{{url('landio/assets/img/service-tab-img.jpg')}}" alt="Image">
+                            <img src="{{url('landio/assets/img/resources.png')}}" style="-webkit-filter: drop-shadow(0px 3px 10px rgba(0,0,0,.8));
+                        filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.219));" alt="Image">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--====== End Service Section ======-->
+    <!--====== Service Details End ======-->
 
     <br>
     <br>

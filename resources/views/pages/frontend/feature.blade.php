@@ -241,27 +241,27 @@
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" data-toggle="tab" href="#tabItem4" role="tab">
-                            <i class="far fa-calendar"></i> Virtual Meeting
+                            <i class="far fa-video"></i> Virtual Meeting
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" data-toggle="tab" href="#tabItem5" role="tab">
-                            <i class="far fa-check"></i> File Manager
+                            <i class="far fa-folder"></i> File Manager
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" data-toggle="tab" href="#tabItem6" role="tab">
-                            <i class="far fa-camera"></i> Todolist
+                            <i class="far fa-check-square"></i> Todolist
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" data-toggle="tab" href="#tabItem7" role="tab">
-                            <i class="far fa-clock"></i> LifeAt
+                            <i class="far fa-chalkboard-teacher"></i> LifeAt
                         </a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" data-toggle="tab" href="#tabItem8" role="tab">
-                            <i class="far fa-globe"></i> Resources
+                            <i class="far fa-bookmark"></i> Resources
                         </a>
                     </li>
                 </ul>
@@ -320,8 +320,6 @@
             </div>
         </div>
     </div>
-
-
 </section>
 <!--====== Service Details End ======-->
 
