@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-xl-7">
                 <img class="bg-img-cover bg-center" src="{{url('cuba/assets/images/login/register.jpg')}}"
