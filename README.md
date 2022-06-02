@@ -1,64 +1,98 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<h1 align="center">Selamat datang di Collegetivity! 👋</h1>
+
+![Collegetivity Preview](https://user-images.githubusercontent.com/46257169/171702287-a7f5f037-135f-4898-9d41-a9ce3940a232.png)
+
+
+
+
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<img src="https://img.shields.io/github/issues/syauqi/collegetivitycollegetivity?style=flat-square">
+<img src="https://img.shields.io/github/stars/syauqi/collegetivitycollegetivity?style=flat-square"> 
+<img src="https://img.shields.io/github/forks/syauqi/collegetivity?style=flat-square">
+<img src="https://img.shields.io/github/license/syauqi/collegetivity?style=flat-square">
+<img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square">
+<img src="https://img.shields.io/github/followers/syauqi.svg?style=flat-square&label=Follow&maxAge=2592000">
 </p>
 
-## About Laravel
+### 🎓 Tentang Collegetivity
+Website ini berperan sebagai 'workspace' yang ditujukan bagi para mahasiswa untuk menjadi lebih produktif dan terorganisir. Mempunyai banak fitur seperti mengorganisir jadwal, tugas, to-do list dan banyak lagi.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-fix abandoned
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**Aplikasi ini dibuat dengan banyak kekurangan oleh karena itu mohon maaf jika terdapat banyak bug dan banyak hal yang dibuat dengan tidak menggunakan 'best practice'**
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+### ✨ Fitur yang Tersedia
+- Landing page dan berbagai macam halaman yang bisa anda kustomisasi
+- Fitur pengelolaan data akademik [jadwal pelajaran, tulisan & catatan, file manager & galeri serta foto]
+- Fitur utility bagi para mahasiswa [to-do list, kalender & bookmark]
+- Fitur penunjang produktifitas [whiteboard, audio relaxation, pomodoro timer & virtual meeting]
+- Resources [journal & e-book]
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 🏠 Demo & Overview
+Halaman demo dapat kalian akses di https://collegetivity.herokuapp.com/ kalian cukup daftar dengan mengklik button di kanan atas masukan identitas dan voila selamat mencoba!
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+### 📆 Release Date
+- v0.5.0 : 28 November 2021
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
+------------
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+ ### 🐱‍💻 Menjalankan di Localhost
+	
+	
+Jalankan command git clone seperti contoh dibawah
 
-## Contributing
+`git clone https://github.com/syauqi/collegetivity.git`
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Kemudian jalankan command composer install, ini akan menginstall resources yang laravel butuhkan
 
-## Code of Conduct
+`composer install`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Lakukan copy .evn dengan cara ketik command seperti dibawah 
 
-## Security Vulnerabilities
+`copy .env.example .env` atau `cp .env.example .env`
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Generate key juga jangan lupa dengan command dibawah
 
-## License
+`php artisan key:generate`
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Jangan lupa migrate database dengan cara membuat database di phpmyadmin atau aplikasi lainnya yang kalian pakai, lalu jangan lupa untuk mengganti variable DB_DATABASE di file .env yang di folder project
+
+`php artisan migrate`
+
+Lalu jalankan aplikasi kalian dengan command dibawah
+
+`php artisan serve`
+
+
+------------
+
+### 💾 Syarat yang Wajib Ada 
+- PHP 8 & Web Server [XAMPP, LAMPP, MAMP]
+- Web Browser [Chrome, Firefox, Safari & Opera]
+- Internet [Karena menggunakan banyak CDN]
+- Composer & Laravel 8
+
+
+## 🧑 Author
+
+👤 <a href="https://web.facebook.com/syaauqi"> **SYAUQIZAIDAN KHAIRAN KHALAF**</a>
+- Facebook : <a href="https://web.facebook.com/syaaauqi"> Syauqi Zaidan Khairan Khalaf</a>
+- Instagram : <a href="https://www.instagram.com/syaufy/">@syaufy </a>
+- Dribbble : <a href="https://dribbble.com/syaufy">@syaufy </a>
+- Behance :  <a href="https://www.behance.net/syaufy">@syaufy </a>
+
+## 🤝 Contributing
+Contributions, issues and feature requests sangat saya apresiasi karena aplikasi ini jauh dari kata sempurna. Jangan ragu untuk pull request dan membuat perubahan pada project ini.
+
+**Berhubung Project ini saya selesaikan sendiri, namun banyak fitur dan banyak hal yang bisa diperbaiki maka bantuan kalian sangat saya apresiasi**
+
+
+## 📝 License
+- Copyright © 2022 SYAUQIZAIDAN KHAIRAN KHALAF
+- **Collegetivity is open-sourced software licensed under the MIT license**
+
+
+------------
+**Made with ❤️ SYAUQIZAIDAN KHAIRAN KHALAF**
