@@ -3,8 +3,8 @@
 ![Collegetivity Preview](https://user-images.githubusercontent.com/46257169/171705042-12da6cff-6118-45f9-9349-04d9704ca12a.png)
 
 <p align="center">
-<img src="https://img.shields.io/github/issues/syauqi/collegetivitycollegetivity?style=flat-square">
-<img src="https://img.shields.io/github/stars/syauqi/collegetivitycollegetivity?style=flat-square"> 
+<img src="https://img.shields.io/github/issues/syauqi/collegetivity?style=flat-square">
+<img src="https://img.shields.io/github/stars/syauqi/collegetivity?style=flat-square"> 
 <img src="https://img.shields.io/github/forks/syauqi/collegetivity?style=flat-square">
 <img src="https://img.shields.io/github/license/syauqi/collegetivity?style=flat-square">
 <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square">
